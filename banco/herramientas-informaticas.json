@@ -1,0 +1,182 @@
+{
+  "sesion": "herramientas-informaticas",
+  "preguntas": [
+    {
+      "id": "herramientas-informaticas-001",
+      "contexto": "",
+      "enunciado": "En Excel (versión en español), ¿qué función suma los valores de un rango que cumplen un solo criterio?",
+      "opciones": {
+        "A": "CONTAR.SI",
+        "B": "SUMAR.SI",
+        "C": "SUMAPRODUCTO",
+        "D": "PROMEDIO.SI"
+      },
+      "correcta": "B",
+      "explicacion": "SUMAR.SI(rango; criterio; [rango_suma]) suma las celdas que cumplen un criterio. Para varios criterios se usa SUMAR.SI.CONJUNTO. CONTAR.SI cuenta (no suma) las celdas que cumplen el criterio. PROMEDIO.SI calcula el promedio con criterio. SUMAPRODUCTO multiplica matrices y suma los productos.",
+      "norma": "Microsoft Excel – funciones",
+      "dificultad": 1,
+      "etiquetas": [
+        "Excel"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "herramientas-informaticas-002",
+      "contexto": "En una hoja de cálculo, la celda B2 contiene la fórmula =A2*$D$1. Se copia esta fórmula a la celda B5.",
+      "enunciado": "¿Qué fórmula quedará en B5?",
+      "opciones": {
+        "A": "=A2*$D$1",
+        "B": "=A5*$D$4",
+        "C": "=A5*$D$1",
+        "D": "=A5*D4"
+      },
+      "correcta": "C",
+      "explicacion": "A2 es una referencia relativa: al copiarla tres filas abajo cambia a A5. $D$1 es una referencia absoluta: el signo $ fija la columna y la fila, por lo que no cambia al copiarse. Resultado: =A5*$D$1. También existen referencias mixtas ($D1 fija la columna; D$1 fija la fila).",
+      "norma": "Microsoft Excel – referencias de celda",
+      "dificultad": 2,
+      "etiquetas": [
+        "Excel",
+        "referencias"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "herramientas-informaticas-003",
+      "contexto": "",
+      "enunciado": "Para resumir, agrupar y analizar rápidamente miles de registros de declaraciones (por ejemplo, total de impuesto por municipio y año) sin escribir fórmulas, la herramienta más adecuada de Excel es:",
+      "opciones": {
+        "A": "Formato condicional.",
+        "B": "Validación de datos.",
+        "C": "Combinar correspondencia.",
+        "D": "Tabla dinámica."
+      },
+      "correcta": "D",
+      "explicacion": "La tabla dinámica permite resumir, agrupar, filtrar y calcular totales, promedios o conteos de grandes volúmenes de datos arrastrando campos a filas, columnas, valores y filtros. Es muy útil para los informes estadísticos y de gestión, una de las funciones del cargo. El formato condicional resalta celdas según reglas, la validación de datos restringe lo que se puede digitar y combinar correspondencia es una función de Word para generar documentos masivos.",
+      "norma": "Microsoft Excel – tablas dinámicas",
+      "dificultad": 1,
+      "etiquetas": [
+        "Excel",
+        "informes"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "herramientas-informaticas-004",
+      "contexto": "Llega a tu correo institucional un mensaje con el logo de la DIAN que dice: «Su cuenta será bloqueada. Ingrese aquí para verificar su usuario y contraseña». El enlace apunta a un dominio extraño.",
+      "enunciado": "¿Qué tipo de ataque es y qué debes hacer?",
+      "opciones": {
+        "A": "Phishing. No hacer clic, no dar credenciales y reportarlo al área de seguridad.",
+        "B": "Un virus de macro. Abrir el enlace desde otro computador para verificar si es real.",
+        "C": "Spam comercial. Responder el correo solicitando que lo eliminen de la lista de envío.",
+        "D": "Un aviso legítimo. Ingresar los datos rápidamente para evitar el bloqueo."
+      },
+      "correcta": "A",
+      "explicacion": "Es phishing (suplantación de identidad): un mensaje que imita a una entidad confiable para robar credenciales o datos. Señales: urgencia, amenaza de bloqueo, enlaces a dominios que no son oficiales y solicitud de contraseñas. Ninguna entidad legítima pide la contraseña por correo. Lo correcto es no interactuar con el mensaje y reportarlo al área responsable de la seguridad de la información.",
+      "norma": "Buenas prácticas de seguridad de la información (ISO 27001 / MSPI MinTIC)",
+      "dificultad": 1,
+      "etiquetas": [
+        "seguridad de la información"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "herramientas-informaticas-005",
+      "contexto": "",
+      "enunciado": "Los tres pilares de la seguridad de la información son:",
+      "opciones": {
+        "A": "Velocidad, capacidad de almacenamiento y conectividad.",
+        "B": "Hardware, software, redes y copias de respaldo.",
+        "C": "Confidencialidad, integridad y disponibilidad.",
+        "D": "Usuario, contraseña, antivirus y cortafuegos."
+      },
+      "correcta": "C",
+      "explicacion": "La tríada de la seguridad de la información es: confidencialidad (solo acceden personas autorizadas), integridad (la información es exacta y completa, y no se altera sin autorización) y disponibilidad (la información está accesible cuando los usuarios autorizados la necesitan). Es la base de la norma ISO/IEC 27001 y del Modelo de Seguridad y Privacidad de la Información (MSPI) de MinTIC.",
+      "norma": "ISO/IEC 27001; MSPI – MinTIC",
+      "dificultad": 1,
+      "etiquetas": [
+        "seguridad de la información"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "herramientas-informaticas-006",
+      "contexto": "",
+      "enunciado": "En Excel, la fórmula =BUSCARV(\"900123456\";A2:D500;3;FALSO) devuelve el error #N/A (o #N/D). ¿Qué significa?",
+      "opciones": {
+        "A": "Que el valor buscado no está en la primera columna.",
+        "B": "Que el número de columna 3 está fuera del rango indicado.",
+        "C": "Que la fórmula tiene un error de sintaxis.",
+        "D": "Que el rango contiene celdas combinadas."
+      },
+      "correcta": "A",
+      "explicacion": "El error #N/A (No disponible) en BUSCARV con coincidencia exacta (FALSO) indica que el valor buscado no se encontró en la primera columna del rango. Es frecuente cuando el NIT está guardado como número en una tabla y como texto en la otra, o cuando hay espacios sobrantes. Si el número de columna excede el rango, el error es #¡REF!; un error de sintaxis no permite ingresar la fórmula o genera #¿NOMBRE?.",
+      "norma": "Microsoft Excel – BUSCARV y errores",
+      "dificultad": 2,
+      "etiquetas": [
+        "Excel",
+        "BUSCARV"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "herramientas-informaticas-007",
+      "contexto": "La celda A1 contiene el valor 55 y en B1 se escribe: =SI(A1>=80;\"Fortaleza\";SI(A1>=60;\"En desarrollo\";\"Debilidad\"))",
+      "enunciado": "¿Qué resultado muestra B1?",
+      "opciones": {
+        "A": "Fortaleza",
+        "B": "FALSO",
+        "C": "En desarrollo",
+        "D": "Debilidad"
+      },
+      "correcta": "D",
+      "explicacion": "La función SI evalúa la primera condición: 55>=80 es falso, así que pasa al segundo SI (anidado). Allí, 55>=60 también es falso, por lo que devuelve el último argumento: «Debilidad». Con un valor entre 60 y 79 devolvería «En desarrollo», y con 80 o más, «Fortaleza». Mostraría FALSO solo si faltara el argumento del valor si es falso, lo cual no ocurre aquí.",
+      "norma": "Microsoft Excel – función SI",
+      "dificultad": 1,
+      "etiquetas": [
+        "Excel",
+        "función SI"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "herramientas-informaticas-008",
+      "contexto": "",
+      "enunciado": "Varios funcionarios deben revisar un proyecto de acto administrativo en Word y el autor necesita ver exactamente qué modificó cada uno. ¿Qué herramienta debe usarse?",
+      "opciones": {
+        "A": "Control de cambios.",
+        "B": "Combinar correspondencia.",
+        "C": "Tabla de contenido.",
+        "D": "Proteger con contraseña."
+      },
+      "correcta": "A",
+      "explicacion": "El Control de cambios de Word (pestaña Revisar) registra las inserciones, eliminaciones y cambios de formato que hace cada revisor, identificados por usuario, para que el autor los acepte o rechace. Los comentarios complementan la revisión. Combinar correspondencia genera documentos masivos, la tabla de contenido crea un índice y la protección con contraseña restringe el acceso.",
+      "norma": "Microsoft Word – Revisar",
+      "dificultad": 1,
+      "etiquetas": [
+        "Word",
+        "revisión de documentos"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "herramientas-informaticas-009",
+      "contexto": "",
+      "enunciado": "¿Cuál es la principal ventaja de activar la autenticación de dos factores (2FA) en las cuentas institucionales?",
+      "opciones": {
+        "A": "Permite compartir la contraseña con el equipo de trabajo de manera segura.",
+        "B": "Elimina la necesidad de cambiar periódicamente la contraseña de la cuenta.",
+        "C": "Hace que los correos enviados desde la cuenta se cifren automáticamente.",
+        "D": "Aunque roben la contraseña, se necesita un segundo factor para entrar."
+      },
+      "correcta": "D",
+      "explicacion": "La autenticación de dos factores exige, además de algo que el usuario sabe (la contraseña), algo que tiene (un código en el celular, una llave física) o algo que es (biometría). Si un atacante obtiene la contraseña, por ejemplo mediante phishing, no puede acceder sin el segundo factor. No autoriza a compartir contraseñas, no reemplaza las buenas prácticas de contraseñas y no cifra los correos.",
+      "norma": "Buenas prácticas de seguridad digital – MSPI MinTIC",
+      "dificultad": 1,
+      "etiquetas": [
+        "seguridad de la información",
+        "autenticación"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

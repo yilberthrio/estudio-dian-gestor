@@ -1,0 +1,164 @@
+{
+  "sesion": "mipg",
+  "preguntas": [
+    {
+      "id": "mipg-001",
+      "contexto": "",
+      "enunciado": "En el Modelo Integrado de Planeación y Gestión (MIPG), ¿cuál dimensión es considerada «el corazón del modelo»?",
+      "opciones": {
+        "A": "Talento Humano.",
+        "B": "Control Interno.",
+        "C": "Direccionamiento Estratégico y Planeación.",
+        "D": "Gestión con Valores para Resultados."
+      },
+      "correcta": "A",
+      "explicacion": "MIPG (Decreto 1499 de 2017) opera a través de 7 dimensiones: 1) Talento Humano, 2) Direccionamiento Estratégico y Planeación, 3) Gestión con Valores para Resultados, 4) Evaluación de Resultados, 5) Información y Comunicación, 6) Gestión del Conocimiento y la Innovación, y 7) Control Interno. El Manual Operativo de MIPG presenta el Talento Humano como el corazón del modelo, porque son los servidores quienes hacen posible la gestión; el Control Interno es la dimensión transversal que envuelve a las demás.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG",
+      "dificultad": 1,
+      "etiquetas": [
+        "dimensiones"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "mipg-002",
+      "contexto": "",
+      "enunciado": "En el esquema de líneas de defensa de la dimensión de Control Interno de MIPG, la Oficina de Control Interno corresponde a:",
+      "opciones": {
+        "A": "La línea estratégica.",
+        "B": "La primera línea de defensa.",
+        "C": "La segunda línea de defensa.",
+        "D": "La tercera línea de defensa."
+      },
+      "correcta": "D",
+      "explicacion": "Líneas de defensa en MIPG/MECI: la línea estratégica la conforman la alta dirección y el Comité Institucional de Coordinación de Control Interno (definen el marco general de riesgos y control). La primera línea son los gerentes públicos y líderes de proceso (controles del día a día). La segunda línea son los responsables de monitoreo, como la oficina de planeación, los supervisores e interventores y los coordinadores de otros sistemas. La tercera línea es la Oficina de Control Interno, que realiza la evaluación independiente.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 7",
+      "dificultad": 2,
+      "etiquetas": [
+        "control interno",
+        "líneas de defensa"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "mipg-003",
+      "contexto": "",
+      "enunciado": "MIPG se define como un marco de referencia para:",
+      "opciones": {
+        "A": "Fijar las tarifas de los impuestos nacionales y territoriales según el plan de desarrollo.",
+        "B": "Dirigir, planear, ejecutar, evaluar y controlar la gestión pública con integridad y calidad.",
+        "C": "Sancionar disciplinariamente a los servidores que incumplan las metas de los planes de acción.",
+        "D": "Certificar de forma obligatoria a todas las entidades públicas en normas técnicas ISO de calidad."
+      },
+      "correcta": "B",
+      "explicacion": "El Decreto 1499 de 2017 actualizó MIPG y lo definió como un marco de referencia para dirigir, planear, ejecutar, hacer seguimiento, evaluar y controlar la gestión de las entidades y organismos públicos, con el fin de generar resultados que atiendan los planes de desarrollo y resuelvan las necesidades y problemas de los ciudadanos, con integridad y calidad en el servicio. Integró en un solo Sistema de Gestión los sistemas de Desarrollo Administrativo y de Gestión de la Calidad, articulado con el Sistema de Control Interno.",
+      "norma": "Decreto 1083 de 2015 modificado por el Decreto 1499 de 2017",
+      "dificultad": 1,
+      "etiquetas": [
+        "definición"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "mipg-004",
+      "contexto": "",
+      "enunciado": "¿Cuál es la herramienta mediante la cual las entidades reportan anualmente el avance en la implementación de MIPG y se mide su desempeño institucional?",
+      "opciones": {
+        "A": "El SECOP II.",
+        "B": "El SIGEP.",
+        "C": "El FURAG.",
+        "D": "El RUT."
+      },
+      "correcta": "C",
+      "explicacion": "El FURAG es el instrumento en línea administrado por Función Pública con el que se recolecta la información para medir el desempeño institucional y el avance de las políticas de MIPG (Índice de Desempeño Institucional). El SECOP II es la plataforma de contratación pública, el SIGEP es el sistema de información y gestión del empleo público, y el RUT es el Registro Único Tributario de la DIAN.",
+      "norma": "Decreto 1499 de 2017; Función Pública – medición del desempeño",
+      "dificultad": 2,
+      "etiquetas": [
+        "FURAG",
+        "medición"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "mipg-005",
+      "contexto": "",
+      "enunciado": "En MIPG, ¿a qué dimensión pertenece la política de Servicio al Ciudadano?",
+      "opciones": {
+        "A": "Talento Humano.",
+        "B": "Gestión con Valores para Resultados.",
+        "C": "Evaluación de Resultados.",
+        "D": "Direccionamiento Estratégico y Planeación."
+      },
+      "correcta": "B",
+      "explicacion": "La dimensión Gestión con Valores para Resultados agrupa las políticas para la relación con el ciudadano y la operación interna. Entre ellas están: Servicio al Ciudadano, Racionalización de Trámites, Participación Ciudadana en la Gestión Pública, Gobierno Digital, Seguridad Digital, Defensa Jurídica, Fortalecimiento Organizacional y Simplificación de Procesos, Gestión Presupuestal y Mejora Normativa. Talento Humano agrupa Gestión Estratégica del Talento Humano e Integridad.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 3",
+      "dificultad": 2,
+      "etiquetas": [
+        "dimensiones",
+        "políticas"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "mipg-006",
+      "contexto": "",
+      "enunciado": "En MIPG, la política de Integridad hace parte de la dimensión:",
+      "opciones": {
+        "A": "Control Interno.",
+        "B": "Direccionamiento Estratégico y Planeación.",
+        "C": "Talento Humano.",
+        "D": "Gestión del Conocimiento y la Innovación."
+      },
+      "correcta": "C",
+      "explicacion": "La primera dimensión de MIPG, Talento Humano, contiene dos políticas: Gestión Estratégica del Talento Humano e Integridad. La integridad se ubica allí porque depende de las personas: sus valores, comportamientos y la gestión de conflictos de interés. En esa política se implementa el Código de Integridad.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 1",
+      "dificultad": 1,
+      "etiquetas": [
+        "dimensiones",
+        "integridad"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "mipg-007",
+      "contexto": "",
+      "enunciado": "En MIPG, las políticas de Gestión Documental y de Transparencia y Acceso a la Información Pública hacen parte de la dimensión:",
+      "opciones": {
+        "A": "Información y Comunicación.",
+        "B": "Gestión con Valores para Resultados.",
+        "C": "Evaluación de Resultados.",
+        "D": "Control Interno."
+      },
+      "correcta": "A",
+      "explicacion": "La dimensión 5 de MIPG, Información y Comunicación, busca que la entidad cuente con información de calidad y canales de comunicación adecuados, tanto internos como externos. Agrupa las políticas de Gestión Documental, Transparencia, Acceso a la Información Pública y Lucha contra la Corrupción, y Gestión de la Información Estadística. Por eso la Ley 594 de 2000 y la Ley 1712 de 2014 se implementan dentro de esta dimensión.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 5",
+      "dificultad": 2,
+      "etiquetas": [
+        "dimensiones",
+        "gestión documental",
+        "transparencia"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "mipg-008",
+      "contexto": "",
+      "enunciado": "¿Qué instancia orienta la implementación y operación de MIPG al interior de cada entidad del orden nacional?",
+      "opciones": {
+        "A": "El Consejo para la Gestión y el Desempeño Institucional.",
+        "B": "La Oficina de Control Interno de Gestión.",
+        "C": "La Comisión Nacional del Servicio Civil.",
+        "D": "El Comité Institucional de Gestión y Desempeño."
+      },
+      "correcta": "D",
+      "explicacion": "El Decreto 1499 de 2017 dispone que en cada entidad se integre un Comité Institucional de Gestión y Desempeño, encargado de orientar la implementación y operación de MIPG. El Consejo para la Gestión y el Desempeño Institucional es la instancia de nivel nacional que coordina el modelo entre entidades. La Oficina de Control Interno evalúa de manera independiente (tercera línea de defensa) y la CNSC administra la carrera.",
+      "norma": "Decreto 1083 de 2015, modificado por Decreto 1499 de 2017",
+      "dificultad": 2,
+      "etiquetas": [
+        "institucionalidad",
+        "comités"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

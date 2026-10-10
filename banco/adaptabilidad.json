@@ -1,0 +1,105 @@
+{
+  "sesion": "adaptabilidad",
+  "preguntas": [
+    {
+      "id": "adaptabilidad-001",
+      "contexto": "La DIAN implementa un nuevo sistema informático para gestionar los procesos de fiscalización, que cambia la forma en que venías trabajando hace años.",
+      "enunciado": "¿Cuál es la actitud más adecuada?",
+      "opciones": {
+        "A": "Seguir usando los formatos anteriores mientras sea posible hacerlo sin problemas.",
+        "B": "Esperar a que el sistema se estabilice por completo antes de empezar a aprenderlo.",
+        "C": "Quejarte con tus compañeros de que el sistema anterior funcionaba mucho mejor.",
+        "D": "Aprender la herramienta, capacitarte, reportar fallas y compartir lo aprendido."
+      },
+      "correcta": "D",
+      "explicacion": "La adaptabilidad implica aceptar y asumir positivamente los cambios institucionales, aprender nuevas formas de trabajo y contribuir a que el cambio funcione (reportar fallas, apoyar a otros). Resistirse, aplazar el aprendizaje o quejarse sin proponer soluciones dificulta la transformación y afecta el desempeño.",
+      "norma": "Competencia comportamental: Adaptabilidad",
+      "dificultad": 1,
+      "etiquetas": [
+        "gestión del cambio",
+        "tecnología"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "adaptabilidad-002",
+      "contexto": "A mitad de semana llega una directriz que cambia las prioridades: debes atender un operativo de control urgente y aplazar las tareas que tenías planeadas.",
+      "enunciado": "¿Qué haces?",
+      "opciones": {
+        "A": "Te niegas a atender el operativo, porque ya tenías una agenda comprometida.",
+        "B": "Reorganizas la agenda, informas al jefe qué se aplaza y acuerdas nuevas fechas.",
+        "C": "Haces ambas cosas a medias, para no dejar ninguna tarea pendiente esta semana.",
+        "D": "Atiendes el operativo y olvidas las tareas anteriores hasta que alguien pregunte."
+      },
+      "correcta": "B",
+      "explicacion": "Ser adaptable significa responder con flexibilidad a los cambios de prioridades, sin perder el control de los compromisos: replanificar, comunicar los impactos y acordar ajustes. Negarse es rígido; hacer todo a medias compromete la calidad; abandonar las tareas previas sin gestionarlas genera incumplimientos.",
+      "norma": "Competencia comportamental: Adaptabilidad",
+      "dificultad": 1,
+      "etiquetas": [
+        "flexibilidad",
+        "prioridades"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "adaptabilidad-003",
+      "contexto": "Te trasladan de un grupo de fiscalización tributaria a uno de fiscalización aduanera, un área que conoces poco.",
+      "enunciado": "La respuesta más adecuada es:",
+      "opciones": {
+        "A": "Estudiar la normativa aduanera, apoyarte en compañeros expertos y capacitarte.",
+        "B": "Solicitar de inmediato el regreso a tu área anterior, donde eras más productivo.",
+        "C": "Aplicar los mismos procedimientos tributarios, porque son similares a los aduaneros.",
+        "D": "Limitarte a tareas administrativas hasta que te capaciten formalmente."
+      },
+      "correcta": "A",
+      "explicacion": "La adaptabilidad incluye ajustarse a nuevas funciones y entornos con disposición para aprender. Estudiar la normativa, aprovechar el conocimiento de los compañeros y buscar formación acelera el desempeño en el nuevo rol. Aplicar procedimientos de otra área es riesgoso, porque el régimen aduanero (Decreto 1165 de 2019) tiene reglas propias; la pasividad o la resistencia no aportan.",
+      "norma": "Competencia comportamental: Adaptabilidad",
+      "dificultad": 1,
+      "etiquetas": [
+        "nuevos roles",
+        "aprendizaje"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "adaptabilidad-004",
+      "contexto": "Una reforma tributaria cambia varias reglas que aplicabas a diario en tus investigaciones.",
+      "enunciado": "¿Cuál es la respuesta más adecuada?",
+      "opciones": {
+        "A": "Seguir aplicando las reglas anteriores hasta que la entidad expida una circular.",
+        "B": "Estudiar los cambios y su vigencia, y ajustar tu trabajo según los lineamientos.",
+        "C": "Esperar a que los contribuyentes alleguen la nueva norma en sus respuestas.",
+        "D": "Pedir que te asignen solo casos de periodos anteriores a la reforma vigente."
+      },
+      "correcta": "B",
+      "explicacion": "La adaptabilidad implica actualizarse ante cambios del entorno, en este caso normativos, y ajustar la forma de trabajar. En materia tributaria hay que analizar la vigencia: las normas sobre impuestos de periodo, como la renta, rigen a partir del periodo siguiente a su promulgación (art. 338 C.P.), y las procesales suelen aplicarse de inmediato. Esperar pasivamente o evitar los casos nuevos no aporta.",
+      "norma": "Competencia: Adaptabilidad; Constitución Política, art. 338",
+      "dificultad": 2,
+      "etiquetas": [
+        "cambio normativo",
+        "actualización"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "adaptabilidad-005",
+      "contexto": "Por una reorganización interna, tu grupo pasa a trabajar con un nuevo jefe que usa métodos de seguimiento muy distintos a los del anterior.",
+      "enunciado": "¿Qué actitud refleja mejor la adaptabilidad?",
+      "opciones": {
+        "A": "Mantener tu forma de reportar, porque ya te funcionaba bien.",
+        "B": "Pedir traslado a otro grupo donde se conserven los métodos anteriores.",
+        "C": "Comprender los nuevos métodos y ajustarte, aportando sugerencias.",
+        "D": "Seguir sus métodos solo en lo que él revise y lo demás como antes."
+      },
+      "correcta": "C",
+      "explicacion": "Ser adaptable implica ajustarse a nuevas formas de trabajo y a distintos estilos de liderazgo con apertura, sin perder la capacidad de aportar ideas por canales adecuados. Resistirse, cumplir solo en apariencia o huir del cambio reflejan baja adaptabilidad.",
+      "norma": "Competencia: Adaptabilidad",
+      "dificultad": 1,
+      "etiquetas": [
+        "reorganización",
+        "nuevos métodos"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

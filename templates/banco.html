@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block titulo %}Banco de preguntas · Estudio DIAN{% endblock %}
+{% block contenido %}
+<div class="ronda-top">
+  <h1 style="margin:0">Banco de preguntas <span class="suave" style="font-weight:normal">({{ total }} activas)</span></h1>
+  <div class="acciones">
+    <a class="btn prim" href="{{ url_for('editar_pregunta') }}">+ Nueva pregunta</a>
+  </div>
+</div>
+
+{% if sesgadas %}
+<div class="flash {{ 'aviso' if pct_sesgo > 15 else 'info' }}">
+  En {{ sesgadas }} preguntas activas ({{ pct_sesgo }}%) la respuesta correcta es notablemente más larga que las demás,
+  lo que puede delatarla. <a href="{{ url_for('banco', estado='sesgo') }}">Ver cuáles</a>.
+</div>
+{% endif %}
+<div class="grid dos" style="margin-bottom:14px">
+  <div class="panel">
+    <h3>Importar preguntas</h3>
+    <p class="peq suave">Sincroniza el banco compartido (<code>banco/</code>) y carga los archivos <code>.json</code> que estén en
+      <code>preguntas/importar/</code>, o sube un archivo. Esto también ocurre solo al iniciar la app.</p>
+    <form method="post" action="{{ url_for('importar') }}" enctype="multipart/form-data" class="acciones">
+      <input type="file" name="archivo" accept=".json">
+      <button class="btn prim">Sincronizar e importar</button>
+    </form>
+  </div>
+  <div class="panel">
+    <h3>Cuántas hay por sesión</h3>
+    <details>
+      <summary class="peq">Ver conteo y códigos de sesión</summary>
+      <table style="margin-top:8px">
+        {% for m in modulos %}
+          <tr class="modulo"><td colspan="3">{{ m.nombre }} ({{ m.banco }})</td></tr>
+          {% for s in m.sesiones %}
+            <tr><td>{{ s.nombre }}</td><td><code>{{ s.codigo }}</code></td><td class="n">{{ s.banco }}</td></tr>
+          {% endfor %}
+        {% endfor %}
+      </table>
+    </details>
+    <details style="margin-top:10px">
+      <summary class="peq">Cómo pedirle preguntas a Claude</summary>
+      <p class="peq">Pídelas en el chat de Claude Code dentro de esta carpeta. Ejemplos:</p>
+      <pre class="prompt">Dame 15 preguntas de la sesión cpaca, dificultad 2 y 3.
+
+Lee mi último informe y genérame 20 preguntas enfocadas en mis debilidades.
+
+Revisa las preguntas marcadas para revisar y corrígelas.</pre>
+      <p class="peq suave">Claude deja el archivo en <code>preguntas/importar/</code>. Luego pulsa «Sincronizar e importar» (o reinicia la app).</p>
+    </details>
+  </div>
+</div>
+
+<form class="panel fila" method="get" style="margin-bottom:14px; align-items:flex-end">
+  <div style="flex:3 1 240px"><label>Buscar</label><input type="search" name="q" value="{{ q }}" placeholder="Texto, norma o etiqueta…"></div>
+  <div style="flex:2 1 200px"><label>Sesión</label>
+    <select name="sesion"><option value="">Todas</option>
+      {% for m in modulos %}<optgroup label="{{ m.nombre }}">
+        {% for s in m.sesiones %}<option value="{{ s.codigo }}" {{ 'selected' if sesion == s.codigo }}>{{ s.nombre }}</option>{% endfor %}
+      </optgroup>{% endfor %}
+    </select></div>
+  <div style="flex:1 1 160px"><label>Estado</label>
+    <select name="estado">
+      <option value="">Todas</option>
+      <option value="revisar" {{ 'selected' if estado == 'revisar' }}>Marcadas para revisar</option>
+      <option value="nunca" {{ 'selected' if estado == 'nunca' }}>Nunca respondidas</option>
+      <option value="inactivas" {{ 'selected' if estado == 'inactivas' }}>Desactivadas</option>
+      <option value="sesgo" {{ 'selected' if estado == 'sesgo' }}>Correcta delatada por su longitud</option>
+    </select></div>
+  <div style="flex:0 0 auto"><button class="btn">Filtrar</button></div>
+</form>
+
+<div class="panel tabla-scroll">
+  {% if not preguntas %}<div class="vacio">No hay preguntas con ese filtro.</div>{% else %}
+  <p class="peq suave" style="margin-top:0">{{ preguntas|length }} resultados</p>
+  <table>
+    <tr><th>#</th><th>Pregunta</th><th>Sesión</th><th class="n">Dif.</th><th class="n">Intentos</th><th class="n">Acierto</th><th></th></tr>
+    {% for p in preguntas %}
+    <tr style="{{ 'opacity:.5' if not p.activa }}">
+      <td>{{ p.id }}{% if p.uid %}<div class="peq suave">{{ p.uid }}</div>{% endif %}</td>
+      <td>{{ p.enunciado[:170] }}{{ '…' if p.enunciado|length > 170 }}
+        {% if p.revisar %}<br><span class="chip medio">🚩 revisar{% if p.nota_revision %}: {{ p.nota_revision }}{% endif %}</span>{% endif %}
+        {% if p.norma %}<div class="peq suave">📖 {{ p.norma }}</div>{% endif %}</td>
+      <td class="peq">{{ p.sesion }}</td>
+      <td class="n">{{ p.dificultad }}</td>
+      <td class="n">{{ p.intentos }}</td>
+      <td class="n">{{ ((100 * p.aciertos / p.intentos)|round(0)|int ~ '%') if p.intentos else '–' }}</td>
+      <td class="acciones" style="flex-wrap:nowrap">
+        <a class="btn peq" href="{{ url_for('editar_pregunta', pid=p.id) }}">Editar</a>
+        <form method="post" action="{{ url_for('toggle_activa', pid=p.id) }}"><button class="btn peq">{{ 'Desactivar' if p.activa else 'Activar' }}</button></form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
+{% endblock %}

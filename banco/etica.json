@@ -1,0 +1,105 @@
+{
+  "sesion": "etica",
+  "preguntas": [
+    {
+      "id": "etica-001",
+      "contexto": "Un compañero de otra dependencia te pide que «le des prioridad» a un expediente de fiscalización de una empresa de un amigo suyo, saltándote el orden de asignación, para que «salga rápido y sin tanto problema».",
+      "enunciado": "¿Cuál es la actuación más adecuada?",
+      "opciones": {
+        "A": "Atender la solicitud, porque agilizar trámites es parte de un buen servicio al ciudadano.",
+        "B": "Aceptar, pero solo si la empresa no tiene antecedentes de incumplimiento tributario.",
+        "C": "Negarte con respeto, explicar que hay un procedimiento y avisar al jefe si insiste.",
+        "D": "Ignorar el mensaje sin responder, para evitar un conflicto con el compañero."
+      },
+      "correcta": "C",
+      "explicacion": "El comportamiento ético en nivel alto implica actuar con imparcialidad y transparencia y resistir presiones indebidas. El servidor debe dar trato igual a todos los ciudadanos (art. 209 C.P., principio de imparcialidad) y no favorecer intereses particulares. Negarse con respeto, explicar el fundamento y escalar si hay insistencia protege el proceso y al servidor. Ignorar el mensaje no resuelve el riesgo de integridad.",
+      "norma": "Competencia comportamental: Comportamiento ético; Constitución Política, art. 209",
+      "dificultad": 1,
+      "etiquetas": [
+        "imparcialidad",
+        "presiones indebidas"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "etica-002",
+      "contexto": "Después de enviar al jefe un informe de fiscalización, descubres que cometiste un error de cálculo que reduce indebidamente el mayor impuesto determinado al contribuyente. Nadie lo ha notado.",
+      "enunciado": "¿Qué deberías hacer?",
+      "opciones": {
+        "A": "Informar de inmediato al superior, corregir el informe y documentar el ajuste.",
+        "B": "No decir nada, porque el informe ya fue enviado y corregirlo podría afectar tu evaluación.",
+        "C": "Esperar a ver si el contribuyente o el revisor detectan el error.",
+        "D": "Compensar el error aumentando otro rubro del informe sin avisar."
+      },
+      "correcta": "A",
+      "explicacion": "El comportamiento ético incluye reconocer los propios errores y actuar con transparencia y responsabilidad. Informar y corregir de inmediato protege el patrimonio público y la legalidad del proceso. Ocultar el error o «compensarlo» con otro ajuste no sustentado sería deshonesto y podría configurar falta disciplinaria. La corrección debe ser trazable y documentada.",
+      "norma": "Competencia comportamental: Comportamiento ético; Código de Integridad – Honestidad",
+      "dificultad": 1,
+      "etiquetas": [
+        "honestidad",
+        "responsabilidad"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "etica-003",
+      "contexto": "Durante una diligencia, accedes a información financiera reservada de un contribuyente. Un amigo tuyo, que es socio de un competidor de esa empresa, te pregunta «cómo le está yendo» a la compañía.",
+      "enunciado": "La respuesta correcta es:",
+      "opciones": {
+        "A": "Darle solo datos generales de la empresa, sin mencionar cifras exactas.",
+        "B": "Comentarle la información, porque se trata de un amigo de mucha confianza.",
+        "C": "Contarle lo que sea de conocimiento público y lo que hayas visto en la diligencia.",
+        "D": "No revelar nada de lo conocido en tus funciones, porque tiene reserva legal."
+      },
+      "correcta": "D",
+      "explicacion": "La información tributaria tiene reserva (art. 583 ET) y los servidores de la DIAN solo pueden utilizarla para el control, recaudo, determinación, discusión y administración de los impuestos. Revelarla, aunque sea de forma general, viola la reserva, puede favorecer a un competidor y generar responsabilidad disciplinaria y penal. El comportamiento ético exige confidencialidad y uso adecuado de la información.",
+      "norma": "Estatuto Tributario, art. 583; competencia: Comportamiento ético",
+      "dificultad": 1,
+      "etiquetas": [
+        "reserva",
+        "confidencialidad"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "etica-004",
+      "contexto": "Tu jefe inmediato te pide que fechas un acta de visita con un día anterior al real, para que el acto quede «dentro de términos».",
+      "enunciado": "¿Qué haces?",
+      "opciones": {
+        "A": "La fechas como pide, porque la responsabilidad es de quien da la orden.",
+        "B": "Te niegas con respeto, explicas el riesgo legal y dejas la fecha real.",
+        "C": "La fechas como pide, pero dejas una nota privada con la fecha verdadera.",
+        "D": "Pides que otro compañero firme el acta para no quedar comprometido tú."
+      },
+      "correcta": "B",
+      "explicacion": "Alterar la fecha de un documento público para aparentar que se cumplieron los términos puede constituir falsedad ideológica en documento público y falta disciplinaria gravísima. La obediencia debida no ampara órdenes manifiestamente ilegales. El comportamiento ético exige negarse con respeto, explicar el riesgo y, si la presión continúa, escalar por los canales institucionales. Trasladar la firma a otro compañero no corrige la ilegalidad.",
+      "norma": "Competencia: Comportamiento ético; Ley 1952 de 2019 (Código General Disciplinario)",
+      "dificultad": 2,
+      "etiquetas": [
+        "órdenes ilegales",
+        "documentos públicos"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "etica-005",
+      "contexto": "Te enteras de que un compañero cobra dinero a contribuyentes para «agilizar» sus devoluciones.",
+      "enunciado": "La actuación correcta es:",
+      "opciones": {
+        "A": "Hablar primero con él para que deje de hacerlo y no decir nada más.",
+        "B": "Esperar a tener pruebas completas antes de comentarle a cualquier persona.",
+        "C": "Denunciarlo ante las instancias competentes de la entidad.",
+        "D": "Comentarlo con el grupo de trabajo para que todos estén alerta."
+      },
+      "correcta": "C",
+      "explicacion": "Exigir dinero por un trámite puede constituir concusión o cohecho, y el servidor que conoce de una posible conducta delictiva o disciplinaria tiene el deber de denunciarla ante las autoridades competentes (oficina de control disciplinario interno, canales de denuncia o Fiscalía). No se exige tener pruebas completas: basta con informar lo que se conoce. Conversar solo con el implicado o divulgarlo informalmente no cumple el deber de denuncia y puede afectar la investigación.",
+      "norma": "Competencia: Comportamiento ético; deber de denuncia del servidor público",
+      "dificultad": 1,
+      "etiquetas": [
+        "deber de denuncia",
+        "corrupción"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

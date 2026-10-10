@@ -1,0 +1,105 @@
+{
+  "sesion": "orientacion-ciudadano",
+  "preguntas": [
+    {
+      "id": "orientacion-ciudadano-001",
+      "contexto": "Un contribuyente llega muy molesto al punto de atención porque su solicitud de devolución lleva semanas sin respuesta y alza la voz frente a los demás usuarios.",
+      "enunciado": "¿Cuál es la mejor manera de atenderlo?",
+      "opciones": {
+        "A": "Pedirle que se calme o, de lo contrario, llamar de inmediato al personal de seguridad.",
+        "B": "Decirle que ese trámite no es de tu área y que vuelva otro día a preguntar.",
+        "C": "Darle la razón en todo y prometerle que tendrá una respuesta el día de mañana.",
+        "D": "Escucharlo con calma, consultar el estado del trámite y explicarle los pasos a seguir."
+      },
+      "correcta": "D",
+      "explicacion": "La orientación al usuario y al ciudadano implica escuchar activamente, mostrar empatía, mantener la calma y dar información veraz y precisa sobre el estado del trámite y los siguientes pasos. Prometer lo que no depende de ti genera nuevas frustraciones; remitirlo sin orientarlo o amenazarlo deteriora el servicio. Solo ante agresión real se acude a seguridad.",
+      "norma": "Competencia comportamental: Orientación al usuario y al ciudadano",
+      "dificultad": 1,
+      "etiquetas": [
+        "usuario difícil",
+        "empatía"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "orientacion-ciudadano-002",
+      "contexto": "Recibes por escrito una petición dirigida a la DIAN, pero el asunto es de competencia de la alcaldía municipal (impuesto predial).",
+      "enunciado": "Según el CPACA, ¿qué debes hacer?",
+      "opciones": {
+        "A": "Archivarla sin trámite, porque el impuesto predial no es competencia de la DIAN.",
+        "B": "Informarle dentro de los 5 días y remitir la petición a la autoridad competente.",
+        "C": "Responderla de fondo con base en tu conocimiento general del impuesto predial.",
+        "D": "Devolverla al ciudadano para que él mismo la radique en la alcaldía municipal."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 21 CPACA (Ley 1755 de 2015): si la autoridad a quien se dirige la petición no es la competente, debe informarlo de inmediato al interesado si actúa verbalmente, o dentro de los 5 días siguientes a la recepción si obró por escrito. Dentro de ese término debe remitir la petición al competente y enviar copia del oficio remisorio al peticionario. Si no existe funcionario competente, así se le comunica. Los términos para decidir se cuentan desde la recepción por la autoridad competente.",
+      "norma": "Ley 1437 de 2011, art. 21 (Ley 1755 de 2015)",
+      "dificultad": 2,
+      "etiquetas": [
+        "falta de competencia",
+        "derecho de petición"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "orientacion-ciudadano-003",
+      "contexto": "Un adulto mayor se acerca confundido porque recibió un correo sobre su RUT y no sabe si es real ni qué hacer.",
+      "enunciado": "¿Cuál es la actuación que mejor refleja la orientación al ciudadano?",
+      "opciones": {
+        "A": "Remitirlo a la página web de la DIAN para que busque allí la información que necesita.",
+        "B": "Atenderlo con prioridad, revisar con él el mensaje y explicarle los canales oficiales.",
+        "C": "Pedirle que regrese con un familiar que sepa de tecnología para poder ayudarlo.",
+        "D": "Decirle que ignore todos los correos que reciba de la DIAN, porque suelen ser falsos."
+      },
+      "correcta": "B",
+      "explicacion": "La orientación al ciudadano implica comprender sus necesidades, dar atención preferente a adultos mayores (art. 5 num. 6 CPACA), usar lenguaje claro y acompañarlo para que resuelva su situación. También previene fraudes por suplantación, informando los canales oficiales. Remitirlo a la web o condicionarlo a un familiar no resuelve su necesidad; decirle que ignore todo puede llevarlo a incumplir obligaciones reales.",
+      "norma": "Competencia comportamental: Orientación al usuario y al ciudadano; Ley 1437 de 2011, art. 5",
+      "dificultad": 1,
+      "etiquetas": [
+        "atención preferencial",
+        "lenguaje claro"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "orientacion-ciudadano-004",
+      "contexto": "Un contribuyente pregunta por correo cómo corregir su declaración. La respuesta está en una guía de la página web de la DIAN.",
+      "enunciado": "¿Cuál es la respuesta que mejor refleja la orientación al ciudadano?",
+      "opciones": {
+        "A": "Responderle que la información está publicada en la página web.",
+        "B": "Indicarle que pida una cita presencial para explicarle el trámite.",
+        "C": "Remitirlo a un contador público para que le haga la corrección.",
+        "D": "Explicarle los pasos básicos y enviarle el enlace directo a la guía."
+      },
+      "correcta": "D",
+      "explicacion": "La orientación al ciudadano implica resolver efectivamente su necesidad con información clara, completa y oportuna, facilitándole el acceso. Explicar lo esencial y enviar el enlace directo resuelve la consulta por el mismo canal. Remitirlo genéricamente a la web, a una cita presencial o a un tercero le traslada cargas innecesarias.",
+      "norma": "Competencia: Orientación al usuario y al ciudadano",
+      "dificultad": 1,
+      "etiquetas": [
+        "canales de atención",
+        "resolutividad"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "orientacion-ciudadano-005",
+      "contexto": "Durante la atención, un ciudadano te pide que le digas si su vecino ha presentado declaración de renta, porque sospecha que evade impuestos.",
+      "enunciado": "¿Cómo debes responder?",
+      "opciones": {
+        "A": "Consultas y le confirmas solo si el vecino declaró, sin dar valores.",
+        "B": "Le dices que no puedes darle información y das por terminada la atención.",
+        "C": "Le pides los datos del vecino y le prometes informarle el resultado.",
+        "D": "Le explicas la reserva y lo orientas a denunciar por el canal oficial."
+      },
+      "correcta": "D",
+      "explicacion": "La información tributaria de terceros tiene reserva (art. 583 ET), así que no puede revelarse, ni siquiera si declaró o no. La orientación al ciudadano no termina en el «no»: hay que explicar el motivo y ofrecer una alternativa útil, como el canal de denuncias de la DIAN para reportar posibles conductas de evasión, sin prometer resultados que no puede conocer.",
+      "norma": "Estatuto Tributario, art. 583; competencia: Orientación al ciudadano",
+      "dificultad": 2,
+      "etiquetas": [
+        "reserva",
+        "denuncias"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

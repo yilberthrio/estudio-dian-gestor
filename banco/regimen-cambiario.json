@@ -1,0 +1,181 @@
+{
+  "sesion": "regimen-cambiario",
+  "preguntas": [
+    {
+      "id": "regimen-cambiario-001",
+      "contexto": "",
+      "enunciado": "¿Quién ejerce la función de autoridad cambiaria en Colombia?",
+      "opciones": {
+        "A": "La DIAN.",
+        "B": "La Junta Directiva del Banco de la República.",
+        "C": "La Superintendencia Financiera.",
+        "D": "El Ministerio de Comercio, Industria y Turismo."
+      },
+      "correcta": "B",
+      "explicacion": "Conforme al art. 371 C.P. y las Leyes 9 de 1991 (ley marco cambiaria) y 31 de 1992, la Junta Directiva del Banco de la República es la autoridad monetaria, cambiaria y crediticia: expide la regulación cambiaria, hoy principalmente la Resolución Externa 1 de 2018. La DIAN, la Superintendencia de Sociedades y la Superintendencia Financiera vigilan y controlan el cumplimiento del régimen, cada una en lo de su competencia.",
+      "norma": "Constitución Política, art. 371; Ley 9 de 1991; Ley 31 de 1992",
+      "dificultad": 1,
+      "etiquetas": [
+        "autoridad cambiaria"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "regimen-cambiario-002",
+      "contexto": "",
+      "enunciado": "¿Cuál de las siguientes operaciones es de canalización obligatoria a través del mercado cambiario?",
+      "opciones": {
+        "A": "El pago de servicios turísticos prestados en Colombia a un extranjero.",
+        "B": "La compra de divisas en efectivo para un viaje personal.",
+        "C": "El pago de las importaciones de bienes.",
+        "D": "Las donaciones entre particulares residentes."
+      },
+      "correcta": "C",
+      "explicacion": "El régimen cambiario (Ley 9 de 1991 y regulación de la Junta Directiva del Banco de la República) establece operaciones de canalización obligatoria a través de los intermediarios del mercado cambiario o cuentas de compensación: importaciones y exportaciones de bienes, operaciones de endeudamiento externo, inversiones de capital del exterior y de capital colombiano en el exterior, inversiones financieras en el exterior, avales y garantías en moneda extranjera, y operaciones de derivados. Los servicios y transferencias son, en general, del mercado libre (no obligatorio).",
+      "norma": "Ley 9 de 1991; Resolución Externa 1 de 2018 JDBR",
+      "dificultad": 2,
+      "etiquetas": [
+        "canalización",
+        "mercado cambiario"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "regimen-cambiario-003",
+      "contexto": "",
+      "enunciado": "En materia de control cambiario, ¿cuál es la competencia de la DIAN?",
+      "opciones": {
+        "A": "Vigilar a los bancos y demás entidades que actúan como intermediarios del mercado cambiario.",
+        "B": "Controlar las operaciones cambiarias del comercio exterior y a los profesionales del cambio.",
+        "C": "Controlar exclusivamente la inversión extranjera y el endeudamiento externo de las sociedades.",
+        "D": "Expedir la regulación cambiaria del país y fijar las condiciones de las operaciones de cambio."
+      },
+      "correcta": "B",
+      "explicacion": "Distribución de competencias de control cambiario: la DIAN controla las operaciones de importación y exportación de bienes y servicios, los gastos asociados, la financiación de importaciones y exportaciones, la subfacturación y sobrefacturación, y a los profesionales de compra y venta de divisas. La Superintendencia de Sociedades controla las inversiones internacionales y el endeudamiento externo de las sociedades que no vigilan otras superintendencias. La Superintendencia Financiera vigila a los intermediarios del mercado cambiario que supervisa. La regulación la expide el Banco de la República.",
+      "norma": "Ley 9 de 1991; Decreto 2245 de 2011; Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "competencia DIAN"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "regimen-cambiario-004",
+      "contexto": "",
+      "enunciado": "¿Qué norma establece el régimen sancionatorio y el procedimiento administrativo cambiario que aplica la DIAN?",
+      "opciones": {
+        "A": "El Decreto Ley 2245 de 2011.",
+        "B": "La Ley 1437 de 2011 (CPACA).",
+        "C": "El Decreto 1165 de 2019.",
+        "D": "La Ley 1712 de 2014."
+      },
+      "correcta": "A",
+      "explicacion": "El Decreto Ley 2245 de 2011 establece el régimen sancionatorio y el procedimiento administrativo cambiario a cargo de la DIAN: infracciones, sanciones (multas), procedimiento de investigación y actos aplicables (requerimiento de información, acta de cargos, resolución sancionatoria, recursos). El Decreto 1165 de 2019 es el régimen aduanero, la Ley 1437 es el CPACA y la Ley 1712 es la Ley de Transparencia.",
+      "norma": "Decreto Ley 2245 de 2011",
+      "dificultad": 2,
+      "etiquetas": [
+        "sancionatorio cambiario"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "regimen-cambiario-005",
+      "contexto": "Un exportador colombiano vende mercancía al exterior y recibe el pago de sus clientes, pero no lo canaliza a través de un intermediario del mercado cambiario ni de una cuenta de compensación.",
+      "enunciado": "¿Qué ocurre con esta conducta?",
+      "opciones": {
+        "A": "No es irregular, porque las exportaciones son operaciones de libre negociación.",
+        "B": "Solo genera una sanción tributaria por omisión de ingresos en la declaración de renta.",
+        "C": "Es competencia exclusiva de la Superintendencia Financiera, que vigila las divisas.",
+        "D": "Puede ser una infracción cambiaria, por no canalizar una operación obligatoria."
+      },
+      "correcta": "D",
+      "explicacion": "Los pagos de exportaciones de bienes son operaciones de canalización obligatoria. No canalizarlas a través del mercado cambiario puede configurar una infracción cambiaria que la DIAN investiga y sanciona conforme al Decreto Ley 2245 de 2011, porque se trata de operaciones de comercio exterior de su competencia. Además, puede tener efectos tributarios (omisión de ingresos), que se investigan por la vía tributaria.",
+      "norma": "Ley 9 de 1991; Decreto Ley 2245 de 2011; Res. Externa 1 de 2018 JDBR",
+      "dificultad": 3,
+      "etiquetas": [
+        "infracciones",
+        "canalización"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "regimen-cambiario-006",
+      "contexto": "",
+      "enunciado": "En el régimen cambiario, las cuentas de compensación son:",
+      "opciones": {
+        "A": "Cuentas en pesos que la DIAN abre para recaudar las multas cambiarias.",
+        "B": "Cuentas en el exterior, registradas ante el Banco de la República, para canalizar divisas.",
+        "C": "Cuentas de ahorro que los bancos ofrecen para compensar la devaluación del peso frente al dólar.",
+        "D": "Cuentas contables internas que usan los importadores para registrar sus pagos al exterior."
+      },
+      "correcta": "B",
+      "explicacion": "Las cuentas de compensación son cuentas bancarias en moneda extranjera abiertas en entidades financieras del exterior, registradas ante el Banco de la República, que los residentes pueden usar para canalizar operaciones de obligatoria canalización (por ejemplo, importaciones y exportaciones de bienes) sin pasar por un intermediario del mercado cambiario. Sus titulares deben reportar periódicamente los movimientos. La DIAN controla su uso en las operaciones de su competencia.",
+      "norma": "Resolución Externa 1 de 2018 JDBR; Ley 9 de 1991",
+      "dificultad": 2,
+      "etiquetas": [
+        "cuentas de compensación"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "regimen-cambiario-007",
+      "contexto": "",
+      "enunciado": "¿Cuál de los siguientes NO es un intermediario del mercado cambiario (IMC)?",
+      "opciones": {
+        "A": "Un banco comercial.",
+        "B": "Una corporación financiera vigilada.",
+        "C": "Una sociedad comisionista de bolsa.",
+        "D": "Un profesional del cambio."
+      },
+      "correcta": "D",
+      "explicacion": "Son intermediarios del mercado cambiario, entre otros: bancos comerciales, bancos hipotecarios, corporaciones financieras, compañías de financiamiento, cooperativas financieras, sociedades comisionistas de bolsa, Bancoldex y las sociedades de intermediación cambiaria y de servicios financieros especiales (SICSFE). Los profesionales de compra y venta de divisas en efectivo y cheques de viajero (casas de cambio no vigiladas por la Superfinanciera) no son IMC: operan en el mercado libre bajo control de la DIAN.",
+      "norma": "Resolución Externa 1 de 2018 JDBR",
+      "dificultad": 3,
+      "etiquetas": [
+        "IMC",
+        "profesionales del cambio"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "regimen-cambiario-008",
+      "contexto": "",
+      "enunciado": "Al canalizar una operación de cambio a través de un IMC, el residente debe suministrar la «información de los datos mínimos» de la operación (antes llamada declaración de cambio). ¿Cuál es su propósito?",
+      "opciones": {
+        "A": "Identificar la naturaleza de la operación (numeral cambiario) para su registro y control.",
+        "B": "Liquidar el impuesto sobre la renta que se causa por cada operación de cambio realizada.",
+        "C": "Autorizar previamente la operación ante el Ministerio de Comercio, Industria y Turismo.",
+        "D": "Certificar el origen de las mercancías para que obtengan preferencias arancelarias."
+      },
+      "correcta": "A",
+      "explicacion": "Con la información de los datos mínimos (antes declaración de cambio), el residente informa al IMC la naturaleza de la operación mediante el numeral cambiario correspondiente (por ejemplo, pago de importación de bienes), el monto, las partes, etc. Esa información es la base de las estadísticas cambiarias del Banco de la República y del control que ejercen la DIAN y las superintendencias. Suministrar información incorrecta puede constituir infracción cambiaria.",
+      "norma": "Resolución Externa 1 de 2018 JDBR; Circular Reglamentaria DCIN-83",
+      "dificultad": 3,
+      "etiquetas": [
+        "datos mínimos",
+        "numeral cambiario"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "regimen-cambiario-009",
+      "contexto": "",
+      "enunciado": "Las operaciones que no son de canalización obligatoria (mercado libre), como el pago de muchos servicios:",
+      "opciones": {
+        "A": "Están prohibidas a través de los intermediarios del mercado cambiario.",
+        "B": "Requieren autorización previa de la Junta Directiva del Banco de la República.",
+        "C": "Pueden canalizarse voluntariamente a través del mercado cambiario.",
+        "D": "Solo pueden pagarse en efectivo y en moneda legal colombiana."
+      },
+      "correcta": "C",
+      "explicacion": "El régimen cambiario distingue el mercado cambiario (operaciones de canalización obligatoria: importaciones y exportaciones de bienes, endeudamiento externo, inversiones internacionales, avales y derivados) del mercado libre (las demás operaciones, como servicios y transferencias). Las operaciones del mercado libre pueden canalizarse voluntariamente a través de los IMC o de cuentas de compensación, y en ese caso deben informarse los datos mínimos correspondientes.",
+      "norma": "Ley 9 de 1991; Resolución Externa 1 de 2018 JDBR",
+      "dificultad": 2,
+      "etiquetas": [
+        "mercado libre",
+        "canalización"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

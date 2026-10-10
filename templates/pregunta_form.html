@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block titulo %}{{ 'Editar pregunta #' ~ p.id if p else 'Nueva pregunta' }} · Estudio DIAN{% endblock %}
+{% block contenido %}
+<h1>{{ 'Editar pregunta #' ~ p.id if p else 'Nueva pregunta' }}</h1>
+{% if p and p.uid and not autor %}
+<div class="flash info">Esta pregunta viene del banco compartido ({{ p.uid }}). Si la editas, el cambio queda solo en tu copia
+  y se reemplazará cuando el banco se actualice. Si encontraste un error, márcala para revisar.</div>
+{% elif autor %}
+<div class="flash info">Modo autor activo: al guardar, el cambio se escribe en <code>banco/</code>{% if p and p.uid %} ({{ p.uid }}){% endif %}.</div>
+{% endif %}
+<form method="post" class="panel">
+  <input type="hidden" name="volver" value="{{ volver or '' }}">
+  <div class="fila">
+    <div class="campo" style="flex:3 1 260px"><label>Sesión</label>
+      <select name="sesion_id" required>
+        {% for m in modulos %}<optgroup label="{{ m.nombre }}">
+          {% for s in m.sesiones %}<option value="{{ s.id }}" {{ 'selected' if p and p.sesion_id == s.id }}>{{ s.nombre }}</option>{% endfor %}
+        </optgroup>{% endfor %}
+      </select></div>
+    <div class="campo" style="flex:1 1 120px"><label>Dificultad</label>
+      <select name="dificultad">
+        {% for d, t in [(1, '1 · Básica'), (2, '2 · Media'), (3, '3 · Alta')] %}
+          <option value="{{ d }}" {{ 'selected' if (p.dificultad if p else 2) == d }}>{{ t }}</option>{% endfor %}
+      </select></div>
+  </div>
+  <div class="campo"><label>Contexto / caso (opcional)</label><textarea name="contexto">{{ p.contexto if p else '' }}</textarea></div>
+  <div class="campo"><label>Enunciado</label><textarea name="enunciado" required>{{ p.enunciado if p else '' }}</textarea></div>
+  {% for l in ['a', 'b', 'c', 'd'] %}
+    <div class="campo fila" style="align-items:center">
+      <label class="check" style="flex:0 0 auto"><input type="radio" name="correcta" value="{{ l|upper }}" required
+        {{ 'checked' if p and p.correcta == l|upper }}> Correcta</label>
+      <div style="flex:1 1 300px"><input type="text" name="opcion_{{ l }}" placeholder="Opción {{ l|upper }}" required value="{{ p['opcion_' ~ l] if p else '' }}"></div>
+    </div>
+  {% endfor %}
+  <div class="campo"><label>Explicación de la respuesta</label><textarea name="explicacion" required style="min-height:110px">{{ p.explicacion if p else '' }}</textarea></div>
+  <div class="fila">
+    <div class="campo"><label>Norma / fuente</label><input type="text" name="norma" value="{{ p.norma if p else '' }}" placeholder="Ej. Ley 1437 de 2011, art. 14"></div>
+    <div class="campo"><label>Etiquetas (separadas por coma)</label><input type="text" name="etiquetas" value="{{ p.etiquetas if p else '' }}"></div>
+  </div>
+  <div class="fila">
+    <label class="check"><input type="checkbox" name="activa" {{ 'checked' if not p or p.activa }}> Activa (aparece en rondas)</label>
+    <label class="check"><input type="checkbox" name="revisar" {{ 'checked' if p and p.revisar }}> Marcada para revisar</label>
+  </div>
+  <div class="campo" style="margin-top:10px"><label>Nota de revisión</label><input type="text" name="nota_revision" value="{{ p.nota_revision or '' if p else '' }}"></div>
+  <div class="acciones">
+    <button class="btn prim">Guardar</button>
+    <a class="btn" href="{{ volver or url_for('banco') }}">Cancelar</a>
+  </div>
+</form>
+
+{% if p %}
+<div class="acciones" style="margin-top:12px">
+  <form method="post" action="{{ url_for('eliminar_pregunta', pid=p.id) }}" onsubmit="return confirm('¿Eliminar esta pregunta?')">
+    <button class="btn peq peligro">Eliminar pregunta</button></form>
+  <span class="peq suave">Origen: {{ p.origen or '–' }} · creada {{ p.creada|fecha }}</span>
+</div>
+{% if historial %}
+<h2>Historial de respuestas</h2>
+<div class="panel"><table>
+  <tr><th>Fecha</th><th>Ronda</th><th>Elegida</th><th>Resultado</th><th>Confianza</th><th class="n">Tiempo</th></tr>
+  {% for h in historial %}
+  <tr><td>{{ h.fecha|fecha }}</td><td><a href="{{ url_for('resultado', rid=h.ronda_id) }}">#{{ h.ronda_id }}</a></td>
+    <td>{{ h.elegida or '—' }}</td><td>{% if h.correcta %}<span class="chip ok">Correcta</span>{% else %}<span class="chip mal">Incorrecta</span>{% endif %}</td>
+    <td>{{ conf_nombres.get(h.confianza, '–') }}</td><td class="n">{{ h.tiempo_seg|round(0)|int if h.tiempo_seg else '–' }} s</td></tr>
+  {% endfor %}
+</table>
+<p class="peq suave">La letra «Elegida» es la original de la pregunta (las opciones se barajan al mostrarse).</p></div>
+{% endif %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,199 @@
+{
+  "sesion": "fiscalizacion-aduanera",
+  "preguntas": [
+    {
+      "id": "fiscalizacion-aduanera-001",
+      "contexto": "",
+      "enunciado": "Según el Decreto 1165 de 2019, ¿cuál es la diferencia entre aprehensión y decomiso?",
+      "opciones": {
+        "A": "Son sinónimos; ambos significan la destrucción inmediata de la mercancía ilegal.",
+        "B": "La aprehensión es una medida cautelar; el decomiso hace que la mercancía pase a la Nación.",
+        "C": "La aprehensión la ordena un juez penal y el decomiso lo ordena la Policía Fiscal y Aduanera.",
+        "D": "El decomiso es una medida provisional y la aprehensión es la decisión definitiva."
+      },
+      "correcta": "B",
+      "explicacion": "Según las definiciones del Decreto 1165 de 2019: la aprehensión es una medida cautelar consistente en la retención de mercancías respecto de las cuales se configura alguno de los eventos previstos como causales de aprehensión. El decomiso es el acto en virtud del cual pasan a poder de la Nación las mercancías respecto de las cuales no se acreditó el cumplimiento de los trámites para su presentación, declaración y legal introducción o permanencia en el territorio aduanero nacional. Primero se aprehende y luego, tras el proceso, se decide sobre el decomiso.",
+      "norma": "Decreto 1165 de 2019, art. 3 (definiciones) y régimen de decomiso",
+      "dificultad": 1,
+      "etiquetas": [
+        "aprehensión",
+        "decomiso"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-aduanera-002",
+      "contexto": "",
+      "enunciado": "El control aduanero que se ejerce a partir del levante o de la autorización de embarque de las mercancías se denomina:",
+      "opciones": {
+        "A": "Control anterior.",
+        "B": "Control simultáneo.",
+        "C": "Control posterior.",
+        "D": "Control preventivo de origen."
+      },
+      "correcta": "C",
+      "explicacion": "El control aduanero se ejerce en tres momentos: control anterior (antes de la presentación de la declaración, con base en información previa: manifiestos, documentos de viaje, etc.); control simultáneo (durante el proceso de desaduanamiento, hasta el levante o la autorización de embarque, mediante inspección física o documental); y control posterior (después del levante o la autorización de embarque, mediante fiscalización a importadores, exportadores y demás usuarios). La Fiscalización aduanera ejerce principalmente el control posterior.",
+      "norma": "Decreto 1165 de 2019, art. 3 (definiciones)",
+      "dificultad": 1,
+      "etiquetas": [
+        "control aduanero"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-aduanera-003",
+      "contexto": "En una acción de control a un establecimiento comercial, funcionarios de la DIAN encuentran mercancía de procedencia extranjera. El comerciante no presenta la declaración de importación ni ningún documento que ampare su legal introducción al país.",
+      "enunciado": "¿Qué procede?",
+      "opciones": {
+        "A": "Aprehenderla e iniciar el proceso en el que el interesado puede acreditar su legalidad.",
+        "B": "Destruir inmediatamente la mercancía en el lugar, dejando constancia en un acta.",
+        "C": "Imponer solo una multa tributaria al comerciante y dejarle la mercancía en su poder.",
+        "D": "Otorgar un plazo de un año para que el comerciante la nacionalice pagando los tributos."
+      },
+      "correcta": "A",
+      "explicacion": "La mercancía de procedencia extranjera que no esté amparada en una declaración de importación u otro documento que acredite su legal introducción o permanencia en el territorio aduanero nacional está incursa en causal de aprehensión. Se aprehende (medida cautelar) y se adelanta el proceso de decomiso, en el que el interesado puede presentar documento de objeción a la aprehensión y pruebas. Si no se acredita la legalidad, se decomisa. La destrucción solo procede según la disposición final de mercancías y con los procedimientos y actas previstos.",
+      "norma": "Decreto 1165 de 2019 – causales de aprehensión y proceso de decomiso",
+      "dificultad": 2,
+      "etiquetas": [
+        "aprehensión",
+        "control posterior"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-aduanera-004",
+      "contexto": "",
+      "enunciado": "El acto por el cual la autoridad aduanera permite a los declarantes la disposición de la mercancía, previo el cumplimiento de los requisitos legales o el otorgamiento de garantía, se denomina:",
+      "opciones": {
+        "A": "Embarque.",
+        "B": "Aprehensión.",
+        "C": "Abandono legal.",
+        "D": "Levante."
+      },
+      "correcta": "D",
+      "explicacion": "El levante es el acto por el cual la autoridad aduanera permite a los declarantes la disposición de la mercancía, previo el cumplimiento de los requisitos legales o el otorgamiento de garantía cuando hay lugar a ello. Con el levante termina el control simultáneo y comienza el posterior. El abandono legal es la situación de la mercancía no declarada ni retirada dentro de los términos de almacenamiento.",
+      "norma": "Decreto 1165 de 2019, art. 3 (definiciones)",
+      "dificultad": 1,
+      "etiquetas": [
+        "levante",
+        "desaduanamiento"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-aduanera-005",
+      "contexto": "",
+      "enunciado": "La figura de Operador Económico Autorizado (OEA) en Colombia tiene como finalidad:",
+      "opciones": {
+        "A": "Autorizar a cualquier persona a ingresar mercancía sin declaración, pagando una tarifa fija.",
+        "B": "Certificar a quienes demuestran cumplimiento y seguridad en la cadena, dándoles facilidades.",
+        "C": "Sustituir a la DIAN en las funciones de fiscalización y control posterior de mercancías.",
+        "D": "Fijar los aranceles de importación aplicables a los países con tratados de libre comercio."
+      },
+      "correcta": "B",
+      "explicacion": "El OEA, regulado por el Decreto 3568 de 2011 y basado en el Marco SAFE de la Organización Mundial de Aduanas, es una certificación que otorga la DIAN (con la Policía Nacional, el ICA y el INVIMA, según el caso) a los actores de la cadena de suministro internacional que demuestran un historial de cumplimiento, solvencia y estándares mínimos de seguridad. A cambio, reciben beneficios como menos inspecciones físicas y documentales, y facilidades operativas.",
+      "norma": "Decreto 3568 de 2011",
+      "dificultad": 2,
+      "etiquetas": [
+        "OEA",
+        "facilitación"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-aduanera-006",
+      "contexto": "",
+      "enunciado": "La clasificación arancelaria de las mercancías en Colombia se basa en:",
+      "opciones": {
+        "A": "El Sistema Armonizado de Designación y Codificación de Mercancías de la OMA.",
+        "B": "La Clasificación Industrial Internacional Uniforme (CIIU) que adopta el DANE.",
+        "C": "El Plan Único de Cuentas que usan los comerciantes para su contabilidad.",
+        "D": "El catálogo de productos que cada importador registra en la Cámara de Comercio."
+      },
+      "correcta": "A",
+      "explicacion": "El Arancel de Aduanas colombiano se basa en la nomenclatura del Sistema Armonizado de Designación y Codificación de Mercancías de la Organización Mundial de Aduanas, adoptada también en la Comunidad Andina (NANDINA) y desarrollada a 10 dígitos en la subpartida nacional. La clasificación correcta determina el arancel, el IVA aplicable y los requisitos de importación. La CIIU clasifica actividades económicas (se usa en el RUT), no mercancías.",
+      "norma": "Arancel de Aduanas; Sistema Armonizado – OMA",
+      "dificultad": 1,
+      "etiquetas": [
+        "clasificación arancelaria"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-aduanera-007",
+      "contexto": "",
+      "enunciado": "Según el Acuerdo de Valoración de la OMC, aplicado en Colombia, ¿cuál es el primer método para determinar el valor en aduana de las mercancías importadas?",
+      "opciones": {
+        "A": "El valor deductivo, partiendo del precio de reventa en el país.",
+        "B": "El valor reconstruido, partiendo del costo de producción.",
+        "C": "El valor de transacción: el precio realmente pagado o por pagar.",
+        "D": "El valor de mercancías idénticas importadas en el mismo periodo."
+      },
+      "correcta": "C",
+      "explicacion": "El Acuerdo sobre Valoración en Aduana de la OMC (art. VII del GATT), aplicado en la CAN y en Colombia, establece métodos de aplicación sucesiva. El primero y principal es el valor de transacción: el precio realmente pagado o por pagar por las mercancías, con los ajustes del art. 8. Si no puede aplicarse, se usan en orden: valor de mercancías idénticas, de similares, deductivo, reconstruido y el último recurso. Declarar un precio menor al real (subfacturación) es una conducta típica que investiga la fiscalización aduanera.",
+      "norma": "Acuerdo de Valoración de la OMC; normativa andina de valoración",
+      "dificultad": 2,
+      "etiquetas": [
+        "valoración aduanera"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-aduanera-008",
+      "contexto": "",
+      "enunciado": "¿Qué norma reglamenta el régimen sancionatorio y el de decomiso de mercancías en materia aduanera, en desarrollo de la Ley 1609 de 2013?",
+      "opciones": {
+        "A": "El Decreto Ley 2245 de 2011.",
+        "B": "La Ley 1762 de 2015.",
+        "C": "El Decreto 920 de 2023.",
+        "D": "La Ley 1437 de 2011."
+      },
+      "correcta": "C",
+      "explicacion": "El Decreto 920 de 2023 reglamenta el régimen sancionatorio y el de decomiso de mercancías en materia aduanera, junto con el procedimiento aplicable, en desarrollo de la Ley Marco de Aduanas (Ley 1609 de 2013), y complementa el Decreto 1165 de 2019. El Decreto Ley 2245 de 2011 es el régimen sancionatorio cambiario; la Ley 1762 de 2015 es la ley anticontrabando (que incluye aspectos penales); la Ley 1437 es el CPACA.",
+      "norma": "Decreto 920 de 2023; Ley 1609 de 2013",
+      "dificultad": 3,
+      "etiquetas": [
+        "régimen sancionatorio aduanero"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-aduanera-009",
+      "contexto": "",
+      "enunciado": "Las agencias de aduanas son:",
+      "opciones": {
+        "A": "Dependencias de la DIAN encargadas de inspeccionar la mercancía en los puertos.",
+        "B": "Oficinas del Ministerio de Comercio que expiden los registros de importación.",
+        "C": "Entidades de la Policía Fiscal y Aduanera dedicadas a la aprehensión de mercancías ilegales.",
+        "D": "Personas jurídicas autorizadas por la DIAN para representar a terceros ante la aduana."
+      },
+      "correcta": "D",
+      "explicacion": "Las agencias de aduanas son personas jurídicas autorizadas por la DIAN para prestar servicios de representación a los importadores, exportadores o declarantes en el desaduanamiento de las mercancías y demás trámites aduaneros. Responden por la exactitud de la información que declaran y están sujetas al régimen sancionatorio aduanero. No son parte de la DIAN, de la POLFA ni del Ministerio de Comercio.",
+      "norma": "Decreto 1165 de 2019 – agencias de aduanas",
+      "dificultad": 1,
+      "etiquetas": [
+        "usuarios aduaneros"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-aduanera-010",
+      "contexto": "",
+      "enunciado": "Según la Ley 1004 de 2005, para efectos de los tributos aduaneros, las mercancías que ingresan a una zona franca desde el exterior:",
+      "opciones": {
+        "A": "Se consideran fuera del territorio aduanero nacional.",
+        "B": "Se entienden nacionalizadas desde su ingreso a la zona franca, sin trámites.",
+        "C": "Pagan anticipadamente todos los tributos aduaneros al momento de su llegada.",
+        "D": "Quedan en abandono legal si no salen de la zona franca dentro de un mes."
+      },
+      "correcta": "A",
+      "explicacion": "La Ley 1004 de 2005 define la zona franca como un área geográficamente delimitada dentro del territorio nacional, donde se desarrollan actividades industriales de bienes y servicios o actividades comerciales, bajo una normatividad especial en materia tributaria, aduanera y de comercio exterior. Las mercancías ingresadas se consideran fuera del territorio aduanero nacional para efectos de los impuestos a las importaciones y a las exportaciones. Si después pasan al territorio aduanero nacional, deben importarse y pagar los tributos correspondientes.",
+      "norma": "Ley 1004 de 2005, art. 1",
+      "dificultad": 2,
+      "etiquetas": [
+        "zonas francas"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

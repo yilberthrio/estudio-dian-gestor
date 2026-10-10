@@ -1,0 +1,221 @@
+{
+  "sesion": "fiscalizacion-internacional",
+  "preguntas": [
+    {
+      "id": "fiscalizacion-internacional-001",
+      "contexto": "",
+      "enunciado": "El principio de plena competencia (arm's length), base del régimen de precios de transferencia, consiste en que:",
+      "opciones": {
+        "A": "Las operaciones con vinculados deben pactarse como si fueran entre partes independientes.",
+        "B": "Todas las empresas deben vender a precios del mercado internacional, aunque no sean vinculadas.",
+        "C": "Los precios entre vinculados se fijan libremente y no tienen efectos tributarios.",
+        "D": "La DIAN fija el precio de todas las operaciones de comercio exterior entre empresas."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 260-2 ET dispone que los contribuyentes que celebren operaciones con vinculados deben determinar, para efectos del impuesto sobre la renta, sus ingresos, costos, deducciones, activos y pasivos considerando los precios y márgenes de utilidad que se habrían utilizado en operaciones comparables con o entre partes independientes. Así se evita trasladar utilidades a jurisdicciones de menor tributación mediante precios manipulados.",
+      "norma": "Estatuto Tributario, arts. 260-1 y 260-2",
+      "dificultad": 1,
+      "etiquetas": [
+        "precios de transferencia"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-internacional-002",
+      "contexto": "",
+      "enunciado": "¿Cuál de los siguientes NO es uno de los métodos para determinar el precio o margen de utilidad en precios de transferencia (art. 260-3 ET)?",
+      "opciones": {
+        "A": "Precio comparable no controlado.",
+        "B": "Costo adicionado.",
+        "C": "Partición de utilidades.",
+        "D": "Valor catastral ajustado."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 260-3 ET establece los métodos: 1) precio comparable no controlado; 2) precio de reventa; 3) costo adicionado; 4) partición de utilidades; 5) márgenes transaccionales de utilidad de operación. Para las operaciones con commodities hay reglas especiales. El valor catastral se usa en impuestos sobre inmuebles, no en precios de transferencia.",
+      "norma": "Estatuto Tributario, art. 260-3",
+      "dificultad": 2,
+      "etiquetas": [
+        "precios de transferencia",
+        "métodos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-internacional-003",
+      "contexto": "",
+      "enunciado": "Según el artículo 10 del Estatuto Tributario, una persona natural es residente fiscal en Colombia, entre otros casos, cuando:",
+      "opciones": {
+        "A": "Tiene una cuenta bancaria en Colombia con movimientos durante el año gravable.",
+        "B": "Permanece en el país más de 183 días calendario dentro de un periodo de 365 días.",
+        "C": "Visita el país al menos una vez al año, sin importar cuántos días permanezca.",
+        "D": "Es propietaria de un inmueble en Colombia, sin importar dónde viva habitualmente."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 10 ET: son residentes fiscales, entre otros, las personas naturales que permanezcan en el país más de 183 días calendario (continuos o discontinuos, incluidos los días de entrada y salida) durante un periodo cualquiera de 365 días calendario consecutivos. También los nacionales que cumplan ciertos criterios (por ejemplo, que su núcleo familiar o el 50% o más de sus ingresos o activos estén en Colombia). Los residentes tributan sobre su renta mundial; los no residentes, solo sobre sus rentas de fuente nacional.",
+      "norma": "Estatuto Tributario, art. 10",
+      "dificultad": 2,
+      "etiquetas": [
+        "residencia fiscal"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-internacional-004",
+      "contexto": "",
+      "enunciado": "¿Cuál es el objetivo principal de los Convenios para Evitar la Doble Imposición (CDI) suscritos por Colombia?",
+      "opciones": {
+        "A": "Eliminar todos los impuestos sobre la renta entre los países que firman el convenio.",
+        "B": "Unificar las tarifas del IVA y de los aranceles de aduana entre todos los países firmantes.",
+        "C": "Repartir la potestad tributaria para que una renta no se grave dos veces y prevenir evasión.",
+        "D": "Permitir que las empresas escojan libremente en qué país pagar sus impuestos de renta."
+      },
+      "correcta": "C",
+      "explicacion": "Los CDI (con España, Chile, Suiza, Canadá, México, Corea, Portugal, República Checa e India, entre otros) son tratados que asignan la potestad tributaria sobre las distintas rentas entre los Estados contratantes, establecen métodos para eliminar la doble imposición (exención o descuento) y contienen cláusulas de intercambio de información y asistencia mutua para prevenir la evasión. Siguen en general el modelo de la OCDE.",
+      "norma": "Convenios para evitar la doble imposición – Modelo OCDE",
+      "dificultad": 1,
+      "etiquetas": [
+        "CDI",
+        "doble imposición"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-internacional-005",
+      "contexto": "",
+      "enunciado": "El Estándar Común de Reporte (CRS, por sus siglas en inglés), al que Colombia se adhirió, tiene como propósito:",
+      "opciones": {
+        "A": "Unificar las normas de contabilidad de las empresas multinacionales en todos los países.",
+        "B": "Intercambiar automáticamente información de cuentas financieras entre países.",
+        "C": "Establecer una tarifa mínima global del impuesto de renta para los grandes grupos.",
+        "D": "Regular el comercio electrónico transfronterizo y el cobro de IVA a plataformas digitales."
+      },
+      "correcta": "B",
+      "explicacion": "El CRS/ECR, desarrollado por la OCDE, obliga a las instituciones financieras a identificar las cuentas de no residentes y reportarlas a su administración tributaria, que las intercambia automáticamente con la jurisdicción de residencia del titular. Colombia lo aplica en el marco de la Convención sobre Asistencia Administrativa Mutua en Materia Fiscal (Ley 1661 de 2013); con EE. UU. aplica el FATCA. Es clave para la fiscalización internacional, porque permite detectar activos omitidos en el exterior.",
+      "norma": "Ley 1661 de 2013; Estatuto Tributario, art. 631-4",
+      "dificultad": 2,
+      "etiquetas": [
+        "intercambio de información",
+        "CRS"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-internacional-006",
+      "contexto": "",
+      "enunciado": "En el régimen de precios de transferencia, los contribuyentes obligados deben presentar:",
+      "opciones": {
+        "A": "Únicamente la declaración de renta, sin ninguna obligación adicional de información.",
+        "B": "Un certificado de la Cámara de Comercio que relacione a todos sus vinculados.",
+        "C": "La declaración de importación de cada operación realizada con sus vinculados.",
+        "D": "La declaración informativa y, si cumplen los topes, la documentación comprobatoria."
+      },
+      "correcta": "D",
+      "explicacion": "Los contribuyentes del impuesto sobre la renta que celebren operaciones con vinculados del exterior (o ubicados en zona franca o en jurisdicciones no cooperantes o de baja o nula imposición) y cumplan los topes de patrimonio o ingresos deben presentar la declaración informativa (art. 260-9 ET) y preparar la documentación comprobatoria (art. 260-5 ET: informe maestro, informe local y, en su caso, informe país por país). Su incumplimiento genera las sanciones del art. 260-11 ET.",
+      "norma": "Estatuto Tributario, arts. 260-5, 260-9 y 260-11",
+      "dificultad": 2,
+      "etiquetas": [
+        "precios de transferencia",
+        "obligaciones formales"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-internacional-007",
+      "contexto": "",
+      "enunciado": "Según el artículo 260-1 del Estatuto Tributario, para efectos de precios de transferencia existe vinculación, entre otros casos, cuando una persona:",
+      "opciones": {
+        "A": "Le compra mercancía a la otra durante más de dos periodos gravables seguidos.",
+        "B": "Posee, directa o indirectamente, más del 50% del capital de la otra.",
+        "C": "Comparte con la otra el mismo revisor fiscal o la misma firma contable.",
+        "D": "Tiene su domicilio en la misma ciudad que la otra sociedad del exterior."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 260-1 ET enumera los criterios de vinculación. Entre ellos: la subordinación (control directo o indirecto, como poseer más del 50% del capital), la pertenencia a un mismo grupo empresarial, el control conjunto, las operaciones con establecimientos permanentes y las operaciones con jurisdicciones no cooperantes o de baja o nula imposición. Las relaciones comerciales frecuentes, compartir proveedores de servicios o la ubicación no generan por sí solas vinculación.",
+      "norma": "Estatuto Tributario, art. 260-1",
+      "dificultad": 2,
+      "etiquetas": [
+        "vinculados",
+        "precios de transferencia"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-internacional-008",
+      "contexto": "",
+      "enunciado": "Según el artículo 20-1 del Estatuto Tributario, un establecimiento permanente es:",
+      "opciones": {
+        "A": "La sede principal de una sociedad nacional que lleva más de 10 años operando.",
+        "B": "Un lugar fijo de negocios en el país, por el que una empresa extranjera opera.",
+        "C": "Una sucursal que una sociedad colombiana abre en el exterior para exportar sus productos.",
+        "D": "El inmueble donde una persona natural residente desarrolla de forma permanente su profesión."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 20-1 ET define el establecimiento permanente como un lugar fijo de negocios ubicado en el país, a través del cual una empresa extranjera, sea sociedad o persona natural sin residencia en Colombia, realiza toda o parte de su actividad. Incluye sucursales, agencias, oficinas, fábricas, talleres, minas y otros lugares de extracción de recursos naturales; también se configura por medio de agentes dependientes. Las rentas atribuibles al establecimiento permanente tributan en Colombia.",
+      "norma": "Estatuto Tributario, arts. 20-1 y 20-2",
+      "dificultad": 2,
+      "etiquetas": [
+        "establecimiento permanente"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-internacional-009",
+      "contexto": "",
+      "enunciado": "El informe país por país, que deben presentar ciertos grupos multinacionales, proviene del plan de acción BEPS de la OCDE/G20. ¿A qué acción corresponde?",
+      "opciones": {
+        "A": "Acción 1: desafíos fiscales de la economía digital.",
+        "B": "Acción 5: prácticas fiscales perniciosas y nocivas.",
+        "C": "Acción 13: documentación de precios de transferencia.",
+        "D": "Acción 15: instrumento multilateral para tratados."
+      },
+      "correcta": "C",
+      "explicacion": "El plan BEPS (Base Erosion and Profit Shifting) de la OCDE/G20 tiene 15 acciones contra la erosión de la base imponible y el traslado de beneficios. La Acción 13 reexaminó la documentación de precios de transferencia y creó el enfoque de tres niveles: informe maestro, informe local e informe país por país. Colombia lo incorporó en el art. 260-5 ET. La Acción 1 trata la economía digital, la 5 las prácticas fiscales perniciosas y la 15 el instrumento multilateral.",
+      "norma": "Plan de acción BEPS OCDE/G20; Estatuto Tributario, art. 260-5",
+      "dificultad": 3,
+      "etiquetas": [
+        "BEPS",
+        "informe país por país"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-internacional-010",
+      "contexto": "Una persona natural residente en Colombia obtuvo rentas en España por arrendamientos y pagó allí impuesto sobre la renta.",
+      "enunciado": "Según el artículo 254 del Estatuto Tributario, ¿cómo se evita la doble tributación en su declaración colombiana?",
+      "opciones": {
+        "A": "Excluyendo esas rentas de la declaración, porque ya tributaron en España.",
+        "B": "Tratando el impuesto pagado en España como un costo deducible sin ningún tipo de límite.",
+        "C": "Solicitando a la DIAN la devolución del impuesto que se pagó en España.",
+        "D": "Descontando el impuesto pagado afuera, hasta el monto del colombiano sobre esas rentas."
+      },
+      "correcta": "D",
+      "explicacion": "Los residentes fiscales tributan sobre su renta mundial, por lo que deben incluir las rentas de fuente extranjera. El art. 254 ET permite descontar del impuesto colombiano el impuesto sobre la renta pagado en el país de origen, sin que el descuento exceda el monto del impuesto que deba pagarse en Colombia por esas mismas rentas. Si existe un CDI (como con España), se aplica además lo que este disponga.",
+      "norma": "Estatuto Tributario, art. 254",
+      "dificultad": 2,
+      "etiquetas": [
+        "descuento por impuestos en el exterior",
+        "renta mundial"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-internacional-011",
+      "contexto": "",
+      "enunciado": "¿Cuál de los siguientes es un criterio para considerar una jurisdicción como no cooperante, de baja o nula imposición (art. 260-7 ET)?",
+      "opciones": {
+        "A": "Que tenga un tratado de libre comercio vigente con Colombia.",
+        "B": "Que su moneda oficial no sea el dólar estadounidense ni el euro.",
+        "C": "Que su tarifa de IVA supere la tarifa general del IVA en Colombia.",
+        "D": "Que carezca de un efectivo intercambio de información tributaria."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 260-7 ET y su reglamento señalan criterios como: inexistencia de tributos o tributos nominales frente a los colombianos, carencia de un efectivo intercambio de información, falta de transparencia legal o administrativa, ausencia del requisito de presencia local sustantiva y ofrecimiento de beneficios a no residentes que no pueden operar en el mercado local. Las operaciones con esas jurisdicciones se someten al régimen de precios de transferencia y a mayores retenciones.",
+      "norma": "Estatuto Tributario, art. 260-7",
+      "dificultad": 2,
+      "etiquetas": [
+        "jurisdicciones no cooperantes"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

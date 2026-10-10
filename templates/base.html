@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block titulo %}Estudio DIAN{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='graficas.js') }}"></script>
+</head>
+<body>
+<nav><div class="in">
+  <span class="marca">📘 Estudio DIAN</span>
+  {% set ep = request.endpoint %}
+  <a class="item {{ 'activo' if ep == 'inicio' }}" href="{{ url_for('inicio') }}">Inicio</a>
+  <a class="item {{ 'activo' if ep in ('nueva_ronda', 'ronda', 'resultado') }}" href="{{ url_for('nueva_ronda') }}">Nueva ronda</a>
+  <a class="item {{ 'activo' if ep in ('banco', 'editar_pregunta') }}" href="{{ url_for('banco') }}">Banco de preguntas</a>
+  <a class="item {{ 'activo' if ep == 'informe' }}" href="{{ url_for('informe') }}">Fortalezas y debilidades</a>
+  <a class="item {{ 'activo' if ep == 'historial' }}" href="{{ url_for('historial') }}">Historial</a>
+  <a class="item {{ 'activo' if ep == 'configuracion' }}" href="{{ url_for('configuracion') }}">Configuración</a>
+</div></nav>
+<main>
+  {% for cat, msg in get_flashed_messages(with_categories=true) %}
+    <div class="flash {{ cat }}">{{ msg }}</div>
+  {% endfor %}
+  {% block contenido %}{% endblock %}
+</main>
+</body>
+</html>

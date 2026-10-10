@@ -1,0 +1,184 @@
+{
+  "sesion": "constitucion",
+  "preguntas": [
+    {
+      "id": "constitucion-001",
+      "contexto": "",
+      "enunciado": "Según el artículo 1 de la Constitución Política, Colombia está organizada en forma de:",
+      "opciones": {
+        "A": "República federal, descentralizada y con autonomía de sus estados federados.",
+        "B": "República unitaria, descentralizada, con autonomía de sus entidades territoriales.",
+        "C": "República unitaria, centralizada y sin autonomía para sus entidades territoriales.",
+        "D": "Confederación de departamentos con autonomía política plena."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 1 C.P. define a Colombia como un Estado social de derecho, organizado en forma de República unitaria, descentralizada, con autonomía de sus entidades territoriales, democrática, participativa y pluralista, fundada en el respeto de la dignidad humana, el trabajo, la solidaridad y la prevalencia del interés general. No es un Estado federal (no hay estados con constitución propia) ni centralizado sin autonomía.",
+      "norma": "Constitución Política, art. 1",
+      "dificultad": 1,
+      "etiquetas": [
+        "principios",
+        "estructura del Estado"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "constitucion-002",
+      "contexto": "Una ciudadana considera que una entidad pública le está vulnerando su derecho fundamental al debido proceso y presenta una acción de tutela.",
+      "enunciado": "¿Cuál es el término máximo que puede transcurrir entre la solicitud de tutela y su resolución?",
+      "opciones": {
+        "A": "Cinco días hábiles.",
+        "B": "Quince días hábiles.",
+        "C": "Diez días.",
+        "D": "Treinta días calendario."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 86 C.P. establece que en ningún caso podrán transcurrir más de diez días entre la solicitud de tutela y su resolución. El fallo es de inmediato cumplimiento, puede impugnarse ante el juez competente y la tutela solo procede cuando el afectado no disponga de otro medio de defensa judicial, salvo que se use como mecanismo transitorio para evitar un perjuicio irremediable.",
+      "norma": "Constitución Política, art. 86",
+      "dificultad": 1,
+      "etiquetas": [
+        "tutela",
+        "derechos fundamentales"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "constitucion-003",
+      "contexto": "",
+      "enunciado": "De acuerdo con la Constitución Política, la Contraloría General de la República es:",
+      "opciones": {
+        "A": "Un órgano de control, junto con el Ministerio Público.",
+        "B": "Una entidad de la Rama Ejecutiva adscrita al Ministerio de Hacienda.",
+        "C": "Un órgano de la Rama Legislativa que asiste al Congreso.",
+        "D": "Una entidad de la Rama Judicial especializada en asuntos fiscales."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 113 C.P. señala que, además de las ramas legislativa, ejecutiva y judicial, existen otros órganos autónomos e independientes. El art. 117 precisa que el Ministerio Público (Procuraduría y Defensoría) y la Contraloría General de la República son órganos de control. La Contraloría ejerce el control fiscal (art. 267); no pertenece a ninguna de las tres ramas.",
+      "norma": "Constitución Política, arts. 113, 117 y 267",
+      "dificultad": 2,
+      "etiquetas": [
+        "estructura del Estado",
+        "órganos de control"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "constitucion-004",
+      "contexto": "",
+      "enunciado": "El deber constitucional de toda persona de contribuir al financiamiento de los gastos e inversiones del Estado se enmarca dentro de los conceptos de:",
+      "opciones": {
+        "A": "Legalidad y oportunidad.",
+        "B": "Eficiencia y progresividad.",
+        "C": "Solidaridad y subsidiariedad.",
+        "D": "Justicia y equidad."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 95, numeral 9, C.P. establece como deber de la persona y del ciudadano «contribuir al financiamiento de los gastos e inversiones del Estado dentro de conceptos de justicia y equidad». Es el fundamento constitucional del deber de tributar. No confundir con los principios del sistema tributario del art. 363 (equidad, eficiencia y progresividad).",
+      "norma": "Constitución Política, art. 95 num. 9",
+      "dificultad": 2,
+      "etiquetas": [
+        "deberes",
+        "tributación"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "constitucion-005",
+      "contexto": "Un municipio expidió un acuerdo municipal hace dos años y no lo ha aplicado, lo que afecta a un grupo de comerciantes.",
+      "enunciado": "¿Qué mecanismo constitucional permite a cualquier persona acudir ante un juez para exigir que la autoridad cumpla una ley o un acto administrativo?",
+      "opciones": {
+        "A": "La acción popular.",
+        "B": "La acción de cumplimiento.",
+        "C": "La acción de tutela.",
+        "D": "La acción de nulidad simple."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 87 C.P. consagra la acción de cumplimiento: toda persona puede acudir ante la autoridad judicial para hacer efectivo el cumplimiento de una ley o un acto administrativo. La acción popular (art. 88) protege derechos e intereses colectivos; la tutela (art. 86) protege derechos fundamentales; el hábeas data (art. 15) protege el derecho a conocer, actualizar y rectificar la información personal. La acción de nulidad simple (art. 137 CPACA) busca anular actos administrativos contrarios al ordenamiento jurídico, no exigir su cumplimiento.",
+      "norma": "Constitución Política, arts. 86, 87 y 88",
+      "dificultad": 2,
+      "etiquetas": [
+        "mecanismos de protección"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "constitucion-006",
+      "contexto": "En una investigación tributaria, un funcionario obtuvo extractos bancarios del contribuyente sin orden ni procedimiento legal, aprovechando un contacto en el banco.",
+      "enunciado": "Según el artículo 29 de la Constitución, ¿qué valor tiene esa prueba?",
+      "opciones": {
+        "A": "Es válida si el contribuyente no la controvierte en la respuesta al requerimiento.",
+        "B": "Es nula de pleno derecho, por haberse obtenido con violación del debido proceso.",
+        "C": "Es válida, pero solo puede usarse como indicio dentro del expediente tributario.",
+        "D": "Es anulable, y solo un juez penal puede excluirla mediante sentencia en firme."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 29 C.P. establece que el debido proceso se aplica a toda clase de actuaciones judiciales y administrativas y que «es nula, de pleno derecho, la prueba obtenida con violación del debido proceso». No se convalida porque el contribuyente guarde silencio, no puede usarse como indicio y no requiere declaración judicial para excluirse. En fiscalización, las pruebas deben obtenerse con los medios y procedimientos previstos en el Estatuto Tributario.",
+      "norma": "Constitución Política, art. 29",
+      "dificultad": 2,
+      "etiquetas": [
+        "debido proceso",
+        "pruebas"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "constitucion-007",
+      "contexto": "",
+      "enunciado": "El artículo 15 de la Constitución protege la intimidad y la inviolabilidad de los documentos privados. Frente a los libros de contabilidad, ¿qué dispone?",
+      "opciones": {
+        "A": "Que solo pueden revisarse con orden judicial previa, aun para efectos tributarios.",
+        "B": "Que son inviolables y ninguna autoridad administrativa puede exigir su presentación.",
+        "C": "Que puede exigirse su presentación para efectos tributarios o judiciales.",
+        "D": "Que solo el revisor fiscal puede conocerlos y certificar su contenido ante el Estado."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 15 C.P., después de consagrar la intimidad y la inviolabilidad de la correspondencia, establece: «Para efectos tributarios o judiciales y para los casos de inspección, vigilancia e intervención del Estado, podrá exigirse la presentación de libros de contabilidad y demás documentos privados, en los términos que señale la ley». Es el fundamento constitucional de facultades de la DIAN como la exhibición de libros (art. 684 ET), sin necesidad de orden judicial.",
+      "norma": "Constitución Política, art. 15; Estatuto Tributario, art. 684",
+      "dificultad": 2,
+      "etiquetas": [
+        "intimidad",
+        "facultades de fiscalización"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "constitucion-008",
+      "contexto": "",
+      "enunciado": "El Congreso puede revestir al Presidente de facultades extraordinarias para expedir normas con fuerza de ley (art. 150-10 C.P.). ¿Para cuál de estos asuntos NO pueden conferirse?",
+      "opciones": {
+        "A": "Para decretar impuestos.",
+        "B": "Para modificar la estructura de entidades de la administración nacional.",
+        "C": "Para regular un sistema específico de carrera administrativa.",
+        "D": "Para expedir un régimen de procedimiento en materia aduanera."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 150 num. 10 C.P. permite conferir facultades extraordinarias al Presidente hasta por 6 meses, cuando la necesidad lo exija o la conveniencia pública lo aconseje. Prohíbe conferirlas para expedir códigos, leyes estatutarias, orgánicas o las del num. 19 del art. 150, para crear los servicios administrativos y técnicos de las Cámaras, y para decretar impuestos. Por eso los tributos solo se crean por ley ordinaria del Congreso (o en estados de excepción). Los otros asuntos sí han sido objeto de facultades extraordinarias: por ejemplo, el Decreto Ley 71 de 2020 sobre la carrera en la DIAN.",
+      "norma": "Constitución Política, art. 150 num. 10",
+      "dificultad": 3,
+      "etiquetas": [
+        "facultades extraordinarias",
+        "legalidad tributaria"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "constitucion-009",
+      "contexto": "",
+      "enunciado": "Según el artículo 189 de la Constitución, ¿a quién corresponde velar por la estricta recaudación y administración de las rentas y caudales públicos?",
+      "opciones": {
+        "A": "Al Contralor General de la República, como titular del control fiscal.",
+        "B": "Al Congreso de la República, como titular de la potestad tributaria.",
+        "C": "Al Presidente de la República, como suprema autoridad administrativa.",
+        "D": "Al Banco de la República, como autoridad monetaria y cambiaria."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 189 num. 20 C.P. asigna al Presidente de la República, como Jefe de Estado, Jefe del Gobierno y Suprema Autoridad Administrativa, la función de «velar por la estricta recaudación y administración de las rentas y caudales públicos y decretar su inversión de acuerdo con las leyes». La DIAN ejerce esta función por delegación del Gobierno. El Congreso crea los tributos (art. 150-12), la Contraloría vigila la gestión fiscal (art. 267) y el Banco de la República es la autoridad monetaria (art. 371).",
+      "norma": "Constitución Política, art. 189 num. 20",
+      "dificultad": 2,
+      "etiquetas": [
+        "estructura del Estado",
+        "recaudo"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

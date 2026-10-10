@@ -1,0 +1,142 @@
+{
+  "sesion": "integridad",
+  "preguntas": [
+    {
+      "id": "integridad-001",
+      "contexto": "",
+      "enunciado": "¿Cuáles son los cinco valores del Código de Integridad del Servicio Público adoptado por el Departamento Administrativo de la Función Pública?",
+      "opciones": {
+        "A": "Honestidad, lealtad, disciplina, eficiencia y transparencia.",
+        "B": "Respeto, solidaridad, tolerancia, responsabilidad y lealtad.",
+        "C": "Honestidad, respeto, compromiso, diligencia y justicia.",
+        "D": "Compromiso, eficacia, imparcialidad, publicidad y moralidad."
+      },
+      "correcta": "C",
+      "explicacion": "El Código de Integridad del Servicio Público (Función Pública, 2017; articulado con MIPG) establece cinco valores: Honestidad, Respeto, Compromiso, Diligencia y Justicia. Las entidades pueden agregar hasta dos valores propios. La opción D mezcla principios de la función administrativa (art. 209 C.P.), que no son valores del código.",
+      "norma": "Código de Integridad del Servicio Público – DAFP; Decreto 1499 de 2017 (MIPG)",
+      "dificultad": 1,
+      "etiquetas": [
+        "valores"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "integridad-002",
+      "contexto": "",
+      "enunciado": "«Cumplo con los deberes, funciones y responsabilidades asignadas a mi cargo de la mejor manera posible, con atención, prontitud, destreza y eficiencia, para así optimizar el uso de los recursos del Estado». Esta definición corresponde al valor de:",
+      "opciones": {
+        "A": "Diligencia.",
+        "B": "Compromiso.",
+        "C": "Honestidad.",
+        "D": "Justicia."
+      },
+      "correcta": "A",
+      "explicacion": "Es la definición del valor Diligencia en el Código de Integridad. No confundir: Compromiso es ser consciente de la importancia del rol como servidor y estar en disposición permanente de comprender y resolver las necesidades de las personas; Honestidad es actuar con fundamento en la verdad, con transparencia y rectitud, favoreciendo siempre el interés general; Justicia es actuar con imparcialidad, garantizando los derechos de las personas con equidad, igualdad y sin discriminación.",
+      "norma": "Código de Integridad del Servicio Público – DAFP",
+      "dificultad": 2,
+      "etiquetas": [
+        "valores"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "integridad-003",
+      "contexto": "A un funcionario de la DIAN le asignan adelantar una investigación tributaria a una sociedad cuyo representante legal es su hermano.",
+      "enunciado": "Conforme al CPACA, ¿qué debe hacer el funcionario?",
+      "opciones": {
+        "A": "Adelantar la investigación con especial rigor para demostrar su imparcialidad.",
+        "B": "Pedir a su hermano que renuncie a la representación legal mientras dura el proceso.",
+        "C": "Continuar con el trámite y abstenerse solo de firmar el acto definitivo del proceso.",
+        "D": "Declararse impedido y enviar la actuación al superior dentro de los 3 días siguientes."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 11 del CPACA establece como causal de impedimento tener interés particular y directo en el asunto, o tenerlo el cónyuge, compañero permanente o parientes dentro del cuarto grado de consanguinidad, segundo de afinidad o primero civil (un hermano es segundo grado de consanguinidad). El art. 12 indica que el servidor debe enviar la actuación, con escrito motivado, al superior dentro de los tres días siguientes a su conocimiento. El superior decide y, si acepta el impedimento, designa a quien deba reemplazarlo.",
+      "norma": "Ley 1437 de 2011, arts. 11 y 12",
+      "dificultad": 2,
+      "etiquetas": [
+        "conflicto de intereses",
+        "impedimentos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "integridad-004",
+      "contexto": "Al terminar una visita de verificación, el contador de la empresa visitada le ofrece al funcionario de la DIAN una ancheta «como agradecimiento por la amabilidad».",
+      "enunciado": "Según el valor de Honestidad del Código de Integridad, la actuación correcta es:",
+      "opciones": {
+        "A": "Aceptarla, porque la visita ya terminó y el regalo no influye en la decisión que se tome.",
+        "B": "Rechazarla con cortesía, porque no acepta beneficios de personas interesadas en sus procesos.",
+        "C": "Aceptarla y compartirla con todo el grupo de trabajo, para que no sea un beneficio personal suyo.",
+        "D": "Aceptarla, siempre que su valor no supere un salario mínimo y la registre ante el jefe."
+      },
+      "correcta": "B",
+      "explicacion": "Dentro de «lo que no hago» del valor Honestidad, el Código de Integridad indica: no acepto incentivos, favores ni ningún otro tipo de beneficio que me ofrezcan personas o grupos interesados en un proceso de toma de decisiones. La empresa sigue sujeta al proceso de fiscalización. Recibir dádivas puede configurar falta disciplinaria. No existe un monto «permitido».",
+      "norma": "Código de Integridad del Servicio Público – valor Honestidad",
+      "dificultad": 1,
+      "etiquetas": [
+        "valores",
+        "dádivas"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "integridad-005",
+      "contexto": "",
+      "enunciado": "«Reconozco, valoro y trato de manera digna a todas las personas, con sus virtudes y defectos, sin importar su labor, su procedencia, títulos o cualquier otra condición». Esta definición corresponde al valor de:",
+      "opciones": {
+        "A": "Justicia.",
+        "B": "Compromiso.",
+        "C": "Respeto.",
+        "D": "Honestidad."
+      },
+      "correcta": "C",
+      "explicacion": "Es la definición del valor Respeto en el Código de Integridad del Servicio Público. Justicia es actuar con imparcialidad, garantizando los derechos de las personas con equidad, igualdad y sin discriminación. Compromiso es ser consciente de la importancia del propio rol y estar en disposición permanente para comprender y resolver las necesidades de las personas. Honestidad es actuar siempre con fundamento en la verdad, cumpliendo los deberes con transparencia y rectitud.",
+      "norma": "Código de Integridad del Servicio Público – DAFP",
+      "dificultad": 1,
+      "etiquetas": [
+        "valores"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "integridad-006",
+      "contexto": "En un punto de atención, un funcionario atiende primero y con más cuidado a los contribuyentes que conoce, y a los demás les responde de manera apresurada.",
+      "enunciado": "¿Qué valor del Código de Integridad está desconociendo principalmente?",
+      "opciones": {
+        "A": "Diligencia, porque no usa adecuadamente los recursos del Estado.",
+        "B": "Justicia, porque no actúa con imparcialidad ni garantiza trato igual.",
+        "C": "Honestidad, porque oculta información a los usuarios que no conoce personalmente.",
+        "D": "Compromiso, porque no se identifica con la misión de la entidad."
+      },
+      "correcta": "B",
+      "explicacion": "El valor Justicia implica actuar con imparcialidad, garantizando los derechos de las personas con equidad, igualdad y sin discriminación. Dar trato preferente a conocidos vulnera la imparcialidad (art. 3 CPACA y art. 209 C.P.) y el derecho a la igualdad (art. 13 C.P.). Las demás opciones describen otros valores que no son el núcleo de la conducta descrita.",
+      "norma": "Código de Integridad – valor Justicia; Ley 1437 de 2011, art. 3",
+      "dificultad": 2,
+      "etiquetas": [
+        "valores",
+        "imparcialidad"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "integridad-007",
+      "contexto": "",
+      "enunciado": "La Ley 2013 de 2019 obliga a ciertos servidores públicos (por ejemplo, del nivel directivo) a publicar en el SIGEP:",
+      "opciones": {
+        "A": "Su hoja de vida completa, con las evaluaciones de desempeño de los últimos cinco años.",
+        "B": "Su declaración de bienes y rentas, la de renta y el registro de conflictos de interés.",
+        "C": "Los extractos de sus cuentas bancarias y de las de su cónyuge, actualizados cada semestre.",
+        "D": "El inventario de sus contratos y la lista de proveedores con los que ha tenido relación."
+      },
+      "correcta": "B",
+      "explicacion": "La Ley 2013 de 2019 busca garantizar la transparencia y la publicidad de la información de los sujetos obligados (altos funcionarios, servidores de nivel directivo, congresistas, entre otros), que deben publicar y actualizar en el SIGEP su declaración de bienes y rentas, el registro de conflictos de interés y la copia de la declaración del impuesto sobre la renta y complementarios. Es una herramienta preventiva de corrupción y conflictos de interés.",
+      "norma": "Ley 2013 de 2019",
+      "dificultad": 2,
+      "etiquetas": [
+        "transparencia",
+        "conflicto de intereses"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

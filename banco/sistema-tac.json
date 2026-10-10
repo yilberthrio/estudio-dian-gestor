@@ -1,0 +1,238 @@
+{
+  "sesion": "sistema-tac",
+  "preguntas": [
+    {
+      "id": "sistema-tac-001",
+      "contexto": "",
+      "enunciado": "Según el artículo 338 de la Constitución, en tiempo de paz, ¿quiénes pueden imponer contribuciones fiscales o parafiscales?",
+      "opciones": {
+        "A": "El Presidente de la República mediante decreto reglamentario.",
+        "B": "Solo el Congreso, las asambleas y los concejos.",
+        "C": "La DIAN mediante resolución de carácter general.",
+        "D": "El Ministerio de Hacienda mediante circular."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 338 C.P. consagra el principio de legalidad tributaria (no hay tributo sin representación): en tiempo de paz, solamente el Congreso, las asambleas departamentales y los concejos distritales y municipales pueden imponer contribuciones fiscales o parafiscales. La ley, las ordenanzas y los acuerdos deben fijar directamente los sujetos activos y pasivos, los hechos y las bases gravables, y las tarifas. Solo en estados de excepción (emergencia económica) el Gobierno puede establecer tributos transitoriamente.",
+      "norma": "Constitución Política, art. 338",
+      "dificultad": 1,
+      "etiquetas": [
+        "legalidad tributaria",
+        "principios"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "sistema-tac-002",
+      "contexto": "",
+      "enunciado": "Según el artículo 363 de la Constitución, el sistema tributario se funda en los principios de:",
+      "opciones": {
+        "A": "Equidad, eficiencia y progresividad.",
+        "B": "Igualdad, moralidad y publicidad.",
+        "C": "Legalidad, solidaridad y subsidiariedad.",
+        "D": "Economía, celeridad y eficacia."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 363 C.P. dispone que el sistema tributario se funda en los principios de equidad, eficiencia y progresividad, y que las leyes tributarias no se aplicarán con retroactividad. Equidad: las cargas se distribuyen según la capacidad económica. Eficiencia: recaudar al menor costo administrativo y para el contribuyente. Progresividad: quien tiene más capacidad contribuye proporcionalmente más. La opción B y la D corresponden a principios de la función administrativa (art. 209).",
+      "norma": "Constitución Política, art. 363",
+      "dificultad": 1,
+      "etiquetas": [
+        "principios"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "sistema-tac-003",
+      "contexto": "",
+      "enunciado": "¿Cuál es la diferencia entre impuesto y tasa?",
+      "opciones": {
+        "A": "El impuesto lo cobran solo los municipios y la tasa, solo la Nación a través de la DIAN y los ministerios.",
+        "B": "El impuesto es voluntario y la tasa es obligatoria para todos los usuarios del servicio.",
+        "C": "El impuesto no tiene contraprestación directa; la tasa retribuye un servicio a quien la paga.",
+        "D": "No existe diferencia jurídica; son sinónimos y la Constitución los usa indistintamente."
+      },
+      "correcta": "C",
+      "explicacion": "El impuesto es un tributo sin contraprestación directa: se paga por la realización del hecho generador (obtener renta, vender bienes, etc.) y su recaudo financia gastos generales. La tasa es la contraprestación por un servicio público prestado o un bien utilizado directamente por el sujeto (por ejemplo, peajes o expedición de documentos). La contribución especial se cobra a un grupo que recibe un beneficio específico de una obra o actividad estatal (por ejemplo, valorización).",
+      "norma": "Constitución Política, art. 338; jurisprudencia de la Corte Constitucional",
+      "dificultad": 1,
+      "etiquetas": [
+        "clases de tributos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "sistema-tac-004",
+      "contexto": "",
+      "enunciado": "Dentro de los elementos de la obligación tributaria, la «base gravable» es:",
+      "opciones": {
+        "A": "La entidad pública que tiene derecho a exigir y recaudar el tributo.",
+        "B": "La persona natural o jurídica obligada a pagar el tributo.",
+        "C": "El hecho o situación cuya realización da origen a la obligación tributaria.",
+        "D": "El valor sobre el cual se aplica la tarifa para determinar el tributo."
+      },
+      "correcta": "D",
+      "explicacion": "Elementos de la obligación tributaria: sujeto activo (el acreedor: la Nación, el departamento o el municipio); sujeto pasivo (quien está obligado al pago); hecho generador (presupuesto fáctico cuya realización origina la obligación); base gravable (valor o magnitud sobre el que se aplica la tarifa); y tarifa (porcentaje o valor que, aplicado a la base, da el tributo a pagar).",
+      "norma": "Constitución Política, art. 338; Estatuto Tributario, art. 1",
+      "dificultad": 1,
+      "etiquetas": [
+        "elementos del tributo"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "sistema-tac-005",
+      "contexto": "",
+      "enunciado": "¿Cuál de los siguientes es un impuesto indirecto administrado por la DIAN?",
+      "opciones": {
+        "A": "El impuesto sobre las ventas (IVA).",
+        "B": "El impuesto sobre la renta y complementarios.",
+        "C": "El impuesto predial unificado.",
+        "D": "El impuesto de industria y comercio."
+      },
+      "correcta": "A",
+      "explicacion": "El IVA es un impuesto indirecto: grava el consumo, y quien lo paga económicamente (el consumidor final) es distinto de quien lo declara (el responsable). El impuesto sobre la renta es directo, porque grava directamente la capacidad económica del sujeto. El predial y el de industria y comercio son impuestos territoriales (municipales), no administrados por la DIAN.",
+      "norma": "Estatuto Tributario, Libros I y III",
+      "dificultad": 1,
+      "etiquetas": [
+        "clasificación de impuestos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "sistema-tac-006",
+      "contexto": "",
+      "enunciado": "¿Cuál es la naturaleza jurídica de la DIAN?",
+      "opciones": {
+        "A": "Un establecimiento público del orden departamental con autonomía propia.",
+        "B": "Una superintendencia adscrita a la Presidencia de la República.",
+        "C": "Una unidad administrativa especial adscrita al Ministerio de Hacienda.",
+        "D": "Una empresa industrial y comercial del Estado vinculada al Ministerio."
+      },
+      "correcta": "C",
+      "explicacion": "La Dirección de Impuestos y Aduanas Nacionales es una Unidad Administrativa Especial del orden nacional, adscrita al Ministerio de Hacienda y Crédito Público, con personería jurídica, autonomía administrativa y presupuestal, y patrimonio propio. Su estructura está regulada por el Decreto 1742 de 2020. Tiene a su cargo administrar los impuestos nacionales, los derechos de aduana y el control cambiario en lo de su competencia.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "DIAN",
+        "estructura"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "sistema-tac-007",
+      "contexto": "",
+      "enunciado": "En el IVA, el consumidor final soporta económicamente el impuesto, pero quien lo declara y paga a la DIAN es el responsable. Respectivamente, ellos son:",
+      "opciones": {
+        "A": "Sujeto activo y sujeto pasivo de derecho.",
+        "B": "Sujeto pasivo de hecho y de derecho.",
+        "C": "Agente retenedor y sujeto pasivo de hecho.",
+        "D": "Sujeto pasivo de derecho y agente de percepción."
+      },
+      "correcta": "B",
+      "explicacion": "En los impuestos indirectos se distinguen dos sujetos pasivos. El sujeto pasivo de hecho es quien soporta económicamente la carga: en el IVA, el consumidor final. El sujeto pasivo de derecho es quien está legalmente obligado a declarar y pagar: el responsable del IVA, que lo cobra en la venta. El sujeto activo es el acreedor del tributo (la Nación, representada por la DIAN).",
+      "norma": "Estatuto Tributario, Libro III (IVA)",
+      "dificultad": 1,
+      "etiquetas": [
+        "sujetos del tributo",
+        "IVA"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "sistema-tac-008",
+      "contexto": "",
+      "enunciado": "Según el artículo 367 del Estatuto Tributario, ¿cuál es el objetivo de la retención en la fuente?",
+      "opciones": {
+        "A": "Sancionar anticipadamente a los contribuyentes con antecedentes de evasión.",
+        "B": "Sustituir la obligación de declarar de todos los contribuyentes del impuesto.",
+        "C": "Recaudar el impuesto en forma gradual, dentro del mismo año en que se causa.",
+        "D": "Financiar exclusivamente a las entidades territoriales donde ocurre el pago."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 367 ET establece que la retención en la fuente tiene por objeto conseguir en forma gradual que el impuesto se recaude, en lo posible, dentro del mismo ejercicio gravable en que se causa. Es un mecanismo de recaudo anticipado: lo retenido se descuenta del impuesto en la declaración. No es una sanción, no reemplaza en general la obligación de declarar y recauda impuestos nacionales.",
+      "norma": "Estatuto Tributario, art. 367",
+      "dificultad": 1,
+      "etiquetas": [
+        "retención en la fuente"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "sistema-tac-009",
+      "contexto": "",
+      "enunciado": "La Unidad de Valor Tributario (UVT) se reajusta cada año. ¿Quién la fija y con base en qué?",
+      "opciones": {
+        "A": "La DIAN, según la variación del IPC certificada por el DANE.",
+        "B": "El Congreso, mediante la ley anual de presupuesto, según la meta de inflación del año.",
+        "C": "El Banco de la República, según la variación de la tasa representativa del mercado.",
+        "D": "El Ministerio de Trabajo, según el incremento decretado del salario mínimo legal."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 868 ET creó la UVT como medida de valor que homologa las cifras y valores absolutos aplicables a tributos, sanciones y obligaciones administrados por la DIAN. Su valor se reajusta anualmente según la variación del índice de precios al consumidor para ingresos medios certificada por el DANE en el periodo comprendido entre el 1 de octubre del año anterior y la misma fecha del año en curso. El Director General de la DIAN publica mediante resolución, antes del 1 de enero, el valor que regirá el año siguiente.",
+      "norma": "Estatuto Tributario, art. 868",
+      "dificultad": 2,
+      "etiquetas": [
+        "UVT"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "sistema-tac-010",
+      "contexto": "",
+      "enunciado": "Según el artículo 555-2 del Estatuto Tributario, el Registro Único Tributario (RUT) es:",
+      "opciones": {
+        "A": "El listado público de deudores morosos que la DIAN reporta cada semestre a las centrales.",
+        "B": "El certificado que expide la Cámara de Comercio al registrar una empresa.",
+        "C": "El mecanismo para identificar, ubicar y clasificar a los sujetos de obligaciones DIAN.",
+        "D": "La base de datos de facturas electrónicas validadas por la DIAN cada mes."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 555-2 ET define el RUT como el mecanismo único para identificar, ubicar y clasificar a las personas y entidades que tengan la calidad de contribuyentes declarantes del impuesto sobre la renta, responsables del IVA, agentes retenedores, importadores, exportadores y demás usuarios aduaneros, y demás sujetos de obligaciones administradas y controladas por la DIAN. El NIT (art. 555-1) es el número de identificación que se asigna con la inscripción.",
+      "norma": "Estatuto Tributario, arts. 555-1 y 555-2",
+      "dificultad": 1,
+      "etiquetas": [
+        "RUT",
+        "obligaciones formales"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "sistema-tac-011",
+      "contexto": "",
+      "enunciado": "¿Cuál de las siguientes es una obligación tributaria sustancial (y no formal)?",
+      "opciones": {
+        "A": "Pagar el impuesto a cargo.",
+        "B": "Inscribirse en el RUT.",
+        "C": "Expedir factura electrónica.",
+        "D": "Presentar la declaración."
+      },
+      "correcta": "A",
+      "explicacion": "La obligación sustancial es la de dar: pagar el tributo, cuando se realiza el hecho generador. Las obligaciones formales son deberes de hacer o no hacer que facilitan el control de la sustancial: inscribirse en el RUT, declarar, facturar, llevar contabilidad, informar, atender requerimientos, etc. El incumplimiento de las formales genera sanciones propias, aunque no haya impuesto a pagar.",
+      "norma": "Estatuto Tributario, Libro V – deberes y obligaciones formales",
+      "dificultad": 1,
+      "etiquetas": [
+        "obligación sustancial",
+        "obligaciones formales"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "sistema-tac-012",
+      "contexto": "",
+      "enunciado": "Según el artículo 616-1 del Estatuto Tributario, la factura electrónica de venta se considera expedida cuando:",
+      "opciones": {
+        "A": "El vendedor la imprime y la entrega físicamente al comprador.",
+        "B": "Es validada previamente por la DIAN y entregada al adquirente.",
+        "C": "El comprador la acepta y la registra en su contabilidad mensual.",
+        "D": "Se reporta a la DIAN dentro de los 30 días siguientes a la venta."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 616-1 ET (modificado por la Ley 2010 de 2019) establece que la factura electrónica de venta se considera expedida cuando es validada por la DIAN y entregada al adquirente. El sistema de facturación electrónica con validación previa permite a la DIAN conocer en tiempo real las operaciones, lo que es clave para la fiscalización (cruces de información e IVA descontable).",
+      "norma": "Estatuto Tributario, art. 616-1",
+      "dificultad": 2,
+      "etiquetas": [
+        "factura electrónica"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

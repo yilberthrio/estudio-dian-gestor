@@ -1,0 +1,144 @@
+{
+  "sesion": "funcion-publica",
+  "preguntas": [
+    {
+      "id": "funcion-publica-001",
+      "contexto": "",
+      "enunciado": "¿Cuál de los siguientes NO es uno de los principios de la función administrativa enumerados en el artículo 209 de la Constitución?",
+      "opciones": {
+        "A": "Imparcialidad.",
+        "B": "Celeridad.",
+        "C": "Progresividad.",
+        "D": "Publicidad."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 209 C.P. dispone que la función administrativa está al servicio de los intereses generales y se desarrolla con fundamento en los principios de igualdad, moralidad, eficacia, economía, celeridad, imparcialidad y publicidad. La progresividad es un principio del sistema tributario (art. 363 C.P.), no de la función administrativa.",
+      "norma": "Constitución Política, arts. 209 y 363",
+      "dificultad": 1,
+      "etiquetas": [
+        "principios"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "funcion-publica-002",
+      "contexto": "",
+      "enunciado": "Según el artículo 125 de la Constitución, por regla general los empleos en los órganos y entidades del Estado son:",
+      "opciones": {
+        "A": "De carrera; el ingreso y el ascenso se hacen por méritos, según requisitos de ley.",
+        "B": "De libre nombramiento y remoción, salvo los que la ley determine como de carrera.",
+        "C": "De periodo fijo, provistos por elección del Congreso de la República.",
+        "D": "Provistos por contrato de prestación de servicios mientras se realiza el concurso público."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 125 C.P. establece que los empleos en los órganos y entidades del Estado son de carrera. Se exceptúan los de elección popular, los de libre nombramiento y remoción, los de trabajadores oficiales y los demás que determine la ley. El ingreso a los cargos de carrera y el ascenso se hacen previo cumplimiento de los requisitos y condiciones que fije la ley para determinar los méritos y calidades de los aspirantes. Es el fundamento del concurso de méritos.",
+      "norma": "Constitución Política, art. 125",
+      "dificultad": 1,
+      "etiquetas": [
+        "carrera administrativa",
+        "mérito"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "funcion-publica-003",
+      "contexto": "",
+      "enunciado": "De acuerdo con el artículo 6 de la Constitución, los servidores públicos son responsables ante las autoridades:",
+      "opciones": {
+        "A": "Únicamente por infringir la Constitución y las leyes, igual que los particulares.",
+        "B": "Solo por los actos que realicen fuera del horario laboral o de la sede física de la entidad.",
+        "C": "Únicamente por omisión en el ejercicio de sus funciones, no por extralimitación.",
+        "D": "Por infringir la Constitución y las leyes, y por omisión o extralimitación de funciones."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 6 C.P. dispone que los particulares solo son responsables ante las autoridades por infringir la Constitución y las leyes, mientras que los servidores públicos lo son por la misma causa y además por omisión o extralimitación en el ejercicio de sus funciones. Es la base del principio de legalidad del servidor: solo puede hacer lo que la norma le permite.",
+      "norma": "Constitución Política, art. 6",
+      "dificultad": 1,
+      "etiquetas": [
+        "responsabilidad",
+        "servidor público"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "funcion-publica-004",
+      "contexto": "",
+      "enunciado": "Según el artículo 122 de la Constitución Política, es correcto afirmar que:",
+      "opciones": {
+        "A": "Las funciones de un empleo pueden fijarse verbalmente por el jefe inmediato.",
+        "B": "No habrá empleo público que no tenga funciones detalladas en ley o reglamento.",
+        "C": "Los empleos temporales no requieren funciones definidas.",
+        "D": "El servidor de carrera puede posesionarse sin prestar juramento de cumplir la Constitución."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 122 C.P. establece que no habrá empleo público que no tenga funciones detalladas en ley o reglamento, y que para proveer los de carácter remunerado se requiere que estén contemplados en la planta y previstos sus emolumentos en el presupuesto. Ningún servidor entrará a ejercer su cargo sin prestar juramento de cumplir y defender la Constitución y desempeñar los deberes que le incumben. Por eso existe el Manual Específico de Funciones de la DIAN.",
+      "norma": "Constitución Política, art. 122",
+      "dificultad": 2,
+      "etiquetas": [
+        "empleo público",
+        "manual de funciones"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "funcion-publica-005",
+      "contexto": "El Director Seccional delegó en un jefe de división la firma de ciertos actos administrativos. Uno de esos actos resultó ilegal.",
+      "enunciado": "Según el artículo 211 de la Constitución, ¿quién responde por el acto?",
+      "opciones": {
+        "A": "Ambos, de manera solidaria, porque la delegación nunca traslada la responsabilidad al delegatario.",
+        "B": "El delegatario. El delegante queda exento, aunque puede reformar o revocar el acto.",
+        "C": "Solo el delegante, porque es el titular original de la función delegada.",
+        "D": "Ninguno, porque los actos delegados se entienden expedidos por la entidad."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 211 C.P. dispone que la delegación exime al delegante de responsabilidad, la cual corresponde exclusivamente al delegatario, cuyos actos o resoluciones podrá siempre reformar o revocar aquel, reasumiendo la responsabilidad consiguiente. La Ley 489 de 1998 (arts. 9 a 12) desarrolla la delegación: debe constar por escrito y precisar las funciones o asuntos delegados. Ojo: la Ley 1474 de 2011 matizó esta regla en contratación estatal, donde el delegante conserva deberes de control y vigilancia.",
+      "norma": "Constitución Política, art. 211; Ley 489 de 1998, arts. 9-12",
+      "dificultad": 2,
+      "etiquetas": [
+        "delegación",
+        "responsabilidad"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "funcion-publica-006",
+      "contexto": "",
+      "enunciado": "La DIAN tiene Direcciones Seccionales en distintas ciudades que ejercen funciones de la entidad bajo la dirección del nivel central. Esta forma de organización corresponde a:",
+      "opciones": {
+        "A": "Descentralización por servicios.",
+        "B": "Descentralización territorial.",
+        "C": "Delegación de funciones.",
+        "D": "Desconcentración administrativa."
+      },
+      "correcta": "D",
+      "explicacion": "Según el art. 8 de la Ley 489 de 1998, la desconcentración es la radicación de competencias y funciones en dependencias ubicadas fuera de la sede principal del organismo o entidad, sin perjuicio de las potestades y deberes de orientación e instrucción del jefe del organismo. Las seccionales no tienen personería jurídica propia: son parte de la misma entidad. La descentralización implica crear personas jurídicas distintas (por servicios, como los establecimientos públicos) o autonomía de entes territoriales. La delegación transfiere el ejercicio de funciones a un funcionario mediante acto expreso.",
+      "norma": "Ley 489 de 1998, arts. 7 y 8",
+      "dificultad": 2,
+      "etiquetas": [
+        "desconcentración",
+        "organización administrativa"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "funcion-publica-007",
+      "contexto": "",
+      "enunciado": "Según el artículo 125 de la Constitución, ¿cuál de las siguientes es una causal de retiro de un servidor de carrera?",
+      "opciones": {
+        "A": "La calificación no satisfactoria en el desempeño del empleo.",
+        "B": "La decisión discrecional del nominador, sin necesidad de motivación.",
+        "C": "El cambio de gobierno o de la filiación política del servidor.",
+        "D": "La terminación del periodo constitucional del jefe de la entidad."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 125 C.P. establece que el retiro de los servidores de carrera se hace por calificación no satisfactoria en el desempeño del empleo, por violación del régimen disciplinario y por las demás causales previstas en la Constitución o la ley. Además, prohíbe expresamente que la filiación política determine el nombramiento, ascenso o remoción en un empleo de carrera. La estabilidad del servidor de carrera impide su retiro discrecional.",
+      "norma": "Constitución Política, art. 125",
+      "dificultad": 1,
+      "etiquetas": [
+        "carrera administrativa",
+        "retiro"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

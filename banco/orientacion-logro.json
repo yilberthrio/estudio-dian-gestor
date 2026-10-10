@@ -1,0 +1,105 @@
+{
+  "sesion": "orientacion-logro",
+  "preguntas": [
+    {
+      "id": "orientacion-logro-001",
+      "contexto": "A mitad de trimestre te das cuenta de que, al ritmo actual, no cumplirás la meta de expedientes cerrados.",
+      "enunciado": "¿Cuál es la acción más efectiva?",
+      "opciones": {
+        "A": "Esperar al final del trimestre y explicar al jefe las razones del incumplimiento.",
+        "B": "Cerrar expedientes rápidamente, aunque no estén completos, para cumplir la cifra de la meta.",
+        "C": "Analizar las causas, priorizar por impacto, ajustar tu plan y pedir apoyo si hace falta.",
+        "D": "Pedir al jefe que te reduzca la meta, porque al ritmo actual no la vas a cumplir."
+      },
+      "correcta": "C",
+      "explicacion": "La orientación al logro implica hacer seguimiento a los propios resultados, identificar desviaciones a tiempo y tomar acciones correctivas (analizar causas, priorizar, replanificar, pedir apoyo). Esperar al final es reactivo; sacrificar la calidad o la legalidad de los expedientes para cumplir cifras genera riesgos jurídicos (nulidades, pérdida de recursos); pedir reducir la meta sin plan de acción no demuestra compromiso.",
+      "norma": "Competencia comportamental: Orientación al logro",
+      "dificultad": 1,
+      "etiquetas": [
+        "seguimiento",
+        "planeación"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "orientacion-logro-002",
+      "contexto": "Al revisar varios casos, notas que muchos contribuyentes del mismo sector cometen el mismo error en sus declaraciones.",
+      "enunciado": "¿Qué conducta refleja mejor la orientación al logro?",
+      "opciones": {
+        "A": "Tramitar cada caso por separado, sin comentarlo con nadie del grupo.",
+        "B": "Documentar el patrón y proponer al jefe una acción de control masiva.",
+        "C": "Archivar los casos, porque el error es generalizado en todo el sector.",
+        "D": "Esperar a que otro grupo de fiscalización detecte el mismo patrón."
+      },
+      "correcta": "B",
+      "explicacion": "La orientación al logro va más allá de cumplir tareas: busca mejorar los resultados e impacto de la gestión, proponiendo soluciones eficientes. Identificar patrones y sugerir acciones masivas o preventivas aumenta la eficacia de la fiscalización y del cumplimiento voluntario.",
+      "norma": "Competencia comportamental: Orientación al logro",
+      "dificultad": 2,
+      "etiquetas": [
+        "mejora continua",
+        "iniciativa"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "orientacion-logro-003",
+      "contexto": "Tienes que entregar un informe de gestión con una fecha límite estricta y aún te falta verificar algunas cifras.",
+      "enunciado": "¿Qué haces?",
+      "opciones": {
+        "A": "Priorizar las cifras críticas para entregar a tiempo, o avisar antes si no es posible.",
+        "B": "Entregarlo sin verificar las cifras, porque lo importante es cumplir con la fecha.",
+        "C": "No entregarlo hasta que esté perfecto, sin importar que se venza la fecha límite.",
+        "D": "Pedirle a un compañero que lo revise y lo firme por ti, para así cumplir con la fecha límite."
+      },
+      "correcta": "A",
+      "explicacion": "La orientación al logro equilibra la oportunidad y la calidad: se gestionan el tiempo y las prioridades para cumplir con estándares adecuados y, si surge un riesgo de incumplimiento, se comunica anticipadamente con una propuesta. Entregar información no verificada o retrasarse sin avisar afecta la confiabilidad; delegar la firma es indebido.",
+      "norma": "Competencia comportamental: Orientación al logro",
+      "dificultad": 1,
+      "etiquetas": [
+        "calidad",
+        "oportunidad"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "orientacion-logro-004",
+      "contexto": "Tienes diez expedientes pendientes y tiempo limitado. Tres de ellos están próximos a perder competencia temporal (firmeza).",
+      "enunciado": "¿Cómo priorizas tu trabajo?",
+      "opciones": {
+        "A": "Empezando por los tres en riesgo de vencimiento y luego por cuantía.",
+        "B": "Por orden de llegada, empezando por el expediente más antiguo.",
+        "C": "Empezando por los más sencillos, para cerrar más casos rápido.",
+        "D": "Empezando por los de mayor cuantía, sin revisar los vencimientos."
+      },
+      "correcta": "A",
+      "explicacion": "La orientación al logro implica planificar y priorizar según el impacto y el riesgo. Si la declaración queda en firme, la DIAN pierde la facultad de modificarla y se pierde el recaudo potencial. Por eso los expedientes próximos a vencer deben atenderse primero. Luego conviene priorizar por cuantía y viabilidad. Cerrar los más fáciles mejora la cifra, pero no el resultado.",
+      "norma": "Competencia: Orientación al logro; Estatuto Tributario, art. 714",
+      "dificultad": 2,
+      "etiquetas": [
+        "priorización",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "orientacion-logro-005",
+      "contexto": "Notas que un paso del procedimiento de tu grupo genera reprocesos frecuentes y demoras, aunque cumple con la norma.",
+      "enunciado": "¿Qué haces?",
+      "opciones": {
+        "A": "Te saltas ese paso en tus casos, porque sabes que no aporta.",
+        "B": "Sigues haciéndolo igual, porque cambiar no es tu responsabilidad.",
+        "C": "Lo comentas con tus compañeros, pero sin proponerlo formalmente.",
+        "D": "Documentas el problema y propones una mejora concreta al jefe."
+      },
+      "correcta": "D",
+      "explicacion": "La orientación al logro incluye buscar la mejora continua de los procesos para alcanzar mejores resultados, siempre dentro de la legalidad y por los canales institucionales. Saltarse pasos de un procedimiento es riesgoso e indebido; la pasividad o las quejas informales no generan cambios.",
+      "norma": "Competencia: Orientación al logro; MIPG – mejora continua",
+      "dificultad": 1,
+      "etiquetas": [
+        "mejora continua",
+        "procesos"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

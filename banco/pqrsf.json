@@ -1,0 +1,160 @@
+{
+  "sesion": "pqrsf",
+  "preguntas": [
+    {
+      "id": "pqrsf-001",
+      "contexto": "",
+      "enunciado": "En el sistema PQRSF, ¿cuál es la diferencia entre una queja y un reclamo?",
+      "opciones": {
+        "A": "La queja se presenta verbalmente y el reclamo, siempre por escrito y con radicado.",
+        "B": "La queja censura la conducta de un servidor; el reclamo, la mala prestación de un servicio.",
+        "C": "La queja la presentan personas jurídicas y el reclamo, las personas naturales afectadas.",
+        "D": "No hay diferencia; ambos tienen el mismo objeto, el mismo trámite y los mismos términos legales."
+      },
+      "correcta": "B",
+      "explicacion": "En los sistemas PQRSF de las entidades públicas: Petición es la solicitud respetuosa de información o actuación; Queja es la manifestación de protesta, censura, descontento o inconformidad sobre la conducta de un servidor público en el desarrollo de sus funciones; Reclamo es el derecho a exigir la solución por la prestación indebida de un servicio o la falta de atención de una solicitud; Sugerencia es una propuesta de mejora; Felicitación es el reconocimiento por un buen servicio. Quejas y reclamos son modalidades del derecho de petición.",
+      "norma": "Ley 1437 de 2011, art. 13 (Ley 1755 de 2015); Ley 1474 de 2011, art. 76",
+      "dificultad": 1,
+      "etiquetas": [
+        "definiciones"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "pqrsf-002",
+      "contexto": "",
+      "enunciado": "Salvo norma especial, ¿en qué término debe resolverse una queja o un reclamo presentado ante una entidad pública?",
+      "opciones": {
+        "A": "Dentro de los 15 días siguientes a su recepción.",
+        "B": "Dentro de los 30 días siguientes a su recepción.",
+        "C": "Dentro de los 5 días siguientes a su recepción.",
+        "D": "Dentro de los 3 meses siguientes a su recepción."
+      },
+      "correcta": "A",
+      "explicacion": "Las quejas y reclamos son modalidades del derecho de petición (art. 13 CPACA), por lo que se rigen por el término general del art. 14: 15 días siguientes a su recepción. Las peticiones de documentos e información tienen 10 días y las consultas, 30 días.",
+      "norma": "Ley 1437 de 2011, arts. 13 y 14 (Ley 1755 de 2015)",
+      "dificultad": 1,
+      "etiquetas": [
+        "términos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "pqrsf-003",
+      "contexto": "En un punto de atención de la DIAN hay una fila larga. Llega una mujer en avanzado estado de embarazo con una consulta sobre su RUT.",
+      "enunciado": "Conforme al CPACA, ¿cómo se le debe atender?",
+      "opciones": {
+        "A": "Debe hacer la fila como todos, en respeto del principio de igualdad.",
+        "B": "Se le debe pedir que regrese en un horario de menor afluencia.",
+        "C": "Tiene derecho a recibir atención especial y preferente.",
+        "D": "Solo se le puede dar prioridad si presenta certificado médico."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 5 num. 6 del CPACA reconoce el derecho a recibir atención especial y preferente a las personas en situación de discapacidad, niños, niñas, adolescentes, mujeres gestantes, adultos mayores y, en general, personas en estado de indefensión o de debilidad manifiesta (art. 13 C.P.). La atención preferencial no viola la igualdad: la materializa, porque es igualdad real y efectiva.",
+      "norma": "Ley 1437 de 2011, art. 5 num. 6; Constitución Política, art. 13",
+      "dificultad": 1,
+      "etiquetas": [
+        "atención preferencial"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "pqrsf-004",
+      "contexto": "",
+      "enunciado": "Según el CONPES 3785 de 2013 (Política Nacional de Eficiencia Administrativa al Servicio del Ciudadano), los componentes de la llamada «ventanilla hacia afuera» incluyen:",
+      "opciones": {
+        "A": "Arreglos institucionales, procesos y procedimientos internos y gestión del talento humano.",
+        "B": "Presupuesto, contratación, control fiscal y austeridad en el gasto público.",
+        "C": "Cobertura, certidumbre, cumplimiento de expectativas y canales de atención.",
+        "D": "Rendición de cuentas, control disciplinario interno y gestión documental."
+      },
+      "correcta": "C",
+      "explicacion": "El Modelo de Gestión Pública Eficiente al Servicio del Ciudadano del CONPES 3785 distingue la «ventanilla hacia adentro», que agrupa las capacidades internas (arreglos institucionales, procesos y procedimientos, talento humano, cultura de servicio, infraestructura), de la «ventanilla hacia afuera», que comprende la relación directa con el ciudadano: cobertura, certidumbre, cumplimiento de expectativas y fortalecimiento de los canales de atención.",
+      "norma": "Documento CONPES 3785 de 2013",
+      "dificultad": 3,
+      "etiquetas": [
+        "política de servicio"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "pqrsf-005",
+      "contexto": "Un ciudadano presentó un derecho de petición y, antes de recibir respuesta, envía un correo manifestando que desiste de su solicitud.",
+      "enunciado": "Según el CPACA, es correcto afirmar que:",
+      "opciones": {
+        "A": "El desistimiento solo procede si el ciudadano lo presenta personalmente, por escrito y con firma autenticada.",
+        "B": "Una vez desistida, la petición no puede volver a presentarse sobre el mismo asunto.",
+        "C": "La autoridad debe continuar obligatoriamente el trámite en todos los casos, aunque se desista.",
+        "D": "Puede desistir en cualquier tiempo y presentarla de nuevo; la autoridad puede seguir de oficio."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 18 CPACA (Ley 1755 de 2015), desistimiento expreso: los interesados pueden desistir en cualquier tiempo de sus peticiones, sin perjuicio de que la solicitud pueda presentarse de nuevo con el lleno de los requisitos legales. Las autoridades pueden continuar de oficio la actuación si la consideran necesaria por razones de interés público; en tal caso, deben expedir resolución motivada.",
+      "norma": "Ley 1437 de 2011, art. 18 (Ley 1755 de 2015)",
+      "dificultad": 2,
+      "etiquetas": [
+        "desistimiento expreso"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "pqrsf-006",
+      "contexto": "Llega a la entidad una petición escrita cuya finalidad no se logra comprender.",
+      "enunciado": "Según el artículo 19 del CPACA, ¿qué debe hacer la autoridad?",
+      "opciones": {
+        "A": "Archivarla sin respuesta, porque no cumple los requisitos mínimos.",
+        "B": "Rechazarla de plano mediante acto motivado, sin posibilidad de recurso.",
+        "C": "Devolverla para que la corrija o aclare dentro de los 10 días siguientes.",
+        "D": "Responderla interpretando libremente lo que el peticionario quiso pedir en su escrito."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 19 CPACA (Ley 1755 de 2015): toda petición debe ser respetuosa, so pena de rechazo. Solo cuando no se comprenda su finalidad u objeto, se devuelve al interesado para que la corrija o aclare dentro de los 10 días siguientes; si no lo hace, se archiva. Respecto de peticiones reiterativas ya resueltas, la autoridad puede remitirse a las respuestas anteriores, salvo que se trate de derechos imprescriptibles o de peticiones que se hubieren negado por no acreditar requisitos subsanables.",
+      "norma": "Ley 1437 de 2011, art. 19 (Ley 1755 de 2015)",
+      "dificultad": 2,
+      "etiquetas": [
+        "peticiones irrespetuosas",
+        "peticiones oscuras"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "pqrsf-007",
+      "contexto": "",
+      "enunciado": "Según el artículo 7 del CPACA, ¿cuál es el mínimo de atención personal al público que deben garantizar las autoridades?",
+      "opciones": {
+        "A": "40 horas a la semana, en horarios acordes al servicio.",
+        "B": "30 horas a la semana, en jornada continua.",
+        "C": "48 horas a la semana, incluidos los sábados.",
+        "D": "8 horas diarias de lunes a viernes, en jornada laboral continua."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 7 num. 2 CPACA impone a las autoridades el deber de garantizar atención personal al público como mínimo durante 40 horas a la semana, distribuidas en horarios que satisfagan las necesidades del servicio. Otros deberes del mismo artículo: dar trato respetuoso, atender a todas las personas que hayan ingresado a sus oficinas dentro del horario normal, establecer un sistema de turnos y tramitar las peticiones por medios electrónicos.",
+      "norma": "Ley 1437 de 2011, art. 7",
+      "dificultad": 1,
+      "etiquetas": [
+        "deberes de las autoridades",
+        "atención al público"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "pqrsf-008",
+      "contexto": "Para tramitar una solicitud, un funcionario le exige al ciudadano un certificado que ya reposa en los archivos de la misma entidad.",
+      "enunciado": "Esta exigencia:",
+      "opciones": {
+        "A": "Es válida, porque el ciudadano debe aportar todos los soportes de su trámite.",
+        "B": "Es válida, si el documento tiene más de seis meses de expedido.",
+        "C": "Es válida, siempre que el ciudadano no tenga que pagar por el certificado.",
+        "D": "Está prohibida, porque no pueden exigirse documentos que reposen en la entidad."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 9 num. 4 CPACA prohíbe a las autoridades exigir constancias, certificaciones o documentos que reposen en la respectiva entidad. El Decreto Ley 019 de 2012 (antitrámites) refuerza esta prohibición y ordena consultar directamente la información disponible en otras entidades públicas. Exigir esos documentos es un trámite innecesario que afecta el servicio al ciudadano.",
+      "norma": "Ley 1437 de 2011, art. 9 num. 4; Decreto Ley 019 de 2012",
+      "dificultad": 2,
+      "etiquetas": [
+        "prohibiciones",
+        "antitrámites"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

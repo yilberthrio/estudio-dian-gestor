@@ -1,0 +1,104 @@
+{
+  "sesion": "trabajo-equipo",
+  "preguntas": [
+    {
+      "id": "trabajo-equipo-001",
+      "contexto": "Tu equipo debe cerrar varios expedientes antes de fin de mes. Ya terminaste tus tareas, pero una compañera está atrasada porque le asignaron casos más complejos.",
+      "enunciado": "¿Qué harías?",
+      "opciones": {
+        "A": "Nada, porque tus metas individuales ya están cumplidas en el periodo.",
+        "B": "Ofrecerle apoyo y coordinar con el líder cómo redistribuir las tareas.",
+        "C": "Hacer sus tareas sin avisarle, para que el equipo cumpla con la meta.",
+        "D": "Informar al jefe que ella no está cumpliendo, para que quede registrado."
+      },
+      "correcta": "B",
+      "explicacion": "El trabajo en equipo implica priorizar los objetivos colectivos sobre los individuales, cooperar y compartir la carga cuando es necesario, de manera coordinada. Ofrecer apoyo y coordinar con el líder respeta los roles y asegura el resultado. Hacer el trabajo del otro sin coordinación genera confusión; reportarla sin ayudar no contribuye a la meta.",
+      "norma": "Competencia comportamental: Trabajo en equipo",
+      "dificultad": 1,
+      "etiquetas": [
+        "cooperación",
+        "objetivos comunes"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "trabajo-equipo-002",
+      "contexto": "Dos miembros de tu equipo tienen un desacuerdo constante sobre cómo documentar las pruebas, y eso está retrasando el trabajo de todos.",
+      "enunciado": "Como integrante del equipo, ¿cuál es la mejor contribución?",
+      "opciones": {
+        "A": "Tomar partido por quien tenga más experiencia en el tema de documentación de pruebas.",
+        "B": "Evitar el tema, porque no es tu problema y no quieres tomar partido.",
+        "C": "Proponer una conversación centrada en el objetivo común y el procedimiento.",
+        "D": "Pedir que trasladen a uno de los dos a otra dependencia de la entidad."
+      },
+      "correcta": "C",
+      "explicacion": "En el trabajo en equipo se espera contribuir a resolver los conflictos de forma constructiva: centrar la discusión en los objetivos compartidos y en criterios objetivos (procedimientos, lineamientos), no en las personas. Tomar partido o evitar el tema perpetúa el conflicto; pedir traslados es desproporcionado como primera medida.",
+      "norma": "Competencia comportamental: Trabajo en equipo",
+      "dificultad": 2,
+      "etiquetas": [
+        "manejo de conflictos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "trabajo-equipo-003",
+      "contexto": "Después de una discusión abierta, el equipo decidió un plan de visitas con el que no estabas totalmente de acuerdo.",
+      "enunciado": "¿Cuál es la conducta esperada?",
+      "opciones": {
+        "A": "Comprometerte con la decisión y ejecutarla bien, aportando ideas por canales debidos.",
+        "B": "Cumplir con lo mínimo necesario, para demostrar que el plan elegido no era bueno.",
+        "C": "Seguir tu propio plan de visitas, porque consideras que es mejor para el resultado.",
+        "D": "Seguir discutiendo la decisión en cada reunión del equipo hasta que la cambien."
+      },
+      "correcta": "A",
+      "explicacion": "El trabajo en equipo implica respetar y apoyar las decisiones colectivas una vez tomadas, aunque no coincidan totalmente con la propia opinión, y contribuir con compromiso al resultado. Si aparecen datos nuevos, se aportan por los canales adecuados. Sabotear, actuar por cuenta propia o reabrir la discusión indefinidamente afecta la cohesión y los resultados.",
+      "norma": "Competencia comportamental: Trabajo en equipo",
+      "dificultad": 1,
+      "etiquetas": [
+        "compromiso",
+        "decisiones colectivas"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "trabajo-equipo-004",
+      "contexto": "Un compañero nuevo en el grupo comete errores frecuentes en la elaboración de los autos porque no conoce bien los formatos.",
+      "enunciado": "¿Cuál es la mejor contribución que puedes hacer?",
+      "opciones": {
+        "A": "Corregir sus autos tú mismo sin decirle nada, para no incomodarlo.",
+        "B": "Informar al jefe de cada error para que quede registro de su desempeño.",
+        "C": "Compartirle los formatos y lo que sabes, y ofrecerte a resolver sus dudas.",
+        "D": "Esperar a que aprenda solo, porque cada quien responde por su trabajo."
+      },
+      "correcta": "C",
+      "explicacion": "El trabajo en equipo implica compartir información y conocimiento para que el grupo logre sus resultados, y apoyar a los compañeros en su integración. Corregir en silencio no le permite aprender; reportar sin apoyar no fortalece al equipo; desentenderse ignora que los errores de uno afectan los resultados de todos.",
+      "norma": "Competencia: Trabajo en equipo",
+      "dificultad": 1,
+      "etiquetas": [
+        "compartir conocimiento",
+        "cooperación"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "trabajo-equipo-005",
+      "contexto": "El equipo logró un resultado destacado en una acción de control y el director te felicita a ti en público, aunque el trabajo fue de todos.",
+      "enunciado": "¿Qué haces?",
+      "opciones": {
+        "A": "Agradeces y reconoces que el resultado fue de todo el equipo.",
+        "B": "Agradeces sin más comentarios, porque tu aporte fue el más importante.",
+        "C": "Rechazas la felicitación para que nadie del equipo se sienta mal contigo.",
+        "D": "Agradeces y luego le explicas al director en privado quién trabajó menos."
+      },
+      "correcta": "A",
+      "explicacion": "El trabajo en equipo implica reconocer los aportes de los demás y valorar los logros colectivos. Atribuirse el resultado debilita la confianza; rechazar la felicitación es innecesario; señalar a quien trabajó menos en ese contexto no aporta al equipo.",
+      "norma": "Competencia: Trabajo en equipo",
+      "dificultad": 1,
+      "etiquetas": [
+        "reconocimiento",
+        "logros colectivos"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

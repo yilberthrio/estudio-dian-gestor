@@ -1,0 +1,105 @@
+{
+  "sesion": "comunicacion",
+  "preguntas": [
+    {
+      "id": "comunicacion-001",
+      "contexto": "Debes explicarle a un pequeño comerciante, sin formación contable, por qué se le propone una sanción en un requerimiento.",
+      "enunciado": "¿Cuál es la forma más efectiva de comunicarte?",
+      "opciones": {
+        "A": "Leerle textualmente los artículos del Estatuto Tributario para que no haya errores.",
+        "B": "Usar lenguaje claro, explicar hechos, norma y opciones, y verificar que entendió.",
+        "C": "Entregarle el documento y decirle que consulte a un contador de su confianza.",
+        "D": "Explicarle rápidamente para atender a más personas, sin preguntar si tiene dudas."
+      },
+      "correcta": "B",
+      "explicacion": "La comunicación efectiva implica adaptar el mensaje al interlocutor, usar lenguaje claro (política de lenguaje claro del Estado), estructurar la información (qué pasó, por qué, qué puede hacer) y verificar la comprensión mediante retroalimentación. Leer normas textualmente o remitir sin orientar no asegura que el ciudadano entienda sus derechos y opciones.",
+      "norma": "Competencia comportamental: Comunicación efectiva",
+      "dificultad": 1,
+      "etiquetas": [
+        "lenguaje claro",
+        "verificar comprensión"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "comunicacion-002",
+      "contexto": "En una reunión de equipo, un compañero propone un enfoque para una auditoría con el que no estás de acuerdo porque crees que omite un riesgo importante.",
+      "enunciado": "¿Qué es lo más adecuado?",
+      "opciones": {
+        "A": "Interrumpirlo para señalar el error antes de que siga con la propuesta.",
+        "B": "No decir nada en la reunión y comentarlo después con otros compañeros del grupo.",
+        "C": "Escucharlo completo y luego exponer con respeto el riesgo, con argumentos.",
+        "D": "Aceptar la propuesta para no generar un conflicto dentro del equipo."
+      },
+      "correcta": "C",
+      "explicacion": "La comunicación efectiva combina la escucha activa (dejar terminar al otro y comprender su punto) con la expresión asertiva de las propias ideas: clara, respetuosa y fundamentada. Interrumpir es irrespetuoso; callar o comentar a espaldas del otro afecta la confianza y deja sin tratar el riesgo; aceptar para evitar el conflicto sacrifica la calidad del trabajo.",
+      "norma": "Competencia comportamental: Comunicación efectiva",
+      "dificultad": 1,
+      "etiquetas": [
+        "escucha activa",
+        "asertividad"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "comunicacion-003",
+      "contexto": "Tu jefe te pide un reporte breve sobre los hallazgos de una investigación para presentarlo en un comité directivo esa tarde.",
+      "enunciado": "¿Cómo deberías estructurar el reporte?",
+      "opciones": {
+        "A": "Conclusiones y cifras clave al inicio, hallazgos concisos y anexos de soporte.",
+        "B": "Con todo el expediente escaneado para que el comité saque sus propias conclusiones.",
+        "C": "En orden cronológico, desde el inicio de la investigación, con todos los detalles.",
+        "D": "Verbalmente, sin documento escrito, para ahorrar tiempo al comité directivo."
+      },
+      "correcta": "A",
+      "explicacion": "Comunicar efectivamente implica considerar el propósito y la audiencia: un comité directivo necesita la información clave primero (conclusión, impacto, cifras), con argumentos sustentados y la posibilidad de profundizar. Entregar el expediente completo o un relato cronológico extenso dificulta la toma de decisiones; un reporte solo verbal carece de soporte y trazabilidad.",
+      "norma": "Competencia comportamental: Comunicación efectiva",
+      "dificultad": 2,
+      "etiquetas": [
+        "informes",
+        "comunicación escrita"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "comunicacion-004",
+      "contexto": "Debes informar a un contribuyente por correo que su solicitud fue negada.",
+      "enunciado": "¿Cuál es la mejor forma de redactar el mensaje?",
+      "opciones": {
+        "A": "Lo más breve posible, solo con la decisión, para evitar discusiones.",
+        "B": "Con la decisión, los motivos y los recursos que tiene, en lenguaje claro.",
+        "C": "Con todos los artículos aplicables transcritos completos, para que no haya dudas.",
+        "D": "En tono amable, pero sin indicar la decisión, para que llame y se la expliquen."
+      },
+      "correcta": "B",
+      "explicacion": "La comunicación efectiva escrita es clara, completa y orientada al destinatario: indica la decisión, los fundamentos y lo que la persona puede hacer (recursos, plazos, ante quién). Además, el CPACA exige que los actos que deciden sean motivados y que se informen los recursos procedentes. Un mensaje incompleto, excesivamente técnico o que oculte la decisión no cumple su propósito.",
+      "norma": "Competencia: Comunicación efectiva; Ley 1437 de 2011, art. 67",
+      "dificultad": 1,
+      "etiquetas": [
+        "comunicación escrita",
+        "lenguaje claro"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "comunicacion-005",
+      "contexto": "En una reunión, el líder del grupo da instrucciones para un operativo y no te queda claro cuál es tu función específica.",
+      "enunciado": "¿Qué deberías hacer?",
+      "opciones": {
+        "A": "Preguntar en el momento o al final, hasta tener clara tu función.",
+        "B": "Asumir que tu función es la misma que tuviste en el operativo anterior.",
+        "C": "Esperar a llegar al operativo y observar qué hacen los demás compañeros.",
+        "D": "Preguntarle después a un compañero que tampoco estuvo en la reunión."
+      },
+      "correcta": "A",
+      "explicacion": "La comunicación efectiva es bidireccional: incluye pedir aclaraciones y verificar la comprensión del mensaje recibido. Preguntar oportunamente evita errores en la ejecución. Suponer, improvisar o consultar con alguien que no recibió la instrucción aumenta el riesgo de malentendidos.",
+      "norma": "Competencia: Comunicación efectiva",
+      "dificultad": 1,
+      "etiquetas": [
+        "verificar comprensión",
+        "retroalimentación"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

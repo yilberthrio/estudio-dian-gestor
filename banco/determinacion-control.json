@@ -1,0 +1,241 @@
+{
+  "sesion": "determinacion-control",
+  "preguntas": [
+    {
+      "id": "determinacion-control-001",
+      "contexto": "",
+      "enunciado": "Por regla general, la declaración tributaria queda en firme si dentro de qué término, contado desde el vencimiento del plazo para declarar, no se ha notificado requerimiento especial:",
+      "opciones": {
+        "A": "2 años.",
+        "B": "3 años.",
+        "C": "5 años.",
+        "D": "10 años."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 714 ET (modificado por la Ley 2010 de 2019): la declaración queda en firme si, dentro de los 3 años siguientes a la fecha de vencimiento del plazo para declarar, no se ha notificado requerimiento especial. Si se presentó extemporáneamente, se cuenta desde la presentación; si arrojó saldo a favor, desde la solicitud de devolución o compensación. Hay términos especiales: por ejemplo, 5 años para contribuyentes sujetos al régimen de precios de transferencia, y casos de compensación de pérdidas fiscales.",
+      "norma": "Estatuto Tributario, art. 714",
+      "dificultad": 1,
+      "etiquetas": [
+        "firmeza"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "determinacion-control-002",
+      "contexto": "Un contribuyente obligado a declarar renta no presentó la declaración. La DIAN lo emplazó para declarar y él no respondió.",
+      "enunciado": "¿Qué liquidación oficial procede y dentro de qué término?",
+      "opciones": {
+        "A": "Liquidación de corrección aritmética, dentro del año siguiente al emplazamiento.",
+        "B": "Liquidación de revisión, dentro de los 3 años siguientes al plazo para declarar.",
+        "C": "Liquidación de aforo, dentro de los 5 años siguientes al plazo para declarar.",
+        "D": "Liquidación provisional, dentro del mes siguiente al vencimiento del emplazamiento."
+      },
+      "correcta": "C",
+      "explicacion": "Al omiso se le notifica un emplazamiento previo por no declarar, con un plazo perentorio de 1 mes (art. 715 ET). Si no declara, se le impone la sanción por no declarar (art. 716 ET) y la DIAN puede, dentro de los 5 años siguientes al vencimiento del plazo para declarar, determinar mediante liquidación de aforo la obligación tributaria (art. 717 ET). La liquidación de revisión aplica a quien sí declaró; la de corrección aritmética, a errores aritméticos de la declaración.",
+      "norma": "Estatuto Tributario, arts. 715 a 717",
+      "dificultad": 2,
+      "etiquetas": [
+        "aforo",
+        "omisos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "determinacion-control-003",
+      "contexto": "",
+      "enunciado": "La sanción por extemporaneidad, cuando la declaración se presenta después del vencimiento del plazo pero antes del emplazamiento, equivale por cada mes o fracción de retardo a:",
+      "opciones": {
+        "A": "1% del impuesto o retención a cargo, sin exceder el 50%.",
+        "B": "10% del impuesto o retención a cargo, sin ningún límite.",
+        "C": "10 UVT por cada mes o fracción de retardo, sin límite.",
+        "D": "5% del impuesto o retención a cargo, sin exceder el 100%."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 641 ET: quienes presenten las declaraciones en forma extemporánea, antes del emplazamiento o auto de inspección, deben liquidar y pagar una sanción por cada mes o fracción de mes calendario de retardo equivalente al 5% del total del impuesto o retención a cargo, sin exceder el 100% de este. Esta sanción se liquida sin perjuicio de los intereses moratorios. Si se presenta después del emplazamiento, aplica el art. 642 (10% por mes, hasta el 200%).",
+      "norma": "Estatuto Tributario, arts. 641 y 642",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanciones",
+        "extemporaneidad"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "determinacion-control-004",
+      "contexto": "",
+      "enunciado": "Por regla general, la sanción por inexactitud equivale a:",
+      "opciones": {
+        "A": "El 100% de la diferencia entre el saldo de la liquidación oficial y el declarado.",
+        "B": "El 10% del impuesto declarado, más los intereses moratorios causados.",
+        "C": "El 50% del total de los ingresos brutos declarados en el periodo.",
+        "D": "El 5% por cada mes o fracción del impuesto a cargo, hasta llegar al 100% del impuesto."
+      },
+      "correcta": "A",
+      "explicacion": "Art. 648 ET (Ley 1819 de 2016): la sanción por inexactitud equivale al 100% de la diferencia entre el saldo a pagar o saldo a favor determinado en la liquidación oficial y el declarado. Hay casos agravados (200% por activos omitidos o pasivos inexistentes, y otros) y se aplican los principios de lesividad, proporcionalidad, gradualidad y favorabilidad (art. 640 ET). Es reducible si el contribuyente acepta los hechos del requerimiento especial (art. 709) o de la liquidación de revisión (art. 713).",
+      "norma": "Estatuto Tributario, arts. 647 y 648",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanciones",
+        "inexactitud"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "determinacion-control-005",
+      "contexto": "",
+      "enunciado": "Un contribuyente corrige voluntariamente su declaración aumentando el impuesto a cargo, antes de que se le notifique emplazamiento para corregir o auto de inspección tributaria. La sanción por corrección es:",
+      "opciones": {
+        "A": "20% del mayor valor a pagar.",
+        "B": "10% del mayor valor a pagar.",
+        "C": "100% del mayor valor a pagar.",
+        "D": "No hay sanción por corregir voluntariamente."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 644 ET: cuando el contribuyente corrige y aumenta el valor a pagar o disminuye el saldo a favor, debe liquidar una sanción del 10% de la diferencia si la corrección se realiza antes de que se produzca emplazamiento para corregir o auto que ordene visita de inspección tributaria, y del 20% si se realiza después de notificado el emplazamiento o auto de inspección y antes de notificarse el requerimiento especial o pliego de cargos. Si además es extemporánea, se aumenta en 5% por cada mes o fracción.",
+      "norma": "Estatuto Tributario, art. 644",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanciones",
+        "corrección"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "determinacion-control-006",
+      "contexto": "",
+      "enunciado": "Según el Estatuto Tributario, el valor mínimo de cualquier sanción, incluidas las que deban liquidar los contribuyentes o las que imponga la DIAN, es equivalente a:",
+      "opciones": {
+        "A": "1 salario mínimo legal mensual vigente.",
+        "B": "5 UVT.",
+        "C": "100 UVT.",
+        "D": "10 UVT."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 639 ET: el valor mínimo de cualquier sanción, incluidas las sanciones reducidas, sea que deba liquidarla la persona o entidad sometida a ella, o la DIAN, es equivalente a 10 UVT. No aplica para los intereses de mora ni para las sanciones de los arts. 674, 675 y 676 ET (sanciones a entidades autorizadas para recaudar).",
+      "norma": "Estatuto Tributario, art. 639",
+      "dificultad": 1,
+      "etiquetas": [
+        "sanciones"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "determinacion-control-007",
+      "contexto": "",
+      "enunciado": "Según el Estatuto Tributario, ¿dentro de qué término debe proferirse la liquidación de corrección aritmética y qué sanción se aplica?",
+      "opciones": {
+        "A": "Dentro del año siguiente a la presentación, con sanción del 10% del mayor valor.",
+        "B": "Dentro de los 2 años siguientes a la presentación, con sanción del 30% del mayor valor.",
+        "C": "Dentro de los 3 años siguientes a la presentación, con sanción del 100% del mayor valor.",
+        "D": "Dentro de los 5 años siguientes a la presentación, con sanción del 50% del mayor valor."
+      },
+      "correcta": "B",
+      "explicacion": "La liquidación de corrección aritmética procede cuando la declaración contiene errores aritméticos: operaciones mal hechas, tarifa errada o anotación de valores distintos a los que resultan de las operaciones, que generen un menor impuesto o un mayor saldo a favor (art. 697 ET). Debe proferirse dentro de los 2 años siguientes a la fecha de presentación de la declaración (art. 699 ET), y se impone la sanción por error aritmético del 30% del mayor valor a pagar o del menor saldo a favor (art. 646 ET), reducible a la mitad si se acepta y paga.",
+      "norma": "Estatuto Tributario, arts. 697, 699 y 646",
+      "dificultad": 2,
+      "etiquetas": [
+        "corrección aritmética",
+        "sanciones"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "determinacion-control-008",
+      "contexto": "",
+      "enunciado": "Según el artículo 643 del Estatuto Tributario, la sanción por no declarar el impuesto sobre la renta equivale al:",
+      "opciones": {
+        "A": "10% del patrimonio líquido de la última declaración presentada.",
+        "B": "5% del impuesto que determine la DIAN, por cada mes de retardo.",
+        "C": "100% del impuesto que determine la DIAN en la liquidación de aforo.",
+        "D": "20% de las consignaciones o de los ingresos brutos, el que sea mayor."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 643 num. 1 ET establece que, si la omisión se refiere a la declaración de renta, la sanción por no declarar equivale al 20% del valor de las consignaciones bancarias o ingresos brutos de quien persiste en su incumplimiento, que determine la DIAN por el periodo no declarado, o al 20% de los ingresos brutos de la última declaración de renta presentada, el que sea superior. El 5% por mes corresponde a la extemporaneidad (art. 641).",
+      "norma": "Estatuto Tributario, art. 643",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanción por no declarar"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "determinacion-control-009",
+      "contexto": "",
+      "enunciado": "Según el artículo 635 del Estatuto Tributario, la tasa de interés moratorio para obligaciones tributarias es:",
+      "opciones": {
+        "A": "La tasa de usura para crédito de consumo, menos 2 puntos.",
+        "B": "La tasa de política monetaria del Banco de la República.",
+        "C": "El interés bancario corriente certificado, más 5 puntos.",
+        "D": "Una tasa fija del 2% mensual sobre el valor adeudado."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 635 ET dispone que el interés moratorio se liquida diariamente a una tasa equivalente a la tasa de usura vigente determinada por la Superintendencia Financiera para las modalidades de crédito de consumo, menos 2 puntos. Se causa por cada día calendario de retardo en el pago (art. 634 ET). Las leyes de beneficios transitorios han establecido en ocasiones tasas reducidas, pero la regla general es esta.",
+      "norma": "Estatuto Tributario, arts. 634 y 635",
+      "dificultad": 2,
+      "etiquetas": [
+        "intereses moratorios"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "determinacion-control-010",
+      "contexto": "",
+      "enunciado": "Según el artículo 817 del Estatuto Tributario, la acción de cobro de las obligaciones fiscales prescribe en:",
+      "opciones": {
+        "A": "3 años, contados a partir de la firmeza de la declaración tributaria presentada.",
+        "B": "10 años, contados a partir de la fecha de causación del impuesto.",
+        "C": "5 años, contados por ejemplo desde el vencimiento del plazo para declarar.",
+        "D": "2 años, contados desde la notificación del mandamiento de pago al deudor moroso."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 817 ET establece que la acción de cobro prescribe en 5 años, contados a partir de: la fecha de vencimiento del término para declarar, para las declaraciones oportunas; la fecha de presentación, para las extemporáneas; la presentación de la corrección, para los mayores valores; o la ejecutoria del acto de determinación o discusión. La prescripción se interrumpe, entre otras causas, por la notificación del mandamiento de pago. No confundir con la firmeza (3 años), que limita la facultad de fiscalizar.",
+      "norma": "Estatuto Tributario, arts. 817 y 818",
+      "dificultad": 2,
+      "etiquetas": [
+        "prescripción",
+        "cobro"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "determinacion-control-011",
+      "contexto": "",
+      "enunciado": "Respecto de las devoluciones de saldos a favor, ¿cuál afirmación es correcta según el Estatuto Tributario?",
+      "opciones": {
+        "A": "Se piden en los 5 años siguientes al plazo para declarar, y la DIAN tiene 15 días hábiles para devolver.",
+        "B": "Se piden en el mes siguiente a la presentación, y la DIAN tiene 6 meses para resolver.",
+        "C": "Se piden en el año siguiente al plazo para declarar, y la DIAN tiene 30 días calendario.",
+        "D": "Se piden en los 2 años siguientes al plazo para declarar, y la DIAN tiene 50 días hábiles."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 854 ET dispone que la solicitud de devolución o compensación debe presentarse a más tardar 2 años después de la fecha de vencimiento del término para declarar. El art. 855 ET establece que la DIAN debe devolver, previa las compensaciones a que haya lugar, dentro de los 50 días hábiles siguientes a la fecha de la solicitud presentada oportunamente y en debida forma. Existen términos especiales más cortos, por ejemplo para ciertos responsables con facturación electrónica.",
+      "norma": "Estatuto Tributario, arts. 850, 854 y 855",
+      "dificultad": 2,
+      "etiquetas": [
+        "devoluciones",
+        "saldos a favor"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "determinacion-control-012",
+      "contexto": "Durante una fiscalización, la DIAN encuentra que un contribuyente omitió ingresos y le notifica un requerimiento especial proponiendo sanción por inexactitud. El contribuyente acepta los hechos, corrige su declaración y paga.",
+      "enunciado": "Según el artículo 709 del Estatuto Tributario, ¿qué beneficio obtiene?",
+      "opciones": {
+        "A": "La sanción por inexactitud se reduce a la cuarta parte de la planteada por la DIAN.",
+        "B": "La sanción por inexactitud se elimina por completo por haber aceptado los hechos.",
+        "C": "La sanción se reduce a la mitad, pero se duplican los intereses moratorios del caso.",
+        "D": "No hay beneficio, porque la aceptación solo opera frente a la liquidación oficial."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 709 ET dispone que si, con ocasión de la respuesta al requerimiento especial o a su ampliación, el contribuyente acepta total o parcialmente los hechos planteados, la sanción por inexactitud se reduce a la cuarta parte de la planteada por la DIAN en relación con los hechos aceptados. Para ello debe corregir su declaración incluyendo los mayores valores aceptados y la sanción reducida, y pagar o acordar el pago. Si acepta después, frente a la liquidación de revisión, la reducción es a la mitad (art. 713 ET).",
+      "norma": "Estatuto Tributario, arts. 709 y 713",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanción por inexactitud",
+        "reducción de sanciones"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

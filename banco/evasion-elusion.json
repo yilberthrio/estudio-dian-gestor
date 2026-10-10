@@ -1,0 +1,163 @@
+{
+  "sesion": "evasion-elusion",
+  "preguntas": [
+    {
+      "id": "evasion-elusion-001",
+      "contexto": "",
+      "enunciado": "¿Cuál es la diferencia principal entre evasión y elusión tributaria?",
+      "opciones": {
+        "A": "La evasión oculta o falsea el hecho gravado; la elusión aprovecha vacíos o formas legales.",
+        "B": "La evasión es lícita y la elusión siempre es delito, sin importar el mecanismo usado.",
+        "C": "La evasión aplica solo a impuestos territoriales y la elusión, a los impuestos nacionales.",
+        "D": "Ambas son lo mismo: el no pago oportuno de una obligación tributaria ya declarada."
+      },
+      "correcta": "A",
+      "explicacion": "La evasión es el incumplimiento ilícito de la obligación tributaria mediante ocultamiento de ingresos, costos ficticios, omisión de declarar, etc. Viola directamente la ley y puede ser delito. La elusión reduce o evita el tributo usando formas jurídicas o vacíos normativos sin violar frontalmente la letra de la ley. Cuando se usan actos artificiales sin propósito económico real para obtener provecho tributario, se configura el abuso en materia tributaria (art. 869 ET), que la DIAN puede recaracterizar. La planeación tributaria legítima no es reprochable.",
+      "norma": "Estatuto Tributario, arts. 869 a 869-2",
+      "dificultad": 1,
+      "etiquetas": [
+        "conceptos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "evasion-elusion-002",
+      "contexto": "",
+      "enunciado": "Según el artículo 869 del Estatuto Tributario, el abuso en materia tributaria consiste en:",
+      "opciones": {
+        "A": "Presentar la declaración tributaria después del vencimiento del plazo, sin liquidar la sanción correspondiente.",
+        "B": "Usar actos o negocios artificiales, sin propósito económico o comercial, para obtener provecho tributario.",
+        "C": "Solicitar devoluciones de saldos a favor en exceso por un error aritmético de la declaración.",
+        "D": "Aplicar beneficios tributarios expresamente consagrados en la ley para un sector económico."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 869 ET (modificado por la Ley 1819 de 2016) define el abuso como el uso o implementación, a través de una operación o serie de operaciones, de uno o varios actos o negocios jurídicos artificiales, sin razón o propósito económico y/o comercial aparente, con el fin de obtener provecho tributario, independientemente de cualquier intención subjetiva adicional. La DIAN puede recaracterizar o reconfigurar esas operaciones, mediante un procedimiento con garantías y con autorización del nivel directivo. Usar beneficios previstos en la ley no es abuso.",
+      "norma": "Estatuto Tributario, art. 869",
+      "dificultad": 2,
+      "etiquetas": [
+        "abuso",
+        "elusión"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "evasion-elusion-003",
+      "contexto": "",
+      "enunciado": "En la conducta penal de contrabando (art. 319 del Código Penal), la introducción o extracción de mercancías por lugares no habilitados u ocultándolas al control aduanero es delito cuando su valor es superior a:",
+      "opciones": {
+        "A": "10 salarios mínimos legales mensuales vigentes.",
+        "B": "100 UVT.",
+        "C": "50 salarios mínimos legales mensuales vigentes.",
+        "D": "500 salarios mínimos legales mensuales vigentes."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 319 del Código Penal (modificado por la Ley 1762 de 2015, ley anticontrabando) castiga con prisión de 4 a 8 años a quien importe o exporte mercancías en cuantía superior a 50 SMLMV por lugares no habilitados, o las oculte, disimule o sustraiga de la intervención y control aduanero. Por debajo de ese monto la conducta se trata por la vía administrativa aduanera (aprehensión y decomiso). La pena se agrava cuando la cuantía supera los 200 SMLMV.",
+      "norma": "Ley 599 de 2000 (Código Penal), art. 319, modificado por Ley 1762 de 2015",
+      "dificultad": 2,
+      "etiquetas": [
+        "contrabando",
+        "penal"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "evasion-elusion-004",
+      "contexto": "Un importador ingresa mercancía por un puerto habilitado, presenta la declaración de importación, pero declara un valor muy inferior al real (subfacturación) y una subpartida arancelaria con menor tarifa.",
+      "enunciado": "Esta conducta corresponde principalmente a:",
+      "opciones": {
+        "A": "Contrabando abierto.",
+        "B": "Elusión lícita.",
+        "C": "Planeación aduanera.",
+        "D": "Contrabando técnico."
+      },
+      "correcta": "D",
+      "explicacion": "El contrabando técnico ocurre cuando la mercancía ingresa por los lugares habilitados y se somete al control aduanero, pero con información falsa o inexacta (subfacturación, error deliberado en la clasificación arancelaria, falsa declaración de origen, cantidades inferiores) para pagar menos tributos o evadir restricciones. El contrabando abierto es el ingreso por lugares no habilitados o sin someter la mercancía a control aduanero.",
+      "norma": "Ley 1762 de 2015; Decreto 1165 de 2019",
+      "dificultad": 2,
+      "etiquetas": [
+        "contrabando técnico"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "evasion-elusion-005",
+      "contexto": "",
+      "enunciado": "¿A qué entidad se reportan las operaciones sospechosas (ROS) relacionadas con lavado de activos y financiación del terrorismo?",
+      "opciones": {
+        "A": "A la Unidad de Información y Análisis Financiero.",
+        "B": "A la Superintendencia Financiera de Colombia.",
+        "C": "A la Fiscalía General de la Nación.",
+        "D": "A la Dirección de Investigación Criminal de la Policía."
+      },
+      "correcta": "A",
+      "explicacion": "La UIAF, creada por la Ley 526 de 1999 y adscrita al Ministerio de Hacienda, es la unidad de inteligencia financiera de Colombia. Recibe, centraliza y analiza los reportes de operaciones sospechosas (ROS) de los sujetos obligados, y comunica sus hallazgos a las autoridades competentes (Fiscalía, DIAN, etc.). La DIAN también es sujeto obligado a reportar y ejerce control sobre ciertos sectores en materia de prevención de LA/FT.",
+      "norma": "Ley 526 de 1999",
+      "dificultad": 1,
+      "etiquetas": [
+        "lavado de activos",
+        "UIAF"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "evasion-elusion-006",
+      "contexto": "Una empresa practicó retenciones en la fuente a sus proveedores durante varios meses, pero no consignó esos valores a la DIAN.",
+      "enunciado": "Según el artículo 402 del Código Penal, ¿cuándo se configura el delito de omisión del agente retenedor?",
+      "opciones": {
+        "A": "Cuando no consigna lo retenido dentro de los 2 meses siguientes al plazo para declarar y pagar.",
+        "B": "Cuando no consigna lo retenido dentro del año siguiente a la fecha fijada para declarar y pagar.",
+        "C": "Cuando no consigna lo retenido, pero solo si la cuantía supera los 1.000 SMLMV en el año.",
+        "D": "Cuando no presenta la declaración, aunque haya consignado oportunamente lo retenido."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 402 del Código Penal sanciona al agente retenedor o autorretenedor que no consigne las sumas retenidas o autorretenidas por concepto de retención en la fuente dentro de los 2 meses siguientes a la fecha fijada por el Gobierno Nacional para la presentación y pago de la declaración. Aplica también al responsable del IVA que no consigne las sumas recaudadas por ese concepto. Si extingue la obligación pagando lo adeudado con sus intereses y sanciones, puede beneficiarse de la terminación del proceso penal (parágrafo del artículo).",
+      "norma": "Ley 599 de 2000 (Código Penal), art. 402",
+      "dificultad": 2,
+      "etiquetas": [
+        "delitos tributarios",
+        "retención en la fuente"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "evasion-elusion-007",
+      "contexto": "",
+      "enunciado": "Según el artículo 671 del Estatuto Tributario, cuando la DIAN declara a una persona como proveedor ficticio, ¿qué efecto tiene para quienes le compran?",
+      "opciones": {
+        "A": "Deben pagar una multa equivalente al 100% del valor de las compras realizadas.",
+        "B": "Pierden el RUT y quedan inhabilitados para facturar hasta que se aclare la situación.",
+        "C": "Quedan obligados a presentar de nuevo las declaraciones de los últimos cinco años.",
+        "D": "Sus compras a ese proveedor no son deducibles ni dan derecho a impuesto descontable."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 671 ET dispone que, a partir de la publicación de la declaratoria de proveedor ficticio o insolvente, no son deducibles ni dan derecho a impuesto descontable en el IVA las compras o gastos efectuados a esas personas. Además, el proveedor ficticio queda sujeto a sanciones. Es una herramienta contra la facturación falsa, una práctica típica de evasión para inflar costos y descontables.",
+      "norma": "Estatuto Tributario, art. 671",
+      "dificultad": 2,
+      "etiquetas": [
+        "proveedores ficticios",
+        "facturación falsa"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "evasion-elusion-008",
+      "contexto": "",
+      "enunciado": "Según el artículo 323 del Código Penal, ¿cuál de las siguientes conductas puede ser delito fuente (subyacente) del lavado de activos?",
+      "opciones": {
+        "A": "La presentación extemporánea de la declaración del impuesto sobre la renta.",
+        "B": "El error aritmético en una declaración que genera un menor valor a pagar.",
+        "C": "La no inscripción oportuna en el Registro Único Tributario de un comerciante.",
+        "D": "El contrabando y el fraude aduanero, entre otros delitos que la norma enumera."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 323 del Código Penal tipifica el lavado de activos como adquirir, resguardar, invertir, transportar, transformar, almacenar, conservar, custodiar o administrar bienes cuyo origen mediato o inmediato está en ciertas actividades ilícitas. Entre ellas: tráfico de migrantes, trata de personas, extorsión, enriquecimiento ilícito, secuestro, rebelión, tráfico de armas, financiación del terrorismo, delitos contra la administración pública, contrabando, contrabando de hidrocarburos, fraude aduanero, favorecimiento y facilitación del contrabando, y narcotráfico. Las otras opciones son infracciones administrativas tributarias, no delitos.",
+      "norma": "Ley 599 de 2000 (Código Penal), art. 323",
+      "dificultad": 2,
+      "etiquetas": [
+        "lavado de activos",
+        "contrabando"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

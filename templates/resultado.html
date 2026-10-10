@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% from "_macros.html" import barra %}
+{% block titulo %}Resultado ronda #{{ ronda.id }} · Estudio DIAN{% endblock %}
+{% block contenido %}
+<h1>Resultado · Ronda #{{ ronda.id }}</h1>
+<p class="suave">{{ MODOS[ronda.modo] }} · {{ ronda.alcance }} · {{ ronda.inicio|fecha }}</p>
+
+<div class="grid kpis">
+  <div class="panel kpi"><div class="l">Acierto</div>
+    <div class="grande" style="color: {{ 'var(--ok)' if (pct or 0) >= 80 else 'var(--medio)' if (pct or 0) >= 60 else 'var(--mal)' }}">{{ pct|num('%') }}</div>
+    <div class="s">{{ ok }} de {{ n }} respondidas</div></div>
+  <div class="panel kpi"><div class="l">Errores</div><div class="v" style="color:var(--mal)">{{ n - ok }}</div>
+    <div class="s">{{ preguntas|length - n }} sin responder</div></div>
+  <div class="panel kpi"><div class="l">Duración</div><div class="v">{{ (tiempo_total // 60)|int }} min {{ (tiempo_total % 60)|int }} s</div>
+    <div class="s">{{ ((tiempo_total / n) if n else 0)|round(1) }} s por pregunta</div></div>
+  <div class="panel kpi"><div class="l">Tu promedio histórico</div><div class="v">{{ global_pct|num('%') }}</div>
+    <div class="s">{% if pct is not none and global_pct is not none %}{{ 'por encima' if pct >= global_pct else 'por debajo' }} del promedio{% endif %}</div></div>
+</div>
+
+<div class="grid dos" style="margin-top:14px">
+  <div class="panel">
+    <h3>Por sesión en esta ronda</h3>
+    <table>
+      {% for nombre, s in por_sesion.items() %}
+        {% set p = (100 * s.ok / s.n)|round(1) %}
+        <tr><td>{{ nombre }}</td><td class="n">{{ s.ok }}/{{ s.n }}</td><td class="n">{{ p }}%</td><td style="width:90px">{{ barra(p) }}</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="panel">
+    <h3>¿Y ahora?</h3>
+    <div class="acciones">
+      {% if fallos %}
+      <form method="post" action="{{ url_for('repetir', rid=ronda.id) }}"><button class="btn prim">🔁 Repetir las {{ fallos|length }} falladas</button></form>
+      {% endif %}
+      <a class="btn" href="{{ url_for('nueva_ronda') }}">Nueva ronda</a>
+      <a class="btn" href="{{ url_for('informe') }}">Ver fortalezas y debilidades</a>
+    </div>
+    <p class="peq suave" style="margin-top:12px">El informe se actualizó y quedó guardado en <code>informes/ultimo_informe.md</code>.</p>
+  </div>
+</div>
+
+<div class="ronda-top" style="margin-top:24px">
+  <h2 style="margin:0">Revisión pregunta por pregunta</h2>
+  <label class="check"><input type="checkbox" id="solo-errores"> Mostrar solo errores</label>
+</div>
+{% for p in preguntas %}
+  <div class="resp-item {{ 'ok' if p.acierto else 'mal' }}" data-ok="{{ 1 if p.acierto else 0 }}">
+    <div class="peq suave">#{{ loop.index }} · {{ p.sesion }} ·
+      {% if not p.respondida %}<span class="chip gris">sin responder</span>
+      {% elif p.acierto %}<span class="chip ok">Correcta</span>{% else %}<span class="chip mal">Incorrecta</span>{% endif %}
+      {% if p.confianza %}<span class="chip gris">{{ conf_nombres[p.confianza] }}</span>{% endif %}
+      {% if p.tiempo_seg %}· {{ p.tiempo_seg|round(0)|int }} s{% endif %}
+      · <a href="{{ url_for('editar_pregunta', pid=p.id) }}">editar</a></div>
+    {% if p.contexto %}<div class="contexto" style="margin-top:8px">{{ p.contexto }}</div>{% endif %}
+    <div style="font-weight:600; margin-top:6px; white-space:pre-line">{{ p.enunciado }}</div>
+    <ul class="ops">
+      {% for o in p.opciones %}
+        <li class="{{ 'c' if o.orig == p.correcta else 'e' if o.orig == p.elegida else '' }}">
+          <b>{{ o.letra }}.</b> {{ o.texto }}
+          {% if o.orig == p.correcta %} ✅{% elif o.orig == p.elegida %} ❌ (tu respuesta){% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="explicacion">{{ p.explicacion }}</div>
+    {% if p.norma %}<div class="peq suave" style="margin-top:6px">📖 {{ p.norma }}</div>{% endif %}
+  </div>
+{% endfor %}
+<script>
+document.getElementById("solo-errores").onchange = e =>
+  document.querySelectorAll(".resp-item").forEach(el => el.style.display = e.target.checked && el.dataset.ok === "1" ? "none" : "");
+</script>
+{% endblock %}

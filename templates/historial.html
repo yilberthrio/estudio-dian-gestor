@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% from "_macros.html" import barra %}
+{% block titulo %}Historial · Estudio DIAN{% endblock %}
+{% block contenido %}
+<h1>Historial de rondas</h1>
+{% if not rondas %}<div class="panel vacio">Aún no has hecho rondas. <a href="{{ url_for('nueva_ronda') }}">Empieza una</a>.</div>{% else %}
+<div class="panel tabla-scroll">
+  <table>
+    <tr><th>#</th><th>Fecha</th><th>Modo</th><th>Alcance</th><th class="n">Respondidas</th><th class="n">Acierto</th><th></th>
+      <th class="n">s/preg.</th><th></th></tr>
+    {% for r in rondas %}
+    <tr>
+      <td>{{ r.id }}</td><td>{{ r.inicio|fecha }}</td><td>{{ MODOS[r.modo] }}</td><td>{{ r.alcance }}</td>
+      <td class="n">{{ r.n }}/{{ r.cantidad }}</td><td class="n">{{ r.pct|num('%') }}</td><td style="width:90px">{{ barra(r.pct) }}</td>
+      <td class="n">{{ r.tprom|round(1) if r.tprom else '–' }}</td>
+      <td class="acciones">
+        {% if r.fin %}<a class="btn peq" href="{{ url_for('resultado', rid=r.id) }}">Ver</a>
+        {% else %}<a class="btn peq" href="{{ url_for('ronda', rid=r.id) }}">Continuar</a>{% endif %}
+        <form method="post" action="{{ url_for('eliminar_ronda', rid=r.id) }}" onsubmit="return confirm('¿Eliminar la ronda #{{ r.id }} y sus respuestas? Esto afecta tus estadísticas.')">
+          <button class="btn peq peligro">Eliminar</button></form>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endif %}
+{% endblock %}

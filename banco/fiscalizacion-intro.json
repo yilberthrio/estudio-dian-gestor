@@ -1,0 +1,260 @@
+{
+  "sesion": "fiscalizacion-intro",
+  "preguntas": [
+    {
+      "id": "fiscalizacion-intro-001",
+      "contexto": "",
+      "enunciado": "Según el artículo 684 del Estatuto Tributario, la DIAN tiene amplias facultades de fiscalización e investigación. ¿Cuál de las siguientes NO es una de ellas?",
+      "opciones": {
+        "A": "Verificar la exactitud de las declaraciones u otros informes.",
+        "B": "Citar o requerir al contribuyente o a terceros para que rindan informes o contesten interrogatorios.",
+        "C": "Ordenar la exhibición y el examen parcial de los libros, comprobantes y documentos.",
+        "D": "Imponer penas privativas de la libertad a los contribuyentes evasores."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 684 ET faculta a la DIAN para: verificar la exactitud de las declaraciones; adelantar investigaciones para establecer hechos generadores no declarados; citar o requerir al contribuyente o a terceros; exigir la presentación de documentos; ordenar la exhibición y el examen de libros y comprobantes; y, en general, efectuar las diligencias necesarias para la correcta determinación de los impuestos. Las penas privativas de la libertad solo las imponen los jueces penales; la DIAN puede denunciar ante la Fiscalía.",
+      "norma": "Estatuto Tributario, art. 684",
+      "dificultad": 1,
+      "etiquetas": [
+        "facultades de fiscalización"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-intro-002",
+      "contexto": "Al revisar una declaración de renta, la DIAN encuentra indicios de inexactitud y quiere dar al contribuyente la oportunidad de corregir voluntariamente antes de iniciar el proceso de determinación.",
+      "enunciado": "¿Qué acto debe proferir y cuál es su efecto?",
+      "opciones": {
+        "A": "Emplazamiento para corregir: tiene un mes y no responder no genera sanción.",
+        "B": "Liquidación de aforo: determina el impuesto de inmediato y sin más trámite.",
+        "C": "Requerimiento especial: el contribuyente tiene 3 meses para responderlo.",
+        "D": "Pliego de cargos: inicia el proceso sancionatorio por no declarar a tiempo."
+      },
+      "correcta": "A",
+      "explicacion": "Art. 685 ET: cuando la DIAN tenga indicios sobre la inexactitud de la declaración, puede enviar un emplazamiento para corregir, para que dentro del mes siguiente a su notificación el contribuyente corrija, liquidando la sanción por corrección (20% del mayor valor si es posterior al emplazamiento, art. 644 ET). La no respuesta no ocasiona sanción. No es requisito previo obligatorio para el requerimiento especial.",
+      "norma": "Estatuto Tributario, arts. 685 y 644",
+      "dificultad": 2,
+      "etiquetas": [
+        "emplazamiento para corregir"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-intro-003",
+      "contexto": "",
+      "enunciado": "El requerimiento especial, requisito previo a la liquidación oficial de revisión, debe notificarse a más tardar dentro de:",
+      "opciones": {
+        "A": "Los 6 meses siguientes a la presentación de la declaración.",
+        "B": "Los 3 años siguientes al vencimiento del plazo para declarar.",
+        "C": "Los 5 años siguientes a la fecha de presentación de la declaración.",
+        "D": "El año siguiente al vencimiento del plazo para declarar."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 705 ET: el requerimiento especial debe notificarse a más tardar dentro de los 3 años siguientes a la fecha de vencimiento del plazo para declarar. Si la declaración se presentó extemporáneamente, el término se cuenta desde la fecha de presentación. Cuando la declaración inicial arroja saldo a favor, se cuenta desde la presentación de la solicitud de devolución o compensación. El término coincide con el de firmeza general (art. 714 ET). Antes de practicar la liquidación de revisión, la DIAN debe enviar este requerimiento (art. 703).",
+      "norma": "Estatuto Tributario, arts. 703, 705 y 714",
+      "dificultad": 2,
+      "etiquetas": [
+        "requerimiento especial",
+        "términos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-intro-004",
+      "contexto": "",
+      "enunciado": "¿De cuánto tiempo dispone el contribuyente para responder el requerimiento especial?",
+      "opciones": {
+        "A": "15 días hábiles.",
+        "B": "1 mes.",
+        "C": "3 meses.",
+        "D": "6 meses."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 707 ET: dentro de los 3 meses siguientes a la notificación del requerimiento especial, el contribuyente debe formular por escrito sus objeciones, solicitar pruebas, subsanar omisiones, permitir la práctica de inspecciones y allegar documentos. Si acepta total o parcialmente los hechos, la sanción por inexactitud se reduce a la cuarta parte (art. 709 ET), siempre que corrija su declaración y pague o acuerde el pago.",
+      "norma": "Estatuto Tributario, arts. 707 y 709",
+      "dificultad": 2,
+      "etiquetas": [
+        "requerimiento especial",
+        "términos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-intro-005",
+      "contexto": "",
+      "enunciado": "La liquidación oficial de revisión debe notificarse dentro de:",
+      "opciones": {
+        "A": "Los 6 meses siguientes al vencimiento del plazo para responder el requerimiento.",
+        "B": "Los 3 meses siguientes a la notificación del requerimiento especial o de su ampliación.",
+        "C": "El año siguiente a la presentación de la declaración que se está revisando.",
+        "D": "Los 2 meses siguientes a la fecha en que el contribuyente responda el requerimiento."
+      },
+      "correcta": "A",
+      "explicacion": "Art. 710 ET: dentro de los 6 meses siguientes a la fecha de vencimiento del término para dar respuesta al requerimiento especial o a su ampliación, la DIAN debe notificar la liquidación de revisión, si hay mérito para ello. Si se practicó inspección tributaria de oficio, el término se suspende por 3 meses. La liquidación de revisión debe contraerse exclusivamente a la declaración del contribuyente y a los hechos contemplados en el requerimiento especial (art. 711 ET, correspondencia).",
+      "norma": "Estatuto Tributario, arts. 710 y 711",
+      "dificultad": 3,
+      "etiquetas": [
+        "liquidación de revisión",
+        "términos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-intro-006",
+      "contexto": "",
+      "enunciado": "Contra las liquidaciones oficiales y las resoluciones que imponen sanciones tributarias procede el recurso de reconsideración, que debe interponerse dentro de:",
+      "opciones": {
+        "A": "Los 10 días siguientes a la notificación.",
+        "B": "El mes siguiente a la notificación.",
+        "C": "Los 3 meses siguientes a la notificación.",
+        "D": "Los 2 meses siguientes a la notificación."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 720 ET: el recurso de reconsideración se interpone dentro de los 2 meses siguientes a la notificación del acto. La DIAN tiene 1 año, desde su interposición en debida forma, para resolverlo (art. 732 ET). Si no lo resuelve en ese término, opera el silencio administrativo positivo y el recurso se entiende fallado a favor del recurrente (art. 734 ET). En materia tributaria no aplica el término de 10 días del CPACA.",
+      "norma": "Estatuto Tributario, arts. 720, 732 y 734",
+      "dificultad": 2,
+      "etiquetas": [
+        "recurso de reconsideración"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "fiscalizacion-intro-007",
+      "contexto": "",
+      "enunciado": "Según el artículo 686 del Estatuto Tributario, el plazo que la DIAN otorgue para atender un requerimiento ordinario de información NO puede ser inferior a:",
+      "opciones": {
+        "A": "5 días hábiles.",
+        "B": "10 días hábiles.",
+        "C": "15 días calendario.",
+        "D": "1 mes calendario."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 686 ET obliga a las personas, sean o no contribuyentes, a atender los requerimientos de informaciones y pruebas relacionadas con investigaciones de la DIAN, dentro de los términos establecidos en el requerimiento, que no puede ser inferior a 15 días calendario. No atenderlos puede generar la sanción por no enviar información (art. 651 ET). No confundir con el emplazamiento para corregir (1 mes) ni con la respuesta al requerimiento especial (3 meses).",
+      "norma": "Estatuto Tributario, arts. 686 y 651",
+      "dificultad": 2,
+      "etiquetas": [
+        "requerimiento ordinario",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-intro-008",
+      "contexto": "",
+      "enunciado": "Según el artículo 706 del Estatuto Tributario, cuando se practica inspección tributaria de oficio, el término para notificar el requerimiento especial:",
+      "opciones": {
+        "A": "Se interrumpe y vuelve a contarse completo desde la fecha en que termina la inspección.",
+        "B": "Se suspende por 3 meses contados desde la notificación del auto que la decreta.",
+        "C": "Se amplía automáticamente en 1 año adicional a partir del acta de inspección.",
+        "D": "Se mantiene igual, porque la inspección no tiene efecto sobre los términos."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 706 ET dispone que el término para notificar el requerimiento especial se suspende: cuando se practique inspección tributaria de oficio, por 3 meses contados a partir de la notificación del auto que la decreta; cuando se practique a solicitud del contribuyente, mientras dure la inspección; y cuando se notifique emplazamiento para corregir, durante 1 mes. La suspensión no reinicia el término: solo lo detiene.",
+      "norma": "Estatuto Tributario, art. 706",
+      "dificultad": 3,
+      "etiquetas": [
+        "inspección tributaria",
+        "suspensión de términos"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-intro-009",
+      "contexto": "",
+      "enunciado": "Según el artículo 708 del Estatuto Tributario, la DIAN puede ampliar el requerimiento especial dentro de los 3 meses siguientes al vencimiento del plazo para responderlo. ¿Qué término tiene el contribuyente para responder la ampliación?",
+      "opciones": {
+        "A": "No menos de 1 mes ni más de 2 meses.",
+        "B": "Exactamente 15 días calendario.",
+        "C": "No menos de 6 meses ni más de 1 año.",
+        "D": "No menos de 3 meses ni más de 6 meses."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 708 ET permite al funcionario que conoce de la respuesta al requerimiento especial ordenar su ampliación, por una sola vez, dentro de los 3 meses siguientes a la fecha del vencimiento del plazo para responder. La ampliación puede incluir hechos y conceptos no contemplados en el requerimiento inicial, así como proponer una nueva determinación oficial. El plazo para la respuesta a la ampliación no puede ser inferior a 3 meses ni superior a 6 meses.",
+      "norma": "Estatuto Tributario, art. 708",
+      "dificultad": 3,
+      "etiquetas": [
+        "ampliación del requerimiento especial"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-intro-010",
+      "contexto": "En un requerimiento especial, la DIAN propuso rechazar costos por $200 millones. Al proferir la liquidación de revisión, además rechaza deducciones por $80 millones que no se mencionaron en el requerimiento ni en su ampliación.",
+      "enunciado": "¿Qué principio se vulnera?",
+      "opciones": {
+        "A": "El principio de correspondencia.",
+        "B": "El principio de progresividad del sistema tributario.",
+        "C": "El principio de irretroactividad de las leyes tributarias.",
+        "D": "El principio de eficiencia en el recaudo de los tributos."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 711 ET establece la correspondencia: la liquidación de revisión debe contraerse exclusivamente a la declaración del contribuyente y a los hechos contemplados en el requerimiento especial o en su ampliación. Incluir glosas nuevas vulnera el derecho de defensa, porque el contribuyente no tuvo oportunidad de controvertirlas, y vicia de nulidad esa parte de la liquidación.",
+      "norma": "Estatuto Tributario, art. 711",
+      "dificultad": 2,
+      "etiquetas": [
+        "liquidación de revisión",
+        "correspondencia"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-intro-011",
+      "contexto": "",
+      "enunciado": "Según el artículo 563 del Estatuto Tributario, ¿a qué dirección deben notificarse por regla general los actos de la DIAN?",
+      "opciones": {
+        "A": "A la que el funcionario encuentre en internet o en directorios comerciales.",
+        "B": "A la registrada en la Cámara de Comercio, aunque el RUT diga otra cosa.",
+        "C": "A la que informe el contribuyente por teléfono durante el curso de la investigación.",
+        "D": "A la última informada por el contribuyente en el Registro Único Tributario."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 563 ET dispone que la notificación debe efectuarse a la dirección informada por el contribuyente, responsable, agente retenedor o declarante en el RUT. Solo cuando no se ha informado una dirección o no se ha actualizado el RUT, la DIAN puede notificar a la dirección que establezca mediante verificación directa, guías telefónicas, directorios o información oficial, comercial o bancaria. Si no es posible establecerla, se publica en el portal web de la DIAN. Además, si el contribuyente señala dirección procesal en una actuación, debe usarse esa (art. 564).",
+      "norma": "Estatuto Tributario, arts. 563 y 564",
+      "dificultad": 2,
+      "etiquetas": [
+        "notificaciones"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-intro-012",
+      "contexto": "Al proferir una liquidación oficial, persisten dudas sobre un hecho por vacíos probatorios que no fue posible eliminar. El contribuyente no estaba obligado a probar ese hecho específico.",
+      "enunciado": "Según el artículo 745 del Estatuto Tributario, ¿cómo debe resolverse la duda?",
+      "opciones": {
+        "A": "A favor de la DIAN, porque prima el interés general del recaudo.",
+        "B": "Suspendiendo el proceso hasta que un perito resuelva la duda.",
+        "C": "A favor del contribuyente, si no hay modo de eliminarla.",
+        "D": "Mediante presunción de ingresos según el promedio del sector."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 745 ET establece que las dudas provenientes de vacíos probatorios existentes al practicar las liquidaciones o al fallar los recursos deben resolverse, si no hay modo de eliminarlas, a favor del contribuyente, cuando este no se encuentre obligado a probar determinados hechos. Se conoce como in dubio pro contribuyente. Complementa el art. 742: las decisiones de la DIAN deben fundarse en los hechos que aparezcan demostrados en el expediente.",
+      "norma": "Estatuto Tributario, arts. 742 y 745",
+      "dificultad": 2,
+      "etiquetas": [
+        "pruebas",
+        "in dubio pro contribuyente"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-intro-013",
+      "contexto": "",
+      "enunciado": "Según el artículo 746 del Estatuto Tributario, los hechos consignados en las declaraciones tributarias:",
+      "opciones": {
+        "A": "Carecen de valor probatorio hasta que la DIAN los verifique en una inspección.",
+        "B": "Se consideran ciertos, salvo que se pida comprobación especial o la ley la exija.",
+        "C": "Se presumen falsos cuando el contribuyente tiene antecedentes de inexactitud en otros años.",
+        "D": "Solo son ciertos cuando la declaración está firmada por contador público."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 746 ET consagra la presunción de veracidad: se consideran ciertos los hechos consignados en las declaraciones tributarias, en las correcciones a ellas o en las respuestas a requerimientos administrativos, siempre que sobre tales hechos no se haya solicitado una comprobación especial ni la ley la exija. Por eso, para desvirtuarlos, la DIAN debe adelantar la fiscalización y aportar pruebas; una vez requerida la comprobación, la carga de probar recae en el contribuyente.",
+      "norma": "Estatuto Tributario, art. 746",
+      "dificultad": 2,
+      "etiquetas": [
+        "pruebas",
+        "presunción de veracidad"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

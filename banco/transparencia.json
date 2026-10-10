@@ -1,0 +1,162 @@
+{
+  "sesion": "transparencia",
+  "preguntas": [
+    {
+      "id": "transparencia-001",
+      "contexto": "",
+      "enunciado": "Según la Ley 1712 de 2014, el principio según el cual toda información en posesión, bajo control o custodia de un sujeto obligado es pública, y solo puede reservarse o limitarse por disposición constitucional o legal, se denomina:",
+      "opciones": {
+        "A": "Principio de máxima publicidad para titular universal.",
+        "B": "Principio de calidad de la información.",
+        "C": "Principio de la divulgación proactiva de la información.",
+        "D": "Principio de no discriminación."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 2 de la Ley 1712 de 2014 consagra el principio de máxima publicidad para titular universal: toda información en posesión, bajo control o custodia de un sujeto obligado es pública y no puede ser reservada o limitada sino por disposición constitucional o legal. Divulgación proactiva (art. 3) es el deber de publicar información sin esperar una solicitud. Facilitación es el deber de facilitar el ejercicio del derecho de acceso, excluyendo exigencias que puedan obstruirlo. No discriminación: la información se entrega a todas las personas en igualdad de condiciones, sin exigir justificación.",
+      "norma": "Ley 1712 de 2014, arts. 2 y 3",
+      "dificultad": 1,
+      "etiquetas": [
+        "principios",
+        "acceso a la información"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "transparencia-002",
+      "contexto": "",
+      "enunciado": "En la Ley de Transparencia, ¿cuál es la diferencia entre información pública clasificada y reservada?",
+      "opciones": {
+        "A": "La clasificada nunca puede entregarse; la reservada se entrega a quien la pida por escrito.",
+        "B": "La clasificada protege derechos de particulares; la reservada, intereses públicos.",
+        "C": "Son sinónimos; la ley usa ambos términos indistintamente para la misma información.",
+        "D": "La clasificada es la de entidades territoriales; la reservada, la de entidades nacionales."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 6 de la Ley 1712: la información pública clasificada pertenece al ámbito propio, particular y privado o semiprivado de una persona natural o jurídica, y su acceso puede negarse en las circunstancias del art. 18 (intimidad, vida, salud, seguridad, secretos comerciales). La información pública reservada se exceptúa del acceso por daño a intereses públicos (art. 19: defensa y seguridad nacional, relaciones internacionales, prevención e investigación de delitos, debido proceso, estabilidad macroeconómica, entre otros).",
+      "norma": "Ley 1712 de 2014, arts. 6, 18 y 19",
+      "dificultad": 2,
+      "etiquetas": [
+        "clasificada",
+        "reservada"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "transparencia-003",
+      "contexto": "",
+      "enunciado": "Según la Ley 1712 de 2014, la reserva de la información amparada por el artículo 19 (excepciones por daño a intereses públicos) no puede extenderse por un período mayor a:",
+      "opciones": {
+        "A": "5 años.",
+        "B": "10 años.",
+        "C": "15 años.",
+        "D": "30 años."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 22 de la Ley 1712 de 2014 establece que la reserva de las informaciones amparadas por el art. 19 no debe extenderse por un período mayor a 15 años. Las excepciones de acceso son, además, de interpretación restrictiva y deben estar consagradas en la Constitución o la ley.",
+      "norma": "Ley 1712 de 2014, art. 22",
+      "dificultad": 2,
+      "etiquetas": [
+        "reserva",
+        "términos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "transparencia-004",
+      "contexto": "Un periodista solicita a la DIAN copia de la declaración de renta de un reconocido empresario, invocando la Ley de Transparencia.",
+      "enunciado": "¿Cómo debe resolverse la solicitud?",
+      "opciones": {
+        "A": "Entregarla, porque toda información en poder de una entidad pública es pública sin excepción.",
+        "B": "Entregarla solo si el periodista acredita tarjeta profesional y el fin de la publicación.",
+        "C": "Entregarla con los valores redondeados, para proteger la intimidad del empresario.",
+        "D": "Negarla de manera motivada, porque los datos de las declaraciones tienen reserva legal."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 583 del Estatuto Tributario establece que la información tributaria sobre las bases gravables y la determinación privada de los impuestos que figuren en las declaraciones tributarias tiene carácter de información reservada. Los funcionarios de la DIAN solo pueden utilizarla para el control, recaudo, determinación, discusión y administración de los impuestos. La Ley 1712 admite excepciones al acceso cuando una ley así lo disponga, y la negativa debe ser motivada e indicar la norma que la sustenta.",
+      "norma": "Estatuto Tributario, art. 583; Ley 1712 de 2014, arts. 19 y 28",
+      "dificultad": 2,
+      "etiquetas": [
+        "reserva tributaria"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "transparencia-005",
+      "contexto": "",
+      "enunciado": "¿Qué entidad es la encargada de velar por el adecuado cumplimiento de las obligaciones de la Ley 1712 de 2014?",
+      "opciones": {
+        "A": "La Contraloría General de la República.",
+        "B": "La Procuraduría General de la Nación.",
+        "C": "La Superintendencia de Industria y Comercio.",
+        "D": "El Departamento Nacional de Planeación."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 23 de la Ley 1712 de 2014 asigna al Ministerio Público, en cabeza de la Procuraduría General de la Nación, la función de velar por el adecuado cumplimiento de las obligaciones de la ley, entre ellas desarrollar acciones preventivas, promover el conocimiento de la norma y aplicar las sanciones disciplinarias.",
+      "norma": "Ley 1712 de 2014, art. 23",
+      "dificultad": 2,
+      "etiquetas": [
+        "vigilancia"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "transparencia-006",
+      "contexto": "Una entidad niega una solicitud de información alegando que es reservada, pero no explica por qué ni aporta sustento.",
+      "enunciado": "Según la Ley 1712 de 2014, ¿a quién corresponde probar que la información debe permanecer reservada?",
+      "opciones": {
+        "A": "Al solicitante, que debe demostrar que la información no es reservada.",
+        "B": "A la Procuraduría, que debe certificar el carácter reservado del documento.",
+        "C": "Al sujeto obligado, que debe aportar las razones y pruebas de la reserva.",
+        "D": "Al juez administrativo, que debe decidir de oficio sobre la reserva alegada."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 28 de la Ley 1712 de 2014 establece la carga de la prueba: corresponde al sujeto obligado aportar las razones y pruebas que fundamenten y evidencien que la información solicitada debe permanecer reservada o confidencial. En particular, debe demostrar que la información está relacionada con un objetivo legítimo establecido en la ley y que su revelación causaría un daño presente, probable y específico que excede el interés público de conocerla.",
+      "norma": "Ley 1712 de 2014, art. 28",
+      "dificultad": 2,
+      "etiquetas": [
+        "reserva",
+        "carga de la prueba"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "transparencia-007",
+      "contexto": "Un ciudadano solicita un informe de 40 páginas. Solo dos párrafos contienen datos personales protegidos de terceros.",
+      "enunciado": "Según la Ley 1712 de 2014, ¿qué debe hacer la entidad?",
+      "opciones": {
+        "A": "Negar todo el informe, porque contiene información clasificada.",
+        "B": "Entregar una versión pública que reserve solo la parte protegida.",
+        "C": "Entregar el informe completo, porque la mayor parte es pública.",
+        "D": "Pedir al ciudadano autorización escrita de los terceros afectados."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 21 de la Ley 1712 de 2014 regula la divulgación parcial: cuando la totalidad de la información de un documento no está protegida por una excepción, debe hacerse una versión pública que mantenga la reserva únicamente de la parte indispensable. La información pública no protegida debe entregarse. Negar todo el documento sería desproporcionado, y entregarlo completo vulneraría los derechos de los terceros.",
+      "norma": "Ley 1712 de 2014, art. 21",
+      "dificultad": 2,
+      "etiquetas": [
+        "divulgación parcial",
+        "versión pública"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "transparencia-008",
+      "contexto": "",
+      "enunciado": "Según la Ley 1712 de 2014, el inventario de los actos, documentos e informaciones que una entidad ha calificado como clasificados o reservados se denomina:",
+      "opciones": {
+        "A": "Registro de activos de información.",
+        "B": "Esquema de publicación de la información pública.",
+        "C": "Programa de gestión documental.",
+        "D": "Índice de información clasificada y reservada."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 20 de la Ley 1712 de 2014 obliga a los sujetos obligados a mantener un índice actualizado de los actos, documentos e informaciones calificados como clasificados o reservados, de conformidad con la ley. El índice incluye sus denominaciones, la motivación y la individualización del acto en que conste la calificación. El registro de activos de información es el inventario de toda la información que posee la entidad, y el esquema de publicación indica qué se publica, dónde y cada cuánto.",
+      "norma": "Ley 1712 de 2014, arts. 13, 12 y 20",
+      "dificultad": 3,
+      "etiquetas": [
+        "instrumentos de gestión de información"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

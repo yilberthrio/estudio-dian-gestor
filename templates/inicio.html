@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% from "_macros.html" import barra %}
+{% block contenido %}
+<div class="ronda-top">
+  <h1 style="margin:0">Panel de estudio</h1>
+  <div class="acciones">
+    {% if g.repaso_hoy %}<a class="btn" href="{{ url_for('nueva_ronda', modo='repaso') }}">🔁 Repasar {{ g.repaso_hoy }} pendientes</a>{% endif %}
+    <a class="btn prim" href="{{ url_for('nueva_ronda') }}">▶ Nueva ronda</a>
+  </div>
+</div>
+
+{% for a in abiertas %}
+  <div class="flash info">Ronda #{{ a.id }} sin terminar ({{ a.alcance }}, {{ a.hechas }}/{{ a.cantidad }} respondidas) —
+    <a href="{{ url_for('ronda', rid=a.id) }}">continuar</a></div>
+{% endfor %}
+
+<div class="grid kpis">
+  <div class="panel kpi"><div class="l">Preguntas en el banco</div><div class="v">{{ g.banco }}</div>
+    <div class="s">{{ g.nunca_vistas }} nunca vistas · cobertura {{ g.cobertura|num('%') }}</div></div>
+  <div class="panel kpi"><div class="l">Respuestas totales</div><div class="v">{{ g.respuestas }}</div>
+    <div class="s">{{ g.rondas }} rondas terminadas</div></div>
+  <div class="panel kpi"><div class="l">% de acierto</div><div class="v" style="color:var(--ok)">{{ g.pct|num('%') }}</div>
+    <div class="s">{{ g.aciertos }} aciertos</div></div>
+  <div class="panel kpi"><div class="l">% de error</div><div class="v" style="color:var(--mal)">{{ g.pct_error|num('%') }}</div>
+    <div class="s">{{ g.errores }} errores</div></div>
+  <div class="panel kpi"><div class="l">Tiempo promedio</div><div class="v">{{ g.tiempo|num(' s') }}</div>
+    <div class="s">por pregunta</div></div>
+  <div class="panel kpi"><div class="l">Racha</div><div class="v">{{ g.racha }} 🔥</div>
+    <div class="s">{{ g.dias }} días estudiados en total</div></div>
+  <div class="panel kpi"><div class="l">Repaso pendiente hoy</div><div class="v">{{ g.repaso_hoy }}</div>
+    <div class="s">repetición espaciada</div></div>
+  <div class="panel kpi"><div class="l">Marcadas para revisar</div><div class="v">{{ g.revisar }}</div>
+    <div class="s"><a href="{{ url_for('banco', estado='revisar') }}">ver lista</a></div></div>
+</div>
+
+<div class="grid dos" style="margin-top:14px">
+  <div class="panel">
+    <h3>Evolución del acierto por ronda</h3>
+    <div id="evolucion"></div>
+    <div class="peq suave">Línea punteada: meta de 80%.</div>
+  </div>
+  <div class="panel">
+    <h3>Por módulo</h3>
+    <table>
+      <tr><th>Módulo</th><th class="n">Banco</th><th class="n">Cobertura</th><th class="n">Acierto</th><th></th></tr>
+      {% for m in modulos %}
+      <tr><td>{{ m.nombre }}</td><td class="n">{{ m.banco }}</td><td class="n">{{ m.cobertura|num('%') }}</td>
+        <td class="n">{{ m.pct|num('%') }}</td><td style="width:90px">{{ barra(m.pct) }}</td></tr>
+      {% endfor %}
+    </table>
+    <h3 style="margin-top:18px">Calibración de confianza</h3>
+    <table>
+      <tr><th>Cuando marcas…</th><th class="n">Respuestas</th><th class="n">Aciertas</th></tr>
+      {% for c in calib %}<tr><td>{{ c.nombre }}</td><td class="n">{{ c.n }}</td><td class="n">{{ c.pct|num('%') }}</td></tr>{% endfor %}
+    </table>
+  </div>
+</div>
+
+<h2>Detalle por sesión</h2>
+<div class="panel tabla-scroll">
+  <table>
+    <tr><th>Sesión</th><th class="n">Banco</th><th class="n">Vistas</th><th class="n">Resp.</th><th class="n">Acierto</th>
+      <th class="n">Dominio</th><th></th><th>Estado</th><th></th></tr>
+    {% set ns = namespace(m='') %}
+    {% for s in sesiones %}
+      {% if s.mcod != ns.m %}{% set ns.m = s.mcod %}<tr class="modulo"><td colspan="9">{{ s.modulo }}</td></tr>{% endif %}
+      <tr>
+        <td>{{ s.nombre }}</td><td class="n">{{ s.banco }}</td><td class="n">{{ s.vistas }}</td><td class="n">{{ s.respuestas }}</td>
+        <td class="n">{{ s.pct|num('%') }}</td><td class="n">{{ s.dominio|num('%') }}</td><td style="width:90px">{{ barra(s.dominio) }}</td>
+        <td><span class="chip {{ s.estado }}">{{ s.estado_txt }}</span></td>
+        <td>{% if s.banco %}<a class="btn peq" href="{{ url_for('nueva_ronda', alcance='s:' ~ s.id) }}">Practicar</a>{% endif %}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  <p class="peq suave"><b>Dominio</b>: acierto ponderado que da más peso a tus respuestas recientes y descuenta los aciertos marcados como «Dudoso» o «Adiviné».</p>
+</div>
+
+<script>
+graficaLinea("#evolucion", {{ evolucion|tojson }}.map(r => ({ v: r.pct, e: "#" + r.id, t: "Ronda #" + r.id + " (" + r.alcance + ")" })), { meta: 80 });
+</script>
+{% endblock %}

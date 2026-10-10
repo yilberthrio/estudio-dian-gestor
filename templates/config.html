@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block titulo %}Configuración · Estudio DIAN{% endblock %}
+{% block contenido %}
+<h1>Configuración</h1>
+<form method="post" class="panel" style="max-width:640px">
+  <div class="fila">
+    <div class="campo"><label>Preguntas por ronda (por defecto)</label>
+      <input type="number" name="preguntas_por_ronda" min="1" max="500" value="{{ cfg.preguntas_por_ronda }}"></div>
+    <div class="campo"><label>Minutos por pregunta en simulacro</label>
+      <input type="number" name="minutos_por_pregunta_simulacro" min="0.5" step="0.5" value="{{ cfg.minutos_por_pregunta_simulacro }}"></div>
+  </div>
+  <div class="campo"><label class="check"><input type="checkbox" name="barajar_opciones" {{ 'checked' if cfg.barajar_opciones == '1' }}>
+    Barajar el orden de las opciones (evita memorizar la letra en vez del concepto)</label></div>
+  <h3 style="margin-top:20px">Análisis de fortalezas y debilidades</h3>
+  <div class="fila">
+    <div class="campo"><label>Fortaleza desde (%)</label><input type="number" name="umbral_fortaleza" min="1" max="100" value="{{ cfg.umbral_fortaleza }}"></div>
+    <div class="campo"><label>Debilidad por debajo de (%)</label><input type="number" name="umbral_debilidad" min="1" max="100" value="{{ cfg.umbral_debilidad }}"></div>
+    <div class="campo"><label>Mínimo de respuestas por sesión</label><input type="number" name="minimo_respuestas_analisis" min="1" value="{{ cfg.minimo_respuestas_analisis }}"></div>
+  </div>
+  <h3 style="margin-top:20px">Banco compartido</h3>
+  <div class="campo"><label class="check"><input type="checkbox" name="modo_autor" {{ 'checked' if cfg.modo_autor == '1' }}>
+    Modo autor: al crear, editar, importar o eliminar preguntas, el cambio se guarda también en <code>banco/</code> para publicarlo en GitHub</label>
+    <p class="peq suave" style="margin:4px 0 0 26px">Déjalo desactivado si solo usas la app para estudiar: tus cambios quedarán solo en tu copia
+      y las preguntas del banco se actualizarán con cada nueva versión.</p></div>
+  <button class="btn prim">Guardar</button>
+</form>
+<div class="panel peq suave" style="max-width:640px; margin-top:14px">
+  <b>Copia de seguridad:</b> todos tus registros están en el archivo <code>estudio.db</code>. Cópialo a otra carpeta o a la nube para respaldarlo.
+</div>
+{% endblock %}

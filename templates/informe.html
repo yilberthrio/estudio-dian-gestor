@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% from "_macros.html" import barra %}
+{% block titulo %}Fortalezas y debilidades · Estudio DIAN{% endblock %}
+{% block contenido %}
+<div class="ronda-top">
+  <h1 style="margin:0">Fortalezas y debilidades</h1>
+  <div class="acciones">
+    <a class="btn" href="{{ url_for('informe_md') }}">⬇ Descargar informe (.md)</a>
+    <a class="btn prim" href="{{ url_for('nueva_ronda', modo='debilidades') }}">▶ Ronda enfocada en debilidades</a>
+  </div>
+</div>
+<p class="suave peq">Clasificación por <b>dominio</b> (acierto ponderado: lo reciente pesa más y los aciertos dudosos o adivinados valen menos).
+  Fortaleza ≥ {{ cfg.umbral_fortaleza }}% · Debilidad &lt; {{ cfg.umbral_debilidad }}% · mínimo {{ cfg.minimo_respuestas_analisis }} respuestas por sesión.
+  Copia guardada en <code>informes/ultimo_informe.md</code>.</p>
+
+<div class="panel" style="margin-bottom:14px">
+  <h3>Recomendaciones</h3>
+  <ul style="margin:0; padding-left:20px">{% for r in recs %}<li>{{ r|replace('**', '') }}</li>{% endfor %}</ul>
+</div>
+
+<div class="grid dos">
+  {% for estado, titulo in [('debilidad', '🔴 Debilidades'), ('en-desarrollo', '🟡 En desarrollo'), ('fortaleza', '🟢 Fortalezas'), ('sin-datos', '⚪ Sin datos suficientes')] %}
+    {% set grupo = sesiones|selectattr('estado', 'equalto', estado)|list %}
+    <div class="panel">
+      <h3>{{ titulo }} ({{ grupo|length }})</h3>
+      {% if not grupo %}<p class="suave peq">Ninguna por ahora.</p>{% else %}
+      <table>
+        {% for s in grupo|sort(attribute='dominio' if estado != 'sin-datos' else 'respuestas') %}
+        <tr>
+          <td>{{ s.nombre }}<div class="peq suave">{{ s.respuestas }} resp. · acierto {{ s.pct|num('%') }}
+            {% if s.tendencia is not none %} · tendencia
+              <b style="color: {{ 'var(--ok)' if s.tendencia >= 0 else 'var(--mal)' }}">{{ '%+.1f'|format(s.tendencia) }}</b>{% endif %}
+            {% set h = hist.get(s.id, []) %}
+            {% if h|length > 1 %} · evolución: {% for f, d in h[-6:] %}{{ d|round(0)|int if d is not none else '–' }}{{ ' → ' if not loop.last }}{% endfor %}{% endif %}
+          </div></td>
+          <td class="n">{{ s.dominio|num('%') }}</td>
+          <td style="width:80px">{{ barra(s.dominio) }}</td>
+          <td>{% if s.banco %}<a class="btn peq" href="{{ url_for('nueva_ronda', alcance='s:' ~ s.id) }}">Practicar</a>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<div class="grid dos" style="margin-top:14px">
+  <div class="panel">
+    <h3>Calibración de confianza</h3>
+    <p class="peq suave">Si cuando marcas «Seguro» no aciertas casi siempre, hay conceptos que crees dominar y no dominas.</p>
+    <table>
+      <tr><th>Confianza</th><th class="n">Respuestas</th><th class="n">% acierto</th><th></th></tr>
+      {% for c in calib %}<tr><td>{{ c.nombre }}</td><td class="n">{{ c.n }}</td><td class="n">{{ c.pct|num('%') }}</td><td style="width:90px">{{ barra(c.pct) }}</td></tr>{% endfor %}
+    </table>
+  </div>
+  <div class="panel">
+    <h3>Errores con seguridad</h3>
+    {% if not seguras %}<p class="suave peq">Ninguno. 👍</p>{% else %}
+    <table>{% for s in seguras %}
+      <tr><td><a href="{{ url_for('editar_pregunta', pid=s.id) }}">#{{ s.id }}</a></td><td class="peq">{{ s.enunciado[:120] }}…<div class="suave">{{ s.sesion }}</div></td><td class="n">{{ s.veces }}×</td></tr>
+    {% endfor %}</table>{% endif %}
+  </div>
+</div>
+
+<h2>Preguntas más falladas</h2>
+<div class="panel">
+  {% if not falladas %}<p class="suave peq">Aún no hay errores registrados.</p>{% else %}
+  <table>
+    <tr><th>#</th><th>Pregunta</th><th>Sesión</th><th class="n">Fallos</th></tr>
+    {% for f in falladas %}
+    <tr><td><a href="{{ url_for('editar_pregunta', pid=f.id) }}">{{ f.id }}</a></td><td class="peq">{{ f.enunciado[:160] }}{% if f.norma %}<div class="suave">📖 {{ f.norma }}</div>{% endif %}</td>
+      <td class="peq">{{ f.sesion }}</td><td class="n">{{ f.fallos }}/{{ f.intentos }}</td></tr>
+    {% endfor %}
+  </table>
+  <div class="acciones" style="margin-top:10px"><a class="btn" href="{{ url_for('nueva_ronda', modo='falladas') }}">Practicar falladas</a></div>
+  {% endif %}
+</div>
+{% endblock %}

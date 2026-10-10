@@ -1,0 +1,160 @@
+{
+  "sesion": "gestion-documental",
+  "preguntas": [
+    {
+      "id": "gestion-documental-001",
+      "contexto": "",
+      "enunciado": "Según la Ley General de Archivos, el ciclo vital del documento comprende las etapas de:",
+      "opciones": {
+        "A": "Recepción, digitalización y eliminación.",
+        "B": "Producción, préstamo y destrucción.",
+        "C": "Archivo de gestión, central e histórico.",
+        "D": "Archivo activo, archivo pasivo y archivo muerto."
+      },
+      "correcta": "C",
+      "explicacion": "La Ley 594 de 2000 define el ciclo vital del documento como las etapas sucesivas por las que atraviesan los documentos desde su producción o recepción hasta su eliminación o su integración a un archivo permanente. Corresponde a: archivo de gestión (documentos en trámite, consultados frecuentemente por la oficina productora), archivo central (documentos transferidos, de consulta menos frecuente) y archivo histórico (documentos de conservación permanente por su valor histórico, científico o cultural).",
+      "norma": "Ley 594 de 2000, arts. 3 y 23",
+      "dificultad": 1,
+      "etiquetas": [
+        "ciclo vital"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "gestion-documental-002",
+      "contexto": "",
+      "enunciado": "La Tabla de Retención Documental (TRD) es:",
+      "opciones": {
+        "A": "El listado de series y tipos documentales con su tiempo de permanencia en cada etapa.",
+        "B": "El formato para registrar los préstamos y las devoluciones de expedientes en cada oficina.",
+        "C": "El inventario de los bienes muebles y equipos con que cuenta el archivo central.",
+        "D": "El cronograma anual de capacitaciones en archivo para los servidores de la entidad."
+      },
+      "correcta": "A",
+      "explicacion": "La TRD es el listado de series, con sus correspondientes tipos documentales, a las que se asigna el tiempo de permanencia en cada etapa del ciclo vital y la disposición final (conservación total, eliminación, selección o microfilmación/digitalización). Su elaboración es obligatoria para las entidades públicas según la Ley 594 de 2000 y las normas del Archivo General de la Nación. No confundir con el FUID (Formato Único de Inventario Documental).",
+      "norma": "Ley 594 de 2000, art. 24; Acuerdos AGN",
+      "dificultad": 2,
+      "etiquetas": [
+        "TRD",
+        "instrumentos archivísticos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "gestion-documental-003",
+      "contexto": "",
+      "enunciado": "El principio archivístico según el cual los documentos deben conservarse dentro del fondo documental al que naturalmente pertenecen, sin mezclarlos con los de otros productores, se denomina:",
+      "opciones": {
+        "A": "Principio de orden original.",
+        "B": "Principio de procedencia.",
+        "C": "Principio de integridad.",
+        "D": "Principio de disponibilidad."
+      },
+      "correcta": "B",
+      "explicacion": "El principio de procedencia indica que los documentos producidos por una institución u organismo no deben mezclarse con los de otros. El principio de orden original indica que los documentos se ordenan en la secuencia en que se produjeron dentro de cada expediente o serie, respetando el trámite que les dio origen. Ambos son los pilares de la organización archivística.",
+      "norma": "Ley 594 de 2000; Acuerdo AGN 027 de 2006 (glosario)",
+      "dificultad": 2,
+      "etiquetas": [
+        "principios archivísticos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "gestion-documental-004",
+      "contexto": "",
+      "enunciado": "La remisión de documentos del archivo de gestión al archivo central, conforme a las TRD, se denomina:",
+      "opciones": {
+        "A": "Transferencia secundaria.",
+        "B": "Eliminación documental.",
+        "C": "Transferencia primaria.",
+        "D": "Depuración."
+      },
+      "correcta": "C",
+      "explicacion": "La transferencia primaria es la remisión de documentos del archivo de gestión al archivo central, una vez cumplido el tiempo de retención fijado en la TRD. La transferencia secundaria es la remisión del archivo central al archivo histórico, para documentos de conservación permanente. La depuración es el retiro de copias, duplicados y documentos sin valor dentro de un expediente; la eliminación es la destrucción de documentos que ya perdieron sus valores, según la TRD y con acta.",
+      "norma": "Ley 594 de 2000; Acuerdos AGN",
+      "dificultad": 2,
+      "etiquetas": [
+        "transferencias"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "gestion-documental-005",
+      "contexto": "",
+      "enunciado": "¿Qué entidad es el ente rector de la política archivística en Colombia según la Ley 594 de 2000?",
+      "opciones": {
+        "A": "El Ministerio de Tecnologías de la Información y las Comunicaciones.",
+        "B": "La Biblioteca Nacional de Colombia.",
+        "C": "El Departamento Administrativo de la Función Pública.",
+        "D": "El Archivo General de la Nación."
+      },
+      "correcta": "D",
+      "explicacion": "La Ley 594 de 2000 (Ley General de Archivos) establece que el Archivo General de la Nación es la entidad encargada de orientar y coordinar la función archivística en el país, como ente rector del Sistema Nacional de Archivos. Expide las normas técnicas (acuerdos y circulares) sobre gestión documental que deben cumplir las entidades públicas.",
+      "norma": "Ley 594 de 2000, arts. 1 a 8",
+      "dificultad": 1,
+      "etiquetas": [
+        "institucionalidad"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "gestion-documental-006",
+      "contexto": "",
+      "enunciado": "Una entidad tiene un gran volumen de documentos acumulados durante años sin ningún criterio archivístico. ¿Qué instrumento se usa para organizarlos y valorarlos?",
+      "opciones": {
+        "A": "Las Tablas de Valoración Documental (TVD).",
+        "B": "Las Tablas de Retención Documental (TRD).",
+        "C": "El Formato Único de Inventario Documental (FUID).",
+        "D": "El Plan Institucional de Archivos (PINAR)."
+      },
+      "correcta": "A",
+      "explicacion": "Las Tablas de Valoración Documental (TVD) se aplican a los fondos documentales acumulados: documentos reunidos sin criterios archivísticos, antes de existir TRD. Permiten determinar sus tiempos de permanencia y su disposición final. Las TRD se aplican a la documentación que la entidad produce hoy. El FUID es un instrumento de inventario, y el PINAR es el instrumento de planeación de la función archivística.",
+      "norma": "Ley 594 de 2000; Acuerdos AGN (TVD y fondos acumulados)",
+      "dificultad": 2,
+      "etiquetas": [
+        "TVD",
+        "fondos acumulados"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "gestion-documental-007",
+      "contexto": "",
+      "enunciado": "¿Cuáles de los siguientes son valores secundarios de un documento?",
+      "opciones": {
+        "A": "Administrativo, jurídico y legal.",
+        "B": "Fiscal, contable y técnico.",
+        "C": "Histórico, científico y cultural.",
+        "D": "Probatorio, contractual y fiscal."
+      },
+      "correcta": "C",
+      "explicacion": "Los valores primarios son los que tienen los documentos mientras sirven a la entidad productora y a los interesados: administrativo, jurídico, legal, fiscal, contable y técnico. Los valores secundarios son los que interesan a la investigación, la ciencia y la cultura una vez agotado el valor inmediato: histórico, científico y cultural. Estos últimos justifican la conservación permanente en el archivo histórico.",
+      "norma": "Ley 594 de 2000; Acuerdo AGN 027 de 2006 (glosario)",
+      "dificultad": 2,
+      "etiquetas": [
+        "valoración documental"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "gestion-documental-008",
+      "contexto": "",
+      "enunciado": "Según las directrices del Archivo General de la Nación, ¿cómo se debe foliar un expediente en soporte papel?",
+      "opciones": {
+        "A": "Con bolígrafo de tinta azul, en la esquina inferior izquierda de cada hoja.",
+        "B": "Con lápiz de mina negra y blanda, en la esquina superior derecha de cada folio.",
+        "C": "Con sello numerador de tinta roja, en el centro del margen superior de cada página.",
+        "D": "Con lápiz rojo, solo en las hojas que contengan firmas o información relevante."
+      },
+      "correcta": "B",
+      "explicacion": "La foliación es la numeración consecutiva de los folios de un expediente, siguiendo el orden original. El AGN indica hacerla con lápiz de mina negra y blanda (HB o B), en la esquina superior derecha del folio, en el mismo sentido del texto, sin enmendaduras y numerando todos los folios útiles. No se usa bolígrafo ni lápiz de color, y no se folian solo algunas hojas. La foliación garantiza la integridad y el control del expediente.",
+      "norma": "Archivo General de la Nación – instructivo de foliación",
+      "dificultad": 2,
+      "etiquetas": [
+        "foliación",
+        "expedientes"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}

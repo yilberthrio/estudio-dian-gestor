@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block titulo %}Nueva ronda · Estudio DIAN{% endblock %}
+{% block contenido %}
+<h1>Nueva ronda</h1>
+<form method="post" class="panel">
+  <div class="fila">
+    <div class="campo" style="flex:3 1 300px">
+      <label for="alcance">¿Qué quieres practicar?</label>
+      <select name="alcance" id="alcance">
+        <option value="">Todo el temario (mezclado)</option>
+        {% for m in modulos %}
+          <optgroup label="{{ m.nombre }}">
+            <option value="m:{{ m.id }}" {{ 'selected' if preseleccion == 'm:' ~ m.id }}>▸ Todo el módulo «{{ m.nombre }}» ({{ m.banco }})</option>
+            {% for s in m.sesiones %}
+              <option value="s:{{ s.id }}" {{ 'selected' if preseleccion == 's:' ~ s.id }} {{ 'disabled' if not s.banco }}>&nbsp;&nbsp;&nbsp;{{ s.nombre }} ({{ s.banco }})</option>
+            {% endfor %}
+          </optgroup>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="campo" style="flex:1 1 140px">
+      <label for="cantidad">Número de preguntas</label>
+      <input type="number" name="cantidad" id="cantidad" min="1" max="500" value="{{ cfg.preguntas_por_ronda }}">
+    </div>
+  </div>
+
+  <label>Modo</label>
+  <div class="modos">
+    {% set descr = {
+      'aleatorio': 'Preguntas al azar del alcance elegido.',
+      'no_vistas': 'Solo preguntas que nunca has respondido.',
+      'falladas': 'Preguntas cuya última respuesta fue errada o adivinada.',
+      'debilidades': 'Prioriza las sesiones con menor dominio y las preguntas falladas.',
+      'repaso': 'Repetición espaciada: las que tocan hoy según tu historial.',
+      'simulacro': 'Cronometrado (' ~ cfg.minutos_por_pregunta_simulacro ~ ' min/pregunta). Explicaciones al final; lo no respondido cuenta como error.'} %}
+    {% for clave in ['aleatorio', 'no_vistas', 'falladas', 'debilidades', 'repaso', 'simulacro'] %}
+      <label class="modo">
+        <input type="radio" name="modo" value="{{ clave }}" {{ 'checked' if (modo_pre or 'aleatorio') == clave }}>
+        <b>{{ MODOS[clave] }}</b>
+        {% if clave in conteos %}<span class="chip gris" data-conteo="{{ clave }}">{{ conteos[clave] }}</span>{% endif %}
+        <div class="d">{{ descr[clave] }}</div>
+      </label>
+    {% endfor %}
+  </div>
+
+  <div class="campo" style="margin-top:16px" id="campo-feedback">
+    <label>¿Cuándo ver la respuesta y la explicación?</label>
+    <label class="check"><input type="radio" name="feedback" value="inmediato" checked> Después de cada pregunta</label>
+    <label class="check"><input type="radio" name="feedback" value="final"> Al final de la ronda</label>
+  </div>
+
+  <button class="btn prim" type="submit">▶ Comenzar</button>
+</form>
+
+<script>
+const sel = document.getElementById("alcance");
+async function actualizarConteos() {
+  const r = await fetch("/api/conteos?alcance=" + encodeURIComponent(sel.value));
+  const c = await r.json();
+  document.querySelectorAll("[data-conteo]").forEach(el => el.textContent = c[el.dataset.conteo]);
+}
+sel.addEventListener("change", actualizarConteos);
+if (sel.value) actualizarConteos();
+const fb = document.getElementById("campo-feedback");
+function toggleFb() { fb.style.display = document.querySelector("[name=modo]:checked").value === "simulacro" ? "none" : ""; }
+document.querySelectorAll("[name=modo]").forEach(r => r.addEventListener("change", toggleFb));
+toggleFb();
+</script>
+{% endblock %}

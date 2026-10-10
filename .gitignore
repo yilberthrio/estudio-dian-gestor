@@ -1,0 +1,17 @@
+# Progreso personal: cada persona tiene el suyo y se crea solo al iniciar
+estudio.db
+estudio.db-journal
+informes/
+respaldos/
+
+# Área de trabajo para importar preguntas (lo importado queda en banco/)
+preguntas/
+
+# Archivos de referencia locales
+Manual.pdf
+Proposito.txt
+
+__pycache__/
+*.pyc
+.vscode/
+.claude/

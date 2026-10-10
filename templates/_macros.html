@@ -1,0 +1,3 @@
+{% macro barra(v) -%}
+  <div class="barra {{ 'ok' if v is not none and v >= 80 else 'medio' if v is not none and v >= 60 else 'mal' }}"><i style="width: {{ v or 0 }}%"></i></div>
+{%- endmacro %}

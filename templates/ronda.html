@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+{% block titulo %}Ronda #{{ ronda.id }} · Estudio DIAN{% endblock %}
+{% block contenido %}
+<div class="ronda-top">
+  <div>
+    <b>Ronda #{{ ronda.id }}</b> · {{ MODOS[ronda.modo] }} · <span class="suave">{{ ronda.alcance }}</span>
+  </div>
+  <div class="acciones">
+    <span id="contador" class="suave"></span>
+    <span id="reloj" class="reloj"></span>
+    <button class="btn peq" id="btn-terminar">Terminar ronda</button>
+  </div>
+</div>
+<div class="progreso"><i id="barra" style="width:0"></i></div>
+
+<div class="pregunta panel" id="pregunta">Cargando…</div>
+<div class="puntos" id="puntos"></div>
+<div class="atajos">
+  <kbd>1</kbd>–<kbd>4</kbd> elegir opción · <kbd>S</kbd>/<kbd>Enter</kbd> seguro · <kbd>D</kbd> dudoso · <kbd>N</kbd> adiviné ·
+  <kbd>Enter</kbd> siguiente · <kbd>R</kbd> marcar para revisar
+</div>
+
+<script>
+const RID = {{ ronda.id }};
+let datos, idx = 0, elegida = null, tInicio = Date.now(), bloqueado = false;
+const $ = s => document.querySelector(s);
+const esc = t => (t || "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const inmediato = () => datos.ronda.feedback === "inmediato";
+
+async function cargar() {
+  datos = await (await fetch(`/api/ronda/${RID}`)).json();
+  const pend = datos.preguntas.findIndex(p => !p.respondida);
+  idx = pend === -1 ? datos.preguntas.length - 1 : pend;
+  if (datos.ronda.tiempo_limite_seg) iniciarCuentaRegresiva();
+  else setInterval(() => $("#reloj").textContent = formato((Date.now() - tInicio) / 1000 + datos.transcurrido), 1000);
+  mostrar();
+}
+
+function formato(seg) {
+  seg = Math.max(0, Math.floor(seg));
+  const h = Math.floor(seg / 3600), m = Math.floor(seg % 3600 / 60), s = seg % 60;
+  return (h ? h + ":" : "") + String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+}
+
+function iniciarCuentaRegresiva() {
+  const fin = Date.now() + (datos.ronda.tiempo_limite_seg - datos.transcurrido) * 1000;
+  const tick = () => {
+    const resta = (fin - Date.now()) / 1000;
+    $("#reloj").textContent = "⏱ " + formato(resta);
+    $("#reloj").classList.toggle("alerta", resta < 120);
+    if (resta <= 0) { clearInterval(iv); alert("Se acabó el tiempo del simulacro."); terminar(true); }
+  };
+  const iv = setInterval(tick, 1000); tick();
+}
+
+function mostrar() {
+  const p = datos.preguntas[idx];
+  elegida = p.respondida ? p.elegida : null;
+  tInicio = Date.now();
+  const resp = datos.preguntas.filter(q => q.respondida).length;
+  $("#contador").textContent = `${idx + 1} / ${datos.preguntas.length} · ${resp} respondidas`;
+  $("#barra").style.width = (100 * resp / datos.preguntas.length) + "%";
+  let h = `<div class="peq suave" style="margin-bottom:8px">${esc(p.modulo)} › ${esc(p.sesion)}
+    ${"★".repeat(p.dificultad || 0)}${p.revisar ? ' · <span class="chip medio">marcada para revisar</span>' : ""}</div>`;
+  if (p.contexto) h += `<div class="contexto">${esc(p.contexto)}</div>`;
+  h += `<div class="enunciado">${esc(p.enunciado)}</div><div id="opciones">`;
+  for (const o of p.opciones) {
+    h += `<button class="opcion" data-orig="${o.orig}"><span class="letra">${o.letra}</span><span>${esc(o.texto)}</span></button>`;
+  }
+  h += `</div><div id="zona"></div>`;
+  $("#pregunta").innerHTML = h;
+  document.querySelectorAll(".opcion").forEach(b => b.onclick = () => elegir(b.dataset.orig));
+  if (p.respondida) pintarRespondida(p); else pintarConfianza();
+  pintarPuntos();
+}
+
+function elegir(orig) {
+  if (datos.preguntas[idx].respondida) return;
+  elegida = orig;
+  document.querySelectorAll(".opcion").forEach(b => b.classList.toggle("sel", b.dataset.orig === orig));
+  pintarConfianza();
+}
+
+function pintarConfianza() {
+  const dis = elegida ? "" : "disabled";
+  $("#zona").innerHTML = `<div class="confianza"><div class="peq suave" style="margin-bottom:6px">
+      ${elegida ? "¿Qué tan seguro estás? (esto registra tu respuesta)" : "Elige una opción y luego indica tu nivel de confianza."}</div>
+    <div class="acciones">
+      <button class="btn prim" ${dis} onclick="responder('seguro')">✔ Seguro <kbd>S</kbd></button>
+      <button class="btn" ${dis} onclick="responder('dudoso')">🤔 Dudoso <kbd>D</kbd></button>
+      <button class="btn" ${dis} onclick="responder('adivine')">🎲 Adiviné <kbd>N</kbd></button>
+    </div>
+    <div class="acciones" style="margin-top:10px">
+      <button class="btn peq" onclick="marcarRevisar()">🚩 Marcar para revisar</button>
+      ${idx < datos.preguntas.length - 1 ? '<button class="btn peq" onclick="saltar()">Saltar por ahora →</button>' : ""}
+    </div></div>`;
+}
+
+async function responder(confianza) {
+  if (!elegida || bloqueado) return;
+  bloqueado = true;
+  const p = datos.preguntas[idx];
+  const r = await (await fetch(`/api/ronda/${RID}/responder`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ pregunta_id: p.id, elegida, confianza, tiempo: (Date.now() - tInicio) / 1000 })
+  })).json();
+  bloqueado = false;
+  if (r.error) { alert(r.error); return; }
+  Object.assign(p, r, { respondida: true, elegida, confianza });
+  if (inmediato()) { pintarRespondida(p); pintarPuntos(); actualizarContador(); }
+  else siguiente();
+}
+
+function actualizarContador() {
+  const resp = datos.preguntas.filter(q => q.respondida).length;
+  $("#contador").textContent = `${idx + 1} / ${datos.preguntas.length} · ${resp} respondidas`;
+  $("#barra").style.width = (100 * resp / datos.preguntas.length) + "%";
+}
+
+function pintarRespondida(p) {
+  document.querySelectorAll(".opcion").forEach(b => {
+    b.disabled = true;
+    if (inmediato() && b.dataset.orig === p.correcta) b.classList.add("correcta");
+    else if (b.dataset.orig === p.elegida) b.classList.add(inmediato() ? "incorrecta" : "sel");
+  });
+  const ultima = datos.preguntas.every(q => q.respondida);
+  const botonSig = ultima
+    ? `<button class="btn prim" onclick="terminar()">Ver resultados <kbd>Enter</kbd></button>`
+    : `<button class="btn prim" onclick="siguiente()">Siguiente → <kbd>Enter</kbd></button>`;
+  if (!inmediato()) {
+    $("#zona").innerHTML = `<div class="feedback"><div class="t">Respuesta registrada</div>
+      <div class="peq">Verás si acertaste y la explicación al terminar la ronda.</div></div>
+      <div class="acciones" style="margin-top:12px">${botonSig}</div>`;
+    return;
+  }
+  const letraCorrecta = p.opciones.find(o => o.orig === p.correcta).letra;
+  $("#zona").innerHTML = `<div class="feedback ${p.acierto ? "ok" : "mal"}">
+      <div class="t">${p.acierto ? "✅ ¡Correcto!" : "❌ Incorrecto — la respuesta es la " + letraCorrecta}
+        ${p.acierto && p.confianza === "adivine" ? ' <span class="chip medio">acertaste adivinando: volverá en repaso</span>' : ""}</div>
+      <div class="explicacion">${esc(p.explicacion)}</div>
+      ${p.norma ? `<div class="norma">📖 ${esc(p.norma)}</div>` : ""}
+    </div>
+    <div class="acciones" style="margin-top:12px">${botonSig}
+      <button class="btn peq" onclick="marcarRevisar()">🚩 Marcar para revisar</button></div>`;
+}
+
+function pintarPuntos() {
+  $("#puntos").innerHTML = datos.preguntas.map((q, i) => {
+    let c = q.respondida ? (inmediato() ? (q.acierto ? "ok" : "mal") : "hecha") : "";
+    return `<span class="${c} ${i === idx ? "actual" : ""}" onclick="ir(${i})">${i + 1}</span>`;
+  }).join("");
+}
+
+function ir(i) { idx = i; mostrar(); }
+function saltar() { idx = (idx + 1) % datos.preguntas.length; mostrar(); }
+function siguiente() {
+  const n = datos.preguntas.length;
+  for (let k = 1; k <= n; k++) {
+    const j = (idx + k) % n;
+    if (!datos.preguntas[j].respondida) { idx = j; mostrar(); return; }
+  }
+  terminar();
+}
+
+async function marcarRevisar() {
+  const p = datos.preguntas[idx];
+  const nota = prompt("¿Qué hay que revisar en esta pregunta? (opcional: respuesta dudosa, norma desactualizada…)", "");
+  if (nota === null) return;
+  await fetch(`/api/pregunta/${p.id}/revisar`, { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ revisar: true, nota: nota || null }) });
+  p.revisar = 1;
+  const z = $("#pregunta .peq");
+  if (!z.innerHTML.includes("revisar")) z.innerHTML += ' · <span class="chip medio">marcada para revisar</span>';
+}
+
+async function terminar(porTiempo = false) {
+  const pend = datos.preguntas.filter(q => !q.respondida).length;
+  const simulacro = datos.ronda.modo === "simulacro";
+  if (!porTiempo && pend) {
+    const msg = simulacro
+      ? `Quedan ${pend} preguntas sin responder y contarán como error. ¿Terminar el simulacro?`
+      : `Quedan ${pend} preguntas sin responder (no se registrarán). ¿Terminar la ronda?`;
+    if (!confirm(msg)) return;
+  }
+  const r = await (await fetch(`/api/ronda/${RID}/finalizar`, { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ sin_responder_como_error: simulacro }) })).json();
+  location.href = r.url;
+}
+$("#btn-terminar").onclick = () => terminar();
+
+document.addEventListener("keydown", e => {
+  if (!datos || e.ctrlKey || e.metaKey || e.altKey || ["INPUT", "TEXTAREA"].includes(e.target.tagName)) return;
+  const p = datos.preguntas[idx];
+  const k = e.key.toLowerCase();
+  if (!p.respondida) {
+    if (["1", "2", "3", "4"].includes(k)) elegir(p.opciones[+k - 1].orig);
+    else if (k === "s" || k === "enter") { e.preventDefault(); responder("seguro"); }
+    else if (k === "d") responder("dudoso");
+    else if (k === "n") responder("adivine");
+    else if (k === "r") marcarRevisar();
+  } else {
+    if (k === "enter" || k === "arrowright") { e.preventDefault(); siguiente(); }
+    else if (k === "r") marcarRevisar();
+  }
+});
+cargar();
+</script>
+{% endblock %}

@@ -1,0 +1,300 @@
+{
+  "sesion": "cpaca",
+  "preguntas": [
+    {
+      "id": "cpaca-001",
+      "contexto": "",
+      "enunciado": "Según el CPACA, ¿qué principio obliga a las autoridades a buscar que los procedimientos logren su finalidad, removiendo de oficio los obstáculos puramente formales y evitando decisiones inhibitorias?",
+      "opciones": {
+        "A": "Economía.",
+        "B": "Celeridad.",
+        "C": "Eficacia.",
+        "D": "Coordinación."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 3 num. 11 del CPACA define el principio de eficacia: las autoridades buscarán que los procedimientos logren su finalidad y, para ello, removerán de oficio los obstáculos puramente formales, evitarán decisiones inhibitorias, dilaciones o retardos y sanearán las irregularidades procedimentales que se presenten. Economía (num. 12): proceder con austeridad y eficiencia, optimizando el uso del tiempo y los recursos. Celeridad (num. 13): impulsar oficiosamente los procedimientos y cumplir los términos.",
+      "norma": "Ley 1437 de 2011, art. 3",
+      "dificultad": 2,
+      "etiquetas": [
+        "principios"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-002",
+      "contexto": "",
+      "enunciado": "Salvo norma legal especial, ¿cuál es el término para resolver una petición de documentos e información y una consulta, respectivamente?",
+      "opciones": {
+        "A": "10 días y 30 días siguientes a la recepción.",
+        "B": "15 días y 30 días siguientes a la recepción.",
+        "C": "10 días y 15 días siguientes a la recepción.",
+        "D": "5 días y 10 días siguientes a la recepción."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 14 del CPACA (sustituido por la Ley 1755 de 2015) establece: término general de 15 días siguientes a la recepción; las peticiones de documentos y de información deben resolverse dentro de los 10 días siguientes (si no se responde en ese plazo, se entiende aceptada y la copia debe entregarse dentro de los 3 días siguientes); las consultas a las autoridades en relación con materias a su cargo, dentro de los 30 días siguientes.",
+      "norma": "Ley 1437 de 2011, art. 14 (Ley 1755 de 2015)",
+      "dificultad": 1,
+      "etiquetas": [
+        "derecho de petición",
+        "términos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-003",
+      "contexto": "Una dependencia recibe un derecho de petición de interés general y, por su complejidad, no podrá responderlo dentro del término legal.",
+      "enunciado": "¿Qué debe hacer la autoridad?",
+      "opciones": {
+        "A": "Responder cuando tenga la información completa, sin necesidad de avisar al peticionario.",
+        "B": "Archivar la petición y pedir al ciudadano que la presente de nuevo cuando tenga más información disponible.",
+        "C": "Informarle antes del vencimiento los motivos de la demora y un plazo que no exceda el doble del previsto.",
+        "D": "Solicitar autorización a la Procuraduría para ampliar el término hasta por seis meses adicionales."
+      },
+      "correcta": "C",
+      "explicacion": "El parágrafo del art. 14 del CPACA dispone que, cuando excepcionalmente no sea posible resolver en los plazos señalados, la autoridad debe informar esta circunstancia al interesado antes del vencimiento del término, expresando los motivos de la demora y señalando el plazo razonable en que resolverá. Ese plazo no puede exceder el doble del inicialmente previsto.",
+      "norma": "Ley 1437 de 2011, art. 14 parágrafo",
+      "dificultad": 2,
+      "etiquetas": [
+        "derecho de petición",
+        "términos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-004",
+      "contexto": "Un contribuyente radica una petición, pero le faltan documentos necesarios para que la entidad pueda decidir de fondo.",
+      "enunciado": "Conforme al artículo 17 del CPACA, la autoridad debe:",
+      "opciones": {
+        "A": "Rechazar de plano la petición por estar incompleta y notificar el rechazo al peticionario.",
+        "B": "Requerirlo en los 10 días siguientes para que complete en máximo un mes; si no lo hace, desistió.",
+        "C": "Esperar tres meses para que opere el silencio administrativo negativo frente a la petición presentada.",
+        "D": "Requerirlo en los 15 días siguientes para que complete en 10 días; si no lo hace, queda negada."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 17 CPACA (Ley 1755 de 2015): si la petición está incompleta, la autoridad requiere al peticionario dentro de los 10 días siguientes a la radicación para que la complete en el término máximo de un mes. Al aportar los documentos se reactiva el término para resolver. Si no satisface el requerimiento, se entiende que desistió, salvo que antes de vencer el plazo pida prórroga hasta por un término igual. El desistimiento se decreta por acto motivado, contra el cual procede únicamente el recurso de reposición, y la petición puede presentarse de nuevo con el lleno de los requisitos.",
+      "norma": "Ley 1437 de 2011, art. 17 (Ley 1755 de 2015)",
+      "dificultad": 2,
+      "etiquetas": [
+        "derecho de petición",
+        "desistimiento tácito"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-005",
+      "contexto": "",
+      "enunciado": "Según el CPACA, los recursos de reposición y apelación deben interponerse por escrito en la diligencia de notificación personal o:",
+      "opciones": {
+        "A": "Dentro de los 5 días hábiles siguientes a ella o a la notificación por aviso.",
+        "B": "Dentro del mes siguiente a ella o a la publicación del acto.",
+        "C": "Dentro de los 2 meses siguientes a ella, como en el recurso de reconsideración.",
+        "D": "Dentro de los 10 días siguientes a ella o a la notificación por aviso."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 76 CPACA: los recursos de reposición y apelación se interponen por escrito en la diligencia de notificación personal, o dentro de los 10 días siguientes a ella, a la notificación por aviso o al vencimiento del término de publicación. La apelación puede interponerse directamente o como subsidiaria de la reposición. Los recursos de reposición y de queja no son obligatorios. Ojo: en materia tributaria rige el ET, y allí el recurso de reconsideración tiene 2 meses (art. 720 ET).",
+      "norma": "Ley 1437 de 2011, arts. 74 y 76",
+      "dificultad": 1,
+      "etiquetas": [
+        "recursos",
+        "términos"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-006",
+      "contexto": "",
+      "enunciado": "Por regla general, ¿cuándo se configura el silencio administrativo negativo frente a una petición?",
+      "opciones": {
+        "A": "Transcurridos 15 días hábiles desde la presentación de la petición sin respuesta.",
+        "B": "Transcurridos 3 meses desde la presentación de la petición sin decisión notificada.",
+        "C": "Transcurridos 2 meses desde la presentación de la petición sin decisión notificada.",
+        "D": "Transcurrido 1 año desde la presentación de la petición, previa solicitud del interesado."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 83 CPACA: transcurridos 3 meses contados a partir de la presentación de una petición sin que se haya notificado decisión que la resuelva, se entiende que esta es negativa. El silencio negativo no exime a la autoridad de responder ni de su responsabilidad. Para los recursos, el art. 86 fija 2 meses desde su interposición sin decisión notificada. El silencio positivo solo opera en los casos expresamente previstos por la ley.",
+      "norma": "Ley 1437 de 2011, arts. 83 y 86",
+      "dificultad": 2,
+      "etiquetas": [
+        "silencio administrativo"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-007",
+      "contexto": "La entidad envió citación para notificar personalmente un acto administrativo, pero el interesado no compareció.",
+      "enunciado": "Conforme al CPACA, ¿cuándo procede la notificación por aviso y cuándo se entiende surtida?",
+      "opciones": {
+        "A": "Al cabo de 10 días del envío de la citación; se entiende surtida el mismo día de la entrega del aviso.",
+        "B": "Al cabo de 3 días del envío de la citación; se entiende surtida con la publicación en la página web.",
+        "C": "Al cabo de 5 días del envío de la citación; surtida al finalizar el día siguiente a la entrega del aviso.",
+        "D": "Inmediatamente, sin necesidad de citación previa; se entiende surtida 5 días después de la entrega del aviso."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 69 CPACA: si no pudiere hacerse la notificación personal al cabo de los 5 días del envío de la citación, se hace por medio de aviso, que se remite a la dirección, número de fax o correo electrónico que figuren en el expediente, acompañado de copia íntegra del acto. La notificación se considera surtida al finalizar el día siguiente al de la entrega del aviso en el lugar de destino. Si se desconoce la información del destinatario, el aviso se publica en la página web y en un lugar visible de la entidad por 5 días.",
+      "norma": "Ley 1437 de 2011, arts. 68 y 69",
+      "dificultad": 2,
+      "etiquetas": [
+        "notificaciones"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-008",
+      "contexto": "",
+      "enunciado": "Según el artículo 87 del CPACA, si contra un acto administrativo procedían recursos y el interesado no los interpuso, el acto queda en firme:",
+      "opciones": {
+        "A": "Desde el día siguiente al vencimiento del término para interponerlos.",
+        "B": "Desde el mismo día de su expedición, aunque no se haya notificado.",
+        "C": "Un año después de su notificación, si no se demandó ante el juez.",
+        "D": "Solo cuando lo declare un juez de lo contencioso administrativo competente."
+      },
+      "correcta": "A",
+      "explicacion": "Art. 87 CPACA (firmeza de los actos): 1) si no procede ningún recurso, desde el día siguiente al de su notificación, comunicación o publicación; 2) desde el día siguiente a la publicación, comunicación o notificación de la decisión sobre los recursos interpuestos; 3) desde el día siguiente al vencimiento del término para interponer los recursos, si estos no se interpusieron o se renunció expresamente a ellos; 4) desde el día siguiente a la notificación de la aceptación del desistimiento de los recursos; 5) desde el día siguiente a la protocolización del silencio administrativo positivo.",
+      "norma": "Ley 1437 de 2011, art. 87",
+      "dificultad": 2,
+      "etiquetas": [
+        "firmeza",
+        "conclusión del procedimiento"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-009",
+      "contexto": "",
+      "enunciado": "¿Cuál de las siguientes es una causal de pérdida de ejecutoriedad del acto administrativo según el artículo 91 del CPACA?",
+      "opciones": {
+        "A": "Que el interesado manifieste por escrito su inconformidad con la decisión adoptada.",
+        "B": "Que hayan pasado 6 meses desde su notificación sin que se haya iniciado su cumplimiento.",
+        "C": "Que el funcionario que lo expidió haya sido trasladado o retirado de la entidad.",
+        "D": "Que, en firme hace 5 años, la autoridad no haya realizado los actos para ejecutarlo."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 91 CPACA: salvo norma expresa en contrario, los actos en firme son obligatorios mientras no hayan sido anulados por la Jurisdicción de lo Contencioso Administrativo. Pierden obligatoriedad y no pueden ejecutarse: 1) cuando sean suspendidos provisionalmente por la jurisdicción; 2) cuando desaparezcan sus fundamentos de hecho o de derecho; 3) cuando al cabo de 5 años de estar en firme la autoridad no haya realizado los actos para ejecutarlos; 4) cuando se cumpla la condición resolutoria a que se encuentre sometido; 5) cuando pierdan vigencia.",
+      "norma": "Ley 1437 de 2011, arts. 89 a 91",
+      "dificultad": 3,
+      "etiquetas": [
+        "ejecutoriedad",
+        "conclusión del procedimiento"
+      ],
+      "origen": "Banco inicial Claude 2026-10-09"
+    },
+    {
+      "id": "cpaca-010",
+      "contexto": "",
+      "enunciado": "Según el artículo 4 del CPACA, ¿cuál de las siguientes NO es una forma de iniciar las actuaciones administrativas?",
+      "opciones": {
+        "A": "Por quienes ejerciten el derecho de petición en interés particular.",
+        "B": "Por las autoridades, oficiosamente.",
+        "C": "Por orden de un particular que actúe como superior jerárquico.",
+        "D": "Por quienes obren en cumplimiento de una obligación o deber legal."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 4 CPACA establece que las actuaciones administrativas pueden iniciarse: 1) por quienes ejerciten el derecho de petición en interés general; 2) por quienes ejerciten el derecho de petición en interés particular; 3) por quienes obren en cumplimiento de una obligación o deber legal; 4) por las autoridades, oficiosamente. Un particular no es superior jerárquico de las autoridades ni puede ordenarles iniciar actuaciones.",
+      "norma": "Ley 1437 de 2011, art. 4",
+      "dificultad": 1,
+      "etiquetas": [
+        "actuación administrativa"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "cpaca-011",
+      "contexto": "",
+      "enunciado": "Según el artículo 67 del CPACA, en la diligencia de notificación personal se entrega copia íntegra, auténtica y gratuita del acto. ¿Qué más debe indicarse?",
+      "opciones": {
+        "A": "El nombre del abogado que la entidad recomienda para presentar los recursos.",
+        "B": "Los recursos procedentes, ante quién se interponen y en qué plazos.",
+        "C": "El valor de las expensas que el interesado debe pagar para obtener la copia del acto.",
+        "D": "La fecha en que el acto quedará ejecutoriado aunque se interpongan recursos."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 67 CPACA dispone que en la diligencia de notificación personal se entrega al interesado copia íntegra, auténtica y gratuita del acto administrativo, con anotación de la fecha y la hora, los recursos que legalmente proceden, las autoridades ante quienes deben interponerse y los plazos para hacerlo. Si falta este requisito, la notificación es irregular y no produce efectos, salvo conducta concluyente (art. 72). La copia es gratuita y el acto no queda en firme mientras se resuelven los recursos.",
+      "norma": "Ley 1437 de 2011, art. 67",
+      "dificultad": 2,
+      "etiquetas": [
+        "notificaciones"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "cpaca-012",
+      "contexto": "Un acto administrativo se notificó sin indicar los recursos procedentes. Aun así, el interesado presentó oportunamente recurso de reposición contra él.",
+      "enunciado": "Según el artículo 72 del CPACA, ¿qué efecto tiene esa actuación?",
+      "opciones": {
+        "A": "La notificación sigue siendo inexistente y el acto nunca producirá efectos legales.",
+        "B": "El recurso debe rechazarse, porque se presentó contra un acto no notificado en debida forma.",
+        "C": "Se entiende notificado por conducta concluyente, porque interpuso los recursos legales.",
+        "D": "La entidad debe repetir la notificación personal antes de estudiar el recurso presentado."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 72 CPACA: sin el lleno de los requisitos, no se tiene por hecha la notificación ni produce efectos legales la decisión, a menos que la parte interesada revele que conoce el acto, consienta la decisión o interponga los recursos legales. Es la notificación por conducta concluyente: el vicio se sanea porque el interesado demuestra que conoció el acto y pudo ejercer su derecho de defensa.",
+      "norma": "Ley 1437 de 2011, art. 72",
+      "dificultad": 2,
+      "etiquetas": [
+        "notificaciones",
+        "conducta concluyente"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "cpaca-013",
+      "contexto": "",
+      "enunciado": "Según el artículo 74 del CPACA, el recurso de queja procede cuando se rechace el de apelación, y debe interponerse dentro de:",
+      "opciones": {
+        "A": "Los 5 días siguientes a la notificación de la decisión que rechazó la apelación.",
+        "B": "Los 10 días siguientes a la notificación de la decisión que rechazó la apelación.",
+        "C": "Los 15 días siguientes a la notificación de la decisión que rechazó la apelación.",
+        "D": "Los 2 meses siguientes a la notificación de la decisión que rechazó la apelación."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 74 num. 3 CPACA establece que el recurso de queja procede cuando se rechace el de apelación. Se interpone directamente ante el superior del funcionario que dictó la decisión, mediante escrito al que debe acompañarse copia de la providencia que haya negado el recurso, dentro de los 5 días siguientes a la notificación de la decisión. Recibido el escrito, el superior ordena inmediatamente la remisión del expediente y decide lo que sea del caso.",
+      "norma": "Ley 1437 de 2011, art. 74 num. 3",
+      "dificultad": 2,
+      "etiquetas": [
+        "recursos",
+        "queja"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "cpaca-014",
+      "contexto": "",
+      "enunciado": "Según el artículo 75 del CPACA, por regla general NO procede recurso contra:",
+      "opciones": {
+        "A": "Los actos que ponen fin a una actuación administrativa de carácter particular.",
+        "B": "Los actos de carácter general y los de trámite, preparatorios o de ejecución.",
+        "C": "Los actos que niegan una petición de información presentada por un ciudadano.",
+        "D": "Los actos que imponen sanciones a particulares dentro de un proceso administrativo."
+      },
+      "correcta": "B",
+      "explicacion": "El art. 75 CPACA dispone que no habrá recurso contra los actos de carácter general, ni contra los de trámite, preparatorios o de ejecución, excepto en los casos previstos en norma expresa. Los recursos proceden contra los actos definitivos, es decir, los que deciden directa o indirectamente el fondo del asunto o hacen imposible continuar la actuación (art. 43). Los actos sancionatorios y los que niegan peticiones son definitivos y admiten recursos.",
+      "norma": "Ley 1437 de 2011, arts. 43 y 75",
+      "dificultad": 2,
+      "etiquetas": [
+        "recursos",
+        "actos de trámite"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "cpaca-015",
+      "contexto": "",
+      "enunciado": "Según el CPACA, ¿en qué efecto se tramitan los recursos contra los actos administrativos?",
+      "opciones": {
+        "A": "En el efecto devolutivo: el acto se ejecuta mientras se decide el recurso.",
+        "B": "En el efecto diferido: solo se suspenden las órdenes de pago del acto.",
+        "C": "En el efecto que escoja libremente la autoridad que expidió el acto.",
+        "D": "En el efecto suspensivo: el acto no se ejecuta mientras se decide el recurso."
+      },
+      "correcta": "D",
+      "explicacion": "El art. 79 CPACA establece que los recursos se tramitan en el efecto suspensivo: mientras estén pendientes, el acto no queda en firme y no puede ejecutarse (art. 87). Si deben practicarse pruebas, se señala un término no mayor de 30 días; los términos inferiores pueden prorrogarse por una sola vez, sin que con la prórroga excedan de 30 días.",
+      "norma": "Ley 1437 de 2011, arts. 79 y 87",
+      "dificultad": 2,
+      "etiquetas": [
+        "recursos",
+        "efecto suspensivo"
+      ],
+      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    }
+  ]
+}
