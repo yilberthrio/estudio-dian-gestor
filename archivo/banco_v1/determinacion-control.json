@@ -236,6 +236,168 @@
         "reducción de sanciones"
       ],
       "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "determinacion-control-013",
+      "contexto": "Un contribuyente tenía plazo para presentar su declaración hasta el 12 de mayo. La presentó el 15 de julio, sin que la DIAN lo hubiera emplazado. El impuesto a cargo es de $8.000.000.",
+      "enunciado": "¿Cuánto debe liquidar por sanción de extemporaneidad?",
+      "opciones": {
+        "A": "$800.000",
+        "B": "$1.200.000",
+        "C": "$1.600.000",
+        "D": "$2.400.000"
+      },
+      "correcta": "B",
+      "explicacion": "Art. 641 ET: antes del emplazamiento, la sanción es del 5% del impuesto a cargo por cada mes o fracción de mes de retardo, sin exceder el 100%. Del 12 de mayo al 15 de julio hay 2 meses y 3 días: esos 3 días cuentan como un mes adicional («o fracción»), así que son 3 meses × 5% = 15% × $8.000.000 = $1.200.000. $800.000 resulta de olvidar la fracción (2 × 5%); $1.600.000 y $2.400.000 aplican el 10% mensual, que corresponde a la extemporaneidad posterior al emplazamiento (art. 642). Recuerda además la sanción mínima de 10 UVT (art. 639).",
+      "norma": "Estatuto Tributario, arts. 641 y 642",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanciones",
+        "extemporaneidad",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "determinacion-control-014",
+      "contexto": "",
+      "enunciado": "Si la declaración se presenta después de notificado el emplazamiento para declarar, la sanción por extemporaneidad (art. 642 ET) es, por cada mes o fracción de retardo:",
+      "opciones": {
+        "A": "5% del impuesto a cargo, sin exceder el 100%.",
+        "B": "10% del impuesto a cargo, sin exceder el 200%.",
+        "C": "20% del impuesto a cargo, sin ningún límite.",
+        "D": "10% del impuesto a cargo, sin exceder el 100%."
+      },
+      "correcta": "B",
+      "explicacion": "La extemporaneidad tiene dos escalas. Antes del emplazamiento (art. 641 ET): 5% por mes o fracción, hasta el 100% del impuesto. Después de notificado el emplazamiento para declarar (art. 642 ET): 10% por mes o fracción, hasta el 200%. Truco para recordarlo: después del emplazamiento todo se duplica (el porcentaje mensual y el tope).",
+      "norma": "Estatuto Tributario, arts. 641 y 642",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanciones",
+        "extemporaneidad"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "determinacion-control-015",
+      "contexto": "El plazo para declarar renta de un contribuyente vencía el 10 de abril de 2025, pero presentó la declaración el 20 de junio de 2025 (extemporánea), sin saldo a favor.",
+      "enunciado": "Por regla general, ¿cuándo queda en firme esa declaración, si no se le notifica requerimiento especial?",
+      "opciones": {
+        "A": "El 10 de abril de 2028.",
+        "B": "El 10 de abril de 2027.",
+        "C": "El 20 de junio de 2028.",
+        "D": "El 20 de junio de 2030."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 714 ET: la declaración queda en firme si dentro de los 3 años siguientes al vencimiento del plazo para declarar no se notifica requerimiento especial. Si la declaración se presentó extemporáneamente, los 3 años se cuentan desde la fecha de presentación: 20 de junio de 2025 + 3 años = 20 de junio de 2028. El 10 de abril de 2028 sería la firmeza de una declaración oportuna. La fecha de 2030 (5 años) aplicaría a contribuyentes sujetos a precios de transferencia. Ese mismo término de 3 años es el plazo para notificar el requerimiento especial (art. 705).",
+      "norma": "Estatuto Tributario, arts. 705 y 714",
+      "dificultad": 2,
+      "etiquetas": [
+        "firmeza",
+        "términos",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "determinacion-control-016",
+      "contexto": "Un contribuyente declaró un saldo a pagar de $50.000.000. En el requerimiento especial la DIAN propone un saldo a pagar de $80.000.000 y la sanción por inexactitud correspondiente. El contribuyente acepta todos los hechos en la respuesta, corrige y paga.",
+      "enunciado": "¿Cuál es la sanción por inexactitud que debe liquidar?",
+      "opciones": {
+        "A": "$30.000.000",
+        "B": "$15.000.000",
+        "C": "$7.500.000",
+        "D": "$0, porque aceptó los hechos propuestos."
+      },
+      "correcta": "C",
+      "explicacion": "La sanción por inexactitud es el 100% de la diferencia entre el saldo determinado y el declarado (art. 648 ET): $80M − $50M = $30M. Si el contribuyente acepta los hechos en la respuesta al requerimiento especial, la sanción se reduce a la cuarta parte (art. 709 ET): $30M ÷ 4 = $7.500.000. Si aceptara después, frente a la liquidación oficial de revisión, la reducción sería a la mitad (art. 713 ET): $15M. La aceptación nunca elimina la sanción por completo.",
+      "norma": "Estatuto Tributario, arts. 648, 709 y 713",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanción por inexactitud",
+        "reducción de sanciones",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "determinacion-control-017",
+      "contexto": "",
+      "enunciado": "Si el contribuyente acepta los hechos de la liquidación oficial de revisión (no del requerimiento especial), dentro del término para interponer el recurso de reconsideración, la sanción por inexactitud:",
+      "opciones": {
+        "A": "Se reduce a la cuarta parte de la determinada en la liquidación.",
+        "B": "Se reduce a la mitad de la determinada en la liquidación.",
+        "C": "Se mantiene completa, porque ya pasó la oportunidad de aceptar.",
+        "D": "Se elimina, siempre que pague el mayor impuesto con intereses."
+      },
+      "correcta": "B",
+      "explicacion": "Hay dos momentos para aceptar y reducir la sanción por inexactitud. En la respuesta al requerimiento especial o a su ampliación se reduce a la cuarta parte (art. 709 ET). Frente a la liquidación de revisión, dentro del término para interponer la reconsideración, se reduce a la mitad (art. 713 ET). En ambos casos debe corregir la declaración y pagar o acordar el pago. Regla mnemotécnica: entre más temprano aceptes, más barato (¼ antes, ½ después).",
+      "norma": "Estatuto Tributario, arts. 709 y 713",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanción por inexactitud",
+        "reducción de sanciones"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "determinacion-control-018",
+      "contexto": "Después de notificado un emplazamiento para corregir, y antes del requerimiento especial, un contribuyente corrige su declaración. El mayor valor a pagar es de $4.000.000.",
+      "enunciado": "¿Cuánto debe liquidar por sanción por corrección (art. 644 ET)?",
+      "opciones": {
+        "A": "$400.000",
+        "B": "$1.000.000",
+        "C": "$4.000.000",
+        "D": "$800.000"
+      },
+      "correcta": "D",
+      "explicacion": "Art. 644 ET: la sanción por corrección es del 10% del mayor valor a pagar si se corrige antes de cualquier emplazamiento o auto de inspección, y del 20% si se corrige después de notificado el emplazamiento para corregir o el auto de inspección y antes del requerimiento especial. Aquí ya hubo emplazamiento: 20% × $4.000.000 = $800.000. $400.000 sería el caso voluntario (10%). Corregir siempre genera sanción cuando aumenta el impuesto, aunque sea voluntario.",
+      "norma": "Estatuto Tributario, arts. 644 y 685",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanción por corrección",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "determinacion-control-019",
+      "contexto": "Un contribuyente presenta una declaración con un día de retardo y un impuesto a cargo pequeño. Al aplicar el 5%, la sanción de extemporaneidad le da un valor inferior a 10 UVT.",
+      "enunciado": "¿Cuánto debe liquidar?",
+      "opciones": {
+        "A": "El valor calculado con el 5%, aunque sea inferior a 10 UVT.",
+        "B": "Nada, porque el retardo fue de un solo día.",
+        "C": "10 UVT, que es la sanción mínima.",
+        "D": "1 salario mínimo, que es la sanción mínima."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 639 ET: el valor mínimo de cualquier sanción, incluidas las reducidas y las que liquida el propio contribuyente, es de 10 UVT. Si el cálculo da menos, se liquidan 10 UVT. Un día de retardo cuenta como un mes de retardo («mes o fracción»). La sanción mínima se expresa en UVT, no en salarios mínimos.",
+      "norma": "Estatuto Tributario, arts. 639 y 641",
+      "dificultad": 1,
+      "etiquetas": [
+        "sanción mínima",
+        "UVT"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "determinacion-control-020",
+      "contexto": "",
+      "enunciado": "¿Cuál de las siguientes parejas relaciona correctamente la situación con la liquidación oficial que procede?",
+      "opciones": {
+        "A": "Omiso que no declaró tras el emplazamiento → liquidación de revisión.",
+        "B": "Declaración con un error al sumar los renglones → liquidación de aforo.",
+        "C": "Declaración con ingresos omitidos → liquidación de corrección aritmética.",
+        "D": "Omiso que no declaró tras el emplazamiento → liquidación de aforo."
+      },
+      "correcta": "D",
+      "explicacion": "Hay tres liquidaciones oficiales. Aforo (arts. 715 a 717 ET): para quien no declaró, previo emplazamiento para declarar, dentro de los 5 años siguientes al vencimiento del plazo. Corrección aritmética (arts. 697 a 699): para errores aritméticos (sumas, tarifa mal aplicada), dentro de los 2 años siguientes a la presentación. Revisión (arts. 702 a 711): para inexactitudes de fondo (ingresos omitidos, costos improcedentes), previo requerimiento especial. Asociación rápida: no declaró → aforo; sumó mal → aritmética; declaró mal → revisión.",
+      "norma": "Estatuto Tributario, arts. 697, 702 y 717",
+      "dificultad": 2,
+      "etiquetas": [
+        "liquidaciones oficiales"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
     }
   ]
 }

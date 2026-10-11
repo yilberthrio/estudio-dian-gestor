@@ -90,7 +90,7 @@
         "D": "Direccionamiento Estratégico y Planeación."
       },
       "correcta": "B",
-      "explicacion": "La dimensión Gestión con Valores para Resultados agrupa las políticas para la relación con el ciudadano y la operación interna. Entre ellas están: Servicio al Ciudadano, Racionalización de Trámites, Participación Ciudadana en la Gestión Pública, Gobierno Digital, Seguridad Digital, Defensa Jurídica, Fortalecimiento Organizacional y Simplificación de Procesos, Gestión Presupuestal y Mejora Normativa. Talento Humano agrupa Gestión Estratégica del Talento Humano e Integridad.",
+      "explicacion": "La dimensión Gestión con Valores para Resultados agrupa las políticas para la relación con el ciudadano y la operación interna. Entre ellas están: Servicio al Ciudadano, Racionalización de Trámites, Participación Ciudadana en la Gestión Pública, Gobierno Digital, Seguridad Digital, Defensa Jurídica, Fortalecimiento Organizacional y Simplificación de Procesos, y Mejora Normativa. Ojo: Planeación Institucional y Gestión Presupuestal pertenecen a la dimensión 2, Direccionamiento Estratégico y Planeación. Talento Humano agrupa Gestión Estratégica del Talento Humano e Integridad.",
       "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 3",
       "dificultad": 2,
       "etiquetas": [
@@ -159,6 +159,106 @@
         "comités"
       ],
       "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "mipg-009",
+      "contexto": "La jefe de una división de fiscalización revisa a diario que su equipo aplique los controles del procedimiento (listas de chequeo, revisión de actos antes de su firma) y gestiona los riesgos de su proceso.",
+      "enunciado": "En el esquema de líneas de defensa de MIPG, ella actúa como:",
+      "opciones": {
+        "A": "Línea estratégica.",
+        "B": "Primera línea de defensa.",
+        "C": "Segunda línea de defensa.",
+        "D": "Tercera línea de defensa."
+      },
+      "correcta": "B",
+      "explicacion": "La primera línea de defensa la conforman los gerentes públicos y líderes de proceso, con sus equipos: aplican los controles en el día a día y gestionan los riesgos de su proceso. La segunda línea (planeación, coordinadores de riesgos, supervisores) monitorea y asesora a la primera. La tercera línea (Oficina de Control Interno) evalúa de forma independiente. La línea estratégica (alta dirección y Comité Institucional de Coordinación de Control Interno) define las políticas. Pista: quien ejecuta el proceso y su control diario es la primera línea.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 7 (MECI)",
+      "dificultad": 2,
+      "etiquetas": [
+        "líneas de defensa",
+        "control interno"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "mipg-010",
+      "contexto": "La Oficina Asesora de Planeación consolida la matriz de riesgos de todos los procesos, hace seguimiento a la efectividad de los controles y alerta a los líderes cuando detecta desviaciones.",
+      "enunciado": "En MIPG, esta oficina cumple el rol de:",
+      "opciones": {
+        "A": "Primera línea de defensa.",
+        "B": "Tercera línea de defensa.",
+        "C": "Segunda línea de defensa.",
+        "D": "Línea estratégica."
+      },
+      "correcta": "C",
+      "explicacion": "La segunda línea de defensa la ejercen los servidores que monitorean y aseguran que los controles y la gestión de riesgos de la primera línea funcionen: jefes de planeación, coordinadores de sistemas de gestión, supervisores e interventores, entre otros. No es independiente como la tercera línea (Oficina de Control Interno), porque hace parte de la gestión: acompaña, consolida y alerta. Diferencia clave: la segunda línea monitorea desde la gestión; la tercera evalúa con independencia.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 7",
+      "dificultad": 2,
+      "etiquetas": [
+        "líneas de defensa",
+        "control interno"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "mipg-011",
+      "contexto": "",
+      "enunciado": "En MIPG, ¿quiénes conforman la línea estratégica del esquema de líneas de defensa?",
+      "opciones": {
+        "A": "La alta dirección y el Comité Institucional de Coordinación de Control Interno.",
+        "B": "Los líderes de proceso y sus equipos de trabajo en cada una de las dependencias de la entidad.",
+        "C": "La Oficina de Control Interno y los auditores internos de la entidad.",
+        "D": "La Contraloría General y la Procuraduría como entes de control externo."
+      },
+      "correcta": "A",
+      "explicacion": "La línea estratégica está a cargo de la alta dirección y del Comité Institucional de Coordinación de Control Interno: define el marco general para la gestión del riesgo y el control, y supervisa su cumplimiento. Los líderes de proceso son la primera línea; la Oficina de Control Interno es la tercera. La Contraloría y la Procuraduría son entes de control externo, no parte del esquema interno de líneas de defensa.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 7",
+      "dificultad": 2,
+      "etiquetas": [
+        "líneas de defensa",
+        "control interno"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "mipg-012",
+      "contexto": "Al terminar cada trimestre, la entidad mide los indicadores de su plan de acción para saber si está logrando las metas y los resultados esperados, y toma decisiones a partir de esa medición.",
+      "enunciado": "¿A qué dimensión de MIPG corresponde principalmente esta actividad?",
+      "opciones": {
+        "A": "Evaluación de Resultados.",
+        "B": "Direccionamiento Estratégico y Planeación.",
+        "C": "Gestión con Valores para Resultados.",
+        "D": "Control Interno."
+      },
+      "correcta": "A",
+      "explicacion": "La dimensión 4, Evaluación de Resultados, busca que la entidad conozca permanentemente los avances en su gestión y el logro de resultados y metas, mediante el seguimiento y la evaluación del desempeño institucional con indicadores. Su política es Seguimiento y Evaluación del Desempeño Institucional. El Direccionamiento Estratégico formula los planes; la Gestión con Valores los ejecuta; el Control Interno asegura que los controles funcionen. Ciclo: planear (dim. 2) → hacer (dim. 3) → medir (dim. 4).",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 4",
+      "dificultad": 2,
+      "etiquetas": [
+        "dimensiones",
+        "evaluación"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "mipg-013",
+      "contexto": "Un grupo de fiscalización documenta las lecciones aprendidas de una investigación compleja y crea un repositorio de buenas prácticas para que otros equipos lo consulten.",
+      "enunciado": "¿Con qué dimensión de MIPG se relaciona principalmente esta práctica?",
+      "opciones": {
+        "A": "Direccionamiento Estratégico y Planeación.",
+        "B": "Información y Comunicación.",
+        "C": "Evaluación de Resultados.",
+        "D": "Gestión del Conocimiento y la Innovación."
+      },
+      "correcta": "D",
+      "explicacion": "La dimensión 6, Gestión del Conocimiento y la Innovación, busca que la entidad identifique, genere, capture, transfiera, apropie, analice y difunda el conocimiento (incluido el que tienen las personas) para fortalecer sus procesos e innovar: lecciones aprendidas, repositorios, memoria institucional. Información y Comunicación se enfoca en la gestión de la información y los canales de comunicación (gestión documental, transparencia). Direccionamiento Estratégico y Planeación formula los planes y la ruta de la entidad.",
+      "norma": "Decreto 1499 de 2017; Manual Operativo MIPG – Dimensión 6",
+      "dificultad": 2,
+      "etiquetas": [
+        "dimensiones",
+        "gestión del conocimiento"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
     }
   ]
 }

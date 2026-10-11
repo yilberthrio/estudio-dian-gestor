@@ -1,0 +1,578 @@
+{
+  "sesion": "auditoria",
+  "preguntas": [
+    {
+      "id": "auditoria-001",
+      "contexto": "En una auditoría tributaria, el profesional necesita comprobar que los saldos de cuentas por cobrar declarados por una empresa corresponden a deudas reales de sus clientes.",
+      "enunciado": "Para obtener la evidencia más fiable sobre esos saldos, al profesional le corresponde",
+      "opciones": {
+        "A": "solicitar confirmación directa a una muestra de clientes sobre lo que adeudan a la empresa.",
+        "B": "pedir al contador de la empresa una certificación sobre el valor de las cuentas por cobrar.",
+        "C": "revisar el auxiliar contable de cartera elaborado por el área financiera de la empresa."
+      },
+      "correcta": "A",
+      "explicacion": "La evidencia obtenida directamente de terceros independientes es más fiable que la generada internamente.\n[A] Correcta. La confirmación externa (NIA 505) es la respuesta escrita que un tercero da directamente al auditor. Según la NIA 500, la evidencia de fuentes externas independientes y obtenida directamente por el auditor es más fiable.\n[B] Incorrecta. La certificación del contador de la empresa es evidencia interna: su fiabilidad es menor porque proviene de la entidad auditada.\n[C] Incorrecta. El auxiliar contable es generado por la propia empresa. Sirve como punto de partida, pero no demuestra por sí solo que las deudas existan.",
+      "norma": "NIA 500 y NIA 505 (Decreto 2420 de 2015, normas de aseguramiento)",
+      "dificultad": 1,
+      "etiquetas": [
+        "confirmación externa",
+        "evidencia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-002",
+      "contexto": "Al planear una visita, el jefe recuerda al equipo que la evidencia de auditoría debe ser suficiente y adecuada.",
+      "enunciado": "Al profesional le corresponde entender que la evidencia es adecuada cuando",
+      "opciones": {
+        "A": "se obtiene en gran cantidad, aunque provenga de una sola fuente interna de la empresa.",
+        "B": "es relevante y fiable para sustentar las conclusiones sobre lo que se está verificando.",
+        "C": "la entrega la empresa auditada en el formato que la DIAN solicitó en el requerimiento."
+      },
+      "correcta": "B",
+      "explicacion": "Según la NIA 500, la suficiencia mide la cantidad de evidencia y la adecuación mide su calidad (relevancia y fiabilidad).\n[A] Incorrecta. La cantidad corresponde a la suficiencia, no a la adecuación. Mucha evidencia de baja calidad no compensa su falta de fiabilidad.\n[B] Correcta. La evidencia es adecuada cuando es relevante (se relaciona con la afirmación que se verifica) y fiable (depende de su fuente y naturaleza).\n[C] Incorrecta. El formato de entrega no determina la calidad de la evidencia: lo relevante es su pertinencia y fiabilidad.",
+      "norma": "NIA 500 – Evidencia de auditoría",
+      "dificultad": 1,
+      "etiquetas": [
+        "evidencia",
+        "suficiencia y adecuación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-003",
+      "contexto": "Una empresa declara inventarios muy altos al cierre del año. El profesional quiere verificar que la mercancía realmente exista en la bodega.",
+      "enunciado": "La técnica de auditoría más adecuada para este propósito es",
+      "opciones": {
+        "A": "el recálculo de los saldos del kárdex de inventarios.",
+        "B": "la indagación al jefe de bodega sobre las existencias.",
+        "C": "la observación del conteo físico de los inventarios."
+      },
+      "correcta": "C",
+      "explicacion": "Para verificar la existencia de bienes tangibles, la evidencia más directa es presenciar el conteo físico.\n[A] Incorrecta. El recálculo verifica la exactitud aritmética de los registros, pero no prueba que la mercancía exista físicamente.\n[B] Incorrecta. La indagación por sí sola no es evidencia suficiente (NIA 500): debe complementarse con otros procedimientos.\n[C] Correcta. La observación consiste en presenciar un proceso o procedimiento realizado por otros, como el conteo de inventarios (NIA 500 y NIA 501). Es la técnica idónea para obtener evidencia sobre su existencia y estado.",
+      "norma": "NIA 500 y NIA 501",
+      "dificultad": 1,
+      "etiquetas": [
+        "observación",
+        "inventarios",
+        "técnicas de auditoría"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-004",
+      "contexto": "En una auditoría, el profesional quiere comprobar que la empresa calculó correctamente la depreciación de sus activos fijos, que está registrada en su contabilidad.",
+      "enunciado": "Para ello, al profesional le corresponde aplicar",
+      "opciones": {
+        "A": "el recálculo, verificando la exactitud matemática del cálculo efectuado.",
+        "B": "la confirmación externa, consultando a los proveedores de los activos.",
+        "C": "la observación, presenciando el uso de los activos en la producción."
+      },
+      "correcta": "A",
+      "explicacion": "El recálculo comprueba la exactitud matemática de documentos o registros.\n[A] Correcta. Según la NIA 500, el recálculo consiste en comprobar la exactitud de los cálculos matemáticos incluidos en documentos o registros, manualmente o con medios electrónicos. Es la técnica para verificar una depreciación ya calculada.\n[B] Incorrecta. Los proveedores pueden confirmar compras o saldos, pero no el cálculo de la depreciación que hace la empresa.\n[C] Incorrecta. Observar el uso de los activos aporta evidencia sobre su existencia y uso, pero no sobre la exactitud del cálculo.",
+      "norma": "NIA 500 – procedimientos de auditoría",
+      "dificultad": 1,
+      "etiquetas": [
+        "recálculo",
+        "técnicas de auditoría"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-005",
+      "contexto": "Para planear una fiscalización, el profesional compara el margen bruto de una empresa durante cinco años con el promedio de su sector. Encuentra que en el último año el margen cayó a la mitad, sin un cambio aparente en el negocio.",
+      "enunciado": "La técnica aplicada por el profesional corresponde a",
+      "opciones": {
+        "A": "una confirmación externa de saldos con los clientes de la empresa.",
+        "B": "un procedimiento analítico sobre relaciones y tendencias de los datos.",
+        "C": "una inspección física de los documentos soporte de los costos."
+      },
+      "correcta": "B",
+      "explicacion": "Los procedimientos analíticos evalúan la información a partir de relaciones plausibles entre datos.\n[A] Incorrecta. La confirmación externa obtiene respuestas de terceros; aquí no se consultó a nadie externo.\n[B] Correcta. La NIA 520 define los procedimientos analíticos como evaluaciones de información financiera mediante el análisis de relaciones plausibles entre datos financieros y no financieros, incluida la investigación de fluctuaciones inusuales. Una caída anormal del margen es un indicio que orienta la fiscalización (por ejemplo, hacia costos inflados o ingresos omitidos).\n[C] Incorrecta. Aún no se han examinado documentos: el análisis se hizo sobre cifras agregadas.",
+      "norma": "NIA 520 – Procedimientos analíticos",
+      "dificultad": 2,
+      "etiquetas": [
+        "procedimientos analíticos",
+        "planeación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-006",
+      "contexto": "Durante una visita, el gerente de la empresa explica verbalmente al profesional que los pagos a un proveedor del exterior corresponden a regalías por el uso de una marca.",
+      "enunciado": "Frente a esta explicación, al profesional le corresponde",
+      "opciones": {
+        "A": "aceptarla como prueba suficiente, porque proviene del representante de la empresa.",
+        "B": "descartarla, porque las explicaciones verbales no tienen ningún valor en la auditoría.",
+        "C": "corroborarla con evidencia adicional, como el contrato, las facturas y los pagos."
+      },
+      "correcta": "C",
+      "explicacion": "La indagación es útil, pero por sí sola no es evidencia suficiente.\n[A] Incorrecta. La NIA 500 establece que la indagación, por sí sola, no proporciona evidencia suficiente: provenir del representante de la empresa no basta.\n[B] Incorrecta. Las explicaciones verbales no carecen de valor: orientan la auditoría e identifican qué documentos pedir.\n[C] Correcta. La indagación debe corroborarse con otros procedimientos. Aquí, con el contrato de licencia, las facturas, los pagos y su tratamiento tributario (incluida la retención en la fuente sobre pagos al exterior).",
+      "norma": "NIA 500 – indagación",
+      "dificultad": 1,
+      "etiquetas": [
+        "indagación",
+        "evidencia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-007",
+      "contexto": "Al planear la auditoría de una empresa, el profesional define el valor por encima del cual las diferencias encontradas podrían cambiar significativamente el impuesto determinado o las decisiones de la DIAN.",
+      "enunciado": "Este valor corresponde al concepto de",
+      "opciones": {
+        "A": "materialidad o importancia relativa.",
+        "B": "riesgo de detección de la auditoría.",
+        "C": "muestreo estadístico de la población."
+      },
+      "correcta": "A",
+      "explicacion": "La materialidad orienta el alcance del trabajo y la evaluación de los errores encontrados.\n[A] Correcta. Según la NIA 320, la materialidad o importancia relativa es la cifra por encima de la cual las incorrecciones, individualmente o en conjunto, podrían influir en las decisiones de los usuarios. Se usa para planear el alcance y evaluar los hallazgos.\n[B] Incorrecta. El riesgo de detección es la probabilidad de que los procedimientos del auditor no detecten una incorrección material; no es un valor monetario de referencia.\n[C] Incorrecta. El muestreo es una técnica para seleccionar partidas de una población; no define cuándo un error es significativo.",
+      "norma": "NIA 320 – Importancia relativa",
+      "dificultad": 1,
+      "etiquetas": [
+        "materialidad",
+        "planeación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-008",
+      "contexto": "En una empresa con controles internos débiles y operaciones complejas, el riesgo de que haya errores importantes en sus declaraciones es alto. El jefe pide ajustar el plan de auditoría.",
+      "enunciado": "Para mantener el riesgo de auditoría en un nivel aceptable, al profesional le corresponde",
+      "opciones": {
+        "A": "reducir las pruebas sustantivas, porque el riesgo ya fue identificado en la planeación.",
+        "B": "ampliar las pruebas sustantivas, para disminuir el riesgo de no detectar errores.",
+        "C": "mantener el mismo alcance, porque el riesgo de auditoría no depende de los controles."
+      },
+      "correcta": "B",
+      "explicacion": "El riesgo de detección tiene una relación inversa con el riesgo de incorrección material.\n[A] Incorrecta. Identificar el riesgo no lo reduce: si el riesgo es alto y se reducen las pruebas, aumenta la probabilidad de no detectar errores.\n[B] Correcta. Según las NIA 200, 315 y 330, cuando el riesgo de incorrección material (inherente y de control) es alto, el auditor debe reducir el riesgo de detección aceptable. Lo logra con más pruebas sustantivas, de mejor calidad y más cercanas al cierre.\n[C] Incorrecta. La debilidad de los controles internos sí afecta el riesgo y, por tanto, la naturaleza, el momento y la extensión de las pruebas.",
+      "norma": "NIA 200, NIA 315 y NIA 330",
+      "dificultad": 2,
+      "etiquetas": [
+        "riesgo de auditoría",
+        "pruebas sustantivas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-009",
+      "contexto": "El profesional sospecha que una empresa omite registrar parte de sus ventas. Tiene acceso a las remisiones de despacho de mercancía y al libro de ventas.",
+      "enunciado": "Para verificar que todas las ventas estén registradas, al profesional le corresponde",
+      "opciones": {
+        "A": "seleccionar ventas registradas en el libro y buscar sus remisiones de despacho.",
+        "B": "seleccionar remisiones de despacho y verificar que estén registradas como ventas.",
+        "C": "revisar únicamente los totales del libro de ventas frente a la declaración de IVA."
+      },
+      "correcta": "B",
+      "explicacion": "La dirección de la prueba depende de la afirmación que se verifica: para la integridad se parte de los documentos fuente hacia los registros.\n[A] Incorrecta. Ir del registro al soporte (comprobación) verifica la existencia u ocurrencia de lo registrado, pero no detecta ventas que nunca se registraron.\n[B] Correcta. Para probar la integridad (que no falten operaciones), se rastrea desde los documentos fuente, como las remisiones de despacho, hacia los registros contables. Si hay despachos sin venta registrada, aparece la omisión.\n[C] Incorrecta. Comparar totales solo verifica la coherencia entre el libro y la declaración, pero no detecta ventas que no se registraron en ninguno de los dos.",
+      "norma": "NIA 315 y NIA 500 – afirmaciones y dirección de las pruebas",
+      "dificultad": 2,
+      "etiquetas": [
+        "integridad",
+        "rastreo",
+        "ingresos omitidos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-010",
+      "contexto": "El profesional sospecha que una empresa registró costos ficticios para disminuir su impuesto. Tiene el auxiliar de costos y puede pedir los soportes.",
+      "enunciado": "Para verificar que los costos registrados correspondan a operaciones reales, al profesional le corresponde",
+      "opciones": {
+        "A": "seleccionar partidas del auxiliar de costos y examinar sus facturas, pagos y evidencias de entrega.",
+        "B": "seleccionar facturas de proveedores archivadas y verificar que estén registradas en el auxiliar.",
+        "C": "comparar el total del auxiliar de costos con el valor declarado en el renglón de costos del formulario."
+      },
+      "correcta": "A",
+      "explicacion": "Para la ocurrencia (que lo registrado sea real) se parte del registro hacia los soportes.\n[A] Correcta. La comprobación (vouching) consiste en tomar partidas registradas y examinar sus soportes: facturas, pagos bancarios y evidencia de que el bien o servicio se recibió. Así se prueba la ocurrencia o existencia de los costos.\n[B] Incorrecta. Ir del soporte al registro prueba la integridad (que no falten registros), pero no detecta costos registrados sin una operación real detrás.\n[C] Incorrecta. La coincidencia entre el auxiliar y la declaración no prueba que los costos sean reales: ambos pueden incluir las mismas partidas ficticias.",
+      "norma": "NIA 315 y NIA 500 – afirmaciones y dirección de las pruebas",
+      "dificultad": 2,
+      "etiquetas": [
+        "ocurrencia",
+        "comprobación",
+        "costos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-011",
+      "contexto": "En la revisión de una empresa, el profesional nota que muchas facturas de venta del 2 y 3 de enero corresponden a mercancía despachada antes del 31 de diciembre del año auditado.",
+      "enunciado": "La afirmación que está en riesgo y que debe verificar el profesional es",
+      "opciones": {
+        "A": "la valoración de los activos fijos de la empresa.",
+        "B": "el corte de las operaciones al cierre del periodo.",
+        "C": "los derechos y obligaciones sobre las cuentas bancarias."
+      },
+      "correcta": "B",
+      "explicacion": "El corte verifica que las operaciones se registren en el periodo al que corresponden.\n[A] Incorrecta. La valoración de activos fijos se relaciona con su medición (costo, depreciación, deterioro), no con el periodo de registro de las ventas.\n[B] Correcta. La afirmación de corte busca que las transacciones queden registradas en el periodo contable correcto (NIA 315). Facturar en enero ventas despachadas en diciembre traslada ingresos al año siguiente, lo que puede reducir indebidamente el impuesto del año auditado.\n[C] Incorrecta. Derechos y obligaciones se refiere a la titularidad de los activos y pasivos, no al momento de registro de las operaciones.",
+      "norma": "NIA 315 – afirmaciones",
+      "dificultad": 2,
+      "etiquetas": [
+        "corte",
+        "afirmaciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-012",
+      "contexto": "Una empresa tiene 40.000 facturas de compra en el año y el equipo no puede revisarlas todas. El profesional quiere poder extender sus conclusiones a toda la población con un riesgo medible.",
+      "enunciado": "Para seleccionar las facturas que revisará, al profesional le corresponde",
+      "opciones": {
+        "A": "escoger las que le parezcan más sospechosas, sin un criterio definido de antemano.",
+        "B": "aplicar un muestreo estadístico con selección aleatoria de las partidas a revisar.",
+        "C": "revisar solo las facturas del último mes, porque son las más cercanas al cierre."
+      },
+      "correcta": "B",
+      "explicacion": "El muestreo estadístico permite proyectar los resultados a la población y medir el riesgo de muestreo.\n[A] Incorrecta. Seleccionar según la intuición, sin criterio definido, no permite extender las conclusiones a toda la población ni medir el riesgo.\n[B] Correcta. Según la NIA 530, el muestreo estadístico usa la selección aleatoria de las partidas y la teoría de la probabilidad para evaluar los resultados, incluida la medición del riesgo de muestreo. Puede complementarse con la revisión dirigida de partidas inusuales o de alto valor.\n[C] Incorrecta. Revisar solo un mes no es representativo del año y deja sin examinar el resto de la población.",
+      "norma": "NIA 530 – Muestreo de auditoría",
+      "dificultad": 2,
+      "etiquetas": [
+        "muestreo",
+        "selección"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-013",
+      "contexto": "Al terminar una fiscalización, un profesional nuevo pregunta qué debe quedar registrado en los papeles de trabajo.",
+      "enunciado": "Al profesional con experiencia le corresponde explicar que los papeles de trabajo deben",
+      "opciones": {
+        "A": "contener solo las conclusiones finales, porque los procedimientos se entienden realizados.",
+        "B": "permitir que otro auditor entienda el trabajo realizado, la evidencia y las conclusiones.",
+        "C": "entregarse al contribuyente al final, porque la información le pertenece a la empresa."
+      },
+      "correcta": "B",
+      "explicacion": "La documentación de auditoría debe permitir reconstruir el trabajo realizado.\n[A] Incorrecta. Registrar solo las conclusiones no permite verificar cómo se llegó a ellas ni defenderlas ante una controversia.\n[B] Correcta. La NIA 230 exige que la documentación sea suficiente para que un auditor experimentado, sin relación previa con la auditoría, entienda la naturaleza, el momento y la extensión de los procedimientos, la evidencia obtenida y las conclusiones alcanzadas.\n[C] Incorrecta. Los papeles de trabajo pertenecen a quien audita y son confidenciales; en la DIAN, además, la información tributaria tiene reserva (art. 583 ET).",
+      "norma": "NIA 230 – Documentación de auditoría; Estatuto Tributario, art. 583",
+      "dificultad": 1,
+      "etiquetas": [
+        "papeles de trabajo",
+        "documentación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-014",
+      "contexto": "La gerencia de una empresa auditada entrega rápidamente toda la información solicitada y se muestra muy colaboradora. Un miembro del equipo propone confiar en la información sin verificarla, por la buena actitud de la empresa.",
+      "enunciado": "Frente a la propuesta, al profesional le corresponde",
+      "opciones": {
+        "A": "mantener el escepticismo profesional y verificar la información recibida.",
+        "B": "aceptar la información sin verificarla, porque la colaboración demuestra buena fe.",
+        "C": "suspender la auditoría, porque tanta colaboración es indicio seguro de fraude."
+      },
+      "correcta": "A",
+      "explicacion": "El escepticismo profesional es una actitud permanente del auditor.\n[A] Correcta. La NIA 200 exige planear y ejecutar la auditoría con escepticismo profesional: una actitud alerta ante condiciones que puedan indicar incorrecciones y una evaluación crítica de la evidencia, sin dar por sentada la honestidad de la gerencia.\n[B] Incorrecta. La buena disposición de la gerencia no reemplaza la evidencia: las conclusiones deben basarse en pruebas suficientes y adecuadas.\n[C] Incorrecta. La colaboración no es, por sí misma, un indicio de fraude. El escepticismo no significa desconfianza injustificada.",
+      "norma": "NIA 200 – escepticismo profesional",
+      "dificultad": 1,
+      "etiquetas": [
+        "escepticismo profesional"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-015",
+      "contexto": "En una fiscalización, el profesional quiere saber si el control interno que la empresa dice aplicar sobre la aprobación de compras realmente funciona durante todo el año.",
+      "enunciado": "Para ello, al profesional le corresponde aplicar",
+      "opciones": {
+        "A": "pruebas de detalle sobre el saldo de proveedores a la fecha de cierre.",
+        "B": "pruebas de controles, verificando su eficacia operativa durante el periodo.",
+        "C": "procedimientos analíticos sobre la variación anual de las compras totales."
+      },
+      "correcta": "B",
+      "explicacion": "Las pruebas de controles evalúan si un control funciona eficazmente.\n[A] Incorrecta. Las pruebas de detalle sobre saldos son procedimientos sustantivos: buscan errores en las cifras, no evalúan la eficacia del control.\n[B] Correcta. Según la NIA 330, las pruebas de controles están diseñadas para evaluar la eficacia operativa de los controles en la prevención o detección de incorrecciones durante el periodo. Por ejemplo, se toma una muestra de compras de distintos meses para verificar su aprobación.\n[C] Incorrecta. Los procedimientos analíticos sustantivos evalúan la razonabilidad de las cifras, no si un control específico operó.",
+      "norma": "NIA 330 – respuestas del auditor a los riesgos",
+      "dificultad": 2,
+      "etiquetas": [
+        "pruebas de controles",
+        "control interno"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-016",
+      "contexto": "El profesional encuentra que una empresa no aplicó retención en la fuente en pagos al exterior por servicios técnicos, contrariando la norma tributaria. Debe redactar el hallazgo en el informe.",
+      "enunciado": "Al profesional le corresponde estructurar el hallazgo identificando",
+      "opciones": {
+        "A": "la condición, el criterio, la causa y el efecto de la situación encontrada.",
+        "B": "la opinión personal del auditor sobre la gerencia y su nivel de colaboración.",
+        "C": "solo la norma infringida, porque el resto de información es innecesaria."
+      },
+      "correcta": "A",
+      "explicacion": "Un hallazgo bien estructurado permite sustentar la decisión y defenderla.\n[A] Correcta. Los atributos del hallazgo son: la condición (lo que se encontró: no se practicó retención), el criterio (lo que debía ser: la norma tributaria aplicable), la causa (por qué ocurrió) y el efecto (la consecuencia: el impuesto dejado de retener y las sanciones).\n[B] Incorrecta. Las opiniones personales sobre la gerencia no hacen parte del hallazgo, que debe basarse en hechos y evidencia.\n[C] Incorrecta. La norma es solo el criterio. Sin la condición, la causa y el efecto, el hallazgo queda sin sustento.",
+      "norma": "Normas de auditoría – atributos del hallazgo",
+      "dificultad": 1,
+      "etiquetas": [
+        "hallazgos",
+        "informe"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-017",
+      "contexto": "A un profesional le asignan auditar una empresa en la que su cuñado trabaja como jefe de contabilidad.",
+      "enunciado": "Frente a esta situación, al profesional le corresponde",
+      "opciones": {
+        "A": "realizar la auditoría con más rigor, para demostrar que no hay favorecimiento.",
+        "B": "pedir al cuñado que no intervenga en la entrega de información durante la visita.",
+        "C": "informar la situación para que se evalúe el impedimento y se reasigne el caso."
+      },
+      "correcta": "C",
+      "explicacion": "La independencia y la objetividad son requisitos del trabajo de auditoría, y las amenazas deben gestionarse formalmente.\n[A] Incorrecta. Trabajar con más rigor no elimina la amenaza a la objetividad ni la apariencia de falta de independencia.\n[B] Incorrecta. Apartar informalmente al familiar no resuelve el conflicto: el auditor seguiría evaluando un área a cargo de su pariente.\n[C] Correcta. Un cuñado es pariente en segundo grado de afinidad, causal de impedimento (art. 11 CPACA). El código de ética profesional exige identificar las amenazas a la independencia y, si no pueden reducirse a un nivel aceptable, abstenerse. Lo correcto es informar al superior para que decida y reasigne el caso.",
+      "norma": "Ley 1437 de 2011, arts. 11 y 12; Código de ética para profesionales de la contabilidad (Decreto 2420 de 2015)",
+      "dificultad": 2,
+      "etiquetas": [
+        "independencia",
+        "impedimentos",
+        "ética"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-018",
+      "contexto": "Al iniciar una fiscalización, el jefe pide al profesional definir la estrategia global de la auditoría y el plan detallado de los procedimientos que se aplicarán.",
+      "enunciado": "Esta actividad corresponde a la etapa de",
+      "opciones": {
+        "A": "planeación de la auditoría.",
+        "B": "comunicación de resultados.",
+        "C": "seguimiento de los hallazgos."
+      },
+      "correcta": "A",
+      "explicacion": "La planeación define el qué, el cómo y el cuándo de la auditoría.\n[A] Correcta. Según la NIA 300, la planeación incluye establecer la estrategia global (alcance, momento y dirección de la auditoría) y desarrollar un plan de auditoría con la naturaleza, el momento y la extensión de los procedimientos.\n[B] Incorrecta. La comunicación de resultados ocurre al final, cuando se informan los hallazgos y las conclusiones.\n[C] Incorrecta. El seguimiento verifica después las acciones adoptadas frente a los hallazgos.",
+      "norma": "NIA 300 – Planificación de la auditoría",
+      "dificultad": 1,
+      "etiquetas": [
+        "planeación",
+        "etapas de la auditoría"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-019",
+      "contexto": "Antes de definir los procedimientos de una fiscalización, el profesional estudia el negocio de la empresa: su sector, sus principales clientes y proveedores, su estructura de vinculados y sus sistemas de información.",
+      "enunciado": "El propósito principal de este estudio es",
+      "opciones": {
+        "A": "identificar y valorar los riesgos para orientar los procedimientos.",
+        "B": "elaborar un informe comercial sobre la empresa para publicarlo en la página web.",
+        "C": "sustituir las pruebas de detalle, porque el conocimiento del negocio es suficiente."
+      },
+      "correcta": "A",
+      "explicacion": "Conocer la entidad y su entorno es la base para identificar los riesgos.\n[A] Correcta. La NIA 315 exige obtener conocimiento de la entidad, su entorno y su control interno para identificar y valorar los riesgos de incorrección material, y así diseñar procedimientos que respondan a ellos.\n[B] Incorrecta. La información obtenida en la fiscalización tiene reserva (art. 583 ET) y no se publica.\n[C] Incorrecta. El conocimiento del negocio orienta los procedimientos, pero no reemplaza la evidencia que se obtiene con ellos.",
+      "norma": "NIA 315 – identificación y valoración de riesgos",
+      "dificultad": 1,
+      "etiquetas": [
+        "conocimiento del negocio",
+        "riesgos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-020",
+      "contexto": "Al revisar los asientos contables de una empresa, el profesional encuentra registros manuales de ingresos negativos hechos el 31 de diciembre por el gerente, sin soporte, y que redujeron significativamente las ventas del año.",
+      "enunciado": "Frente a este hallazgo, al profesional le corresponde",
+      "opciones": {
+        "A": "considerarlo un riesgo de fraude y examinar en detalle esos asientos y su justificación.",
+        "B": "aceptarlo, porque los ajustes de cierre son normales en cualquier contabilidad.",
+        "C": "ignorarlo, porque los asientos manuales no afectan la determinación del impuesto."
+      },
+      "correcta": "A",
+      "explicacion": "Los asientos manuales inusuales al cierre, hechos por la gerencia, son una señal clásica de riesgo de fraude.\n[A] Correcta. La NIA 240 exige al auditor evaluar los riesgos de fraude, incluida la posibilidad de que la dirección eluda los controles, y examinar los asientos de diario y otros ajustes, en especial los manuales, los de cierre y los inusuales. Sin soporte, esos ajustes deben investigarse.\n[B] Incorrecta. Que existan ajustes de cierre es normal; lo inusual aquí es que sean manuales, sin soporte, hechos por el gerente y de alto impacto.\n[C] Incorrecta. Reducir los ingresos afecta directamente la base gravable de renta y, según el caso, la de IVA.",
+      "norma": "NIA 240 – responsabilidades del auditor con respecto al fraude",
+      "dificultad": 2,
+      "etiquetas": [
+        "fraude",
+        "asientos de diario"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-021",
+      "contexto": "En una fiscalización, el profesional debe verificar 2 millones de registros de ventas electrónicas para identificar facturas duplicadas, números faltantes y operaciones registradas en días no hábiles.",
+      "enunciado": "Para cumplir este propósito de forma eficiente, al profesional le corresponde",
+      "opciones": {
+        "A": "revisar manualmente una por una todas las facturas del periodo.",
+        "B": "usar técnicas de análisis de datos sobre la totalidad de registros.",
+        "C": "pedir al contribuyente que certifique que no existen esas anomalías."
+      },
+      "correcta": "B",
+      "explicacion": "Con grandes volúmenes de datos, las técnicas de auditoría asistidas por computador permiten analizar toda la población.\n[A] Incorrecta. La revisión manual de 2 millones de registros es inviable en tiempo y propensa a errores.\n[B] Correcta. Las técnicas de auditoría asistidas por computador y el análisis de datos permiten aplicar pruebas a toda la población: detectar duplicados, buscar faltantes en la numeración y filtrar fechas inusuales, con más cobertura y eficiencia.\n[C] Incorrecta. La certificación del contribuyente es evidencia interna y no reemplaza la verificación independiente del auditor.",
+      "norma": "NIA 500 y NIA 330 – técnicas asistidas por computador",
+      "dificultad": 1,
+      "etiquetas": [
+        "análisis de datos",
+        "CAAT"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-022",
+      "contexto": "Para verificar el efectivo de una empresa, el profesional llega sin previo aviso y cuenta en presencia del cajero el dinero y los documentos que hay en la caja.",
+      "enunciado": "Esta técnica de auditoría se denomina",
+      "opciones": {
+        "A": "confirmación externa de saldos.",
+        "B": "procedimiento analítico.",
+        "C": "arqueo de caja (inspección)."
+      },
+      "correcta": "C",
+      "explicacion": "El arqueo de caja es una forma de inspección física del efectivo.\n[A] Incorrecta. La confirmación externa es una respuesta de un tercero, no un recuento físico hecho por el auditor.\n[B] Incorrecta. El procedimiento analítico evalúa relaciones entre datos, no hace recuentos físicos.\n[C] Correcta. El arqueo es el recuento físico del efectivo y los documentos en caja en presencia del responsable. Es una forma de inspección (NIA 500) y suele hacerse por sorpresa para evitar que se oculten faltantes.",
+      "norma": "NIA 500 – inspección",
+      "dificultad": 1,
+      "etiquetas": [
+        "arqueo",
+        "inspección"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-023",
+      "contexto": "En una fiscalización se discute el valor de unos activos especializados que la empresa usó para calcular su depreciación. El profesional no tiene conocimientos técnicos de avalúo de ese tipo de bienes.",
+      "enunciado": "Para obtener evidencia sobre ese valor, al profesional le corresponde",
+      "opciones": {
+        "A": "estimar el valor según su criterio personal, para no demorar la actuación.",
+        "B": "aceptar el valor que fijó la empresa, porque es quien conoce los activos.",
+        "C": "apoyarse en un experto independiente y evaluar la idoneidad de su trabajo."
+      },
+      "correcta": "C",
+      "explicacion": "Cuando se requiere conocimiento especializado ajeno a la auditoría, se puede usar el trabajo de un experto.\n[A] Incorrecta. Estimar sin conocimiento técnico produce conclusiones sin sustento, que no resistirían una controversia.\n[B] Incorrecta. Aceptar sin verificar el valor fijado por la empresa auditada desconoce el escepticismo profesional.\n[C] Correcta. La NIA 620 permite usar el trabajo de un experto cuando se necesita conocimiento especializado, como avalúos. El auditor debe evaluar la competencia, capacidad y objetividad del experto y la adecuación de su trabajo. En la fiscalización, el dictamen pericial es un medio de prueba.",
+      "norma": "NIA 620 – utilización del trabajo de un experto",
+      "dificultad": 2,
+      "etiquetas": [
+        "expertos",
+        "evidencia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-024",
+      "contexto": "Al final de una auditoría, la gerencia de la empresa firma una carta en la que declara que entregó toda la información y que no hay operaciones omitidas.",
+      "enunciado": "Respecto del valor de esa carta, al profesional le corresponde considerar que",
+      "opciones": {
+        "A": "es evidencia suficiente, que reemplaza las pruebas aplicadas durante la auditoría.",
+        "B": "complementa la evidencia, pero no sustituye los procedimientos de auditoría aplicados.",
+        "C": "carece de todo valor, porque la empresa siempre tiene interés en el resultado final."
+      },
+      "correcta": "B",
+      "explicacion": "Las manifestaciones escritas de la dirección complementan la evidencia, pero no la reemplazan.\n[A] Incorrecta. La NIA 580 establece que las manifestaciones escritas, por sí solas, no proporcionan evidencia suficiente y adecuada sobre los asuntos a los que se refieren.\n[B] Correcta. Las manifestaciones escritas son evidencia necesaria y complementaria; las conclusiones deben sustentarse en los procedimientos aplicados.\n[C] Incorrecta. Tienen valor como evidencia complementaria y dejan constancia de las afirmaciones de la gerencia, aunque deban corroborarse.",
+      "norma": "NIA 580 – manifestaciones escritas",
+      "dificultad": 2,
+      "etiquetas": [
+        "manifestaciones escritas",
+        "evidencia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-025",
+      "contexto": "En una auditoría, el profesional obtiene dos evidencias sobre el mismo pago: una fotocopia del cheque que le entregó la empresa y el extracto bancario que le envió directamente el banco.",
+      "enunciado": "Al evaluar la fiabilidad, al profesional le corresponde considerar más fiable",
+      "opciones": {
+        "A": "la fotocopia del cheque, porque la entregó el propio contribuyente.",
+        "B": "ambas por igual, porque las dos se refieren al mismo pago realizado.",
+        "C": "el extracto enviado directamente por el banco, un tercero independiente."
+      },
+      "correcta": "C",
+      "explicacion": "La fiabilidad de la evidencia depende de su fuente y de cómo se obtiene.\n[A] Incorrecta. La fotocopia entregada por el contribuyente es evidencia interna y en copia, menos fiable que un documento recibido directamente de un tercero.\n[C] Correcta. Según la NIA 500, la evidencia es más fiable cuando proviene de fuentes externas independientes, cuando el auditor la obtiene directamente y cuando consta en documentos originales en lugar de fotocopias.\n[B] Incorrecta. Referirse al mismo hecho no hace que dos evidencias sean igual de fiables: su fuente y su forma de obtención marcan la diferencia.",
+      "norma": "NIA 500 – fiabilidad de la evidencia",
+      "dificultad": 1,
+      "etiquetas": [
+        "fiabilidad",
+        "evidencia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-026",
+      "contexto": "El profesional quiere verificar que el sistema de facturación de una empresa calcula correctamente el IVA. Para ello, registra él mismo varias ventas de prueba en el sistema y compara el resultado con el cálculo esperado.",
+      "enunciado": "Esta técnica de auditoría corresponde a",
+      "opciones": {
+        "A": "la reejecución de un procedimiento o control de la entidad.",
+        "B": "la confirmación externa de saldos ante terceros independientes.",
+        "C": "la indagación a los usuarios del sistema de facturación."
+      },
+      "correcta": "A",
+      "explicacion": "La reejecución consiste en que el auditor ejecute por su cuenta un procedimiento o control de la entidad.\n[A] Correcta. Según la NIA 500, la reejecución implica la ejecución independiente, por parte del auditor, de procedimientos o controles que originalmente formaban parte del control interno de la entidad. Procesar transacciones de prueba en el sistema es un ejemplo.\n[B] Incorrecta. La confirmación externa se dirige a terceros; aquí el auditor opera el sistema de la empresa.\n[C] Incorrecta. La indagación es preguntar a las personas; aquí el auditor verifica directamente el funcionamiento del sistema.",
+      "norma": "NIA 500 – reejecución",
+      "dificultad": 2,
+      "etiquetas": [
+        "reejecución",
+        "técnicas de auditoría"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-027",
+      "contexto": "Al evaluar los riesgos de una empresa, el equipo de fiscalización discute qué riesgo puede controlar directamente el auditor con el diseño de sus pruebas.",
+      "enunciado": "Al profesional le corresponde señalar que el riesgo que depende directamente del auditor es el",
+      "opciones": {
+        "A": "riesgo inherente.",
+        "B": "riesgo de control.",
+        "C": "riesgo de detección."
+      },
+      "correcta": "C",
+      "explicacion": "El riesgo de auditoría combina riesgos propios de la entidad con el riesgo de detección, que depende del auditor.\n[A] Incorrecta. El riesgo inherente es la susceptibilidad de una afirmación a una incorrección material antes de considerar los controles: depende de la naturaleza del negocio, no del auditor.\n[B] Incorrecta. El riesgo de control es la posibilidad de que los controles de la entidad no prevengan o detecten una incorrección: depende de la empresa.\n[C] Correcta. Según la NIA 200, el riesgo de detección es el riesgo de que los procedimientos del auditor no detecten una incorrección material. El auditor lo controla con la naturaleza, el momento y la extensión de sus pruebas.",
+      "norma": "NIA 200 – componentes del riesgo de auditoría",
+      "dificultad": 2,
+      "etiquetas": [
+        "riesgo de detección",
+        "riesgo de auditoría"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-028",
+      "contexto": "En una muestra de 100 facturas de compra seleccionadas aleatoriamente, el profesional encuentra 8 sin soporte de entrega del bien. La población total es de 5.000 facturas.",
+      "enunciado": "Al evaluar el resultado, al profesional le corresponde",
+      "opciones": {
+        "A": "concluir que solo esas 8 facturas tienen problemas, sin proyectar a la población.",
+        "B": "descartar el resultado, porque la muestra es muy pequeña frente a la población.",
+        "C": "proyectar el error a la población y evaluar si requiere ampliar las pruebas."
+      },
+      "correcta": "C",
+      "explicacion": "En el muestreo, los errores encontrados se proyectan a la población.\n[A] Incorrecta. Limitar la conclusión a las partidas examinadas desconoce el propósito del muestreo: si la muestra es representativa, es probable que haya errores similares en el resto de la población.\n[C] Correcta. La NIA 530 exige proyectar las incorrecciones de la muestra a la población y evaluar si el resultado proporciona una base razonable para concluir. Un 8% de error puede justificar ampliar la muestra o aplicar otros procedimientos.\n[B] Incorrecta. Una muestra estadística bien diseñada es válida aunque sea pequeña frente a la población: su tamaño se determina técnicamente.",
+      "norma": "NIA 530 – evaluación de los resultados del muestreo",
+      "dificultad": 3,
+      "etiquetas": [
+        "muestreo",
+        "proyección de errores"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-029",
+      "contexto": "En una fiscalización, el profesional detecta que la empresa reconoció un ingreso por la venta de un inmueble cuya escritura se firmó el año siguiente y que se registró por un valor inferior al pactado.",
+      "enunciado": "Las afirmaciones que el profesional debe verificar respecto de ese ingreso son",
+      "opciones": {
+        "A": "la presentación de la información y la clasificación del patrimonio.",
+        "B": "la existencia del inventario y la valoración de las cuentas por pagar.",
+        "C": "la ocurrencia, el corte y la exactitud del ingreso registrado."
+      },
+      "correcta": "C",
+      "explicacion": "Cada riesgo se asocia con afirmaciones específicas.\n[C] Correcta. Si la venta se perfeccionó el año siguiente, hay dudas sobre la ocurrencia y el corte (en qué periodo se reconoce). Si el valor registrado es inferior al pactado, está en riesgo la exactitud. Estas son las afirmaciones sobre transacciones (NIA 315).\n[B] Incorrecta. La existencia del inventario y la valoración de las cuentas por pagar no se relacionan con este ingreso.\n[A] Incorrecta. La presentación y la clasificación del patrimonio son afirmaciones sobre saldos y revelaciones, no sobre el reconocimiento y la medición de esta venta.",
+      "norma": "NIA 315 – afirmaciones sobre transacciones",
+      "dificultad": 3,
+      "etiquetas": [
+        "afirmaciones",
+        "ingresos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "auditoria-030",
+      "contexto": "Al terminar el trabajo de campo de una auditoría, el profesional tiene la evidencia de que la empresa omitió ingresos. Antes de concluir, revisa si la evidencia obtenida es suficiente y si hay información que la contradiga.",
+      "enunciado": "Esta actividad corresponde a",
+      "opciones": {
+        "A": "aceptar el encargo y evaluar la independencia del equipo auditor.",
+        "B": "planear la auditoría y definir la estrategia global del trabajo.",
+        "C": "evaluar la evidencia en conjunto antes de formar una conclusión."
+      },
+      "correcta": "C",
+      "explicacion": "Antes de concluir, el auditor debe evaluar si la evidencia es suficiente y adecuada, incluida la que contradiga sus hallazgos.\n[C] Correcta. Según las NIA 330 y 500, el auditor debe evaluar si obtuvo evidencia suficiente y adecuada, considerando toda la evidencia relevante, con independencia de que corrobore o contradiga las afirmaciones. Solo entonces forma su conclusión.\n[B] Incorrecta. La planeación ocurre al inicio, no al cierre del trabajo de campo.\n[A] Incorrecta. La aceptación del encargo y la evaluación de la independencia son previas al trabajo.",
+      "norma": "NIA 330 y NIA 500 – evaluación de la evidencia",
+      "dificultad": 2,
+      "etiquetas": [
+        "evaluación de la evidencia",
+        "conclusiones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

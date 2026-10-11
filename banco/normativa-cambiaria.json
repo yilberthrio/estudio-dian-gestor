@@ -1,0 +1,476 @@
+{
+  "sesion": "normativa-cambiaria",
+  "preguntas": [
+    {
+      "id": "normativa-cambiaria-001",
+      "contexto": "En una capacitación sobre control cambiario, un profesional debe explicar quién expide la regulación cambiaria que la DIAN controla en el comercio exterior.",
+      "enunciado": "Al profesional le corresponde explicar que la regulación cambiaria la expide",
+      "opciones": {
+        "A": "la Junta Directiva del Banco de la República, como autoridad cambiaria.",
+        "B": "la DIAN, mediante resoluciones de carácter general para los importadores.",
+        "C": "la Superintendencia Financiera, como supervisora de los intermediarios."
+      },
+      "correcta": "A",
+      "explicacion": "La Junta Directiva del Banco de la República es la autoridad monetaria, cambiaria y crediticia.\n[A] Correcta. El art. 371 C.P. y las Leyes 9 de 1991 y 31 de 1992 asignan a la Junta Directiva del Banco de la República la función de autoridad cambiaria. Su regulación principal es la Resolución Externa 1 de 2018, desarrollada por la Circular DCIN-83.\n[B] Incorrecta. La DIAN controla y sanciona el cumplimiento del régimen en las operaciones de su competencia, pero no expide la regulación cambiaria.\n[C] Incorrecta. La Superintendencia Financiera vigila a los intermediarios del mercado cambiario bajo su supervisión, pero no es la autoridad que regula el régimen.",
+      "norma": "Constitución Política, art. 371; Ley 9 de 1991; Ley 31 de 1992; Res. Externa 1 de 2018 JDBR",
+      "dificultad": 1,
+      "etiquetas": [
+        "autoridad cambiaria"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-002",
+      "contexto": "Una empresa importó maquinaria y pagó a su proveedor del exterior mediante un amigo que tenía dólares en efectivo, sin pasar por un banco ni por una cuenta de compensación.",
+      "enunciado": "Al analizar el pago, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "es válido, porque el pago de importaciones es una operación del mercado libre.",
+        "B": "es irregular, porque el pago de importaciones de bienes debe canalizarse.",
+        "C": "es válido, siempre que la empresa conserve el recibo firmado por su amigo."
+      },
+      "correcta": "B",
+      "explicacion": "El pago de importaciones de bienes es una operación de canalización obligatoria.\n[A] Incorrecta. Las importaciones de bienes no son del mercado libre: la regulación las incluye entre las operaciones que deben canalizarse.\n[B] Correcta. Las importaciones y exportaciones de bienes son operaciones de obligatoria canalización a través de los intermediarios del mercado cambiario o de cuentas de compensación (Ley 9 de 1991 y Res. Externa 1 de 2018). No hacerlo es una infracción cambiaria que investiga la DIAN (Decreto Ley 2245 de 2011).\n[C] Incorrecta. Un recibo privado no suple la canalización por los medios autorizados.",
+      "norma": "Ley 9 de 1991; Res. Externa 1 de 2018 JDBR; Decreto Ley 2245 de 2011",
+      "dificultad": 1,
+      "etiquetas": [
+        "canalización",
+        "importaciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-003",
+      "contexto": "Una consultora colombiana presta servicios a un cliente en España y recibe el pago en una cuenta en el exterior. Pregunta si está obligada a traer esos recursos por el mercado cambiario.",
+      "enunciado": "Al profesional le corresponde informarle que los ingresos por exportación de servicios",
+      "opciones": {
+        "A": "son del mercado libre y pueden canalizarse en forma voluntaria.",
+        "B": "deben canalizarse siempre, igual que las exportaciones de bienes, en un plazo fijo.",
+        "C": "están prohibidos, porque los residentes no pueden recibir pagos en el exterior."
+      },
+      "correcta": "A",
+      "explicacion": "Los servicios son, por regla general, operaciones del mercado libre.\n[A] Correcta. Según la regulación cambiaria, los servicios y las transferencias no son de canalización obligatoria: pertenecen al mercado libre. Pueden canalizarse voluntariamente a través de los intermediarios del mercado cambiario o de cuentas de compensación, informando los datos mínimos. Sus obligaciones tributarias, como declarar el ingreso, se mantienen.\n[B] Incorrecta. La canalización obligatoria aplica a las exportaciones de bienes, no a la exportación de servicios.\n[C] Incorrecta. Los residentes pueden recibir pagos del exterior; lo que regula el régimen es cómo se canalizan e informan ciertas operaciones.",
+      "norma": "Ley 9 de 1991; Res. Externa 1 de 2018 JDBR",
+      "dificultad": 2,
+      "etiquetas": [
+        "mercado libre",
+        "servicios"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-004",
+      "contexto": "Al revisar la competencia sobre un caso cambiario, el profesional encuentra que la operación investigada es la inversión de una sociedad extranjera en el capital de una empresa colombiana, sin relación con importaciones ni exportaciones.",
+      "enunciado": "Al profesional le corresponde concluir que el control de esa operación corresponde",
+      "opciones": {
+        "A": "a la DIAN, porque es competente para todas las operaciones de cambio del país.",
+        "B": "a la Superintendencia de Sociedades, que controla las inversiones internacionales.",
+        "C": "al Banco de la República, que impone directamente las sanciones cambiarias."
+      },
+      "correcta": "B",
+      "explicacion": "El control cambiario está distribuido entre varias entidades.\n[A] Incorrecta. La DIAN no controla todas las operaciones de cambio: su competencia cubre las importaciones y exportaciones de bienes y servicios, sus gastos asociados y su financiación, la subfacturación y sobrefacturación, y los profesionales de compra y venta de divisas.\n[B] Correcta. La Superintendencia de Sociedades controla el cumplimiento del régimen en las inversiones internacionales (extranjeras en Colombia y colombianas en el exterior) y en el endeudamiento externo de las sociedades que no vigilan otras superintendencias.\n[C] Incorrecta. El Banco de la República regula y lleva el registro de ciertas operaciones, pero no es la entidad que investiga y sanciona estas infracciones.",
+      "norma": "Ley 9 de 1991; Decreto Ley 2245 de 2011; normas de competencia de la Superintendencia de Sociedades",
+      "dificultad": 2,
+      "etiquetas": [
+        "competencia",
+        "inversión extranjera"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-005",
+      "contexto": "Una empresa giró al exterior USD 100.000 por el pago de una importación, pero en la declaración de importación de esa mercancía figura un valor FOB de USD 60.000.",
+      "enunciado": "Frente a esta diferencia, al profesional le corresponde",
+      "opciones": {
+        "A": "investigar una posible sobrefacturación, con efectos cambiarios, aduaneros y tributarios.",
+        "B": "archivar el caso, porque la diferencia entre lo girado y lo declarado no tiene efectos.",
+        "C": "remitir el caso a la Superintendencia de Sociedades, porque se trata de inversión extranjera."
+      },
+      "correcta": "A",
+      "explicacion": "La diferencia entre lo girado y lo declarado en aduana es una señal de alerta.\n[A] Correcta. Girar más de lo que se declara como valor de la mercancía puede indicar sobrefacturación del pago (para sacar divisas sin justificación) o subfacturación en aduana (para pagar menos tributos). La DIAN es competente para el control cambiario de las importaciones y para el control aduanero y tributario, y estas conductas también son alertas de lavado de activos.\n[B] Incorrecta. La diferencia sí tiene efectos: el régimen exige que la canalización corresponda a operaciones reales y documentadas.\n[C] Incorrecta. No se trata de inversión extranjera, sino del pago de una importación de bienes, de competencia de la DIAN.",
+      "norma": "Ley 9 de 1991; Decreto Ley 2245 de 2011; Decreto 1165 de 2019",
+      "dificultad": 2,
+      "etiquetas": [
+        "sobrefacturación",
+        "subfacturación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-006",
+      "contexto": "Una empresa abrió una cuenta bancaria en Miami y la registró ante el Banco de la República para manejar desde allí los pagos de sus importaciones y los ingresos de sus exportaciones de bienes.",
+      "enunciado": "Al profesional le corresponde identificar esa cuenta como",
+      "opciones": {
+        "A": "una cuenta de compensación, autorizada para canalizar operaciones obligatorias.",
+        "B": "una cuenta prohibida, porque los residentes no pueden tener cuentas en el exterior.",
+        "C": "una cuenta corriente común, que no genera obligaciones cambiarias para la empresa."
+      },
+      "correcta": "A",
+      "explicacion": "Las cuentas de compensación permiten canalizar operaciones obligatorias sin pasar por un intermediario local.\n[A] Correcta. Las cuentas de compensación son cuentas en entidades financieras del exterior, registradas ante el Banco de la República, mediante las cuales los residentes pueden canalizar operaciones de obligatoria canalización. Sus titulares deben informar periódicamente sus movimientos.\n[B] Incorrecta. Los residentes pueden tener cuentas en el exterior. Si las usan para canalizar operaciones obligatorias, deben registrarlas como cuentas de compensación.\n[C] Incorrecta. Una cuenta de compensación sí genera obligaciones: el registro y los reportes periódicos de sus movimientos.",
+      "norma": "Res. Externa 1 de 2018 JDBR; Circular DCIN-83",
+      "dificultad": 2,
+      "etiquetas": [
+        "cuentas de compensación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-007",
+      "contexto": "Dos empresas colombianas, ambas residentes, acuerdan que el pago de un contrato de arrendamiento de una bodega en Bogotá se hará en dólares, en efectivo.",
+      "enunciado": "Al profesional le corresponde advertir que, según el régimen cambiario,",
+      "opciones": {
+        "A": "las operaciones internas entre residentes deben pagarse, por regla general, en pesos.",
+        "B": "las partes pueden pagar en cualquier moneda, porque el régimen solo regula el exterior.",
+        "C": "el pago es válido solo si una de las partes registra la operación ante la DIAN."
+      },
+      "correcta": "A",
+      "explicacion": "Por regla general, las obligaciones entre residentes por operaciones internas se pagan en moneda legal colombiana.\n[A] Correcta. El régimen cambiario dispone que las operaciones internas entre residentes deben pagarse en moneda legal colombiana, salvo las excepciones autorizadas por la Junta Directiva del Banco de la República (Res. Externa 1 de 2018).\n[B] Incorrecta. El régimen cambiario también regula el uso de divisas entre residentes, no solo las operaciones con el exterior.\n[C] Incorrecta. No existe un registro ante la DIAN que habilite el pago en divisas de operaciones internas entre residentes.",
+      "norma": "Res. Externa 1 de 2018 JDBR",
+      "dificultad": 3,
+      "etiquetas": [
+        "operaciones internas",
+        "moneda legal"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-008",
+      "contexto": "Un importador canalizó el pago de una importación de bienes a través de un banco, pero al informar los datos mínimos de la operación usó el numeral cambiario correspondiente a «servicios».",
+      "enunciado": "Al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "la información es irrelevante, porque lo importante es haber canalizado el pago.",
+        "B": "el error es solo del banco, que debía corregir el numeral de la operación informada.",
+        "C": "suministró información errada de la operación, posible infracción cambiaria."
+      },
+      "correcta": "C",
+      "explicacion": "La información de los datos mínimos debe corresponder a la naturaleza real de la operación.\n[A] Incorrecta. Canalizar no basta: el residente debe informar correctamente los datos mínimos, incluido el numeral cambiario que identifica la operación.\n[B] Incorrecta. La responsabilidad sobre la veracidad de la información recae en el residente que la suministra, aunque el intermediario la reciba y la transmita.\n[C] Correcta. Con la información de los datos mínimos (antes declaración de cambio) el residente informa la naturaleza de la operación mediante el numeral cambiario. Informarla de manera incorrecta impide el control y puede constituir infracción cambiaria (Decreto Ley 2245 de 2011).",
+      "norma": "Res. Externa 1 de 2018 JDBR; Circular DCIN-83; Decreto Ley 2245 de 2011",
+      "dificultad": 2,
+      "etiquetas": [
+        "datos mínimos",
+        "numeral cambiario"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-009",
+      "contexto": "En una acción de control a un establecimiento que compra y vende dólares en efectivo a turistas, el profesional debe establecer qué entidad ejerce el control sobre esa actividad.",
+      "enunciado": "Al profesional le corresponde concluir que estos profesionales de compra y venta de divisas",
+      "opciones": {
+        "A": "son vigilados por la Superintendencia Financiera, porque actúan como bancos.",
+        "B": "son controlados por la DIAN en el cumplimiento del régimen cambiario.",
+        "C": "no tienen ningún control, porque realizan operaciones de bajo monto."
+      },
+      "correcta": "B",
+      "explicacion": "Los profesionales de compra y venta de divisas en efectivo y cheques de viajero están bajo control de la DIAN.\n[A] Incorrecta. No son intermediarios del mercado cambiario ni entidades vigiladas por la Superintendencia Financiera.\n[B] Correcta. La DIAN controla el cumplimiento del régimen cambiario por parte de los profesionales de compra y venta de divisas: su registro, la identificación de los clientes, los soportes y los reportes. Además, son sujetos obligados a reportar operaciones sospechosas a la UIAF.\n[C] Incorrecta. Su actividad sí está sujeta a control, por su riesgo de lavado de activos y por las obligaciones cambiarias que tienen.",
+      "norma": "Decreto Ley 2245 de 2011; Res. Externa 1 de 2018 JDBR; regulación DIAN sobre profesionales del cambio",
+      "dificultad": 2,
+      "etiquetas": [
+        "profesionales del cambio",
+        "competencia DIAN"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-010",
+      "contexto": "Una sociedad colombiana recibió un préstamo en dólares de su casa matriz en el exterior para financiar su operación. El profesional revisa las obligaciones cambiarias asociadas.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que el endeudamiento externo",
+      "opciones": {
+        "A": "es una operación del mercado libre, que no requiere canalización ni información.",
+        "B": "es de canalización obligatoria y debe informarse conforme a la regulación cambiaria.",
+        "C": "está prohibido para las sociedades colombianas con matriz en el exterior."
+      },
+      "correcta": "B",
+      "explicacion": "El endeudamiento externo es una operación de canalización obligatoria.\n[A] Incorrecta. El endeudamiento externo no es del mercado libre: está entre las operaciones que deben canalizarse.\n[B] Correcta. La regulación cambiaria incluye el endeudamiento externo entre las operaciones de canalización obligatoria, y exige informarlo al Banco de la República en los términos de la Circular DCIN-83. En las sociedades no vigiladas por otras superintendencias, el control corresponde a la Superintendencia de Sociedades. En lo tributario, puede tener efectos en precios de transferencia y en la deducibilidad de intereses.\n[C] Incorrecta. Las sociedades pueden endeudarse con vinculados del exterior, cumpliendo las obligaciones cambiarias y tributarias.",
+      "norma": "Ley 9 de 1991; Res. Externa 1 de 2018 JDBR; Circular DCIN-83",
+      "dificultad": 2,
+      "etiquetas": [
+        "endeudamiento externo",
+        "canalización"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-011",
+      "contexto": "Un nuevo funcionario pregunta cuál es la ley que establece las normas generales del régimen cambiario y a la cual debe sujetarse el Gobierno al regular la materia.",
+      "enunciado": "Al profesional le corresponde responder que la ley marco del régimen cambiario es",
+      "opciones": {
+        "A": "la Ley 1609 de 2013.",
+        "B": "la Ley 1712 de 2014.",
+        "C": "la Ley 9 de 1991."
+      },
+      "correcta": "C",
+      "explicacion": "Cada régimen tiene su ley marco.\n[A] Incorrecta. La Ley 1609 de 2013 es la ley marco de aduanas.\n[B] Incorrecta. La Ley 1712 de 2014 es la Ley de Transparencia y del Derecho de Acceso a la Información Pública.\n[C] Correcta. La Ley 9 de 1991 es la ley marco del régimen cambiario: establece las normas generales a las que deben sujetarse el Gobierno y la Junta Directiva del Banco de la República al regular los cambios internacionales.",
+      "norma": "Ley 9 de 1991",
+      "dificultad": 1,
+      "etiquetas": [
+        "ley marco",
+        "régimen cambiario"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-012",
+      "contexto": "Al iniciar una investigación cambiaria por no canalizar el pago de importaciones, el profesional debe identificar la norma que rige el procedimiento y las sanciones.",
+      "enunciado": "Al profesional le corresponde aplicar",
+      "opciones": {
+        "A": "el Decreto Ley 2245 de 2011.",
+        "B": "el Decreto 920 de 2023.",
+        "C": "la Ley 1437 de 2011 (CPACA)."
+      },
+      "correcta": "A",
+      "explicacion": "Las infracciones cambiarias de competencia de la DIAN tienen un régimen especial.\n[A] Correcta. El Decreto Ley 2245 de 2011 establece el régimen sancionatorio y el procedimiento administrativo cambiario que aplica la DIAN, con las infracciones, las sanciones y las etapas del proceso.\n[B] Incorrecta. El Decreto 920 de 2023 regula el régimen sancionatorio y de decomiso en materia aduanera, no el cambiario.\n[C] Incorrecta. El CPACA aplica de forma supletoria en lo no regulado, pero el procedimiento cambiario tiene su propia norma especial.",
+      "norma": "Decreto Ley 2245 de 2011",
+      "dificultad": 1,
+      "etiquetas": [
+        "régimen sancionatorio cambiario"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-013",
+      "contexto": "Una sociedad comisionista de bolsa autorizada como intermediaria del mercado cambiario recibe divisas de un cliente que exporta café.",
+      "enunciado": "Al profesional le corresponde reconocer que la entidad que recibe las divisas",
+      "opciones": {
+        "A": "no puede actuar en el mercado cambiario, porque solo los bancos son intermediarios.",
+        "B": "es un intermediario del mercado cambiario, por el cual pueden canalizarse divisas.",
+        "C": "es un profesional de compra y venta de divisas, sometido al control de la DIAN."
+      },
+      "correcta": "B",
+      "explicacion": "Los intermediarios del mercado cambiario incluyen varias clases de entidades, no solo los bancos.\n[A] Incorrecta. Los bancos no son los únicos intermediarios: la regulación autoriza a otras entidades, como las corporaciones financieras, las compañías de financiamiento, las sociedades comisionistas de bolsa y Bancoldex.\n[B] Correcta. Las sociedades comisionistas de bolsa están entre los intermediarios del mercado cambiario autorizados por la Res. Externa 1 de 2018. Por ellos se canalizan las operaciones obligatorias, como el ingreso de divisas de exportaciones.\n[C] Incorrecta. Los profesionales de compra y venta de divisas son personas distintas, que operan en efectivo y no son intermediarios del mercado cambiario.",
+      "norma": "Res. Externa 1 de 2018 JDBR",
+      "dificultad": 2,
+      "etiquetas": [
+        "IMC",
+        "intermediarios"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-014",
+      "contexto": "Un trabajador colombiano en Estados Unidos envía mensualmente dinero a su familia en Colombia a través de una empresa de giros autorizada.",
+      "enunciado": "Al profesional le corresponde identificar que estas transferencias",
+      "opciones": {
+        "A": "son operaciones del mercado libre, aunque se realicen por un intermediario autorizado.",
+        "B": "son operaciones de canalización obligatoria, como las exportaciones de bienes.",
+        "C": "son operaciones prohibidas, porque implican el ingreso de divisas sin una venta."
+      },
+      "correcta": "A",
+      "explicacion": "Las transferencias, como las remesas familiares, son del mercado libre.\n[A] Correcta. Las transferencias y los servicios no son de canalización obligatoria. Que se realicen por un intermediario o una sociedad de giros autorizada no cambia su naturaleza; se informan los datos mínimos correspondientes. Por su volumen, pueden ser objeto de monitoreo en prevención del lavado de activos.\n[B] Incorrecta. La canalización obligatoria aplica a operaciones como las importaciones y exportaciones de bienes, el endeudamiento externo y las inversiones internacionales.\n[C] Incorrecta. Las remesas familiares son legales: no hace falta una venta para recibir divisas del exterior.",
+      "norma": "Res. Externa 1 de 2018 JDBR",
+      "dificultad": 2,
+      "etiquetas": [
+        "mercado libre",
+        "remesas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-015",
+      "contexto": "Al revisar un expediente, el profesional encuentra que la DIAN investiga a una empresa por no canalizar los pagos de sus importaciones y que, en paralelo, la misma conducta generó un menor impuesto por costos sin soporte.",
+      "enunciado": "Al analizar los procesos, al profesional le corresponde considerar que",
+      "opciones": {
+        "A": "solo puede adelantarse uno de los dos procesos, porque se trata de la misma conducta.",
+        "B": "el proceso cambiario prevalece y suspende cualquier actuación tributaria sobre el caso.",
+        "C": "pueden coexistir el proceso cambiario y el tributario, al proteger intereses distintos."
+      },
+      "correcta": "C",
+      "explicacion": "Una misma situación de hecho puede tener consecuencias en distintos regímenes.\n[A] Incorrecta. Los regímenes cambiario y tributario protegen bienes jurídicos distintos, por lo que pueden adelantarse ambas actuaciones.\n[B] Incorrecta. No existe una norma que haga prevalecer el proceso cambiario y suspenda el tributario: cada uno sigue sus propias reglas y términos.\n[C] Correcta. El proceso cambiario (Decreto Ley 2245 de 2011) busca el cumplimiento del régimen de cambios, y el tributario (Estatuto Tributario), la correcta determinación del impuesto. Pueden coexistir, cada uno con su procedimiento y sus sanciones.",
+      "norma": "Decreto Ley 2245 de 2011; Estatuto Tributario",
+      "dificultad": 2,
+      "etiquetas": [
+        "regímenes concurrentes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-016",
+      "contexto": "Un exportador de flores recibió el pago de sus ventas al exterior, lo canalizó por un banco e informó los datos mínimos con el numeral de exportación de bienes.",
+      "enunciado": "Al verificar la operación, al profesional le corresponde comprobar además que",
+      "opciones": {
+        "A": "el valor reintegrado guarde correspondencia con las declaraciones de exportación.",
+        "B": "el exportador haya pagado IVA del 19% sobre el valor de las divisas recibidas.",
+        "C": "el banco haya enviado a la DIAN el certificado de origen de las flores exportadas."
+      },
+      "correcta": "A",
+      "explicacion": "El control cambiario de las exportaciones verifica la correspondencia entre lo exportado y lo reintegrado.\n[A] Correcta. La DIAN verifica que los reintegros de divisas canalizados correspondan a las exportaciones realmente efectuadas, según las declaraciones de exportación. Las diferencias pueden revelar subfacturación o sobrefacturación, con efectos cambiarios, aduaneros y tributarios.\n[B] Incorrecta. La exportación de bienes es exenta de IVA (art. 479 ET), y la recepción de divisas no causa IVA.\n[C] Incorrecta. El certificado de origen sirve para acceder a preferencias arancelarias en el país de destino; no es un documento que el banco deba enviar a la DIAN como control cambiario.",
+      "norma": "Ley 9 de 1991; Res. Externa 1 de 2018 JDBR; Estatuto Tributario, art. 479",
+      "dificultad": 2,
+      "etiquetas": [
+        "exportaciones",
+        "reintegro de divisas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-017",
+      "contexto": "El titular de una cuenta de compensación usa la cuenta durante un año, pero nunca presenta los informes periódicos de sus movimientos.",
+      "enunciado": "Al profesional le corresponde concluir que el titular",
+      "opciones": {
+        "A": "no incumplió nada, porque registró la cuenta ante el Banco de la República.",
+        "B": "incumplió una obligación cambiaria, que puede dar lugar a una sanción.",
+        "C": "debe cerrar la cuenta, pero no recibe ninguna sanción por la omisión."
+      },
+      "correcta": "B",
+      "explicacion": "Registrar la cuenta de compensación no basta: deben reportarse periódicamente sus movimientos.\n[A] Incorrecta. El registro es solo una de las obligaciones; la regulación también exige los informes periódicos de movimientos.\n[B] Correcta. Según la Res. Externa 1 de 2018 y la Circular DCIN-83, los titulares de cuentas de compensación deben informar periódicamente sus movimientos. La omisión es un incumplimiento del régimen cambiario que puede sancionar la autoridad de control competente según la operación, que en comercio exterior es la DIAN (Decreto Ley 2245 de 2011).\n[C] Incorrecta. El cierre de la cuenta no reemplaza la sanción por los incumplimientos ocurridos.",
+      "norma": "Res. Externa 1 de 2018 JDBR; Circular DCIN-83; Decreto Ley 2245 de 2011",
+      "dificultad": 2,
+      "etiquetas": [
+        "cuentas de compensación",
+        "obligaciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-018",
+      "contexto": "En una capacitación se pregunta por qué la DIAN, que administra impuestos y aduanas, también ejerce control cambiario.",
+      "enunciado": "Al profesional le corresponde explicar que la DIAN controla el régimen cambiario",
+      "opciones": {
+        "A": "en todas las operaciones de divisas del país, incluidas las de los bancos.",
+        "B": "en las operaciones de comercio exterior y en los demás asuntos de su competencia.",
+        "C": "únicamente cuando el Banco de la República le delega cada caso particular."
+      },
+      "correcta": "B",
+      "explicacion": "La competencia cambiaria de la DIAN está ligada al comercio exterior.\n[A] Incorrecta. La DIAN no controla todas las operaciones: los intermediarios vigilados por la Superintendencia Financiera y las inversiones internacionales y el endeudamiento externo tienen otros controladores.\n[B] Correcta. La DIAN ejerce el control cambiario sobre las importaciones y exportaciones de bienes y servicios, sus gastos asociados y su financiación, la subfacturación y sobrefacturación, y los profesionales de compra y venta de divisas. Su estructura incluye esta función (Decreto 1742 de 2020) y su régimen sancionatorio está en el Decreto Ley 2245 de 2011.\n[C] Incorrecta. La competencia de la DIAN es legal y permanente; no depende de delegaciones caso por caso.",
+      "norma": "Decreto Ley 2245 de 2011; Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "competencia DIAN",
+        "control cambiario"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-019",
+      "contexto": "Una empresa importó bienes con financiación del proveedor del exterior, que le dio un plazo de 18 meses para pagar.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que el pago de esa importación financiada",
+      "opciones": {
+        "A": "deja de ser obligatorio canalizarlo, porque se pagará después de nacionalizada la mercancía.",
+        "B": "debe canalizarse cuando se realice, informando los datos correspondientes.",
+        "C": "puede hacerse en pesos al representante del proveedor en Colombia, sin canalizar divisas."
+      },
+      "correcta": "B",
+      "explicacion": "La financiación del pago no cambia la naturaleza obligatoria de la canalización de la importación.\n[A] Incorrecta. Que el pago sea posterior a la nacionalización no lo excluye de la canalización obligatoria.\n[B] Correcta. El pago de importaciones de bienes, incluidas las financiadas, debe canalizarse por el mercado cambiario cuando se efectúe, informando los datos mínimos que correspondan según la regulación. La financiación de importaciones es un asunto de control de la DIAN.\n[C] Incorrecta. Pagar en pesos en Colombia a un tercero, en lugar de canalizar el pago al proveedor del exterior, desconoce el régimen cambiario.",
+      "norma": "Res. Externa 1 de 2018 JDBR; Circular DCIN-83; Decreto Ley 2245 de 2011",
+      "dificultad": 3,
+      "etiquetas": [
+        "financiación de importaciones",
+        "canalización"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-020",
+      "contexto": "En la investigación de una agencia de viajes, el profesional encuentra que vende y compra dólares en efectivo de forma habitual, sin estar inscrita como profesional de compra y venta de divisas.",
+      "enunciado": "Al profesional le corresponde concluir que la agencia",
+      "opciones": {
+        "A": "puede hacerlo libremente, porque atiende a turistas y no a empresas.",
+        "B": "ejerce sin registro una actividad cambiaria, sancionable por la DIAN.",
+        "C": "solo debe reportar las operaciones a la UIAF, sin otra obligación cambiaria."
+      },
+      "correcta": "B",
+      "explicacion": "La compra y venta profesional de divisas en efectivo exige inscripción y cumplimiento de obligaciones.\n[A] Incorrecta. La habitualidad de la actividad, no el tipo de cliente, es lo que exige la inscripción como profesional de compra y venta de divisas.\n[B] Correcta. Ejercer profesionalmente la compra y venta de divisas en efectivo sin el registro exigido incumple el régimen cambiario, y la DIAN puede investigarlo y sancionarlo (Decreto Ley 2245 de 2011). Además, es una actividad de alto riesgo de lavado de activos.\n[C] Incorrecta. Reportar a la UIAF es una obligación adicional, que no reemplaza las obligaciones cambiarias de registro y control.",
+      "norma": "Decreto Ley 2245 de 2011; Res. Externa 1 de 2018 JDBR",
+      "dificultad": 2,
+      "etiquetas": [
+        "profesionales del cambio",
+        "registro"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-021",
+      "contexto": "Un profesional revisa el pago de unos servicios técnicos prestados por una empresa del exterior a una sociedad colombiana. La sociedad decidió canalizar voluntariamente el pago por un banco.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que, al canalizar voluntariamente un pago del mercado libre,",
+      "opciones": {
+        "A": "la operación se convierte en una de canalización obligatoria hacia el futuro.",
+        "B": "no tiene ninguna obligación de información, porque la canalización era opcional.",
+        "C": "debe informar los datos mínimos de la operación con el numeral cambiario correcto."
+      },
+      "correcta": "C",
+      "explicacion": "La canalización voluntaria también exige informar correctamente la operación.\n[C] Correcta. Cuando un residente canaliza voluntariamente una operación del mercado libre, debe informar los datos mínimos al intermediario o en la cuenta de compensación, con el numeral cambiario que corresponda a su naturaleza. Además, el pago al exterior tiene efectos tributarios, como la retención en la fuente aplicable.\n[B] Incorrecta. Que la canalización sea voluntaria no exime de informar la operación cuando se canaliza.\n[A] Incorrecta. Canalizar una vez no cambia la naturaleza de las operaciones futuras: siguen siendo del mercado libre.",
+      "norma": "Res. Externa 1 de 2018 JDBR; Circular DCIN-83",
+      "dificultad": 2,
+      "etiquetas": [
+        "mercado libre",
+        "datos mínimos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-022",
+      "contexto": "La DIAN detecta que una empresa canalizó como pago de importaciones de bienes divisas que en realidad no correspondían a ninguna importación, según los registros aduaneros.",
+      "enunciado": "Al profesional le corresponde considerar que esta situación",
+      "opciones": {
+        "A": "es una simple inconsistencia contable, sin consecuencias cambiarias para la empresa.",
+        "B": "es irrelevante, porque las divisas salieron por un intermediario autorizado.",
+        "C": "puede ser infracción cambiaria y alerta de lavado de activos, a investigar."
+      },
+      "correcta": "C",
+      "explicacion": "Canalizar divisas por operaciones inexistentes es una señal de alerta grave.\n[A] Incorrecta. No es una simple inconsistencia: el régimen cambiario exige que las operaciones canalizadas correspondan a hechos reales.\n[B] Incorrecta. Usar un intermediario autorizado no legitima una operación inexistente; al contrario, es una forma conocida de sacar divisas del país sin justificación.\n[C] Correcta. Canalizar pagos de importaciones inexistentes puede ser infracción cambiaria (Decreto Ley 2245 de 2011) y es una tipología de lavado de activos (importaciones ficticias). Además de investigar, debe evaluarse el reporte a la UIAF y la denuncia ante la Fiscalía si hay indicios de delito.",
+      "norma": "Decreto Ley 2245 de 2011; Ley 526 de 1999",
+      "dificultad": 2,
+      "etiquetas": [
+        "importaciones ficticias",
+        "lavado de activos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-023",
+      "contexto": "En una charla, un empresario pregunta si la información que entrega al canalizar sus operaciones cambiarias tiene alguna utilidad para el Estado.",
+      "enunciado": "Al profesional le corresponde explicar que esa información sirve, entre otros fines, para",
+      "opciones": {
+        "A": "otorgar permisos previos de importación a cada uno de los importadores del país.",
+        "B": "calcular automáticamente el impuesto de renta que debe pagar el empresario en el año.",
+        "C": "las estadísticas cambiarias y el control de las autoridades competentes."
+      },
+      "correcta": "C",
+      "explicacion": "La información de las operaciones de cambio cumple fines estadísticos y de control.\n[C] Correcta. La información de los datos mínimos que se suministra al canalizar operaciones alimenta la balanza de pagos y las estadísticas cambiarias del Banco de la República, y sirve a la DIAN y a las superintendencias para controlar el cumplimiento del régimen.\n[B] Incorrecta. La información cambiaria no liquida el impuesto de renta: puede usarse en cruces de fiscalización, pero el impuesto se determina en la declaración.\n[A] Incorrecta. Los permisos o vistos buenos de importación tienen otros trámites; no se otorgan con la información cambiaria.",
+      "norma": "Res. Externa 1 de 2018 JDBR; Circular DCIN-83",
+      "dificultad": 1,
+      "etiquetas": [
+        "datos mínimos",
+        "estadísticas cambiarias"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-024",
+      "contexto": "Una persona natural residente compra en una casa de cambio USD 3.000 en efectivo para un viaje de turismo.",
+      "enunciado": "Al profesional le corresponde identificar esta operación como",
+      "opciones": {
+        "A": "una operación de canalización obligatoria, que debe registrarse ante el Banco de la República.",
+        "B": "una operación prohibida, porque los residentes no pueden comprar divisas en efectivo.",
+        "C": "una operación del mercado libre, realizada con un profesional de compra y venta de divisas."
+      },
+      "correcta": "C",
+      "explicacion": "La compra de divisas para gastos de viaje es una operación del mercado libre.\n[A] Incorrecta. La compra de divisas para turismo no está entre las operaciones de canalización obligatoria ni requiere registro ante el Banco de la República.\n[C] Correcta. La compra de divisas en efectivo para un viaje es una operación del mercado libre. Puede hacerse con un profesional de compra y venta de divisas, que debe identificar al cliente y conservar los soportes, bajo control de la DIAN.\n[B] Incorrecta. Los residentes pueden comprar divisas en efectivo con los profesionales del cambio autorizados.",
+      "norma": "Res. Externa 1 de 2018 JDBR; Decreto Ley 2245 de 2011",
+      "dificultad": 1,
+      "etiquetas": [
+        "mercado libre",
+        "profesionales del cambio"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "normativa-cambiaria-025",
+      "contexto": "Durante una investigación cambiaria, el profesional necesita información de las operaciones de cambio que un importador realizó a través de su banco.",
+      "enunciado": "Para obtener esa información, al profesional le corresponde",
+      "opciones": {
+        "A": "pedir al Banco de la República que adelante directamente la investigación del caso cambiario.",
+        "B": "abstenerse de pedirla, porque las operaciones bancarias tienen reserva absoluta frente a la DIAN.",
+        "C": "solicitarla al intermediario del mercado cambiario y al investigado, según el procedimiento."
+      },
+      "correcta": "C",
+      "explicacion": "En el procedimiento cambiario, la DIAN puede solicitar información a los investigados y a terceros.\n[C] Correcta. El Decreto Ley 2245 de 2011 faculta a la DIAN para requerir información y documentos al investigado y a terceros, incluidos los intermediarios del mercado cambiario, para verificar el cumplimiento del régimen. La información conserva su reserva en manos de la DIAN.\n[B] Incorrecta. La reserva bancaria no es oponible a la DIAN en el ejercicio de sus funciones de control, cuando la ley la faculta para pedir información.\n[A] Incorrecta. El Banco de la República no investiga estas infracciones: es la DIAN la competente en las operaciones de comercio exterior.",
+      "norma": "Decreto Ley 2245 de 2011",
+      "dificultad": 2,
+      "etiquetas": [
+        "procedimiento cambiario",
+        "pruebas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

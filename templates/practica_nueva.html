@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block titulo %}Comportamental e integridad · Estudio DIAN{% endblock %}
+{% block contenido %}
+<h1>Práctica comportamental e integridad</h1>
+<div class="panel" style="margin-bottom:14px">
+  <p style="margin-top:0">En la prueba real (20% comportamental + 10% integridad) leerás <b>afirmaciones</b> sobre tu forma habitual de actuar
+    y responderás con una escala de 4 niveles, de «Totalmente en desacuerdo» a «Totalmente de acuerdo».
+    <b>No hay respuestas correctas o incorrectas</b>: se mide tu disposición conductual.</p>
+  <ul class="peq" style="margin-bottom:0">
+    <li>La prueba incluye <b>dos escalas de control</b> que detectan respuestas exageradamente favorables. Responder «Totalmente de acuerdo» a todo puede jugar en contra.</li>
+    <li>Las afirmaciones traen matices («…asumiendo tiempo adicional de mi jornada»). Léelas completas y responde según lo que realmente haces.</li>
+    <li>Esta práctica sirve para familiarizarte con el formato, conocer qué conducta evalúa cada competencia y revisar la coherencia de tus respuestas.</li>
+  </ul>
+</div>
+
+<form method="post" class="panel">
+  <div class="fila">
+    <div class="campo"><label>Prueba</label>
+      <select name="prueba">
+        <option value="ambas">Ambas ({{ (disponibles.comportamental or 0) + (disponibles.integridad or 0) }} afirmaciones)</option>
+        <option value="comportamental">Solo comportamental ({{ disponibles.comportamental or 0 }})</option>
+        <option value="integridad">Solo integridad ({{ disponibles.integridad or 0 }})</option>
+      </select></div>
+    <div class="campo"><label>Número de afirmaciones</label><input type="number" name="cantidad" min="1" max="200" value="30"></div>
+  </div>
+  <button class="btn prim">▶ Comenzar práctica</button>
+</form>
+
+{% if anteriores %}
+<h2>Prácticas anteriores</h2>
+<div class="panel"><table>
+  <tr><th>#</th><th>Fecha</th><th>Prueba</th><th class="n">Respondidas</th><th></th></tr>
+  {% for a in anteriores %}
+  <tr><td>{{ a.id }}</td><td>{{ a.inicio|fecha }}</td><td>{{ a.prueba }}</td><td class="n">{{ a.hechas }}/{{ a.cantidad }}</td>
+    <td>{% if a.fin %}<a class="btn peq" href="{{ url_for('practica_resultado', pid=a.id) }}">Ver perfil</a>
+        {% else %}<a class="btn peq" href="{{ url_for('practica', pid=a.id) }}">Continuar</a>{% endif %}</td></tr>
+  {% endfor %}
+</table></div>
+{% endif %}
+{% endblock %}

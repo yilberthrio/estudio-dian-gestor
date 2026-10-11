@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% from "_macros.html" import barra %}
+{% block titulo %}Perfil práctica #{{ pr.id }} · Estudio DIAN{% endblock %}
+{% block contenido %}
+<h1>Perfil · Práctica #{{ pr.id }}</h1>
+<p class="suave">{{ pr.inicio|fecha }} · {{ r.n }} afirmaciones respondidas{% if r.sin_responder %} · {{ r.sin_responder }} sin responder{% endif %}</p>
+
+{% for a in r.alertas %}<div class="flash aviso">{{ a }}</div>{% endfor %}
+{% if not r.alertas and r.n %}<div class="flash ok">Tus respuestas no muestran patrones extremos ni contradicciones evidentes.</div>{% endif %}
+
+<div class="grid dos">
+  <div class="panel">
+    <h3>Disposición por competencia</h3>
+    <p class="peq suave">Qué tanto te identificaste con las conductas que describe cada competencia (las afirmaciones
+      inversas se cuentan al revés). Es una referencia para conocerte, no un puntaje de la prueba.</p>
+    <table>
+      {% for p in r.perfil %}
+      <tr><td>{{ p.competencia }}{% if p.inconsistente %} <span class="chip medio">revisar coherencia</span>{% endif %}
+        <div class="peq suave">{{ p.prueba }} · {{ p.n }} afirmaciones</div></td>
+        <td class="n">{{ p.disposicion }}%</td><td style="width:90px">{{ barra(p.disposicion) }}</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="panel">
+    <h3>Forma de responder</h3>
+    <table>
+      <tr><td>Respuestas «Totalmente de acuerdo»</td><td class="n">{{ r.pct_totalmente|num('%') }}</td></tr>
+      <tr><td>Respuestas en los extremos (totalmente de acuerdo o en desacuerdo)</td><td class="n">{{ r.pct_extremos|num('%') }}</td></tr>
+    </table>
+    <p class="peq suave">Las escalas de control de la prueba real buscan respuestas exageradamente favorables. Un perfil creíble
+      suele combinar «De acuerdo» y «Totalmente de acuerdo», y reconocer matices.</p>
+    <div class="acciones"><a class="btn prim" href="{{ url_for('practica_nueva') }}">Nueva práctica</a></div>
+  </div>
+</div>
+
+<h2>Qué evalúa cada afirmación</h2>
+{% for a in r["items"] %}
+  <div class="resp-item">
+    <div class="peq suave">{{ a.competencia }}{% if a.nivel %} · nivel {{ a.nivel }}{% endif %} · {{ a.prueba }}
+      {% if a.clave == 'inversa' %} · <span class="chip gris">afirmación inversa</span>{% endif %}</div>
+    <div style="font-weight:600; margin:4px 0">{{ a.texto }}</div>
+    <div class="peq">Tu respuesta: <b>{{ escala[a.valor] if a.valor else 'sin responder' }}</b></div>
+    {% if a.conducta %}<div class="peq suave" style="margin-top:4px">💡 {{ a.conducta }}</div>{% endif %}
+  </div>
+{% endfor %}
+{% endblock %}

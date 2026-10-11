@@ -7,9 +7,10 @@ En «modo autor» los cambios hechos desde la app (editar, importar, eliminar) s
 import json
 import sqlite3
 
-from db import BASE, LETRAS, _validar, ahora, hash_pregunta
+from db import BASE, COMPETENCIAS_LIKERT, _validar, ahora, hash_pregunta, opciones_de
 
 DIR_BANCO = BASE / "banco"
+DIR_LIKERT = DIR_BANCO / "likert"
 
 
 def _ruta(codigo):
@@ -37,7 +38,7 @@ def _a_json(p, uid):
         "id": uid,
         "contexto": p["contexto"] or "",
         "enunciado": p["enunciado"],
-        "opciones": {l: p[f"opcion_{l.lower()}"] for l in LETRAS},
+        "opciones": opciones_de(p),
         "correcta": p["correcta"],
         "explicacion": p["explicacion"],
         "norma": p["norma"] or "",
@@ -121,7 +122,7 @@ def sincronizar(con):
     todos = leer_todo()
     if not todos:
         return res
-    sesiones = {r["codigo"]: r["id"] for r in con.execute("SELECT id, codigo FROM sesiones")}
+    sesiones = {r["codigo"]: r["id"] for r in con.execute("SELECT id, codigo FROM sesiones WHERE vigente=1")}
     vistos = set()
     for codigo, data in todos.items():
         for q in data.get("preguntas", []):
@@ -152,5 +153,43 @@ def sincronizar(con):
     for r in con.execute("SELECT id, uid FROM preguntas WHERE uid IS NOT NULL AND activa=1").fetchall():
         if r["uid"] not in vistos:
             con.execute("UPDATE preguntas SET activa=0 WHERE id=?", (r["id"],))
+            res["retiradas"] += 1
+    return res
+
+
+def sincronizar_likert(con):
+    """Aplica banco/likert/*.json (afirmaciones de la práctica comportamental y de integridad) a la BD."""
+    res = {"nuevas": 0, "actualizadas": 0, "retiradas": 0, "errores": []}
+    archivos = sorted(DIR_LIKERT.glob("*.json"))
+    if not archivos:
+        return res
+    vistos = set()
+    for ruta in archivos:
+        data = json.loads(ruta.read_text(encoding="utf-8"))
+        prueba = data.get("prueba")
+        for a in data.get("afirmaciones", []):
+            uid, comp = a.get("id"), a.get("competencia")
+            if prueba not in COMPETENCIAS_LIKERT or comp not in COMPETENCIAS_LIKERT[prueba] or not uid or not a.get("texto"):
+                res["errores"].append(f"likert/{ruta.name} {uid or '(sin id)'}: prueba, competencia, id o texto inválidos")
+                continue
+            vistos.add(uid)
+            fila = {"prueba": prueba, "competencia": comp, "nivel": a.get("nivel"), "texto": a["texto"].strip(),
+                    "clave": a.get("clave", "directa"), "conducta": a.get("conducta", "")}
+            actual = con.execute("SELECT * FROM afirmaciones WHERE uid=?", (uid,)).fetchone()
+            if actual:
+                cambios = {k: v for k, v in fila.items() if actual[k] != v}
+                if cambios or not actual["activa"]:
+                    cambios["activa"] = 1
+                    con.execute(f"UPDATE afirmaciones SET {', '.join(k + '=?' for k in cambios)} WHERE id=?",
+                                [*cambios.values(), actual["id"]])
+                    res["actualizadas"] += 1
+            else:
+                fila["uid"] = uid
+                con.execute(f"INSERT INTO afirmaciones ({', '.join(fila)}) VALUES ({', '.join('?' * len(fila))})",
+                            list(fila.values()))
+                res["nuevas"] += 1
+    for r in con.execute("SELECT id, uid FROM afirmaciones WHERE activa=1").fetchall():
+        if r["uid"] not in vistos:
+            con.execute("UPDATE afirmaciones SET activa=0 WHERE id=?", (r["id"],))
             res["retiradas"] += 1
     return res

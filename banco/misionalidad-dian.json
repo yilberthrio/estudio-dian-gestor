@@ -1,0 +1,287 @@
+{
+  "sesion": "misionalidad-dian",
+  "preguntas": [
+    {
+      "id": "misionalidad-dian-001",
+      "contexto": "En la inducción, un profesional debe explicar a los nuevos servidores el objeto de la DIAN.",
+      "enunciado": "Al profesional le corresponde explicar que la DIAN tiene como objeto",
+      "opciones": {
+        "A": "coadyuvar a garantizar la seguridad fiscal del Estado y proteger el orden público económico.",
+        "B": "fijar las tarifas de los impuestos nacionales y territoriales según las necesidades del país.",
+        "C": "juzgar los delitos tributarios y aduaneros cometidos por los contribuyentes y usuarios."
+      },
+      "correcta": "A",
+      "explicacion": "El objeto de la DIAN combina la seguridad fiscal, la protección del orden público económico y la facilitación del comercio exterior.\n[A] Correcta. La DIAN tiene como objeto coadyuvar a garantizar la seguridad fiscal del Estado y la protección del orden público económico nacional, mediante la administración y el control del cumplimiento de las obligaciones tributarias, aduaneras y cambiarias, y la facilitación de las operaciones de comercio exterior en condiciones de equidad, transparencia y legalidad (Decreto 1742 de 2020).\n[B] Incorrecta. Las tarifas las fija el Congreso, y en lo territorial, las asambleas y los concejos (art. 338 C.P.); la DIAN administra los impuestos nacionales.\n[C] Incorrecta. Juzgar los delitos corresponde a los jueces penales; la DIAN puede denunciar y apoyar las investigaciones.",
+      "norma": "Decreto 1742 de 2020; Constitución Política, art. 338",
+      "dificultad": 1,
+      "etiquetas": [
+        "objeto",
+        "misión"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-002",
+      "contexto": "Un ciudadano pregunta a la DIAN por el impuesto predial de su casa, porque cree que todos los impuestos los administra esta entidad.",
+      "enunciado": "Al profesional le corresponde explicarle que la DIAN administra",
+      "opciones": {
+        "A": "todos los impuestos del país, incluidos el predial y el de industria y comercio.",
+        "B": "los impuestos nacionales y los derechos de aduana, no los impuestos municipales.",
+        "C": "solo el impuesto sobre la renta, mientras que los demás los administra cada ministerio."
+      },
+      "correcta": "B",
+      "explicacion": "La DIAN administra los tributos del orden nacional.\n[A] Incorrecta. El predial y el de industria y comercio son impuestos municipales: los administran los municipios y distritos.\n[B] Correcta. La DIAN administra los impuestos nacionales (renta, IVA, retención en la fuente, impuesto al consumo, GMF, entre otros), los derechos de aduana y demás tributos al comercio exterior, y controla el régimen cambiario en lo de su competencia (Decreto 1742 de 2020).\n[C] Incorrecta. La DIAN administra todos los impuestos nacionales, no solo el de renta; los ministerios no administran impuestos.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "impuestos nacionales",
+        "competencia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-003",
+      "contexto": "Un profesional explica en una charla qué significa que la DIAN contribuya a la «seguridad fiscal» del Estado.",
+      "enunciado": "Al profesional le corresponde explicar que la seguridad fiscal se refiere a",
+      "opciones": {
+        "A": "proteger con vigilancia armada las sedes y archivos de la entidad.",
+        "B": "garantizar los recursos que el Estado necesita para cumplir sus fines.",
+        "C": "evitar que los contribuyentes conozcan la información de sus procesos."
+      },
+      "correcta": "B",
+      "explicacion": "La seguridad fiscal se relaciona con la disponibilidad de los recursos públicos.\n[A] Incorrecta. La seguridad física de las sedes no es el sentido de la «seguridad fiscal» del objeto de la DIAN.\n[B] Correcta. Coadyuvar a la seguridad fiscal del Estado significa contribuir a que el Estado cuente con los recursos necesarios para financiar sus fines (gasto social, inversión, funcionamiento), mediante un recaudo eficiente y el control de la evasión, la elusión y el contrabando.\n[C] Incorrecta. Los contribuyentes tienen derecho a conocer sus propios procesos; la reserva protege su información frente a terceros.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "seguridad fiscal"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-004",
+      "contexto": "En una campaña contra el contrabando de textiles, la DIAN explica a los comerciantes que su labor no solo busca recaudar, sino también proteger a la industria nacional que cumple la ley.",
+      "enunciado": "Esta labor se relaciona principalmente con el componente misional de",
+      "opciones": {
+        "A": "la protección del orden público económico nacional.",
+        "B": "la administración de los juegos de suerte y azar.",
+        "C": "la formulación de la política monetaria del país."
+      },
+      "correcta": "A",
+      "explicacion": "El control del contrabando protege el orden público económico.\n[A] Correcta. La protección del orden público económico nacional implica combatir conductas como el contrabando, la subfacturación y el lavado de activos, que generan competencia desleal, afectan a la industria legal y distorsionan la economía. Es uno de los dos fines del objeto de la DIAN (Decreto 1742 de 2020).\n[B] Incorrecta. La DIAN tiene funciones sobre ciertos derechos de los juegos de suerte y azar del nivel nacional, pero no se relacionan con el contrabando de textiles.\n[C] Incorrecta. La política monetaria corresponde al Banco de la República (art. 371 C.P.), no a la DIAN.",
+      "norma": "Decreto 1742 de 2020; Constitución Política, art. 371",
+      "dificultad": 1,
+      "etiquetas": [
+        "orden público económico",
+        "contrabando"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-005",
+      "contexto": "Un exportador se queja de demoras en sus trámites aduaneros y pregunta si la DIAN solo tiene funciones de control.",
+      "enunciado": "Al profesional le corresponde explicarle que, además del control, la misión de la DIAN incluye",
+      "opciones": {
+        "A": "la financiación directa de las exportaciones mediante créditos a los empresarios.",
+        "B": "la facilitación de las operaciones de comercio exterior con equidad y legalidad.",
+        "C": "la fijación de los precios de venta de los productos exportados al exterior."
+      },
+      "correcta": "B",
+      "explicacion": "La DIAN combina el control con la facilitación del comercio exterior.\n[A] Incorrecta. La financiación de exportaciones corresponde a entidades como Bancóldex, no a la DIAN.\n[B] Correcta. El objeto de la DIAN incluye la facilitación de las operaciones de comercio exterior en condiciones de equidad, transparencia y legalidad (Decreto 1742 de 2020). Por ejemplo, con la gestión del riesgo, la simplificación de trámites y figuras como el Operador Económico Autorizado.\n[C] Incorrecta. Los precios los fijan las partes en sus contratos; la DIAN verifica el valor declarado, pero no fija precios.",
+      "norma": "Decreto 1742 de 2020; Decreto 1165 de 2019",
+      "dificultad": 1,
+      "etiquetas": [
+        "facilitación del comercio exterior"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-006",
+      "contexto": "Al estudiar el objeto de la DIAN, un aspirante encuentra una referencia a los juegos de suerte y azar y pregunta qué relación tienen con la entidad.",
+      "enunciado": "Al profesional le corresponde explicar que la DIAN administra y controla",
+      "opciones": {
+        "A": "los derechos de explotación y gastos de administración de juegos nacionales.",
+        "B": "la autorización de todos los casinos y apuestas que operan en los municipios.",
+        "C": "los premios de las loterías, que la DIAN entrega directamente a los ganadores."
+      },
+      "correcta": "A",
+      "explicacion": "El objeto de la DIAN incluye funciones sobre los juegos de suerte y azar explotados por entidades públicas del nivel nacional.\n[A] Correcta. Según el Decreto 1742 de 2020, la DIAN administra y controla los derechos de explotación y los gastos de administración sobre los juegos de suerte y azar explotados por entidades públicas del nivel nacional.\n[B] Incorrecta. La autorización y regulación de los juegos corresponde a otras entidades, como Coljuegos y las autoridades territoriales; la DIAN no autoriza casinos.\n[C] Incorrecta. La DIAN no entrega premios. Sí controla los tributos asociados, como la retención en la fuente sobre premios.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 3,
+      "etiquetas": [
+        "juegos de suerte y azar",
+        "objeto"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-007",
+      "contexto": "La DIAN lanza una estrategia con asistentes virtuales, guías sencillas y declaraciones sugeridas para que más personas cumplan sus obligaciones a tiempo, sin necesidad de fiscalizarlas.",
+      "enunciado": "Esta estrategia busca principalmente promover",
+      "opciones": {
+        "A": "el cumplimiento voluntario de las obligaciones.",
+        "B": "el aumento de las sanciones por incumplimiento.",
+        "C": "la eliminación del control de la entidad."
+      },
+      "correcta": "A",
+      "explicacion": "Facilitar el cumplimiento es una forma eficiente de cumplir la misión.\n[A] Correcta. Las estrategias de servicio y facilitación buscan que los contribuyentes cumplan voluntaria y oportunamente sus obligaciones, lo que reduce la evasión a menor costo y permite concentrar la fiscalización en los casos de mayor riesgo.\n[B] Incorrecta. La estrategia no busca aumentar sanciones: busca que se cumpla antes de que haya que sancionar.\n[C] Incorrecta. La facilitación complementa el control, no lo elimina: la fiscalización sigue siendo necesaria frente al incumplimiento.",
+      "norma": "Decreto 1742 de 2020 – servicio y facilitación del cumplimiento",
+      "dificultad": 1,
+      "etiquetas": [
+        "cumplimiento voluntario",
+        "servicio"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-008",
+      "contexto": "Un profesional explica qué tareas comprende la «administración» de los impuestos nacionales a cargo de la DIAN.",
+      "enunciado": "Al profesional le corresponde indicar que la administración de los impuestos comprende",
+      "opciones": {
+        "A": "solo el recaudo, porque las demás tareas corresponden a otras entidades del Estado.",
+        "B": "la creación de los impuestos y la fijación de sus tarifas mediante resoluciones.",
+        "C": "la gestión, recaudación, fiscalización, determinación, discusión, cobro y devolución."
+      },
+      "correcta": "C",
+      "explicacion": "La administración de los impuestos abarca todo el ciclo de la obligación tributaria.\n[A] Incorrecta. La DIAN no se limita al recaudo: también fiscaliza, determina, discute, cobra y devuelve.\n[B] Incorrecta. Crear impuestos y fijar sus tarifas corresponde al legislador (art. 338 C.P.), no a la DIAN.\n[C] Correcta. La administración de los impuestos nacionales comprende las tareas de gestión, recaudación, fiscalización, determinación (liquidación), discusión, cobro, devoluciones, sanciones y demás aspectos relacionados con el cumplimiento de las obligaciones tributarias.",
+      "norma": "Decreto 1742 de 2020; Estatuto Tributario, Libro V",
+      "dificultad": 2,
+      "etiquetas": [
+        "administración tributaria"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-009",
+      "contexto": "En una reunión interinstitucional se pregunta qué entidad formula la política fiscal y tributaria del Gobierno y cuál la administra.",
+      "enunciado": "Al profesional le corresponde explicar que",
+      "opciones": {
+        "A": "la DIAN formula la política y el Ministerio de Hacienda solo la ejecuta.",
+        "B": "el Ministerio de Hacienda orienta la política y la DIAN la administra.",
+        "C": "el Banco de la República formula la política tributaria del Gobierno."
+      },
+      "correcta": "B",
+      "explicacion": "La política fiscal la orienta el Ministerio de Hacienda; la DIAN administra los tributos.\n[A] Incorrecta. Los roles están invertidos: la DIAN es una entidad adscrita al Ministerio de Hacienda, que dirige la política del sector.\n[B] Correcta. El Ministerio de Hacienda y Crédito Público orienta la política fiscal y tributaria del Gobierno (incluidos los proyectos de ley que se presentan al Congreso), y la DIAN, adscrita a ese ministerio, administra y controla los tributos. La DIAN participa en el diseño técnico de las normas.\n[C] Incorrecta. El Banco de la República es la autoridad monetaria, cambiaria y crediticia; no formula la política tributaria.",
+      "norma": "Decreto 1742 de 2020; Constitución Política, art. 371",
+      "dificultad": 2,
+      "etiquetas": [
+        "política fiscal",
+        "Ministerio de Hacienda"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-010",
+      "contexto": "Un aspirante pregunta por qué la DIAN también controla operaciones de divisas, si su nombre solo habla de impuestos y aduanas.",
+      "enunciado": "Al profesional le corresponde explicar que la misión de la DIAN incluye",
+      "opciones": {
+        "A": "el control de las obligaciones cambiarias en lo de su competencia.",
+        "B": "la fijación de la tasa de cambio oficial del peso frente al dólar.",
+        "C": "la emisión de la moneda nacional y la custodia de las reservas."
+      },
+      "correcta": "A",
+      "explicacion": "La DIAN administra y controla obligaciones tributarias, aduaneras y cambiarias.\n[A] Correcta. El objeto de la DIAN comprende el control del debido cumplimiento de las obligaciones cambiarias en lo de su competencia, como las operaciones de comercio exterior y los profesionales de compra y venta de divisas (Decreto 1742 de 2020 y Decreto Ley 2245 de 2011).\n[B] Incorrecta. La tasa de cambio la determina el mercado, con la intervención del Banco de la República; la DIAN no la fija.\n[C] Incorrecta. Emitir la moneda y administrar las reservas internacionales es función del Banco de la República (art. 371 C.P.).",
+      "norma": "Decreto 1742 de 2020; Decreto Ley 2245 de 2011; Constitución Política, art. 371",
+      "dificultad": 1,
+      "etiquetas": [
+        "control cambiario",
+        "misión"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-011",
+      "contexto": "La guía del concurso indica que la prueba de integridad mide los valores del servidor establecidos en el Código de Integridad de la DIAN. En los indicadores del empleo aparecen cinco valores.",
+      "enunciado": "Al profesional le corresponde identificar que esos cinco valores son",
+      "opciones": {
+        "A": "moralidad, eficacia, economía, celeridad y publicidad.",
+        "B": "lealtad, disciplina, eficiencia, prudencia y solidaridad.",
+        "C": "compromiso, diligencia, honestidad, justicia y respeto."
+      },
+      "correcta": "C",
+      "explicacion": "La prueba de integridad evalúa los valores del Código de Integridad.\n[C] Correcta. Los indicadores de la prueba de integridad del empleo son compromiso, diligencia, honestidad, justicia y respeto: los cinco valores del Código de Integridad del Servicio Público adoptado por la DIAN. La guía indica que esta prueba es un autoinforme con escala de acuerdo, sin respuestas correctas.\n[B] Incorrecta. Esos no son los valores del Código de Integridad, aunque algunos sean deseables.\n[A] Incorrecta. Moralidad, eficacia, economía, celeridad y publicidad son principios de la función administrativa (art. 209 C.P.), no los valores del código.",
+      "norma": "Código de Integridad del Servicio Público; Guía de orientación del Proceso DIAN 2676",
+      "dificultad": 1,
+      "etiquetas": [
+        "Código de Integridad",
+        "prueba de integridad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-012",
+      "contexto": "El propósito principal del empleo Gestor I (ficha AT-FL-3008) describe el aporte de este cargo a la misión de la DIAN.",
+      "enunciado": "Al profesional le corresponde identificar que el propósito del Gestor I es ejecutar investigaciones y acciones para",
+      "opciones": {
+        "A": "administrar los recursos físicos y financieros de la entidad y elaborar su presupuesto anual.",
+        "B": "atender las peticiones de los ciudadanos y gestionar la correspondencia de la dependencia asignada.",
+        "C": "verificar el cumplimiento de las obligaciones y detectar elusión, evasión, abuso, contrabando y lavado."
+      },
+      "correcta": "C",
+      "explicacion": "El propósito del Gestor I está ligado a la fiscalización.\n[C] Correcta. Según la ficha AT-FL-3008, el propósito es ejecutar investigaciones, acciones, diligencias y trámites dirigidos a verificar el cumplimiento de las obligaciones tributarias, aduaneras o cambiarias, y detectar prácticas de elusión, evasión, abuso, contrabando y lavado de activos, según la normativa vigente y las directrices institucionales.\n[B] Incorrecta. La atención de peticiones y la correspondencia corresponden a otros empleos y procesos de servicio y apoyo.\n[A] Incorrecta. Administrar los recursos físicos y financieros y el presupuesto es propio de los procesos de gestión corporativa.",
+      "norma": "Resolución DIAN 067 de 2024 – ficha AT-FL-3008",
+      "dificultad": 1,
+      "etiquetas": [
+        "propósito del empleo",
+        "ficha"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-013",
+      "contexto": "La DIAN publica periódicamente información sobre el comportamiento del recaudo y del comercio exterior del país.",
+      "enunciado": "Al profesional le corresponde entender que esta labor responde a la función de",
+      "opciones": {
+        "A": "reemplazar al DANE en la elaboración de todas las estadísticas oficiales del país.",
+        "B": "revelar la información tributaria individual de cada uno de los contribuyentes.",
+        "C": "producir y divulgar estadísticas de su competencia para la toma de decisiones."
+      },
+      "correcta": "C",
+      "explicacion": "La DIAN produce estadísticas propias de su gestión.\n[C] Correcta. Entre sus funciones está producir y divulgar las estadísticas de recaudo y de comercio exterior de su competencia, que sirven para la política pública y para la toma de decisiones, con la información agregada que no vulnere la reserva.\n[B] Incorrecta. La información tributaria individual tiene reserva (art. 583 ET); las estadísticas se publican de forma agregada.\n[A] Incorrecta. El DANE es la autoridad estadística nacional; la DIAN produce estadísticas en su campo y coordina con él.",
+      "norma": "Decreto 1742 de 2020; Estatuto Tributario, art. 583",
+      "dificultad": 2,
+      "etiquetas": [
+        "estadísticas",
+        "funciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-014",
+      "contexto": "Al explicar la misión de la DIAN, un profesional menciona que la administración y el control de las obligaciones deben hacerse en condiciones de equidad, transparencia y legalidad.",
+      "enunciado": "Al profesional le corresponde ilustrar el principio de legalidad indicando que",
+      "opciones": {
+        "A": "la DIAN puede actuar como considere conveniente para aumentar el recaudo del año.",
+        "B": "los funcionarios solo pueden hacer lo que la Constitución y la ley les permiten.",
+        "C": "los contribuyentes deben pagar lo que la DIAN determine, aunque no haya norma."
+      },
+      "correcta": "B",
+      "explicacion": "El principio de legalidad rige toda la actuación de la DIAN.\n[A] Incorrecta. La conveniencia del recaudo no autoriza actuaciones al margen de la ley: las facultades de la DIAN son regladas.\n[B] Correcta. Por el principio de legalidad, los servidores públicos son responsables por infringir la Constitución y la ley, y por omisión o extralimitación en sus funciones (art. 6 C.P.). Además, solo la ley puede crear tributos (art. 338 C.P.). La DIAN ejerce sus funciones dentro de esos límites.\n[C] Incorrecta. Los tributos y las sanciones deben tener fundamento legal; sin norma, la DIAN no puede exigir pagos.",
+      "norma": "Constitución Política, arts. 6, 121 y 338; Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "legalidad",
+        "misión"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-015",
+      "contexto": "Un ciudadano opina que la DIAN solo debería perseguir a los evasores y que atender consultas es una pérdida de tiempo.",
+      "enunciado": "Al profesional le corresponde explicar que el servicio al ciudadano en la DIAN",
+      "opciones": {
+        "A": "es una tarea ajena a la misión, que se cumple solo cuando sobra tiempo.",
+        "B": "reemplaza totalmente la fiscalización, que ya no es necesaria en la entidad.",
+        "C": "complementa el control, porque facilita el cumplimiento y reduce la evasión."
+      },
+      "correcta": "C",
+      "explicacion": "Servicio y control son dos caras de la misma misión.\n[A] Incorrecta. El servicio no es ajeno a la misión: facilitar el cumplimiento es parte de la administración de los tributos.\n[B] Incorrecta. El servicio no reemplaza la fiscalización: siempre habrá incumplimientos que deban controlarse.\n[C] Correcta. Un buen servicio (información clara, canales eficientes, trámites simples) facilita el cumplimiento voluntario y reduce los errores y la evasión, lo que permite que la fiscalización se concentre en los casos de mayor riesgo. Así se cumple la misión con equidad y eficiencia.",
+      "norma": "Decreto 1742 de 2020; Ley 1437 de 2011, arts. 5 a 9",
+      "dificultad": 1,
+      "etiquetas": [
+        "servicio al ciudadano",
+        "control"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

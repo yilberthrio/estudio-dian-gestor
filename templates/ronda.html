@@ -16,7 +16,7 @@
 <div class="pregunta panel" id="pregunta">Cargando…</div>
 <div class="puntos" id="puntos"></div>
 <div class="atajos">
-  <kbd>1</kbd>–<kbd>4</kbd> elegir opción · <kbd>S</kbd>/<kbd>Enter</kbd> seguro · <kbd>D</kbd> dudoso · <kbd>N</kbd> adiviné ·
+  <kbd>1</kbd>–<kbd>3</kbd> elegir opción · <kbd>S</kbd>/<kbd>Enter</kbd> seguro · <kbd>D</kbd> dudoso · <kbd>N</kbd> adiviné ·
   <kbd>Enter</kbd> siguiente · <kbd>R</kbd> marcar para revisar
 </div>
 
@@ -175,7 +175,7 @@ async function marcarRevisar() {
 
 async function terminar(porTiempo = false) {
   const pend = datos.preguntas.filter(q => !q.respondida).length;
-  const simulacro = datos.ronda.modo === "simulacro";
+  const simulacro = datos.ronda.modo.startsWith("simulacro");
   if (!porTiempo && pend) {
     const msg = simulacro
       ? `Quedan ${pend} preguntas sin responder y contarán como error. ¿Terminar el simulacro?`
@@ -193,7 +193,7 @@ document.addEventListener("keydown", e => {
   const p = datos.preguntas[idx];
   const k = e.key.toLowerCase();
   if (!p.respondida) {
-    if (["1", "2", "3", "4"].includes(k)) elegir(p.opciones[+k - 1].orig);
+    if (["1", "2", "3", "4"].includes(k) && p.opciones[+k - 1]) elegir(p.opciones[+k - 1].orig);
     else if (k === "s" || k === "enter") { e.preventDefault(); responder("seguro"); }
     else if (k === "d") responder("dudoso");
     else if (k === "n") responder("adivine");

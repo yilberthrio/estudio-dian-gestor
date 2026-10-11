@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block titulo %}Práctica #{{ pr.id }} · Estudio DIAN{% endblock %}
+{% block contenido %}
+<div class="ronda-top">
+  <h1 style="margin:0">Práctica #{{ pr.id }}</h1>
+  <span class="suave" id="contador"></span>
+</div>
+<p class="suave peq">Selecciona la opción que mejor describa tu preferencia o manera habitual de actuar. No hay respuestas correctas.</p>
+<form method="post" class="panel" id="form">
+  {% for a in items %}
+  <div class="likert-item">
+    <div class="texto">{{ loop.index }}. {{ a.texto }}</div>
+    <div class="likert-escala">
+      {% for v, nombre in escala.items() %}
+        <label><input type="radio" name="a{{ a.id }}" value="{{ v }}" {{ 'checked' if a.valor == v }}>{{ 'ABCD'[v - 1] }}. {{ nombre }}</label>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <div class="acciones" style="margin-top:16px"><button class="btn prim">Terminar y ver mi perfil</button></div>
+</form>
+<script>
+const total = {{ items|length }};
+function contar() {
+  const n = document.querySelectorAll("#form input[type=radio]:checked").length;
+  document.getElementById("contador").textContent = `${n} / ${total} respondidas`;
+}
+document.getElementById("form").addEventListener("change", contar);
+document.getElementById("form").addEventListener("submit", e => {
+  const n = document.querySelectorAll("#form input[type=radio]:checked").length;
+  if (n < total && !confirm(`Te faltan ${total - n} afirmaciones. ¿Terminar de todos modos?`)) e.preventDefault();
+});
+contar();
+</script>
+{% endblock %}

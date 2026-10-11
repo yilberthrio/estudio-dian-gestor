@@ -1,0 +1,684 @@
+{
+  "sesion": "liquidacion-impuestos",
+  "preguntas": [
+    {
+      "id": "liquidacion-impuestos-001",
+      "contexto": "Al verificar la declaración de renta de una sociedad, el profesional encuentra estas cifras del año: ingresos brutos $1.000 millones, devoluciones y descuentos en ventas $50 millones, costos $600 millones y deducciones $150 millones. No hay ingresos no constitutivos de renta ni rentas exentas.",
+      "enunciado": "Al depurar la renta, al profesional le corresponde determinar una renta líquida de",
+      "opciones": {
+        "A": "$200 millones",
+        "B": "$250 millones",
+        "C": "$350 millones"
+      },
+      "correcta": "A",
+      "explicacion": "La depuración sigue el orden del art. 26 ET: ingresos brutos, menos devoluciones, rebajas y descuentos, igual a ingresos netos; menos costos, igual a renta bruta; menos deducciones, igual a renta líquida.\n[A] Correcta. $1.000 − $50 = $950 (ingresos netos); $950 − $600 = $350 (renta bruta); $350 − $150 = $200 millones de renta líquida.\n[B] Incorrecta. $250 millones resulta de olvidar restar las devoluciones y descuentos ($1.000 − $600 − $150).\n[C] Incorrecta. $350 millones es la renta bruta: falta restar las deducciones.",
+      "norma": "Estatuto Tributario, art. 26",
+      "dificultad": 1,
+      "etiquetas": [
+        "depuración de renta",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-002",
+      "contexto": "Una sociedad nacional, sin tarifas especiales, tiene una renta líquida gravable de $200 millones en el año. El profesional debe verificar el impuesto sobre la renta liquidado.",
+      "enunciado": "Al profesional le corresponde verificar que el impuesto sobre la renta liquidado sea de",
+      "opciones": {
+        "A": "$40 millones",
+        "B": "$66 millones",
+        "C": "$70 millones"
+      },
+      "correcta": "C",
+      "explicacion": "Las sociedades nacionales liquidan el impuesto con la tarifa general del art. 240 ET.\n[A] Incorrecta. $40 millones corresponde a una tarifa del 20%, que es una tarifa especial (por ejemplo, para ciertos usuarios de zona franca) y no la general.\n[B] Incorrecta. $66 millones corresponde al 33%, tarifa que estuvo vigente en años anteriores, no la actual.\n[C] Correcta. La tarifa general para personas jurídicas es del 35% (art. 240 ET, modificado por la Ley 2277 de 2022): $200 millones × 35% = $70 millones.",
+      "norma": "Estatuto Tributario, art. 240 (Ley 2277 de 2022)",
+      "dificultad": 1,
+      "etiquetas": [
+        "tarifa de renta",
+        "personas jurídicas",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-003",
+      "contexto": "Una persona natural vendió un inmueble que poseía hace ocho años y obtuvo una utilidad de $100 millones. El profesional revisa cómo se declaró y liquidó esa utilidad.",
+      "enunciado": "Al profesional le corresponde verificar que la utilidad se haya declarado como",
+      "opciones": {
+        "A": "ganancia ocasional, con un impuesto de $15 millones a la tarifa del 15%.",
+        "B": "ganancia ocasional, con un impuesto de $10 millones a la tarifa del 10%.",
+        "C": "renta ordinaria, con un impuesto según la tabla progresiva de personas naturales."
+      },
+      "correcta": "A",
+      "explicacion": "La utilidad en la venta de activos fijos poseídos dos años o más es ganancia ocasional.\n[A] Correcta. El art. 300 ET considera ganancia ocasional la utilidad en la enajenación de activos fijos poseídos por dos años o más. La tarifa general de ganancias ocasionales es del 15% (arts. 313 y 314 ET, modificados por la Ley 2277 de 2022): $100 millones × 15% = $15 millones.\n[B] Incorrecta. El 10% era la tarifa anterior a la Ley 2277 de 2022.\n[C] Incorrecta. Como el inmueble se poseyó más de dos años, la utilidad no es renta ordinaria: se declara como ganancia ocasional, con tarifa propia.",
+      "norma": "Estatuto Tributario, arts. 300, 313 y 314",
+      "dificultad": 2,
+      "etiquetas": [
+        "ganancia ocasional",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-004",
+      "contexto": "Un responsable del IVA vendió en el bimestre bienes gravados al 19% por $100 millones (base gravable). En el mismo periodo compró insumos gravados para producir esos bienes por $60 millones más IVA del 19%.",
+      "enunciado": "Al profesional le corresponde determinar que el IVA a pagar del periodo es de",
+      "opciones": {
+        "A": "$19,0 millones",
+        "B": "$7,6 millones",
+        "C": "$11,4 millones"
+      },
+      "correcta": "B",
+      "explicacion": "El IVA a pagar es la diferencia entre el impuesto generado y los impuestos descontables (art. 485 ET).\n[A] Incorrecta. $19 millones es el IVA generado ($100 × 19%): no descuenta el IVA pagado en las compras.\n[B] Correcta. IVA generado: $100 × 19% = $19 millones. IVA descontable: $60 × 19% = $11,4 millones. IVA a pagar: $19 − $11,4 = $7,6 millones.\n[C] Incorrecta. $11,4 millones es el IVA descontable, no el saldo a pagar.",
+      "norma": "Estatuto Tributario, arts. 468 y 485",
+      "dificultad": 1,
+      "etiquetas": [
+        "IVA",
+        "impuestos descontables",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-005",
+      "contexto": "Un productor de un bien excluido del IVA pagó IVA en la compra de maquinaria y empaques. Solicita a la DIAN la devolución de ese IVA, argumentando que sus ventas no generan el impuesto.",
+      "enunciado": "Al analizar la solicitud, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "procede la devolución, porque quien no genera IVA tiene derecho a recuperarlo.",
+        "B": "no procede la devolución, y el IVA pagado forma parte del costo o gasto.",
+        "C": "procede solo como impuesto descontable en la declaración de IVA siguiente."
+      },
+      "correcta": "B",
+      "explicacion": "Hay que distinguir entre bienes excluidos y exentos.\n[A] Incorrecta. El derecho a devolución lo tienen los productores de bienes exentos (tarifa 0%, como los exportadores), no los de bienes excluidos.\n[B] Correcta. Los bienes excluidos no causan IVA (art. 424 ET) y quien los vende no es responsable por esa operación. Solo es descontable el IVA de las adquisiciones destinadas a operaciones gravadas o exentas (art. 488 ET). El IVA pagado por el productor de excluidos es mayor valor del costo o gasto.\n[C] Incorrecta. Si no puede descontarse, tampoco puede llevarse a una declaración de IVA posterior: el productor de excluidos no declara IVA por esas operaciones.",
+      "norma": "Estatuto Tributario, arts. 424, 477, 488 y 489",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "excluidos",
+        "exentos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-006",
+      "contexto": "Una empresa vende bienes gravados y bienes excluidos: el 70% de sus ingresos proviene de bienes gravados y el 30% de excluidos. Pagó $10 millones de IVA en servicios de vigilancia y aseo que usa para toda su operación, sin poder identificar a cuál actividad corresponden.",
+      "enunciado": "Al profesional le corresponde verificar que el IVA descontable por estos servicios sea de",
+      "opciones": {
+        "A": "$10 millones",
+        "B": "$3 millones",
+        "C": "$7 millones"
+      },
+      "correcta": "C",
+      "explicacion": "Cuando los costos y gastos comunes no se pueden imputar directamente, el IVA descontable se calcula en proporción a las operaciones gravadas.\n[A] Incorrecta. Descontar todo el IVA desconoce que parte de los servicios se destina a operaciones excluidas, que no dan derecho a descuento (art. 488 ET).\n[B] Incorrecta. $3 millones corresponde a la proporción de ingresos excluidos (30%): es justamente la parte que NO se puede descontar.\n[C] Correcta. El art. 490 ET ordena que, cuando no sea posible la imputación directa, el IVA descontable se determine en proporción al valor de las operaciones gravadas frente al total: $10 millones × 70% = $7 millones.",
+      "norma": "Estatuto Tributario, arts. 488 y 490",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "proporcionalidad",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-007",
+      "contexto": "Una sociedad que no es gran contribuyente obtuvo ingresos brutos de 50.000 UVT en el año anterior. Pregunta con qué periodicidad debe declarar el IVA.",
+      "enunciado": "Al profesional le corresponde informarle que debe declarar el IVA en forma",
+      "opciones": {
+        "A": "bimestral, porque es persona jurídica responsable del impuesto.",
+        "B": "cuatrimestral, porque sus ingresos son inferiores a 92.000 UVT.",
+        "C": "anual, porque no está calificada como gran contribuyente."
+      },
+      "correcta": "B",
+      "explicacion": "La periodicidad del IVA depende de la calidad de gran contribuyente y del monto de los ingresos.\n[A] Incorrecta. Ser persona jurídica no basta para declarar bimestralmente: además debe tener ingresos de 92.000 UVT o más, o ser gran contribuyente.\n[B] Correcta. El art. 600 ET establece la declaración bimestral para los grandes contribuyentes y para quienes tengan ingresos brutos iguales o superiores a 92.000 UVT, y la cuatrimestral para los demás responsables. Con 50.000 UVT, declara cuatrimestralmente.\n[C] Incorrecta. La declaración anual de IVA no corresponde a la regla general para estos responsables.",
+      "norma": "Estatuto Tributario, art. 600",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "periodicidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-008",
+      "contexto": "Una empresa agente de retención compra bienes por $10 millones a un proveedor declarante de renta. La tarifa de retención aplicable en este caso es del 2,5% sobre el valor de la compra.",
+      "enunciado": "Al profesional le corresponde verificar que la retención en la fuente practicada sea de",
+      "opciones": {
+        "A": "$250.000",
+        "B": "$25.000",
+        "C": "$2.500.000"
+      },
+      "correcta": "A",
+      "explicacion": "La retención se calcula aplicando la tarifa a la base sujeta a retención.\n[A] Correcta. $10.000.000 × 2,5% = $250.000. El agente debe declararla y consignarla, y el proveedor la descuenta en su declaración de renta como anticipo del impuesto (art. 367 ET).\n[B] Incorrecta. $25.000 equivale al 0,25%, por un error al mover la coma decimal.\n[C] Incorrecta. $2.500.000 equivale al 25%, por el mismo tipo de error en sentido contrario.",
+      "norma": "Estatuto Tributario, arts. 365 a 368",
+      "dificultad": 1,
+      "etiquetas": [
+        "retención en la fuente",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-009",
+      "contexto": "Una entidad agente de retención de IVA contrata un servicio gravado por $10.000.000 más IVA del 19% ($1.900.000). La tarifa general de retención en la fuente a título de IVA es del 15% del impuesto.",
+      "enunciado": "Al profesional le corresponde verificar que la retención de IVA practicada sea de",
+      "opciones": {
+        "A": "$1.500.000",
+        "B": "$190.000",
+        "C": "$285.000"
+      },
+      "correcta": "C",
+      "explicacion": "La retención de IVA (reteIVA) se calcula sobre el valor del impuesto, no sobre la base del servicio.\n[A] Incorrecta. $1.500.000 resulta de aplicar el 15% a la base del servicio ($10.000.000), en lugar de aplicarlo al IVA.\n[B] Incorrecta. $190.000 equivale al 10% del IVA, una tarifa distinta de la general.\n[C] Correcta. El art. 437-1 ET fija la retención en la fuente en el IVA en el 15% del valor del impuesto: $1.900.000 × 15% = $285.000.",
+      "norma": "Estatuto Tributario, arts. 437-1 y 437-2",
+      "dificultad": 2,
+      "etiquetas": [
+        "retención de IVA",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-010",
+      "contexto": "Una sociedad presenta por primera vez su declaración de renta. Su impuesto neto de renta es de $40 millones y le practicaron retenciones en la fuente por $6 millones. Aplica el procedimiento basado en el impuesto del año.",
+      "enunciado": "Al profesional le corresponde verificar que el anticipo para el año siguiente sea de",
+      "opciones": {
+        "A": "$4 millones",
+        "B": "$10 millones",
+        "C": "$24 millones"
+      },
+      "correcta": "A",
+      "explicacion": "El anticipo del impuesto sobre la renta (art. 807 ET) aplica un porcentaje que aumenta según el número de años declarados, y luego descuenta las retenciones.\n[A] Correcta. En el primer año el porcentaje es del 25%: $40 millones × 25% = $10 millones, menos las retenciones de $6 millones = $4 millones.\n[B] Incorrecta. $10 millones es el resultado antes de restar las retenciones en la fuente del año.\n[C] Incorrecta. $24 millones aplica el 75% (porcentaje del tercer año en adelante) y resta las retenciones: no corresponde a un contribuyente que declara por primera vez.",
+      "norma": "Estatuto Tributario, art. 807",
+      "dificultad": 2,
+      "etiquetas": [
+        "anticipo",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-011",
+      "contexto": "Una sociedad declara renta por quinta vez. Su impuesto neto de renta del año es de $100 millones y sus retenciones en la fuente suman $30 millones. Aplica el procedimiento basado en el impuesto del año.",
+      "enunciado": "Al profesional le corresponde verificar que el anticipo para el año siguiente sea de",
+      "opciones": {
+        "A": "$20 millones",
+        "B": "$45 millones",
+        "C": "$75 millones"
+      },
+      "correcta": "B",
+      "explicacion": "A partir del tercer año declarado, el porcentaje del anticipo es del 75% (art. 807 ET).\n[A] Incorrecta. $20 millones resulta de aplicar el 50% (porcentaje del segundo año) y restar las retenciones.\n[B] Correcta. $100 millones × 75% = $75 millones, menos las retenciones de $30 millones = $45 millones.\n[C] Incorrecta. $75 millones es el valor antes de descontar las retenciones en la fuente.",
+      "norma": "Estatuto Tributario, art. 807",
+      "dificultad": 2,
+      "etiquetas": [
+        "anticipo",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-012",
+      "contexto": "En la declaración de renta de una sociedad figuran: impuesto neto de renta $70 millones, anticipo para el año siguiente $10 millones, anticipo liquidado el año anterior $8 millones y retenciones en la fuente del año $30 millones. No hay saldo a favor anterior ni sanciones.",
+      "enunciado": "Al profesional le corresponde verificar que el saldo a pagar sea de",
+      "opciones": {
+        "A": "$32 millones",
+        "B": "$42 millones",
+        "C": "$50 millones"
+      },
+      "correcta": "B",
+      "explicacion": "El saldo a pagar suma el impuesto y el anticipo del año siguiente, y resta el anticipo del año anterior y las retenciones.\n[A] Incorrecta. $32 millones resulta de restar el anticipo del año siguiente en lugar de sumarlo.\n[B] Correcta. $70 + $10 (anticipo siguiente) − $8 (anticipo anterior) − $30 (retenciones) = $42 millones.\n[C] Incorrecta. $50 millones resulta de no restar el anticipo liquidado el año anterior, que ya se pagó y es un abono al impuesto del año.",
+      "norma": "Estatuto Tributario, arts. 807 y 367; formulario de renta",
+      "dificultad": 2,
+      "etiquetas": [
+        "saldo a pagar",
+        "anticipo",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-013",
+      "contexto": "Un empleado residente tiene una renta líquida gravable de 1.500 UVT en el año, toda proveniente de rentas de trabajo.",
+      "enunciado": "Con la tabla de tarifas para personas naturales residentes, al profesional le corresponde verificar un impuesto de",
+      "opciones": {
+        "A": "77,9 UVT",
+        "B": "285,0 UVT",
+        "C": "0 UVT"
+      },
+      "correcta": "A",
+      "explicacion": "La tabla del art. 241 ET es marginal: cada tarifa se aplica solo al tramo de renta que le corresponde.\n[A] Correcta. Hasta 1.090 UVT la tarifa es 0%. Entre 1.090 y 1.700 UVT es 19% sobre el exceso de 1.090: (1.500 − 1.090) × 19% = 410 × 19% = 77,9 UVT.\n[B] Incorrecta. 285 UVT resulta de aplicar el 19% a toda la renta (1.500 × 19%), lo que desconoce que la tabla es marginal.\n[C] Incorrecta. La renta supera el tramo exento de 1.090 UVT, así que sí hay impuesto.",
+      "norma": "Estatuto Tributario, art. 241",
+      "dificultad": 3,
+      "etiquetas": [
+        "personas naturales",
+        "tabla marginal",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-014",
+      "contexto": "Una persona natural residente tiene una renta líquida gravable de 950 UVT. Pregunta si debe pagar impuesto sobre la renta.",
+      "enunciado": "Al profesional le corresponde informarle que su impuesto sobre la renta es de",
+      "opciones": {
+        "A": "180,5 UVT",
+        "B": "0 UVT",
+        "C": "47,5 UVT"
+      },
+      "correcta": "B",
+      "explicacion": "El primer tramo de la tabla del art. 241 ET, hasta 1.090 UVT, tiene tarifa del 0%.\n[A] Incorrecta. 180,5 UVT aplica el 19% a toda la renta (950 × 19%). Además, la renta no alcanza el tramo gravado.\n[B] Correcta. Con 950 UVT, la renta está dentro del primer tramo (0 a 1.090 UVT), cuya tarifa marginal es 0%: no hay impuesto. Puede estar obligada a declarar por otros criterios (patrimonio, consumos, consignaciones), aunque no tenga impuesto.\n[C] Incorrecta. 47,5 UVT equivale al 5%, una tarifa que no existe en la tabla de personas naturales residentes.",
+      "norma": "Estatuto Tributario, arts. 241 y 592 a 594-3",
+      "dificultad": 2,
+      "etiquetas": [
+        "personas naturales",
+        "tabla marginal"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-015",
+      "contexto": "Al revisar una declaración de renta, el profesional verifica en qué orden se restaron los conceptos. El contribuyente restó sus rentas exentas directamente de los ingresos brutos, antes de los costos.",
+      "enunciado": "Al profesional le corresponde observar que, en la depuración, las rentas exentas se restan de",
+      "opciones": {
+        "A": "los ingresos brutos, para obtener los ingresos netos.",
+        "B": "la renta bruta, para obtener la renta líquida.",
+        "C": "la renta líquida, para obtener la renta líquida gravable."
+      },
+      "correcta": "C",
+      "explicacion": "Cada concepto tiene un lugar propio en la depuración.\n[A] Incorrecta. De los ingresos brutos se restan los ingresos no constitutivos de renta y las devoluciones, rebajas y descuentos, no las rentas exentas.\n[B] Incorrecta. De la renta bruta se restan las deducciones para llegar a la renta líquida.\n[C] Correcta. Según el art. 26 ET, de la renta líquida se restan las rentas exentas para obtener la renta líquida gravable, a la que se aplica la tarifa. El orden afecta el resultado, sobre todo en las personas naturales, cuyas rentas exentas tienen límites.",
+      "norma": "Estatuto Tributario, art. 26",
+      "dificultad": 2,
+      "etiquetas": [
+        "depuración de renta",
+        "rentas exentas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-016",
+      "contexto": "Una sociedad nacional tiene una renta líquida de $300 millones, de los cuales $50 millones corresponden a una renta exenta legalmente reconocida. No tiene otros conceptos especiales.",
+      "enunciado": "Al profesional le corresponde verificar que el impuesto sobre la renta liquidado sea de",
+      "opciones": {
+        "A": "$105,0 millones",
+        "B": "$87,5 millones",
+        "C": "$17,5 millones"
+      },
+      "correcta": "B",
+      "explicacion": "La tarifa se aplica a la renta líquida gravable, es decir, después de restar las rentas exentas.\n[A] Incorrecta. $105 millones aplica el 35% a toda la renta líquida ($300 × 35%), sin restar la renta exenta.\n[B] Correcta. Renta líquida gravable: $300 − $50 = $250 millones. Impuesto: $250 × 35% = $87,5 millones (art. 240 ET).\n[C] Incorrecta. $17,5 millones aplica el 35% únicamente a la renta exenta, que precisamente no paga impuesto.",
+      "norma": "Estatuto Tributario, arts. 26 y 240",
+      "dificultad": 2,
+      "etiquetas": [
+        "renta exenta",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-017",
+      "contexto": "Una sociedad colombiana obtuvo rentas en el exterior por las que pagó allá $30 millones de impuesto sobre la renta. El impuesto colombiano atribuible a esas mismas rentas es de $20 millones.",
+      "enunciado": "Al profesional le corresponde verificar que el descuento tributario por impuestos pagados en el exterior sea de",
+      "opciones": {
+        "A": "$20 millones",
+        "B": "$30 millones",
+        "C": "$10 millones"
+      },
+      "correcta": "A",
+      "explicacion": "El descuento por impuestos pagados en el exterior tiene un límite.\n[A] Correcta. El art. 254 ET permite descontar el impuesto pagado en el exterior sobre rentas de fuente extranjera, sin que exceda el impuesto colombiano atribuible a esas rentas. El descuento máximo es de $20 millones.\n[B] Incorrecta. Descontar los $30 millones completos reduciría el impuesto sobre las rentas colombianas, lo que la ley no permite.\n[C] Incorrecta. $10 millones es la diferencia entre los dos impuestos; no es el descuento que permite la norma.",
+      "norma": "Estatuto Tributario, art. 254",
+      "dificultad": 2,
+      "etiquetas": [
+        "descuentos tributarios",
+        "renta extranjera",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-018",
+      "contexto": "Un restaurante que no es responsable del IVA vende comidas por $1.000.000. El impuesto que aplica a este servicio de restaurante tiene tarifa del 8%.",
+      "enunciado": "Al profesional le corresponde verificar que el impuesto cobrado sea",
+      "opciones": {
+        "A": "IVA de $190.000, a la tarifa general del 19%.",
+        "B": "impuesto nacional al consumo de $80.000.",
+        "C": "IVA de $50.000, a la tarifa diferencial del 5%."
+      },
+      "correcta": "B",
+      "explicacion": "El servicio de restaurante está gravado con el impuesto nacional al consumo, no con IVA.\n[A] Incorrecta. El servicio de restaurante no se grava con IVA del 19%: tiene un impuesto específico.\n[B] Correcta. Los arts. 512-1 y 512-9 ET gravan el servicio de restaurante con el impuesto nacional al consumo a la tarifa del 8%: $1.000.000 × 8% = $80.000. Este impuesto es administrado por la DIAN.\n[C] Incorrecta. La tarifa del 5% es una tarifa diferencial de IVA para ciertos bienes y servicios (art. 468-1 ET), no la que aplica a los restaurantes.",
+      "norma": "Estatuto Tributario, arts. 512-1 y 512-9",
+      "dificultad": 2,
+      "etiquetas": [
+        "impuesto al consumo",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-019",
+      "contexto": "Un contribuyente retiró $10.000.000 de una cuenta corriente no exenta. Pregunta cuánto le descontaron por el gravamen a los movimientos financieros y cuánto puede deducir en renta.",
+      "enunciado": "Al profesional le corresponde informarle que el gravamen fue de",
+      "opciones": {
+        "A": "$40.000, y puede deducir el 50% en su declaración de renta.",
+        "B": "$400.000, y puede deducir el 100% en su declaración de renta.",
+        "C": "$40.000, y no puede deducir ningún valor en su declaración de renta."
+      },
+      "correcta": "A",
+      "explicacion": "El GMF es un impuesto nacional de cuatro por mil, deducible en un 50%.\n[A] Correcta. La tarifa del GMF es del 4 por mil (art. 872 ET): $10.000.000 × 0,004 = $40.000. El art. 115 ET permite deducir el 50% del GMF efectivamente pagado, debidamente certificado por el agente retenedor.\n[B] Incorrecta. $400.000 equivale al 4% (cuatro por ciento), no al cuatro por mil. Además, la deducción no es del 100%.\n[C] Incorrecta. El cálculo es correcto, pero el GMF sí es deducible parcialmente (50%), según el art. 115 ET.",
+      "norma": "Estatuto Tributario, arts. 115 y 872",
+      "dificultad": 2,
+      "etiquetas": [
+        "GMF",
+        "deducciones",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-020",
+      "contexto": "Un responsable vende una máquina por $10.000.000 y factura además $1.000.000 por el flete de entrega. Ambos conceptos se cobran en la misma factura y la venta está gravada al 19%.",
+      "enunciado": "Al profesional le corresponde verificar que el IVA de la operación sea de",
+      "opciones": {
+        "A": "$1.900.000",
+        "B": "$2.090.000",
+        "C": "$190.000"
+      },
+      "correcta": "B",
+      "explicacion": "La base gravable del IVA incluye los gastos accesorios facturados con la venta.\n[A] Incorrecta. $1.900.000 solo grava el valor de la máquina y excluye el flete facturado, que también hace parte de la base.\n[B] Correcta. El art. 447 ET establece que la base gravable es el valor total de la operación, incluidos los gastos directos de financiación, accesorios, acarreos, instalaciones, seguros y comisiones: ($10.000.000 + $1.000.000) × 19% = $2.090.000.\n[C] Incorrecta. $190.000 grava únicamente el flete, sin el valor principal de la venta.",
+      "norma": "Estatuto Tributario, art. 447",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "base gravable",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-021",
+      "contexto": "Un responsable vende mercancía gravada al 19% por $10.000.000 y concede en la misma factura un descuento comercial incondicionado de $1.000.000.",
+      "enunciado": "Al profesional le corresponde verificar que el IVA generado sea de",
+      "opciones": {
+        "A": "$1.710.000",
+        "B": "$1.900.000",
+        "C": "$2.090.000"
+      },
+      "correcta": "A",
+      "explicacion": "Los descuentos efectivos e incondicionados que constan en la factura no integran la base gravable del IVA.\n[A] Correcta. El art. 454 ET dispone que los descuentos efectivos que consten en la factura no forman parte de la base, siempre que no estén sujetos a condición: ($10.000.000 − $1.000.000) × 19% = $1.710.000.\n[B] Incorrecta. $1.900.000 ignora el descuento incondicionado, que sí reduce la base gravable.\n[C] Incorrecta. $2.090.000 suma el descuento a la base en lugar de restarlo.",
+      "norma": "Estatuto Tributario, art. 454",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "descuentos",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-022",
+      "contexto": "Un importador nacionaliza mercancía gravada al 19%. El valor en aduana es de $100 millones y el arancel liquidado es del 10% ($10 millones).",
+      "enunciado": "Al profesional le corresponde verificar que el IVA en la importación sea de",
+      "opciones": {
+        "A": "$19,0 millones",
+        "B": "$1,9 millones",
+        "C": "$20,9 millones"
+      },
+      "correcta": "C",
+      "explicacion": "En la importación, la base del IVA incluye el valor en aduana más los derechos de aduana.\n[A] Incorrecta. $19 millones grava solo el valor en aduana, sin incluir el arancel.\n[B] Incorrecta. $1,9 millones grava solo el arancel, sin el valor de la mercancía.\n[C] Correcta. El art. 459 ET establece que la base gravable en las importaciones es la misma que se toma para liquidar los derechos de aduana, adicionada con el valor de esos derechos: ($100 + $10) × 19% = $20,9 millones.",
+      "norma": "Estatuto Tributario, art. 459",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "importaciones",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-023",
+      "contexto": "Una persona natural comerciante vende bienes gravados. El año anterior tuvo ingresos brutos de 2.800 UVT, tiene un solo establecimiento, no es usuaria aduanera y cumple los demás requisitos legales. Pregunta si debe registrarse como responsable del IVA.",
+      "enunciado": "Al profesional le corresponde informarle que",
+      "opciones": {
+        "A": "debe ser responsable, porque vende bienes gravados con el impuesto.",
+        "B": "debe ser responsable, porque sus ingresos superan las 1.400 UVT.",
+        "C": "no es responsable, porque sus ingresos son inferiores a 3.500 UVT."
+      },
+      "correcta": "C",
+      "explicacion": "Algunas personas naturales que venden bienes gravados no son responsables del IVA si cumplen todos los requisitos legales.\n[A] Incorrecta. Vender bienes gravados no basta para ser responsable: el parágrafo 3 del art. 437 ET excluye a quienes cumplen todas las condiciones allí previstas.\n[B] Incorrecta. El umbral no es de 1.400 UVT; esa cifra no corresponde a la regla vigente.\n[C] Correcta. El parágrafo 3 del art. 437 ET establece que no son responsables las personas naturales comerciantes y artesanos cuyos ingresos brutos del año anterior y del año en curso sean inferiores a 3.500 UVT, entre otros requisitos (un solo establecimiento, no ser usuario aduanero, contratos por debajo del tope, etc.).",
+      "norma": "Estatuto Tributario, art. 437, parágrafo 3",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "no responsables"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-024",
+      "contexto": "Una empresa compró insumos a un campesino no obligado a facturar. Para deducir el costo en renta, solo tiene una constancia escrita a mano firmada por el vendedor.",
+      "enunciado": "Para que el costo sea procedente, al profesional le corresponde verificar que la empresa haya expedido",
+      "opciones": {
+        "A": "el documento soporte en adquisiciones a no obligados a facturar, en las condiciones exigidas.",
+        "B": "una factura electrónica de venta a nombre del campesino, para soportar la operación.",
+        "C": "una certificación del revisor fiscal que confirme que la compra realmente se realizó."
+      },
+      "correcta": "A",
+      "explicacion": "Cuando se compra a quien no está obligado a facturar, el comprador debe expedir el documento soporte.\n[A] Correcta. El art. 771-2 ET exige factura o documento equivalente para la procedencia de costos y deducciones. En las adquisiciones a no obligados a facturar, el soporte es el documento expedido por el adquirente, que hoy debe ser electrónico y transmitirse a la DIAN según la reglamentación.\n[B] Incorrecta. El comprador no puede expedir una factura electrónica de venta a nombre del vendedor. El instrumento previsto es el documento soporte.\n[C] Incorrecta. La certificación del revisor fiscal no sustituye el documento soporte exigido por la ley para la procedencia del costo.",
+      "norma": "Estatuto Tributario, arts. 616-1 y 771-2",
+      "dificultad": 2,
+      "etiquetas": [
+        "documento soporte",
+        "costos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-025",
+      "contexto": "Una sociedad pagó en el año $20 millones de impuesto de industria y comercio (ICA), relacionado con su actividad productora de renta. El profesional revisa cómo lo trató en la declaración de renta.",
+      "enunciado": "Al profesional le corresponde verificar que el ICA pagado se haya tratado como",
+      "opciones": {
+        "A": "descuento tributario del 50%, restado directamente del impuesto de renta.",
+        "B": "deducción del 100% en la depuración de la renta del año gravable.",
+        "C": "gasto no deducible, porque es un impuesto territorial y no nacional."
+      },
+      "correcta": "B",
+      "explicacion": "Desde la Ley 2277 de 2022, el ICA se trata solo como deducción.\n[A] Incorrecta. La posibilidad de tomar el 50% del ICA como descuento tributario fue eliminada por la Ley 2277 de 2022.\n[B] Correcta. El art. 115 ET permite deducir el 100% de los impuestos pagados durante el año que tengan relación de causalidad con la actividad productora de renta, como el ICA. La Ley 2277 de 2022 eliminó la opción del descuento.\n[C] Incorrecta. Ser un impuesto territorial no impide deducirlo: el art. 115 ET no distingue entre impuestos nacionales y territoriales.",
+      "norma": "Estatuto Tributario, art. 115 (Ley 2277 de 2022)",
+      "dificultad": 2,
+      "etiquetas": [
+        "deducciones",
+        "ICA"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-026",
+      "contexto": "Una sociedad tuvo una pérdida fiscal en 2022 y en 2025 obtuvo renta líquida. Quiere compensar esa pérdida en la declaración de 2025.",
+      "enunciado": "Al profesional le corresponde verificar que la compensación sea procedente, porque las pérdidas fiscales pueden compensarse",
+      "opciones": {
+        "A": "solo con la renta del año siguiente a aquel en que se generaron.",
+        "B": "con las rentas líquidas de los doce periodos gravables siguientes.",
+        "C": "con las rentas líquidas de los cinco periodos gravables siguientes."
+      },
+      "correcta": "B",
+      "explicacion": "Las pérdidas fiscales de las sociedades tienen un plazo de compensación de 12 años.\n[A] Incorrecta. La compensación no se limita al año siguiente: la ley da un plazo más amplio.\n[B] Correcta. El art. 147 ET permite a las sociedades compensar las pérdidas fiscales con las rentas líquidas ordinarias de los 12 periodos gravables siguientes. La compensación de 2022 en 2025 está dentro del plazo. Hay reglas especiales de firmeza para las declaraciones que generan o compensan pérdidas.\n[C] Incorrecta. Cinco periodos fue una regla anterior; el plazo vigente es de 12 periodos.",
+      "norma": "Estatuto Tributario, art. 147",
+      "dificultad": 2,
+      "etiquetas": [
+        "pérdidas fiscales",
+        "compensación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-027",
+      "contexto": "Una persona ganó un premio de lotería de $100 millones. El profesional verifica el impuesto que corresponde a ese ingreso.",
+      "enunciado": "Al profesional le corresponde verificar que el premio tribute como ganancia ocasional a la tarifa del",
+      "opciones": {
+        "A": "15%, es decir, $15 millones.",
+        "B": "35%, es decir, $35 millones.",
+        "C": "20%, es decir, $20 millones."
+      },
+      "correcta": "C",
+      "explicacion": "Los premios de loterías, rifas y apuestas son ganancias ocasionales con una tarifa especial.\n[A] Incorrecta. El 15% es la tarifa general de ganancias ocasionales; los premios tienen una tarifa propia y mayor.\n[B] Incorrecta. El 35% es la tarifa general de renta de las personas jurídicas, no la de las ganancias ocasionales.\n[C] Correcta. El art. 317 ET establece que la tarifa para las ganancias ocasionales provenientes de loterías, rifas, apuestas y similares es del 20%: $100 millones × 20% = $20 millones. Se recauda mediante retención en la fuente al momento del pago (art. 402 ET).",
+      "norma": "Estatuto Tributario, arts. 304, 317 y 402",
+      "dificultad": 2,
+      "etiquetas": [
+        "ganancia ocasional",
+        "premios",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-028",
+      "contexto": "En su declaración de IVA, un responsable registra un IVA generado de $5 millones y un IVA descontable de $8 millones, todo relacionado con operaciones gravadas en el mercado nacional.",
+      "enunciado": "Al profesional le corresponde concluir que la declaración arroja",
+      "opciones": {
+        "A": "un saldo a pagar de $3 millones, que debe consignar a la DIAN.",
+        "B": "un saldo a favor de $3 millones, imputable al periodo siguiente.",
+        "C": "un saldo en cero, porque el descontable no puede superar al generado."
+      },
+      "correcta": "B",
+      "explicacion": "Si los descontables superan el impuesto generado, la declaración arroja saldo a favor.\n[A] Incorrecta. No hay valor a pagar cuando el IVA descontable supera el generado: el resultado es a favor del responsable.\n[B] Correcta. $5 − $8 = −$3 millones: saldo a favor. Por regla general, el saldo a favor en IVA de operaciones gravadas se imputa en la declaración del periodo siguiente. La devolución procede en casos especiales, como los exportadores o los productores de bienes exentos (art. 815 ET y siguientes).\n[C] Incorrecta. La ley no limita el descontable al valor del IVA generado: el exceso constituye un saldo a favor.",
+      "norma": "Estatuto Tributario, arts. 485, 815 y 850",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "saldo a favor"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-029",
+      "contexto": "Al analizar una declaración de renta, el profesional observa que el contribuyente calculó una renta presuntiva del 0,5% sobre su patrimonio líquido del año anterior y la comparó con su renta líquida ordinaria.",
+      "enunciado": "Al profesional le corresponde advertir que, desde el año gravable 2021, el porcentaje de renta presuntiva es del",
+      "opciones": {
+        "A": "0%, por lo que no genera una renta mínima.",
+        "B": "3,5%, sobre el patrimonio líquido del año anterior.",
+        "C": "1,5%, sobre el patrimonio líquido del año anterior."
+      },
+      "correcta": "A",
+      "explicacion": "La renta presuntiva se redujo gradualmente hasta llegar a cero.\n[A] Correcta. El art. 188 ET, modificado por la Ley 2010 de 2019, fijó el porcentaje de renta presuntiva en 0% a partir del año gravable 2021. Hoy no genera una base mínima de renta.\n[B] Incorrecta. El 3,5% fue el porcentaje vigente hasta 2018.\n[C] Incorrecta. El 1,5% fue un porcentaje de transición (año gravable 2019), no el vigente.",
+      "norma": "Estatuto Tributario, art. 188 (Ley 2010 de 2019)",
+      "dificultad": 2,
+      "etiquetas": [
+        "renta presuntiva"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-030",
+      "contexto": "Una sociedad nacional tiene beneficios tributarios que redujeron mucho su impuesto. Al comparar su impuesto depurado con su utilidad contable depurada, el resultado es del 9%.",
+      "enunciado": "Al profesional le corresponde verificar que la sociedad haya aplicado la regla de tasa mínima de tributación, que exige",
+      "opciones": {
+        "A": "liquidar un impuesto adicional hasta alcanzar una tasa de tributación depurada del 15%.",
+        "B": "pagar la tarifa general del 35% sobre la utilidad contable, sin aplicar beneficios.",
+        "C": "no realizar ajuste alguno, porque los beneficios tributarios fueron legalmente obtenidos."
+      },
+      "correcta": "A",
+      "explicacion": "La Ley 2277 de 2022 creó una tasa mínima de tributación para las personas jurídicas.\n[A] Correcta. El parágrafo 6 del art. 240 ET establece que la tasa de tributación depurada no puede ser inferior al 15%. Si resulta menor, debe calcularse y sumarse un impuesto a adicionar para alcanzar ese porcentaje, con algunas excepciones.\n[B] Incorrecta. La regla no elimina los beneficios ni aplica el 35% a la utilidad contable: solo asegura un mínimo del 15%.\n[C] Incorrecta. Aunque los beneficios sean legales, la norma exige el ajuste cuando la tasa depurada cae por debajo del 15%.",
+      "norma": "Estatuto Tributario, art. 240, parágrafo 6 (Ley 2277 de 2022)",
+      "dificultad": 3,
+      "etiquetas": [
+        "tasa mínima de tributación",
+        "personas jurídicas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-031",
+      "contexto": "Un nuevo profesional pregunta por la diferencia entre la liquidación privada y la liquidación oficial de un impuesto.",
+      "enunciado": "Al profesional con experiencia le corresponde explicar que la liquidación privada",
+      "opciones": {
+        "A": "es la que efectúa la DIAN cuando el contribuyente no presenta su declaración.",
+        "B": "es la que efectúa un contador público independiente, a solicitud de la DIAN.",
+        "C": "es la que efectúa el contribuyente en su declaración, determinando su impuesto."
+      },
+      "correcta": "C",
+      "explicacion": "Los impuestos nacionales se determinan, en principio, mediante autoliquidación.\n[A] Incorrecta. Cuando el contribuyente no declara, la DIAN profiere una liquidación oficial de aforo, que no es una liquidación privada.\n[C] Correcta. La liquidación privada es la que hace el propio contribuyente en su declaración tributaria al determinar su base gravable, el impuesto y el saldo a pagar o a favor. La DIAN la verifica y, si encuentra errores o inexactitudes, la modifica mediante liquidaciones oficiales (corrección aritmética, revisión).\n[B] Incorrecta. La firma de un contador o revisor fiscal, cuando se exige, da fe de la declaración, pero no convierte su trabajo en una liquidación distinta.",
+      "norma": "Estatuto Tributario, arts. 588, 697, 702 y 715",
+      "dificultad": 1,
+      "etiquetas": [
+        "liquidación privada",
+        "liquidación oficial"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-032",
+      "contexto": "Al revisar una declaración de renta, el profesional observa que el contribuyente incluyó dentro de sus ingresos brutos unos ingresos que la ley califica como no constitutivos de renta ni ganancia ocasional, y los restó de inmediato.",
+      "enunciado": "Al profesional le corresponde advertir que los ingresos no constitutivos de renta",
+      "opciones": {
+        "A": "no se informan en la declaración, porque no generan impuesto alguno.",
+        "B": "se restan de la renta líquida, en la misma casilla de las rentas exentas.",
+        "C": "se restan de los ingresos brutos para obtener los ingresos netos."
+      },
+      "correcta": "C",
+      "explicacion": "Los ingresos no constitutivos de renta se restan al inicio de la depuración.\n[C] Correcta. Según el art. 26 ET, de los ingresos brutos se restan los ingresos no constitutivos de renta y las devoluciones, rebajas y descuentos, para obtener los ingresos netos. El contribuyente lo hizo bien.\n[B] Incorrecta. Las rentas exentas se restan de la renta líquida: ingresos no constitutivos de renta y rentas exentas son conceptos distintos, con lugares distintos en la depuración.\n[A] Incorrecta. Aunque no generen impuesto, estos ingresos deben informarse en la declaración, porque forman parte de los ingresos brutos y sirven para el control de la DIAN.",
+      "norma": "Estatuto Tributario, art. 26",
+      "dificultad": 2,
+      "etiquetas": [
+        "depuración de renta",
+        "ingresos no constitutivos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-033",
+      "contexto": "Una empresa exportadora de bienes compró insumos gravados con IVA para producir lo que exporta. En sus declaraciones de IVA acumula saldos a favor y quiere recuperarlos.",
+      "enunciado": "Al profesional le corresponde informarle que, por tratarse de bienes exentos con derecho a devolución,",
+      "opciones": {
+        "A": "no tiene derecho a devolución, porque la exportación no genera IVA en la venta.",
+        "B": "debe llevar el IVA pagado como mayor valor del costo de los bienes exportados.",
+        "C": "puede solicitar la devolución o compensación de los saldos a favor de IVA."
+      },
+      "correcta": "C",
+      "explicacion": "La exportación de bienes es una operación exenta con derecho a devolución.\n[A] Incorrecta. Precisamente porque la exportación está exenta (gravada a tarifa 0%) y no por excluida, el exportador sí tiene derecho a recuperar el IVA pagado.\n[B] Incorrecta. El IVA pagado en insumos destinados a operaciones exentas es descontable (art. 488 ET): no tiene que llevarse al costo.\n[C] Correcta. El art. 479 ET considera exentos los bienes que se exportan. Los productores de bienes exentos pueden descontar el IVA pagado y solicitar la devolución o compensación de los saldos a favor (arts. 481 y 815 ET).",
+      "norma": "Estatuto Tributario, arts. 479, 481, 488 y 815",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "exportaciones",
+        "devolución"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-034",
+      "contexto": "En la declaración de renta de una sociedad, el impuesto sobre la renta líquida gravable es de $87,5 millones y tiene descuentos tributarios procedentes por $7,5 millones. Las retenciones en la fuente suman $30 millones.",
+      "enunciado": "Al profesional le corresponde verificar que el impuesto neto de renta sea de",
+      "opciones": {
+        "A": "$57,5 millones",
+        "B": "$50,0 millones",
+        "C": "$80,0 millones"
+      },
+      "correcta": "C",
+      "explicacion": "El impuesto neto de renta es el impuesto sobre la renta líquida gravable menos los descuentos tributarios. Las retenciones se restan después, en la liquidación del saldo.\n[C] Correcta. $87,5 − $7,5 = $80 millones de impuesto neto de renta. Las retenciones de $30 millones se restan al calcular el saldo a pagar.\n[B] Incorrecta. $50 millones resulta de restar también las retenciones, que no hacen parte del cálculo del impuesto neto de renta.\n[A] Incorrecta. $57,5 millones resulta de restar las retenciones sin restar los descuentos tributarios.",
+      "norma": "Estatuto Tributario, arts. 240, 254 y siguientes, y 367; formulario de renta",
+      "dificultad": 2,
+      "etiquetas": [
+        "impuesto neto de renta",
+        "descuentos tributarios",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-035",
+      "contexto": "Una sociedad compró una maquinaria industrial que usará directamente en su proceso productivo y que se depreciará como activo fijo. Pagó $38 millones de IVA en esa compra.",
+      "enunciado": "Para el tratamiento del IVA pagado, al profesional le corresponde verificar que la sociedad pueda",
+      "opciones": {
+        "A": "descontar ese IVA del impuesto sobre la renta del año en que adquirió el activo.",
+        "B": "solicitar la devolución inmediata del IVA pagado, como si fuera un exportador.",
+        "C": "deducir ese IVA como gasto en un 50% en la depuración de su renta del año."
+      },
+      "correcta": "A",
+      "explicacion": "El IVA pagado en activos fijos reales productivos tiene un tratamiento especial en renta.\n[A] Correcta. El art. 258-1 ET permite descontar del impuesto sobre la renta el IVA pagado en la adquisición, construcción, formación e importación de activos fijos reales productivos, en el año en que se adquieran. Ese IVA no puede tomarse simultáneamente como costo o deducción.\n[B] Incorrecta. La devolución de saldos a favor de IVA se reserva a los productores de bienes exentos y a otros casos especiales; adquirir un activo fijo no da ese derecho.\n[C] Incorrecta. La norma prevé un descuento tributario del 100% del IVA pagado, no una deducción parcial del 50%.",
+      "norma": "Estatuto Tributario, art. 258-1 (Ley 2010 de 2019)",
+      "dificultad": 3,
+      "etiquetas": [
+        "descuentos tributarios",
+        "activos fijos",
+        "IVA"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

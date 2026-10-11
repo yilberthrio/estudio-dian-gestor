@@ -21,19 +21,22 @@ def revisar(ruta):
     problemas = []
     for i, p in enumerate(preguntas, 1):
         ops = p["opciones"] if isinstance(p["opciones"], dict) else dict(zip(LETRAS, p["opciones"]))
+        ops = {l: t for l, t in ops.items() if t}
         c = p["correcta"].upper()
         letras[c] += 1
-        largos = {l: len(ops[l]) for l in LETRAS}
-        if largos[c] == max(largos.values()):
+        largos = {l: len(t) for l, t in ops.items()}
+        valores = list(largos.values())
+        if largos[c] == max(valores) and valores.count(largos[c]) == 1:  # los empates no delatan
             mas_larga += 1
-        if largos[c] == min(largos.values()):
+        if largos[c] == min(valores) and valores.count(largos[c]) == 1:
             mas_corta += 1
         if sesgo_longitud(ops, c):
             problemas.append(f"#{i} [{p.get('sesion', datos.get('sesion'))}] correcta {largos[c]} car. vs otras {[v for l, v in largos.items() if l != c]}: {p['enunciado'][:70]}")
-        abs_en_distractores = [l for l in LETRAS if l != c and ABSOLUTOS.search(ops[l])]
-        if len(abs_en_distractores) == 3 and not ABSOLUTOS.search(ops[c]):
+        abs_en_distractores = [l for l in ops if l != c and ABSOLUTOS.search(ops[l])]
+        if len(abs_en_distractores) == len(ops) - 1 and not ABSOLUTOS.search(ops[c]):
             problemas.append(f"#{i} todos los distractores usan absolutos y la correcta no: {p['enunciado'][:70]}")
-    print(f"{n} preguntas · correcta es la más larga: {mas_larga} ({100 * mas_larga / n:.0f}%, ideal ≤25%) · "
+    ideal = round(100 / max(len(ops), 1))  # con 3 opciones, al azar sería ~33%
+    print(f"{n} preguntas · correcta es la más larga: {mas_larga} ({100 * mas_larga / n:.0f}%, ideal ≤{ideal}%) · "
           f"la más corta: {mas_corta} ({100 * mas_corta / n:.0f}%)")
     print("Distribución de letras correctas:", dict(sorted(letras.items())))
     if problemas:
@@ -41,7 +44,7 @@ def revisar(ruta):
         print("\n".join("  " + x for x in problemas))
     else:
         print("Sin pistas evidentes por longitud. ✔")
-    return not problemas and mas_larga / n <= 0.3
+    return not problemas and mas_larga / n <= 0.35
 
 
 if __name__ == "__main__":

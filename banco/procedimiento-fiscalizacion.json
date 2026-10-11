@@ -1,0 +1,861 @@
+{
+  "sesion": "procedimiento-fiscalizacion",
+  "preguntas": [
+    {
+      "id": "procedimiento-fiscalizacion-001",
+      "contexto": "Al revisar la declaración de renta de una sociedad, un profesional encuentra que los costos declarados crecieron un 60% frente al año anterior, mientras los ingresos se mantuvieron estables. Aún no se ha iniciado ninguna actuación y el jefe quiere darle al contribuyente la oportunidad de revisar sus cifras antes de adelantar el proceso de determinación.",
+      "enunciado": "Para atender la instrucción del jefe, al profesional le corresponde proyectar",
+      "opciones": {
+        "A": "un emplazamiento para corregir, que otorga un mes para corregir la declaración.",
+        "B": "un requerimiento especial, que otorga tres meses para controvertir las glosas.",
+        "C": "una liquidación oficial de revisión, que modifica los costos que no se justifiquen."
+      },
+      "correcta": "A",
+      "explicacion": "El emplazamiento para corregir procede cuando hay indicios de inexactitud y busca que el contribuyente corrija voluntariamente antes del proceso de determinación.\n[A] Correcta. El art. 685 ET permite emplazar al contribuyente cuando existan indicios de inexactitud, para que corrija dentro del mes siguiente a la notificación. No responderlo no genera sanción.\n[B] Incorrecta. El requerimiento especial (arts. 703 y 707 ET) ya propone la modificación oficial de la declaración: es el inicio formal del proceso de revisión, no una invitación previa a corregir.\n[C] Incorrecta. La liquidación de revisión es el acto definitivo que modifica la declaración y exige requerimiento especial previo (art. 703 ET). No puede proferirse como primer acto.",
+      "norma": "Estatuto Tributario, arts. 685, 703 y 707",
+      "dificultad": 1,
+      "etiquetas": [
+        "emplazamiento para corregir",
+        "actos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-002",
+      "contexto": "En una investigación de IVA, el profesional ya tiene las pruebas de que el contribuyente omitió ingresos gravados. El jefe le pide preparar el acto con el que la DIAN propondrá modificar la declaración y que dé al contribuyente la oportunidad de defenderse.",
+      "enunciado": "El acto que debe proyectar el profesional es",
+      "opciones": {
+        "A": "el emplazamiento para corregir, en el que se señalan los indicios encontrados.",
+        "B": "la liquidación de revisión, en la que se determinan los mayores valores a pagar.",
+        "C": "el requerimiento especial, en el que se exponen los puntos que se propone modificar."
+      },
+      "correcta": "C",
+      "explicacion": "Antes de liquidar oficialmente, la DIAN debe proponer las modificaciones en un requerimiento especial.\n[A] Incorrecta. El emplazamiento para corregir es facultativo e invita a corregir; no propone una modificación oficial ni es el acto que garantiza la defensa frente a la liquidación.\n[B] Incorrecta. La liquidación de revisión no puede expedirse sin requerimiento especial previo (art. 703 ET); hacerlo violaría el debido proceso.\n[C] Correcta. El art. 703 ET exige enviar, por una sola vez, un requerimiento especial con todos los puntos que se proponga modificar y la explicación de las razones. El contribuyente tiene 3 meses para responder (art. 707 ET).",
+      "norma": "Estatuto Tributario, arts. 703 a 707",
+      "dificultad": 1,
+      "etiquetas": [
+        "requerimiento especial",
+        "actos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-003",
+      "contexto": "Un contribuyente presentó oportunamente su declaración de renta; el plazo para declarar venció el 14 de abril de 2025. El profesional encargado tiene listo el requerimiento especial y debe verificar hasta cuándo puede notificarlo.",
+      "enunciado": "Para verificar la oportunidad, al profesional le corresponde tener en cuenta que el requerimiento especial debe notificarse a más tardar el",
+      "opciones": {
+        "A": "14 de abril de 2026, un año después del vencimiento del plazo para declarar.",
+        "B": "14 de abril de 2028, tres años después del vencimiento del plazo para declarar.",
+        "C": "14 de abril de 2030, cinco años después del vencimiento del plazo para declarar."
+      },
+      "correcta": "B",
+      "explicacion": "El término para notificar el requerimiento especial coincide con el de firmeza general de la declaración.\n[A] Incorrecta. Un año no corresponde a ningún término para notificar el requerimiento especial.\n[B] Correcta. El art. 705 ET establece que el requerimiento debe notificarse dentro de los 3 años siguientes al vencimiento del plazo para declarar (si la declaración fue extemporánea, desde su presentación). Si no se notifica a tiempo, la declaración queda en firme (art. 714 ET).\n[C] Incorrecta. Cinco años es el término para proferir liquidación de aforo a los omisos (art. 717 ET) y el de firmeza para contribuyentes sujetos a precios de transferencia, no la regla general.",
+      "norma": "Estatuto Tributario, arts. 705 y 714",
+      "dificultad": 2,
+      "etiquetas": [
+        "requerimiento especial",
+        "términos",
+        "firmeza"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-004",
+      "contexto": "El 2 de febrero se notificó un requerimiento especial a un contribuyente. El 30 de abril, el contribuyente radica su respuesta con objeciones y pruebas. El profesional debe decidir si la respuesta fue oportuna.",
+      "enunciado": "Con base en la información, al profesional le corresponde concluir que la respuesta",
+      "opciones": {
+        "A": "es oportuna, porque el contribuyente tiene tres meses desde la notificación para responder.",
+        "B": "es extemporánea, porque el contribuyente tenía un mes desde la notificación para responder.",
+        "C": "es extemporánea, porque el contribuyente tenía dos meses desde la notificación para responder."
+      },
+      "correcta": "A",
+      "explicacion": "El plazo de respuesta al requerimiento especial es de 3 meses.\n[A] Correcta. Según el art. 707 ET, dentro de los 3 meses siguientes a la notificación del requerimiento, el contribuyente puede formular objeciones, solicitar pruebas, subsanar omisiones y allegar documentos. Del 2 de febrero al 30 de abril no han pasado 3 meses.\n[B] Incorrecta. Un mes es el plazo para corregir tras el emplazamiento para corregir (art. 685 ET) o para declarar tras el emplazamiento para declarar (art. 715 ET).\n[C] Incorrecta. Dos meses es el plazo para interponer el recurso de reconsideración (art. 720 ET), no para responder el requerimiento.",
+      "norma": "Estatuto Tributario, art. 707",
+      "dificultad": 1,
+      "etiquetas": [
+        "requerimiento especial",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-005",
+      "contexto": "Al analizar la respuesta a un requerimiento especial, el profesional detecta un hecho nuevo: el contribuyente también dedujo gastos sin soporte, que no se incluyeron en el requerimiento. El plazo para responder el requerimiento venció hace un mes.",
+      "enunciado": "Para incluir ese hecho en la determinación oficial, al profesional le corresponde",
+      "opciones": {
+        "A": "incluir la glosa directamente en la liquidación de revisión, porque el hecho quedó probado.",
+        "B": "proyectar una ampliación del requerimiento especial, dentro de los tres meses permitidos.",
+        "C": "proyectar un nuevo requerimiento especial, porque cada hecho requiere un acto independiente."
+      },
+      "correcta": "B",
+      "explicacion": "Los hechos no planteados en el requerimiento solo pueden incorporarse mediante su ampliación.\n[A] Incorrecta. La liquidación de revisión debe contraerse a los hechos del requerimiento especial o de su ampliación (art. 711 ET, principio de correspondencia). Incluir glosas nuevas vulnera el derecho de defensa.\n[B] Correcta. El art. 708 ET permite ampliar el requerimiento, por una sola vez, dentro de los 3 meses siguientes al vencimiento del plazo para responderlo. Puede incluir hechos no contemplados en el inicial. El plazo de respuesta a la ampliación es de 3 a 6 meses.\n[C] Incorrecta. El requerimiento especial se envía por una sola vez (art. 703 ET). El mecanismo para agregar hechos es la ampliación, no un segundo requerimiento.",
+      "norma": "Estatuto Tributario, arts. 703, 708 y 711",
+      "dificultad": 2,
+      "etiquetas": [
+        "ampliación del requerimiento",
+        "correspondencia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-006",
+      "contexto": "El plazo para que un contribuyente respondiera el requerimiento especial venció el 15 de marzo. No hubo ampliación ni inspección tributaria. El profesional debe programar la expedición de la liquidación oficial de revisión.",
+      "enunciado": "Para programar la actuación, al profesional le corresponde tener en cuenta que la liquidación debe notificarse",
+      "opciones": {
+        "A": "a más tardar el 15 de septiembre, dentro de los seis meses siguientes a ese vencimiento.",
+        "B": "a más tardar el 15 de junio, dentro de los tres meses siguientes a ese vencimiento.",
+        "C": "a más tardar el 15 de marzo del año siguiente, dentro del año siguiente a ese vencimiento."
+      },
+      "correcta": "A",
+      "explicacion": "La liquidación de revisión tiene un plazo propio, contado desde el vencimiento del término de respuesta.\n[A] Correcta. El art. 710 ET establece que la liquidación de revisión debe notificarse dentro de los 6 meses siguientes al vencimiento del término para responder el requerimiento especial o su ampliación. Si se practicó inspección tributaria de oficio, ese término se suspende por 3 meses.\n[B] Incorrecta. Tres meses es el plazo de respuesta del contribuyente (art. 707 ET) y el de la DIAN para ampliar el requerimiento (art. 708 ET).\n[C] Incorrecta. Un año es el plazo para resolver el recurso de reconsideración (art. 732 ET), no para liquidar.",
+      "norma": "Estatuto Tributario, art. 710",
+      "dificultad": 2,
+      "etiquetas": [
+        "liquidación de revisión",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-007",
+      "contexto": "Al redactar una liquidación oficial de revisión, un profesional nota que, además de los costos rechazados en el requerimiento especial, el expediente muestra ingresos omitidos que nunca se propusieron en ese requerimiento ni en su ampliación.",
+      "enunciado": "Frente a los ingresos omitidos, al profesional le corresponde",
+      "opciones": {
+        "A": "incluirlos en la liquidación, porque la DIAN debe determinar el impuesto real a cargo.",
+        "B": "abstenerse de incluirlos, porque la liquidación se limita a lo propuesto en el requerimiento.",
+        "C": "incluirlos en la liquidación, siempre que el contribuyente no haya respondido el requerimiento."
+      },
+      "correcta": "B",
+      "explicacion": "Este caso aplica el principio de correspondencia entre el requerimiento y la liquidación.\n[A] Incorrecta. Aunque el impuesto real sea mayor, la DIAN no puede liquidar hechos que el contribuyente no tuvo oportunidad de controvertir. Esa parte de la liquidación sería nula.\n[B] Correcta. El art. 711 ET dispone que la liquidación de revisión debe contraerse exclusivamente a la declaración y a los hechos del requerimiento especial o de su ampliación. Si aún está a tiempo, la DIAN puede ampliar el requerimiento (art. 708 ET).\n[C] Incorrecta. Que el contribuyente no responda no autoriza a liquidar hechos nuevos: la correspondencia protege el derecho de defensa en todos los casos.",
+      "norma": "Estatuto Tributario, arts. 708 y 711",
+      "dificultad": 2,
+      "etiquetas": [
+        "correspondencia",
+        "liquidación de revisión"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-008",
+      "contexto": "Para verificar la exactitud de una declaración, el jefe ordena de oficio una inspección tributaria en las instalaciones del contribuyente. El profesional debe calcular cómo afecta esta decisión el término para notificar el requerimiento especial.",
+      "enunciado": "Al profesional le corresponde considerar que el auto que decreta la inspección",
+      "opciones": {
+        "A": "interrumpe el término, que vuelve a contarse completo desde la inspección.",
+        "B": "suspende el término por tres meses contados desde su notificación.",
+        "C": "no afecta el término, que sigue corriendo sin ninguna modificación."
+      },
+      "correcta": "B",
+      "explicacion": "La inspección tributaria de oficio suspende el término para notificar el requerimiento especial.\n[A] Incorrecta. La suspensión no reinicia el término: solo lo detiene durante un tiempo determinado y luego sigue corriendo.\n[B] Correcta. El art. 706 ET establece que, cuando se practique inspección tributaria de oficio, el término para notificar el requerimiento especial se suspende por 3 meses contados desde la notificación del auto que la decreta. Si es a solicitud del contribuyente, se suspende mientras dure la inspección.\n[C] Incorrecta. La ley sí prevé efectos de la inspección sobre los términos, precisamente para que la DIAN pueda practicarla sin perder la oportunidad de proponer la modificación.",
+      "norma": "Estatuto Tributario, arts. 706 y 779",
+      "dificultad": 2,
+      "etiquetas": [
+        "inspección tributaria",
+        "suspensión de términos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-009",
+      "contexto": "Los cruces de información muestran que una persona natural obtuvo ingresos que la obligaban a declarar renta, pero no presentó la declaración. El profesional debe iniciar las actuaciones para que cumpla su obligación.",
+      "enunciado": "Como primera actuación, al profesional le corresponde proyectar",
+      "opciones": {
+        "A": "un emplazamiento para corregir, con un plazo de un mes para presentar la declaración.",
+        "B": "una liquidación de aforo, con base en la información de terceros que tiene la DIAN.",
+        "C": "un emplazamiento para declarar, con un plazo de un mes para presentar la declaración."
+      },
+      "correcta": "C",
+      "explicacion": "Al omiso primero se le emplaza para declarar.\n[A] Incorrecta. El emplazamiento para corregir es para quien sí declaró, pero con posibles inexactitudes (art. 685 ET). Aquí no hay declaración que corregir.\n[B] Incorrecta. La liquidación de aforo (art. 717 ET) solo procede después del emplazamiento previo y de la sanción por no declarar; no puede ser la primera actuación.\n[C] Correcta. El art. 715 ET ordena emplazar previamente a quienes no declaren, advirtiéndoles las consecuencias, para que lo hagan en el término perentorio de 1 mes. Si no declaran, procede la sanción por no declarar (art. 716 ET) y luego el aforo.",
+      "norma": "Estatuto Tributario, arts. 715 a 717",
+      "dificultad": 1,
+      "etiquetas": [
+        "emplazamiento para declarar",
+        "omisos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-010",
+      "contexto": "Un omiso no respondió el emplazamiento para declarar y ya se le impuso la sanción por no declarar. El plazo para presentar la declaración de renta del año investigado venció el 20 de abril de 2023.",
+      "enunciado": "Para determinar la obligación tributaria, al profesional le corresponde proferir una liquidación de aforo",
+      "opciones": {
+        "A": "a más tardar el 20 de abril de 2026, dentro de los tres años siguientes al vencimiento.",
+        "B": "a más tardar el 20 de abril de 2028, dentro de los cinco años siguientes al vencimiento.",
+        "C": "a más tardar el 20 de abril de 2025, dentro de los dos años siguientes al vencimiento."
+      },
+      "correcta": "B",
+      "explicacion": "El aforo tiene un término de 5 años, más amplio que el de revisión, porque no hay declaración que adquiera firmeza.\n[A] Incorrecta. Tres años es el término para notificar el requerimiento especial y el de firmeza de las declaraciones presentadas (arts. 705 y 714 ET).\n[B] Correcta. El art. 717 ET permite determinar mediante liquidación de aforo la obligación de quien persiste en no declarar, dentro de los 5 años siguientes al vencimiento del plazo para declarar.\n[C] Incorrecta. Dos años es el término para la liquidación de corrección aritmética (art. 699 ET) y para el pliego de cargos de las sanciones independientes (art. 638 ET).",
+      "norma": "Estatuto Tributario, art. 717",
+      "dificultad": 2,
+      "etiquetas": [
+        "aforo",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-011",
+      "contexto": "Al revisar una declaración de IVA, el profesional encuentra que el contribuyente aplicó la tarifa del 5% a una base gravada al 19%, lo que generó un menor impuesto. No hay discusión sobre los hechos ni sobre las cifras: solo la tarifa está mal aplicada.",
+      "enunciado": "Para corregir esta situación, al profesional le corresponde proyectar",
+      "opciones": {
+        "A": "una liquidación de corrección aritmética, dentro de los dos años siguientes a la presentación.",
+        "B": "un requerimiento especial, porque toda modificación de la declaración exige ese acto previo.",
+        "C": "una liquidación de aforo, porque la declaración con tarifa errada se tiene por no presentada."
+      },
+      "correcta": "A",
+      "explicacion": "Aplicar una tarifa distinta de la legal es un error aritmético.\n[A] Correcta. El art. 697 ET considera error aritmético, entre otros, el que resulta de aplicar una tarifa distinta de la señalada en la ley, cuando genera un menor impuesto. Se corrige mediante liquidación de corrección aritmética dentro de los 2 años siguientes a la presentación (art. 699 ET), con sanción del 30% del mayor valor (art. 646 ET).\n[B] Incorrecta. La corrección aritmética no requiere requerimiento especial: este es propio de la liquidación de revisión, que se usa para inexactitudes de fondo.\n[C] Incorrecta. Una tarifa errada no hace que la declaración se tenga por no presentada (causales del art. 580 ET). El aforo es para omisos.",
+      "norma": "Estatuto Tributario, arts. 697, 699 y 646",
+      "dificultad": 2,
+      "etiquetas": [
+        "corrección aritmética",
+        "liquidaciones oficiales"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-012",
+      "contexto": "El 3 de marzo se notificó una liquidación oficial de revisión. El contribuyente pregunta al profesional hasta cuándo puede presentar el recurso y ante quién.",
+      "enunciado": "Al profesional le corresponde informarle que puede interponer",
+      "opciones": {
+        "A": "recurso de reposición y en subsidio apelación, dentro de los diez días siguientes a la notificación.",
+        "B": "recurso de reconsideración, dentro de los dos meses siguientes a la notificación de la liquidación.",
+        "C": "recurso de reconsideración, dentro del mes siguiente a la notificación de la liquidación."
+      },
+      "correcta": "B",
+      "explicacion": "En materia tributaria aplica el recurso especial del Estatuto Tributario.\n[A] Incorrecta. Reposición y apelación en 10 días son los recursos generales del CPACA (art. 76). El procedimiento tributario tiene su propio recurso, que prevalece.\n[B] Correcta. El art. 720 ET establece que contra las liquidaciones oficiales y las resoluciones que imponen sanciones procede el recurso de reconsideración, que debe interponerse dentro de los 2 meses siguientes a su notificación.\n[C] Incorrecta. El término no es de un mes: un mes corresponde a los emplazamientos (arts. 685 y 715 ET).",
+      "norma": "Estatuto Tributario, art. 720",
+      "dificultad": 1,
+      "etiquetas": [
+        "recurso de reconsideración",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-013",
+      "contexto": "Un contribuyente presentó un escrito de reconsideración contra una liquidación oficial, pero no expresó concretamente los motivos de inconformidad: solo manifestó que «no está de acuerdo con la DIAN».",
+      "enunciado": "Frente a este escrito, al profesional le corresponde",
+      "opciones": {
+        "A": "inadmitir el recurso, porque no cumple el requisito de expresar concretamente los motivos.",
+        "B": "resolver de fondo el recurso, revisando de oficio toda la liquidación oficial expedida.",
+        "C": "archivar el escrito, porque la falta de motivos impide considerarlo un recurso de reconsideración."
+      },
+      "correcta": "A",
+      "explicacion": "El recurso de reconsideración tiene requisitos formales; si no se cumplen, se inadmite.\n[A] Correcta. El art. 722 ET exige, entre otros requisitos, formular el recurso por escrito con expresión concreta de los motivos de inconformidad. Si falta, se dicta auto inadmisorio (art. 726 ET), contra el cual procede reposición dentro de los 10 días siguientes. La omisión de algunos requisitos puede subsanarse dentro de ese plazo.\n[B] Incorrecta. La DIAN no debe adivinar los motivos de inconformidad ni revisar de oficio toda la liquidación: el recurso debe delimitar la controversia.\n[C] Incorrecta. No se archiva sin decisión: se profiere un auto inadmisorio motivado, que garantiza al contribuyente la posibilidad de subsanar o recurrir.",
+      "norma": "Estatuto Tributario, arts. 722 y 726",
+      "dificultad": 2,
+      "etiquetas": [
+        "recurso de reconsideración",
+        "requisitos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-014",
+      "contexto": "Un recurso de reconsideración fue interpuesto en debida forma el 10 de junio de 2025. Por congestión, el expediente aún no ha sido resuelto el 15 de junio de 2026.",
+      "enunciado": "Frente a esta situación, al profesional le corresponde advertir que",
+      "opciones": {
+        "A": "opera el silencio administrativo negativo y el contribuyente puede acudir a la jurisdicción.",
+        "B": "la DIAN conserva la competencia para resolver mientras no se notifique una demanda judicial.",
+        "C": "opera el silencio administrativo positivo y el recurso se entiende fallado a favor del contribuyente."
+      },
+      "correcta": "C",
+      "explicacion": "En el procedimiento tributario, la falta de decisión oportuna del recurso favorece al contribuyente.\n[A] Incorrecta. El silencio negativo frente a recursos es la regla del CPACA (art. 86), no la del Estatuto Tributario.\n[B] Incorrecta. Esa regla de competencia corresponde al silencio negativo del CPACA. En materia tributaria, vencido el año, la DIAN pierde la oportunidad de decidir en contra.\n[C] Correcta. La DIAN tiene 1 año para resolver la reconsideración, contado desde su interposición en debida forma (art. 732 ET). Si no lo hace, el recurso se entiende fallado a favor del recurrente, y la DIAN debe declararlo de oficio o a petición de parte (art. 734 ET).",
+      "norma": "Estatuto Tributario, arts. 732 y 734",
+      "dificultad": 2,
+      "etiquetas": [
+        "silencio positivo",
+        "recurso de reconsideración"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-015",
+      "contexto": "La DIAN resolvió desfavorablemente el recurso de reconsideración de un contribuyente. El contribuyente pregunta qué puede hacer ahora para controvertir la liquidación oficial.",
+      "enunciado": "Al profesional le corresponde orientarlo indicando que puede",
+      "opciones": {
+        "A": "presentar demanda de nulidad y restablecimiento del derecho dentro de los cuatro meses siguientes.",
+        "B": "interponer un nuevo recurso de apelación ante el superior jerárquico dentro de los diez días.",
+        "C": "solicitar la revocatoria directa como único mecanismo, dentro de los dos años siguientes."
+      },
+      "correcta": "A",
+      "explicacion": "Resuelta la reconsideración, se agota la vía administrativa y procede el control judicial.\n[A] Correcta. La decisión del recurso agota la actuación administrativa. Contra el acto procede el medio de control de nulidad y restablecimiento del derecho ante la Jurisdicción de lo Contencioso Administrativo, que debe presentarse dentro de los 4 meses siguientes a la notificación (CPACA, arts. 138 y 164).\n[B] Incorrecta. En materia tributaria no hay apelación después de la reconsideración: este es el único recurso en vía administrativa.\n[C] Incorrecta. La revocatoria directa (art. 736 ET) es un mecanismo excepcional, procedente cuando no se interpusieron los recursos. No es el único camino ni el que sigue a una reconsideración resuelta.",
+      "norma": "Estatuto Tributario, arts. 720 y 736; Ley 1437 de 2011, arts. 138 y 164",
+      "dificultad": 2,
+      "etiquetas": [
+        "vía judicial",
+        "nulidad y restablecimiento"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-016",
+      "contexto": "Un contribuyente indicó en su respuesta al requerimiento especial una dirección procesal distinta de la que figura en su RUT. El profesional debe notificar la liquidación oficial de revisión.",
+      "enunciado": "Para notificar la liquidación, al profesional le corresponde enviarla",
+      "opciones": {
+        "A": "a la dirección del RUT, porque es la única que tiene validez para notificar actos de la DIAN.",
+        "B": "a la dirección procesal informada, porque prevalece para los actos de esa actuación.",
+        "C": "a ambas direcciones, y contar los términos desde la última de las entregas realizadas."
+      },
+      "correcta": "B",
+      "explicacion": "Si el contribuyente señala una dirección procesal, la DIAN debe usarla en ese proceso.\n[A] Incorrecta. La dirección del RUT es la regla general (art. 563 ET), pero cede ante la dirección procesal informada para una actuación determinada.\n[B] Correcta. El art. 564 ET dispone que, si durante el proceso de determinación y discusión el contribuyente señala una dirección para recibir notificaciones, la DIAN debe notificar a esa dirección los actos correspondientes.\n[C] Incorrecta. La ley no ordena notificar en ambas direcciones ni contar los términos desde la última entrega. Una notificación a una dirección equivocada puede invalidar el acto.",
+      "norma": "Estatuto Tributario, arts. 563 y 564",
+      "dificultad": 2,
+      "etiquetas": [
+        "notificaciones",
+        "dirección procesal"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-017",
+      "contexto": "Un requerimiento especial enviado por correo a la dirección del RUT fue devuelto porque el contribuyente ya no funciona allí. El profesional debe asegurar que el acto quede notificado.",
+      "enunciado": "Para notificar el acto devuelto, al profesional le corresponde",
+      "opciones": {
+        "A": "archivar la actuación, porque sin notificación personal el acto no puede producir efectos.",
+        "B": "publicar un aviso con la parte resolutiva en el portal web de la DIAN.",
+        "C": "esperar a que el contribuyente actualice su RUT para enviar nuevamente el acto."
+      },
+      "correcta": "B",
+      "explicacion": "La devolución del correo se suple con un aviso en el portal web de la DIAN.\n[A] Incorrecta. La notificación personal no es la única válida en materia tributaria (art. 565 ET), y la devolución del correo no obliga a archivar.\n[B] Correcta. El art. 568 ET dispone que los actos enviados por correo que sean devueltos se notifican mediante aviso, con transcripción de la parte resolutiva, en el portal web de la DIAN. Para la DIAN, la notificación se entiende surtida en la primera fecha de introducción al correo; para el contribuyente, sus términos corren desde la publicación del aviso.\n[C] Incorrecta. Esperar la actualización del RUT podría hacer perder la oportunidad de notificar (por ejemplo, el término del art. 705 ET). Además, mantener actualizado el RUT es obligación del contribuyente.",
+      "norma": "Estatuto Tributario, arts. 565 y 568",
+      "dificultad": 3,
+      "etiquetas": [
+        "notificaciones",
+        "correo devuelto"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-018",
+      "contexto": "En una visita, el profesional solicita al contribuyente exhibir sus libros de contabilidad para verificar unas deducciones. El contribuyente se niega. Meses después, en la respuesta al requerimiento especial, aporta esos libros como prueba a su favor.",
+      "enunciado": "Frente a los libros aportados, al profesional le corresponde",
+      "opciones": {
+        "A": "valorarlos como plena prueba, porque la contabilidad en debida forma favorece al contribuyente.",
+        "B": "valorarlos solo si el contribuyente justifica por escrito por qué no los exhibió en la visita.",
+        "C": "no tenerlos como prueba a su favor y tomar la negativa como indicio en su contra."
+      },
+      "correcta": "C",
+      "explicacion": "Quien se niega a exhibir su contabilidad cuando la DIAN lo exige pierde la posibilidad de invocarla después.\n[A] Incorrecta. La contabilidad en debida forma es prueba a favor del contribuyente (art. 772 ET), pero esa regla no aplica cuando se negó a exhibirla oportunamente.\n[B] Incorrecta. La ley no prevé una justificación posterior que reviva el valor probatorio de los libros no exhibidos: la consecuencia es directa.\n[C] Correcta. El art. 781 ET dispone que el contribuyente que no presente sus libros de contabilidad cuando la DIAN lo exija no podrá invocarlos posteriormente como prueba a su favor, y tal hecho se tendrá como indicio en su contra (salvo fuerza mayor o caso fortuito demostrados).",
+      "norma": "Estatuto Tributario, arts. 772 y 781",
+      "dificultad": 2,
+      "etiquetas": [
+        "pruebas",
+        "contabilidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-019",
+      "contexto": "Al proyectar una liquidación oficial, el profesional tiene dudas sobre si unos pagos fueron costos reales, porque el expediente no tiene pruebas suficientes en ningún sentido. El contribuyente no estaba obligado a aportar una prueba especial sobre ese hecho y no hay forma de obtener más pruebas.",
+      "enunciado": "Para decidir sobre esos pagos, al profesional le corresponde",
+      "opciones": {
+        "A": "rechazarlos, porque la carga de probar los costos siempre recae en el contribuyente.",
+        "B": "aceptarlos, porque las dudas por vacíos probatorios se resuelven a favor del contribuyente.",
+        "C": "suspender la actuación hasta que el contribuyente aporte pruebas adicionales sobre los pagos."
+      },
+      "correcta": "B",
+      "explicacion": "Ante dudas por vacíos probatorios que no pueden eliminarse, rige el in dubio pro contribuyente.\n[A] Incorrecta. La carga de la prueba no siempre recae en el contribuyente: depende de si la ley le exige probar determinados hechos o si la DIAN pidió una comprobación especial.\n[B] Correcta. El art. 745 ET establece que las dudas provenientes de vacíos probatorios deben resolverse a favor del contribuyente cuando no hay modo de eliminarlas y este no está obligado a probar determinados hechos. Además, las decisiones de la DIAN deben fundarse en hechos demostrados (art. 742 ET).\n[C] Incorrecta. La ley no prevé suspender la actuación por falta de pruebas, y los términos (por ejemplo, el del art. 710 ET) siguen corriendo.",
+      "norma": "Estatuto Tributario, arts. 742 y 745",
+      "dificultad": 2,
+      "etiquetas": [
+        "pruebas",
+        "in dubio pro contribuyente"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-020",
+      "contexto": "Un contribuyente incluyó en su declaración una deducción por intereses. El profesional no tiene ningún indicio de irregularidad ni ha solicitado comprobación especial, y la ley no exige un soporte particular para ese hecho.",
+      "enunciado": "Al valorar la deducción declarada, al profesional le corresponde",
+      "opciones": {
+        "A": "considerar ciertos los hechos declarados, mientras no se solicite una comprobación especial.",
+        "B": "exigir al contribuyente que demuestre la deducción, porque toda cifra declarada debe probarse.",
+        "C": "rechazar la deducción, porque las deducciones son beneficios de interpretación restrictiva."
+      },
+      "correcta": "A",
+      "explicacion": "Las declaraciones gozan de presunción de veracidad.\n[A] Correcta. El art. 746 ET dispone que se consideran ciertos los hechos consignados en las declaraciones tributarias, siempre que sobre ellos no se haya solicitado una comprobación especial ni la ley la exija. Para desvirtuarlos, la DIAN debe adelantar la fiscalización.\n[B] Incorrecta. No toda cifra debe probarse de antemano: la carga de comprobar se activa cuando la DIAN pide comprobación especial o la ley lo exige.\n[C] Incorrecta. Que una norma sea de interpretación restrictiva no autoriza a rechazar una deducción sin una actuación probatoria que desvirtúe lo declarado.",
+      "norma": "Estatuto Tributario, art. 746",
+      "dificultad": 1,
+      "etiquetas": [
+        "pruebas",
+        "presunción de veracidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-021",
+      "contexto": "Para verificar los ingresos de un comerciante, el profesional necesita conocer las ventas que le hizo uno de sus principales proveedores, que es un tercero ajeno a la investigación.",
+      "enunciado": "Para obtener esta información, al profesional le corresponde",
+      "opciones": {
+        "A": "proyectar un requerimiento especial dirigido al proveedor, con tres meses para responder.",
+        "B": "pedir al comerciante investigado que solicite la información a su proveedor y la aporte.",
+        "C": "proyectar un requerimiento ordinario al proveedor, con un plazo no inferior a quince días calendario."
+      },
+      "correcta": "C",
+      "explicacion": "La DIAN puede requerir información a terceros mediante requerimiento ordinario.\n[A] Incorrecta. El requerimiento especial solo se dirige al contribuyente investigado para proponer la modificación de su declaración (art. 703 ET); no sirve para pedir información a terceros.\n[B] Incorrecta. La DIAN tiene facultad directa para requerir a terceros (art. 684 ET). Depender del investigado para obtener la prueba resta confiabilidad y control a la actuación.\n[C] Correcta. El art. 684 ET faculta a la DIAN para citar o requerir a terceros, y el art. 686 ET los obliga a atender los requerimientos dentro del plazo señalado, que no puede ser inferior a 15 días calendario. No atenderlos puede generar la sanción del art. 651 ET.",
+      "norma": "Estatuto Tributario, arts. 684, 686 y 651",
+      "dificultad": 2,
+      "etiquetas": [
+        "requerimiento ordinario",
+        "terceros"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-022",
+      "contexto": "Un contribuyente recibe el requerimiento especial y presenta un recurso de reconsideración contra él, argumentando que las glosas propuestas son ilegales.",
+      "enunciado": "Frente a este recurso, al profesional le corresponde",
+      "opciones": {
+        "A": "darle trámite como reconsideración, porque toda decisión de la DIAN admite recursos.",
+        "B": "rechazarlo y advertir que el requerimiento es un acto de trámite que se controvierte en la respuesta.",
+        "C": "suspender la actuación hasta decidir el recurso, para no afectar el derecho de defensa."
+      },
+      "correcta": "B",
+      "explicacion": "El requerimiento especial es un acto de trámite: no admite recursos.\n[A] Incorrecta. No toda actuación de la DIAN admite recursos: la reconsideración procede contra liquidaciones oficiales, resoluciones sancionatorias y otros actos definitivos (art. 720 ET).\n[B] Correcta. El requerimiento especial no decide de fondo: propone una modificación. La forma de controvertirlo es la respuesta al requerimiento, dentro de los 3 meses siguientes (art. 707 ET). El recurso de reconsideración procederá contra la liquidación oficial que eventualmente se expida.\n[C] Incorrecta. Suspender la actuación por un recurso improcedente no tiene fundamento legal y pondría en riesgo los términos de la DIAN, que siguen corriendo.",
+      "norma": "Estatuto Tributario, arts. 707 y 720; Ley 1437 de 2011, art. 75",
+      "dificultad": 2,
+      "etiquetas": [
+        "actos de trámite",
+        "recursos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-023",
+      "contexto": "Un contribuyente con declaración de renta en saldo a favor solicitó la devolución el mismo día en que presentó la declaración. El plazo para declarar había vencido antes. El profesional debe establecer desde cuándo se cuenta la firmeza.",
+      "enunciado": "Al profesional le corresponde establecer que el término de firmeza de tres años se cuenta desde",
+      "opciones": {
+        "A": "el vencimiento del plazo para declarar, como en cualquier declaración oportuna.",
+        "B": "la fecha de presentación de la solicitud de devolución del saldo a favor.",
+        "C": "la fecha en que la DIAN profiera el acto que reconozca la devolución solicitada."
+      },
+      "correcta": "B",
+      "explicacion": "Cuando hay saldo a favor, la firmeza se cuenta desde la solicitud de devolución o compensación.\n[A] Incorrecta. Contar desde el vencimiento del plazo es la regla general para declaraciones oportunas sin saldo a favor; aquí hay una regla especial.\n[B] Correcta. Según el art. 714 ET, la declaración que presente saldo a favor queda en firme si, dentro de los 3 años siguientes a la fecha de presentación de la solicitud de devolución o compensación, no se ha notificado requerimiento especial. Igual regla aplica al término del requerimiento especial (art. 705 ET).\n[C] Incorrecta. La firmeza no depende de la fecha en que la DIAN decida la devolución: se cuenta desde la solicitud del contribuyente.",
+      "norma": "Estatuto Tributario, arts. 705 y 714",
+      "dificultad": 3,
+      "etiquetas": [
+        "firmeza",
+        "saldo a favor"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-024",
+      "contexto": "Durante una inspección contable en las oficinas del contribuyente, el profesional verifica los registros de los últimos meses y encuentra diferencias con lo declarado. Al terminar la diligencia, el contribuyente quiere conocer lo que quedó consignado.",
+      "enunciado": "Al terminar la diligencia, al profesional le corresponde",
+      "opciones": {
+        "A": "levantar un acta firmada por los funcionarios y por el contribuyente, y entregarle copia.",
+        "B": "redactar un informe interno para el jefe, sin dar copia, porque la actuación es reservada.",
+        "C": "esperar la liquidación oficial para comunicar los hallazgos, junto con la decisión de fondo."
+      },
+      "correcta": "A",
+      "explicacion": "La inspección contable se documenta en un acta que se entrega al contribuyente.\n[A] Correcta. El art. 782 ET dispone que de la inspección contable se levante un acta, firmada por los funcionarios visitadores y las partes intervinientes, y que se entregue copia al contribuyente. Si el contribuyente se niega a firmar, se deja constancia, y el acta no pierde valor probatorio.\n[B] Incorrecta. La reserva protege la información frente a terceros, no frente al propio contribuyente, que tiene derecho a conocer lo actuado.\n[C] Incorrecta. El contribuyente debe conocer el acta desde la diligencia: es parte de su derecho de defensa. Además, el acta es prueba que se incorpora a la actuación.",
+      "norma": "Estatuto Tributario, arts. 779 y 782",
+      "dificultad": 2,
+      "etiquetas": [
+        "inspección contable",
+        "pruebas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-025",
+      "contexto": "Un contribuyente presentó extemporáneamente su declaración de renta el 10 de septiembre de 2024 (el plazo venció en abril de 2024). La declaración no tiene saldo a favor. El profesional debe calcular el término para notificar el requerimiento especial.",
+      "enunciado": "Al profesional le corresponde concluir que el requerimiento especial debe notificarse a más tardar el",
+      "opciones": {
+        "A": "10 de septiembre de 2027.",
+        "B": "30 de abril de 2027.",
+        "C": "10 de septiembre de 2029."
+      },
+      "correcta": "A",
+      "explicacion": "Para las declaraciones extemporáneas, los 3 años se cuentan desde la fecha de presentación.\n[A] Correcta. Según el art. 705 ET, si la declaración se presentó en forma extemporánea, los 3 años se cuentan desde la fecha de presentación: 10 de septiembre de 2024 + 3 años = 10 de septiembre de 2027.\n[B] Incorrecta. Contar desde el vencimiento del plazo para declarar solo aplica a las declaraciones presentadas oportunamente.\n[C] Incorrecta. Cinco años no es el término general para notificar el requerimiento especial. Ese término aplica, por ejemplo, al aforo de omisos (art. 717 ET).",
+      "norma": "Estatuto Tributario, arts. 705 y 714",
+      "dificultad": 2,
+      "etiquetas": [
+        "requerimiento especial",
+        "términos",
+        "extemporánea"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-026",
+      "contexto": "El jefe le pide a un profesional nuevo explicar a qué etapa del proceso corresponde cada acto. El profesional debe distinguir los actos de la etapa de determinación y los de la etapa de discusión.",
+      "enunciado": "Al profesional le corresponde ubicar en la etapa de discusión",
+      "opciones": {
+        "A": "el requerimiento especial y su ampliación.",
+        "B": "el recurso de reconsideración y su decisión.",
+        "C": "el emplazamiento para corregir y su respuesta."
+      },
+      "correcta": "B",
+      "explicacion": "El proceso tributario tiene una etapa de determinación (fiscalización y liquidación) y otra de discusión (recursos).\n[A] Incorrecta. El requerimiento especial y su ampliación hacen parte de la determinación: proponen la modificación que luego se liquida.\n[B] Correcta. La discusión empieza cuando el contribuyente impugna en vía administrativa el acto de determinación o sanción, mediante el recurso de reconsideración (arts. 720 y siguientes ET), y termina con su decisión.\n[C] Incorrecta. El emplazamiento para corregir es un acto previo de la fiscalización, también propio de la etapa de determinación.",
+      "norma": "Estatuto Tributario, Libro V, títulos de determinación y discusión",
+      "dificultad": 1,
+      "etiquetas": [
+        "etapas del proceso"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-027",
+      "contexto": "Durante la respuesta al requerimiento especial, el contribuyente solicita que se practique una inspección tributaria para demostrar que sus costos son reales. El profesional considera útil la prueba y la decreta.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que, por haberse decretado a solicitud del contribuyente, el término para practicar la liquidación",
+      "opciones": {
+        "A": "se suspende mientras dure la inspección.",
+        "B": "se suspende siempre por tres meses exactos.",
+        "C": "no se suspende, porque la pidió el contribuyente."
+      },
+      "correcta": "A",
+      "explicacion": "La suspensión de términos por inspección depende de quién la pide.\n[A] Correcta. Cuando la inspección se practica a solicitud del contribuyente, los términos se suspenden mientras dure la inspección (arts. 706 y 710 ET). Así se evita que el contribuyente use la prueba para hacer vencer el plazo de la DIAN.\n[B] Incorrecta. La suspensión de 3 meses aplica cuando la inspección se decreta de oficio.\n[C] Incorrecta. Sí hay suspensión: la ley la prevé expresamente para la inspección solicitada por el contribuyente.",
+      "norma": "Estatuto Tributario, arts. 706 y 710",
+      "dificultad": 3,
+      "etiquetas": [
+        "inspección tributaria",
+        "suspensión de términos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-028",
+      "contexto": "Al revisar un expediente, el profesional encuentra que la DIAN notificó una liquidación oficial de revisión cuatro años después del vencimiento del plazo para declarar, sin requerimiento especial previo. La declaración era oportuna y sin saldo a favor.",
+      "enunciado": "Al analizar la situación, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "la liquidación es válida, porque la DIAN tiene cinco años para revisar las declaraciones.",
+        "B": "la liquidación es válida, siempre que el contribuyente no haya presentado recurso.",
+        "C": "la declaración ya estaba en firme y la liquidación carece de sustento legal."
+      },
+      "correcta": "C",
+      "explicacion": "Vencidos los 3 años sin requerimiento especial, la declaración queda en firme y la DIAN pierde la facultad de modificarla.\n[A] Incorrecta. Cinco años no es el término general de revisión. Aplica a otros casos, como el aforo de omisos o los contribuyentes sujetos a precios de transferencia.\n[B] Incorrecta. La firmeza opera por ministerio de la ley: no depende de que el contribuyente recurra. Además, el contribuyente puede alegar la firmeza en la reconsideración o ante el juez.\n[C] Correcta. Según el art. 714 ET, la declaración oportuna queda en firme si dentro de los 3 años siguientes al vencimiento del plazo no se notifica requerimiento especial. Además, la liquidación de revisión exige requerimiento previo (art. 703 ET).",
+      "norma": "Estatuto Tributario, arts. 703, 705 y 714",
+      "dificultad": 2,
+      "etiquetas": [
+        "firmeza",
+        "liquidación de revisión"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-029",
+      "contexto": "Un contribuyente acepta los hechos del requerimiento especial y corrige su declaración dentro del plazo de respuesta, incluyendo los mayores valores y la sanción reducida, y además paga el total.",
+      "enunciado": "Frente a esta actuación, al profesional le corresponde",
+      "opciones": {
+        "A": "proferir de todas formas la liquidación de revisión, para dejar en firme la determinación oficial.",
+        "B": "verificar la corrección y el pago, y dar por terminada la actuación sobre los hechos aceptados.",
+        "C": "rechazar la corrección, porque una vez notificado el requerimiento ya no se puede corregir."
+      },
+      "correcta": "B",
+      "explicacion": "La corrección provocada por el requerimiento especial termina la controversia sobre los hechos aceptados.\n[A] Incorrecta. Si el contribuyente acepta todo, corrige y paga, no hay diferencia que liquidar: expedir la liquidación sería innecesario.\n[B] Correcta. El art. 709 ET permite al contribuyente aceptar total o parcialmente los hechos del requerimiento en su respuesta, corregir la declaración con los mayores valores y la sanción por inexactitud reducida a la cuarta parte, y pagar o acordar el pago. Verificado esto, la actuación termina sobre lo aceptado.\n[C] Incorrecta. Después del requerimiento especial no cabe la corrección voluntaria del art. 588 ET, pero sí la corrección provocada del art. 709 ET.",
+      "norma": "Estatuto Tributario, arts. 588 y 709",
+      "dificultad": 2,
+      "etiquetas": [
+        "corrección provocada",
+        "requerimiento especial"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-030",
+      "contexto": "Al hacer control posterior a un importador, el profesional verifica declaraciones de importación cuyas mercancías obtuvieron levante hace varios meses. Encuentra indicios de que se declaró un valor inferior al realmente pagado.",
+      "enunciado": "La actuación que adelanta el profesional corresponde al",
+      "opciones": {
+        "A": "control simultáneo, porque verifica la declaración de importación presentada.",
+        "B": "control anterior, porque usa información recibida antes del levante.",
+        "C": "control posterior, porque se ejerce después del levante de la mercancía."
+      },
+      "correcta": "C",
+      "explicacion": "El control aduanero se clasifica según el momento en que se ejerce frente al levante.\n[A] Incorrecta. El control simultáneo se ejerce durante el desaduanamiento, hasta el levante o la autorización de embarque, por ejemplo con la inspección física o documental.\n[B] Incorrecta. El control anterior se ejerce antes de la presentación de la declaración, con información previa como manifiestos y documentos de viaje.\n[C] Correcta. El Decreto 1165 de 2019 define el control posterior como el que se ejerce a partir del levante o de la autorización de embarque. Es el campo propio de la fiscalización aduanera.",
+      "norma": "Decreto 1165 de 2019, art. 3 (definiciones de control)",
+      "dificultad": 1,
+      "etiquetas": [
+        "control aduanero",
+        "control posterior"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-031",
+      "contexto": "En una acción de control a un almacén, el profesional encuentra mercancía extranjera. El comerciante no presenta declaración de importación ni ningún documento que acredite su legal introducción, y no se trata de mercancía de prohibida importación.",
+      "enunciado": "Frente a esta situación, al profesional le corresponde",
+      "opciones": {
+        "A": "aprehender la mercancía mediante acta e iniciar el proceso administrativo correspondiente.",
+        "B": "ordenar la destrucción inmediata de la mercancía en presencia del comerciante.",
+        "C": "dejar la mercancía en poder del comerciante y otorgarle un plazo para nacionalizarla."
+      },
+      "correcta": "A",
+      "explicacion": "La mercancía sin documentos que acrediten su legal introducción está incursa en causal de aprehensión.\n[A] Correcta. La aprehensión es la medida cautelar de retención de mercancías incursas en una causal (Decreto 1165 de 2019 y Decreto 920 de 2023). Se documenta en un acta y da inicio al proceso en el que el interesado puede acreditar la legalidad de la mercancía antes de decidir su decomiso.\n[B] Incorrecta. La destrucción no es una medida inmediata en la diligencia: la disposición de la mercancía se decide después del proceso y con los procedimientos y actas previstos.\n[C] Incorrecta. Dejar la mercancía en poder del comerciante sin medida cautelar permitiría su ocultamiento o comercialización, y desconoce el deber de control.",
+      "norma": "Decreto 1165 de 2019; Decreto 920 de 2023",
+      "dificultad": 1,
+      "etiquetas": [
+        "aprehensión",
+        "control posterior"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-032",
+      "contexto": "Dentro de un proceso iniciado por aprehensión, el interesado presenta, en la oportunidad prevista, la declaración de importación con levante que ampara exactamente la mercancía aprehendida. El profesional verifica que el documento es auténtico y corresponde a la mercancía.",
+      "enunciado": "Con base en lo verificado, al profesional le corresponde proyectar la decisión de",
+      "opciones": {
+        "A": "decomisar la mercancía, porque la aprehensión ya se había realizado en debida forma.",
+        "B": "devolver la mercancía, porque se acreditó su legal introducción al país.",
+        "C": "rematar la mercancía y entregar el producto al interesado, descontando los gastos."
+      },
+      "correcta": "B",
+      "explicacion": "La aprehensión es una medida cautelar: si se acredita la legalidad, no procede el decomiso.\n[A] Incorrecta. El decomiso solo procede cuando no se acredita la legal introducción o permanencia de la mercancía. Que la aprehensión haya sido regular no basta para decomisar.\n[B] Correcta. El proceso de decomiso permite al interesado demostrar la legalidad de la mercancía. Si presenta la declaración de importación que la ampara, debe ordenarse su devolución.\n[C] Incorrecta. El remate es una forma de disposición de mercancías que pasaron a la Nación. No aplica a mercancía cuya legalidad se demostró.",
+      "norma": "Decreto 1165 de 2019; Decreto 920 de 2023 (régimen de decomiso)",
+      "dificultad": 2,
+      "etiquetas": [
+        "decomiso",
+        "aprehensión"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-033",
+      "contexto": "En control posterior, el profesional encuentra que un importador declaró una subpartida arancelaria con tarifa del 5%, cuando la mercancía corresponde a una subpartida con tarifa del 15%. Se generó un menor pago de tributos aduaneros.",
+      "enunciado": "Para determinar los tributos dejados de pagar, al profesional le corresponde adelantar el proceso para expedir",
+      "opciones": {
+        "A": "una liquidación oficial de corrección, que procede por errores en subpartida y tarifa.",
+        "B": "una liquidación de aforo, porque la declaración con subpartida errada no tiene validez.",
+        "C": "una resolución de decomiso, porque la mercancía quedó mal clasificada en la declaración."
+      },
+      "correcta": "A",
+      "explicacion": "Los errores de clasificación arancelaria y de tarifa se corrigen mediante liquidación oficial de corrección.\n[A] Correcta. En la regulación aduanera, la liquidación oficial de corrección procede para corregir errores en la subpartida, las tarifas, la tasa de cambio, las sanciones, las operaciones aritméticas o la modalidad, entre otros, que generen un menor pago de tributos. La liquidación oficial de revisión se reserva para el valor en aduana.\n[B] Incorrecta. La declaración existe y produce efectos; el error en la subpartida no la invalida. El aforo es una figura del procedimiento tributario para omisos.\n[C] Incorrecta. La mercancía fue declarada y obtuvo levante: el problema es tributario (un menor pago), no la falta de legal introducción que justificaría el decomiso.",
+      "norma": "Decreto 1165 de 2019 – liquidaciones oficiales en materia aduanera",
+      "dificultad": 2,
+      "etiquetas": [
+        "liquidación oficial de corrección",
+        "clasificación arancelaria"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-034",
+      "contexto": "Un estudio de precios revela que un importador declara, en forma reiterada, un valor muy inferior al de mercancías idénticas importadas por otros en el mismo periodo. El profesional tiene una duda razonable sobre la veracidad del valor declarado.",
+      "enunciado": "Frente a la duda razonable, al profesional le corresponde",
+      "opciones": {
+        "A": "rechazar de inmediato el valor declarado y aplicar el precio de las mercancías idénticas.",
+        "B": "solicitar al importador información y documentos que justifiquen el valor declarado.",
+        "C": "aceptar el valor declarado, porque el valor de transacción no puede cuestionarse."
+      },
+      "correcta": "B",
+      "explicacion": "Ante una duda razonable, el importador tiene derecho a justificar el valor declarado antes de que se rechace.\n[A] Incorrecta. Rechazar el valor sin darle al importador la oportunidad de justificarlo desconoce el procedimiento de duda razonable y el debido proceso. Además, los métodos de valoración se aplican en orden sucesivo.\n[B] Correcta. Según el Acuerdo de Valoración de la OMC y la normativa andina sobre la duda razonable, la aduana debe pedir al importador explicaciones, documentos o pruebas que demuestren que el valor declarado es el precio realmente pagado o por pagar. Solo si no se justifica se descarta el valor de transacción.\n[C] Incorrecta. El valor de transacción es el método principal, pero no es incuestionable: la aduana puede verificarlo cuando tiene motivos para dudar de su veracidad.",
+      "norma": "Acuerdo de Valoración de la OMC; normativa andina de valoración (duda razonable)",
+      "dificultad": 3,
+      "etiquetas": [
+        "valoración aduanera",
+        "duda razonable"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-035",
+      "contexto": "En una acción de control, el profesional encuentra mercancía extranjera de prohibida importación, sin documentos. El propietario pide que se le permita legalizarla pagando los tributos y la sanción.",
+      "enunciado": "Frente a la solicitud, al profesional le corresponde",
+      "opciones": {
+        "A": "aceptar la legalización, siempre que el propietario pague los tributos y el rescate.",
+        "B": "aceptar la legalización solo si la mercancía no supera los 50 salarios mínimos.",
+        "C": "aprehender la mercancía, porque la mercancía prohibida no puede legalizarse."
+      },
+      "correcta": "C",
+      "explicacion": "La legalización no procede para mercancías de prohibida importación.\n[A] Incorrecta. La legalización con pago de tributos y rescate solo es posible para mercancías que pueden importarse. Una mercancía prohibida no puede ingresar legalmente, por lo que no puede legalizarse.\n[C] Correcta. La mercancía de prohibida importación está incursa en causal de aprehensión y decomiso, y no puede legalizarse (Decreto 1165 de 2019 y Decreto 920 de 2023). Según la cuantía, también puede haber consecuencias penales.\n[B] Incorrecta. El umbral de 50 SMLMV es un elemento del delito de contrabando (art. 319 CP); no habilita la legalización de mercancía prohibida.",
+      "norma": "Decreto 1165 de 2019; Decreto 920 de 2023",
+      "dificultad": 2,
+      "etiquetas": [
+        "legalización",
+        "mercancía prohibida"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-036",
+      "contexto": "Antes de expedir una liquidación oficial que determina mayores tributos aduaneros a un importador, el profesional debe garantizarle la oportunidad de conocer y controvertir la propuesta de la DIAN.",
+      "enunciado": "Para garantizar ese derecho, al profesional le corresponde notificar previamente",
+      "opciones": {
+        "A": "un requerimiento especial aduanero con la propuesta de liquidación y sus fundamentos.",
+        "B": "una resolución de decomiso con la descripción de la mercancía y de su valor.",
+        "C": "un emplazamiento para declarar con el plazo para presentar una nueva declaración."
+      },
+      "correcta": "A",
+      "explicacion": "En el procedimiento aduanero, la liquidación oficial va precedida de un requerimiento especial aduanero.\n[A] Correcta. El requerimiento especial aduanero es el acto que propone la liquidación oficial o la sanción, con sus fundamentos de hecho y de derecho, y otorga al interesado un plazo para responder y aportar pruebas antes de la decisión de fondo.\n[B] Incorrecta. La resolución de decomiso decide la situación jurídica de mercancías aprehendidas; no es el acto previo a la liquidación de tributos.\n[C] Incorrecta. El emplazamiento para declarar es una figura del procedimiento tributario para omisos (art. 715 ET), no del aduanero.",
+      "norma": "Decreto 1165 de 2019; Decreto 920 de 2023 (procedimiento aduanero)",
+      "dificultad": 2,
+      "etiquetas": [
+        "requerimiento especial aduanero",
+        "procedimiento aduanero"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-037",
+      "contexto": "En control posterior, el profesional revisa una declaración de importación aceptada hace dos años y medio. El importador alega que la DIAN ya no puede revisarla.",
+      "enunciado": "Al profesional le corresponde responder que la declaración aduanera",
+      "opciones": {
+        "A": "quedó en firme al año de su aceptación, por lo que no puede revisarse.",
+        "B": "puede revisarse sin límite de tiempo, porque los tributos aduaneros no prescriben.",
+        "C": "puede revisarse, porque queda en firme a los tres años de su aceptación."
+      },
+      "correcta": "C",
+      "explicacion": "La declaración aduanera queda en firme transcurridos 3 años desde su aceptación.\n[A] Incorrecta. Un año no es el término de firmeza de la declaración aduanera.\n[C] Correcta. La regulación aduanera (Decreto 1165 de 2019) establece que la declaración queda en firme transcurridos 3 años desde su aceptación, salvo que antes se haya notificado requerimiento especial aduanero. A los dos años y medio todavía puede revisarse.\n[B] Incorrecta. La facultad de revisión no es ilimitada: la firmeza da seguridad jurídica al declarante.",
+      "norma": "Decreto 1165 de 2019 – firmeza de la declaración aduanera",
+      "dificultad": 2,
+      "etiquetas": [
+        "firmeza",
+        "declaración aduanera"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-038",
+      "contexto": "Durante el desaduanamiento, el sistema de gestión del riesgo selecciona una declaración de importación para inspección. El profesional debe explicar al importador en qué consiste la inspección física.",
+      "enunciado": "Al profesional le corresponde explicar que la inspección física consiste en",
+      "opciones": {
+        "A": "revisar solo los documentos soporte de la declaración, sin examinar la mercancía.",
+        "B": "auditar la contabilidad del importador para verificar el pago de los tributos.",
+        "C": "examinar la mercancía para verificar su naturaleza, cantidad y clasificación declaradas."
+      },
+      "correcta": "C",
+      "explicacion": "En el control simultáneo, la inspección puede ser documental o física.\n[A] Incorrecta. Esa es la inspección documental: se verifica la información de la declaración frente a los documentos soporte, sin examinar la mercancía.\n[C] Correcta. La inspección aduanera física es la actuación en la que la autoridad examina directamente la mercancía para verificar su naturaleza, descripción, estado, cantidad, peso, medida, origen, valor y clasificación arancelaria, frente a lo declarado y a los documentos soporte (Decreto 1165 de 2019).\n[B] Incorrecta. Auditar la contabilidad del importador es una actuación de control posterior, no parte de la inspección durante el desaduanamiento.",
+      "norma": "Decreto 1165 de 2019 – inspección aduanera",
+      "dificultad": 1,
+      "etiquetas": [
+        "inspección aduanera",
+        "control simultáneo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-039",
+      "contexto": "En control posterior, el profesional comprueba que un importador obtuvo una preferencia arancelaria de un tratado de libre comercio con un certificado de origen que no cumple los requisitos del tratado.",
+      "enunciado": "Frente a lo verificado, al profesional le corresponde",
+      "opciones": {
+        "A": "mantener la preferencia, porque el certificado fue aceptado al momento del levante.",
+        "B": "decomisar la mercancía, porque el certificado de origen no cumple los requisitos.",
+        "C": "desconocer la preferencia y determinar los tributos aduaneros dejados de pagar."
+      },
+      "correcta": "C",
+      "explicacion": "Si el origen no se acredita en debida forma, se pierde el trato preferencial y deben pagarse los tributos diferenciales.\n[A] Incorrecta. Que la declaración haya obtenido levante no impide el control posterior dentro del término de firmeza: la aceptación inicial no convalida un certificado irregular.\n[C] Correcta. La preferencia arancelaria depende de cumplir las reglas de origen del tratado. Si el certificado no cumple los requisitos, se desconoce la preferencia y se determinan los mayores tributos mediante liquidación oficial, con las sanciones que correspondan.\n[B] Incorrecta. La mercancía fue declarada e ingresó legalmente: el problema es el trato arancelario aplicado, no la falta de legal introducción que justificaría el decomiso.",
+      "norma": "Decreto 1165 de 2019; acuerdos comerciales vigentes (reglas de origen)",
+      "dificultad": 2,
+      "etiquetas": [
+        "origen",
+        "preferencias arancelarias"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-040",
+      "contexto": "Una agencia de aduanas presentó una declaración de importación en nombre de un importador. En control posterior, se encuentran errores en la información declarada que generaron un menor pago de tributos.",
+      "enunciado": "Al analizar las responsabilidades, al profesional le corresponde tener en cuenta que la agencia de aduanas",
+      "opciones": {
+        "A": "no tiene responsabilidad, porque solo actuó como mandataria del importador.",
+        "B": "responde únicamente si el importador demuestra que la agencia actuó con dolo.",
+        "C": "responde por la exactitud y veracidad de la información que declaró."
+      },
+      "correcta": "C",
+      "explicacion": "Las agencias de aduanas son usuarios aduaneros con responsabilidades propias.\n[A] Incorrecta. Actuar en representación de un tercero no las exime: la regulación les asigna obligaciones propias y un régimen sancionatorio.\n[C] Correcta. Las agencias de aduanas responden administrativamente por la exactitud y veracidad de la información contenida en las declaraciones que presentan y por el cumplimiento de sus obligaciones aduaneras, sin perjuicio de la responsabilidad del importador (Decreto 1165 de 2019).\n[B] Incorrecta. La responsabilidad administrativa aduanera no exige probar dolo; se configura por el incumplimiento de las obligaciones previstas.",
+      "norma": "Decreto 1165 de 2019 – agencias de aduanas",
+      "dificultad": 2,
+      "etiquetas": [
+        "agencias de aduanas",
+        "responsabilidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-041",
+      "contexto": "Un importador, antes de que la DIAN le notifique cualquier requerimiento, detecta que declaró una cantidad de mercancía menor a la real y quiere subsanar el error.",
+      "enunciado": "Para orientarlo, al profesional le corresponde indicarle que puede",
+      "opciones": {
+        "A": "presentar una declaración de corrección, liquidando los mayores tributos y la sanción que corresponda.",
+        "B": "esperar el control posterior, porque solo la DIAN puede modificar una declaración con levante.",
+        "C": "presentar una nueva declaración de importación que reemplace a la anterior sin consecuencias."
+      },
+      "correcta": "A",
+      "explicacion": "El declarante puede corregir voluntariamente su declaración aduanera.\n[A] Correcta. La regulación aduanera permite al declarante presentar una declaración de corrección para subsanar errores u omisiones que generen un menor pago de tributos, liquidando los mayores valores y la sanción correspondiente, que se reduce cuando la corrección es voluntaria.\n[B] Incorrecta. La modificación no es exclusiva de la DIAN: el declarante tiene la posibilidad de corregir, y hacerlo antes del control es más favorable.\n[C] Incorrecta. No se presenta una nueva declaración que «reemplace» la anterior sin consecuencias: la figura es la declaración de corrección, con sus efectos tributarios y sancionatorios.",
+      "norma": "Decreto 1165 de 2019 – declaración de corrección",
+      "dificultad": 2,
+      "etiquetas": [
+        "declaración de corrección",
+        "corrección voluntaria"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-042",
+      "contexto": "Una mercancía llegó al depósito y su consignatario no la declaró ni la retiró dentro del término de almacenamiento permitido. El importador pregunta al profesional qué ocurre con ella.",
+      "enunciado": "Al profesional le corresponde explicar que la mercancía",
+      "opciones": {
+        "A": "pasa inmediatamente a la Nación, sin posibilidad alguna de recuperarla.",
+        "B": "se entiende importada automáticamente y se liquidan los tributos de oficio.",
+        "C": "queda en abandono legal, pero puede rescatarse dentro del término previsto."
+      },
+      "correcta": "C",
+      "explicacion": "La mercancía no declarada ni retirada a tiempo queda en abandono legal, del cual puede rescatarse.\n[A] Incorrecta. El paso a la Nación no es inmediato: antes existe la oportunidad de rescate dentro del término que fija la regulación.\n[C] Correcta. Vencido el término de almacenamiento sin declarar ni retirar la mercancía, esta queda en abandono legal. Dentro del plazo previsto, el interesado puede rescatarla presentando la declaración, pagando los tributos y el valor del rescate, y cumpliendo los requisitos de la mercancía (Decreto 1165 de 2019).\n[B] Incorrecta. No hay importación automática: la importación exige una declaración y el cumplimiento de requisitos por parte del declarante.",
+      "norma": "Decreto 1165 de 2019 – abandono legal y rescate",
+      "dificultad": 2,
+      "etiquetas": [
+        "abandono legal",
+        "rescate"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-043",
+      "contexto": "En una investigación aduanera, el profesional encuentra que la mercancía ingresó por un puerto habilitado, se presentó a la aduana y se declaró, pero con una descripción falsa para eludir un requisito de importación.",
+      "enunciado": "Al calificar la conducta, al profesional le corresponde considerar que se trata de",
+      "opciones": {
+        "A": "un caso de contrabando abierto, porque la mercancía eludió un requisito de importación.",
+        "B": "un caso de elusión lícita, porque la mercancía sí se presentó y se declaró ante la aduana.",
+        "C": "un caso de contrabando técnico, porque se declaró con información falsa ante la aduana."
+      },
+      "correcta": "C",
+      "explicacion": "La distinción depende de si la mercancía se sometió al control aduanero.\n[A] Incorrecta. El contrabando abierto implica introducir mercancía por lugares no habilitados o sustraerla del control aduanero. Aquí sí pasó por la aduana.\n[C] Correcta. Hay contrabando técnico cuando la mercancía se somete al control aduanero, pero con información falsa o inexacta (descripción, cantidad, valor, origen) para pagar menos tributos o eludir restricciones.\n[B] Incorrecta. Falsear la información de la declaración no es elusión lícita: es una conducta irregular que acarrea consecuencias administrativas y, según la cuantía, penales.",
+      "norma": "Decreto 1165 de 2019; Ley 1762 de 2015",
+      "dificultad": 1,
+      "etiquetas": [
+        "contrabando técnico",
+        "contrabando abierto"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-044",
+      "contexto": "El profesional prepara la programación de visitas de control posterior del trimestre. Tiene 300 importadores posibles, pero el equipo solo puede atender 40.",
+      "enunciado": "Para seleccionar los importadores a visitar, al profesional le corresponde",
+      "opciones": {
+        "A": "priorizarlos según los perfiles de riesgo y la información de inteligencia disponible.",
+        "B": "elegirlos por orden alfabético, para garantizar un trato igual a todos los importadores.",
+        "C": "elegir a los de mayor volumen de importaciones, sin considerar otros criterios."
+      },
+      "correcta": "A",
+      "explicacion": "La fiscalización se orienta por la gestión del riesgo para usar con eficiencia recursos limitados.\n[A] Correcta. La DIAN aplica un sistema de gestión del riesgo que analiza la información disponible para seleccionar a los usuarios con mayor probabilidad de incumplimiento. Así se concentran los recursos donde el control genera más impacto.\n[B] Incorrecta. El orden alfabético no responde a ningún criterio de riesgo: la igualdad no exige controlar a todos por igual, sino aplicar criterios objetivos.\n[C] Incorrecta. El volumen es solo uno de los factores de riesgo. Usarlo como único criterio dejaría por fuera a importadores pequeños con alto riesgo de evasión.",
+      "norma": "Decreto 1165 de 2019 – sistema de gestión del riesgo",
+      "dificultad": 1,
+      "etiquetas": [
+        "gestión del riesgo",
+        "programación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "procedimiento-fiscalizacion-045",
+      "contexto": "Al proyectar un requerimiento especial, un profesional menciona como fundamento únicamente que «el contribuyente no justificó sus costos», sin indicar qué costos, por qué valor ni con base en qué pruebas.",
+      "enunciado": "Al revisar el proyecto, al jefe le corresponde pedir que se ajuste para",
+      "opciones": {
+        "A": "agregar solo la cuantía total, porque las razones se expondrán después en la liquidación.",
+        "B": "eliminar la motivación, porque el requerimiento es un acto de trámite que no requiere sustento.",
+        "C": "precisar los puntos que se proponen modificar, las cifras y las razones que los sustentan."
+      },
+      "correcta": "C",
+      "explicacion": "El requerimiento especial debe contener todos los puntos que se proponen modificar y sus razones.\n[C] Correcta. El art. 703 ET exige que el requerimiento contenga todos los puntos que se proponga modificar, con explicación de las razones en que se sustenta. El art. 704 ET exige incluir la cuantificación de los impuestos, anticipos, retenciones y sanciones. Sin esa precisión, el contribuyente no puede defenderse.\n[B] Incorrecta. Aunque sea un acto de trámite, el requerimiento debe estar motivado: delimita la controversia y condiciona la liquidación (correspondencia).\n[A] Incorrecta. Las razones no pueden aplazarse para la liquidación: la liquidación no puede introducir fundamentos que no se plantearon en el requerimiento.",
+      "norma": "Estatuto Tributario, arts. 703, 704 y 711",
+      "dificultad": 2,
+      "etiquetas": [
+        "requerimiento especial",
+        "motivación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

@@ -179,6 +179,107 @@
         "recaudo"
       ],
       "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "constitucion-010",
+      "contexto": "Una empresa vierte residuos tóxicos en un río del que se abastece todo un municipio, afectando el ambiente y la salubridad pública.",
+      "enunciado": "¿Cuál es el mecanismo constitucional más adecuado para proteger estos derechos?",
+      "opciones": {
+        "A": "La acción de tutela.",
+        "B": "La acción de cumplimiento.",
+        "C": "La acción popular.",
+        "D": "El hábeas data."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 88 C.P.: las acciones populares protegen los derechos e intereses colectivos, como el ambiente, la salubridad pública, el espacio público, la moral administrativa y la libre competencia. La tutela (art. 86) protege derechos fundamentales individuales. La acción de cumplimiento (art. 87) exige el cumplimiento de una ley o acto administrativo. El hábeas data (art. 15) protege la información personal. Para diferenciarlas: lo colectivo → popular; lo fundamental → tutela; una norma incumplida → cumplimiento.",
+      "norma": "Constitución Política, arts. 86, 87 y 88; Ley 472 de 1998",
+      "dificultad": 1,
+      "etiquetas": [
+        "mecanismos de protección",
+        "acción popular"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "constitucion-011",
+      "contexto": "",
+      "enunciado": "¿Cuál combinación de términos máximos para decidir es correcta? (hábeas corpus / acción de tutela)",
+      "opciones": {
+        "A": "24 horas / 15 días",
+        "B": "36 horas / 10 días",
+        "C": "10 días / 36 horas",
+        "D": "72 horas / 10 días hábiles"
+      },
+      "correcta": "B",
+      "explicacion": "El hábeas corpus (art. 30 C.P.) protege la libertad de quien está privado de ella ilegalmente y debe resolverse en el término de 36 horas. La tutela (art. 86 C.P.) debe resolverse en máximo 10 días entre la solicitud y la decisión. El fallo de tutela puede impugnarse dentro de los 3 días siguientes a su notificación (Decreto 2591 de 1991, art. 31). Recuerda: la libertad es lo más urgente, por eso se cuenta en horas.",
+      "norma": "Constitución Política, arts. 30 y 86; Decreto 2591 de 1991",
+      "dificultad": 2,
+      "etiquetas": [
+        "hábeas corpus",
+        "tutela",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "constitucion-012",
+      "contexto": "",
+      "enunciado": "Según el artículo 118 de la Constitución, el Ministerio Público es ejercido por:",
+      "opciones": {
+        "A": "El Procurador General, el Defensor del Pueblo, los procuradores delegados y personeros.",
+        "B": "El Fiscal General de la Nación, los fiscales delegados y los jueces penales de cada municipio.",
+        "C": "El Contralor General, los contralores departamentales y la Auditoría General.",
+        "D": "El Ministro de Justicia, los ministros del despacho y los superintendentes."
+      },
+      "correcta": "A",
+      "explicacion": "Art. 118 C.P.: el Ministerio Público es ejercido por el Procurador General de la Nación, el Defensor del Pueblo, los procuradores delegados, los agentes del Ministerio Público ante las autoridades jurisdiccionales, los personeros municipales y los demás funcionarios que determine la ley. Junto con la Contraloría (control fiscal) forma los órganos de control (art. 117). La Fiscalía pertenece a la Rama Judicial y los ministros, a la Ejecutiva.",
+      "norma": "Constitución Política, arts. 117 y 118",
+      "dificultad": 2,
+      "etiquetas": [
+        "órganos de control",
+        "estructura del Estado"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "constitucion-013",
+      "contexto": "",
+      "enunciado": "La Registraduría Nacional del Estado Civil, según la Constitución, hace parte de:",
+      "opciones": {
+        "A": "La Rama Ejecutiva, como entidad adscrita al Ministerio del Interior.",
+        "B": "Los órganos de control, junto con la Procuraduría y la Contraloría.",
+        "C": "La Rama Judicial, por su función de resolver asuntos electorales.",
+        "D": "La organización electoral, junto con el Consejo Nacional Electoral."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 120 C.P.: la organización electoral está conformada por el Consejo Nacional Electoral, por la Registraduría Nacional del Estado Civil y por los demás organismos que establezca la ley. Es uno de los órganos autónomos e independientes que existen además de las tres ramas (art. 113). Los órganos de control son el Ministerio Público y la Contraloría (art. 117). Mapa rápido: ramas (legislativa, ejecutiva, judicial) + órganos de control + organización electoral + otros autónomos (Banco de la República, CNSC).",
+      "norma": "Constitución Política, arts. 113, 117 y 120",
+      "dificultad": 2,
+      "etiquetas": [
+        "estructura del Estado",
+        "organización electoral"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "constitucion-014",
+      "contexto": "Una persona tiene otro medio de defensa judicial, pero si espera a que ese proceso termine sufrirá un perjuicio irremediable en su derecho fundamental a la salud.",
+      "enunciado": "¿Procede la acción de tutela?",
+      "opciones": {
+        "A": "No, porque la tutela nunca procede cuando existe otro medio judicial.",
+        "B": "Sí, pero solo si la persona renuncia expresamente al otro medio judicial.",
+        "C": "Sí, como mecanismo transitorio para evitar el perjuicio irremediable.",
+        "D": "No, porque el derecho a la salud no puede protegerse mediante tutela."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 86 C.P.: la tutela solo procede cuando el afectado no disponga de otro medio de defensa judicial, salvo que se utilice como mecanismo transitorio para evitar un perjuicio irremediable. En ese caso, el juez concede un amparo temporal mientras se decide el proceso principal (Decreto 2591 de 1991, art. 8). La Corte Constitucional reconoce la salud como derecho fundamental autónomo (Ley 1751 de 2015). No se exige renunciar al otro medio.",
+      "norma": "Constitución Política, art. 86; Decreto 2591 de 1991, arts. 6 y 8",
+      "dificultad": 2,
+      "etiquetas": [
+        "tutela",
+        "perjuicio irremediable"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
     }
   ]
 }

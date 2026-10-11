@@ -295,6 +295,168 @@
         "efecto suspensivo"
       ],
       "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "cpaca-016",
+      "contexto": "Un ciudadano pide a una entidad copia de un contrato. Pasan 10 días y la entidad no responde.",
+      "enunciado": "Según el artículo 14 del CPACA, ¿qué consecuencia tiene ese silencio?",
+      "opciones": {
+        "A": "Se entiende negada y el ciudadano debe esperar 3 meses para poder demandar ante el juez.",
+        "B": "Se entiende aceptada y las copias deben entregarse dentro de los 3 días siguientes.",
+        "C": "La entidad tiene automáticamente 10 días adicionales para responder.",
+        "D": "El ciudadano debe presentar una nueva petición, esta vez como consulta."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 14 num. 1 CPACA: las peticiones de documentos y de información deben resolverse dentro de los 10 días siguientes a su recepción. Si no se da respuesta en ese término, se entiende, para todos los efectos legales, que la solicitud fue aceptada; la administración ya no puede negar la entrega y las copias deben entregarse dentro de los 3 días siguientes. Es un caso de silencio positivo legal, distinto del silencio negativo general de 3 meses (art. 83).",
+      "norma": "Ley 1437 de 2011, art. 14 num. 1 (Ley 1755 de 2015)",
+      "dificultad": 2,
+      "etiquetas": [
+        "derecho de petición",
+        "términos",
+        "documentos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "cpaca-017",
+      "contexto": "Una empresa pregunta a la DIAN cómo debe interpretarse una norma sobre un beneficio tributario, para aplicarla en su caso.",
+      "enunciado": "Si no hay norma especial, ¿en qué término debe responderse esta petición?",
+      "opciones": {
+        "A": "Dentro de los 30 días siguientes, porque es una consulta.",
+        "B": "Dentro de los 15 días siguientes, porque es una petición general.",
+        "C": "Dentro de los 10 días siguientes, porque es una solicitud de información.",
+        "D": "Dentro de los 5 días siguientes, porque se trata de un asunto tributario."
+      },
+      "correcta": "A",
+      "explicacion": "Art. 14 CPACA: el término general es de 15 días; las peticiones de documentos e información, 10 días; y las consultas a las autoridades sobre las materias a su cargo (pedir su criterio o interpretación sobre una norma), 30 días. Aquí la empresa pide interpretación, no un documento ni un trámite: es una consulta. Para recordarlo: documentos 10, general 15, consultas 30 (la cifra crece con lo que exige pensar la respuesta).",
+      "norma": "Ley 1437 de 2011, art. 14 (Ley 1755 de 2015)",
+      "dificultad": 2,
+      "etiquetas": [
+        "derecho de petición",
+        "términos",
+        "consultas"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "cpaca-018",
+      "contexto": "Un ciudadano interpuso recurso de apelación contra un acto administrativo. Han pasado 2 meses desde la interposición y no se le ha notificado decisión.",
+      "enunciado": "Según el CPACA, ¿qué ocurre?",
+      "opciones": {
+        "A": "Nada aún: el silencio negativo frente a recursos opera a los 3 meses.",
+        "B": "Se entiende que el recurso fue resuelto a su favor, por silencio positivo legal.",
+        "C": "Se entiende que la decisión es negativa (silencio negativo frente a recursos).",
+        "D": "El acto apelado pierde ejecutoriedad automáticamente por la demora."
+      },
+      "correcta": "C",
+      "explicacion": "El CPACA tiene dos términos de silencio negativo. Frente a peticiones: 3 meses desde su presentación sin decisión notificada (art. 83). Frente a recursos de reposición o apelación: 2 meses desde su interposición (art. 86). Aquí es un recurso, así que a los 2 meses se entiende negado, y el interesado puede acudir al juez. La autoridad conserva el deber de decidir mientras no se haya notificado el auto admisorio de la demanda. Para recordarlo: peticiones 3, recursos 2.",
+      "norma": "Ley 1437 de 2011, arts. 83 y 86",
+      "dificultad": 2,
+      "etiquetas": [
+        "silencio administrativo",
+        "recursos",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "cpaca-019",
+      "contexto": "",
+      "enunciado": "¿Cuál combinación de términos para interponer recursos es correcta? (queja en el CPACA / reposición y apelación en el CPACA / reconsideración tributaria en el ET)",
+      "opciones": {
+        "A": "10 días / 5 días / 2 meses",
+        "B": "5 días / 10 días / 1 mes",
+        "C": "5 días / 10 días / 2 meses",
+        "D": "5 días / 15 días / 3 meses"
+      },
+      "correcta": "C",
+      "explicacion": "Recurso de queja (art. 74 CPACA): dentro de los 5 días siguientes a la notificación de la decisión que rechazó la apelación. Reposición y apelación (art. 76 CPACA): dentro de los 10 días siguientes a la notificación. Reconsideración (art. 720 ET), en materia tributaria: dentro de los 2 meses siguientes a la notificación. Las normas tributarias prevalecen sobre el CPACA en los procesos de la DIAN.",
+      "norma": "Ley 1437 de 2011, arts. 74 y 76; Estatuto Tributario, art. 720",
+      "dificultad": 2,
+      "etiquetas": [
+        "recursos",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "cpaca-020",
+      "contexto": "La entidad envió citación para notificación personal y, al cabo de 5 días, el interesado no compareció. Se envió el aviso con copia del acto, y fue entregado en su dirección un martes.",
+      "enunciado": "¿Cuándo se entiende surtida la notificación?",
+      "opciones": {
+        "A": "Al finalizar el mismo martes de la entrega.",
+        "B": "Al finalizar el día siguiente, es decir, el miércoles.",
+        "C": "Cinco días hábiles después de la entrega del aviso.",
+        "D": "Cuando el interesado firme el recibido del aviso."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 69 CPACA: la notificación por aviso se considera surtida al finalizar el día siguiente al de la entrega del aviso en el lugar de destino. Si se entrega un martes, queda surtida al finalizar el miércoles, y desde el jueves corren los 10 días para interponer recursos. El aviso procede cuando no se logra la notificación personal al cabo de 5 días del envío de la citación (art. 68). Cuando se desconoce la información del destinatario, el aviso se publica por 5 días en la página web y en un lugar visible de la entidad.",
+      "norma": "Ley 1437 de 2011, arts. 68 y 69",
+      "dificultad": 2,
+      "etiquetas": [
+        "notificaciones",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "cpaca-021",
+      "contexto": "En una actuación, la autoridad impulsa de oficio el trámite sin esperar a que el interesado lo pida, cumple estrictamente los términos y evita dilaciones injustificadas.",
+      "enunciado": "Esta conducta materializa principalmente el principio de:",
+      "opciones": {
+        "A": "Eficacia.",
+        "B": "Economía.",
+        "C": "Celeridad.",
+        "D": "Coordinación."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 3 CPACA. Celeridad (num. 13): impulsar oficiosamente los procedimientos, incentivar el uso de las TIC y cumplir los términos sin dilaciones injustificadas. Eficacia (num. 11): que los procedimientos logren su finalidad, removiendo obstáculos formales, evitando fallos inhibitorios y saneando irregularidades. Economía (num. 12): proceder con austeridad y eficiencia, optimizando tiempo y recursos. Coordinación (num. 10): concertar actividades con otras autoridades. Clave para no confundirlos: celeridad es rapidez y cumplimiento de términos; eficacia es lograr el fin del procedimiento.",
+      "norma": "Ley 1437 de 2011, art. 3",
+      "dificultad": 2,
+      "etiquetas": [
+        "principios"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "cpaca-022",
+      "contexto": "",
+      "enunciado": "Cuando una autoridad le solicita información o documentos a otra autoridad, ¿en qué término debe responderse, según el artículo 30 del CPACA?",
+      "opciones": {
+        "A": "En un término no mayor de 10 días.",
+        "B": "En un término no mayor de 15 días.",
+        "C": "En un término no mayor de 30 días.",
+        "D": "En un término no mayor de 3 días."
+      },
+      "correcta": "A",
+      "explicacion": "Art. 30 CPACA (Ley 1755 de 2015): cuando una autoridad formule una petición de información o de documentos a otra, esta debe resolverla en un término no mayor de 10 días. Si se trata de información que afecta derechos fundamentales o la prestación de servicios públicos, el término puede ser menor. Su incumplimiento es falta para el servidor público.",
+      "norma": "Ley 1437 de 2011, art. 30 (Ley 1755 de 2015)",
+      "dificultad": 2,
+      "etiquetas": [
+        "peticiones entre autoridades",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "cpaca-023",
+      "contexto": "La entidad decide el último recurso interpuesto contra un acto y notifica esa decisión un martes.",
+      "enunciado": "Según el artículo 87 del CPACA, ¿desde cuándo queda en firme el acto?",
+      "opciones": {
+        "A": "Desde el mismo martes en que se notificó la decisión.",
+        "B": "Desde el miércoles, día siguiente a la notificación.",
+        "C": "Desde que venzan 10 días hábiles después de la notificación.",
+        "D": "Desde que el interesado manifieste por escrito que lo acepta."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 87 num. 2 CPACA: los actos quedan en firme desde el día siguiente a la publicación, comunicación o notificación de la decisión sobre los recursos interpuestos. Si se notifica el martes, queda en firme el miércoles. Ya no caben recursos en vía administrativa: solo queda la vía judicial. La regla es siempre «desde el día siguiente», en todos los numerales del art. 87.",
+      "norma": "Ley 1437 de 2011, art. 87",
+      "dificultad": 2,
+      "etiquetas": [
+        "firmeza",
+        "conclusión del procedimiento"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
     }
   ]
 }

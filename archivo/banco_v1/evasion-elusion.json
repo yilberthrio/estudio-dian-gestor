@@ -158,6 +158,87 @@
         "contrabando"
       ],
       "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "evasion-elusion-009",
+      "contexto": "Unos comerciantes ingresan al país televisores de procedencia extranjera por una trocha en la frontera, sin pasar por ningún puesto de control aduanero.",
+      "enunciado": "Esta conducta corresponde a:",
+      "opciones": {
+        "A": "Contrabando abierto.",
+        "B": "Contrabando técnico.",
+        "C": "Elusión aduanera.",
+        "D": "Planeación aduanera."
+      },
+      "correcta": "A",
+      "explicacion": "El contrabando abierto consiste en introducir o extraer mercancías por lugares no habilitados (trochas, playas, pasos no autorizados) o sin someterlas al control aduanero. El contrabando técnico ocurre cuando la mercancía sí pasa por los lugares habilitados y se declara, pero con información falsa o inexacta (subfacturación, error de clasificación, falso origen). Diferencia clave: ¿pasó por la aduana? No → abierto; sí, pero mintiendo → técnico.",
+      "norma": "Ley 599 de 2000, art. 319 (Ley 1762 de 2015); Decreto 1165 de 2019",
+      "dificultad": 1,
+      "etiquetas": [
+        "contrabando abierto",
+        "contrabando técnico"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "evasion-elusion-010",
+      "contexto": "La Policía Fiscal y Aduanera encuentra mercancía introducida por un lugar no habilitado, avaluada en 30 salarios mínimos legales mensuales vigentes.",
+      "enunciado": "¿Cómo se trata esta conducta?",
+      "opciones": {
+        "A": "Como delito de contrabando, con pena de prisión de 4 a 8 años.",
+        "B": "Como delito agravado, porque supera los 20 salarios mínimos legales.",
+        "C": "Como infracción tributaria sancionable solo con multa en la declaración.",
+        "D": "Por vía administrativa aduanera: aprehensión y decomiso de la mercancía."
+      },
+      "correcta": "D",
+      "explicacion": "El delito de contrabando (art. 319 CP, modificado por la Ley 1762 de 2015) exige que la mercancía supere los 50 SMLMV. Con 30 SMLMV no hay delito, pero la mercancía sigue estando ilegalmente en el país: procede la vía administrativa aduanera, es decir, aprehensión, proceso de decomiso y sanciones aduaneras. Si superara los 50 SMLMV, además de lo administrativo, habría delito con prisión de 4 a 8 años, agravada si supera los 200 SMLMV.",
+      "norma": "Ley 599 de 2000, art. 319 (Ley 1762 de 2015); Decreto 920 de 2023",
+      "dificultad": 2,
+      "etiquetas": [
+        "contrabando",
+        "umbral penal"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "evasion-elusion-011",
+      "contexto": "",
+      "enunciado": "¿Cuál de las siguientes conductas constituye evasión tributaria (y no planeación tributaria lícita)?",
+      "opciones": {
+        "A": "Registrar costos soportados en facturas de proveedores que no existen.",
+        "B": "Tomar una deducción expresamente consagrada en el Estatuto Tributario.",
+        "C": "Invertir en una zona con un beneficio tributario previsto por la ley.",
+        "D": "Escoger la forma societaria con la carga tributaria legal más baja."
+      },
+      "correcta": "A",
+      "explicacion": "La evasión es el incumplimiento ilícito de la obligación tributaria mediante engaño: costos ficticios, ingresos ocultos, facturas falsas. Registrar costos con facturas de proveedores inexistentes es evasión: la DIAN rechaza esos costos e impone sanción por inexactitud, y puede configurarse delito. Usar deducciones o beneficios previstos en la ley, o escoger la forma jurídica más conveniente con sustancia real, es planeación tributaria lícita. Si se usan actos artificiales sin propósito económico, se configura abuso (art. 869 ET).",
+      "norma": "Estatuto Tributario, arts. 647, 671 y 869",
+      "dificultad": 1,
+      "etiquetas": [
+        "evasión",
+        "planeación tributaria"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "evasion-elusion-012",
+      "contexto": "",
+      "enunciado": "Sobre el reporte de operaciones sospechosas (ROS) que los sujetos obligados envían a la UIAF, es correcto afirmar que:",
+      "opciones": {
+        "A": "Exige tener certeza de que se cometió el delito de lavado de activos.",
+        "B": "Equivale a una denuncia penal y debe presentarse con abogado.",
+        "C": "Debe informarse previamente al cliente sobre el cual se reporta.",
+        "D": "No exige certeza del delito y no constituye una denuncia penal."
+      },
+      "correcta": "D",
+      "explicacion": "El ROS se envía a la UIAF cuando una operación es inusual frente al perfil del cliente y no tiene justificación razonable. No requiere certeza de que exista un delito ni identificar el delito fuente, y no constituye una denuncia penal: la UIAF lo analiza y, si encuentra mérito, informa a las autoridades competentes. Es reservado: está prohibido informar al cliente que fue reportado. Los sujetos obligados que reportan de buena fe no incurren en responsabilidad.",
+      "norma": "Ley 526 de 1999; Estatuto Orgánico del Sistema Financiero, arts. 102 a 107",
+      "dificultad": 2,
+      "etiquetas": [
+        "lavado de activos",
+        "UIAF",
+        "ROS"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
     }
   ]
 }

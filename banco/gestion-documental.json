@@ -2,159 +2,478 @@
   "sesion": "gestion-documental",
   "preguntas": [
     {
-      "id": "gestion-documental-001",
-      "contexto": "",
-      "enunciado": "Según la Ley General de Archivos, el ciclo vital del documento comprende las etapas de:",
+      "id": "gestion-documental-015",
+      "contexto": "En una investigación tributaria se han producido un auto de apertura, un requerimiento ordinario, la respuesta del contribuyente, un acta de inspección y un requerimiento especial. Un profesional nuevo pregunta cómo deben organizarse.",
+      "enunciado": "Al profesional le corresponde indicar que esos documentos deben",
       "opciones": {
-        "A": "Recepción, digitalización y eliminación.",
-        "B": "Producción, préstamo y destrucción.",
-        "C": "Archivo de gestión, central e histórico.",
-        "D": "Archivo activo, archivo pasivo y archivo muerto."
-      },
-      "correcta": "C",
-      "explicacion": "La Ley 594 de 2000 define el ciclo vital del documento como las etapas sucesivas por las que atraviesan los documentos desde su producción o recepción hasta su eliminación o su integración a un archivo permanente. Corresponde a: archivo de gestión (documentos en trámite, consultados frecuentemente por la oficina productora), archivo central (documentos transferidos, de consulta menos frecuente) y archivo histórico (documentos de conservación permanente por su valor histórico, científico o cultural).",
-      "norma": "Ley 594 de 2000, arts. 3 y 23",
-      "dificultad": 1,
-      "etiquetas": [
-        "ciclo vital"
-      ],
-      "origen": "Banco inicial Claude 2026-10-09"
-    },
-    {
-      "id": "gestion-documental-002",
-      "contexto": "",
-      "enunciado": "La Tabla de Retención Documental (TRD) es:",
-      "opciones": {
-        "A": "El listado de series y tipos documentales con su tiempo de permanencia en cada etapa.",
-        "B": "El formato para registrar los préstamos y las devoluciones de expedientes en cada oficina.",
-        "C": "El inventario de los bienes muebles y equipos con que cuenta el archivo central.",
-        "D": "El cronograma anual de capacitaciones en archivo para los servidores de la entidad."
+        "A": "organizarse en un solo expediente, porque pertenecen a una misma actuación.",
+        "B": "archivarse por tipo documental, en carpetas separadas para cada clase de acto.",
+        "C": "guardarse en el puesto de cada funcionario que intervino en la actuación."
       },
       "correcta": "A",
-      "explicacion": "La TRD es el listado de series, con sus correspondientes tipos documentales, a las que se asigna el tiempo de permanencia en cada etapa del ciclo vital y la disposición final (conservación total, eliminación, selección o microfilmación/digitalización). Su elaboración es obligatoria para las entidades públicas según la Ley 594 de 2000 y las normas del Archivo General de la Nación. No confundir con el FUID (Formato Único de Inventario Documental).",
-      "norma": "Ley 594 de 2000, art. 24; Acuerdos AGN",
-      "dificultad": 2,
-      "etiquetas": [
-        "TRD",
-        "instrumentos archivísticos"
-      ],
-      "origen": "Banco inicial Claude 2026-10-09"
-    },
-    {
-      "id": "gestion-documental-003",
-      "contexto": "",
-      "enunciado": "El principio archivístico según el cual los documentos deben conservarse dentro del fondo documental al que naturalmente pertenecen, sin mezclarlos con los de otros productores, se denomina:",
-      "opciones": {
-        "A": "Principio de orden original.",
-        "B": "Principio de procedencia.",
-        "C": "Principio de integridad.",
-        "D": "Principio de disponibilidad."
-      },
-      "correcta": "B",
-      "explicacion": "El principio de procedencia indica que los documentos producidos por una institución u organismo no deben mezclarse con los de otros. El principio de orden original indica que los documentos se ordenan en la secuencia en que se produjeron dentro de cada expediente o serie, respetando el trámite que les dio origen. Ambos son los pilares de la organización archivística.",
-      "norma": "Ley 594 de 2000; Acuerdo AGN 027 de 2006 (glosario)",
-      "dificultad": 2,
-      "etiquetas": [
-        "principios archivísticos"
-      ],
-      "origen": "Banco inicial Claude 2026-10-09"
-    },
-    {
-      "id": "gestion-documental-004",
-      "contexto": "",
-      "enunciado": "La remisión de documentos del archivo de gestión al archivo central, conforme a las TRD, se denomina:",
-      "opciones": {
-        "A": "Transferencia secundaria.",
-        "B": "Eliminación documental.",
-        "C": "Transferencia primaria.",
-        "D": "Depuración."
-      },
-      "correcta": "C",
-      "explicacion": "La transferencia primaria es la remisión de documentos del archivo de gestión al archivo central, una vez cumplido el tiempo de retención fijado en la TRD. La transferencia secundaria es la remisión del archivo central al archivo histórico, para documentos de conservación permanente. La depuración es el retiro de copias, duplicados y documentos sin valor dentro de un expediente; la eliminación es la destrucción de documentos que ya perdieron sus valores, según la TRD y con acta.",
-      "norma": "Ley 594 de 2000; Acuerdos AGN",
-      "dificultad": 2,
-      "etiquetas": [
-        "transferencias"
-      ],
-      "origen": "Banco inicial Claude 2026-10-09"
-    },
-    {
-      "id": "gestion-documental-005",
-      "contexto": "",
-      "enunciado": "¿Qué entidad es el ente rector de la política archivística en Colombia según la Ley 594 de 2000?",
-      "opciones": {
-        "A": "El Ministerio de Tecnologías de la Información y las Comunicaciones.",
-        "B": "La Biblioteca Nacional de Colombia.",
-        "C": "El Departamento Administrativo de la Función Pública.",
-        "D": "El Archivo General de la Nación."
-      },
-      "correcta": "D",
-      "explicacion": "La Ley 594 de 2000 (Ley General de Archivos) establece que el Archivo General de la Nación es la entidad encargada de orientar y coordinar la función archivística en el país, como ente rector del Sistema Nacional de Archivos. Expide las normas técnicas (acuerdos y circulares) sobre gestión documental que deben cumplir las entidades públicas.",
-      "norma": "Ley 594 de 2000, arts. 1 a 8",
+      "explicacion": "Los documentos de una misma actuación se organizan en un solo expediente.\n[A] Correcta. El art. 36 CPACA dispone que los documentos y diligencias relacionados con una misma actuación se organicen en un solo expediente, al cual pueden acumularse otros que se tramiten ante la misma autoridad para evitar decisiones contradictorias. Esto garantiza la integridad y la trazabilidad de la actuación.\n[B] Incorrecta. Separar por tipo documental rompe la unidad del expediente y dificulta reconstruir la actuación.\n[C] Incorrecta. Los documentos son de la entidad, no de los funcionarios, y deben estar en el archivo de gestión de la dependencia, organizados según la TRD.",
+      "norma": "Ley 1437 de 2011, art. 36; Ley 594 de 2000",
       "dificultad": 1,
       "etiquetas": [
-        "institucionalidad"
+        "expediente",
+        "unidad documental"
       ],
-      "origen": "Banco inicial Claude 2026-10-09"
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
     },
     {
-      "id": "gestion-documental-006",
-      "contexto": "",
-      "enunciado": "Una entidad tiene un gran volumen de documentos acumulados durante años sin ningún criterio archivístico. ¿Qué instrumento se usa para organizarlos y valorarlos?",
+      "id": "gestion-documental-016",
+      "contexto": "Un profesional organiza un expediente de fiscalización que contiene documentos producidos entre enero y septiembre. Debe definir el orden de los documentos dentro de la carpeta.",
+      "enunciado": "Al profesional le corresponde ordenar los documentos de forma que",
       "opciones": {
-        "A": "Las Tablas de Valoración Documental (TVD).",
-        "B": "Las Tablas de Retención Documental (TRD).",
-        "C": "El Formato Único de Inventario Documental (FUID).",
-        "D": "El Plan Institucional de Archivos (PINAR)."
-      },
-      "correcta": "A",
-      "explicacion": "Las Tablas de Valoración Documental (TVD) se aplican a los fondos documentales acumulados: documentos reunidos sin criterios archivísticos, antes de existir TRD. Permiten determinar sus tiempos de permanencia y su disposición final. Las TRD se aplican a la documentación que la entidad produce hoy. El FUID es un instrumento de inventario, y el PINAR es el instrumento de planeación de la función archivística.",
-      "norma": "Ley 594 de 2000; Acuerdos AGN (TVD y fondos acumulados)",
-      "dificultad": 2,
-      "etiquetas": [
-        "TVD",
-        "fondos acumulados"
-      ],
-      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
-    },
-    {
-      "id": "gestion-documental-007",
-      "contexto": "",
-      "enunciado": "¿Cuáles de los siguientes son valores secundarios de un documento?",
-      "opciones": {
-        "A": "Administrativo, jurídico y legal.",
-        "B": "Fiscal, contable y técnico.",
-        "C": "Histórico, científico y cultural.",
-        "D": "Probatorio, contractual y fiscal."
+        "A": "el documento más reciente quede al inicio, para consultarlo con rapidez.",
+        "B": "los documentos queden agrupados por remitente, sin importar su fecha.",
+        "C": "el documento más antiguo quede al inicio y el más reciente al final."
       },
       "correcta": "C",
-      "explicacion": "Los valores primarios son los que tienen los documentos mientras sirven a la entidad productora y a los interesados: administrativo, jurídico, legal, fiscal, contable y técnico. Los valores secundarios son los que interesan a la investigación, la ciencia y la cultura una vez agotado el valor inmediato: histórico, científico y cultural. Estos últimos justifican la conservación permanente en el archivo histórico.",
-      "norma": "Ley 594 de 2000; Acuerdo AGN 027 de 2006 (glosario)",
-      "dificultad": 2,
+      "explicacion": "Dentro del expediente se respeta el orden original, que refleja la secuencia del trámite.\n[A] Incorrecta. Poner primero el documento más reciente invierte la secuencia del trámite y desconoce el principio de orden original.\n[B] Incorrecta. Agrupar por remitente rompe la secuencia del trámite y dificulta seguir la actuación.\n[C] Correcta. Según las directrices del Archivo General de la Nación, los documentos se ordenan cronológicamente siguiendo el orden en que se produjeron: el de fecha más antigua es el primero al abrir la carpeta y el más reciente queda al final. Así se aplica el principio de orden original.",
+      "norma": "Ley 594 de 2000; Acuerdo AGN 042 de 2002",
+      "dificultad": 1,
       "etiquetas": [
-        "valoración documental"
+        "orden original",
+        "ordenación"
       ],
-      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
     },
     {
-      "id": "gestion-documental-008",
-      "contexto": "",
-      "enunciado": "Según las directrices del Archivo General de la Nación, ¿cómo se debe foliar un expediente en soporte papel?",
+      "id": "gestion-documental-017",
+      "contexto": "Un expediente de fiscalización ha crecido mucho y la carpeta en la que está guardado ya contiene una gran cantidad de folios.",
+      "enunciado": "Según las recomendaciones del Archivo General de la Nación, al profesional le corresponde abrir una nueva carpeta cuando la actual",
       "opciones": {
-        "A": "Con bolígrafo de tinta azul, en la esquina inferior izquierda de cada hoja.",
-        "B": "Con lápiz de mina negra y blanda, en la esquina superior derecha de cada folio.",
-        "C": "Con sello numerador de tinta roja, en el centro del margen superior de cada página.",
-        "D": "Con lápiz rojo, solo en las hojas que contengan firmas o información relevante."
+        "A": "llegue a aproximadamente 200 folios, continuando la foliación del expediente.",
+        "B": "llegue a 500 folios, iniciando la foliación desde el número 1 en cada carpeta.",
+        "C": "se haya llenado por completo, sin importar el número de folios que contenga."
+      },
+      "correcta": "A",
+      "explicacion": "Las unidades de conservación tienen una capacidad recomendada, y la foliación es continua para todo el expediente.\n[A] Correcta. Las directrices del AGN recomiendan que cada carpeta no supere aproximadamente 200 folios, para facilitar su manejo y conservación. Si el expediente continúa, se abre una nueva carpeta y la foliación sigue de forma consecutiva, porque se numera el expediente completo.\n[B] Incorrecta. 500 folios excede la capacidad recomendada, y reiniciar la foliación en cada carpeta rompe la continuidad y facilita la pérdida o sustracción de documentos.\n[C] Incorrecta. Llenar la carpeta al máximo deteriora los documentos; la capacidad recomendada busca su conservación.",
+      "norma": "Acuerdo AGN 042 de 2002; instructivo de foliación del AGN",
+      "dificultad": 2,
+      "etiquetas": [
+        "unidades de conservación",
+        "foliación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-018",
+      "contexto": "Un contribuyente radica en la ventanilla de la DIAN una respuesta a un requerimiento ordinario el último día del plazo. El funcionario que la recibe debe garantizar que quede constancia del momento de recibo.",
+      "enunciado": "Al funcionario le corresponde",
+      "opciones": {
+        "A": "recibir el documento y registrarlo cuando tenga tiempo, al final de la semana.",
+        "B": "radicarlo de inmediato, asignándole número consecutivo, fecha y hora de recibo.",
+        "C": "devolverlo al contribuyente para que lo envíe por correo certificado a la DIAN."
       },
       "correcta": "B",
-      "explicacion": "La foliación es la numeración consecutiva de los folios de un expediente, siguiendo el orden original. El AGN indica hacerla con lápiz de mina negra y blanda (HB o B), en la esquina superior derecha del folio, en el mismo sentido del texto, sin enmendaduras y numerando todos los folios útiles. No se usa bolígrafo ni lápiz de color, y no se folian solo algunas hojas. La foliación garantiza la integridad y el control del expediente.",
-      "norma": "Archivo General de la Nación – instructivo de foliación",
+      "explicacion": "La radicación deja constancia de la fecha y hora de recibo de las comunicaciones oficiales.\n[A] Incorrecta. Registrar después hace perder la constancia exacta del recibo, que puede ser decisiva para establecer si la respuesta fue oportuna.\n[B] Correcta. Según la regulación del AGN sobre comunicaciones oficiales (Acuerdo 060 de 2001), las unidades de correspondencia deben radicar los documentos recibidos asignándoles un número consecutivo, con la fecha y la hora de recibo. A partir de esa constancia se cuentan los términos legales.\n[C] Incorrecta. Devolver un documento presentado en debida forma desconoce el derecho del contribuyente y puede afectar la oportunidad de su respuesta.",
+      "norma": "Acuerdo AGN 060 de 2001; Ley 1437 de 2011",
+      "dificultad": 1,
+      "etiquetas": [
+        "radicación",
+        "comunicaciones oficiales"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-019",
+      "contexto": "La jefe de una división de fiscalización necesita retirar del archivo un expediente para revisarlo en su oficina durante una semana.",
+      "enunciado": "Para garantizar la trazabilidad del expediente, al encargado del archivo le corresponde",
+      "opciones": {
+        "A": "entregarlo sin registro, porque se trata de una jefe de la propia dependencia.",
+        "B": "entregar una copia simple y conservar el original, sin dejar ninguna constancia.",
+        "C": "registrar el préstamo con el expediente, el responsable, la fecha y la devolución."
+      },
+      "correcta": "C",
+      "explicacion": "Todo préstamo de expedientes debe registrarse para saber en cualquier momento dónde están.\n[A] Incorrecta. El cargo del solicitante no exime del control: sin registro se pierde la trazabilidad y aumenta el riesgo de pérdida.\n[B] Incorrecta. Entregar copias sin constancia no resuelve la necesidad de revisar el original ni deja trazabilidad del trámite.\n[C] Correcta. El control de préstamo registra qué expediente sale, quién lo recibe, en qué fecha, para qué y cuándo debe devolverse. Así se garantiza la trazabilidad y se protege la integridad del expediente (Ley 594 de 2000 y lineamientos del AGN).",
+      "norma": "Ley 594 de 2000; lineamientos del AGN sobre consulta y préstamo",
+      "dificultad": 1,
+      "etiquetas": [
+        "préstamo",
+        "trazabilidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-020",
+      "contexto": "Un expediente complejo de fiscalización tiene cientos de documentos de distintos tipos, producidos a lo largo de varios años.",
+      "enunciado": "Para controlar su contenido y facilitar su consulta, al profesional le corresponde diligenciar",
+      "opciones": {
+        "A": "una hoja de control que relacione cada documento, su fecha y los folios.",
+        "B": "un acta de eliminación para retirar los documentos de menor importancia.",
+        "C": "una tabla de valoración documental para fijar el destino del expediente."
+      },
+      "correcta": "A",
+      "explicacion": "La hoja de control es el instrumento de descripción del contenido de un expediente.\n[A] Correcta. La hoja de control relaciona los documentos del expediente (tipo documental, fecha y folios) en el orden en que se incorporan. Permite verificar su integridad, detectar faltantes y facilitar la consulta, por lo que es clave para la trazabilidad.\n[B] Incorrecta. Un expediente en trámite no se depura eliminando documentos «menos importantes»: la eliminación solo procede según la TRD, al final del ciclo vital y con los requisitos previstos.\n[C] Incorrecta. La TVD se aplica a fondos acumulados, no al control interno de un expediente en trámite.",
+      "norma": "Lineamientos del AGN sobre organización de expedientes",
+      "dificultad": 2,
+      "etiquetas": [
+        "hoja de control",
+        "expediente"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-021",
+      "contexto": "En la TRD de una dependencia de fiscalización aparece la serie «Expedientes de investigación tributaria», y dentro de cada expediente hay requerimientos especiales, actas de inspección y liquidaciones.",
+      "enunciado": "Al profesional le corresponde identificar el «requerimiento especial» como",
+      "opciones": {
+        "A": "una serie documental.",
+        "B": "un fondo documental.",
+        "C": "un tipo documental."
+      },
+      "correcta": "C",
+      "explicacion": "La clasificación documental distingue entre fondo, serie, subserie y tipo documental.\n[A] Incorrecta. La serie es el conjunto de unidades documentales de estructura y contenido homogéneos, producidas por una dependencia en ejercicio de sus funciones, como los expedientes de investigación tributaria.\n[B] Incorrecta. El fondo es la totalidad de los documentos producidos por una entidad (por ejemplo, el fondo documental de la DIAN).\n[C] Correcta. El tipo documental es la unidad documental simple, con características propias de forma y contenido, como un requerimiento especial, un acta o una liquidación, que se integra en los expedientes de una serie.",
+      "norma": "Acuerdo AGN 027 de 2006 (glosario); Ley 594 de 2000",
+      "dificultad": 2,
+      "etiquetas": [
+        "serie documental",
+        "tipo documental"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-022",
+      "contexto": "Una dependencia quiere eliminar unos expedientes que ya cumplieron su tiempo de retención y cuya disposición final en la TRD es la eliminación.",
+      "enunciado": "Para hacerlo correctamente, a la dependencia le corresponde",
+      "opciones": {
+        "A": "destruirlos de inmediato, porque la TRD ya autoriza su eliminación.",
+        "B": "eliminarlos siguiendo el procedimiento aprobado, con inventario y acta.",
+        "C": "entregarlos a un reciclador, sin registro, para ahorrar espacio físico."
+      },
+      "correcta": "B",
+      "explicacion": "La eliminación documental es un procedimiento formal que debe dejar constancia.\n[A] Incorrecta. La TRD indica la disposición final, pero la eliminación exige seguir un procedimiento con controles: no basta destruir de inmediato.\n[B] Correcta. La eliminación debe hacerse según la TRD, con el inventario de los documentos, la aprobación de la instancia competente de la entidad (el comité institucional correspondiente), el acta de eliminación y las demás formalidades que exige el AGN, incluida la publicidad previa del inventario.\n[C] Incorrecta. Entregar documentos públicos sin control puede exponer información reservada y constituir falta disciplinaria o delito (art. 292 CP).",
+      "norma": "Ley 594 de 2000; Acuerdo AGN 004 de 2019",
+      "dificultad": 2,
+      "etiquetas": [
+        "eliminación documental",
+        "acta"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-023",
+      "contexto": "Un funcionario, para evitar que se conozca un error en una investigación, retira y destruye un documento del expediente.",
+      "enunciado": "Al profesional le corresponde considerar que esta conducta",
+      "opciones": {
+        "A": "es una falta leve, que se corrige simplemente reconstruyendo el expediente de nuevo.",
+        "B": "es aceptable, si el documento destruido no era el acto que decidía el fondo.",
+        "C": "puede ser delito de destrucción, supresión u ocultamiento de documento público."
+      },
+      "correcta": "C",
+      "explicacion": "Destruir o suprimir documentos públicos es un delito y una falta grave.\n[A] Incorrecta. No es una falta leve: afecta la integridad del expediente y la confianza en la actuación, y tiene consecuencias penales y disciplinarias.\n[B] Incorrecta. Ningún documento del expediente puede destruirse arbitrariamente, sea o no el acto de fondo.\n[C] Correcta. El art. 292 CP sanciona a quien destruya, suprima u oculte, total o parcialmente, un documento público que pueda servir de prueba, con pena agravada si es servidor público. Además, la Ley 594 de 2000 hace responsables a los servidores de la integridad de los documentos.",
+      "norma": "Código Penal, art. 292; Ley 594 de 2000, arts. 4 y 16",
+      "dificultad": 2,
+      "etiquetas": [
+        "integridad documental",
+        "delitos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-024",
+      "contexto": "Un tercero sin poder del contribuyente pide revisar el expediente de una investigación tributaria de una empresa competidora, alegando el derecho de acceso a la información.",
+      "enunciado": "Frente a la solicitud, al profesional le corresponde",
+      "opciones": {
+        "A": "permitirle el acceso, porque los expedientes de entidades públicas son públicos.",
+        "B": "negarla de forma motivada, porque la información tributaria del expediente es reservada.",
+        "C": "permitirle ver solo los actos definitivos, porque los de trámite no tienen reserva."
+      },
+      "correcta": "B",
+      "explicacion": "La información tributaria tiene reserva legal frente a terceros.\n[A] Incorrecta. La regla de publicidad tiene excepciones legales, y la reserva tributaria es una de ellas.\n[B] Correcta. El art. 583 ET otorga carácter reservado a la información tributaria sobre bases gravables y determinación de impuestos. Los expedientes solo pueden examinarlos el contribuyente, su apoderado o las autoridades facultadas. La negativa debe motivarse e indicar la norma (Ley 1712 de 2014, art. 28).\n[C] Incorrecta. La reserva cubre la información del expediente en su conjunto, no solo los actos de trámite.",
+      "norma": "Estatuto Tributario, art. 583; Ley 1712 de 2014, arts. 19 y 28",
+      "dificultad": 2,
+      "etiquetas": [
+        "reserva",
+        "acceso a expedientes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-025",
+      "contexto": "El representante legal de una empresa investigada, debidamente acreditado, pide examinar el expediente de su propio proceso, que todavía está en trámite.",
+      "enunciado": "Al profesional le corresponde",
+      "opciones": {
+        "A": "negarle el acceso hasta que se expida la liquidación oficial.",
+        "B": "permitirle examinarlo en el estado en que se encuentre.",
+        "C": "entregarle el expediente original para que lo revise en su oficina."
+      },
+      "correcta": "B",
+      "explicacion": "El interesado tiene derecho a conocer el expediente de su propia actuación.\n[A] Incorrecta. Esperar a la liquidación desconoce el derecho de defensa: el contribuyente debe poder conocer las pruebas para controvertirlas.\n[B] Correcta. El art. 36 CPACA permite a los interesados examinar los expedientes en el estado en que se encuentren, salvo los documentos o cuadernos sujetos a reserva, y obtener copias. La reserva tributaria no opera frente al propio contribuyente o su representante.\n[C] Incorrecta. El expediente original no sale de la entidad: el interesado lo examina en las instalaciones o recibe copias.",
+      "norma": "Ley 1437 de 2011, art. 36; Estatuto Tributario, art. 583",
+      "dificultad": 1,
+      "etiquetas": [
+        "acceso a expedientes",
+        "derecho de defensa"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-026",
+      "contexto": "Una dependencia digitalizó todos sus expedientes en papel para facilitar la consulta. Un funcionario propone destruir los originales para liberar espacio.",
+      "enunciado": "Al profesional le corresponde advertir que",
+      "opciones": {
+        "A": "la digitalización por sí sola no autoriza destruir originales, que siguen su disposición en la TRD.",
+        "B": "los originales pueden destruirse, porque la imagen digital tiene el mismo valor en todos los casos.",
+        "C": "los originales deben entregarse al contribuyente, porque la entidad ya conserva una copia digital."
+      },
+      "correcta": "A",
+      "explicacion": "Digitalizar no equivale a eliminar legalmente los originales.\n[A] Correcta. La digitalización con fines de consulta no reemplaza el original. Los documentos en papel siguen su tiempo de retención y disposición final en la TRD. Solo procesos de digitalización que cumplan los requisitos técnicos y legales de valor probatorio, y que estén previstos en los instrumentos archivísticos, permiten sustituir soportes.\n[B] Incorrecta. La imagen digital no tiene automáticamente el mismo valor probatorio que el original en todos los casos.\n[C] Incorrecta. Los documentos de la actuación pertenecen al archivo de la entidad, no al contribuyente.",
+      "norma": "Ley 594 de 2000; Decreto 1080 de 2015; lineamientos del AGN sobre digitalización",
+      "dificultad": 2,
+      "etiquetas": [
+        "digitalización",
+        "conservación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-027",
+      "contexto": "La DIAN tramita una investigación en expediente electrónico. Un profesional pregunta cómo se garantiza que los documentos del expediente no se alteren ni se pierdan.",
+      "enunciado": "Al profesional le corresponde explicar que la integridad del expediente electrónico se garantiza con",
+      "opciones": {
+        "A": "el índice electrónico firmado y los metadatos de cada documento incorporado.",
+        "B": "la impresión periódica de todos los documentos para guardarlos en una carpeta.",
+        "C": "el envío del expediente por correo a cada funcionario que lo necesite consultar."
+      },
+      "correcta": "A",
+      "explicacion": "El expediente electrónico se controla con un índice electrónico y con metadatos.\n[A] Correcta. Según los lineamientos del AGN, el expediente electrónico debe tener un índice electrónico, firmado, que relaciona los documentos con su orden, fecha y huella, y metadatos que describen su contexto y contenido. Así se garantiza la integridad, la autenticidad y la trazabilidad.\n[B] Incorrecta. Imprimir duplica los soportes sin garantizar la integridad del original electrónico.\n[C] Incorrecta. Enviar copias por correo dispersa la información, crea versiones sin control y pone en riesgo la reserva.",
+      "norma": "Ley 1437 de 2011; Decreto 1080 de 2015; lineamientos del AGN sobre expediente electrónico",
+      "dificultad": 2,
+      "etiquetas": [
+        "expediente electrónico",
+        "metadatos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-028",
+      "contexto": "En una inspección tributaria, el profesional recibe del contribuyente varias cajas con documentos contables originales que se tomarán como prueba.",
+      "enunciado": "Para garantizar la trazabilidad de esa documentación, al profesional le corresponde",
+      "opciones": {
+        "A": "llevarse las cajas sin inventario, porque luego se revisarán en la oficina.",
+        "B": "dejar constancia en el acta de lo recibido, con un inventario de los documentos.",
+        "C": "seleccionar solo lo útil y devolver el resto, sin registrar lo que se recibió."
+      },
+      "correcta": "B",
+      "explicacion": "La documentación recibida en una diligencia debe inventariarse y quedar en el acta.\n[A] Incorrecta. Sin inventario no hay forma de probar qué se recibió, lo que debilita el valor de la prueba y expone a la entidad a reclamos por pérdida.\n[B] Correcta. El acta de la diligencia debe dejar constancia de los documentos recibidos, con un inventario que permita identificarlos. Así se garantiza la trazabilidad, la integridad de la prueba y el derecho de defensa del contribuyente (arts. 779 y 782 ET).\n[C] Incorrecta. Seleccionar sin registrar impide reconstruir qué se recibió y qué se devolvió, y puede llevar a la pérdida de pruebas relevantes.",
+      "norma": "Estatuto Tributario, arts. 779 y 782; Ley 594 de 2000",
+      "dificultad": 2,
+      "etiquetas": [
+        "inventario",
+        "pruebas",
+        "trazabilidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-029",
+      "contexto": "Un funcionario recibe en la entidad una carta dirigida a él a título personal, sin relación con sus funciones ni con trámites de la DIAN.",
+      "enunciado": "Respecto de esta carta, al encargado de correspondencia le corresponde tener en cuenta que",
+      "opciones": {
+        "A": "no se radica como comunicación oficial, porque no se relaciona con las funciones.",
+        "B": "debe radicarse e incorporarse a un expediente de la dependencia del funcionario.",
+        "C": "debe abrirse y archivarse en la serie documental de comunicaciones de la entidad."
+      },
+      "correcta": "A",
+      "explicacion": "Solo las comunicaciones oficiales se radican y se incorporan al archivo de la entidad.\n[A] Correcta. La regulación del AGN sobre correspondencia (Acuerdo 060 de 2001) distingue las comunicaciones oficiales, recibidas o producidas en el desarrollo de las funciones, de las comunicaciones personales. Estas últimas no se radican ni se incorporan a los expedientes.\n[B] Incorrecta. Incorporar una comunicación personal a un expediente institucional mezcla información privada con la documentación de la entidad.\n[C] Incorrecta. Abrir la correspondencia personal de un funcionario vulnera su intimidad (art. 15 C.P.), y esa carta no pertenece a las series de la entidad.",
+      "norma": "Acuerdo AGN 060 de 2001; Constitución Política, art. 15",
+      "dificultad": 2,
+      "etiquetas": [
+        "comunicaciones oficiales",
+        "correspondencia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-030",
+      "contexto": "Una dependencia de la DIAN recibe, radica y distribuye su correspondencia en cada oficina por separado, y frecuentemente no se sabe dónde quedó un documento.",
+      "enunciado": "Para mejorar la trazabilidad, a la entidad le corresponde",
+      "opciones": {
+        "A": "eliminar la radicación, para que los documentos lleguen más rápido a cada oficina.",
+        "B": "permitir que cada funcionario reciba y guarde los documentos que le lleguen.",
+        "C": "centralizar la recepción, radicación y distribución en una unidad de correspondencia."
+      },
+      "correcta": "C",
+      "explicacion": "Las unidades de correspondencia centralizan y controlan las comunicaciones oficiales.\n[A] Incorrecta. Eliminar la radicación haría perder la constancia de fecha y hora, base del cómputo de términos.\n[B] Incorrecta. Que cada funcionario reciba y guarde documentos dispersa la información y elimina el control.\n[C] Correcta. Según el Acuerdo AGN 060 de 2001, las entidades deben tener unidades de correspondencia que gestionen de manera centralizada y normalizada los servicios de recepción, radicación y distribución de las comunicaciones, lo que garantiza su trazabilidad.",
+      "norma": "Acuerdo AGN 060 de 2001",
+      "dificultad": 1,
+      "etiquetas": [
+        "unidad de correspondencia",
+        "trazabilidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-031",
+      "contexto": "Al revisar un expediente, el profesional detecta que hay saltos en la numeración de los folios: después del folio 45 sigue el 52.",
+      "enunciado": "Frente a este hallazgo, al profesional le corresponde",
+      "opciones": {
+        "A": "refoliar todo el expediente para que la numeración quede continua sin informar nada.",
+        "B": "dejar constancia de la inconsistencia e investigar si faltan documentos del expediente.",
+        "C": "ignorar la situación, porque la foliación no tiene ninguna relevancia para la actuación."
+      },
+      "correcta": "B",
+      "explicacion": "Los saltos en la foliación pueden indicar documentos faltantes y deben verificarse.\n[A] Incorrecta. Refoliar sin dejar constancia oculta un posible faltante y afecta la trazabilidad.\n[B] Correcta. La foliación sirve para controlar la integridad del expediente. Un salto en la numeración debe registrarse y verificarse (por ejemplo, con la hoja de control y el índice) para establecer si se perdieron o sustrajeron documentos y tomar las medidas correspondientes.\n[C] Incorrecta. La foliación sí es relevante: permite verificar que el expediente esté completo y es un control de su integridad.",
+      "norma": "Instructivo de foliación del AGN; Ley 594 de 2000",
       "dificultad": 2,
       "etiquetas": [
         "foliación",
-        "expedientes"
+        "integridad"
       ],
-      "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-032",
+      "contexto": "Una dependencia elaboró por primera vez su Tabla de Retención Documental y quiere empezar a aplicarla.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que la TRD, antes de aplicarse,",
+      "opciones": {
+        "A": "puede usarse sin ningún trámite, porque la elaboró la propia dependencia.",
+        "B": "debe ser aprobada por la instancia competente y convalidada según la norma.",
+        "C": "requiere la firma de todos los funcionarios de la entidad en cada página."
+      },
+      "correcta": "B",
+      "explicacion": "La TRD es un instrumento archivístico que requiere aprobación y convalidación.\n[A] Incorrecta. La TRD no es un documento interno de libre uso: requiere un proceso formal para ser aplicable.\n[B] Correcta. Según la Ley 594 de 2000 y los acuerdos del AGN, las TRD deben ser aprobadas por la instancia competente de la entidad y convalidadas por el Archivo General de la Nación o el consejo de archivos correspondiente. Después se publican y aplican.\n[C] Incorrecta. No se exige la firma de todos los funcionarios: el trámite es institucional.",
+      "norma": "Ley 594 de 2000, art. 24; Acuerdo AGN 004 de 2019",
+      "dificultad": 2,
+      "etiquetas": [
+        "TRD",
+        "aprobación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-033",
+      "contexto": "En un archivo, el profesional observa que los expedientes se guardan en un sótano húmedo, junto a tuberías, y algunos documentos presentan hongos.",
+      "enunciado": "Al profesional le corresponde recomendar",
+      "opciones": {
+        "A": "trasladar los expedientes a un espacio con condiciones ambientales adecuadas.",
+        "B": "eliminar los documentos con hongos, aunque no haya terminado su retención.",
+        "C": "mantener los expedientes allí, porque el lugar tiene suficiente espacio libre."
+      },
+      "correcta": "A",
+      "explicacion": "La conservación de los documentos exige condiciones ambientales adecuadas.\n[A] Correcta. El Sistema Integrado de Conservación del AGN incluye la conservación preventiva: controlar la humedad, la temperatura, la luz, la contaminación y los riesgos como las filtraciones de agua. Debe trasladarse la documentación y tratarse el material afectado.\n[B] Incorrecta. Eliminar documentos por deterioro, sin cumplir la TRD, vulnera la normativa archivística; el material afectado debe tratarse y, si es necesario, restaurarse.\n[C] Incorrecta. El espacio disponible no compensa los riesgos para la conservación de los documentos.",
+      "norma": "Ley 594 de 2000; lineamientos del AGN sobre el Sistema Integrado de Conservación",
+      "dificultad": 1,
+      "etiquetas": [
+        "conservación preventiva"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-034",
+      "contexto": "En una auditoría interna se pregunta quién es responsable de la organización y conservación de los documentos de un grupo de fiscalización.",
+      "enunciado": "Al profesional le corresponde responder que, según la Ley General de Archivos,",
+      "opciones": {
+        "A": "la responsabilidad es exclusiva del Archivo General de la Nación.",
+        "B": "los servidores públicos son responsables de los documentos a su cargo.",
+        "C": "la responsabilidad es solo del área de archivo central de la entidad."
+      },
+      "correcta": "B",
+      "explicacion": "La Ley 594 de 2000 consagra la responsabilidad de los servidores públicos sobre los documentos.\n[A] Incorrecta. El AGN orienta la política archivística, pero no responde por los documentos que maneja cada entidad.\n[B] Correcta. Según el principio de responsabilidad (art. 4 de la Ley 594 de 2000), los servidores públicos son responsables de la organización, conservación, uso y manejo de los documentos. El art. 16 asigna a los funcionarios a cargo de los archivos la obligación de velar por su integridad, autenticidad, veracidad y fidelidad.\n[C] Incorrecta. El archivo central custodia lo transferido, pero cada dependencia responde por sus archivos de gestión.",
+      "norma": "Ley 594 de 2000, arts. 4 y 16",
+      "dificultad": 1,
+      "etiquetas": [
+        "responsabilidad",
+        "servidores públicos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-035",
+      "contexto": "Una dependencia debe transferir al archivo central los expedientes que cumplieron su tiempo de retención en el archivo de gestión.",
+      "enunciado": "Para hacer la transferencia, a la dependencia le corresponde",
+      "opciones": {
+        "A": "enviar las cajas sin ningún documento soporte, porque el archivo central las organizará.",
+        "B": "preparar los expedientes según la TRD y elaborar el inventario documental (FUID).",
+        "C": "esperar a que el archivo central solicite cada expediente cuando lo necesite consultar."
+      },
+      "correcta": "B",
+      "explicacion": "Las transferencias se hacen con los expedientes organizados y un inventario.\n[A] Incorrecta. Enviar cajas sin inventario impide controlar lo transferido y rompe la trazabilidad.\n[B] Correcta. La transferencia primaria se hace según el cronograma y la TRD, con los expedientes organizados (clasificados, ordenados, foliados) y el Formato Único de Inventario Documental (FUID), que relaciona lo que se entrega (Acuerdo AGN 042 de 2002).\n[C] Incorrecta. La transferencia no depende de solicitudes del archivo central: se programa según los tiempos de retención.",
+      "norma": "Acuerdo AGN 042 de 2002; Ley 594 de 2000",
+      "dificultad": 1,
+      "etiquetas": [
+        "transferencias",
+        "FUID"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-036",
+      "contexto": "Un expediente de fiscalización tiene documentos en papel y documentos electrónicos producidos en el sistema de la DIAN.",
+      "enunciado": "Al profesional le corresponde gestionarlo como",
+      "opciones": {
+        "A": "un expediente híbrido, que mantiene el vínculo entre las dos partes.",
+        "B": "dos expedientes independientes, sin relación entre sus documentos.",
+        "C": "un expediente de papel, imprimiendo y desechando lo electrónico."
+      },
+      "correcta": "A",
+      "explicacion": "Cuando un mismo expediente tiene documentos en varios soportes, se gestiona como expediente híbrido.\n[A] Correcta. El expediente híbrido reúne documentos en papel y electrónicos de una misma actuación. Debe mantener el vínculo entre ambas partes (por ejemplo, con referencias cruzadas en la hoja de control y en el índice electrónico) para conservar su unidad y su trazabilidad.\n[B] Incorrecta. Separarlo en dos expedientes independientes rompe la unidad de la actuación (art. 36 CPACA) y dificulta reconstruirla.\n[C] Incorrecta. Imprimir y desechar lo electrónico puede eliminar metadatos y firmas que garantizan la autenticidad de esos documentos.",
+      "norma": "Ley 1437 de 2011, art. 36; lineamientos del AGN sobre expedientes híbridos",
+      "dificultad": 2,
+      "etiquetas": [
+        "expediente híbrido",
+        "trazabilidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-037",
+      "contexto": "En el sistema de gestión documental de la DIAN, cada documento de un expediente electrónico registra quién lo creó, cuándo, en qué trámite y qué modificaciones tuvo.",
+      "enunciado": "Esta información, que describe el contexto, el contenido y la estructura de los documentos, se denomina",
+      "opciones": {
+        "A": "disposición final.",
+        "B": "tipología documental.",
+        "C": "metadatos."
+      },
+      "correcta": "C",
+      "explicacion": "Los metadatos documentan el contexto y la historia de los documentos electrónicos.\n[C] Correcta. Los metadatos son datos que describen el contexto, el contenido y la estructura de los documentos y su gestión a lo largo del tiempo (autor, fecha, trámite, versiones, accesos). Son esenciales para la autenticidad, la integridad y la trazabilidad de los documentos electrónicos.\n[B] Incorrecta. La tipología documental se refiere a las clases o tipos de documentos (un requerimiento, un acta), no a la información sobre su gestión.\n[A] Incorrecta. La disposición final es la decisión sobre el destino de los documentos al terminar su ciclo vital (conservación, selección, eliminación).",
+      "norma": "Decreto 1080 de 2015; lineamientos del AGN sobre documento electrónico",
+      "dificultad": 1,
+      "etiquetas": [
+        "metadatos",
+        "documento electrónico"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-038",
+      "contexto": "En una investigación, la DIAN tramita dos actuaciones separadas contra el mismo contribuyente sobre el mismo impuesto y periodo, lo que podría llevar a decisiones contradictorias.",
+      "enunciado": "Al profesional le corresponde proponer",
+      "opciones": {
+        "A": "archivar una de las actuaciones sin decisión, para evitar duplicar el trabajo.",
+        "B": "mantener ambos expedientes separados, porque cada uno tiene su propia radicación.",
+        "C": "acumular los expedientes, para que el asunto se decida de forma unificada."
+      },
+      "correcta": "C",
+      "explicacion": "La acumulación de expedientes evita decisiones contradictorias sobre un mismo asunto.\n[C] Correcta. El art. 36 CPACA permite acumular de oficio o a petición del interesado los expedientes que se tramiten ante la misma autoridad sobre una misma actuación, con el fin de evitar decisiones contradictorias.\n[B] Incorrecta. Tener radicaciones distintas no impide la acumulación; mantenerlos separados arriesga decisiones contradictorias.\n[A] Incorrecta. Archivar sin decisión una actuación vulnera el debido proceso y puede dejar sin resolver aspectos del caso.",
+      "norma": "Ley 1437 de 2011, art. 36",
+      "dificultad": 2,
+      "etiquetas": [
+        "acumulación de expedientes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-039",
+      "contexto": "La entidad debe definir un instrumento que planifique, a corto, mediano y largo plazo, la implementación de los procesos de gestión documental desde su producción hasta su disposición final.",
+      "enunciado": "Este instrumento se denomina",
+      "opciones": {
+        "A": "Formato Único de Inventario Documental (FUID).",
+        "B": "Cuadro de clasificación de una sola serie.",
+        "C": "Programa de Gestión Documental (PGD)."
+      },
+      "correcta": "C",
+      "explicacion": "El Programa de Gestión Documental planifica los procesos archivísticos de la entidad.\n[A] Incorrecta. El FUID es un instrumento para inventariar documentos en transferencias y entregas, no para planificar la gestión documental.\n[C] Correcta. El PGD es el instrumento archivístico que formula y documenta, a corto, mediano y largo plazo, el desarrollo sistemático de los procesos de gestión documental: planeación, producción, gestión y trámite, organización, transferencia, disposición, preservación y valoración (Decreto 1080 de 2015).\n[B] Incorrecta. El cuadro de clasificación documental organiza las series y subseries de toda la entidad; no es un plan de implementación.",
+      "norma": "Decreto 1080 de 2015; Ley 594 de 2000",
+      "dificultad": 2,
+      "etiquetas": [
+        "PGD",
+        "instrumentos archivísticos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
     }
   ]
 }

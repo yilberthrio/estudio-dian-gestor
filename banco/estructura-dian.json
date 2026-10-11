@@ -1,0 +1,343 @@
+{
+  "sesion": "estructura-dian",
+  "preguntas": [
+    {
+      "id": "estructura-dian-001",
+      "contexto": "En la inducción de nuevos servidores, un profesional debe explicar la naturaleza jurídica de la DIAN.",
+      "enunciado": "Al profesional le corresponde explicar que la DIAN es",
+      "opciones": {
+        "A": "una Unidad Administrativa Especial adscrita al Ministerio de Hacienda.",
+        "B": "un establecimiento público del orden departamental con patrimonio propio.",
+        "C": "una dependencia interna del Ministerio de Hacienda sin personería jurídica."
+      },
+      "correcta": "A",
+      "explicacion": "La DIAN es una unidad administrativa especial del orden nacional.\n[A] Correcta. La DIAN es una Unidad Administrativa Especial del orden nacional, adscrita al Ministerio de Hacienda y Crédito Público, con personería jurídica, autonomía administrativa y presupuestal y patrimonio propio (Decreto 1742 de 2020).\n[B] Incorrecta. No es un establecimiento público ni pertenece al orden departamental: es una entidad nacional.\n[C] Incorrecta. No es una dependencia interna del Ministerio: está adscrita a él, pero tiene personería jurídica propia.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "naturaleza jurídica"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-002",
+      "contexto": "La ficha del empleo Gestor I indica que su aplicación corresponde a los «niveles central y seccional». Un aspirante pregunta qué significa esto.",
+      "enunciado": "Al profesional le corresponde explicar que la DIAN se organiza en",
+      "opciones": {
+        "A": "un nivel central, que dirige y orienta, y un nivel seccional que ejecuta en su territorio.",
+        "B": "un nivel nacional, que recauda, y un nivel municipal, que define los impuestos locales.",
+        "C": "un nivel central, que fiscaliza, y un nivel seccional, que solo atiende al ciudadano."
+      },
+      "correcta": "A",
+      "explicacion": "La DIAN funciona con un nivel central y un nivel seccional.\n[A] Correcta. El nivel central, con la Dirección General y las direcciones de gestión, formula políticas, dirige y coordina. El nivel seccional, con las direcciones seccionales, ejecuta las funciones de la entidad en su jurisdicción territorial, incluidas la fiscalización y la liquidación (Decreto 1742 de 2020). El Gestor I puede ubicarse en cualquiera de los dos niveles.\n[B] Incorrecta. La DIAN no tiene un nivel municipal ni define impuestos locales, que son competencia de los concejos (art. 338 C.P.).\n[C] Incorrecta. La fiscalización también se ejecuta en el nivel seccional; las seccionales no se limitan a atender al ciudadano.",
+      "norma": "Decreto 1742 de 2020; ficha del empleo AT-FL-3008",
+      "dificultad": 1,
+      "etiquetas": [
+        "niveles",
+        "estructura"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-003",
+      "contexto": "En el mapa de la DIAN aparecen direcciones seccionales con distintos nombres: unas «de Impuestos», otras «de Aduanas» y otras «de Impuestos y Aduanas».",
+      "enunciado": "Al profesional le corresponde explicar que esta diferencia obedece a",
+      "opciones": {
+        "A": "las materias que atiende cada seccional según las necesidades de su jurisdicción.",
+        "B": "la antigüedad de cada seccional, sin consecuencias en las funciones que cumplen.",
+        "C": "el número de funcionarios, porque solo las grandes pueden manejar ambos temas."
+      },
+      "correcta": "A",
+      "explicacion": "Las direcciones seccionales se especializan según la jurisdicción.\n[A] Correcta. Hay direcciones seccionales de impuestos, de aduanas y de impuestos y aduanas, según las materias que deben atender en su territorio. Por ejemplo, las ubicadas en puertos o zonas de frontera concentran funciones aduaneras (Decreto 1742 de 2020 y actos que fijan su jurisdicción).\n[B] Incorrecta. La denominación sí tiene consecuencias: define las materias de competencia de la seccional.\n[C] Incorrecta. El número de funcionarios no es el criterio: la especialización responde a las necesidades del territorio.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "direcciones seccionales"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-004",
+      "contexto": "Un contribuyente persona jurídica, no calificado como gran contribuyente, tiene su domicilio fiscal en Cali. La DIAN debe adelantar una fiscalización de su declaración de renta.",
+      "enunciado": "Por regla general, la actuación la debe adelantar",
+      "opciones": {
+        "A": "cualquier dirección seccional del país, a elección del jefe de fiscalización.",
+        "B": "la dirección seccional que tenga jurisdicción sobre el domicilio del contribuyente.",
+        "C": "exclusivamente el nivel central, porque es una declaración de un impuesto nacional."
+      },
+      "correcta": "B",
+      "explicacion": "Las funciones se ejercen dentro de la competencia y la jurisdicción de cada dependencia.\n[A] Incorrecta. La competencia no se escoge libremente: está definida por las normas de competencia y jurisdicción. Un funcionario incompetente vicia el acto.\n[B] Correcta. Por regla general, la competencia para fiscalizar corresponde a la dirección seccional con jurisdicción sobre el domicilio fiscal del contribuyente. Por eso las funciones del Gestor I se ejercen «en el marco de su competencia y jurisdicción». Los grandes contribuyentes y otros casos especiales tienen dependencias asignadas.\n[C] Incorrecta. Que el impuesto sea nacional no significa que solo el nivel central lo fiscalice: las seccionales ejercen esa función en su territorio.",
+      "norma": "Decreto 1742 de 2020; resoluciones de competencias de la DIAN; ficha AT-FL-3008",
+      "dificultad": 2,
+      "etiquetas": [
+        "competencia",
+        "jurisdicción"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-005",
+      "contexto": "En una acción de control contra el contrabando, participan funcionarios de la DIAN y uniformados de la Policía Fiscal y Aduanera (POLFA).",
+      "enunciado": "Al profesional le corresponde tener en cuenta que la POLFA",
+      "opciones": {
+        "A": "es una entidad independiente, sin relación con la estructura de la DIAN.",
+        "B": "hace parte de la estructura de la DIAN y apoya el control fiscal y aduanero.",
+        "C": "es una dependencia del Ministerio de Comercio que expide licencias de importación."
+      },
+      "correcta": "B",
+      "explicacion": "La Policía Fiscal y Aduanera está integrada a la estructura de la DIAN.\n[A] Incorrecta. La POLFA no es independiente de la DIAN: funciona como una dirección de gestión dentro de su estructura, con personal de la Policía Nacional.\n[B] Correcta. La DIAN tiene una dirección de gestión de Policía Fiscal y Aduanera, integrada por miembros de la Policía Nacional, que apoya el control y la lucha contra la evasión, el contrabando y otros delitos de competencia de la entidad, incluidas las aprehensiones (Decreto 1742 de 2020).\n[C] Incorrecta. La POLFA no expide licencias de importación ni depende del Ministerio de Comercio.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "POLFA",
+        "estructura"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-006",
+      "contexto": "Un contribuyente pregunta qué área de la DIAN se encarga, por regla general, del recaudo, el cobro de las deudas y las devoluciones de saldos a favor.",
+      "enunciado": "Al profesional le corresponde indicarle que esas funciones corresponden al área de",
+      "opciones": {
+        "A": "gestión de fiscalización.",
+        "B": "gestión de ingresos.",
+        "C": "gestión corporativa."
+      },
+      "correcta": "B",
+      "explicacion": "Cada área misional de la DIAN tiene funciones propias.\n[A] Incorrecta. Fiscalización verifica el cumplimiento de las obligaciones y determina los mayores valores mediante investigaciones y liquidaciones oficiales; no administra el recaudo ni el cobro.\n[B] Correcta. El área de gestión de ingresos administra el recaudo, el cobro (incluido el coactivo) y las devoluciones y compensaciones de los saldos a favor (Decreto 1742 de 2020).\n[C] Incorrecta. Gestión corporativa atiende los procesos de apoyo interno (talento humano, recursos físicos y financieros), no las obligaciones de los contribuyentes.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "áreas misionales",
+        "ingresos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-007",
+      "contexto": "Un profesional de fiscalización tiene dudas sobre cómo interpretar una norma tributaria y encuentra un concepto general de la dependencia jurídica de la DIAN sobre el tema.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que ese concepto",
+      "opciones": {
+        "A": "es una opinión académica, que puede seguir o ignorar según su criterio.",
+        "B": "es doctrina oficial, de obligatorio acatamiento para los servidores.",
+        "C": "solo obliga a los contribuyentes, pero no a los funcionarios que fiscalizan."
+      },
+      "correcta": "B",
+      "explicacion": "La doctrina oficial de la DIAN vincula a sus funcionarios.\n[A] Incorrecta. Los conceptos de la dependencia jurídica no son opiniones académicas: son interpretación oficial para la entidad.\n[B] Correcta. Los conceptos de la dependencia jurídica de la DIAN constituyen interpretación oficial, de obligatorio acatamiento para los servidores de la entidad. Los contribuyentes que actúen con base en conceptos escritos pueden sustentar sus actuaciones en ellos (art. 264 de la Ley 223 de 1995).\n[C] Incorrecta. Es al revés: los conceptos obligan a los funcionarios, y para los contribuyentes son una garantía si actúan conforme a ellos.",
+      "norma": "Ley 223 de 1995, art. 264; Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "doctrina oficial",
+        "gestión jurídica"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-008",
+      "contexto": "Un contribuyente interpuso recurso de reconsideración contra una liquidación oficial proferida por el área de fiscalización y liquidación de una seccional.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que el recurso",
+      "opciones": {
+        "A": "debe resolverlo el mismo funcionario que profirió la liquidación recurrida.",
+        "B": "debe resolverlo la dependencia jurídica competente, distinta de la que liquidó.",
+        "C": "debe enviarse al juez administrativo, porque la DIAN no resuelve sus recursos."
+      },
+      "correcta": "B",
+      "explicacion": "En la DIAN, la discusión de los actos la adelantan áreas distintas de las que los profieren.\n[A] Incorrecta. Que el mismo funcionario resuelva el recurso contra su propio acto restaría imparcialidad a la revisión. El Estatuto Tributario y la estructura de la DIAN asignan los recursos a otra dependencia.\n[B] Correcta. Según el art. 721 ET y la estructura de la DIAN, los recursos de reconsideración los resuelven las dependencias de gestión jurídica competentes (en el nivel central o seccional), distintas del área de fiscalización que expidió el acto. Así se garantiza una revisión independiente.\n[C] Incorrecta. La reconsideración es un recurso en vía administrativa, que resuelve la DIAN. La vía judicial viene después.",
+      "norma": "Estatuto Tributario, arts. 720 y 721; Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "recursos",
+        "gestión jurídica"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-009",
+      "contexto": "Un contribuyente siente que la DIAN vulneró sus derechos en la atención de un trámite y quiere presentar una queja ante una instancia que vele por sus garantías.",
+      "enunciado": "Al profesional le corresponde orientarlo hacia",
+      "opciones": {
+        "A": "la Defensoría del Contribuyente y del Usuario Aduanero.",
+        "B": "la dependencia de fiscalización que adelanta su proceso.",
+        "C": "la Dirección de Policía Fiscal y Aduanera de la entidad."
+      },
+      "correcta": "A",
+      "explicacion": "La Defensoría del Contribuyente y del Usuario Aduanero vela por los derechos de los contribuyentes.\n[A] Correcta. La Defensoría del Contribuyente y del Usuario Aduanero tiene como función velar por la garantía de los derechos de los contribuyentes y usuarios aduaneros en sus relaciones con la DIAN, tramitar sus quejas y proponer mejoras. No reemplaza los recursos legales.\n[B] Incorrecta. La dependencia que adelanta el proceso es parte de la controversia; no es la instancia de garantía de derechos.\n[C] Incorrecta. La POLFA apoya el control fiscal y aduanero; no atiende quejas por vulneración de derechos.",
+      "norma": "Ley 1430 de 2010; Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "Defensoría del Contribuyente"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-010",
+      "contexto": "En la inducción, un nuevo servidor pregunta quién designa al Director General de la DIAN.",
+      "enunciado": "Al profesional le corresponde responder que el Director General es",
+      "opciones": {
+        "A": "elegido por concurso de méritos administrado por la CNSC.",
+        "B": "elegido por el Congreso de la República para un periodo fijo.",
+        "C": "de libre nombramiento y remoción del Presidente de la República."
+      },
+      "correcta": "C",
+      "explicacion": "El Director General de la DIAN es un empleo de libre nombramiento y remoción.\n[A] Incorrecta. El concurso de méritos aplica a los empleos de carrera, como el de Gestor I; no al de Director General.\n[B] Incorrecta. El Congreso elige a otros funcionarios (como el Contralor General), pero no al Director de la DIAN.\n[C] Correcta. El Director General de la DIAN es nombrado y removido libremente por el Presidente de la República, por ser un empleo de dirección y confianza (art. 189 C.P. y normas de la entidad).",
+      "norma": "Constitución Política, arts. 125 y 189; Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "Director General",
+        "nombramiento"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-011",
+      "contexto": "La guía del concurso cita como norma principal del proceso el Decreto Ley 927 de 2023. Un aspirante pregunta qué regula esa norma.",
+      "enunciado": "Al profesional le corresponde explicar que el Decreto Ley 927 de 2023 regula",
+      "opciones": {
+        "A": "el sistema específico de carrera administrativa de los servidores de la DIAN.",
+        "B": "el régimen sancionatorio y de decomiso de mercancías en materia aduanera.",
+        "C": "la estructura de las direcciones seccionales y su jurisdicción territorial."
+      },
+      "correcta": "A",
+      "explicacion": "La DIAN tiene un sistema específico de carrera administrativa.\n[A] Correcta. El Decreto Ley 927 de 2023 regula el sistema específico de carrera administrativa de la DIAN: ingreso, permanencia, evaluación, retiro y los procesos de selección, que administra y vigila la CNSC. La guía del Proceso DIAN 2676 lo cita como norma principal.\n[B] Incorrecta. El régimen sancionatorio y de decomiso aduanero está en el Decreto 920 de 2023.\n[C] Incorrecta. La estructura de la DIAN se regula en el Decreto 1742 de 2020 y sus modificaciones.",
+      "norma": "Decreto Ley 927 de 2023; Guía de orientación del Proceso DIAN 2676",
+      "dificultad": 2,
+      "etiquetas": [
+        "carrera administrativa",
+        "sistema específico"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-012",
+      "contexto": "Según la guía del concurso, las funciones, competencias y requisitos de cada empleo de la DIAN están en el Manual Específico de Requisitos y Funciones (MERF).",
+      "enunciado": "Al profesional le corresponde identificar que el MERF vigente para el proceso fue adoptado mediante",
+      "opciones": {
+        "A": "el Decreto 1742 de 2020.",
+        "B": "la Resolución 067 de 2024.",
+        "C": "el Decreto Ley 927 de 2023."
+      },
+      "correcta": "B",
+      "explicacion": "El MERF se adopta por resolución de la entidad.\n[A] Incorrecta. El Decreto 1742 de 2020 regula la estructura de la DIAN, no el manual de funciones de sus empleos.\n[B] Correcta. La Resolución DIAN 067 de 2024 adoptó el Manual Específico de Requisitos y Funciones de los empleos de la planta de la DIAN. Allí está la ficha AT-FL-3008 del Gestor I, con su propósito, funciones, competencias y requisitos.\n[C] Incorrecta. El Decreto Ley 927 de 2023 regula el sistema específico de carrera de la DIAN; el manual de funciones se adopta por resolución de la entidad.",
+      "norma": "Resolución DIAN 067 de 2024; Guía de orientación del Proceso DIAN 2676",
+      "dificultad": 2,
+      "etiquetas": [
+        "MERF",
+        "manual de funciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-013",
+      "contexto": "Según la ficha del empleo Gestor I, hay un requisito adicional para quienes se ubiquen en la dependencia encargada de la fiscalización internacional.",
+      "enunciado": "Al profesional le corresponde identificar que ese requisito adicional es",
+      "opciones": {
+        "A": "un certificado de inglés en nivel B2.",
+        "B": "un posgrado en derecho tributario.",
+        "C": "dos años de experiencia en aduanas."
+      },
+      "correcta": "A",
+      "explicacion": "La fiscalización internacional exige manejo del inglés.\n[A] Correcta. La ficha AT-FL-3008 del MERF establece que, para los empleos del nivel profesional ubicados en la dependencia de gestión de fiscalización internacional, se exige como requisito adicional un certificado de inglés en nivel B2. Esto obedece al trabajo con información, normas y autoridades de otros países.\n[B] Incorrecta. La ficha no exige posgrado para el Gestor I; el requisito de estudios es un título profesional en los núcleos básicos del conocimiento señalados.\n[C] Incorrecta. El empleo no requiere experiencia según la ficha.",
+      "norma": "Resolución DIAN 067 de 2024 – ficha AT-FL-3008",
+      "dificultad": 2,
+      "etiquetas": [
+        "ficha del empleo",
+        "fiscalización internacional"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-014",
+      "contexto": "Una sociedad con ingresos y patrimonio muy altos fue calificada por la DIAN como gran contribuyente.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que esta calificación",
+      "opciones": {
+        "A": "no produce ningún efecto tributario, porque solo es un reconocimiento honorífico a la empresa.",
+        "B": "la decide el contribuyente al inscribirse en el RUT, según su propia percepción del negocio.",
+        "C": "la hace la DIAN mediante resolución, con efectos en el control y en las obligaciones."
+      },
+      "correcta": "C",
+      "explicacion": "La DIAN califica a los grandes contribuyentes según criterios técnicos.\n[C] Correcta. La DIAN califica a los grandes contribuyentes mediante resolución, con criterios como el volumen de operaciones, los ingresos, el patrimonio y su importancia en el recaudo. La calificación tiene efectos: periodicidad de declaraciones (por ejemplo, IVA bimestral, art. 600 ET), calidad de agente retenedor y control por una dependencia especializada.\n[B] Incorrecta. El contribuyente no se autocalifica: es una decisión de la DIAN.\n[A] Incorrecta. La calificación sí produce efectos tributarios y de control.",
+      "norma": "Estatuto Tributario, arts. 562 y 600; Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "grandes contribuyentes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-015",
+      "contexto": "La Oficina de Control Interno de la DIAN programa una auditoría a los procesos de una dirección seccional.",
+      "enunciado": "Al profesional le corresponde entender que esta oficina",
+      "opciones": {
+        "A": "fiscaliza las declaraciones tributarias de los contribuyentes de la seccional.",
+        "B": "sanciona disciplinariamente a los servidores que incumplan sus funciones.",
+        "C": "evalúa de forma independiente el sistema de control interno de la entidad."
+      },
+      "correcta": "C",
+      "explicacion": "La Oficina de Control Interno es la tercera línea de defensa.\n[C] Correcta. La Oficina de Control Interno evalúa de forma independiente y objetiva el sistema de control interno, la gestión de riesgos y el cumplimiento de los procesos, y formula recomendaciones (Ley 87 de 1993 y MIPG).\n[B] Incorrecta. Las investigaciones disciplinarias corresponden a la dependencia de control disciplinario interno y a la Procuraduría, no a la Oficina de Control Interno.\n[A] Incorrecta. La fiscalización de los contribuyentes es una función misional de las áreas de fiscalización.",
+      "norma": "Ley 87 de 1993; Decreto 1499 de 2017 (MIPG); Decreto 1742 de 2020",
+      "dificultad": 1,
+      "etiquetas": [
+        "control interno",
+        "estructura"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-016",
+      "contexto": "En una misma seccional, un área verifica las declaraciones de importación durante el desaduanamiento y otra área investiga a los importadores después del levante.",
+      "enunciado": "Al profesional le corresponde identificar que la investigación después del levante corresponde a",
+      "opciones": {
+        "A": "la operación aduanera, que ejerce el control simultáneo.",
+        "B": "la gestión de ingresos, que administra el recaudo y el cobro.",
+        "C": "la fiscalización aduanera, que ejerce el control posterior."
+      },
+      "correcta": "C",
+      "explicacion": "Las funciones aduaneras se distribuyen según el momento del control.\n[A] Incorrecta. Las áreas de operación aduanera intervienen durante el desaduanamiento (control simultáneo: inspecciones, levante).\n[C] Correcta. La fiscalización aduanera ejerce el control posterior: después del levante, investiga a los usuarios para verificar el cumplimiento y, si es el caso, profiere liquidaciones oficiales y sanciones. Es una de las áreas donde puede ubicarse el Gestor I.\n[B] Incorrecta. Gestión de ingresos administra el recaudo, el cobro y las devoluciones; no investiga a los importadores.",
+      "norma": "Decreto 1742 de 2020; Decreto 1165 de 2019",
+      "dificultad": 2,
+      "etiquetas": [
+        "fiscalización aduanera",
+        "operación aduanera"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-017",
+      "contexto": "Un aspirante revisa la ficha del empleo Gestor I y quiere identificar a qué proceso de la DIAN pertenece el cargo.",
+      "enunciado": "Al profesional le corresponde indicar que, según la ficha, el empleo pertenece al proceso",
+      "opciones": {
+        "A": "de apoyo de gestión del talento humano.",
+        "B": "estratégico de planeación institucional.",
+        "C": "misional de fiscalización y liquidación."
+      },
+      "correcta": "C",
+      "explicacion": "La ficha ubica el empleo en un proceso misional.\n[C] Correcta. La ficha AT-FL-3008 ubica al Gestor I en el proceso misional de cumplimiento de obligaciones tributarias, aduaneras y cambiarias, subproceso de fiscalización y liquidación. Por eso sus funciones se centran en investigaciones, acciones de control y actos administrativos de determinación.\n[B] Incorrecta. La planeación institucional es un proceso estratégico, distinto del proceso al que pertenece el empleo.\n[A] Incorrecta. Talento humano es un proceso de apoyo; el Gestor I de esta ficha cumple funciones misionales.",
+      "norma": "Resolución DIAN 067 de 2024 – ficha AT-FL-3008",
+      "dificultad": 1,
+      "etiquetas": [
+        "ficha del empleo",
+        "procesos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-018",
+      "contexto": "En la ficha del empleo, el superior inmediato del Gestor I aparece como «quien ejerza la supervisión directa» y la dependencia como «donde se ubique el empleo».",
+      "enunciado": "Al profesional le corresponde interpretar que esto significa que",
+      "opciones": {
+        "A": "el Gestor I debe permanecer en la misma dependencia durante toda su carrera.",
+        "B": "el Gestor I no tiene jefe inmediato y responde solo ante el Director General.",
+        "C": "el empleo puede ubicarse en distintas dependencias, según el servicio."
+      },
+      "correcta": "C",
+      "explicacion": "La DIAN tiene una planta global y flexible.\n[C] Correcta. La ficha usa fórmulas generales porque el empleo puede ubicarse en distintas dependencias del nivel central o seccional, según las necesidades del servicio. El superior inmediato será quien ejerza la supervisión directa en la dependencia donde se ubique.\n[B] Incorrecta. El Gestor I sí tiene jefe inmediato: quien ejerza la supervisión directa en la dependencia.\n[A] Incorrecta. La fórmula de la ficha precisamente permite ubicar el empleo en distintas dependencias, no fijarlo en una sola.",
+      "norma": "Resolución DIAN 067 de 2024 – ficha AT-FL-3008",
+      "dificultad": 1,
+      "etiquetas": [
+        "ficha del empleo",
+        "planta global"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

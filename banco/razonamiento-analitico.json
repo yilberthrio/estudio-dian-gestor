@@ -1,0 +1,420 @@
+{
+  "sesion": "razonamiento-analitico",
+  "preguntas": [
+    {
+      "id": "razonamiento-analitico-001",
+      "contexto": "El recaudo de una Dirección Seccional fue de $120 mil millones en 2024 y de $138 mil millones en 2025. El jefe pide incluir la variación en el informe de gestión.",
+      "enunciado": "Al profesional le corresponde reportar una variación del recaudo de",
+      "opciones": {
+        "A": "+18%",
+        "B": "+15%",
+        "C": "+13%"
+      },
+      "correcta": "B",
+      "explicacion": "La variación porcentual se calcula sobre el valor inicial: (valor final − valor inicial) ÷ valor inicial.\n[A] Incorrecta. 18% resulta de tomar la diferencia en miles de millones (138 − 120 = 18) como si fuera un porcentaje.\n[B] Correcta. (138 − 120) ÷ 120 = 18 ÷ 120 = 0,15, es decir, +15%.\n[C] Incorrecta. 13% resulta de dividir la diferencia entre el valor final (18 ÷ 138 ≈ 13%), cuando la base debe ser el valor inicial.",
+      "norma": "Razonamiento cuantitativo – variación porcentual",
+      "dificultad": 1,
+      "etiquetas": [
+        "porcentajes",
+        "variación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-002",
+      "contexto": "En un trimestre, una seccional recaudó $60 mil millones por IVA, $90 mil millones por renta y $50 mil millones por otros impuestos.",
+      "enunciado": "Al elaborar el informe, al profesional le corresponde indicar que el impuesto de renta representó",
+      "opciones": {
+        "A": "el 45% del recaudo total.",
+        "B": "el 90% del recaudo total.",
+        "C": "el 30% del recaudo total."
+      },
+      "correcta": "A",
+      "explicacion": "La participación es la parte dividida entre el total.\n[A] Correcta. Total: 60 + 90 + 50 = 200. Participación de renta: 90 ÷ 200 = 0,45, es decir, 45%.\n[B] Incorrecta. 90% confunde el valor recaudado (90) con su participación porcentual.\n[C] Incorrecta. 30% es la participación del IVA (60 ÷ 200), no la de renta.",
+      "norma": "Razonamiento cuantitativo – participación porcentual",
+      "dificultad": 1,
+      "etiquetas": [
+        "porcentajes",
+        "participación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-003",
+      "contexto": "Un grupo de fiscalización cerró 300 expedientes en el año. En 75 de ellos se determinó un mayor impuesto a cargo del contribuyente.",
+      "enunciado": "Al profesional le corresponde reportar que la tasa de expedientes con mayor impuesto fue del",
+      "opciones": {
+        "A": "75%",
+        "B": "33%",
+        "C": "25%"
+      },
+      "correcta": "C",
+      "explicacion": "La tasa se obtiene dividiendo los casos con el resultado entre el total de casos.\n[A] Incorrecta. 75% confunde el número de expedientes (75) con el porcentaje.\n[B] Incorrecta. 33% resulta de dividir 75 entre 225 (los expedientes sin mayor impuesto), cuando la base debe ser el total.\n[C] Correcta. 75 ÷ 300 = 0,25, es decir, 25%.",
+      "norma": "Razonamiento cuantitativo – tasas",
+      "dificultad": 1,
+      "etiquetas": [
+        "porcentajes",
+        "indicadores"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-004",
+      "contexto": "Un equipo tiene 150 expedientes pendientes y cierra en promedio 12 por semana. Faltan 4 semanas para terminar el año.",
+      "enunciado": "Si mantiene el mismo ritmo, al profesional le corresponde proyectar que al cierre del año quedarán pendientes",
+      "opciones": {
+        "A": "102 expedientes",
+        "B": "48 expedientes",
+        "C": "138 expedientes"
+      },
+      "correcta": "A",
+      "explicacion": "Primero se calcula lo que se cerrará y luego se resta de lo pendiente.\n[A] Correcta. En 4 semanas se cerrarán 12 × 4 = 48 expedientes; quedarán 150 − 48 = 102.\n[B] Incorrecta. 48 es el número de expedientes que se cerrarán, no los que quedarán pendientes.\n[C] Incorrecta. 138 resulta de restar solo una semana de cierres (150 − 12).",
+      "norma": "Razonamiento cuantitativo – proyecciones",
+      "dificultad": 1,
+      "etiquetas": [
+        "proyección",
+        "planeación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-005",
+      "contexto": "Tres auditores revisan en total 90 facturas por día, todos al mismo ritmo. Para una auditoría urgente se asignan 5 auditores con el mismo rendimiento.",
+      "enunciado": "Al profesional le corresponde estimar que el nuevo equipo revisará por día",
+      "opciones": {
+        "A": "120 facturas",
+        "B": "150 facturas",
+        "C": "270 facturas"
+      },
+      "correcta": "B",
+      "explicacion": "Es una proporción directa: a más auditores, más facturas revisadas.\n[A] Incorrecta. 120 resulta de sumar el rendimiento de un solo auditor adicional (90 + 30), cuando se agregan dos.\n[B] Correcta. Cada auditor revisa 90 ÷ 3 = 30 facturas por día; 5 auditores revisan 30 × 5 = 150.\n[C] Incorrecta. 270 resulta de multiplicar 90 por 3, lo que confunde la relación entre auditores y facturas.",
+      "norma": "Razonamiento cuantitativo – proporcionalidad directa",
+      "dificultad": 1,
+      "etiquetas": [
+        "regla de tres",
+        "proporcionalidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-006",
+      "contexto": "Una auditoría la terminan 4 auditores en 15 días hábiles. El jefe necesita terminarla antes y puede asignar 6 auditores con el mismo rendimiento.",
+      "enunciado": "Al profesional le corresponde estimar que con 6 auditores la auditoría tomará",
+      "opciones": {
+        "A": "10 días hábiles",
+        "B": "22,5 días hábiles",
+        "C": "13 días hábiles"
+      },
+      "correcta": "A",
+      "explicacion": "Es una proporción inversa: a más auditores, menos días.\n[A] Correcta. El trabajo total es 4 × 15 = 60 días-auditor. Con 6 auditores: 60 ÷ 6 = 10 días.\n[B] Incorrecta. 22,5 resulta de aplicar una proporción directa (15 × 6 ÷ 4), como si más auditores tardaran más.\n[C] Incorrecta. 13 resulta de restar los 2 auditores adicionales a los días (15 − 2), sin razonar la proporción.",
+      "norma": "Razonamiento cuantitativo – proporcionalidad inversa",
+      "dificultad": 2,
+      "etiquetas": [
+        "proporcionalidad inversa"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-007",
+      "contexto": "Considere la siguiente regla: «Si un responsable es gran contribuyente, entonces declara el IVA bimestralmente». Se sabe que la empresa X declara el IVA cuatrimestralmente.",
+      "enunciado": "Con base en la regla, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "la empresa X es gran contribuyente.",
+        "B": "no se puede concluir nada sobre X.",
+        "C": "la empresa X no es gran contribuyente."
+      },
+      "correcta": "C",
+      "explicacion": "Si «P entonces Q» es verdadero y Q es falso, P también es falso (modus tollens).\n[A] Incorrecta. Si X fuera gran contribuyente, declararía bimestralmente, lo que contradice el dato.\n[B] Incorrecta. Sí se puede concluir: al negar la consecuencia (no declara bimestralmente), se niega la condición.\n[C] Correcta. La regla dice que todo gran contribuyente declara bimestralmente. Como X no declara bimestralmente, X no es gran contribuyente.",
+      "norma": "Razonamiento lógico – modus tollens",
+      "dificultad": 2,
+      "etiquetas": [
+        "lógica",
+        "condicionales"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-008",
+      "contexto": "Considere la regla: «Si un contribuyente omitió ingresos, aparecen diferencias entre su declaración y la información exógena». En la revisión de Y aparecen diferencias entre su declaración y la exógena.",
+      "enunciado": "Con base en la regla, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "Y omitió ingresos con toda certeza.",
+        "B": "hay un indicio que debe verificarse.",
+        "C": "Y declaró correctamente sus ingresos."
+      },
+      "correcta": "B",
+      "explicacion": "Afirmar la consecuencia no permite afirmar la causa con certeza (falacia de afirmación del consecuente).\n[A] Incorrecta. Las diferencias pueden tener otras causas, como errores de terceros al reportar la exógena o diferencias de periodo. Concluir con certeza sería una falacia.\n[B] Correcta. La regla dice que la omisión produce diferencias, pero no que las diferencias solo se produzcan por omisión. Las diferencias son un indicio que justifica verificar con pruebas.\n[C] Incorrecta. Nada en la información permite concluir que declaró correctamente; al contrario, hay una diferencia por explicar.",
+      "norma": "Razonamiento lógico – falacia de afirmación del consecuente",
+      "dificultad": 2,
+      "etiquetas": [
+        "lógica",
+        "inferencias"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-009",
+      "contexto": "Tres empresas del mismo sector reportan: A, ingresos $100 millones y costos $70 millones; B, ingresos $200 millones y costos $170 millones; C, ingresos $150 millones y costos $120 millones.",
+      "enunciado": "Para priorizar la revisión de costos, al profesional le corresponde identificar como la empresa de menor margen bruto a",
+      "opciones": {
+        "A": "la empresa A",
+        "B": "la empresa B",
+        "C": "la empresa C"
+      },
+      "correcta": "B",
+      "explicacion": "El margen bruto es (ingresos − costos) ÷ ingresos. Aunque las tres tienen la misma utilidad bruta ($30 millones), los márgenes difieren.\n[A] Incorrecta. A tiene margen de 30 ÷ 100 = 30%, el mayor de las tres.\n[B] Correcta. B tiene margen de 30 ÷ 200 = 15%, el menor. Un margen muy inferior al del sector puede indicar costos inflados y justifica priorizar la revisión.\n[C] Incorrecta. C tiene margen de 30 ÷ 150 = 20%, intermedio.",
+      "norma": "Razonamiento cuantitativo – márgenes y comparación",
+      "dificultad": 2,
+      "etiquetas": [
+        "márgenes",
+        "análisis de datos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-010",
+      "contexto": "Las sanciones impuestas en cuatro casos fueron de $10, $20, $30 y $60 millones. El jefe pide un valor representativo que no se distorsione por el caso más alto.",
+      "enunciado": "Al profesional le corresponde reportar la mediana, que es de",
+      "opciones": {
+        "A": "$30 millones",
+        "B": "$25 millones",
+        "C": "$20 millones"
+      },
+      "correcta": "B",
+      "explicacion": "La mediana es el valor central de los datos ordenados; con un número par de datos, es el promedio de los dos centrales.\n[A] Incorrecta. $30 millones es la media aritmética ((10 + 20 + 30 + 60) ÷ 4 = 30), que se ve afectada por el valor extremo de $60 millones.\n[B] Correcta. Los datos ordenados son 10, 20, 30 y 60. Los centrales son 20 y 30, y su promedio es 25. La mediana es menos sensible a los valores extremos.\n[C] Incorrecta. $20 millones es solo uno de los dos valores centrales, no su promedio.",
+      "norma": "Razonamiento cuantitativo – medidas de tendencia central",
+      "dificultad": 2,
+      "etiquetas": [
+        "mediana",
+        "estadística"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-011",
+      "contexto": "El número de declaraciones recibidas aumentó un 10% en 2024 y otro 10% en 2025, en cada caso frente al año inmediatamente anterior.",
+      "enunciado": "Al profesional le corresponde concluir que el aumento acumulado entre 2023 y 2025 fue del",
+      "opciones": {
+        "A": "20%",
+        "B": "21%",
+        "C": "10%"
+      },
+      "correcta": "B",
+      "explicacion": "Los porcentajes sucesivos se componen: no se suman.\n[A] Incorrecta. Sumar 10% + 10% = 20% ignora que el segundo aumento se aplica sobre una base ya aumentada.\n[B] Correcta. Si en 2023 había 100 declaraciones, en 2024 hubo 110 y en 2025, 110 × 1,10 = 121. El aumento acumulado es del 21% (1,10 × 1,10 = 1,21).\n[C] Incorrecta. 10% toma solo uno de los dos aumentos, como si el segundo no se acumulara.",
+      "norma": "Razonamiento cuantitativo – porcentajes sucesivos",
+      "dificultad": 2,
+      "etiquetas": [
+        "porcentajes compuestos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-012",
+      "contexto": "En una factura figura un valor total de $119.000, que incluye IVA del 19%. El profesional necesita conocer la base gravable.",
+      "enunciado": "Al profesional le corresponde calcular una base gravable de",
+      "opciones": {
+        "A": "$96.390",
+        "B": "$119.000",
+        "C": "$100.000"
+      },
+      "correcta": "C",
+      "explicacion": "Para separar el IVA de un valor total, se divide entre (1 + tarifa).\n[A] Incorrecta. $96.390 resulta de restar el 19% del total (119.000 × 0,81), un error común: el 19% se calcula sobre la base, no sobre el total.\n[B] Incorrecta. $119.000 es el valor total: tomarlo como base ignora que ya incluye el IVA.\n[C] Correcta. Base = 119.000 ÷ 1,19 = $100.000. Comprobación: 100.000 × 19% = 19.000; 100.000 + 19.000 = 119.000.",
+      "norma": "Razonamiento cuantitativo – porcentajes incluidos",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "porcentajes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-013",
+      "contexto": "Los números de radicado asignados en una mañana siguen esta secuencia: 1001, 1004, 1009, 1016…",
+      "enunciado": "Si el patrón continúa, al profesional le corresponde concluir que el siguiente radicado es",
+      "opciones": {
+        "A": "1023",
+        "B": "1025",
+        "C": "1027"
+      },
+      "correcta": "B",
+      "explicacion": "Hay que identificar el patrón de las diferencias entre los términos.\n[A] Incorrecta. 1023 supone que la diferencia se mantiene en 7, sin advertir que crece.\n[B] Correcta. Las diferencias son +3, +5, +7: aumentan de 2 en 2. La siguiente es +9: 1016 + 9 = 1025.\n[C] Incorrecta. 1027 supone una diferencia de +11, que salta un paso del patrón.",
+      "norma": "Razonamiento lógico – secuencias",
+      "dificultad": 1,
+      "etiquetas": [
+        "secuencias",
+        "patrones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-014",
+      "contexto": "Tres profesionales (Ana, Bruno y Carla) revisan cada uno un tema distinto: renta, IVA o aduanas. Ana no revisa IVA ni aduanas. Bruno no revisa aduanas.",
+      "enunciado": "Con esta información, al profesional le corresponde concluir que revisa aduanas",
+      "opciones": {
+        "A": "Ana",
+        "B": "Bruno",
+        "C": "Carla"
+      },
+      "correcta": "C",
+      "explicacion": "Se resuelve por descarte.\n[A] Incorrecta. Ana no revisa IVA ni aduanas: revisa renta.\n[B] Incorrecta. Bruno no revisa aduanas, y renta ya la tiene Ana: revisa IVA.\n[C] Correcta. Si Ana revisa renta y Bruno IVA, a Carla le queda aduanas.",
+      "norma": "Razonamiento lógico – deducción por descarte",
+      "dificultad": 1,
+      "etiquetas": [
+        "lógica",
+        "deducción"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-015",
+      "contexto": "El recaudo trimestral de una seccional fue: primer trimestre $50 mil millones, segundo $45 mil millones, tercero $60 mil millones y cuarto $65 mil millones.",
+      "enunciado": "Al profesional le corresponde identificar que el mayor crecimiento porcentual entre trimestres consecutivos ocurrió",
+      "opciones": {
+        "A": "del primero al segundo trimestre.",
+        "B": "del segundo al tercer trimestre.",
+        "C": "del tercero al cuarto trimestre."
+      },
+      "correcta": "B",
+      "explicacion": "Hay que calcular la variación porcentual de cada periodo frente al anterior.\n[A] Incorrecta. Del primero al segundo hubo una caída: (45 − 50) ÷ 50 = −10%.\n[B] Correcta. Del segundo al tercero: (60 − 45) ÷ 45 ≈ +33,3%, el mayor crecimiento.\n[C] Incorrecta. Del tercero al cuarto: (65 − 60) ÷ 60 ≈ +8,3%. Aunque el cuarto trimestre tiene el mayor valor absoluto, su crecimiento porcentual es menor.",
+      "norma": "Razonamiento cuantitativo – interpretación de series",
+      "dificultad": 2,
+      "etiquetas": [
+        "series de datos",
+        "variación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-016",
+      "contexto": "En una población de 400 facturas, se estima que el 10% tiene errores. El profesional selecciona al azar una muestra de 20 facturas.",
+      "enunciado": "Al profesional le corresponde esperar que, en promedio, la muestra contenga",
+      "opciones": {
+        "A": "2 facturas con errores",
+        "B": "4 facturas con errores",
+        "C": "40 facturas con errores"
+      },
+      "correcta": "A",
+      "explicacion": "En una muestra aleatoria, la proporción esperada de errores es la misma de la población.\n[A] Correcta. 10% de 20 facturas = 2 facturas con errores, en promedio.\n[B] Incorrecta. 4 facturas equivaldrían al 20% de la muestra, el doble de la proporción estimada.\n[C] Incorrecta. 40 es el número de facturas con errores esperado en toda la población (10% de 400), no en la muestra.",
+      "norma": "Razonamiento cuantitativo – proporciones y muestreo",
+      "dificultad": 1,
+      "etiquetas": [
+        "muestreo",
+        "proporciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-017",
+      "contexto": "En una verificación piloto de 80 declarantes, 12 habían omitido ingresos. El universo total de declarantes con el mismo perfil es de 2.000.",
+      "enunciado": "Si el piloto es representativo, al profesional le corresponde proyectar que los omisos en el universo serían cerca de",
+      "opciones": {
+        "A": "120",
+        "B": "240",
+        "C": "300"
+      },
+      "correcta": "C",
+      "explicacion": "Se calcula la tasa del piloto y se aplica al universo.\n[A] Incorrecta. 120 resulta de multiplicar los 12 omisos por 10, sin calcular la tasa.\n[B] Incorrecta. 240 corresponde a una tasa del 12%, que confunde el número de omisos con el porcentaje.\n[C] Correcta. Tasa: 12 ÷ 80 = 15%. Proyección: 2.000 × 15% = 300 omisos.",
+      "norma": "Razonamiento cuantitativo – extrapolación",
+      "dificultad": 2,
+      "etiquetas": [
+        "proyección",
+        "tasas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-018",
+      "contexto": "En un concurso, el puntaje final se calcula así: prueba funcional 70%, prueba comportamental 20% e integridad 10%. Un aspirante obtuvo 80 en la funcional, 90 en la comportamental y 70 en integridad.",
+      "enunciado": "Al profesional le corresponde calcular un puntaje final ponderado de",
+      "opciones": {
+        "A": "81",
+        "B": "80",
+        "C": "86"
+      },
+      "correcta": "A",
+      "explicacion": "El promedio ponderado multiplica cada puntaje por su peso y suma los resultados.\n[B] Incorrecta. 80 es el promedio simple de los tres puntajes ((80 + 90 + 70) ÷ 3), que ignora los pesos.\n[A] Correcta. 80 × 0,7 + 90 × 0,2 + 70 × 0,1 = 56 + 18 + 7 = 81.\n[C] Incorrecta. 86 resulta de invertir los pesos de la funcional y la comportamental: 80 × 0,2 + 90 × 0,7 + 70 × 0,1 = 16 + 63 + 7 = 86.",
+      "norma": "Razonamiento cuantitativo – promedio ponderado",
+      "dificultad": 2,
+      "etiquetas": [
+        "promedio ponderado"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-019",
+      "contexto": "Las ventas declaradas por un contribuyente en IVA suman $500 millones en el año. Según la información exógena, sus clientes reportan compras a ese contribuyente por $650 millones.",
+      "enunciado": "Al profesional le corresponde concluir que lo reportado por los clientes supera lo declarado en",
+      "opciones": {
+        "A": "un 30%",
+        "B": "un 23%",
+        "C": "un 77%"
+      },
+      "correcta": "A",
+      "explicacion": "Para expresar cuánto supera un valor a otro, la base es el valor de referencia, aquí lo declarado.\n[B] Incorrecta. 23% resulta de dividir la diferencia entre lo reportado por terceros (150 ÷ 650), que no es la base adecuada para esta comparación.\n[A] Correcta. Diferencia: 650 − 500 = 150. 150 ÷ 500 = 30%. Una diferencia así es un indicio de ingresos omitidos que debe verificarse.\n[C] Incorrecta. 77% es la proporción de lo declarado frente a lo reportado (500 ÷ 650), no el exceso de lo reportado sobre lo declarado.",
+      "norma": "Razonamiento cuantitativo – comparación porcentual",
+      "dificultad": 2,
+      "etiquetas": [
+        "cruces de información",
+        "porcentajes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-020",
+      "contexto": "El patrimonio líquido declarado de una persona pasó de $200 millones a $350 millones en un año. Su renta líquida declarada fue de $20 millones y no reporta herencias, donaciones ni ganancias ocasionales.",
+      "enunciado": "Con base en estos datos, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "el aumento no se explica con lo declarado y debe verificarse su origen.",
+        "B": "el aumento está justificado, porque el contribuyente declaró una renta líquida.",
+        "C": "el contribuyente tuvo con certeza ingresos de origen ilícito por $130 millones."
+      },
+      "correcta": "A",
+      "explicacion": "Se compara el aumento del patrimonio con los ingresos que podrían explicarlo.\n[B] Incorrecta. La renta de $20 millones solo explica una parte menor del aumento de $150 millones.\n[A] Correcta. El patrimonio aumentó $150 millones y la renta declarada fue de $20 millones: quedan $130 millones sin explicar. La conclusión razonable es verificar el origen; si no se justifica, procede la renta por comparación patrimonial (arts. 236 a 239 ET).\n[C] Incorrecta. Los datos no permiten concluir con certeza que los ingresos sean ilícitos: puede haber explicaciones (préstamos, valorizaciones, errores). Concluir eso sin pruebas es una inferencia indebida.",
+      "norma": "Razonamiento analítico – inferencias; Estatuto Tributario, arts. 236 a 239",
+      "dificultad": 2,
+      "etiquetas": [
+        "inferencias",
+        "comparación patrimonial"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-021",
+      "contexto": "Considere las afirmaciones: «Todos los responsables de IVA deben expedir factura» y «Pedro debe expedir factura».",
+      "enunciado": "Con base en estas afirmaciones, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "Pedro es necesariamente responsable de IVA.",
+        "B": "Pedro con certeza no es responsable de IVA.",
+        "C": "no puede saberse si Pedro es responsable de IVA."
+      },
+      "correcta": "C",
+      "explicacion": "Que todos los A sean B no significa que todos los B sean A.\n[A] Incorrecta. Puede haber personas obligadas a facturar que no sean responsables de IVA; afirmar lo contrario es una conclusión no válida.\n[B] Incorrecta. Tampoco puede concluirse que no lo sea: la información es compatible con ambas posibilidades.\n[C] Correcta. La primera afirmación dice que los responsables de IVA facturan, pero no que solo ellos facturan. Saber que Pedro factura no permite concluir si es o no responsable de IVA.",
+      "norma": "Razonamiento lógico – silogismos",
+      "dificultad": 2,
+      "etiquetas": [
+        "lógica",
+        "silogismos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "razonamiento-analitico-022",
+      "contexto": "Un requerimiento especial se notificó el 15 de marzo. El plazo de respuesta es de 3 meses contados a partir de la notificación.",
+      "enunciado": "Al profesional le corresponde establecer que el plazo de respuesta vence el",
+      "opciones": {
+        "A": "15 de mayo",
+        "B": "15 de julio",
+        "C": "15 de junio"
+      },
+      "correcta": "C",
+      "explicacion": "Los plazos en meses se cuentan de fecha a fecha en el calendario.\n[A] Incorrecta. El 15 de mayo corresponde a un plazo de 2 meses.\n[B] Incorrecta. El 15 de julio corresponde a un plazo de 4 meses.\n[C] Correcta. Tres meses desde el 15 de marzo: 15 de abril (1), 15 de mayo (2) y 15 de junio (3). El plazo vence el 15 de junio (art. 707 ET), y si ese día no es hábil, se traslada al siguiente día hábil.",
+      "norma": "Razonamiento cuantitativo – cómputo de plazos; Estatuto Tributario, art. 707",
+      "dificultad": 1,
+      "etiquetas": [
+        "plazos",
+        "fechas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

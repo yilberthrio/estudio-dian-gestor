@@ -1,19 +1,16 @@
 # Estudio Concurso DIAN – Gestor I
 
-Aplicación local para prepararse para la prueba escrita del concurso de méritos de la DIAN, empleo **Gestor I – Fiscalización y liquidación (ficha AT-FL-3008)**. Respondes preguntas tipo CNSC por rondas, ves la explicación de cada respuesta y la app lleva el registro de tus fortalezas y debilidades.
+Aplicación local para prepararse para la prueba escrita del **Proceso de Selección DIAN 2676**, empleo **Gestor I – Fiscalización y liquidación** (código 236767, ficha AT-FL-3008). Replica el formato de la prueba real y lleva el registro de tus fortalezas y debilidades por indicador.
 
 Funciona en tu computador, sin cuentas ni internet (solo se usa internet para descargar preguntas nuevas).
 
 ## Qué incluye
 
-- **Banco de preguntas** organizado en 3 módulos y 22 sesiones, según los ejes temáticos de la ficha del empleo:
-  - *Funcionales básicas:* Constitución, función pública, Código de Integridad, CPACA, Ley de Transparencia, gestión documental, MIPG, PQRSF, evasión y contrabando, herramientas informáticas.
-  - *Funcionales específicas:* sistema tributario, aduanero y cambiario; fiscalización y liquidación; determinación y sanciones; régimen cambiario; fiscalización internacional; fiscalización aduanera.
-  - *Comportamentales:* juicio situacional sobre ética, comunicación, trabajo en equipo, adaptabilidad, orientación al logro y al ciudadano.
-- **Rondas** configurables: aleatoria, solo no vistas, solo falladas, enfocada en debilidades, repaso espaciado y simulacro cronometrado.
-- **Explicación** de cada respuesta con la norma de referencia.
-- **Nivel de confianza** en cada respuesta (seguro / dudoso / adiviné) para detectar aciertos por suerte.
-- **Estadísticas**: porcentaje de acierto y error, evolución por ronda, dominio por sesión, preguntas más falladas y un informe de fortalezas y debilidades que se actualiza con cada ronda.
+- **300 preguntas de juicio situacional** con el formato de la prueba real: un caso, un enunciado y **3 opciones**, con la justificación de cada opción y la norma de referencia. Están organizadas por los **11 indicadores oficiales** del empleo: procedimiento de fiscalización y liquidación (tributaria y aduanera), liquidación de impuestos, sanciones, obligaciones tributarias, auditoría, normativa cambiaria, lavado de activos y ROS, gestión documental, razonamiento analítico, estructura y misionalidad de la DIAN.
+- **Simulacro oficial:** 66 preguntas repartidas entre los indicadores según su peso, en 4 horas, con el puntaje frente al mínimo aprobatorio (70) y una meta configurable.
+- **Rondas a tu medida:** eliges el indicador, la cantidad de preguntas y el modo (aleatorio, no vistas, falladas, enfocado en debilidades, repaso espaciado o simulacro).
+- **Práctica comportamental e integridad:** 90 afirmaciones con la escala de 4 niveles de la prueba real, con un perfil por competencia y alertas de respuestas extremas o contradictorias (la prueba real no tiene respuestas correctas).
+- **Estadísticas:** acierto por indicador, dominio, evolución, calibración de confianza (seguro / dudoso / adiviné), preguntas más falladas y cuenta regresiva a la prueba.
 
 ## Requisitos
 
@@ -45,17 +42,17 @@ Para actualizar manualmente: `git pull` y reinicia la app.
 
 ## Tu progreso es privado
 
-Todo lo que respondes se guarda en `estudio.db`, en tu propio computador. Ese archivo no se sube a ningún lado y cada persona empieza desde cero. Para respaldar tu progreso, copia ese archivo.
+Todo lo que respondes se guarda en `estudio.db`, en tu propio computador. Ese archivo no se sube a ningún lado y cada persona empieza desde cero. Para respaldar tu progreso, copia ese archivo. En **Configuración → Reiniciar estadísticas** puedes empezar de cero cuando quieras (se guarda un respaldo automático).
 
 ## Aviso
 
-- Las preguntas fueron elaboradas con apoyo de inteligencia artificial a partir de la normativa citada en cada una. **Contrasta siempre con la norma vigente**: la regulación tributaria, aduanera y cambiaria cambia con frecuencia. Si encuentras un error, márcala con 🚩 en la app o abre un *issue* en este repositorio.
+- Las preguntas fueron elaboradas con apoyo de inteligencia artificial a partir de la normativa citada en cada una y de los indicadores publicados para el empleo. No son preguntas reales de la prueba (que es reservada). **Contrasta siempre con la norma vigente**: la regulación tributaria, aduanera y cambiaria cambia con frecuencia. Si encuentras un error, márcala con 🚩 en la app o abre un *issue* en este repositorio.
 - Este proyecto no está afiliado a la DIAN ni a la CNSC.
 
 ## Estructura
 
 ```
-banco/          Preguntas (un archivo JSON por sesión) – lo que se actualiza en el repositorio
+banco/          Preguntas (un JSON por indicador) y banco/likert/ (afirmaciones) – lo que se actualiza en el repositorio
 app.py          Aplicación web (Flask)
 db.py           Base de datos local, catálogo de módulos y sesiones, importador
 banco.py        Sincronización entre banco/ y la base de datos local

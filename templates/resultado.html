@@ -17,6 +17,15 @@
     <div class="s">{% if pct is not none and global_pct is not none %}{{ 'por encima' if pct >= global_pct else 'por debajo' }} del promedio{% endif %}</div></div>
 </div>
 
+{% if ronda.modo.startswith('simulacro') and pct is not none %}
+{% set minimo, meta = cfg.puntaje_minimo|float, cfg.meta_puntaje|float %}
+<div class="flash {{ 'ok' if pct >= meta else 'info' if pct >= minimo else 'aviso' }}" style="margin-top:14px">
+  {% if pct >= meta %}🎯 <b>Meta alcanzada:</b> {{ pct }} puntos (meta {{ meta|int }}). A este nivel competirías por las primeras posiciones.
+  {% elif pct >= minimo %}✅ <b>Superas el mínimo aprobatorio</b> ({{ minimo|int }}) con {{ pct }}, pero te faltan {{ (meta - pct)|round(1) }} puntos para la meta de {{ meta|int }}.
+  {% else %}⚠️ <b>Por debajo del mínimo aprobatorio:</b> {{ pct }} frente a {{ minimo|int }}. En la prueba real no continuarías en el proceso.{% endif %}
+  <div class="peq suave" style="margin-top:4px">Estimación con % de aciertos; la CNSC califica de 0 a 100 tras un análisis psicométrico de los ítems.</div>
+</div>
+{% endif %}
 <div class="grid dos" style="margin-top:14px">
   <div class="panel">
     <h3>Por sesión en esta ronda</h3>

@@ -1,0 +1,575 @@
+{
+  "sesion": "obligaciones-tributarias",
+  "preguntas": [
+    {
+      "id": "obligaciones-tributarias-001",
+      "contexto": "En una capacitación a contribuyentes, un profesional debe explicar qué distingue la obligación sustancial de las obligaciones formales.",
+      "enunciado": "Al profesional le corresponde explicar que la obligación sustancial consiste en",
+      "opciones": {
+        "A": "presentar la declaración tributaria dentro de los plazos fijados por el Gobierno.",
+        "B": "pagar el tributo que nace al realizarse el hecho generador previsto en la ley.",
+        "C": "inscribirse en el RUT y mantener actualizada la información registrada allí."
+      },
+      "correcta": "B",
+      "explicacion": "La obligación sustancial es la obligación de dar (pagar); las formales son deberes que facilitan su control.\n[A] Incorrecta. Declarar es una obligación formal: un deber de hacer que permite determinar y controlar el tributo.\n[B] Correcta. La obligación tributaria sustancial se origina al realizarse el presupuesto o los presupuestos previstos en la ley como generadores del impuesto, y tiene por objeto el pago del tributo (art. 1 ET).\n[C] Incorrecta. Inscribirse en el RUT y actualizarlo son obligaciones formales (art. 555-2 ET).",
+      "norma": "Estatuto Tributario, art. 1",
+      "dificultad": 1,
+      "etiquetas": [
+        "obligación sustancial",
+        "obligaciones formales"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-002",
+      "contexto": "Una fundación sin ánimo de lucro calificada como no contribuyente del impuesto sobre la renta pregunta si, por no pagar el impuesto, queda liberada de toda obligación ante la DIAN.",
+      "enunciado": "Al profesional le corresponde informarle que",
+      "opciones": {
+        "A": "no tiene ninguna obligación, porque no es contribuyente del impuesto sobre la renta.",
+        "B": "debe pagar el impuesto de renta a una tarifa reducida, aunque no sea contribuyente.",
+        "C": "debe cumplir deberes formales, como presentar la declaración de ingresos y patrimonio."
+      },
+      "correcta": "C",
+      "explicacion": "No pagar el impuesto no exime de las obligaciones formales.\n[A] Incorrecta. La calidad de no contribuyente se refiere a la obligación sustancial; los deberes formales se mantienen cuando la ley los impone.\n[B] Incorrecta. Si es no contribuyente, no paga el impuesto de renta. Las tarifas reducidas corresponden a otros regímenes, como el régimen tributario especial.\n[C] Correcta. Los arts. 598 y 599 ET obligan a las entidades no contribuyentes declarantes a presentar la declaración de ingresos y patrimonio. Además, deben cumplir otros deberes formales, como inscribirse en el RUT y, si es el caso, actuar como agentes de retención.",
+      "norma": "Estatuto Tributario, arts. 598 y 599",
+      "dificultad": 2,
+      "etiquetas": [
+        "obligaciones formales",
+        "no contribuyentes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-003",
+      "contexto": "Una persona va a abrir una panadería el próximo mes y pregunta en qué momento debe inscribirse en el Registro Único Tributario.",
+      "enunciado": "Al profesional le corresponde indicarle que debe inscribirse en el RUT",
+      "opciones": {
+        "A": "antes de iniciar la actividad económica.",
+        "B": "al finalizar el primer año de operación.",
+        "C": "cuando la DIAN se lo exija por escrito."
+      },
+      "correcta": "A",
+      "explicacion": "La inscripción en el RUT es previa al inicio de la actividad.\n[A] Correcta. Según el art. 555-2 ET y su reglamentación, la inscripción en el RUT debe hacerse en forma previa al inicio de la actividad económica de quienes deben cumplir obligaciones administradas por la DIAN.\n[B] Incorrecta. Esperar al cierre del primer año implica operar sin la inscripción requerida, con riesgo de sanciones.\n[C] Incorrecta. La inscripción es un deber que debe cumplirse por iniciativa propia; la DIAN puede inscribir de oficio, pero eso no reemplaza el deber del obligado.",
+      "norma": "Estatuto Tributario, art. 555-2",
+      "dificultad": 1,
+      "etiquetas": [
+        "RUT",
+        "inscripción"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-004",
+      "contexto": "Una sociedad cambió la dirección de su domicilio fiscal hace tres meses y aún no ha actualizado el RUT. La DIAN le envió un requerimiento a la dirección antigua.",
+      "enunciado": "Al analizar la situación, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "la notificación es inválida, porque la DIAN debía buscar la nueva dirección.",
+        "B": "la sociedad incumplió el deber de actualizar el RUT y puede ser sancionada.",
+        "C": "la sociedad no tenía que actualizar el RUT, porque la dirección no es esencial."
+      },
+      "correcta": "B",
+      "explicacion": "El deber de mantener actualizado el RUT es del contribuyente.\n[A] Incorrecta. La DIAN notifica válidamente a la dirección informada en el RUT (art. 563 ET). La consecuencia de no actualizarla recae sobre el contribuyente.\n[B] Correcta. Los cambios en el RUT, como la dirección, deben actualizarse dentro del mes siguiente al hecho que genera la actualización. No hacerlo es una infracción sancionable (art. 658-3 ET) y además puede afectar al contribuyente en la notificación de los actos.\n[C] Incorrecta. La dirección es un dato esencial: de ella depende la notificación de los actos administrativos (art. 563 ET).",
+      "norma": "Estatuto Tributario, arts. 555-2, 563 y 658-3",
+      "dificultad": 2,
+      "etiquetas": [
+        "RUT",
+        "actualización",
+        "notificaciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-005",
+      "contexto": "Un comerciante expidió una factura electrónica de venta, pero el documento fue rechazado en la validación previa de la DIAN y aun así lo entregó al cliente.",
+      "enunciado": "Al profesional le corresponde concluir que esa factura",
+      "opciones": {
+        "A": "se entiende expedida, porque fue entregada efectivamente al adquirente.",
+        "B": "se entiende expedida, siempre que el comprador la haya aceptado expresamente.",
+        "C": "no se entiende expedida, porque le faltó la validación previa de la DIAN."
+      },
+      "correcta": "C",
+      "explicacion": "La validación previa de la DIAN es un requisito para que la factura electrónica exista como tal.\n[A] Incorrecta. La entrega al adquirente es necesaria, pero no suficiente: también se requiere la validación de la DIAN.\n[B] Incorrecta. La aceptación del comprador es relevante para otros efectos (por ejemplo, como título valor), pero no reemplaza la validación previa.\n[C] Correcta. El art. 616-1 ET dispone que la factura electrónica de venta se considera expedida cuando es validada por la DIAN y entregada al adquirente. Sin validación no está expedida, lo que afecta, entre otras cosas, la procedencia de los costos y del IVA descontable del comprador.",
+      "norma": "Estatuto Tributario, art. 616-1",
+      "dificultad": 2,
+      "etiquetas": [
+        "factura electrónica",
+        "validación previa"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-006",
+      "contexto": "En una visita, el profesional revisa las facturas de venta de un comerciante para verificar que cumplan los requisitos legales.",
+      "enunciado": "Al profesional le corresponde verificar que las facturas contengan, entre otros requisitos,",
+      "opciones": {
+        "A": "la denominación de factura de venta, los datos de las partes y la numeración autorizada.",
+        "B": "la firma autógrafa del revisor fiscal y el sello de la cámara de comercio en cada una de ellas.",
+        "C": "la copia de la declaración de renta del vendedor y la constancia del pago del impuesto del año."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 617 ET enumera los requisitos de la factura de venta.\n[A] Correcta. Entre los requisitos del art. 617 ET están: estar denominada expresamente como factura de venta; los apellidos y nombre o razón social y el NIT del vendedor; los mismos datos del adquirente; la numeración consecutiva autorizada; la fecha de expedición; la descripción de los bienes o servicios; el valor total de la operación y la discriminación del IVA cuando aplique.\n[B] Incorrecta. La firma del revisor fiscal y el sello de la cámara de comercio no son requisitos de la factura.\n[C] Incorrecta. Las facturas no deben acompañarse de las declaraciones ni de los pagos del vendedor.",
+      "norma": "Estatuto Tributario, arts. 615 a 617",
+      "dificultad": 1,
+      "etiquetas": [
+        "factura",
+        "requisitos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-007",
+      "contexto": "Un contribuyente pregunta dónde se fijan las fechas en que debe presentar sus declaraciones tributarias nacionales del próximo año.",
+      "enunciado": "Al profesional le corresponde indicarle que los plazos para declarar y pagar los fija",
+      "opciones": {
+        "A": "el Congreso de la República, en la ley anual de presupuesto.",
+        "B": "el Gobierno Nacional, mediante decreto reglamentario.",
+        "C": "cada Dirección Seccional, mediante resolución local."
+      },
+      "correcta": "B",
+      "explicacion": "Los lugares y plazos de las declaraciones los señala el Gobierno Nacional.\n[A] Incorrecta. El Congreso crea los tributos y fija sus elementos (art. 338 C.P.), pero los plazos de presentación no se fijan en la ley de presupuesto.\n[B] Correcta. El art. 579 ET dispone que la presentación de las declaraciones se efectúe en los lugares y dentro de los plazos que señale el Gobierno Nacional, lo que se hace mediante el decreto anual de plazos, generalmente según el último dígito del NIT.\n[C] Incorrecta. Las direcciones seccionales no fijan los plazos: los plazos son nacionales y uniformes.",
+      "norma": "Estatuto Tributario, art. 579",
+      "dificultad": 1,
+      "etiquetas": [
+        "plazos",
+        "declaraciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-008",
+      "contexto": "Al revisar una declaración, el profesional encuentra que no está firmada por el representante legal de la sociedad, que era quien debía cumplir el deber formal de declarar.",
+      "enunciado": "Al profesional le corresponde concluir que esta declaración",
+      "opciones": {
+        "A": "se tiene por no presentada, al faltar la firma de quien debía cumplir el deber formal.",
+        "B": "es válida, porque el pago del impuesto hace innecesaria la firma del representante.",
+        "C": "es válida, pero genera una sanción por inexactitud del 100% del impuesto declarado."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 580 ET enumera los casos en que las declaraciones se tienen por no presentadas.\n[A] Correcta. Según el art. 580 ET, la declaración se tiene por no presentada, entre otros casos, cuando no se presenta firmada por quien deba cumplir el deber formal de declarar, o cuando falta la firma del contador o revisor fiscal si es obligatoria. También cuando no se presenta en los lugares señalados, no se identifica al declarante o no contiene los factores para identificar las bases gravables.\n[B] Incorrecta. El pago no subsana la falta de firma: son requisitos distintos.\n[C] Incorrecta. La falta de firma no es una inexactitud. La consecuencia es que la declaración se tiene por no presentada.",
+      "norma": "Estatuto Tributario, arts. 572 y 580",
+      "dificultad": 2,
+      "etiquetas": [
+        "declaraciones",
+        "no presentadas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-009",
+      "contexto": "Una sociedad obligada a llevar contabilidad tuvo en el año anterior ingresos brutos de 120.000 UVT y no está obligada a tener revisor fiscal por otras normas.",
+      "enunciado": "Al profesional le corresponde verificar que su declaración de renta esté firmada por",
+      "opciones": {
+        "A": "el representante legal únicamente, porque no tiene revisor fiscal.",
+        "B": "un abogado titulado, que certifique la legalidad de las cifras declaradas.",
+        "C": "un contador público, además del representante legal de la sociedad."
+      },
+      "correcta": "C",
+      "explicacion": "Superados ciertos topes, las declaraciones requieren firma de contador o revisor fiscal.\n[A] Incorrecta. Aunque no tenga revisor fiscal, por sus ingresos la sociedad requiere la firma de un contador público.\n[B] Incorrecta. La ley no exige la firma de un abogado en las declaraciones tributarias.\n[C] Correcta. El art. 596 ET exige que las declaraciones de los contribuyentes obligados a llevar contabilidad sean firmadas por revisor fiscal o, si no están obligados a tenerlo, por contador público, cuando el patrimonio bruto o los ingresos brutos del año anterior superen 100.000 UVT. Con 120.000 UVT se supera ese tope.",
+      "norma": "Estatuto Tributario, arts. 596 y 597",
+      "dificultad": 2,
+      "etiquetas": [
+        "firma de contador",
+        "declaraciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-010",
+      "contexto": "Una persona natural asalariada, no responsable de IVA, tuvo en el año ingresos brutos de 1.200 UVT, un patrimonio bruto de 5.000 UVT al 31 de diciembre y consumos con tarjeta de crédito por 600 UVT.",
+      "enunciado": "Al profesional le corresponde indicarle que",
+      "opciones": {
+        "A": "no está obligada a declarar, porque sus ingresos no superan 1.400 UVT.",
+        "B": "está obligada a declarar, porque su patrimonio bruto supera 4.500 UVT.",
+        "C": "está obligada a declarar, porque sus consumos con tarjeta superan 500 UVT."
+      },
+      "correcta": "B",
+      "explicacion": "Basta con superar uno de los topes para estar obligado a declarar renta.\n[A] Incorrecta. Los ingresos son solo uno de los criterios: aunque no supere ese tope, el patrimonio sí supera el suyo.\n[B] Correcta. Las personas naturales deben declarar si su patrimonio bruto al 31 de diciembre excede 4.500 UVT, aunque sus ingresos estén por debajo de 1.400 UVT (arts. 592 a 594-3 ET). Otros topes: consumos con tarjeta de crédito, compras y consumos, y consignaciones superiores a 1.400 UVT.\n[C] Incorrecta. El tope de consumos con tarjeta de crédito es de 1.400 UVT, no de 500 UVT; con 600 UVT no se supera.",
+      "norma": "Estatuto Tributario, arts. 592 a 594-3",
+      "dificultad": 2,
+      "etiquetas": [
+        "obligados a declarar",
+        "topes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-011",
+      "contexto": "En una fiscalización, la DIAN solicita a un comerciante los soportes de unas compras de hace tres años, que corresponden a una declaración que aún no está en firme.",
+      "enunciado": "Al profesional le corresponde recordar que el comerciante tiene el deber de",
+      "opciones": {
+        "A": "conservar las pruebas y ponerlas a disposición de la DIAN cuando esta las exija.",
+        "B": "conservar solo las facturas del último año, porque las anteriores ya no tienen efectos.",
+        "C": "entregar los soportes solo si un juez ordena su exhibición mediante providencia judicial."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 632 ET impone el deber de conservar informaciones y pruebas.\n[A] Correcta. El art. 632 ET obliga a conservar, por el término legal, los libros de contabilidad, los soportes, las facturas, los documentos de retenciones y demás pruebas, y a ponerlos a disposición de la DIAN cuando los exija. Mientras la declaración no esté en firme, los soportes son necesarios para el control.\n[B] Incorrecta. La conservación no se limita al último año: debe cubrir el término legal, que se relaciona con la firmeza de las declaraciones.\n[C] Incorrecta. Para efectos tributarios no se requiere orden judicial: el art. 15 C.P. y el art. 684 ET facultan a la DIAN para exigir libros y documentos.",
+      "norma": "Estatuto Tributario, arts. 632 y 684; Constitución Política, art. 15",
+      "dificultad": 2,
+      "etiquetas": [
+        "conservación de documentos",
+        "deber de informar"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-012",
+      "contexto": "Una empresa pregunta por qué debe reportar a la DIAN información de sus proveedores, clientes y pagos a terceros, si eso no cambia el valor de sus impuestos.",
+      "enunciado": "Al profesional le corresponde explicar que la información exógena",
+      "opciones": {
+        "A": "es voluntaria, y solo se reporta para acceder a beneficios tributarios.",
+        "B": "es un deber formal que le permite a la DIAN hacer cruces de información con terceros.",
+        "C": "es un trámite que reemplaza la presentación de la declaración de renta del año."
+      },
+      "correcta": "B",
+      "explicacion": "La información exógena es un deber formal de los obligados que fija la DIAN.\n[A] Incorrecta. No es voluntaria: quienes cumplen los criterios de la resolución anual de la DIAN están obligados a reportarla, y no hacerlo genera sanción (art. 651 ET).\n[B] Correcta. El art. 631 ET faculta a la DIAN para solicitar información sobre operaciones con terceros. Con ella hace cruces que permiten detectar omisiones de ingresos, costos inexistentes y otras inconsistencias.\n[C] Incorrecta. La exógena no reemplaza la declaración de renta: es una obligación adicional e independiente.",
+      "norma": "Estatuto Tributario, arts. 631 y 651",
+      "dificultad": 1,
+      "etiquetas": [
+        "información exógena",
+        "obligaciones formales"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-013",
+      "contexto": "Una sociedad tiene una deuda tributaria y no la pagó. La DIAN analiza si puede cobrar parte de la deuda a los socios.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que los socios de sociedades de personas responden",
+      "opciones": {
+        "A": "solidariamente por los impuestos de la sociedad, según sus aportes.",
+        "B": "por la totalidad de la deuda, sin importar el porcentaje de sus aportes.",
+        "C": "solo si fueron condenados penalmente por la evasión de la sociedad."
+      },
+      "correcta": "A",
+      "explicacion": "El Estatuto Tributario prevé la responsabilidad solidaria de los socios.\n[A] Correcta. El art. 794 ET dispone que los socios, copartícipes, asociados, cooperados, comuneros y consorciados responden solidariamente por los impuestos, actualización e intereses de la persona jurídica o ente colectivo del que sean miembros, a prorrata de sus aportes y del tiempo durante el cual los hayan poseído. Hay excepciones, como los accionistas de sociedades anónimas y asimiladas, o los socios de sociedades por acciones simplificadas.\n[B] Incorrecta. La responsabilidad no es por la totalidad: se limita a la proporción de los aportes.\n[C] Incorrecta. La responsabilidad tributaria solidaria no depende de una condena penal.",
+      "norma": "Estatuto Tributario, arts. 793 y 794",
+      "dificultad": 3,
+      "etiquetas": [
+        "responsabilidad solidaria",
+        "socios"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-014",
+      "contexto": "Una empresa obligada a practicar retención en la fuente pagó honorarios a un contratista sin efectuar la retención correspondiente. La DIAN detecta la omisión.",
+      "enunciado": "Al profesional le corresponde concluir que la empresa",
+      "opciones": {
+        "A": "no tiene responsabilidad, porque el impuesto es del contratista y no suyo.",
+        "B": "responde por la suma que dejó de retener, además de las sanciones aplicables.",
+        "C": "solo debe informar al contratista que declare y pague el impuesto completo."
+      },
+      "correcta": "B",
+      "explicacion": "El agente retenedor que no retiene asume responsabilidad por la suma no retenida.\n[A] Incorrecta. Aunque el impuesto sea del contratista, la ley hace responsable al agente retenedor por su incumplimiento.\n[B] Correcta. El art. 370 ET dispone que los agentes de retención que no efectúen la retención son responsables con el contribuyente, y que las sanciones que se impongan por esa omisión son de su exclusiva responsabilidad.\n[C] Incorrecta. Informar al contratista no libera al agente: la retención es una obligación propia del agente.",
+      "norma": "Estatuto Tributario, arts. 368 y 370",
+      "dificultad": 2,
+      "etiquetas": [
+        "agente retenedor",
+        "responsabilidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-015",
+      "contexto": "Una persona natural que tiene un pequeño negocio de compra y venta de mercancías como actividad habitual pregunta si debe llevar contabilidad.",
+      "enunciado": "Al profesional le corresponde informarle que",
+      "opciones": {
+        "A": "no debe llevarla, porque es una persona natural y no una sociedad.",
+        "B": "debe llevarla solo si tiene más de diez empleados vinculados.",
+        "C": "debe llevarla, porque ejerce de forma habitual el comercio."
+      },
+      "correcta": "C",
+      "explicacion": "Los comerciantes están obligados a llevar contabilidad.\n[A] Incorrecta. La obligación no depende de ser persona jurídica: las personas naturales comerciantes también están obligadas.\n[B] Incorrecta. La ley no condiciona la obligación al número de empleados.\n[C] Correcta. El Código de Comercio (arts. 10, 19 y 20) considera comerciantes a quienes ejercen profesionalmente actividades mercantiles, como la compra para revender, y les impone el deber de llevar contabilidad regular. El ET le da efectos tributarios a esa contabilidad (arts. 772 y siguientes).",
+      "norma": "Código de Comercio, arts. 10, 19 y 20; Estatuto Tributario, art. 772",
+      "dificultad": 1,
+      "etiquetas": [
+        "contabilidad",
+        "comerciantes"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-016",
+      "contexto": "Un contribuyente tiene una deuda que incluye impuesto, sanción e intereses del mismo periodo, y hace un pago parcial sin cubrir el total.",
+      "enunciado": "Al profesional le corresponde aplicar el pago conforme a la regla de imputación, según la cual",
+      "opciones": {
+        "A": "se aplica proporcionalmente a las sanciones, los intereses y el impuesto de la deuda.",
+        "B": "se aplica primero al impuesto, luego a los intereses y por último a las sanciones pendientes.",
+        "C": "se aplica al concepto que la DIAN considere más conveniente para el recaudo del periodo."
+      },
+      "correcta": "A",
+      "explicacion": "Desde la Ley 1819 de 2016, los pagos parciales se imputan proporcionalmente.\n[A] Correcta. El art. 804 ET, modificado por la Ley 1819 de 2016, dispone que los pagos se imputen al periodo e impuesto que indique el contribuyente, en la misma proporción en que participan las sanciones, los intereses, los anticipos, los impuestos y las retenciones dentro de la obligación total al momento del pago.\n[B] Incorrecta. La norma no ordena aplicar primero al impuesto. La regla anterior a la Ley 1819 seguía otro orden, y la vigente es proporcional.\n[C] Incorrecta. La imputación no queda a discreción de la DIAN: la ley fija la regla.",
+      "norma": "Estatuto Tributario, art. 804 (Ley 1819 de 2016)",
+      "dificultad": 3,
+      "etiquetas": [
+        "imputación del pago",
+        "pago"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-017",
+      "contexto": "Un contribuyente no puede pagar de contado una deuda tributaria y solicita una facilidad de pago, ofreciendo garantías.",
+      "enunciado": "Al profesional le corresponde informarle que la DIAN puede conceder facilidades de pago hasta por",
+      "opciones": {
+        "A": "un año, sin necesidad de ofrecer garantías.",
+        "B": "diez años, sin intereses de financiación.",
+        "C": "cinco años, con las garantías exigidas."
+      },
+      "correcta": "C",
+      "explicacion": "Las facilidades de pago tienen un plazo máximo y exigen garantías, salvo excepciones.\n[A] Incorrecta. El plazo no se limita a un año. En algunos casos especiales pueden concederse facilidades sin garantía, pero esa no es la regla general.\n[B] Incorrecta. El plazo máximo no es de diez años, y las facilidades generan intereses.\n[C] Correcta. El art. 814 ET permite a la DIAN conceder facilidades para el pago de impuestos, anticipos, retenciones, intereses y sanciones hasta por 5 años, siempre que el deudor ofrezca garantías satisfactorias (bancarias, reales o personales, según el caso).",
+      "norma": "Estatuto Tributario, art. 814",
+      "dificultad": 2,
+      "etiquetas": [
+        "facilidades de pago",
+        "cobro"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-018",
+      "contexto": "En una capacitación, el profesional explica cómo se extinguen las obligaciones tributarias sustanciales.",
+      "enunciado": "Al profesional le corresponde mencionar como formas de extinguir la obligación tributaria",
+      "opciones": {
+        "A": "el pago, la compensación, la prescripción de la acción de cobro y la remisión.",
+        "B": "la corrección voluntaria, el emplazamiento para corregir y el requerimiento especial.",
+        "C": "la inscripción en el RUT, la facturación electrónica y el reporte de información exógena."
+      },
+      "correcta": "A",
+      "explicacion": "Las obligaciones tributarias sustanciales se extinguen por los modos previstos en la ley.\n[A] Correcta. El Estatuto Tributario regula como formas de extinción el pago (arts. 800 y siguientes), la compensación (art. 815), la prescripción de la acción de cobro (art. 817) y la remisión o condonación en los casos expresamente previstos (art. 820).\n[B] Incorrecta. Son actos del proceso de fiscalización y determinación: modifican o proponen modificar la obligación, pero no la extinguen.\n[C] Incorrecta. Son obligaciones formales; cumplirlas no extingue la obligación sustancial de pagar.",
+      "norma": "Estatuto Tributario, arts. 800, 815, 817 y 820",
+      "dificultad": 2,
+      "etiquetas": [
+        "extinción de obligaciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-019",
+      "contexto": "Un contribuyente tiene un saldo a favor reconocido en su declaración de renta y, al mismo tiempo, una deuda pendiente por IVA de un periodo anterior.",
+      "enunciado": "Al profesional le corresponde informarle que puede",
+      "opciones": {
+        "A": "mantener las dos situaciones separadas, porque la ley no permite cruzar impuestos.",
+        "B": "solicitar la compensación del saldo a favor con la deuda de IVA pendiente.",
+        "C": "exigir que la DIAN le pague el saldo a favor antes de cobrarle la deuda de IVA."
+      },
+      "correcta": "B",
+      "explicacion": "Los saldos a favor pueden compensarse con deudas tributarias.\n[A] Incorrecta. La ley sí permite compensar saldos a favor con otras deudas por impuestos administrados por la DIAN.\n[B] Correcta. El art. 815 ET permite a los contribuyentes imputar o solicitar la compensación de sus saldos a favor con deudas por concepto de impuestos, anticipos, retenciones, intereses y sanciones a su cargo. Además, al devolver un saldo, la DIAN debe compensarlo previamente con las deudas existentes (arts. 816 y 861 ET).\n[C] Incorrecta. Antes de devolver, la DIAN compensa las deudas pendientes; el contribuyente no puede exigir el pago previo del saldo.",
+      "norma": "Estatuto Tributario, arts. 815, 816 y 861",
+      "dificultad": 2,
+      "etiquetas": [
+        "compensación",
+        "saldo a favor"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-020",
+      "contexto": "Una persona menor de edad heredó bienes que la obligan a declarar renta. Sus padres preguntan quién debe cumplir esa obligación.",
+      "enunciado": "Al profesional le corresponde informarles que el deber formal de declarar lo deben cumplir",
+      "opciones": {
+        "A": "los padres, como representantes legales del menor.",
+        "B": "el menor, cuando cumpla la mayoría de edad.",
+        "C": "el notario que tramitó la sucesión de los bienes."
+      },
+      "correcta": "A",
+      "explicacion": "Los deberes formales de los incapaces los cumplen sus representantes.\n[A] Correcta. El art. 572 ET dispone que deben cumplir los deberes formales de sus representados, entre otros, los padres por sus hijos menores, los tutores y curadores por los incapaces, y los representantes legales por las personas jurídicas.\n[B] Incorrecta. Esperar la mayoría de edad haría incumplir los plazos de declaración: el deber existe desde ahora y lo cumplen los representantes.\n[C] Incorrecta. El notario no es representante del menor ni asume sus obligaciones tributarias.",
+      "norma": "Estatuto Tributario, art. 572",
+      "dificultad": 1,
+      "etiquetas": [
+        "representantes",
+        "deberes formales"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-021",
+      "contexto": "Un empleado pide a su empleador el certificado de ingresos y retenciones del año para preparar su declaración de renta.",
+      "enunciado": "Al profesional le corresponde indicar que el empleador, como agente retenedor, debe",
+      "opciones": {
+        "A": "expedirlo solo si el empleado demuestra que está obligado a declarar renta.",
+        "B": "expedirlo dentro del plazo que fija el Gobierno para cada año gravable.",
+        "C": "abstenerse de expedirlo, porque la DIAN ya tiene esa información exógena."
+      },
+      "correcta": "B",
+      "explicacion": "Expedir los certificados de retención es un deber formal del agente retenedor.\n[A] Incorrecta. El certificado debe expedirse a los empleados en todos los casos; no depende de que estén obligados a declarar.\n[B] Correcta. Los arts. 378 y 381 ET obligan a los agentes retenedores a expedir el certificado de ingresos y retenciones a sus asalariados, dentro del plazo que fija el Gobierno Nacional cada año. El incumplimiento se sanciona (art. 667 ET).\n[C] Incorrecta. Que la DIAN reciba información exógena no exime al empleador del deber de expedir el certificado al trabajador.",
+      "norma": "Estatuto Tributario, arts. 378, 381 y 667",
+      "dificultad": 2,
+      "etiquetas": [
+        "certificados de retención",
+        "agente retenedor"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-022",
+      "contexto": "Un contribuyente persona natural vende bienes gravados y, durante el año en curso, sus ingresos superaron el tope que lo excluía de ser responsable del IVA.",
+      "enunciado": "Al profesional le corresponde indicarle que debe",
+      "opciones": {
+        "A": "esperar al año siguiente para empezar a cobrar el IVA en sus ventas.",
+        "B": "actualizar el RUT como responsable de IVA y cumplir las obligaciones del impuesto.",
+        "C": "abstenerse de cambiar su situación, porque la responsabilidad solo la asigna la DIAN."
+      },
+      "correcta": "B",
+      "explicacion": "Al dejar de cumplir las condiciones de no responsable, la persona pasa a ser responsable del IVA.\n[A] Incorrecta. La responsabilidad nace cuando se dejan de cumplir las condiciones; no hay que esperar al año siguiente.\n[B] Correcta. El art. 437 ET, parágrafo 3, establece que quienes superen los topes o dejen de cumplir los requisitos para no ser responsables pasan a ser responsables del IVA. Deben actualizar el RUT e iniciar el cumplimiento de sus obligaciones: facturar con IVA, declarar y pagar.\n[C] Incorrecta. La calidad de responsable surge de la ley cuando se cumplen sus supuestos, y la actualización del RUT es un deber del contribuyente.",
+      "norma": "Estatuto Tributario, art. 437, parágrafo 3; art. 555-2",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "responsables",
+        "RUT"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-023",
+      "contexto": "Una gran empresa presentó su declaración de renta en papel, en una ventanilla bancaria, aunque está obligada a presentar sus declaraciones de forma virtual.",
+      "enunciado": "Al profesional le corresponde concluir que esa declaración",
+      "opciones": {
+        "A": "es válida, porque los bancos autorizados reciben declaraciones en papel.",
+        "B": "es válida, siempre que se haya pagado el total del impuesto en la misma fecha.",
+        "C": "se tiene por no presentada, porque no se usó el medio electrónico obligatorio."
+      },
+      "correcta": "C",
+      "explicacion": "Quienes están obligados a declarar virtualmente deben hacerlo por los servicios informáticos electrónicos de la DIAN.\n[A] Incorrecta. Que los bancos reciban declaraciones en papel no habilita a los obligados a declarar virtualmente a usar ese medio.\n[B] Incorrecta. El pago no subsana el uso de un medio no autorizado para presentar la declaración.\n[C] Correcta. El art. 579-2 ET dispone que las declaraciones de quienes están obligados a presentarlas por medios electrónicos se tienen por no presentadas cuando se usa un medio distinto, salvo las contingencias previstas en la reglamentación.",
+      "norma": "Estatuto Tributario, art. 579-2",
+      "dificultad": 2,
+      "etiquetas": [
+        "declaración virtual",
+        "no presentadas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-024",
+      "contexto": "Una sociedad declaró su IVA, pero sin incluir el NIT completo ni el nombre del declarante, por lo que no es posible identificar quién presentó el formulario.",
+      "enunciado": "Al profesional le corresponde concluir que la declaración",
+      "opciones": {
+        "A": "es válida, porque la DIAN puede identificar al declarante por el número de formulario.",
+        "B": "se tiene por no presentada, porque no se suministró la identificación del declarante.",
+        "C": "es válida, pero el declarante debe corregirla dentro de los tres años siguientes."
+      },
+      "correcta": "B",
+      "explicacion": "La identificación del declarante es un requisito esencial de la declaración.\n[A] Incorrecta. La ley no permite suplir la falta de identificación con el número de formulario: la identificación es un requisito expreso.\n[B] Correcta. El art. 580 ET dispone que no se entiende cumplido el deber de declarar, entre otros casos, cuando no se suministra la identificación del declarante o se hace en forma equivocada.\n[C] Incorrecta. No se trata de una declaración válida que deba corregirse: la ley la tiene por no presentada.",
+      "norma": "Estatuto Tributario, art. 580",
+      "dificultad": 2,
+      "etiquetas": [
+        "declaraciones",
+        "no presentadas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-025",
+      "contexto": "Un agente retenedor declara la retención en la fuente del mes, pero no incluye el valor de los pagos sujetos a retención ni las bases que permitan identificar lo retenido.",
+      "enunciado": "Al profesional le corresponde advertir que, entre las causales para tener una declaración por no presentada, está",
+      "opciones": {
+        "A": "no contener los factores necesarios para identificar las bases gravables.",
+        "B": "haberse presentado un día después del vencimiento del plazo establecido.",
+        "C": "contener un error aritmético que genere un menor valor de retención."
+      },
+      "correcta": "A",
+      "explicacion": "Una declaración sin los factores necesarios para identificar las bases gravables se tiene por no presentada.\n[A] Correcta. El art. 580 ET establece como causal que la declaración no contenga los factores necesarios para identificar las bases gravables.\n[B] Incorrecta. Presentarla tarde no la hace inexistente: genera la sanción por extemporaneidad (art. 641 ET).\n[C] Incorrecta. El error aritmético se corrige con liquidación de corrección aritmética (art. 697 ET); no hace que la declaración se tenga por no presentada.",
+      "norma": "Estatuto Tributario, arts. 580, 641 y 697",
+      "dificultad": 2,
+      "etiquetas": [
+        "declaraciones",
+        "no presentadas"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-026",
+      "contexto": "Un contribuyente presentó su declaración de renta con un menor impuesto por un error que él mismo detectó. Aún no le han notificado emplazamiento ni requerimiento especial, y la declaración no está en firme.",
+      "enunciado": "Al profesional le corresponde informarle que puede",
+      "opciones": {
+        "A": "esperar a que la DIAN lo requiera, porque solo así puede modificar la declaración.",
+        "B": "presentar una nueva declaración, sin sanción, porque el error fue involuntario.",
+        "C": "corregirla voluntariamente, liquidando el mayor valor y la sanción por corrección."
+      },
+      "correcta": "C",
+      "explicacion": "El contribuyente puede corregir voluntariamente sus declaraciones para aumentar el impuesto.\n[A] Incorrecta. La corrección no exige actuación previa de la DIAN; adelantarse es más favorable para el contribuyente.\n[C] Correcta. El art. 588 ET permite corregir las declaraciones dentro de los 3 años siguientes al vencimiento del plazo para declarar, antes de que se notifique requerimiento especial o pliego de cargos, liquidando la sanción por corrección (art. 644 ET: 10% del mayor valor antes del emplazamiento).\n[B] Incorrecta. Que el error sea involuntario no elimina la sanción por corrección cuando aumenta el impuesto.",
+      "norma": "Estatuto Tributario, arts. 588 y 644",
+      "dificultad": 1,
+      "etiquetas": [
+        "corrección voluntaria"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-027",
+      "contexto": "Una empresa importadora pregunta si debe inscribirse en el RUT, porque ya está registrada en la cámara de comercio y declara renta.",
+      "enunciado": "Al profesional le corresponde informarle que",
+      "opciones": {
+        "A": "debe estar inscrita en el RUT, con las responsabilidades de importador y demás que le correspondan.",
+        "B": "no necesita inscribirse en el RUT, porque el registro mercantil reemplaza esa inscripción tributaria.",
+        "C": "solo debe inscribirse en el RUT si exporta, porque los importadores tienen un registro aduanero aparte."
+      },
+      "correcta": "A",
+      "explicacion": "El RUT identifica, ubica y clasifica a todos los sujetos de obligaciones administradas por la DIAN, incluidos los usuarios aduaneros.\n[A] Correcta. El art. 555-2 ET incluye entre los obligados a inscribirse en el RUT a los importadores, exportadores y demás usuarios aduaneros. El RUT debe reflejar todas sus responsabilidades: renta, IVA, retención, usuario aduanero, etc.\n[B] Incorrecta. El registro mercantil de la cámara de comercio cumple fines distintos y no reemplaza la inscripción en el RUT.\n[C] Incorrecta. Los importadores también deben inscribirse en el RUT; no existe un registro aduanero independiente que lo reemplace.",
+      "norma": "Estatuto Tributario, art. 555-2",
+      "dificultad": 1,
+      "etiquetas": [
+        "RUT",
+        "usuarios aduaneros"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-028",
+      "contexto": "Una sociedad que liquidó su actividad económica y cerró definitivamente pregunta si debe informar algo a la DIAN.",
+      "enunciado": "Al profesional le corresponde indicarle que debe",
+      "opciones": {
+        "A": "no hacer nada, porque las obligaciones se extinguen automáticamente al cerrar.",
+        "B": "esperar a que la DIAN cancele de oficio el RUT cuando note que dejó de declarar.",
+        "C": "informar el cese de actividades y pedir la cancelación del RUT, con lo pendiente al día."
+      },
+      "correcta": "C",
+      "explicacion": "El cese de actividades debe informarse a la DIAN.\n[A] Incorrecta. Cerrar el negocio no extingue automáticamente las obligaciones pendientes ni los deberes formales.\n[B] Incorrecta. Mientras no informe el cese, la DIAN puede seguir considerándola obligada a declarar, con riesgo de sanciones por omisión.\n[C] Correcta. El art. 614 ET y la reglamentación del RUT obligan a informar el cese de actividades. La cancelación del RUT procede tras verificar que se cumplieron las obligaciones pendientes (declaraciones, pagos, información). Mientras no se informe, la DIAN puede exigir las declaraciones de los periodos siguientes.",
+      "norma": "Estatuto Tributario, arts. 555-2 y 614",
+      "dificultad": 2,
+      "etiquetas": [
+        "cese de actividades",
+        "RUT"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-029",
+      "contexto": "En una reunión, un contribuyente afirma que, si presenta su declaración de IVA a tiempo, puede pagar el impuesto cuando tenga liquidez, sin consecuencias.",
+      "enunciado": "Al profesional le corresponde aclararle que pagar después del plazo",
+      "opciones": {
+        "A": "no genera consecuencias, porque lo importante es haber declarado a tiempo.",
+        "B": "convierte la declaración en extemporánea y genera la sanción del art. 641 ET.",
+        "C": "genera intereses moratorios por cada día de retardo en el pago del impuesto."
+      },
+      "correcta": "C",
+      "explicacion": "Declarar a tiempo y pagar a tiempo son obligaciones distintas, con consecuencias distintas.\n[A] Incorrecta. El pago oportuno es la obligación sustancial; incumplirlo tiene consecuencias aunque se haya declarado a tiempo.\n[C] Correcta. El art. 634 ET dispone que quienes no cancelen oportunamente los impuestos, anticipos y retenciones a su cargo deben liquidar y pagar intereses moratorios por cada día calendario de retardo, a la tasa del art. 635 ET.\n[B] Incorrecta. La extemporaneidad se refiere a la presentación de la declaración, no al pago. Si la declaración se presentó a tiempo, no es extemporánea, aunque el pago sea tardío (salvo las reglas especiales de retención en la fuente, art. 580-1 ET).",
+      "norma": "Estatuto Tributario, arts. 634, 635 y 641",
+      "dificultad": 2,
+      "etiquetas": [
+        "pago",
+        "intereses moratorios"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "obligaciones-tributarias-030",
+      "contexto": "Una empresa agente de retención no hizo ningún pago sujeto a retención en el mes de julio, porque suspendió temporalmente sus compras y contrataciones.",
+      "enunciado": "Respecto de la declaración de retención en la fuente de julio, al profesional le corresponde indicar que la empresa",
+      "opciones": {
+        "A": "debe presentarla en ceros, porque la declaración de retención es mensual y obligatoria.",
+        "B": "debe presentarla junto con la del mes siguiente, sumando los valores de ambos periodos.",
+        "C": "no está obligada a presentarla, porque no realizó operaciones sujetas a retención en el mes."
+      },
+      "correcta": "C",
+      "explicacion": "La declaración de retención en la fuente es mensual, pero no es obligatoria en los meses sin operaciones sujetas.\n[A] Incorrecta. Aunque la periodicidad es mensual (art. 606 ET), la ley exime de declarar los meses en que no hubo operaciones sujetas a retención.\n[C] Correcta. El parágrafo del art. 606 ET dispone que los agentes de retención no están obligados a presentar la declaración de retención en los meses en que no hayan realizado operaciones sujetas a retención.\n[B] Incorrecta. Cada periodo se declara por separado; no se acumulan dos meses en una sola declaración.",
+      "norma": "Estatuto Tributario, art. 606",
+      "dificultad": 2,
+      "etiquetas": [
+        "retención en la fuente",
+        "declaraciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

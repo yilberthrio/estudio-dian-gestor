@@ -11,7 +11,9 @@ function graficaLinea(contenedor, puntos, opciones = {}) {
     s += `<line class="eje" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`;
     s += `<text x="${m.l - 6}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
   }
-  if (opciones.meta) s += `<line class="meta" x1="${m.l}" x2="${W - m.r}" y1="${y(opciones.meta)}" y2="${y(opciones.meta)}"/>`;
+  for (const v of opciones.lineas || (opciones.meta ? [opciones.meta] : [])) {
+    s += `<line class="meta" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`;
+  }
   const d = puntos.map((p, i) => `${i ? "L" : "M"}${x(i)},${y(p.v)}`).join("");
   s += `<path class="area" d="${d}L${x(puntos.length - 1)},${y(0)}L${x(0)},${y(0)}Z"/>`;
   s += `<path class="trazo" d="${d}"/>`;

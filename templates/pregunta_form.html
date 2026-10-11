@@ -29,7 +29,7 @@
     <div class="campo fila" style="align-items:center">
       <label class="check" style="flex:0 0 auto"><input type="radio" name="correcta" value="{{ l|upper }}" required
         {{ 'checked' if p and p.correcta == l|upper }}> Correcta</label>
-      <div style="flex:1 1 300px"><input type="text" name="opcion_{{ l }}" placeholder="Opción {{ l|upper }}" required value="{{ p['opcion_' ~ l] if p else '' }}"></div>
+      <div style="flex:1 1 300px"><input type="text" name="opcion_{{ l }}" placeholder="Opción {{ l|upper }}{{ ' (opcional: la prueba real usa 3 opciones)' if l == 'd' }}" {{ 'required' if l != 'd' }} value="{{ (p['opcion_' ~ l] or '') if p else '' }}"></div>
     </div>
   {% endfor %}
   <div class="campo"><label>Explicación de la respuesta</label><textarea name="explicacion" required style="min-height:110px">{{ p.explicacion if p else '' }}</textarea></div>

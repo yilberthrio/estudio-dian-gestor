@@ -7,7 +7,7 @@
     <div class="campo" style="flex:3 1 300px">
       <label for="alcance">¿Qué quieres practicar?</label>
       <select name="alcance" id="alcance">
-        <option value="">Todo el temario (mezclado)</option>
+        <option value="">Todos los indicadores (mezclado)</option>
         {% for m in modulos %}
           <optgroup label="{{ m.nombre }}">
             <option value="m:{{ m.id }}" {{ 'selected' if preseleccion == 'm:' ~ m.id }}>▸ Todo el módulo «{{ m.nombre }}» ({{ m.banco }})</option>
@@ -32,8 +32,9 @@
       'falladas': 'Preguntas cuya última respuesta fue errada o adivinada.',
       'debilidades': 'Prioriza las sesiones con menor dominio y las preguntas falladas.',
       'repaso': 'Repetición espaciada: las que tocan hoy según tu historial.',
-      'simulacro': 'Cronometrado (' ~ cfg.minutos_por_pregunta_simulacro ~ ' min/pregunta). Explicaciones al final; lo no respondido cuenta como error.'} %}
-    {% for clave in ['aleatorio', 'no_vistas', 'falladas', 'debilidades', 'repaso', 'simulacro'] %}
+      'simulacro': 'Cronometrado con la cantidad que elijas (' ~ cfg.minutos_por_pregunta_simulacro ~ ' min/pregunta). Explicaciones al final.',
+      'simulacro_oficial': 'Igual a la prueba real: ' ~ cfg.simulacro_oficial_preguntas ~ ' preguntas repartidas entre los 11 indicadores, ' ~ cfg.simulacro_oficial_minutos ~ ' minutos. Ignora el alcance y la cantidad.'} %}
+    {% for clave in ['aleatorio', 'no_vistas', 'falladas', 'debilidades', 'repaso', 'simulacro', 'simulacro_oficial'] %}
       <label class="modo">
         <input type="radio" name="modo" value="{{ clave }}" {{ 'checked' if (modo_pre or 'aleatorio') == clave }}>
         <b>{{ MODOS[clave] }}</b>
@@ -62,7 +63,7 @@ async function actualizarConteos() {
 sel.addEventListener("change", actualizarConteos);
 if (sel.value) actualizarConteos();
 const fb = document.getElementById("campo-feedback");
-function toggleFb() { fb.style.display = document.querySelector("[name=modo]:checked").value === "simulacro" ? "none" : ""; }
+function toggleFb() { fb.style.display = document.querySelector("[name=modo]:checked").value.startsWith("simulacro") ? "none" : ""; }
 document.querySelectorAll("[name=modo]").forEach(r => r.addEventListener("change", toggleFb));
 toggleFb();
 </script>

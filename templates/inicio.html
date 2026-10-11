@@ -5,9 +5,22 @@
   <h1 style="margin:0">Panel de estudio</h1>
   <div class="acciones">
     {% if g.repaso_hoy %}<a class="btn" href="{{ url_for('nueva_ronda', modo='repaso') }}">🔁 Repasar {{ g.repaso_hoy }} pendientes</a>{% endif %}
+    <a class="btn" href="{{ url_for('nueva_ronda', modo='simulacro_oficial') }}">⏱ Simulacro oficial</a>
     <a class="btn prim" href="{{ url_for('nueva_ronda') }}">▶ Nueva ronda</a>
   </div>
 </div>
+
+{% if cfg.mostrar_resumen_prueba != '0' %}
+<div class="panel prueba-banner">
+  <div><div class="grande">{{ dias if dias >= 0 else 0 }}</div><div class="suave">días para la prueba<br>({{ cfg.fecha_prueba }})</div></div>
+  <div class="peq">
+    <b>Proceso DIAN 2676 · Gestor I (empleo 236767)</b><br>
+    Funcional <b>70%</b> (eliminatoria, mínimo <b>{{ cfg.puntaje_minimo }}</b>) · Comportamental 20% · Integridad 10%<br>
+    66 preguntas funcionales de juicio situacional (3 opciones) + 90 afirmaciones Likert · 5 horas<br>
+    Tu meta en la funcional: <b>{{ cfg.meta_puntaje }}</b> (estimación para quedar entre los 189 primeros)
+  </div>
+</div>
+{% endif %}
 
 {% for a in abiertas %}
   <div class="flash info">Ronda #{{ a.id }} sin terminar ({{ a.alcance }}, {{ a.hechas }}/{{ a.cantidad }} respondidas) —
@@ -37,17 +50,20 @@
   <div class="panel">
     <h3>Evolución del acierto por ronda</h3>
     <div id="evolucion"></div>
-    <div class="peq suave">Línea punteada: meta de 80%.</div>
+    <div class="peq suave">Líneas punteadas: mínimo aprobatorio ({{ cfg.puntaje_minimo }}) y meta ({{ cfg.meta_puntaje }}).</div>
   </div>
   <div class="panel">
-    <h3>Por módulo</h3>
-    <table>
-      <tr><th>Módulo</th><th class="n">Banco</th><th class="n">Cobertura</th><th class="n">Acierto</th><th></th></tr>
-      {% for m in modulos %}
-      <tr><td>{{ m.nombre }}</td><td class="n">{{ m.banco }}</td><td class="n">{{ m.cobertura|num('%') }}</td>
-        <td class="n">{{ m.pct|num('%') }}</td><td style="width:90px">{{ barra(m.pct) }}</td></tr>
+    <h3>Simulacros oficiales</h3>
+    {% if not simulacros %}<p class="peq suave">Aún no has hecho un simulacro oficial. Hazlo cuando hayas recorrido todos los indicadores.</p>
+    {% else %}<table>
+      <tr><th>Fecha</th><th class="n">Puntaje</th><th>Frente al mínimo y la meta</th></tr>
+      {% for x in simulacros %}
+      <tr><td><a href="{{ url_for('resultado', rid=x.id) }}">{{ x.inicio|fecha }}</a></td><td class="n">{{ x.pct|num }}</td>
+        <td>{% if x.pct >= cfg.meta_puntaje|float %}<span class="chip ok">Meta alcanzada</span>
+          {% elif x.pct >= cfg.puntaje_minimo|float %}<span class="chip medio">Aprueba, bajo la meta</span>
+          {% else %}<span class="chip mal">Bajo el mínimo</span>{% endif %}</td></tr>
       {% endfor %}
-    </table>
+    </table>{% endif %}
     <h3 style="margin-top:18px">Calibración de confianza</h3>
     <table>
       <tr><th>Cuando marcas…</th><th class="n">Respuestas</th><th class="n">Aciertas</th></tr>
@@ -56,10 +72,10 @@
   </div>
 </div>
 
-<h2>Detalle por sesión</h2>
+<h2>Dominio por indicador oficial</h2>
 <div class="panel tabla-scroll">
   <table>
-    <tr><th>Sesión</th><th class="n">Banco</th><th class="n">Vistas</th><th class="n">Resp.</th><th class="n">Acierto</th>
+    <tr><th>Indicador</th><th class="n">Banco</th><th class="n">Vistas</th><th class="n">Resp.</th><th class="n">Acierto</th>
       <th class="n">Dominio</th><th></th><th>Estado</th><th></th></tr>
     {% set ns = namespace(m='') %}
     {% for s in sesiones %}
@@ -76,6 +92,6 @@
 </div>
 
 <script>
-graficaLinea("#evolucion", {{ evolucion|tojson }}.map(r => ({ v: r.pct, e: "#" + r.id, t: "Ronda #" + r.id + " (" + r.alcance + ")" })), { meta: 80 });
+graficaLinea("#evolucion", {{ evolucion|tojson }}.map(r => ({ v: r.pct, e: "#" + r.id, t: "Ronda #" + r.id + " (" + r.alcance + ")" })), { lineas: [{{ cfg.puntaje_minimo|float }}, {{ cfg.meta_puntaje|float }}] });
 </script>
 {% endblock %}

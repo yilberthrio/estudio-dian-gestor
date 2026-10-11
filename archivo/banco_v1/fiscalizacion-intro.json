@@ -255,6 +255,128 @@
         "presunción de veracidad"
       ],
       "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "fiscalizacion-intro-014",
+      "contexto": "",
+      "enunciado": "¿Cuál es el orden correcto de los actos en un proceso de revisión de una declaración tributaria?",
+      "opciones": {
+        "A": "Requerimiento especial → emplazamiento para corregir → liquidación de revisión → recurso de reconsideración.",
+        "B": "Emplazamiento para corregir (opcional) → requerimiento especial → liquidación de revisión → reconsideración.",
+        "C": "Liquidación de revisión → requerimiento especial → reconsideración → emplazamiento para corregir.",
+        "D": "Emplazamiento para corregir → liquidación de revisión → requerimiento especial → recurso de reconsideración."
+      },
+      "correcta": "B",
+      "explicacion": "Primero la DIAN puede, si quiere, enviar un emplazamiento para corregir (art. 685, 1 mes para corregir y sin sanción por no responder). Luego viene el requerimiento especial, obligatorio antes de liquidar (arts. 703 a 707, 3 meses para responder). Después, la liquidación oficial de revisión (art. 710, dentro de los 6 meses siguientes al vencimiento del plazo para responder). Contra ella procede el recurso de reconsideración (art. 720, 2 meses). El requerimiento siempre va antes de la liquidación: es la garantía del derecho de defensa.",
+      "norma": "Estatuto Tributario, arts. 685, 703, 710 y 720",
+      "dificultad": 2,
+      "etiquetas": [
+        "etapas del proceso",
+        "actos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "fiscalizacion-intro-015",
+      "contexto": "",
+      "enunciado": "¿Cuál de los siguientes actos es requisito obligatorio previo para que la DIAN practique la liquidación oficial de revisión?",
+      "opciones": {
+        "A": "El emplazamiento para corregir.",
+        "B": "El requerimiento ordinario de información.",
+        "C": "El requerimiento especial.",
+        "D": "La inspección tributaria."
+      },
+      "correcta": "C",
+      "explicacion": "Art. 703 ET: antes de efectuar la liquidación de revisión, la DIAN debe enviar al contribuyente, por una sola vez, un requerimiento especial con todos los puntos que se proponga modificar, con la explicación de las razones. El emplazamiento para corregir (art. 685), el requerimiento ordinario (art. 686) y la inspección tributaria (art. 779) son facultativos: la DIAN puede usarlos o no. Por eso no responder un emplazamiento no genera sanción.",
+      "norma": "Estatuto Tributario, arts. 685, 686 y 703",
+      "dificultad": 1,
+      "etiquetas": [
+        "requerimiento especial",
+        "actos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "fiscalizacion-intro-016",
+      "contexto": "La DIAN detecta que una persona obligada a declarar renta no presentó la declaración del último año gravable.",
+      "enunciado": "¿Qué acto debe notificarle primero y qué plazo le otorga?",
+      "opciones": {
+        "A": "Emplazamiento para corregir, con un plazo de 1 mes.",
+        "B": "Requerimiento especial, con un plazo de 3 meses.",
+        "C": "Emplazamiento para declarar, con un plazo de 1 mes.",
+        "D": "Pliego de cargos, con un plazo de 15 días."
+      },
+      "correcta": "C",
+      "explicacion": "Al omiso se le notifica un emplazamiento previo por no declarar (art. 715 ET), advirtiéndole las consecuencias, para que declare en el término perentorio de 1 mes. Si no lo hace, procede la sanción por no declarar (art. 716) y la liquidación de aforo (art. 717). El emplazamiento para corregir (art. 685) es para quien sí declaró, pero con posibles inexactitudes. Ambos emplazamientos dan 1 mes: lo que cambia es si la persona declaró o no.",
+      "norma": "Estatuto Tributario, arts. 685, 715 y 716",
+      "dificultad": 2,
+      "etiquetas": [
+        "emplazamiento para declarar",
+        "omisos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "fiscalizacion-intro-017",
+      "contexto": "",
+      "enunciado": "En el procedimiento tributario, ¿cuál combinación de términos es correcta? (responder el requerimiento especial / interponer la reconsideración / plazo de la DIAN para resolver la reconsideración)",
+      "opciones": {
+        "A": "1 mes / 2 meses / 6 meses",
+        "B": "3 meses / 10 días / 1 año",
+        "C": "2 meses / 3 meses / 1 año",
+        "D": "3 meses / 2 meses / 1 año"
+      },
+      "correcta": "D",
+      "explicacion": "Responder el requerimiento especial: 3 meses desde su notificación (art. 707 ET). Interponer el recurso de reconsideración: 2 meses desde la notificación del acto (art. 720). Plazo de la DIAN para resolverlo: 1 año desde su interposición (art. 732); si no lo hace, opera el silencio administrativo positivo (art. 734). Los 10 días son el término del CPACA para reposición y apelación, que no aplica en materia tributaria. Secuencia para memorizar: 3 – 2 – 1 (meses, meses, año).",
+      "norma": "Estatuto Tributario, arts. 707, 720, 732 y 734",
+      "dificultad": 2,
+      "etiquetas": [
+        "términos",
+        "requerimiento especial",
+        "reconsideración"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "fiscalizacion-intro-018",
+      "contexto": "Un contribuyente interpuso en debida forma el recurso de reconsideración. Ha pasado más de un año y la DIAN no ha notificado ninguna decisión.",
+      "enunciado": "¿Qué consecuencia tiene?",
+      "opciones": {
+        "A": "Opera el silencio negativo y el contribuyente debe acudir al juez.",
+        "B": "Opera el silencio positivo y el recurso se entiende fallado a su favor.",
+        "C": "La DIAN tiene un año más para resolver, prorrogable una vez.",
+        "D": "El recurso se archiva y la liquidación oficial queda en firme."
+      },
+      "correcta": "B",
+      "explicacion": "Art. 732 ET: la DIAN tiene 1 año para resolver los recursos de reconsideración, contado desde su interposición en debida forma. Art. 734 ET: si no se resuelve en ese término, el recurso se entiende fallado a favor del recurrente (silencio administrativo positivo), y la DIAN, de oficio o a petición de parte, así lo declarará. Es distinto de la regla general del CPACA, donde el silencio frente a peticiones y recursos es negativo (arts. 83 y 86).",
+      "norma": "Estatuto Tributario, arts. 732 y 734; Ley 1437 de 2011, arts. 83 y 86",
+      "dificultad": 2,
+      "etiquetas": [
+        "silencio positivo",
+        "reconsideración"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "fiscalizacion-intro-019",
+      "contexto": "",
+      "enunciado": "Cuando una sanción tributaria se impone en resolución independiente (y no en la liquidación oficial), ¿qué acto previo debe notificarse y en qué término general?",
+      "opciones": {
+        "A": "Requerimiento especial, dentro de los 3 años siguientes a la declaración.",
+        "B": "Emplazamiento para corregir, dentro del año siguiente a la declaración.",
+        "C": "Auto de inspección, dentro de los 5 años siguientes a la declaración.",
+        "D": "Pliego de cargos, dentro de los 2 años siguientes a la declaración."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 638 ET: cuando las sanciones se impongan en resolución independiente, debe formularse previamente pliego de cargos dentro de los 2 años siguientes a la fecha en que se presentó la declaración de renta del periodo en que ocurrió la irregularidad (o desde que cesó la irregularidad, en ciertos casos). Si la sanción va dentro de una liquidación oficial, se propone en el requerimiento especial y se impone en la liquidación. El pliego de cargos garantiza el derecho de defensa frente a sanciones como las de no enviar información o las relativas a libros de contabilidad.",
+      "norma": "Estatuto Tributario, arts. 637 y 638",
+      "dificultad": 3,
+      "etiquetas": [
+        "pliego de cargos",
+        "sanciones",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
     }
   ]
 }

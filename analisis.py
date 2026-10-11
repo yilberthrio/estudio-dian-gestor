@@ -2,7 +2,7 @@
 from collections import defaultdict
 from datetime import date, datetime, timedelta
 
-from db import DIR_INFORMES, ahora, config
+from db import COMPETENCIAS_LIKERT, DIR_INFORMES, ahora, config
 
 # Valor de una respuesta según acierto y confianza: un acierto "adivinado" no es dominio real.
 PESO_CONFIANZA = {"seguro": 1.0, "dudoso": 0.75, "adivine": 0.4}
@@ -87,7 +87,7 @@ def por_sesion(con):
              WHERE p.sesion_id=s.id AND p.activa=1) AS vistas,
           (SELECT AVG(r.tiempo_seg) FROM respuestas r JOIN preguntas p ON p.id=r.pregunta_id
              WHERE p.sesion_id=s.id) AS tiempo
-        FROM sesiones s JOIN modulos m ON m.id=s.modulo_id ORDER BY m.orden, s.orden""").fetchall()
+        FROM sesiones s JOIN modulos m ON m.id=s.modulo_id WHERE s.vigente=1 ORDER BY m.orden, s.orden""").fetchall()
     out = []
     for f in filas:
         lista = resp.get(f["id"], [])
@@ -246,7 +246,7 @@ def generar_informe_md(con):
     fall = mas_falladas(con, 10)
     seg = errores_con_seguridad(con, 10)
     hist = historial_snapshots(con)
-    L = [f"# Informe de estudio – Concurso DIAN Gestor I (AT-FL-3008)",
+    L = [f"# Informe de estudio – Concurso DIAN 2676, Gestor I (empleo 236767)",
          f"_Generado: {datetime.now():%Y-%m-%d %H:%M}_", "",
          "## Resumen general", "",
          f"- Preguntas en el banco: **{g['banco']}** (vistas: {g['vistas']}, cobertura {g['cobertura'] or 0}%)",
@@ -285,3 +285,45 @@ def generar_informe_md(con):
     DIR_INFORMES.mkdir(exist_ok=True)
     (DIR_INFORMES / "ultimo_informe.md").write_text(texto, encoding="utf-8")
     return texto
+
+
+# ---------------------------------------------------------------- Práctica Likert
+
+def analizar_practica(con, practica_id):
+    """Perfil de una práctica comportamental/integridad. No hay respuestas correctas: se muestra la disposición
+    por competencia y señales que las escalas de control de la prueba real podrían detectar."""
+    filas = [dict(r) for r in con.execute("""SELECT a.*, r.valor FROM respuestas_likert r
+        JOIN afirmaciones a ON a.id=r.afirmacion_id WHERE r.practica_id=? ORDER BY r.orden""", (practica_id,))]
+    resp = [f for f in filas if f["valor"]]
+    for f in resp:
+        f["disposicion"] = f["valor"] if f["clave"] == "directa" else 5 - f["valor"]
+    perfil = []
+    for prueba, comps in COMPETENCIAS_LIKERT.items():
+        for comp in comps:
+            items = [f for f in resp if f["competencia"] == comp]
+            if not items:
+                continue
+            directas = [f["valor"] for f in items if f["clave"] == "directa"]
+            inversas = [f["valor"] for f in items if f["clave"] == "inversa"]
+            media = sum(f["disposicion"] for f in items) / len(items)
+            perfil.append({
+                "prueba": prueba, "competencia": comp, "n": len(items),
+                "disposicion": round((media - 1) / 3 * 100),
+                # De acuerdo a la vez con conductas deseables y con su contrario: respuesta poco consistente
+                "inconsistente": bool(directas and inversas and sum(directas) / len(directas) >= 3
+                                      and sum(inversas) / len(inversas) >= 3),
+            })
+    n = len(resp)
+    totalmente_acuerdo = sum(f["valor"] == 4 for f in resp)
+    extremos = sum(f["valor"] in (1, 4) for f in resp)
+    alertas = []
+    if n and totalmente_acuerdo / n > 0.7:
+        alertas.append(f"Marcaste «Totalmente de acuerdo» en el {round(100 * totalmente_acuerdo / n)}% de las afirmaciones. "
+                       "La prueba real incluye escalas de control que detectan respuestas exageradamente favorables: "
+                       "responde según lo que realmente haces, no según lo que suena ideal.")
+    if any(p["inconsistente"] for p in perfil):
+        alertas.append("En algunas competencias estuviste de acuerdo con una conducta y también con su contraria. "
+                       "Revisa esas afirmaciones: leer con calma cada matiz (por ejemplo, «asumiendo tiempo adicional») evita contradicciones.")
+    return {"items": filas, "perfil": perfil, "n": n, "sin_responder": len(filas) - n,
+            "pct_totalmente": round(100 * totalmente_acuerdo / n) if n else None,
+            "pct_extremos": round(100 * extremos / n) if n else None, "alertas": alertas}

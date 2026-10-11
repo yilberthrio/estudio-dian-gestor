@@ -1,0 +1,475 @@
+{
+  "sesion": "lavado-activos",
+  "preguntas": [
+    {
+      "id": "lavado-activos-001",
+      "contexto": "Al analizar las operaciones de un usuario aduanero, el profesional detecta transacciones que no guardan relación con su actividad ni con su perfil financiero, y que no tienen una explicación razonable después de revisarlas.",
+      "enunciado": "Frente a estas operaciones, la entidad obligada debe enviar el reporte de operación sospechosa a",
+      "opciones": {
+        "A": "la Unidad de Información y Análisis Financiero (UIAF).",
+        "B": "la Superintendencia de Sociedades, como supervisora.",
+        "C": "la Contraloría General de la República, para auditoría."
+      },
+      "correcta": "A",
+      "explicacion": "La UIAF es la unidad de inteligencia financiera de Colombia.\n[A] Correcta. La UIAF (Ley 526 de 1999), adscrita al Ministerio de Hacienda, recibe, centraliza y analiza los reportes de operaciones sospechosas (ROS) de los sujetos obligados, y comunica sus hallazgos a las autoridades competentes.\n[B] Incorrecta. La Superintendencia de Sociedades supervisa sistemas de prevención en ciertas empresas, pero no es la destinataria de los ROS.\n[C] Incorrecta. La Contraloría ejerce el control fiscal sobre los recursos públicos; no recibe reportes de operaciones sospechosas.",
+      "norma": "Ley 526 de 1999",
+      "dificultad": 1,
+      "etiquetas": [
+        "UIAF",
+        "ROS"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-002",
+      "contexto": "Un oficial de cumplimiento duda si debe enviar un reporte de operación sospechosa, porque no tiene pruebas de que el cliente haya cometido un delito.",
+      "enunciado": "Al profesional le corresponde orientarlo indicando que el reporte",
+      "opciones": {
+        "A": "solo procede cuando hay pruebas del delito, porque es una denuncia penal.",
+        "B": "no exige certeza del delito ni tiene el carácter de una denuncia penal.",
+        "C": "requiere autorización previa del cliente reportado para poder enviarse."
+      },
+      "correcta": "B",
+      "explicacion": "El ROS es una herramienta de inteligencia, no una acusación.\n[A] Incorrecta. El ROS no es una denuncia penal ni exige pruebas: basta con que la operación sea inusual y no tenga una justificación razonable.\n[B] Correcta. El reporte de operación sospechosa no requiere certeza de que exista un delito ni identificar el delito fuente, y no constituye denuncia penal. La UIAF lo analiza y, si encuentra mérito, lo comunica a las autoridades. Quien reporta de buena fe no incurre en responsabilidad.\n[C] Incorrecta. El ROS es reservado: no se pide autorización al cliente y está prohibido informarle que fue reportado.",
+      "norma": "Ley 526 de 1999; Estatuto Orgánico del Sistema Financiero, arts. 102 a 107",
+      "dificultad": 2,
+      "etiquetas": [
+        "ROS",
+        "naturaleza del reporte"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-003",
+      "contexto": "Después de enviar un reporte de operación sospechosa a la UIAF, el cliente reportado llama a la entidad y pregunta si su caso fue informado a alguna autoridad.",
+      "enunciado": "Frente a la pregunta del cliente, al funcionario le corresponde",
+      "opciones": {
+        "A": "confirmarle que fue reportado, para que prepare sus pruebas.",
+        "B": "abstenerse de revelarle la existencia del reporte, que es reservado.",
+        "C": "enviarle copia del reporte, por su derecho de acceso a la información."
+      },
+      "correcta": "B",
+      "explicacion": "La reserva del ROS protege la investigación.\n[A] Incorrecta. Informar al cliente que fue reportado puede alertarlo y frustrar la investigación; está expresamente prohibido.\n[B] Correcta. Los reportes de operaciones sospechosas son reservados, y los sujetos obligados no pueden dar a conocer a las personas que hayan efectuado o intentado efectuar las operaciones que se reportó su información a la UIAF (Estatuto Orgánico del Sistema Financiero, art. 105, y normas concordantes).\n[C] Incorrecta. El derecho de acceso a la información pública tiene excepciones, y la información de inteligencia financiera es reservada (Ley 1712 de 2014, art. 19).",
+      "norma": "Estatuto Orgánico del Sistema Financiero, art. 105; Ley 1712 de 2014, art. 19",
+      "dificultad": 2,
+      "etiquetas": [
+        "reserva",
+        "ROS"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-004",
+      "contexto": "En una capacitación sobre prevención del lavado de activos, el profesional debe explicar la diferencia entre una operación inusual y una operación sospechosa.",
+      "enunciado": "Al profesional le corresponde explicar que una operación sospechosa es aquella que",
+      "opciones": {
+        "A": "supera cualquier monto en efectivo, sin importar el perfil del cliente.",
+        "B": "es inusual y, tras analizarla, no tiene justificación razonable alguna.",
+        "C": "realiza un cliente nuevo durante su primer mes de relación comercial."
+      },
+      "correcta": "B",
+      "explicacion": "Toda operación sospechosa es inusual, pero no toda operación inusual es sospechosa.\n[A] Incorrecta. El monto en efectivo puede activar otros reportes (por ejemplo, de transacciones en efectivo), pero por sí solo no hace sospechosa una operación.\n[B] Correcta. La operación inusual es la que no guarda relación con la actividad o el perfil del cliente. Se vuelve sospechosa cuando, después de analizarla, no puede justificarse razonablemente; en ese caso se reporta a la UIAF.\n[C] Incorrecta. Ser cliente nuevo no hace sospechosa una operación; puede justificar una debida diligencia más estricta, pero no un reporte automático.",
+      "norma": "Normas SARLAFT y SIPLAFT; Ley 526 de 1999",
+      "dificultad": 2,
+      "etiquetas": [
+        "operación inusual",
+        "operación sospechosa"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-005",
+      "contexto": "En un caso de fiscalización se describe el siguiente esquema: dinero en efectivo de origen ilícito se deposita en varias cuentas; luego se mueve a través de transferencias entre sociedades en distintos países; finalmente se invierte en inmuebles a nombre de una empresa legal.",
+      "enunciado": "La etapa del lavado de activos en la que el dinero se mueve entre sociedades y países para ocultar su origen se denomina",
+      "opciones": {
+        "A": "colocación inicial.",
+        "B": "integración final.",
+        "C": "estratificación."
+      },
+      "correcta": "C",
+      "explicacion": "El lavado de activos se describe tradicionalmente en tres etapas.\n[A] Incorrecta. La colocación es la etapa inicial: el dinero ilícito se introduce en el sistema financiero o económico, por ejemplo con depósitos en efectivo.\n[B] Incorrecta. La integración es la etapa final: los recursos, ya con apariencia de legalidad, se invierten en la economía formal, como la compra de inmuebles.\n[C] Correcta. La estratificación (o diversificación) consiste en realizar múltiples transacciones, a menudo entre países y sociedades, para separar los recursos de su origen ilícito y dificultar su rastreo.",
+      "norma": "Recomendaciones del GAFI; tipologías de lavado de activos (UIAF)",
+      "dificultad": 1,
+      "etiquetas": [
+        "etapas del lavado"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-006",
+      "contexto": "En una investigación, el profesional encuentra que una persona hizo 40 consignaciones en efectivo en un mes, todas por valores un poco inferiores al umbral que obliga a los bancos a reportar transacciones en efectivo.",
+      "enunciado": "Esta conducta corresponde a la señal de alerta conocida como",
+      "opciones": {
+        "A": "fraccionamiento de operaciones (pitufeo).",
+        "B": "planeación tributaria lícita del cliente.",
+        "C": "contrabando técnico de mercancías."
+      },
+      "correcta": "A",
+      "explicacion": "Dividir operaciones para evitar los umbrales de reporte es una tipología típica de lavado.\n[A] Correcta. El fraccionamiento (pitufeo) consiste en dividir una operación grande en varias de menor valor para eludir los controles y reportes asociados a montos altos. Es una señal de alerta que justifica el análisis y, si no hay explicación razonable, el ROS.\n[B] Incorrecta. La planeación tributaria lícita usa figuras legales con sustancia económica; fraccionar depósitos para evitar controles no es planeación tributaria.\n[C] Incorrecta. El contrabando técnico ocurre cuando se declaran mercancías con información falsa ante la aduana; aquí se trata de depósitos en efectivo.",
+      "norma": "Tipologías de lavado de activos (UIAF); normas SARLAFT",
+      "dificultad": 1,
+      "etiquetas": [
+        "fraccionamiento",
+        "señales de alerta"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-007",
+      "contexto": "Al fiscalizar a una persona natural, el profesional encuentra que su patrimonio aumentó en $500 millones en un año, mientras que sus ingresos declarados, menos sus gastos, apenas explican $50 millones de ese incremento.",
+      "enunciado": "Para determinar tributariamente la diferencia, al profesional le corresponde aplicar",
+      "opciones": {
+        "A": "la renta presuntiva, calculada sobre el patrimonio líquido del año anterior.",
+        "B": "la renta por comparación patrimonial, si el contribuyente no justifica el aumento.",
+        "C": "la sanción por no declarar, porque el contribuyente omitió presentar la declaración."
+      },
+      "correcta": "B",
+      "explicacion": "El incremento patrimonial no justificado puede gravarse mediante la comparación patrimonial.\n[A] Incorrecta. La renta presuntiva tiene un porcentaje del 0% desde 2021 y no sirve para gravar incrementos patrimoniales injustificados.\n[B] Correcta. Los arts. 236 a 239 ET establecen que, cuando la suma de la renta gravable, las rentas exentas y las ganancias ocasionales netas es inferior a la diferencia entre el patrimonio líquido del último periodo y el del anterior, esa diferencia se considera renta gravable, salvo que el contribuyente demuestre que el aumento obedece a causas que no constituyen renta. Además, el incremento injustificado es una señal de alerta de lavado o enriquecimiento ilícito.\n[C] Incorrecta. El contribuyente sí declaró; el problema es que lo declarado no explica el aumento del patrimonio.",
+      "norma": "Estatuto Tributario, arts. 236 a 239",
+      "dificultad": 3,
+      "etiquetas": [
+        "comparación patrimonial",
+        "incremento patrimonial"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-008",
+      "contexto": "En ejercicio de sus funciones, un profesional de la DIAN encuentra indicios serios de que un importador introdujo mercancías por más de 300 salarios mínimos ocultándolas del control aduanero.",
+      "enunciado": "Además de las actuaciones administrativas, al profesional le corresponde",
+      "opciones": {
+        "A": "poner los hechos en conocimiento de la Fiscalía, porque podrían constituir delito.",
+        "B": "abstenerse de informar, porque la reserva tributaria le impide compartir esa información.",
+        "C": "esperar a que termine el proceso administrativo para decidir si hay un posible delito."
+      },
+      "correcta": "A",
+      "explicacion": "El servidor público tiene el deber de denunciar los posibles delitos que conozca.\n[A] Correcta. El art. 67 de la Ley 906 de 2004 obliga a toda persona a denunciar los delitos investigables de oficio. El servidor público que los conozca debe ponerlos inmediatamente en conocimiento de la autoridad competente si no tiene competencia para investigarlos. El contrabando superior a 50 SMLMV es delito (art. 319 CP). No denunciar puede ser falta disciplinaria y delito.\n[B] Incorrecta. La reserva tributaria no impide denunciar delitos ni suministrar información a la Fiscalía y a las autoridades judiciales.\n[C] Incorrecta. La denuncia no depende de que termine el proceso administrativo; ambas vías son independientes.",
+      "norma": "Ley 906 de 2004, art. 67; Código Penal, art. 319",
+      "dificultad": 2,
+      "etiquetas": [
+        "deber de denuncia",
+        "contrabando"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-009",
+      "contexto": "Durante una diligencia, el representante de una empresa investigada le ofrece dinero a un profesional de la DIAN para que «no encuentre nada» en la revisión.",
+      "enunciado": "Frente a este ofrecimiento, al profesional le corresponde",
+      "opciones": {
+        "A": "rechazarlo y denunciar los hechos ante las autoridades competentes.",
+        "B": "rechazarlo y continuar la diligencia sin informar nada a nadie más.",
+        "C": "aceptarlo para obtener pruebas y luego entregar el dinero a su jefe."
+      },
+      "correcta": "A",
+      "explicacion": "Ofrecer dinero a un servidor público para que omita un acto propio de sus funciones es un delito que debe denunciarse.\n[A] Correcta. Ofrecer dinero a un servidor para que omita sus funciones configura cohecho por dar u ofrecer (art. 407 CP). El servidor debe rechazarlo y denunciarlo (art. 67 de la Ley 906 de 2004), además de informar a su superior y a los canales internos de la entidad.\n[B] Incorrecta. Rechazar el soborno es necesario, pero no basta: el deber de denuncia se mantiene.\n[C] Incorrecta. Aceptar el dinero, aunque sea con la intención de «obtener pruebas», compromete al servidor y puede configurar cohecho. Las pruebas las recoge la autoridad competente.",
+      "norma": "Código Penal, arts. 405 a 407; Ley 906 de 2004, art. 67",
+      "dificultad": 1,
+      "etiquetas": [
+        "cohecho",
+        "deber de denuncia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-010",
+      "contexto": "Al explicar las diferencias entre lavado de activos y financiación del terrorismo, un profesional debe precisar el origen de los recursos.",
+      "enunciado": "Al profesional le corresponde explicar que, en la financiación del terrorismo,",
+      "opciones": {
+        "A": "los recursos siempre provienen de actividades ilícitas, igual que en el lavado.",
+        "B": "los recursos pueden tener un origen lícito, porque lo determinante es su destino.",
+        "C": "los recursos solo pueden provenir del exterior, a través de remesas o donaciones."
+      },
+      "correcta": "B",
+      "explicacion": "La financiación del terrorismo se define por el destino de los recursos, no por su origen.\n[A] Incorrecta. En el lavado de activos los recursos tienen origen ilícito; en la financiación del terrorismo pueden provenir de fuentes legales.\n[B] Correcta. El art. 345 CP sanciona a quien provea, recolecte, entregue, reciba, administre, aporte, custodie o guarde fondos, bienes o recursos destinados a grupos o actividades terroristas, sin importar si su origen es lícito. Por eso los controles se enfocan también en el destino.\n[C] Incorrecta. Los recursos pueden ser nacionales o extranjeros; el origen geográfico no define el delito.",
+      "norma": "Código Penal, art. 345",
+      "dificultad": 2,
+      "etiquetas": [
+        "financiación del terrorismo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-011",
+      "contexto": "En la revisión de un exportador, el profesional encuentra declaraciones de exportación de bienes por valores muy superiores a los del mercado, con reintegro de divisas, mientras la mercancía embarcada es de baja calidad y escaso valor.",
+      "enunciado": "Esta situación corresponde a la tipología de lavado conocida como",
+      "opciones": {
+        "A": "sobrefacturación de exportaciones, para ingresar divisas ilícitas.",
+        "B": "subfacturación de importaciones, para pagar menos tributos aduaneros.",
+        "C": "planeación cambiaria, porque las divisas se canalizaron por un banco."
+      },
+      "correcta": "A",
+      "explicacion": "Exportar a precios inflados permite ingresar divisas ilícitas con apariencia de ventas reales.\n[A] Correcta. La sobrefacturación de exportaciones (o las exportaciones ficticias) es una tipología de lavado basada en el comercio: el reintegro de divisas por encima del valor real permite introducir recursos ilícitos como si fueran pagos de ventas. Además, puede servir para obtener devoluciones de IVA indebidas.\n[B] Incorrecta. La subfacturación de importaciones busca pagar menos tributos aduaneros; aquí el valor está inflado y se trata de exportaciones.\n[C] Incorrecta. Canalizar por un banco no legitima una operación con valores irreales: es justamente el mecanismo para dar apariencia de legalidad.",
+      "norma": "Tipologías de lavado basado en el comercio (GAFI, UIAF); Decreto Ley 2245 de 2011",
+      "dificultad": 2,
+      "etiquetas": [
+        "sobrefacturación",
+        "lavado basado en el comercio"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-012",
+      "contexto": "Una persona aparece como propietaria de varios inmuebles de alto valor, pero no tiene ingresos que lo justifiquen. Se establece que presta su nombre para que figuren a su favor bienes adquiridos con dinero de un tercero dedicado al narcotráfico.",
+      "enunciado": "La conducta de esta persona puede configurar el delito de",
+      "opciones": {
+        "A": "omisión de agente retenedor.",
+        "B": "testaferrato.",
+        "C": "evasión fiscal."
+      },
+      "correcta": "B",
+      "explicacion": "Prestar el nombre para ocultar bienes de origen ilícito es testaferrato.\n[A] Incorrecta. La omisión de agente retenedor (art. 402 CP) consiste en no consignar las retenciones practicadas.\n[B] Correcta. El art. 326 CP sanciona a quien preste su nombre para adquirir bienes con dineros provenientes del narcotráfico, el lavado de activos u otras actividades ilícitas. Es una forma común de ocultar la titularidad real de los bienes.\n[C] Incorrecta. La evasión se refiere al incumplimiento de obligaciones tributarias; aquí el núcleo es ocultar la propiedad de bienes ilícitos.",
+      "norma": "Código Penal, arts. 323 y 326",
+      "dificultad": 2,
+      "etiquetas": [
+        "testaferrato"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-013",
+      "contexto": "Un empleado de una casa de cambio, sujeta a controles de prevención de lavado, deja de aplicar deliberadamente los procedimientos de conocimiento del cliente para que un comprador habitual de grandes sumas no sea identificado.",
+      "enunciado": "Esta conducta puede configurar el delito de",
+      "opciones": {
+        "A": "omisión de control.",
+        "B": "abuso de confianza.",
+        "C": "fraude procesal."
+      },
+      "correcta": "A",
+      "explicacion": "El Código Penal sanciona a quien omite los controles de prevención del lavado para ocultar el origen de los recursos.\n[A] Correcta. El art. 325 CP sanciona al empleado o director de una institución financiera, cooperativa o entidad obligada que, con el fin de ocultar o encubrir el origen ilícito del dinero, omita el cumplimiento de alguno o todos los mecanismos de control establecidos para las transacciones en efectivo.\n[B] Incorrecta. El abuso de confianza es apropiarse de un bien mueble ajeno recibido a título no traslaticio de dominio; no describe esta conducta.\n[C] Incorrecta. El fraude procesal consiste en inducir en error a un servidor público con medios fraudulentos para obtener una decisión contraria a la ley.",
+      "norma": "Código Penal, art. 325",
+      "dificultad": 3,
+      "etiquetas": [
+        "omisión de control",
+        "delitos"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-014",
+      "contexto": "La DIAN vigila que las agencias de aduanas, los depósitos y los profesionales de compra y venta de divisas tengan sistemas de prevención del lavado de activos y reporten las operaciones sospechosas.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que estos sujetos deben reportar las operaciones sospechosas",
+      "opciones": {
+        "A": "a la UIAF, conforme a la regulación de la DIAN sobre prevención del lavado.",
+        "B": "a la Fiscalía, mediante denuncia penal formulada con pruebas del delito.",
+        "C": "a su asociación gremial, que decide si las envía a la autoridad competente."
+      },
+      "correcta": "A",
+      "explicacion": "Los usuarios aduaneros y los profesionales del cambio son sujetos obligados a reportar a la UIAF.\n[A] Correcta. La DIAN ha expedido regulación sobre prevención y control del lavado de activos para los usuarios aduaneros y los profesionales de compra y venta de divisas (como la Circular 170 de 2002 y sus actualizaciones). Esa regulación los obliga a contar con sistemas de prevención y a enviar los ROS a la UIAF.\n[B] Incorrecta. El ROS no es una denuncia penal: se envía a la UIAF, que hace inteligencia financiera.\n[C] Incorrecta. Los gremios no son intermediarios del reporte: la obligación es de cada sujeto obligado frente a la UIAF.",
+      "norma": "Circular DIAN 170 de 2002 y normas que la modifiquen; Ley 526 de 1999",
+      "dificultad": 2,
+      "etiquetas": [
+        "sujetos obligados",
+        "usuarios aduaneros"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-015",
+      "contexto": "Antes de iniciar relaciones comerciales con un nuevo cliente del exterior, una agencia de aduanas verifica su identidad, su actividad, el origen de sus recursos y sus beneficiarios finales.",
+      "enunciado": "Este procedimiento corresponde a",
+      "opciones": {
+        "A": "la debida diligencia o conocimiento del cliente.",
+        "B": "la inspección aduanera física de la mercancía.",
+        "C": "la liquidación oficial de revisión del valor."
+      },
+      "correcta": "A",
+      "explicacion": "El conocimiento del cliente es la base de los sistemas de prevención del lavado de activos.\n[A] Correcta. La debida diligencia o conocimiento del cliente consiste en identificar y verificar al cliente, su actividad económica, el origen de sus recursos y sus beneficiarios finales, para establecer un perfil que permita detectar operaciones inusuales. Es una obligación central de los sistemas de prevención.\n[B] Incorrecta. La inspección aduanera examina la mercancía durante el desaduanamiento; no es un procedimiento para conocer al cliente.\n[C] Incorrecta. La liquidación oficial de revisión es un acto de la DIAN para determinar mayores tributos aduaneros por valor.",
+      "norma": "Normas SARLAFT y SIPLAFT; recomendaciones del GAFI",
+      "dificultad": 1,
+      "etiquetas": [
+        "debida diligencia",
+        "conocimiento del cliente"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-016",
+      "contexto": "Antes de vincular a un proveedor, una empresa obligada a tener un sistema de prevención de lavado consulta si su nombre aparece en las listas del Consejo de Seguridad de las Naciones Unidas.",
+      "enunciado": "Esta consulta es importante porque esas listas",
+      "opciones": {
+        "A": "contienen únicamente a los deudores morosos de impuestos de cada país miembro.",
+        "B": "son listas comerciales de referencia, sin efectos jurídicos para las empresas.",
+        "C": "son vinculantes para Colombia e identifican a personas asociadas al terrorismo."
+      },
+      "correcta": "C",
+      "explicacion": "Las listas del Consejo de Seguridad de la ONU son vinculantes.\n[C] Correcta. Las listas del Consejo de Seguridad de las Naciones Unidas identifican a personas y entidades asociadas al terrorismo y a su financiación, y a la proliferación de armas. Son vinculantes para Colombia, y su consulta es parte de la debida diligencia en los sistemas de prevención del lavado y de la financiación del terrorismo.\n[B] Incorrecta. No son simples referencias comerciales: tienen efectos jurídicos y obligan a adoptar medidas.\n[A] Incorrecta. No son listas de deudores tributarios: se refieren a terrorismo, su financiación y proliferación.",
+      "norma": "Resoluciones del Consejo de Seguridad de la ONU; recomendaciones del GAFI",
+      "dificultad": 2,
+      "etiquetas": [
+        "listas restrictivas",
+        "financiación del terrorismo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-017",
+      "contexto": "La Fiscalía identifica unos inmuebles adquiridos con dinero de actividades ilícitas. Su propietario murió y no hay proceso penal en su contra.",
+      "enunciado": "Para que esos bienes pasen al Estado, el mecanismo adecuado es",
+      "opciones": {
+        "A": "el cobro coactivo, porque los bienes respaldan una deuda tributaria.",
+        "B": "el decomiso aduanero, porque los bienes provienen de ilícitos.",
+        "C": "la extinción de dominio, que es independiente del proceso penal."
+      },
+      "correcta": "C",
+      "explicacion": "La extinción de dominio recae sobre los bienes de origen o destinación ilícita, con independencia de la responsabilidad penal.\n[C] Correcta. La Ley 1708 de 2014 (Código de Extinción de Dominio) regula una acción real, autónoma e independiente del proceso penal, que declara la extinción del derecho de dominio sobre bienes de origen ilícito o destinados a actividades ilícitas. Procede aunque el titular haya muerto o no haya proceso penal.\n[B] Incorrecta. El decomiso aduanero recae sobre mercancías que no acreditan su legal introducción, no sobre inmuebles adquiridos con dineros ilícitos.\n[A] Incorrecta. El cobro coactivo sirve para recaudar obligaciones a favor de la DIAN; no es el mecanismo para que bienes ilícitos pasen al Estado.",
+      "norma": "Ley 1708 de 2014",
+      "dificultad": 2,
+      "etiquetas": [
+        "extinción de dominio"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-018",
+      "contexto": "En una investigación, el profesional encuentra una sociedad con sede en una oficina virtual, sin empleados ni activos, que factura grandes sumas por «asesorías» a empresas del mismo grupo y transfiere el dinero al exterior de inmediato.",
+      "enunciado": "Esta situación corresponde a la señal de alerta de",
+      "opciones": {
+        "A": "un establecimiento permanente de una empresa extranjera.",
+        "B": "una pequeña empresa con planeación tributaria lícita.",
+        "C": "una empresa de fachada, utilizada para mover recursos."
+      },
+      "correcta": "C",
+      "explicacion": "Las sociedades sin sustancia económica que mueven grandes sumas son una tipología clásica.\n[C] Correcta. Una empresa de fachada (o de papel) aparenta una actividad económica que no tiene, y se usa para facturar operaciones ficticias, inflar costos o mover recursos ilícitos. Es una señal de alerta de lavado y de evasión (art. 671 ET, proveedores ficticios).\n[B] Incorrecta. La planeación tributaria lícita exige sustancia económica real; aquí no hay empleados, activos ni operación verificable.\n[A] Incorrecta. Un establecimiento permanente es un lugar fijo de negocios de una empresa extranjera en Colombia (art. 20-1 ET); no describe esta situación.",
+      "norma": "Tipologías de lavado (UIAF); Estatuto Tributario, art. 671",
+      "dificultad": 1,
+      "etiquetas": [
+        "empresa de fachada",
+        "señales de alerta"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-019",
+      "contexto": "Un ciudadano acude a la DIAN para informar que un vecino comercializa mercancía de contrabando y quiere saber dónde puede presentar la denuncia penal.",
+      "enunciado": "Al profesional le corresponde orientarlo indicando que la denuncia penal se presenta ante",
+      "opciones": {
+        "A": "la Procuraduría General de la Nación.",
+        "B": "la Fiscalía General de la Nación.",
+        "C": "la Contraloría General de la República."
+      },
+      "correcta": "B",
+      "explicacion": "La Fiscalía es la entidad que investiga los delitos y recibe las denuncias penales.\n[A] Incorrecta. La Procuraduría ejerce el control disciplinario y es parte del Ministerio Público, pero no es la titular de la acción penal.\n[B] Correcta. La Fiscalía General de la Nación ejerce la acción penal e investiga los delitos (art. 250 C.P.). Las denuncias penales se presentan ante ella o ante la policía judicial. La DIAN también puede recibir información por sus canales de denuncia para adelantar sus propias actuaciones administrativas.\n[C] Incorrecta. La Contraloría ejerce el control fiscal sobre el manejo de recursos públicos; no recibe denuncias penales por contrabando.",
+      "norma": "Constitución Política, art. 250; Ley 906 de 2004",
+      "dificultad": 1,
+      "etiquetas": [
+        "denuncia penal",
+        "Fiscalía"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-020",
+      "contexto": "Al preparar un informe sobre riesgo de lavado en el comercio exterior, un profesional debe mencionar el organismo intergubernamental que emite las recomendaciones internacionales en esta materia.",
+      "enunciado": "Al profesional le corresponde mencionar",
+      "opciones": {
+        "A": "la Organización Mundial del Comercio (OMC).",
+        "B": "la Organización Mundial de Aduanas (OMA).",
+        "C": "el Grupo de Acción Financiera (GAFI)."
+      },
+      "correcta": "C",
+      "explicacion": "El GAFI fija los estándares internacionales contra el lavado de activos y la financiación del terrorismo.\n[C] Correcta. El GAFI (FATF por sus siglas en inglés) emite las recomendaciones internacionales para prevenir el lavado de activos, la financiación del terrorismo y la proliferación. Colombia participa a través del GAFILAT, el grupo regional, y es evaluada según esas recomendaciones.\n[B] Incorrecta. La OMA establece estándares aduaneros, como el Sistema Armonizado y el marco SAFE, pero no es el organismo que fija los estándares contra el lavado.\n[A] Incorrecta. La OMC regula el comercio internacional y sus acuerdos, como el de valoración, pero no el lavado de activos.",
+      "norma": "Recomendaciones del GAFI; GAFILAT",
+      "dificultad": 1,
+      "etiquetas": [
+        "GAFI",
+        "estándares internacionales"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-021",
+      "contexto": "Durante una fiscalización tributaria, el profesional encuentra señales de que los ingresos de un contribuyente podrían provenir de actividades ilícitas. El contribuyente alega que la DIAN solo puede ocuparse de los impuestos.",
+      "enunciado": "Al profesional le corresponde considerar que",
+      "opciones": {
+        "A": "debe limitarse a liquidar el impuesto, porque el origen del ingreso no le compete.",
+        "B": "puede compartir la información con las autoridades competentes, conforme a la ley.",
+        "C": "debe archivar la fiscalización, porque los ingresos ilícitos no pagan impuestos."
+      },
+      "correcta": "B",
+      "explicacion": "La DIAN coopera con las autoridades de lucha contra el lavado, dentro del marco legal.\n[A] Incorrecta. La DIAN liquida el impuesto, pero eso no le impide informar posibles delitos ni colaborar con las autoridades competentes.\n[B] Correcta. La ley permite a la DIAN intercambiar información con la UIAF y con las autoridades judiciales, que conservan la reserva, y el servidor tiene deber de denuncia frente a posibles delitos. La fiscalización tributaria puede continuar en paralelo.\n[C] Incorrecta. Los ingresos de origen ilícito no quedan exentos: para efectos tributarios, todo ingreso que incremente el patrimonio puede gravarse, sin perjuicio de las consecuencias penales y de la extinción de dominio.",
+      "norma": "Estatuto Tributario, art. 583 (parágrafos); Ley 526 de 1999; Ley 906 de 2004, art. 67",
+      "dificultad": 2,
+      "etiquetas": [
+        "cooperación interinstitucional",
+        "reserva"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-022",
+      "contexto": "Una empresa sujeta a un sistema de prevención de lavado de activos designó a una persona responsable de verificar el cumplimiento del sistema y enviar los reportes a la UIAF.",
+      "enunciado": "Esta persona se denomina",
+      "opciones": {
+        "A": "revisor fiscal principal.",
+        "B": "oficial de cumplimiento.",
+        "C": "agente de retención."
+      },
+      "correcta": "B",
+      "explicacion": "El oficial de cumplimiento es el responsable del funcionamiento del sistema de prevención.\n[A] Incorrecta. El revisor fiscal fiscaliza la contabilidad y el control interno de la sociedad, y tiene deberes de reporte, pero no es quien administra el sistema de prevención.\n[B] Correcta. El oficial de cumplimiento es la persona designada para verificar el cumplimiento de los procedimientos de prevención del lavado de activos y de la financiación del terrorismo, analizar las operaciones inusuales y enviar los reportes a la UIAF.\n[C] Incorrecta. El agente retenedor tiene obligaciones tributarias de retención; no se relaciona con la prevención del lavado.",
+      "norma": "Normas SARLAFT y SIPLAFT",
+      "dificultad": 1,
+      "etiquetas": [
+        "oficial de cumplimiento"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-023",
+      "contexto": "En una investigación se encuentra que una organización usa contrabando técnico de cigarrillos para mover dinero de narcotráfico, mezclándolo con las ventas legales de un distribuidor.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que el contrabando",
+      "opciones": {
+        "A": "no se relaciona con el lavado, porque es una infracción solamente aduanera.",
+        "B": "solo es delito fuente de lavado cuando la mercancía es de prohibida importación.",
+        "C": "es uno de los delitos fuente del lavado de activos, conforme al Código Penal."
+      },
+      "correcta": "C",
+      "explicacion": "El contrabando aparece expresamente entre los delitos fuente del lavado de activos.\n[A] Incorrecta. El contrabando puede ser infracción aduanera y, si supera los umbrales, delito, además de ser fuente y medio de lavado.\n[C] Correcta. El art. 323 CP incluye entre las actividades de las que pueden provenir los bienes lavados el contrabando, el contrabando de hidrocarburos, el fraude aduanero y el favorecimiento y facilitación del contrabando. Además, el contrabando sirve como mecanismo para dar apariencia de legalidad a dineros ilícitos.\n[B] Incorrecta. La norma no limita el delito fuente a las mercancías prohibidas.",
+      "norma": "Código Penal, arts. 319 y 323",
+      "dificultad": 2,
+      "etiquetas": [
+        "contrabando",
+        "delitos fuente"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-024",
+      "contexto": "Un contribuyente omitió en su declaración de renta varios inmuebles en el exterior, que la DIAN detectó mediante intercambio automático de información con otros países.",
+      "enunciado": "Además de las consecuencias tributarias, al profesional le corresponde considerar que esta conducta",
+      "opciones": {
+        "A": "se subsana automáticamente con el intercambio de información recibido.",
+        "B": "carece de consecuencias penales, porque los bienes están fuera del país.",
+        "C": "puede constituir el delito de omisión de activos, según su cuantía legal."
+      },
+      "correcta": "C",
+      "explicacion": "Omitir activos en la declaración de renta puede ser delito cuando supera el umbral legal.\n[C] Correcta. El art. 434A CP sanciona al contribuyente que, dolosamente, omita activos o declare pasivos inexistentes en un valor igual o superior al monto que fija la ley, afectando su impuesto. Además, en lo tributario procede la renta líquida gravable por activos omitidos (art. 239-1 ET) con sus sanciones.\n[B] Incorrecta. Que los activos estén en el exterior no excluye el delito: los residentes deben declarar su patrimonio en el mundo.\n[A] Incorrecta. El intercambio de información permite a la DIAN detectar la omisión, pero no la subsana: el contribuyente debe corregir y asumir las consecuencias.",
+      "norma": "Código Penal, art. 434A; Estatuto Tributario, art. 239-1",
+      "dificultad": 3,
+      "etiquetas": [
+        "omisión de activos",
+        "delitos tributarios"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-025",
+      "contexto": "Al revisar la información de un sujeto obligado, el profesional encuentra que reportó a la UIAF una operación sospechosa de buena fe, pero el cliente luego demostró que la operación era legítima y amenaza con demandar.",
+      "enunciado": "Al profesional le corresponde considerar que el sujeto obligado",
+      "opciones": {
+        "A": "debe indemnizar al cliente, porque el reporte resultó infundado.",
+        "B": "comete el delito de falsa denuncia, porque el cliente era inocente.",
+        "C": "no tiene responsabilidad por haber reportado de buena fe a la UIAF."
+      },
+      "correcta": "C",
+      "explicacion": "La ley protege a quien reporta de buena fe.\n[A] Incorrecta. El reporte no requiere certeza: si se hizo de buena fe, que la operación resulte legítima no genera la obligación de indemnizar.\n[C] Correcta. Las normas de prevención establecen que los reportes de operaciones sospechosas hechos de buena fe no generan responsabilidad para la entidad ni para sus funcionarios, para incentivar el reporte oportuno de operaciones inusuales sin justificación razonable.\n[B] Incorrecta. El ROS no es una denuncia penal; reportar de buena fe no configura falsa denuncia.",
+      "norma": "Estatuto Orgánico del Sistema Financiero, arts. 102 a 107; Ley 526 de 1999",
+      "dificultad": 2,
+      "etiquetas": [
+        "ROS",
+        "buena fe"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

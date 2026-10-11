@@ -11,6 +11,18 @@
   </div>
   <div class="campo"><label class="check"><input type="checkbox" name="barajar_opciones" {{ 'checked' if cfg.barajar_opciones == '1' }}>
     Barajar el orden de las opciones (evita memorizar la letra en vez del concepto)</label></div>
+  <h3 style="margin-top:20px">Prueba real y simulacro oficial</h3>
+  <div class="fila">
+    <div class="campo"><label>Fecha de la prueba</label><input type="text" name="fecha_prueba" value="{{ cfg.fecha_prueba }}" placeholder="AAAA-MM-DD"></div>
+    <div class="campo"><label>Preguntas del simulacro oficial</label><input type="number" name="simulacro_oficial_preguntas" min="1" value="{{ cfg.simulacro_oficial_preguntas }}"></div>
+    <div class="campo"><label>Minutos del simulacro oficial</label><input type="number" name="simulacro_oficial_minutos" min="1" value="{{ cfg.simulacro_oficial_minutos }}"></div>
+  </div>
+  <div class="fila">
+    <div class="campo"><label>Puntaje mínimo aprobatorio</label><input type="number" name="puntaje_minimo" min="1" max="100" value="{{ cfg.puntaje_minimo }}"></div>
+    <div class="campo"><label>Tu meta de puntaje</label><input type="number" name="meta_puntaje" min="1" max="100" value="{{ cfg.meta_puntaje }}"></div>
+  </div>
+  <div class="campo"><label class="check"><input type="checkbox" name="mostrar_resumen_prueba" {{ 'checked' if cfg.mostrar_resumen_prueba != '0' }}>
+    Mostrar en el inicio el resumen de la prueba (cuenta regresiva, pesos y meta)</label></div>
   <h3 style="margin-top:20px">Análisis de fortalezas y debilidades</h3>
   <div class="fila">
     <div class="campo"><label>Fortaleza desde (%)</label><input type="number" name="umbral_fortaleza" min="1" max="100" value="{{ cfg.umbral_fortaleza }}"></div>
@@ -27,4 +39,13 @@
 <div class="panel peq suave" style="max-width:640px; margin-top:14px">
   <b>Copia de seguridad:</b> todos tus registros están en el archivo <code>estudio.db</code>. Cópialo a otra carpeta o a la nube para respaldarlo.
 </div>
+<form method="post" action="{{ url_for('reiniciar') }}" class="panel" style="max-width:640px; margin-top:14px; border-color:var(--mal)">
+  <h3>Reiniciar estadísticas</h3>
+  <p class="peq">Borra todas tus rondas, respuestas, repaso espaciado, historial y prácticas de comportamental. Las preguntas y la
+    configuración se conservan. Antes de borrar se guarda un respaldo automático en <code>respaldos/</code>.</p>
+  <div class="fila" style="align-items:flex-end">
+    <div class="campo" style="margin:0"><label>Escribe REINICIAR para confirmar</label><input type="text" name="confirmar" autocomplete="off"></div>
+    <div style="flex:0 0 auto"><button class="btn peligro">Reiniciar desde cero</button></div>
+  </div>
+</form>
 {% endblock %}

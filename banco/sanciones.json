@@ -1,0 +1,573 @@
+{
+  "sesion": "sanciones",
+  "preguntas": [
+    {
+      "id": "sanciones-001",
+      "contexto": "Un contribuyente presentó su declaración de IVA un mes y diez días después del vencimiento, antes de cualquier emplazamiento. El impuesto a cargo es de $20 millones.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción por extemporaneidad liquidada sea de",
+      "opciones": {
+        "A": "$1.000.000",
+        "B": "$2.000.000",
+        "C": "$4.000.000"
+      },
+      "correcta": "B",
+      "explicacion": "Antes del emplazamiento, la extemporaneidad se sanciona con el 5% del impuesto a cargo por cada mes o fracción de retardo.\n[A] Incorrecta. $1.000.000 corresponde a un solo mes de retardo (5%); los diez días adicionales cuentan como otro mes, por la regla de «mes o fracción».\n[B] Correcta. Un mes y diez días equivalen a 2 meses de retardo (art. 641 ET): 2 × 5% = 10% × $20.000.000 = $2.000.000, sin exceder el 100% del impuesto.\n[C] Incorrecta. $4.000.000 aplica el 10% mensual, que es la tarifa posterior al emplazamiento para declarar (art. 642 ET).",
+      "norma": "Estatuto Tributario, arts. 641 y 642",
+      "dificultad": 2,
+      "etiquetas": [
+        "extemporaneidad",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-002",
+      "contexto": "Al determinar la sanción de un contribuyente, el profesional debe aplicar los principios que el Estatuto Tributario establece para el régimen sancionatorio.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que el art. 640 del ET consagra, entre otros, los principios de",
+      "opciones": {
+        "A": "lesividad, proporcionalidad, gradualidad y favorabilidad.",
+        "B": "equidad, eficiencia, progresividad e irretroactividad.",
+        "C": "celeridad, economía, publicidad e imparcialidad."
+      },
+      "correcta": "A",
+      "explicacion": "El régimen sancionatorio tributario tiene principios propios.\n[A] Correcta. El art. 640 ET (modificado por la Ley 1819 de 2016) establece que las sanciones se aplican con base en los principios de lesividad, proporcionalidad, gradualidad y favorabilidad.\n[B] Incorrecta. Equidad, eficiencia, progresividad e irretroactividad son los principios del sistema tributario (art. 363 C.P.), no los del régimen sancionatorio.\n[C] Incorrecta. Celeridad, economía, publicidad e imparcialidad son principios de la función administrativa (art. 209 C.P. y art. 3 CPACA).",
+      "norma": "Estatuto Tributario, art. 640",
+      "dificultad": 1,
+      "etiquetas": [
+        "principios sancionatorios"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-003",
+      "contexto": "Mientras se tramita la sanción de un contribuyente por una conducta cometida en 2023, entra en vigencia una ley que reduce el valor de esa misma sanción.",
+      "enunciado": "Al proyectar la resolución sancionatoria, al profesional le corresponde",
+      "opciones": {
+        "A": "aplicar la ley vigente en 2023, porque las normas no se aplican hacia el pasado.",
+        "B": "aplicar la ley posterior más favorable, por el principio de favorabilidad.",
+        "C": "aplicar el promedio entre las dos sanciones, para no favorecer a ninguna parte."
+      },
+      "correcta": "B",
+      "explicacion": "En materia sancionatoria tributaria rige la favorabilidad, aun con leyes posteriores.\n[A] Incorrecta. La irretroactividad (art. 363 C.P.) protege al contribuyente frente a leyes más gravosas: no impide aplicar una ley sancionatoria más benigna.\n[B] Correcta. El art. 640 ET, parágrafo 5, dispone que el principio de favorabilidad aplica en el régimen sancionatorio tributario aun cuando la ley permisiva o favorable sea posterior. Debe aplicarse la sanción menor.\n[C] Incorrecta. No existe una regla de promedio entre normas: se aplica la norma más favorable.",
+      "norma": "Estatuto Tributario, art. 640, parágrafo 5",
+      "dificultad": 2,
+      "etiquetas": [
+        "favorabilidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-004",
+      "contexto": "Un contribuyente presentó extemporáneamente su declaración. Nunca antes había cometido esa infracción y la DIAN no le ha notificado emplazamiento ni pliego de cargos.",
+      "enunciado": "Al verificar la sanción liquidada, al profesional le corresponde tener en cuenta que, por el principio de gradualidad, la sanción",
+      "opciones": {
+        "A": "puede reducirse al 50% si no cometió la misma conducta en los dos años anteriores.",
+        "B": "debe eliminarse por completo, porque se trata de la primera infracción cometida.",
+        "C": "debe aumentarse al doble, porque la conducta se detectó antes de cualquier actuación."
+      },
+      "correcta": "A",
+      "explicacion": "La gradualidad permite reducir la sanción cuando no hay reincidencia y la DIAN aún no ha actuado.\n[A] Correcta. Según el art. 640 ET, la sanción se reduce al 50% si en los dos años anteriores a la conducta no se cometió la misma infracción y la DIAN no ha proferido pliego de cargos, requerimiento especial o emplazamiento. Se reduce al 75% si la condición se cumple solo respecto del año anterior.\n[B] Incorrecta. Ser la primera infracción no elimina la sanción: solo permite reducirla, con un mínimo de 10 UVT (art. 639 ET).\n[C] Incorrecta. El aumento por reincidencia aplica cuando se repite la conducta, no cuando el contribuyente se anticipa a la DIAN.",
+      "norma": "Estatuto Tributario, arts. 639 y 640",
+      "dificultad": 3,
+      "etiquetas": [
+        "gradualidad",
+        "reducción de sanciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-005",
+      "contexto": "Un contribuyente declaró un costo amparado en facturas de un proveedor que la DIAN ya había declarado como proveedor ficticio y cuya declaratoria se publicó antes de la compra.",
+      "enunciado": "Al profesional le corresponde calificar esa conducta como",
+      "opciones": {
+        "A": "una inexactitud sancionable, por incluir compras a un proveedor ficticio.",
+        "B": "un error aritmético, porque el valor del costo quedó mal determinado.",
+        "C": "una diferencia de criterio, porque el contribuyente creyó que el costo era real."
+      },
+      "correcta": "A",
+      "explicacion": "Incluir compras a proveedores ficticios es una de las conductas que constituyen inexactitud.\n[A] Correcta. El art. 647 ET considera inexactitud, entre otras conductas, la utilización de datos o factores falsos, desfigurados o alterados y la inclusión de compras a proveedores ficticios. El art. 671 ET niega la deducibilidad de esas compras. Procede la sanción por inexactitud (art. 648 ET).\n[B] Incorrecta. El error aritmético se refiere a operaciones mal hechas o a tarifas mal aplicadas (art. 697 ET), no a costos sin realidad económica.\n[C] Incorrecta. La diferencia de criterio exige que los hechos y cifras sean completos y verdaderos; aquí el costo se soportó en un proveedor ficticio.",
+      "norma": "Estatuto Tributario, arts. 647, 648 y 671",
+      "dificultad": 2,
+      "etiquetas": [
+        "inexactitud",
+        "proveedores ficticios"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-006",
+      "contexto": "Un contribuyente declaró todos sus ingresos y costos con cifras reales y soportadas, pero aplicó una interpretación razonable, aunque distinta de la de la DIAN, sobre si cierto ingreso era gravado. La DIAN modificará la declaración.",
+      "enunciado": "Respecto de la sanción por inexactitud, al profesional le corresponde",
+      "opciones": {
+        "A": "imponerla, porque toda modificación de la declaración genera inexactitud.",
+        "B": "imponerla reducida a la mitad, porque el contribuyente actuó de buena fe.",
+        "C": "no imponerla, porque hay diferencia de criterio con hechos completos y verdaderos."
+      },
+      "correcta": "C",
+      "explicacion": "La diferencia de criterio sobre el derecho aplicable excluye la sanción por inexactitud.\n[A] Incorrecta. No toda modificación genera sanción: la ley excluye expresamente los casos de diferencia de criterio.\n[B] Incorrecta. La ley no prevé una reducción a la mitad por buena fe en este supuesto. Si hay diferencia de criterio, simplemente no hay sanción, aunque sí se liquida el mayor impuesto.\n[C] Correcta. El parágrafo del art. 647 ET dispone que no se configura inexactitud cuando el menor valor a pagar resulta de una interpretación razonable en la apreciación o interpretación del derecho aplicable, siempre que los hechos y cifras declarados sean completos y verdaderos.",
+      "norma": "Estatuto Tributario, art. 647, parágrafo",
+      "dificultad": 2,
+      "etiquetas": [
+        "diferencia de criterio",
+        "inexactitud"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-007",
+      "contexto": "En una liquidación oficial de revisión se determinó un saldo a pagar de $45 millones; el contribuyente había declarado $30 millones. No hay circunstancias que agraven o reduzcan la sanción.",
+      "enunciado": "Al profesional le corresponde liquidar una sanción por inexactitud de",
+      "opciones": {
+        "A": "$15 millones",
+        "B": "$30 millones",
+        "C": "$45 millones"
+      },
+      "correcta": "A",
+      "explicacion": "La sanción por inexactitud se calcula sobre la diferencia entre el saldo determinado oficialmente y el declarado.\n[A] Correcta. El art. 648 ET fija la sanción general en el 100% de la diferencia: $45 − $30 = $15 millones × 100% = $15 millones.\n[B] Incorrecta. $30 millones aplica el porcentaje sobre el saldo declarado, no sobre la diferencia, o equivaldría al 200%, que solo procede en casos especiales.\n[C] Incorrecta. $45 millones toma el saldo determinado completo como base de la sanción.",
+      "norma": "Estatuto Tributario, art. 648",
+      "dificultad": 1,
+      "etiquetas": [
+        "inexactitud",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-008",
+      "contexto": "La DIAN profirió una liquidación de corrección aritmética que aumentó en $6 millones el impuesto a cargo de un contribuyente.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción por error aritmético incluida sea de",
+      "opciones": {
+        "A": "$600.000",
+        "B": "$1.800.000",
+        "C": "$6.000.000"
+      },
+      "correcta": "B",
+      "explicacion": "El error aritmético tiene una sanción específica del 30%.\n[A] Incorrecta. $600.000 equivale al 10%, que es la sanción por corrección voluntaria antes del emplazamiento (art. 644 ET).\n[B] Correcta. El art. 646 ET fija la sanción por error aritmético en el 30% del mayor valor a pagar o del menor saldo a favor: $6.000.000 × 30% = $1.800.000. Se reduce a la mitad si el contribuyente acepta los hechos, renuncia a interponer recursos y paga dentro del término para interponerlos.\n[C] Incorrecta. $6.000.000 equivale al 100%, propio de la sanción por inexactitud (art. 648 ET).",
+      "norma": "Estatuto Tributario, art. 646",
+      "dificultad": 2,
+      "etiquetas": [
+        "error aritmético",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-009",
+      "contexto": "Un responsable de IVA no declaró un periodo. Tras el emplazamiento, la DIAN establece consignaciones bancarias del periodo por $200 millones y unos ingresos brutos registrados de $150 millones.",
+      "enunciado": "Al profesional le corresponde proyectar una sanción por no declarar IVA de",
+      "opciones": {
+        "A": "$15 millones",
+        "B": "$40 millones",
+        "C": "$20 millones"
+      },
+      "correcta": "C",
+      "explicacion": "La sanción por no declarar IVA se calcula sobre las consignaciones o los ingresos brutos del periodo, el que sea superior.\n[A] Incorrecta. $15 millones aplica el 10% a los ingresos brutos, que son el menor de los dos valores. La norma ordena tomar el superior.\n[B] Incorrecta. $40 millones aplica el 20%, porcentaje que corresponde a la sanción por no declarar renta (art. 643 num. 1 ET), no a la de IVA.\n[C] Correcta. El art. 643 num. 2 ET fija la sanción por no declarar IVA en el 10% de las consignaciones bancarias o de los ingresos brutos del periodo, el que sea superior: $200 millones × 10% = $20 millones.",
+      "norma": "Estatuto Tributario, art. 643, num. 2",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanción por no declarar",
+        "IVA",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-010",
+      "contexto": "A un contribuyente se le notificó la resolución que le impone la sanción por no declarar renta. Antes de que venza el término para interponer el recurso, presenta la declaración y paga.",
+      "enunciado": "Al profesional le corresponde informarle que, por haber declarado en esa oportunidad, la sanción",
+      "opciones": {
+        "A": "se mantiene completa, porque la declaración llegó después de la sanción.",
+        "B": "se reduce al 50% de la impuesta, cumpliendo los requisitos de la norma.",
+        "C": "se elimina, porque el contribuyente finalmente cumplió su obligación de declarar."
+      },
+      "correcta": "B",
+      "explicacion": "La ley incentiva al omiso que declara después de ser sancionado, pero dentro del término de recurso.\n[A] Incorrecta. La ley prevé un beneficio precisamente para quien declara después de la sanción y antes de que venza el término del recurso.\n[B] Correcta. El parágrafo 2 del art. 643 ET dispone que, si dentro del término para interponer el recurso contra la resolución que impone la sanción por no declarar, el contribuyente presenta la declaración, la sanción se reduce al 50% de la impuesta. Debe liquidar y pagar la sanción reducida, que no puede ser inferior a la de extemporaneidad aplicable.\n[C] Incorrecta. La sanción no desaparece: se reduce. Declarar tarde sigue siendo un incumplimiento.",
+      "norma": "Estatuto Tributario, art. 643, parágrafo 2",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanción por no declarar",
+        "reducción de sanciones"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-011",
+      "contexto": "En una visita de control, el profesional verifica que un establecimiento comercial vende sin expedir factura ni documento equivalente, y que ya había sido requerido por la misma conducta.",
+      "enunciado": "Frente a esta infracción, al profesional le corresponde proponer la sanción de",
+      "opciones": {
+        "A": "clausura o cierre del establecimiento, por el término que fija la ley.",
+        "B": "suspensión de la inscripción del contador del establecimiento por un año.",
+        "C": "decomiso de la mercancía en exhibición, por haberse vendido sin factura."
+      },
+      "correcta": "A",
+      "explicacion": "No facturar se sanciona con la clausura del establecimiento.\n[A] Correcta. El art. 657 ET prevé la sanción de clausura o cierre del establecimiento de comercio, oficina o consultorio por 3 días cuando no se expide factura o documento equivalente, entre otras causales. Durante el cierre se fija un sello con la leyenda «cerrado por evasión», y el término se amplía si hay reincidencia.\n[B] Incorrecta. La suspensión de la inscripción de contadores (art. 659 ET) se aplica por certificar o llevar contabilidades irregulares, no por la falta de facturación del comerciante.\n[C] Incorrecta. El decomiso es una figura aduanera para mercancías sin legal introducción, no la sanción por no facturar.",
+      "norma": "Estatuto Tributario, arts. 652 y 657",
+      "dificultad": 2,
+      "etiquetas": [
+        "clausura",
+        "facturación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-012",
+      "contexto": "La DIAN devolvió a un contribuyente un saldo a favor de IVA. Después, en una investigación, se determina que el saldo a favor era improcedente, sin que se hayan usado documentos falsos.",
+      "enunciado": "Al profesional le corresponde proponer que el contribuyente",
+      "opciones": {
+        "A": "reintegre lo devuelto en exceso con sus intereses y pague una sanción del 10% de ese valor.",
+        "B": "reintegre lo devuelto en exceso sin intereses, porque fue la DIAN la que aprobó la devolución.",
+        "C": "pague una sanción del 100% de lo devuelto, porque toda devolución improcedente es fraudulenta."
+      },
+      "correcta": "A",
+      "explicacion": "La devolución improcedente obliga a reintegrar con intereses y genera una sanción.\n[A] Correcta. El art. 670 ET dispone que, si la DIAN rechaza o modifica un saldo a favor ya devuelto o compensado, deben reintegrarse las sumas devueltas en exceso con los intereses moratorios, más una sanción del 10% del valor devuelto en exceso.\n[B] Incorrecta. Que la DIAN haya aprobado la devolución no libera al contribuyente de reintegrar ni de pagar intereses: la devolución se otorga sobre la base de lo que él declaró.\n[C] Incorrecta. La sanción del 100% aplica cuando se usan documentos falsos o hay fraude. Sin esas circunstancias, la sanción es del 10%.",
+      "norma": "Estatuto Tributario, art. 670",
+      "dificultad": 2,
+      "etiquetas": [
+        "devolución improcedente"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-013",
+      "contexto": "En una fiscalización se demuestra que el revisor fiscal de una sociedad certificó estados financieros que no reflejaban la realidad económica de la empresa, para soportar una devolución.",
+      "enunciado": "Respecto del revisor fiscal, al profesional le corresponde",
+      "opciones": {
+        "A": "imponerle directamente una multa en la misma liquidación oficial de la sociedad.",
+        "B": "poner los hechos en conocimiento de la Junta Central de Contadores para la sanción.",
+        "C": "abstenerse de actuar, porque la responsabilidad recae únicamente en la sociedad."
+      },
+      "correcta": "B",
+      "explicacion": "La sanción a contadores y revisores fiscales la impone la Junta Central de Contadores.\n[A] Incorrecta. La DIAN no sanciona directamente al revisor fiscal dentro de la liquidación de la sociedad: el régimen del art. 659 ET asigna esa competencia a la Junta Central de Contadores.\n[B] Correcta. El art. 659 ET dispone que los contadores, auditores o revisores fiscales que expidan certificaciones que no reflejen la realidad económica, o que no coincidan con los libros, sean sancionados por la Junta Central de Contadores con suspensión de su inscripción profesional hasta por un año. La DIAN debe informar los hechos.\n[C] Incorrecta. La responsabilidad del revisor fiscal es independiente de la de la sociedad: certificar información irreal tiene consecuencias propias.",
+      "norma": "Estatuto Tributario, arts. 659 y 660",
+      "dificultad": 2,
+      "etiquetas": [
+        "contadores",
+        "revisor fiscal"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-014",
+      "contexto": "Una sociedad obligada a reportar información exógena no la envió dentro del plazo. El profesional debe identificar la sanción que corresponde a esa conducta.",
+      "enunciado": "Al profesional le corresponde adelantar el proceso por la sanción",
+      "opciones": {
+        "A": "por no enviar información, previa formulación de pliego de cargos.",
+        "B": "por inexactitud, dentro de la liquidación oficial de revisión de renta.",
+        "C": "por extemporaneidad, liquidada como un porcentaje del impuesto a cargo."
+      },
+      "correcta": "A",
+      "explicacion": "El incumplimiento del deber de informar tiene una sanción propia.\n[A] Correcta. El art. 651 ET sanciona a quienes, estando obligados a suministrar información tributaria, no la entreguen, la entreguen fuera del plazo o la entreguen con errores. Como se impone en resolución independiente, debe formularse previamente pliego de cargos (art. 638 ET). La sanción se reduce si la falta se subsana antes de que se imponga.\n[B] Incorrecta. La inexactitud se refiere a cifras o datos falsos en las declaraciones tributarias, no al incumplimiento del deber de reportar información.\n[C] Incorrecta. La extemporaneidad del art. 641 ET se refiere a declaraciones presentadas tarde, no a la información exógena.",
+      "norma": "Estatuto Tributario, arts. 631, 638 y 651",
+      "dificultad": 2,
+      "etiquetas": [
+        "no enviar información",
+        "exógena"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-015",
+      "contexto": "La irregularidad de un contribuyente consistió en no enviar información correspondiente al año gravable 2023, cuya declaración de renta presentó el 10 de abril de 2024. La sanción se impondrá mediante resolución independiente.",
+      "enunciado": "Al profesional le corresponde verificar que el pliego de cargos se notifique a más tardar el",
+      "opciones": {
+        "A": "10 de abril de 2025.",
+        "B": "10 de abril de 2027.",
+        "C": "10 de abril de 2026."
+      },
+      "correcta": "C",
+      "explicacion": "Las sanciones en resolución independiente tienen un término propio para formular cargos.\n[A] Incorrecta. Un año no es el término previsto por la ley para formular el pliego de cargos.\n[B] Incorrecta. Tres años es el término del requerimiento especial (art. 705 ET), no el del pliego de cargos.\n[C] Correcta. El art. 638 ET dispone que, cuando las sanciones se impongan en resolución independiente, el pliego de cargos debe formularse dentro de los 2 años siguientes a la presentación de la declaración de renta del periodo en que ocurrió la irregularidad: 10 de abril de 2024 + 2 años = 10 de abril de 2026.",
+      "norma": "Estatuto Tributario, art. 638",
+      "dificultad": 3,
+      "etiquetas": [
+        "pliego de cargos",
+        "términos",
+        "prescripción"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-016",
+      "contexto": "En una revisión, la DIAN encuentra que un contribuyente tiene inexactitudes en su declaración de renta. El jefe pregunta si la sanción debe imponerse en un acto separado.",
+      "enunciado": "Al profesional le corresponde explicar que la sanción por inexactitud",
+      "opciones": {
+        "A": "solo puede imponerse en una resolución independiente, previo pliego de cargos.",
+        "B": "se propone en el requerimiento especial y se impone en la liquidación de revisión.",
+        "C": "la liquida siempre el contribuyente, sin intervención de la DIAN en ningún caso."
+      },
+      "correcta": "B",
+      "explicacion": "Las sanciones pueden imponerse en resolución independiente o dentro de las liquidaciones oficiales.\n[A] Incorrecta. La resolución independiente con pliego de cargos se usa para sanciones que no van dentro de una liquidación oficial, como la de no enviar información.\n[B] Correcta. El art. 637 ET permite imponer las sanciones en resolución independiente o en las respectivas liquidaciones oficiales. La inexactitud se propone en el requerimiento especial (art. 703 ET) y se impone en la liquidación de revisión.\n[C] Incorrecta. El contribuyente la liquida cuando acepta los hechos (art. 709 ET), pero la DIAN la impone cuando no hay aceptación.",
+      "norma": "Estatuto Tributario, arts. 637, 638 y 703",
+      "dificultad": 2,
+      "etiquetas": [
+        "procedimiento sancionatorio",
+        "inexactitud"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-017",
+      "contexto": "Un contribuyente presenta extemporáneamente su declaración. Al aplicar la tarifa, la sanción de extemporaneidad le da $180.000, valor inferior a 10 UVT.",
+      "enunciado": "Al profesional le corresponde verificar que el contribuyente haya liquidado",
+      "opciones": {
+        "A": "una sanción igual a 10 UVT, que es la sanción mínima.",
+        "B": "una sanción de $180.000, que es el valor calculado.",
+        "C": "ninguna sanción, porque el valor es inferior al mínimo."
+      },
+      "correcta": "A",
+      "explicacion": "Ninguna sanción puede ser inferior a 10 UVT.\n[A] Correcta. El art. 639 ET establece que el valor mínimo de cualquier sanción, incluidas las que liquida el propio contribuyente y las reducidas, es de 10 UVT. Si el cálculo da menos, se liquidan 10 UVT.\n[B] Incorrecta. El valor calculado no puede quedar por debajo de la sanción mínima.\n[C] Incorrecta. Un valor bajo no elimina la sanción: la eleva al mínimo legal.",
+      "norma": "Estatuto Tributario, art. 639",
+      "dificultad": 1,
+      "etiquetas": [
+        "sanción mínima"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-018",
+      "contexto": "Antes de cualquier emplazamiento, un contribuyente corrige su declaración de renta y aumenta el impuesto a cargo en $8 millones. La corrección se presenta dentro del plazo legal para corregir.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción por corrección sea de",
+      "opciones": {
+        "A": "$1.600.000",
+        "B": "$8.000.000",
+        "C": "$800.000"
+      },
+      "correcta": "C",
+      "explicacion": "La sanción por corrección es menor cuando el contribuyente se anticipa a la DIAN.\n[A] Incorrecta. $1.600.000 equivale al 20%, porcentaje que aplica después del emplazamiento para corregir o del auto de inspección (art. 644 ET).\n[B] Incorrecta. $8.000.000 equivale al 100%, propio de la inexactitud (art. 648 ET).\n[C] Correcta. El art. 644 ET fija la sanción por corrección en el 10% del mayor valor a pagar cuando la corrección se hace antes del emplazamiento o del auto de inspección: $8.000.000 × 10% = $800.000.",
+      "norma": "Estatuto Tributario, art. 644",
+      "dificultad": 1,
+      "etiquetas": [
+        "sanción por corrección",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-019",
+      "contexto": "Un compañero propone sancionar a un contribuyente por un error formal en un formulario, que no afectó el recaudo ni dificultó el control de la DIAN.",
+      "enunciado": "Al analizar la propuesta, al profesional le corresponde considerar el principio de lesividad, según el cual",
+      "opciones": {
+        "A": "toda infracción formal debe sancionarse con el máximo previsto en la ley.",
+        "B": "la sanción debe ser igual para todos los contribuyentes, sin importar el daño.",
+        "C": "la conducta solo es sancionable si afecta o pone en riesgo el bien jurídico protegido."
+      },
+      "correcta": "C",
+      "explicacion": "La lesividad exige que la conducta tenga una afectación real o potencial.\n[A] Incorrecta. Aplicar siempre el máximo desconoce los principios de lesividad, proporcionalidad y gradualidad.\n[B] Incorrecta. La sanción no es igual para todos: los principios del art. 640 ET exigen considerar la afectación y la conducta concreta.\n[C] Correcta. Según el art. 640 ET, el principio de lesividad implica que la falta sea relevante, es decir, que afecte o ponga en peligro el bien jurídico tutelado (por ejemplo, el recaudo o la capacidad de control). Por eso existen reglas para no sancionar ciertos errores formales intrascendentes.",
+      "norma": "Estatuto Tributario, art. 640",
+      "dificultad": 2,
+      "etiquetas": [
+        "lesividad",
+        "principios sancionatorios"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-020",
+      "contexto": "Un contribuyente presenta su declaración tres meses después del vencimiento, pero solo lo hace luego de recibir el emplazamiento para declarar. El impuesto a cargo es de $10 millones.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción de extemporaneidad liquidada sea de",
+      "opciones": {
+        "A": "$1.500.000",
+        "B": "$3.000.000",
+        "C": "$10.000.000"
+      },
+      "correcta": "B",
+      "explicacion": "Después del emplazamiento para declarar, la extemporaneidad es del 10% mensual.\n[A] Incorrecta. $1.500.000 aplica el 5% mensual, que corresponde a la extemporaneidad antes del emplazamiento (art. 641 ET).\n[B] Correcta. El art. 642 ET fija la sanción en el 10% del impuesto a cargo por cada mes o fracción de retardo, sin exceder el 200%, cuando se declara después del emplazamiento: 3 × 10% = 30% × $10.000.000 = $3.000.000.\n[C] Incorrecta. $10.000.000 equivale al 100%, que no corresponde a la tarifa mensual.",
+      "norma": "Estatuto Tributario, art. 642",
+      "dificultad": 2,
+      "etiquetas": [
+        "extemporaneidad",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-021",
+      "contexto": "Un agente retenedor practicó retenciones en la fuente y presentó la declaración, pero no pagó lo retenido. Pregunta cuál es la consecuencia tributaria de esa situación.",
+      "enunciado": "Al profesional le corresponde informarle que la declaración de retención presentada sin pago total",
+      "opciones": {
+        "A": "no produce efecto legal alguno, salvo las excepciones previstas en la ley.",
+        "B": "es plenamente válida, y el pago puede hacerse en cualquier momento posterior.",
+        "C": "se tiene como no presentada solo si la DIAN lo declara mediante liquidación de aforo."
+      },
+      "correcta": "A",
+      "explicacion": "La declaración de retención sin pago no produce efectos.\n[A] Correcta. El art. 580-1 ET dispone que las declaraciones de retención en la fuente presentadas sin el pago total no producen efecto legal alguno, sin necesidad de acto administrativo que así lo declare, salvo las excepciones previstas (como algunos saldos a favor compensables). Además, no consignar lo retenido puede configurar el delito del art. 402 del Código Penal.\n[B] Incorrecta. El pago es requisito de eficacia de la declaración de retención: sin él, la declaración no surte efecto.\n[C] Incorrecta. La ineficacia opera por ministerio de la ley, sin necesidad de un acto de la DIAN, y el aforo no es el mecanismo previsto para ello.",
+      "norma": "Estatuto Tributario, art. 580-1; Código Penal, art. 402",
+      "dificultad": 3,
+      "etiquetas": [
+        "retención en la fuente",
+        "ineficacia"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-022",
+      "contexto": "Un contribuyente fue sancionado por no facturar y, un año después de haber cometido esa primera infracción, vuelve a cometer la misma conducta.",
+      "enunciado": "Al proyectar la nueva sanción, al profesional le corresponde",
+      "opciones": {
+        "A": "aplicar la misma sanción anterior, porque cada infracción se evalúa de forma aislada.",
+        "B": "aplicar la reducción por gradualidad, porque el contribuyente ya conoce la conducta.",
+        "C": "tener en cuenta la reincidencia, que agrava la sanción según lo previsto en la ley."
+      },
+      "correcta": "C",
+      "explicacion": "La reincidencia agrava las sanciones tributarias.\n[A] Incorrecta. Las infracciones no se evalúan de forma aislada: el historial del contribuyente es un criterio de graduación.\n[B] Incorrecta. La reducción por gradualidad exige justamente no haber cometido la misma conducta en el periodo anterior; aquí ocurre lo contrario.\n[C] Correcta. El art. 640 ET prevé que hay reincidencia cuando el sancionado comete nuevamente una infracción del mismo tipo dentro del término de dos años que fija la norma, y en ese caso la sanción se aumenta según lo previsto. Para la clausura por no facturar, el art. 657 ET prevé un cierre más largo en caso de reincidencia.",
+      "norma": "Estatuto Tributario, arts. 640 y 657",
+      "dificultad": 2,
+      "etiquetas": [
+        "reincidencia",
+        "gradualidad"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-023",
+      "contexto": "La DIAN impuso una sanción a un contribuyente mediante resolución independiente. El contribuyente no está de acuerdo y pregunta qué recurso procede.",
+      "enunciado": "Al profesional le corresponde informarle que contra la resolución sancionatoria procede",
+      "opciones": {
+        "A": "el recurso de reposición, dentro de los diez días siguientes a la notificación.",
+        "B": "el recurso de reconsideración, dentro de los dos meses siguientes a la notificación.",
+        "C": "ningún recurso, porque las sanciones solo pueden discutirse ante el juez."
+      },
+      "correcta": "B",
+      "explicacion": "Las resoluciones sancionatorias tributarias se impugnan con el recurso de reconsideración.\n[A] Incorrecta. La reposición en 10 días es un recurso del CPACA y procede en el procedimiento tributario solo en casos puntuales, como contra el auto inadmisorio del recurso (art. 726 ET).\n[B] Correcta. El art. 720 ET establece que contra las liquidaciones oficiales y las resoluciones que imponen sanciones procede el recurso de reconsideración, dentro de los 2 meses siguientes a la notificación.\n[C] Incorrecta. Las sanciones sí pueden discutirse en vía administrativa mediante el recurso de reconsideración.",
+      "norma": "Estatuto Tributario, art. 720",
+      "dificultad": 1,
+      "etiquetas": [
+        "recurso de reconsideración",
+        "procedimiento sancionatorio"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-024",
+      "contexto": "Un jefe explica a un profesional nuevo cómo clasifica la regulación aduanera las infracciones administrativas, para graduar las sanciones.",
+      "enunciado": "Al profesional le corresponde comprender que, conforme a la Ley Marco de Aduanas, las infracciones aduaneras se clasifican en",
+      "opciones": {
+        "A": "leves, graves y gravísimas.",
+        "B": "formales, sustanciales y penales.",
+        "C": "primarias, secundarias y terciarias."
+      },
+      "correcta": "A",
+      "explicacion": "La Ley 1609 de 2013 ordena clasificar las infracciones aduaneras según su gravedad.\n[A] Correcta. La Ley Marco de Aduanas (Ley 1609 de 2013) establece que las infracciones administrativas aduaneras se clasifican en leves, graves y gravísimas. Su desarrollo y sanciones están hoy en el régimen sancionatorio aduanero (Decreto 920 de 2023).\n[B] Incorrecta. La distinción entre obligaciones formales y sustanciales es propia del derecho tributario. Las conductas penales (contrabando) se regulan en el Código Penal, no en el régimen administrativo aduanero.\n[C] Incorrecta. Esa clasificación no existe en la regulación aduanera.",
+      "norma": "Ley 1609 de 2013; Decreto 920 de 2023",
+      "dificultad": 1,
+      "etiquetas": [
+        "sanciones aduaneras",
+        "clasificación"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-025",
+      "contexto": "En control posterior, el profesional determina que una mercancía ingresó irregularmente, pero ya no es posible aprehenderla porque fue consumida o no fue puesta a disposición de la autoridad.",
+      "enunciado": "Ante la imposibilidad de aprehender la mercancía, al profesional le corresponde",
+      "opciones": {
+        "A": "archivar la investigación, porque sin mercancía no hay sanción posible.",
+        "B": "proponer la sanción de multa que la ley prevé en sustitución del decomiso.",
+        "C": "esperar a que el infractor importe nuevamente para aprehender esa mercancía."
+      },
+      "correcta": "B",
+      "explicacion": "Cuando la mercancía no puede aprehenderse, el régimen aduanero prevé una sanción de multa sustitutiva.\n[A] Incorrecta. Que la mercancía no esté disponible no extingue la responsabilidad: la regulación prevé una consecuencia económica para estos casos.\n[B] Correcta. El régimen sancionatorio aduanero contempla una sanción de multa cuando no es posible aprehender la mercancía por no haber sido puesta a disposición de la autoridad aduanera, calculada sobre su valor, en sustitución del decomiso (Decreto 920 de 2023).\n[C] Incorrecta. La aprehensión recae sobre la mercancía irregular concreta; no puede aplicarse a mercancías distintas importadas después.",
+      "norma": "Decreto 920 de 2023 – régimen sancionatorio y de decomiso",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanciones aduaneras",
+        "multa sustitutiva"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-026",
+      "contexto": "Una agencia de aduanas comete una infracción gravísima prevista en el régimen sancionatorio aduanero. El profesional analiza qué tipo de sanciones prevé la regulación para los usuarios aduaneros.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que, además de la multa, la regulación prevé",
+      "opciones": {
+        "A": "la clausura del establecimiento por tres días, como en materia tributaria.",
+        "B": "la pena de prisión, que impone la DIAN en el mismo proceso administrativo.",
+        "C": "la suspensión o cancelación de la autorización o habilitación del usuario."
+      },
+      "correcta": "C",
+      "explicacion": "Las sanciones aduaneras pueden afectar la autorización para operar como usuario aduanero.\n[C] Correcta. El régimen sancionatorio aduanero prevé, según la gravedad de la infracción, sanciones de multa, suspensión o cancelación de la autorización, inscripción o habilitación del usuario aduanero (Ley 1609 de 2013 y Decreto 920 de 2023).\n[B] Incorrecta. La DIAN no impone penas de prisión: estas corresponden a los jueces penales. La DIAN puede denunciar los hechos que constituyan delito.\n[A] Incorrecta. La clausura por 3 días es una sanción tributaria por no facturar (art. 657 ET), no una sanción aduanera para agencias de aduanas.",
+      "norma": "Ley 1609 de 2013; Decreto 920 de 2023",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanciones aduaneras",
+        "usuarios aduaneros"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-027",
+      "contexto": "Un importador recibe la propuesta de sanción por una infracción aduanera, reconoce que la cometió y quiere terminar el proceso pronto.",
+      "enunciado": "Al profesional le corresponde informarle que el régimen aduanero permite",
+      "opciones": {
+        "A": "eliminar la sanción, siempre que el importador pida disculpas formalmente.",
+        "B": "trasladar la sanción a la agencia de aduanas que presentó la declaración.",
+        "C": "allanarse y pagar la sanción reducida, en la oportunidad y forma previstas."
+      },
+      "correcta": "C",
+      "explicacion": "El allanamiento permite reducir las sanciones aduaneras cuando el infractor acepta la infracción oportunamente.\n[A] Incorrecta. Reconocer la infracción no elimina la sanción: el beneficio es una reducción condicionada al pago.\n[B] Incorrecta. La responsabilidad no se traslada por voluntad del infractor: cada usuario responde por sus propias obligaciones.\n[C] Correcta. El régimen sancionatorio aduanero prevé la reducción de la sanción cuando el infractor se allana, es decir, reconoce la infracción y paga la sanción reducida dentro de la oportunidad prevista y en la forma establecida (Decreto 920 de 2023).",
+      "norma": "Decreto 920 de 2023 – reducción de sanciones por allanamiento",
+      "dificultad": 2,
+      "etiquetas": [
+        "allanamiento",
+        "sanciones aduaneras"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-028",
+      "contexto": "Un exportador recibió el pago de sus exportaciones de bienes en una cuenta en el exterior que no está registrada como cuenta de compensación, y nunca canalizó esas divisas por el mercado cambiario.",
+      "enunciado": "Al profesional le corresponde adelantar la investigación conforme al",
+      "opciones": {
+        "A": "Decreto 920 de 2023, porque el pago corresponde a una operación de exportación.",
+        "B": "Estatuto Tributario, porque toda omisión de divisas es una inexactitud en renta.",
+        "C": "Decreto Ley 2245 de 2011, que regula el régimen sancionatorio cambiario a cargo de la DIAN."
+      },
+      "correcta": "C",
+      "explicacion": "Las infracciones cambiarias de competencia de la DIAN tienen un régimen sancionatorio propio.\n[C] Correcta. No canalizar el pago de exportaciones de bienes es una infracción al régimen cambiario. La DIAN la investiga y sanciona conforme al Decreto Ley 2245 de 2011, que regula el régimen sancionatorio y el procedimiento administrativo cambiario a su cargo.\n[B] Incorrecta. Puede haber además efectos tributarios (por ejemplo, ingresos omitidos), pero la infracción cambiaria se investiga con el régimen cambiario, no con el Estatuto Tributario.\n[A] Incorrecta. El Decreto 920 de 2023 regula las sanciones aduaneras. La omisión de canalizar divisas es un asunto cambiario, aunque se origine en una exportación.",
+      "norma": "Decreto Ley 2245 de 2011; Ley 9 de 1991",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanciones cambiarias",
+        "canalización"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-029",
+      "contexto": "En una investigación cambiaria, el profesional ya tiene pruebas de que un importador no canalizó el pago de sus importaciones por el mercado cambiario.",
+      "enunciado": "Antes de imponer la sanción, al profesional le corresponde",
+      "opciones": {
+        "A": "imponer de inmediato la multa, porque la infracción ya está probada.",
+        "B": "formular cargos al investigado para que pueda presentar sus descargos.",
+        "C": "remitir el caso al Banco de la República para que este imponga la multa."
+      },
+      "correcta": "B",
+      "explicacion": "El procedimiento cambiario garantiza el derecho de defensa antes de sancionar.\n[A] Incorrecta. Aunque haya pruebas, la sanción debe ir precedida de la formulación de cargos: imponerla de inmediato viola el debido proceso (art. 29 C.P.).\n[B] Correcta. El procedimiento administrativo cambiario del Decreto Ley 2245 de 2011 exige formular cargos al presunto infractor, que puede responderlos y pedir pruebas, antes de la resolución que decide el fondo.\n[C] Incorrecta. El Banco de la República es la autoridad que regula el régimen cambiario, pero no sanciona estas infracciones: la competencia es de la DIAN en las operaciones de su resorte.",
+      "norma": "Decreto Ley 2245 de 2011; Constitución Política, art. 29",
+      "dificultad": 2,
+      "etiquetas": [
+        "procedimiento cambiario",
+        "debido proceso"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-030",
+      "contexto": "Un investigado por una infracción cambiaria de competencia de la DIAN acepta los cargos formulados y manifiesta su voluntad de pagar la multa.",
+      "enunciado": "Al profesional le corresponde informarle que, según el régimen sancionatorio cambiario,",
+      "opciones": {
+        "A": "la aceptación de los cargos extingue la infracción sin que deba pagar ningún valor.",
+        "B": "la aceptación de los cargos no tiene ningún efecto, porque las sanciones son fijas.",
+        "C": "la aceptación oportuna de los cargos permite reducir la sanción en los términos de la ley."
+      },
+      "correcta": "C",
+      "explicacion": "El régimen sancionatorio cambiario incentiva el allanamiento con reducciones de la sanción.\n[C] Correcta. El Decreto Ley 2245 de 2011 prevé reducciones de la sanción cuando el investigado se allana a los cargos y paga dentro de las oportunidades previstas. El porcentaje de reducción depende de la etapa en la que se acepte.\n[B] Incorrecta. Las sanciones cambiarias no son fijas: se gradúan y admiten reducciones por allanamiento.\n[A] Incorrecta. Aceptar los cargos no extingue la infracción sin pago: el beneficio es una sanción menor, que debe pagarse.",
+      "norma": "Decreto Ley 2245 de 2011",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanciones cambiarias",
+        "allanamiento"
+      ],
+      "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    }
+  ]
+}

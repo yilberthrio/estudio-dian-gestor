@@ -157,6 +157,86 @@
         "instrumentos de gestión de información"
       ],
       "origen": "Claude 2026-10-09 – lote 2 (opciones balanceadas)"
+    },
+    {
+      "id": "transparencia-009",
+      "contexto": "Sin que nadie se lo pida, la DIAN publica en su página web sus estadísticas de recaudo, su presupuesto y los contratos que celebra, y los actualiza periódicamente.",
+      "enunciado": "¿Qué principio de la Ley 1712 de 2014 refleja esta conducta?",
+      "opciones": {
+        "A": "Principio de la divulgación proactiva de la información.",
+        "B": "Principio de máxima publicidad para titular universal.",
+        "C": "Principio de gratuidad en el acceso a la información.",
+        "D": "Principio de no discriminación de los solicitantes."
+      },
+      "correcta": "A",
+      "explicacion": "El principio de divulgación proactiva (art. 3 de la Ley 1712) obliga a publicar y divulgar información de forma rutinaria y proactiva, sin esperar una solicitud. El de máxima publicidad (art. 2) es la regla de que toda la información en poder del sujeto obligado es pública, salvo reserva legal. Diferencia clave: máxima publicidad dice qué información es pública (toda, como regla); divulgación proactiva dice cómo se entrega (publicándola sin que la pidan).",
+      "norma": "Ley 1712 de 2014, arts. 2 y 3",
+      "dificultad": 2,
+      "etiquetas": [
+        "principios"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "transparencia-010",
+      "contexto": "Un ciudadano pide copia de 200 páginas de un expediente público. La entidad le exige pagar una «tarifa por búsqueda y gestión» además del valor de las fotocopias.",
+      "enunciado": "Según la Ley 1712 de 2014, ese cobro adicional:",
+      "opciones": {
+        "A": "Es válido, si la entidad lo ha fijado en una resolución interna.",
+        "B": "Es válido, porque la búsqueda le genera costos a la entidad.",
+        "C": "No es válido: toda información pública debe entregarse sin costo alguno.",
+        "D": "No es válido: solo puede cobrarse el costo de reproducción."
+      },
+      "correcta": "D",
+      "explicacion": "El principio de gratuidad (art. 3 de la Ley 1712) establece que el acceso a la información pública es gratuito y que no pueden cobrarse valores adicionales al costo de reproducción de la información. Por eso la entidad puede cobrar las fotocopias, pero no la búsqueda o la gestión. Si la información se entrega por medios electrónicos, normalmente no hay costo de reproducción.",
+      "norma": "Ley 1712 de 2014, art. 3",
+      "dificultad": 2,
+      "etiquetas": [
+        "gratuidad",
+        "principios"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "transparencia-011",
+      "contexto": "Un documento fue calificado como reservado en 2015 por razones de defensa nacional, de acuerdo con el artículo 19 de la Ley 1712 de 2014.",
+      "enunciado": "Como máximo, ¿hasta cuándo puede mantenerse esa reserva?",
+      "opciones": {
+        "A": "Hasta 2020.",
+        "B": "Hasta 2025.",
+        "C": "Hasta 2045.",
+        "D": "Hasta 2030."
+      },
+      "correcta": "D",
+      "explicacion": "Art. 22 de la Ley 1712: la reserva de la información amparada por el art. 19 (daño a intereses públicos: defensa y seguridad nacional, relaciones internacionales, investigación de delitos, etc.) no puede extenderse por un periodo mayor a 15 años. 2015 + 15 = 2030. Si la causa de la reserva desaparece antes, la información debe entregarse. Recuerda: 15 años es la misma cifra de días del término general de una petición, lo que puede ayudarte a asociarlo.",
+      "norma": "Ley 1712 de 2014, arts. 19 y 22",
+      "dificultad": 2,
+      "etiquetas": [
+        "reserva",
+        "términos",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
+    },
+    {
+      "id": "transparencia-012",
+      "contexto": "Una entidad no publica en su sitio web la información mínima obligatoria que exige la Ley 1712 de 2014, y un ciudadano quiere poner el caso en conocimiento de la autoridad competente.",
+      "enunciado": "¿Ante qué entidad debe acudir?",
+      "opciones": {
+        "A": "Ante la Procuraduría General de la Nación.",
+        "B": "Ante la Superintendencia de Industria y Comercio.",
+        "C": "Ante la Contraloría General de la República.",
+        "D": "Ante el Ministerio de Tecnologías de la Información."
+      },
+      "correcta": "A",
+      "explicacion": "El art. 23 de la Ley 1712 asigna al Ministerio Público, en cabeza de la Procuraduría General de la Nación, la función de velar por el cumplimiento de la ley, incluidas las acciones disciplinarias por su incumplimiento. La SIC protege datos personales (Ley 1581 de 2012) y la competencia; la Contraloría vigila la gestión fiscal; MinTIC define lineamientos técnicos de publicación (gobierno digital), pero no sanciona.",
+      "norma": "Ley 1712 de 2014, art. 23",
+      "dificultad": 1,
+      "etiquetas": [
+        "vigilancia",
+        "Procuraduría"
+      ],
+      "origen": "Claude 2026-10-10 – refuerzo de debilidades"
     }
   ]
 }
