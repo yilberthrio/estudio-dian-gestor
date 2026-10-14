@@ -474,6 +474,248 @@
         "instrumentos archivísticos"
       ],
       "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "gestion-documental-040",
+      "contexto": "En una inspección tributaria, el contribuyente entregó un CD con la contabilidad electrónica, junto con documentos en papel. El profesional organiza el expediente físico, que ya va en el folio 87, y debe incorporar el CD sin perder la trazabilidad de la prueba.",
+      "enunciado": "Para incorporar el CD, al profesional le corresponde",
+      "opciones": {
+        "A": "guardarlo en una unidad de conservación adecuada y dejar en el expediente un testigo con su referencia y ubicación.",
+        "B": "pegarlo dentro de la carpeta del expediente y asignarle el número de folio 88, escrito con lápiz sobre el mismo disco.",
+        "C": "devolverlo al contribuyente, porque el expediente físico solo admite documentos en papel debidamente foliados."
+      },
+      "correcta": "A",
+      "explicacion": "Los soportes distintos del papel se conservan aparte, con una referencia cruzada en el expediente.\n[A] Correcta. Las pautas del AGN sobre organización de expedientes indican que los anexos en otros soportes (CD, planos, USB) se almacenan en unidades adecuadas a su formato. En el lugar que ocupaban se deja una hoja testigo o referencia cruzada que indica qué contiene el anexo y dónde está, para conservar la integridad y la trazabilidad.\n[B] Incorrecta. Foliar o pegar el disco puede dañarlo; además, la foliación se aplica al papel.\n[C] Incorrecta. La prueba aportada debe incorporarse al expediente, cualquiera que sea su soporte.",
+      "norma": "Ley 594 de 2000; lineamientos del AGN sobre organización de expedientes y foliación",
+      "dificultad": 2,
+      "etiquetas": [
+        "foliación",
+        "soportes",
+        "testigo documental"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-041",
+      "contexto": "Al revisar un expediente de fiscalización, el profesional encuentra que dos hojas distintas quedaron marcadas con el mismo número de folio (45), de modo que la numeración posterior está corrida en una unidad.",
+      "enunciado": "Para corregir la foliación, al profesional le corresponde",
+      "opciones": {
+        "A": "anular la foliación errada con una línea oblicua y volver a foliar de forma consecutiva desde ese punto.",
+        "B": "marcar la segunda hoja como «45 bis» o «45A», para no tener que modificar toda la numeración posterior.",
+        "C": "borrar con corrector los números equivocados y escribir encima los nuevos números con bolígrafo."
+      },
+      "correcta": "A",
+      "explicacion": "La foliación debe ser consecutiva, sin repeticiones ni suplementos, y sus errores se corrigen sin tachones.\n[A] Correcta. Según las pautas del AGN, la foliación errada se anula con una línea oblicua, evitando tachones, y se vuelve a foliar en forma consecutiva, con lápiz de mina negra en la esquina superior derecha.\n[B] Incorrecta. No se usan números con letras o «bis», porque rompen la consecutividad y dificultan el control.\n[C] Incorrecta. No se usa corrector ni bolígrafo para foliar: se pierde la evidencia de la corrección y se deteriora el documento.",
+      "norma": "Lineamientos del AGN sobre foliación de expedientes",
+      "dificultad": 2,
+      "etiquetas": [
+        "foliación",
+        "corrección",
+        "integridad"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-042",
+      "contexto": "En la TRD de una dependencia, la subserie «Expedientes de fiscalización de renta» tiene 2 años de retención en el archivo de gestión, contados desde el cierre del expediente. Un expediente se abrió en enero de 2022 y se cerró, con la ejecutoria del último acto, el 15 de marzo de 2024.",
+      "enunciado": "Para la transferencia primaria al archivo central, al profesional le corresponde tener en cuenta que el expediente",
+      "opciones": {
+        "A": "debió transferirse en enero de 2024, porque el término de retención se cuenta desde la fecha de apertura.",
+        "B": "puede transferirse desde marzo de 2026, según el cronograma, porque el término se cuenta desde su cierre.",
+        "C": "debe quedarse siempre en el archivo de gestión, porque los expedientes tributarios no se transfieren."
+      },
+      "correcta": "B",
+      "explicacion": "Los tiempos de retención de la TRD se cuentan desde el cierre del expediente.\n[A] Incorrecta. Contar desde la apertura podría obligar a transferir expedientes que todavía están en trámite.\n[B] Correcta. El tiempo de retención en el archivo de gestión corre desde el cierre del expediente (15 de marzo de 2024). Cumplidos los 2 años, en marzo de 2026, procede la transferencia primaria según el cronograma de transferencias, con el expediente organizado y relacionado en el FUID.\n[C] Incorrecta. Los expedientes tributarios siguen el ciclo vital del documento, como los demás expedientes.",
+      "norma": "Ley 594 de 2000, art. 23; Acuerdo AGN 042 de 2002",
+      "dificultad": 3,
+      "etiquetas": [
+        "TRD",
+        "transferencias",
+        "tiempos de retención",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-043",
+      "contexto": "En la TRD, la disposición final de una subserie documental que ya cumplió su tiempo en el archivo central es «S» (selección). La dependencia tiene cientos de expedientes de esa subserie.",
+      "enunciado": "Para aplicar la disposición final, al profesional le corresponde",
+      "opciones": {
+        "A": "conservar de forma permanente todos los expedientes, porque la selección equivale a la conservación total.",
+        "B": "conservar una muestra representativa según el procedimiento de la TRD y tramitar la eliminación del resto con acta.",
+        "C": "eliminar de inmediato todos los expedientes, porque cumplieron su tiempo de retención en el archivo central."
+      },
+      "correcta": "B",
+      "explicacion": "La selección conserva una muestra representativa y elimina el resto con el procedimiento de eliminación.\n[A] Incorrecta. La conservación total es otra disposición final distinta («CT»).\n[B] Correcta. En la TRD, la selección consiste en escoger una muestra representativa de la subserie, con el criterio fijado en el procedimiento de la tabla, para conservarla de forma permanente. El resto se elimina con el procedimiento de eliminación documental, con acta y aprobación de la instancia competente.\n[C] Incorrecta. Cumplir el tiempo de retención no autoriza la eliminación total cuando la disposición es selección.",
+      "norma": "Ley 594 de 2000; acuerdos del AGN sobre TRD y eliminación documental",
+      "dificultad": 3,
+      "etiquetas": [
+        "TRD",
+        "disposición final",
+        "selección"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-044",
+      "contexto": "Un expediente de fiscalización se prestó a la División Jurídica para resolver un recurso, con registro de préstamo y la foliación verificada (folios 1 a 250). Al devolverlo, el profesional encargado de recibirlo encuentra que faltan los folios 30 a 32.",
+      "enunciado": "Frente a esta situación, al profesional le corresponde",
+      "opciones": {
+        "A": "refoliar el expediente desde el folio 30, para que la numeración vuelva a ser consecutiva sin vacíos.",
+        "B": "recibir el expediente y anotar el faltante en una hoja aparte que se guarde fuera del expediente.",
+        "C": "dejar constancia en el registro, informar al jefe y pedir a quien lo tuvo que reintegre los folios."
+      },
+      "correcta": "C",
+      "explicacion": "La foliación y el registro de préstamo permiten detectar faltantes y exigir responsabilidades.\n[A] Incorrecta. Refoliar ocultaría la pérdida y afectaría la integridad del expediente.\n[B] Incorrecta. Una nota suelta, fuera del expediente y del registro de préstamo, no deja trazabilidad del faltante.\n[C] Correcta. La verificación al devolver un préstamo sirve para detectar faltantes. Debe dejarse constancia, informar al superior y solicitar el reintegro a quien tuvo el expediente. Si no aparecen, se adelantan la reconstrucción y las acciones disciplinarias que correspondan (Ley 594 de 2000).",
+      "norma": "Ley 594 de 2000; lineamientos del AGN sobre préstamo de documentos",
+      "dificultad": 2,
+      "etiquetas": [
+        "préstamo",
+        "integridad",
+        "trazabilidad"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-045",
+      "contexto": "Una liquidación oficial de revisión se expidió y firmó digitalmente en el sistema de la DIAN. Un compañero propone imprimirla, firmarla a mano, archivar la copia impresa como «original» del expediente físico y eliminar el archivo electrónico.",
+      "enunciado": "Frente a la propuesta, al profesional le corresponde",
+      "opciones": {
+        "A": "aceptarla, porque el expediente físico es el único que tiene valor probatorio ante un juez.",
+        "B": "aceptarla, siempre que el compañero deje constancia escrita de la fecha en que imprimió el acto.",
+        "C": "rechazarla, porque el original es el documento electrónico firmado y debe conservarse con sus metadatos."
+      },
+      "correcta": "C",
+      "explicacion": "El documento electrónico firmado digitalmente es el original; la impresión es una copia.\n[A] Incorrecta. Los mensajes de datos tienen la misma validez y fuerza probatoria que los documentos en papel (Ley 527 de 1999, equivalencia funcional).\n[B] Incorrecta. Una constancia no convierte una copia impresa en el original ni autoriza a eliminar el documento electrónico.\n[C] Correcta. El acto firmado digitalmente es el original y debe conservarse en el expediente electrónico, con sus metadatos, garantizando autenticidad, integridad y disponibilidad. Si el expediente es híbrido, la impresión es una copia y se referencia (Ley 527 de 1999; Ley 594 de 2000; lineamientos del AGN).",
+      "norma": "Ley 527 de 1999; Ley 594 de 2000; lineamientos del AGN sobre documento electrónico",
+      "dificultad": 3,
+      "etiquetas": [
+        "documento electrónico",
+        "firma digital",
+        "originalidad"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-046",
+      "contexto": "Un periodista presenta un derecho de petición con base en la Ley de Transparencia (Ley 1712 de 2014). Pide copia completa del expediente de fiscalización de una empresa reconocida, incluidas sus declaraciones y los requerimientos que le envió la DIAN.",
+      "enunciado": "Al profesional le corresponde",
+      "opciones": {
+        "A": "entregar copia completa del expediente, porque la transparencia prevalece sobre cualquier reserva.",
+        "B": "negar por escrito la solicitud, motivando la reserva de la información tributaria con su norma.",
+        "C": "permitirle consultar el expediente en la oficina, sin copias, para no contrariar la Ley 1712."
+      },
+      "correcta": "B",
+      "explicacion": "La información tributaria tiene reserva legal, y la Ley 1712 la reconoce como excepción al acceso.\n[A] Incorrecta. La Ley 1712 de 2014 no deroga las reservas legales; las reconoce como excepciones al acceso a la información pública.\n[B] Correcta. El art. 583 ET establece la reserva de la información de las declaraciones tributarias, y el art. 19 de la Ley 1712 de 2014 la reconoce como excepción. La negativa debe ser escrita y motivada, citando la norma que establece la reserva, y responderse dentro del término legal del derecho de petición.\n[C] Incorrecta. La consulta en la oficina también vulnera la reserva: lo protegido es el acceso, no solo la copia.",
+      "norma": "Estatuto Tributario, art. 583; Ley 1712 de 2014, arts. 19 y 25; Ley 1755 de 2015",
+      "dificultad": 3,
+      "etiquetas": [
+        "reserva",
+        "acceso a la información",
+        "derecho de petición"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-047",
+      "contexto": "Termina una investigación tramitada en expediente electrónico: el último acto quedó ejecutoriado y no hay más actuaciones pendientes. El profesional debe cerrar el expediente en el sistema de gestión documental.",
+      "enunciado": "Para cerrar el expediente electrónico, al profesional le corresponde",
+      "opciones": {
+        "A": "imprimir todos los documentos y archivarlos en una carpeta física, que reemplaza el expediente electrónico.",
+        "B": "comprimir los documentos en un solo archivo y enviarlo por correo al archivo central para su custodia.",
+        "C": "verificar que el índice electrónico esté completo y firmarlo, para garantizar la integridad del expediente."
+      },
+      "correcta": "C",
+      "explicacion": "El índice electrónico firmado es el mecanismo que garantiza la integridad del expediente electrónico al cierre.\n[A] Incorrecta. Imprimir no reemplaza el expediente electrónico ni conserva sus metadatos ni sus firmas.\n[B] Incorrecta. Enviar un archivo comprimido por correo rompe la trazabilidad y no garantiza integridad ni custodia.\n[C] Correcta. El Acuerdo AGN 002 de 2014 establece como componentes del expediente electrónico los documentos, el foliado electrónico, el índice electrónico, la firma del índice y los metadatos. Al cierre, el índice se firma para asegurar la integridad y evitar alteraciones posteriores.",
+      "norma": "Acuerdo AGN 002 de 2014; Ley 594 de 2000",
+      "dificultad": 3,
+      "etiquetas": [
+        "expediente electrónico",
+        "índice electrónico",
+        "cierre"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-048",
+      "contexto": "En la TRD de la DIAN aparecen esta serie y esta subserie: «100.25 Investigaciones» y «100.25.03 Investigaciones tributarias de renta». Dentro de cada expediente de la subserie se archivan autos de apertura, requerimientos especiales y liquidaciones oficiales.",
+      "enunciado": "Al profesional le corresponde identificar que «100.25.03 Investigaciones tributarias de renta» es",
+      "opciones": {
+        "A": "una serie documental que agrupa todos los tipos de expedientes.",
+        "B": "una subserie dentro de la serie documental de investigaciones.",
+        "C": "un tipo documental, como el auto o el requerimiento especial."
+      },
+      "correcta": "B",
+      "explicacion": "La clasificación documental es jerárquica: fondo, sección, serie, subserie, unidad documental y tipo documental.\n[A] Incorrecta. La serie es «100.25 Investigaciones»; la subserie es una subdivisión de ella.\n[B] Correcta. La subserie es un conjunto de unidades documentales que forman parte de una serie y se distinguen por su asunto específico (aquí, las investigaciones de renta). Se identifica con un código derivado del de la serie.\n[C] Incorrecta. Los tipos documentales son las piezas individuales dentro del expediente, como el auto, el requerimiento o la liquidación.",
+      "norma": "Acuerdo AGN 027 de 2006 (glosario); lineamientos del AGN sobre TRD",
+      "dificultad": 2,
+      "etiquetas": [
+        "serie documental",
+        "subserie",
+        "tipo documental",
+        "clasificación"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-049",
+      "contexto": "Un Gestor I es trasladado a otra dependencia por necesidades del servicio. Tiene a su cargo 15 expedientes de fiscalización en trámite, algunos con términos próximos a vencer.",
+      "enunciado": "Antes de asumir su nuevo cargo, al profesional le corresponde",
+      "opciones": {
+        "A": "entregar los expedientes inventariados al jefe o a quien él designe, señalando su estado y los términos.",
+        "B": "llevarse los expedientes a la nueva dependencia, para terminar personalmente las actuaciones que inició.",
+        "C": "dejar los expedientes en su puesto de trabajo, para que el nuevo funcionario los encuentre al llegar."
+      },
+      "correcta": "A",
+      "explicacion": "Al dejar un cargo, el servidor debe entregar inventariados los documentos y archivos a su cargo.\n[B] Incorrecta. Los expedientes pertenecen a la dependencia competente, no al funcionario; llevarlos a otra dependencia afecta la competencia y la custodia.\n[A] Correcta. El art. 15 de la Ley 594 de 2000 obliga a los servidores públicos, al desvincularse de sus funciones, a entregar debidamente inventariados los documentos y archivos a su cargo. Informar el estado y los términos evita que venzan y protege las actuaciones de la DIAN.\n[C] Incorrecta. Dejarlos sin inventario ni entrega formal rompe la trazabilidad y la responsabilidad sobre su custodia.",
+      "norma": "Ley 594 de 2000, art. 15",
+      "dificultad": 2,
+      "etiquetas": [
+        "entrega de archivos",
+        "inventario",
+        "responsabilidad"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-050",
+      "contexto": "En la TRD, la subserie «Actas de comités de fiscalización» tiene como disposición final la conservación total, por su valor histórico para la entidad. Las actas ya cumplieron su tiempo de retención en el archivo central.",
+      "enunciado": "Al profesional le corresponde",
+      "opciones": {
+        "A": "transferir las actas al archivo histórico, donde deben conservarse de manera permanente.",
+        "B": "digitalizar las actas y luego eliminar los originales en papel, para liberar espacio en el archivo.",
+        "C": "mantener las actas en el archivo central de forma indefinida, sin hacer ninguna transferencia."
+      },
+      "correcta": "A",
+      "explicacion": "La conservación total implica la transferencia secundaria al archivo histórico.\n[A] Correcta. Según el ciclo vital del documento (Ley 594 de 2000, art. 23), los documentos con valor permanente pasan del archivo central al histórico mediante la transferencia secundaria, y allí se conservan de forma definitiva.\n[B] Incorrecta. Digitalizar no autoriza eliminar originales con disposición de conservación total.\n[C] Incorrecta. El archivo central es una etapa intermedia: los documentos de conservación total deben pasar al histórico.",
+      "norma": "Ley 594 de 2000, art. 23; Acuerdo AGN 042 de 2002",
+      "dificultad": 2,
+      "etiquetas": [
+        "conservación total",
+        "archivo histórico",
+        "ciclo vital"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "gestion-documental-051",
+      "contexto": "Un expediente de fiscalización contiene requerimientos, respuestas del contribuyente, actas y pruebas. Un compañero archivó en su escritorio, por separado, un oficio suelto de respuesta a una consulta general, sin relación con ninguna investigación.",
+      "enunciado": "Al profesional le corresponde distinguir que",
+      "opciones": {
+        "A": "ambos son unidades documentales compuestas, porque los dos los produce la misma dependencia.",
+        "B": "el oficio suelto es compuesto y el expediente es simple, porque el expediente es un solo trámite.",
+        "C": "el expediente es una unidad documental compuesta y el oficio suelto es una unidad documental simple."
+      },
+      "correcta": "C",
+      "explicacion": "La unidad documental puede ser simple (un solo documento) o compuesta (varios documentos de un mismo trámite).\n[A] Incorrecta. La clasificación no depende de la dependencia productora, sino de la conformación de la unidad.\n[B] Incorrecta. Invierte los conceptos.\n[C] Correcta. El expediente es una unidad documental compuesta: reúne los documentos de un mismo trámite o asunto. El oficio suelto, que es un solo documento, es una unidad documental simple. Ambos deben clasificarse según la TRD de la dependencia.",
+      "norma": "Acuerdo AGN 027 de 2006 (glosario); Ley 594 de 2000",
+      "dificultad": 2,
+      "etiquetas": [
+        "unidad documental",
+        "expediente",
+        "clasificación"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
     }
   ]
 }

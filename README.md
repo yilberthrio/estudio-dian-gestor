@@ -6,10 +6,10 @@ Funciona en tu computador, sin cuentas ni internet (solo se usa internet para de
 
 ## Qué incluye
 
-- **300 preguntas de juicio situacional** con el formato de la prueba real: un caso, un enunciado y **3 opciones**, con la justificación de cada opción y la norma de referencia. Están organizadas por los **11 indicadores oficiales** del empleo: procedimiento de fiscalización y liquidación (tributaria y aduanera), liquidación de impuestos, sanciones, obligaciones tributarias, auditoría, normativa cambiaria, lavado de activos y ROS, gestión documental, razonamiento analítico, estructura y misionalidad de la DIAN.
+- **410 preguntas de juicio situacional** con el formato de la prueba real: un caso, un enunciado y **3 opciones**, con la justificación de cada opción y la norma de referencia. Están organizadas por los **11 indicadores oficiales** del empleo: procedimiento de fiscalización y liquidación (tributaria y aduanera), liquidación de impuestos, sanciones, obligaciones tributarias, auditoría, normativa cambiaria, lavado de activos y ROS, gestión documental, razonamiento analítico, estructura y misionalidad de la DIAN.
 - **Simulacro oficial:** 66 preguntas repartidas entre los indicadores según su peso, en 4 horas, con el puntaje frente al mínimo aprobatorio (70) y una meta configurable.
 - **Rondas a tu medida:** eliges el indicador, la cantidad de preguntas y el modo (aleatorio, no vistas, falladas, enfocado en debilidades, repaso espaciado o simulacro).
-- **Práctica comportamental e integridad:** 90 afirmaciones con la escala de 4 niveles de la prueba real, con un perfil por competencia y alertas de respuestas extremas o contradictorias (la prueba real no tiene respuestas correctas).
+- **Práctica comportamental e integridad:** 100 afirmaciones (las de integridad basadas en las pautas del Código de Integridad de la DIAN) con la escala de 4 niveles de la prueba real, con un perfil por competencia y alertas de respuestas extremas o contradictorias (la prueba real no tiene respuestas correctas).
 - **Estadísticas:** acierto por indicador, dominio, evolución, calibración de confianza (seguro / dudoso / adiviné), preguntas más falladas y cuenta regresiva a la prueba.
 
 ## Requisitos

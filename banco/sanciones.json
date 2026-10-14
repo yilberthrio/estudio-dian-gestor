@@ -214,12 +214,12 @@
       "contexto": "La DIAN devolvió a un contribuyente un saldo a favor de IVA. Después, en una investigación, se determina que el saldo a favor era improcedente, sin que se hayan usado documentos falsos.",
       "enunciado": "Al profesional le corresponde proponer que el contribuyente",
       "opciones": {
-        "A": "reintegre lo devuelto en exceso con sus intereses y pague una sanción del 10% de ese valor.",
-        "B": "reintegre lo devuelto en exceso sin intereses, porque fue la DIAN la que aprobó la devolución.",
-        "C": "pague una sanción del 100% de lo devuelto, porque toda devolución improcedente es fraudulenta."
+        "A": "reintegre lo devuelto en exceso con intereses aumentados en 50% y pague una sanción del 20% de ese valor.",
+        "B": "reintegre lo devuelto en exceso sin intereses, porque fue la DIAN la que aprobó y pagó la devolución.",
+        "C": "pague una sanción del 100% de lo devuelto, porque toda devolución improcedente se considera fraudulenta."
       },
       "correcta": "A",
-      "explicacion": "La devolución improcedente obliga a reintegrar con intereses y genera una sanción.\n[A] Correcta. El art. 670 ET dispone que, si la DIAN rechaza o modifica un saldo a favor ya devuelto o compensado, deben reintegrarse las sumas devueltas en exceso con los intereses moratorios, más una sanción del 10% del valor devuelto en exceso.\n[B] Incorrecta. Que la DIAN haya aprobado la devolución no libera al contribuyente de reintegrar ni de pagar intereses: la devolución se otorga sobre la base de lo que él declaró.\n[C] Incorrecta. La sanción del 100% aplica cuando se usan documentos falsos o hay fraude. Sin esas circunstancias, la sanción es del 10%.",
+      "explicacion": "La devolución improcedente obliga a reintegrar con intereses incrementados y genera una sanción.\n[A] Correcta. El art. 670 ET dispone que, si la DIAN rechaza o modifica mediante liquidación oficial un saldo a favor ya devuelto o compensado, deben reintegrarse las sumas devueltas en exceso con los intereses moratorios aumentados en un 50%, más una sanción del 20% del valor devuelto en exceso. Si es el contribuyente quien corrige y disminuye el saldo, la sanción es del 10%.\n[B] Incorrecta. Que la DIAN haya aprobado la devolución no libera al contribuyente de reintegrar ni de pagar intereses: la devolución se otorga sobre la base de lo que él declaró.\n[C] Incorrecta. La sanción del 100% aplica cuando se usan documentos falsos o hay fraude. Sin esas circunstancias, es del 20% (o del 10% si corrige el contribuyente).",
       "norma": "Estatuto Tributario, art. 670",
       "dificultad": 2,
       "etiquetas": [
@@ -568,6 +568,405 @@
         "allanamiento"
       ],
       "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "sanciones-031",
+      "contexto": "Una sociedad presentó su declaración de renta 2 meses y 10 días después del vencimiento del plazo, sin que la DIAN la hubiera emplazado. La declaración no arroja impuesto a cargo: tiene un saldo a favor de $1.200.000. Sus ingresos brutos del periodo fueron $200.000.000.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción de extemporaneidad liquidada sea de",
+      "opciones": {
+        "A": "$3.000.000, el 0,5% de los ingresos brutos por cada uno de los tres meses o fracción.",
+        "B": "$2.400.000, porque la sanción no puede exceder el doble del saldo a favor declarado.",
+        "C": "$10.000.000, porque la sanción se fija en el 5% de los ingresos brutos del periodo."
+      },
+      "correcta": "B",
+      "explicacion": "Sin impuesto a cargo, la extemporaneidad se calcula sobre ingresos, con un tope de la cifra menor.\n[A] Incorrecta. El cálculo inicial es correcto (0,5% × 3 meses o fracción × $200 millones = $3.000.000), pero falta aplicar el tope.\n[B] Correcta. El art. 641 ET dispone que, si no hay impuesto a cargo, la sanción es el 0,5% de los ingresos brutos por mes o fracción, sin exceder la cifra menor entre el 5% de los ingresos ($10.000.000) y el doble del saldo a favor ($2.400.000). Se liquidan $2.400.000.\n[C] Incorrecta. El 5% de los ingresos es uno de los topes, no la sanción; y además no es la cifra menor.",
+      "norma": "Estatuto Tributario, arts. 639 y 641",
+      "dificultad": 3,
+      "etiquetas": [
+        "extemporaneidad",
+        "sin impuesto a cargo",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-032",
+      "contexto": "Un contribuyente presentó su declaración de renta 24 meses y 5 días después del vencimiento del plazo, antes de cualquier emplazamiento. El impuesto a cargo es de $8.000.000.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción de extemporaneidad sea de",
+      "opciones": {
+        "A": "$9.600.000, por los 24 meses completos de retardo.",
+        "B": "$10.000.000, por los 25 meses o fracción de retardo.",
+        "C": "$8.000.000, por el tope del 100% del impuesto a cargo."
+      },
+      "correcta": "C",
+      "explicacion": "La sanción del art. 641 ET tiene un tope del 100% del impuesto.\n[A] Incorrecta. Omite la fracción del mes 25 y además supera el tope legal.\n[B] Incorrecta. El cálculo de 5% × 25 meses = 125% ($10.000.000) es correcto, pero excede el tope.\n[C] Correcta. Antes del emplazamiento, la sanción es del 5% del impuesto por cada mes o fracción, sin exceder el 100% del impuesto (art. 641 ET). Como 125% supera el tope, la sanción es de $8.000.000.",
+      "norma": "Estatuto Tributario, art. 641",
+      "dificultad": 2,
+      "etiquetas": [
+        "extemporaneidad",
+        "tope",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-033",
+      "contexto": "El plazo para declarar un periodo de IVA venció el 10 de enero. El 1 de marzo la DIAN notificó al responsable el emplazamiento para declarar, y este presentó la declaración el 20 de marzo, con un impuesto a cargo de $15.000.000.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción de extemporaneidad sea de",
+      "opciones": {
+        "A": "$4.500.000, el 10% del impuesto por los tres meses o fracción contados desde el vencimiento.",
+        "B": "$2.250.000, el 5% del impuesto por los tres meses o fracción contados desde el vencimiento del plazo.",
+        "C": "$3.000.000, el 10% del impuesto por los dos meses completos contados desde el vencimiento."
+      },
+      "correcta": "A",
+      "explicacion": "Después del emplazamiento la tarifa cambia, pero el retardo se sigue contando desde el vencimiento del plazo.\n[A] Correcta. Quien declara después del emplazamiento liquida el 10% del impuesto por mes o fracción de retardo (art. 642 ET). Del 10 de enero al 20 de marzo hay 2 meses y 10 días, es decir, 3 meses o fracción: 30% × $15.000.000 = $4.500.000.\n[B] Incorrecta. El 5% (art. 641 ET) solo aplica a quien declara antes de ser emplazado.\n[C] Incorrecta. La fracción de mes cuenta como un mes completo.",
+      "norma": "Estatuto Tributario, arts. 641 y 642",
+      "dificultad": 3,
+      "etiquetas": [
+        "extemporaneidad",
+        "emplazamiento para declarar",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-034",
+      "contexto": "Un contribuyente presentó su declaración 12 días tarde, con un impuesto a cargo de $3.000.000, antes de cualquier actuación de la DIAN. No cometió la misma infracción en los dos años anteriores. Para el caso, suponga que 10 UVT equivalen a $500.000.",
+      "enunciado": "Después de aplicar la gradualidad, al profesional le corresponde verificar que la sanción liquidada sea de",
+      "opciones": {
+        "A": "$75.000, que corresponde a la reducción al 50%.",
+        "B": "$150.000, porque no procede ninguna reducción.",
+        "C": "$500.000, que corresponde a la sanción mínima."
+      },
+      "correcta": "C",
+      "explicacion": "La reducción por gradualidad nunca puede dejar la sanción por debajo del mínimo legal.\n[A] Incorrecta. La sanción calculada es 5% × $3.000.000 = $150.000 y, reducida al 50% (art. 640 ET), queda en $75.000. Ese valor es inferior a la sanción mínima.\n[B] Incorrecta. La reducción sí procede, pero el resultado se ajusta al mínimo.\n[C] Correcta. El art. 639 ET fija la sanción mínima en 10 UVT, también para las sanciones reducidas y para las que liquida el contribuyente. Se liquidan $500.000.",
+      "norma": "Estatuto Tributario, arts. 639, 640 y 641",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanción mínima",
+        "gradualidad",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-035",
+      "contexto": "Una sociedad declaró un saldo a favor de $30.000.000 en su renta. Con la liquidación oficial de revisión, la DIAN rechazó costos sin soporte y determinó un saldo a pagar de $10.000.000. No hay diferencia de criterio y las conductas son de inexactitud general.",
+      "enunciado": "Al profesional le corresponde liquidar una sanción por inexactitud de",
+      "opciones": {
+        "A": "$10.000.000, igual al saldo a pagar determinado por la DIAN.",
+        "B": "$30.000.000, igual al saldo a favor rechazado en la revisión.",
+        "C": "$40.000.000, igual a la diferencia total entre ambos saldos."
+      },
+      "correcta": "C",
+      "explicacion": "La base de la inexactitud es toda la diferencia entre el saldo declarado y el determinado.\n[A] Incorrecta. Toma solo el saldo a pagar e ignora que el contribuyente pretendía un saldo a favor.\n[B] Incorrecta. Toma solo el saldo a favor e ignora el saldo a pagar que resultó.\n[C] Correcta. El art. 648 ET fija la sanción en el 100% de la diferencia entre el saldo a pagar o a favor determinado y el declarado. Del saldo a favor de $30 millones se pasó a un saldo a pagar de $10 millones: la diferencia es de $40 millones.",
+      "norma": "Estatuto Tributario, arts. 647 y 648",
+      "dificultad": 3,
+      "etiquetas": [
+        "inexactitud",
+        "saldo a favor",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-036",
+      "contexto": "En una investigación se prueba que una sociedad incluyó en su declaración de renta pasivos inexistentes, con los que justificó un incremento patrimonial. La diferencia entre el saldo a pagar determinado por la DIAN y el declarado es de $25.000.000.",
+      "enunciado": "Al profesional le corresponde proponer una sanción por inexactitud de",
+      "opciones": {
+        "A": "$25.000.000, el 100% de la diferencia.",
+        "B": "$50.000.000, el 200% de la diferencia.",
+        "C": "$12.500.000, el 50% de la diferencia."
+      },
+      "correcta": "B",
+      "explicacion": "La ley agrava la inexactitud cuando se omiten activos o se incluyen pasivos inexistentes.\n[A] Incorrecta. El 100% es la regla general, pero este caso tiene una tarifa especial.\n[B] Correcta. El art. 648 ET, numeral 1, fija la sanción en el 200% de la diferencia cuando se omiten activos o se incluyen pasivos inexistentes: 200% × $25.000.000 = $50.000.000. Puede reducirse si el contribuyente acepta los hechos (arts. 709 y 713 ET).\n[C] Incorrecta. El 50% no corresponde a la conducta de incluir pasivos inexistentes.",
+      "norma": "Estatuto Tributario, arts. 647 y 648",
+      "dificultad": 3,
+      "etiquetas": [
+        "inexactitud",
+        "pasivos inexistentes",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-037",
+      "contexto": "Un requerimiento especial propone un mayor impuesto de $20.000.000 y una sanción por inexactitud de $20.000.000. Dentro del plazo para responder, el contribuyente acepta todos los hechos y quiere saber qué debe pagar al corregir su declaración.",
+      "enunciado": "Al profesional le corresponde informarle que debe incluir y pagar",
+      "opciones": {
+        "A": "el mayor impuesto de $20.000.000 con sus intereses moratorios y una sanción reducida de $5.000.000.",
+        "B": "el mayor impuesto de $20.000.000 sin intereses moratorios y una sanción reducida de $5.000.000.",
+        "C": "el mayor impuesto de $20.000.000 con sus intereses moratorios y una sanción reducida de $10.000.000."
+      },
+      "correcta": "A",
+      "explicacion": "La aceptación en la respuesta al requerimiento reduce la sanción, no el impuesto ni los intereses.\n[A] Correcta. El art. 709 ET reduce la sanción por inexactitud a la cuarta parte de la propuesta ($5.000.000) si el contribuyente acepta los hechos, corrige y paga o acuerda el pago del mayor impuesto, los intereses y la sanción reducida. Los intereses moratorios corren desde el vencimiento del plazo para pagar (arts. 634 y 635 ET).\n[B] Incorrecta. Los intereses moratorios no son una sanción reducible: deben pagarse completos.\n[C] Incorrecta. La reducción a la mitad aplica cuando se aceptan los hechos después de la liquidación de revisión (art. 713 ET), no en la respuesta al requerimiento.",
+      "norma": "Estatuto Tributario, arts. 634, 709 y 713",
+      "dificultad": 3,
+      "etiquetas": [
+        "reducción de sanciones",
+        "inexactitud",
+        "intereses moratorios"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-038",
+      "contexto": "Una liquidación de revisión determinó un mayor impuesto de $30.000.000. De ese valor, $10.000.000 vienen del rechazo de una deducción que el contribuyente tomó con una interpretación razonable de la norma, con cifras completas y verdaderas. Los otros $20.000.000 vienen de costos sin ningún soporte.",
+      "enunciado": "Al profesional le corresponde liquidar una sanción por inexactitud de",
+      "opciones": {
+        "A": "$30.000.000, porque toda la diferencia determinada en la revisión es sancionable.",
+        "B": "$20.000.000, porque la parte que obedece a diferencia de criterio no se sanciona.",
+        "C": "$0, porque la existencia de una diferencia de criterio excluye toda la sanción."
+      },
+      "correcta": "B",
+      "explicacion": "La diferencia de criterio excluye la sanción solo respecto de la parte que obedece a ella.\n[A] Incorrecta. Sancionar la deducción discutible desconoce la causal de exclusión del art. 647 ET.\n[B] Correcta. Según el art. 647 ET, no hay inexactitud cuando el menor valor a pagar proviene de una diferencia de criterio sobre la interpretación del derecho aplicable, siempre que los hechos y las cifras sean completos y verdaderos. Esa causal cubre los $10 millones de la deducción, pero no los costos sin soporte: la sanción es el 100% de $20 millones.\n[C] Incorrecta. La diferencia de criterio no se extiende a otras glosas que sí constituyen inexactitud.",
+      "norma": "Estatuto Tributario, arts. 647 y 648",
+      "dificultad": 3,
+      "etiquetas": [
+        "diferencia de criterio",
+        "inexactitud",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-039",
+      "contexto": "Un contribuyente presentó su declaración inicial de renta dos meses después del vencimiento del plazo y pagó la sanción de extemporaneidad. Meses después, por iniciativa propia y sin emplazamiento ni requerimiento, corrige la declaración para aumentar el saldo a pagar.",
+      "enunciado": "Al liquidar la sanción por corrección, al profesional le corresponde tener en cuenta que",
+      "opciones": {
+        "A": "es el 10% del mayor valor, aumentado en 5% por mes o fracción porque la inicial fue extemporánea.",
+        "B": "es el 10% del mayor valor, sin incrementos, porque la extemporaneidad inicial ya fue sancionada antes.",
+        "C": "es una nueva extemporaneidad del 5% por mes, liquidada sobre todo el impuesto de la declaración."
+      },
+      "correcta": "A",
+      "explicacion": "La extemporaneidad de la declaración inicial incrementa la sanción por corrección.\n[A] Correcta. El art. 644 ET fija la sanción por corrección en el 10% del mayor valor a pagar si se corrige antes del emplazamiento. Su parágrafo 1 dispone que, si la declaración inicial fue extemporánea, ese monto se aumenta en un 5% del mayor valor por cada mes o fracción transcurrido desde el vencimiento del plazo para declarar, sin exceder el 100% del mayor valor.\n[B] Incorrecta. Haber pagado la extemporaneidad inicial no elimina el incremento que prevé la norma.\n[C] Incorrecta. La corrección no genera una nueva extemporaneidad sobre todo el impuesto: la sanción se calcula sobre el mayor valor.",
+      "norma": "Estatuto Tributario, art. 644, parágrafo 1",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanción por corrección",
+        "extemporaneidad"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-040",
+      "contexto": "Después de recibir un emplazamiento para corregir, y antes de que se notifique el requerimiento especial, un contribuyente corrige su declaración de IVA. La corrección aumenta en $12.000.000 el saldo a pagar.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción por corrección sea de",
+      "opciones": {
+        "A": "$1.200.000, el 10% del mayor valor a pagar.",
+        "B": "$2.400.000, el 20% del mayor valor a pagar.",
+        "C": "$3.000.000, la cuarta parte de la inexactitud."
+      },
+      "correcta": "B",
+      "explicacion": "La sanción por corrección se duplica cuando la corrección se hace después del emplazamiento.\n[A] Incorrecta. El 10% aplica a la corrección voluntaria, antes de cualquier emplazamiento o auto de inspección.\n[B] Correcta. El art. 644 ET, numeral 2, fija la sanción en el 20% del mayor valor a pagar cuando la corrección se realiza después de notificado el emplazamiento para corregir o el auto de inspección tributaria y antes del requerimiento especial: 20% × $12.000.000 = $2.400.000.\n[C] Incorrecta. La reducción de la inexactitud a la cuarta parte se da al responder el requerimiento especial (art. 709 ET), una etapa que aquí no ha ocurrido.",
+      "norma": "Estatuto Tributario, arts. 644 y 709",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanción por corrección",
+        "emplazamiento para corregir",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-041",
+      "contexto": "Un contribuyente declaró un saldo a favor de $15.000.000, pero había restado mal sus renglones. La DIAN profirió una liquidación de corrección aritmética que lo redujo a $5.000.000 e impuso la sanción correspondiente. Dentro del término para recurrir, el contribuyente acepta los hechos, renuncia al recurso y paga.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción por error aritmético pagada sea de",
+      "opciones": {
+        "A": "$3.000.000, porque el error aritmético no admite ninguna reducción.",
+        "B": "$1.500.000, la mitad de la sanción por aceptar los hechos a tiempo.",
+        "C": "$750.000, la cuarta parte de la sanción por aceptar los hechos a tiempo."
+      },
+      "correcta": "B",
+      "explicacion": "El error aritmético se sanciona sobre el menor saldo a favor y admite reducción a la mitad.\n[A] Incorrecta. La sanción base es correcta (30% × $10.000.000 de menor saldo a favor = $3.000.000), pero la ley sí prevé una reducción.\n[B] Correcta. El art. 646 ET fija la sanción en el 30% del mayor valor a pagar o del menor saldo a favor, y la reduce a la mitad si, dentro del término para recurrir, el contribuyente acepta los hechos, renuncia al recurso y paga: $1.500.000.\n[C] Incorrecta. La reducción a la cuarta parte es propia de la inexactitud aceptada en la respuesta al requerimiento especial (art. 709 ET).",
+      "norma": "Estatuto Tributario, arts. 646 y 697",
+      "dificultad": 3,
+      "etiquetas": [
+        "error aritmético",
+        "reducción de sanciones",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-042",
+      "contexto": "Una persona natural no declaró renta pese a estar obligada y no respondió el emplazamiento. La DIAN estableció consignaciones bancarias por $400.000.000 en el periodo omitido. En la última declaración de renta que presentó, la persona reportó ingresos brutos por $500.000.000.",
+      "enunciado": "Al profesional le corresponde proponer una sanción por no declarar de",
+      "opciones": {
+        "A": "$80.000.000, el 20% de las consignaciones del periodo.",
+        "B": "$100.000.000, el 20% de los ingresos de la última declaración.",
+        "C": "$50.000.000, el 10% de los ingresos de la última declaración."
+      },
+      "correcta": "B",
+      "explicacion": "En renta, la sanción por no declarar es el 20% de la base que resulte superior.\n[A] Incorrecta. El 20% de las consignaciones ($80 millones) es una de las alternativas, pero no la mayor.\n[B] Correcta. El art. 643 ET, numeral 1, fija la sanción en el 20% de las consignaciones bancarias o de los ingresos brutos del periodo, o en el 20% de los ingresos brutos de la última declaración presentada, el que fuere superior: 20% × $500 millones = $100 millones.\n[C] Incorrecta. El 10% corresponde a la sanción por no declarar IVA o retención, no renta.",
+      "norma": "Estatuto Tributario, arts. 643 y 716",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanción por no declarar",
+        "renta",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-043",
+      "contexto": "Un responsable del IVA no presentó la declaración de un periodo y persistió en no hacerlo después del emplazamiento. En ese periodo tuvo consignaciones bancarias por $300.000.000. En su última declaración de IVA presentada registró ingresos brutos por $120.000.000.",
+      "enunciado": "Al profesional le corresponde proponer una sanción por no declarar IVA de",
+      "opciones": {
+        "A": "$12.000.000, por los ingresos de su última declaración.",
+        "B": "$60.000.000, el 20% de las consignaciones bancarias.",
+        "C": "$30.000.000, el 10% de las consignaciones bancarias."
+      },
+      "correcta": "C",
+      "explicacion": "En IVA, la sanción por no declarar es del 10% y se toma la base que resulte superior.\n[A] Incorrecta. El 10% de los ingresos de la última declaración da $12 millones, pero esa base no es la superior.\n[B] Incorrecta. El 20% es la tarifa de la sanción por no declarar renta, no IVA.\n[C] Correcta. El art. 643 ET, numeral 2, fija la sanción en el 10% de las consignaciones o ingresos brutos del periodo omitido, o en el 10% de los ingresos brutos de la última declaración de IVA, el que fuere superior: 10% × $300 millones = $30 millones.",
+      "norma": "Estatuto Tributario, art. 643, numeral 2",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanción por no declarar",
+        "IVA",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-044",
+      "contexto": "Un agente de retención no presentó la declaración de retención en la fuente de un periodo. La DIAN estableció que en ese periodo el agente tuvo costos y gastos por $500.000.000. En su última declaración de retención presentada, las retenciones sumaron $20.000.000.",
+      "enunciado": "Al profesional le corresponde proponer una sanción por no declarar de",
+      "opciones": {
+        "A": "$50.000.000, el 10% de los costos y gastos.",
+        "B": "$20.000.000, el 100% de las retenciones.",
+        "C": "$70.000.000, la suma de ambas alternativas."
+      },
+      "correcta": "A",
+      "explicacion": "En retención, la sanción por no declarar se toma por la alternativa que resulte superior, sin sumarlas.\n[A] Correcta. El art. 643 ET, numeral 4, fija la sanción en el 10% de los cheques girados o de los costos y gastos del periodo, o en el 100% de las retenciones de la última declaración presentada, el que fuere superior: $50 millones frente a $20 millones.\n[B] Incorrecta. El 100% de las retenciones es la alternativa menor en este caso.\n[C] Incorrecta. La norma ordena escoger la base superior; no prevé sumar las dos alternativas.",
+      "norma": "Estatuto Tributario, art. 643, numeral 4",
+      "dificultad": 2,
+      "etiquetas": [
+        "sanción por no declarar",
+        "retención en la fuente",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-045",
+      "contexto": "A un omiso se le impuso una sanción por no declarar renta de $40.000.000. Dentro del término para interponer el recurso, presentó la declaración con un impuesto a cargo de $15.000.000. Si se liquida la extemporaneidad del art. 642 ET, la tarifa del 10% por cada uno de los 20 meses de retardo daría el 200%.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción pagada con la declaración sea de",
+      "opciones": {
+        "A": "$20.000.000, el 50% de la sanción por no declarar.",
+        "B": "$30.000.000, que es la extemporaneidad del art. 642.",
+        "C": "$40.000.000, la sanción por no declarar sin reducir."
+      },
+      "correcta": "B",
+      "explicacion": "La sanción reducida por no declarar tiene un piso: la extemporaneidad del art. 642 ET.\n[A] Incorrecta. El 50% ($20 millones) es la reducción prevista, pero en este caso queda por debajo del piso legal.\n[B] Correcta. El parágrafo 2 del art. 643 ET reduce la sanción al 50% si se declara dentro del término del recurso, pero esa sanción no puede ser inferior a la extemporaneidad del art. 642 ET: 200% × $15 millones = $30 millones. Como $30 millones supera $20 millones, se paga $30 millones.\n[C] Incorrecta. La reducción sí procede porque el omiso declaró dentro del término del recurso.",
+      "norma": "Estatuto Tributario, arts. 642 y 643, parágrafo 2",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanción por no declarar",
+        "reducción de sanciones",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-046",
+      "contexto": "La DIAN devolvió a una sociedad un saldo a favor de renta de $50.000.000. Después, mediante liquidación oficial de revisión, redujo el saldo a favor a $20.000.000. No se probó el uso de documentos falsos ni de fraude.",
+      "enunciado": "Al profesional le corresponde exigir a la sociedad que",
+      "opciones": {
+        "A": "reintegre $30.000.000 con intereses moratorios aumentados en 50% y pague una sanción de $6.000.000.",
+        "B": "reintegre $50.000.000 con intereses moratorios ordinarios y pague una sanción de $10.000.000.",
+        "C": "reintegre $30.000.000 con intereses moratorios ordinarios y pague una sanción de $3.000.000."
+      },
+      "correcta": "A",
+      "explicacion": "La devolución improcedente obliga a reintegrar el exceso con intereses incrementados, más una sanción.\n[A] Correcta. Según el art. 670 ET, se reintegra lo devuelto en exceso ($50 − $20 = $30 millones), más los intereses moratorios aumentados en un 50%. Como fue la DIAN la que modificó el saldo, la sanción es el 20% del valor en exceso: $6 millones.\n[B] Incorrecta. Solo se reintegra lo devuelto en exceso, no todo lo devuelto, y los intereses se aumentan.\n[C] Incorrecta. El 10% aplica cuando el propio contribuyente corrige y disminuye el saldo a favor; además, omite el aumento de los intereses.",
+      "norma": "Estatuto Tributario, art. 670",
+      "dificultad": 3,
+      "etiquetas": [
+        "devolución improcedente",
+        "intereses moratorios",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-047",
+      "contexto": "El 5 de febrero de 2026 se notificó a un contribuyente un pliego de cargos por no enviar información. El contribuyente tiene un mes para responder. No se practicaron pruebas adicionales que modifiquen los términos.",
+      "enunciado": "Al profesional le corresponde establecer que la resolución sanción debe proferirse a más tardar el",
+      "opciones": {
+        "A": "5 de agosto de 2026.",
+        "B": "5 de marzo de 2027.",
+        "C": "5 de septiembre de 2026."
+      },
+      "correcta": "C",
+      "explicacion": "El término para sancionar se cuenta desde el vencimiento del plazo para responder el pliego.\n[A] Incorrecta. Cuenta los 6 meses desde la notificación del pliego, no desde el vencimiento del plazo de respuesta.\n[C] Correcta. El plazo de respuesta vence el 5 de marzo de 2026. El art. 638 ET dispone que, vencido el término de respuesta del pliego de cargos, la DIAN tiene 6 meses para aplicar la sanción: el 5 de septiembre de 2026.\n[B] Incorrecta. Un año no es el término legal para proferir la resolución sanción.",
+      "norma": "Estatuto Tributario, arts. 637 y 638",
+      "dificultad": 3,
+      "etiquetas": [
+        "pliego de cargos",
+        "términos",
+        "procedimiento sancionatorio"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-048",
+      "contexto": "Una persona natural estaba obligada a declarar renta del año gravable 2021, cuyo plazo venció en agosto de 2022, y nunca lo hizo. Hoy, en octubre de 2026, la DIAN la detecta mediante un cruce de información exógena.",
+      "enunciado": "Respecto de la facultad para sancionarla por no declarar, al profesional le corresponde concluir que",
+      "opciones": {
+        "A": "sigue vigente, porque esta sanción prescribe en cinco años desde el vencimiento del plazo.",
+        "B": "ya prescribió, porque el pliego de cargos debía formularse en los dos años siguientes.",
+        "C": "no prescribe nunca, porque la persona omisa no ha presentado ninguna declaración."
+      },
+      "correcta": "A",
+      "explicacion": "La sanción por no declarar tiene un término de prescripción especial y más largo.\n[A] Correcta. El art. 638 ET exceptúa la sanción por no declarar de la regla general de 2 años y le fija un término de 5 años. Contados desde el vencimiento del plazo para declarar, van hasta agosto de 2027, el mismo término que tiene la liquidación de aforo (art. 717 ET).\n[B] Incorrecta. Los 2 años son la regla general para las sanciones en resolución independiente, pero no aplican a la sanción por no declarar.\n[C] Incorrecta. La facultad sancionatoria tiene límites temporales: no es imprescriptible.",
+      "norma": "Estatuto Tributario, arts. 638, 715 y 717",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanción por no declarar",
+        "prescripción",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-049",
+      "contexto": "En control posterior, el 10 de enero de 2026, el profesional detecta que una agencia de aduanas cometió el 15 de febrero de 2023 una infracción administrativa aduanera al transmitir una declaración. La agencia no cometió otras conductas relacionadas después.",
+      "enunciado": "Para que la sanción sea válida, al profesional le corresponde tener en cuenta que",
+      "opciones": {
+        "A": "el acto que impone la sanción debe notificarse antes del 15 de febrero de 2026, porque la facultad caduca en tres años.",
+        "B": "basta con notificar el requerimiento especial aduanero antes del 15 de febrero de 2026, porque así se interrumpe el plazo.",
+        "C": "la sanción puede imponerse hasta el 15 de febrero de 2028, porque la facultad sancionatoria aduanera caduca en cinco años."
+      },
+      "correcta": "A",
+      "explicacion": "La caducidad de la facultad sancionatoria aduanera es de 3 años, dentro de los cuales debe notificarse la decisión.\n[A] Correcta. Según la Ley 1609 de 2013 y el régimen sancionatorio aduanero (Decreto 920 de 2023), la facultad de imponer sanciones caduca a los 3 años contados desde la comisión del hecho o la omisión. Dentro de ese término debe expedirse y notificarse el acto administrativo que impone la sanción.\n[B] Incorrecta. Notificar el requerimiento especial no basta: la decisión de fondo también debe notificarse dentro del término.\n[C] Incorrecta. La facultad sancionatoria aduanera caduca en 3 años, no en 5.",
+      "norma": "Ley 1609 de 2013; Decreto 920 de 2023 (caducidad)",
+      "dificultad": 3,
+      "etiquetas": [
+        "sanciones aduaneras",
+        "caducidad",
+        "términos"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "sanciones-050",
+      "contexto": "Una sociedad sin operaciones en el periodo presentó tarde, en 2 meses, una declaración que no arroja impuesto a cargo ni saldo a favor y que no registra ingresos. Su patrimonio líquido del año anterior era de $100.000.000. La DIAN no la había emplazado.",
+      "enunciado": "Al profesional le corresponde verificar que la sanción de extemporaneidad sea de",
+      "opciones": {
+        "A": "$1.000.000, el 0,5% del patrimonio líquido por cada uno de los dos meses.",
+        "B": "$10.000.000, el tope del 10% del patrimonio líquido del año anterior.",
+        "C": "$2.000.000, el 1% del patrimonio líquido por cada uno de los dos meses."
+      },
+      "correcta": "C",
+      "explicacion": "Sin impuesto ni ingresos, la extemporaneidad se liquida sobre el patrimonio líquido del año anterior.\n[A] Incorrecta. El 0,5% por mes se aplica sobre los ingresos brutos, no sobre el patrimonio.\n[B] Incorrecta. El 10% del patrimonio es el tope, no la sanción.\n[C] Correcta. El art. 641 ET dispone que, si no hay ingresos en el periodo, la sanción es el 1% del patrimonio líquido del año anterior por cada mes o fracción, sin exceder la cifra menor entre el 10% del patrimonio y 2.500 UVT (sin saldo a favor): 1% × 2 × $100 millones = $2 millones.",
+      "norma": "Estatuto Tributario, art. 641",
+      "dificultad": 3,
+      "etiquetas": [
+        "extemporaneidad",
+        "patrimonio líquido",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
     }
   ]
 }

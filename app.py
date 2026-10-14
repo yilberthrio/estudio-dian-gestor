@@ -576,12 +576,10 @@ def eliminar_pregunta(pid):
 @app.route("/informe")
 def informe():
     with conectar() as con:
-        sesiones = an.por_sesion(con)
-        g = an.resumen_global(con)
-        calib = an.calibracion(con)
+        a = an.analisis_completo(con)
         an.generar_informe_md(con)
-        return render_template("informe.html", g=g, sesiones=sesiones, calib=calib,
-                               recs=an.recomendaciones(sesiones, g, calib),
+        return render_template("informe.html", a=a, g=a["g"], sesiones=a["sesiones"], calib=a["calib"],
+                               recs=an.recomendaciones(a["sesiones"], a["g"], a["calib"], a),
                                falladas=an.mas_falladas(con, 15), seguras=an.errores_con_seguridad(con, 10),
                                hist=an.historial_snapshots(con), cfg=config(con))
 

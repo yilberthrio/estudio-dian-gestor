@@ -679,6 +679,408 @@
         "IVA"
       ],
       "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "liquidacion-impuestos-036",
+      "contexto": "Una sociedad nacional sin tarifas especiales determinó, para la tasa mínima de tributación, una utilidad depurada (UD) de $1.000 millones y un impuesto depurado (ID) de $100 millones, por efecto de rentas exentas y descuentos tributarios.",
+      "enunciado": "Al profesional le corresponde verificar que el impuesto a adicionar (IA) sea de",
+      "opciones": {
+        "A": "$150 millones, el 15% de la utilidad depurada.",
+        "B": "$50 millones, para llegar a una tasa del 15%.",
+        "C": "$0, porque el impuesto depurado es positivo."
+      },
+      "correcta": "B",
+      "explicacion": "La tasa mínima de tributación exige que el impuesto depurado alcance el 15% de la utilidad depurada.\n[A] Incorrecta. El 15% de la UD es el impuesto mínimo total; al resultado hay que restarle el impuesto depurado ya liquidado.\n[B] Correcta. Según el parágrafo 6 del art. 240 ET (Ley 2277 de 2022), la tasa de tributación depurada es ID ÷ UD = 10%. Como es inferior al 15%, el impuesto a adicionar es (UD × 15%) − ID = $150 − $100 = $50 millones.\n[C] Incorrecta. Basta con que la tasa resultante sea inferior al 15% para que deba adicionarse impuesto, aunque el ID sea positivo.",
+      "norma": "Estatuto Tributario, art. 240, parágrafo 6 (Ley 2277 de 2022)",
+      "dificultad": 3,
+      "etiquetas": [
+        "tasa mínima de tributación",
+        "personas jurídicas",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-037",
+      "contexto": "Una sociedad declara renta por sexta vez. Su impuesto neto de renta del año es de $80 millones y el del año anterior fue de $60 millones. Las retenciones en la fuente que le practicaron en el año suman $20 millones.",
+      "enunciado": "Si la sociedad elige el procedimiento que le resulta más favorable, al profesional le corresponde verificar que el anticipo para el año siguiente sea de",
+      "opciones": {
+        "A": "$40 millones, aplicando el 75% al impuesto neto del año y restando las retenciones.",
+        "B": "$60 millones, aplicando el 75% al impuesto neto del año, sin restar las retenciones.",
+        "C": "$32,5 millones, aplicando el 75% al promedio de los dos años y restando retenciones."
+      },
+      "correcta": "C",
+      "explicacion": "El art. 807 ET permite escoger entre dos procedimientos para calcular el anticipo.\n[A] Incorrecta. Este es el primer procedimiento (75% × $80 = $60 − $20 = $40 millones), pero no es el más favorable.\n[B] Incorrecta. Las retenciones del año siempre se restan.\n[C] Correcta. Desde la tercera declaración, el porcentaje es del 75%. Con el segundo procedimiento, el promedio de los dos últimos años es $70 millones: 75% × $70 = $52,5 − $20 = $32,5 millones. El contribuyente puede optar por el que le resulte menor.",
+      "norma": "Estatuto Tributario, art. 807",
+      "dificultad": 3,
+      "etiquetas": [
+        "anticipo",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-038",
+      "contexto": "La declaración de renta de una sociedad muestra: impuesto neto de renta, $100 millones; anticipo liquidado el año anterior para este año, $30 millones; retenciones del año, $25 millones; saldo a favor del año anterior sin solicitud de devolución, $5 millones; anticipo para el año siguiente, $40 millones.",
+      "enunciado": "Al profesional le corresponde verificar que el saldo a pagar sea de",
+      "opciones": {
+        "A": "$40 millones.",
+        "B": "$80 millones.",
+        "C": "$110 millones."
+      },
+      "correcta": "B",
+      "explicacion": "El saldo a pagar suma el anticipo del año siguiente y resta los anticipos, retenciones y saldos a favor del año anterior.\n[A] Incorrecta. Omite el anticipo del año siguiente: $100 − $30 − $25 − $5 = $40 millones.\n[B] Correcta. $100 (impuesto) + $40 (anticipo del año siguiente) − $30 (anticipo del año anterior) − $25 (retenciones) − $5 (saldo a favor anterior) = $80 millones.\n[C] Incorrecta. Omite restar el anticipo pagado el año anterior: $100 + $40 − $25 − $5 = $110 millones.",
+      "norma": "Estatuto Tributario, arts. 807 y 815; formulario de renta",
+      "dificultad": 2,
+      "etiquetas": [
+        "saldo a pagar",
+        "anticipo",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-039",
+      "contexto": "Una persona natural residente tiene una renta líquida gravable de cédula general de 3.000 UVT. Para el rango de más de 1.700 hasta 4.100 UVT, la tabla del art. 241 ET indica: (renta en UVT − 1.700) × 28% + 116 UVT.",
+      "enunciado": "Al profesional le corresponde verificar que el impuesto sobre la renta sea de",
+      "opciones": {
+        "A": "840 UVT, el 28% de la renta líquida gravable.",
+        "B": "364 UVT, el 28% del exceso sobre 1.700 UVT.",
+        "C": "480 UVT, el 28% del exceso más los 116 UVT."
+      },
+      "correcta": "C",
+      "explicacion": "La tabla de personas naturales es marginal: la tarifa se aplica solo al exceso sobre el límite inferior del rango.\n[A] Incorrecta. Aplica el 28% a toda la renta, como si la tarifa fuera plana.\n[B] Incorrecta. Calcula bien el exceso ((3.000 − 1.700) × 28% = 364 UVT), pero omite sumar los 116 UVT fijos del rango.\n[C] Correcta. (3.000 − 1.700) × 28% = 364 UVT, más 116 UVT = 480 UVT. Este valor se convierte a pesos con la UVT del año gravable.",
+      "norma": "Estatuto Tributario, art. 241",
+      "dificultad": 2,
+      "etiquetas": [
+        "personas naturales",
+        "tabla marginal",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-040",
+      "contexto": "En la cédula general de una persona natural, el ingreso neto (ingresos menos ingresos no constitutivos de renta) es de 5.000 UVT. La persona solicitó rentas exentas y deducciones sujetas al límite general por 2.500 UVT.",
+      "enunciado": "Al profesional le corresponde verificar que las rentas exentas y deducciones aceptadas sean de",
+      "opciones": {
+        "A": "1.340 UVT, el límite anual en UVT.",
+        "B": "2.000 UVT, el 40% del ingreso neto.",
+        "C": "2.500 UVT, el total que se solicitó."
+      },
+      "correcta": "A",
+      "explicacion": "Las rentas exentas y deducciones de la cédula general tienen un doble límite, y se aplica el menor.\n[A] Correcta. El art. 336 ET (modificado por la Ley 2277 de 2022) limita las rentas exentas y deducciones al 40% del ingreso neto, sin exceder 1.340 UVT anuales. El 40% de 5.000 UVT es 2.000 UVT, pero el tope absoluto es menor: se aceptan 1.340 UVT.\n[B] Incorrecta. El 40% es uno de los límites, pero no el menor en este caso.\n[C] Incorrecta. Lo solicitado excede ambos límites legales.",
+      "norma": "Estatuto Tributario, art. 336 (Ley 2277 de 2022)",
+      "dificultad": 3,
+      "etiquetas": [
+        "personas naturales",
+        "cédula general",
+        "límite de rentas exentas"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-041",
+      "contexto": "Un asalariado calcula su renta exenta del 25% sobre sus pagos laborales del año gravable 2025, y le da 1.000 UVT. Afirma que puede tomarla completa, porque «el tope es de 240 UVT mensuales».",
+      "enunciado": "Al profesional le corresponde aclararle que la renta exenta del 25% aceptable es de",
+      "opciones": {
+        "A": "1.000 UVT, porque no supera el tope mensual de 240 UVT.",
+        "B": "790 UVT, porque el tope actual de esta renta es anual.",
+        "C": "2.880 UVT, porque el tope se acumula a lo largo del año."
+      },
+      "correcta": "B",
+      "explicacion": "La Ley 2277 de 2022 modificó el tope de la renta exenta laboral del 25%.\n[A] Incorrecta. El tope de 240 UVT mensuales era el de la norma anterior (2.880 UVT al año); hoy no aplica.\n[B] Correcta. Desde el año gravable 2023, el numeral 10 del art. 206 ET limita la renta exenta del 25% a 790 UVT anuales. Además, debe respetar el límite general del 40% / 1.340 UVT del art. 336 ET.\n[C] Incorrecta. Los 2.880 UVT corresponden al tope anterior, no al vigente.",
+      "norma": "Estatuto Tributario, art. 206, num. 10 (modificado por la Ley 2277 de 2022)",
+      "dificultad": 3,
+      "etiquetas": [
+        "personas naturales",
+        "rentas exentas",
+        "norma modificada"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-042",
+      "contexto": "En 2025, una sociedad sujeta a la tarifa del 35% pagó $20 millones de impuesto de industria y comercio, relacionado con su actividad. Su contador sostiene que puede tomar el 50% de ese valor como descuento tributario, como hacía antes de la reforma.",
+      "enunciado": "Al profesional le corresponde advertir que el ICA pagado reduce el impuesto de renta en",
+      "opciones": {
+        "A": "$10 millones, por tomar el 50% del ICA como descuento.",
+        "B": "$7 millones, por deducir el 100% del ICA a la tarifa del 35%.",
+        "C": "$3,5 millones, por deducir solo el 50% del ICA a la tarifa del 35%."
+      },
+      "correcta": "B",
+      "explicacion": "Desde la Ley 2277 de 2022, el ICA solo se trata como deducción.\n[A] Incorrecta. La Ley 2277 de 2022 eliminó la opción de tomar el 50% del ICA como descuento tributario (art. 115 ET).\n[B] Correcta. Hoy el ICA efectivamente pagado y relacionado con la actividad es deducible al 100% (art. 115 ET). Una deducción de $20 millones reduce la renta líquida y, a la tarifa del 35%, reduce el impuesto en $7 millones.\n[C] Incorrecta. La deducción no se limita al 50%: se deduce el 100% del ICA pagado.",
+      "norma": "Estatuto Tributario, art. 115 (modificado por la Ley 2277 de 2022)",
+      "dificultad": 3,
+      "etiquetas": [
+        "deducciones",
+        "ICA",
+        "norma modificada",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-043",
+      "contexto": "Una persona natural hizo retiros por $30.000.000 en un mes de su única cuenta de ahorros, marcada como exenta del gravamen a los movimientos financieros. Para el caso, suponga que 350 UVT equivalen a $18.000.000.",
+      "enunciado": "Al profesional le corresponde verificar que el GMF de ese mes sea de",
+      "opciones": {
+        "A": "$120.000, el 4 por mil de todos los retiros del mes.",
+        "B": "$72.000, el 4 por mil de la parte exenta de los retiros.",
+        "C": "$48.000, el 4 por mil del exceso sobre la parte exenta."
+      },
+      "correcta": "C",
+      "explicacion": "La exención del GMF en cuentas de ahorro tiene un tope mensual: el gravamen se aplica sobre el exceso.\n[A] Incorrecta. Desconoce la exención de la cuenta marcada.\n[B] Incorrecta. Aplica el gravamen justamente sobre la parte que está exenta.\n[C] Correcta. El art. 879, numeral 1, ET exime los retiros de una cuenta de ahorros marcada hasta 350 UVT al mes. El exceso es $30 − $18 = $12 millones, y 4 × 1.000 × $12.000.000 = $48.000.",
+      "norma": "Estatuto Tributario, arts. 871, 872 y 879",
+      "dificultad": 3,
+      "etiquetas": [
+        "GMF",
+        "exenciones",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-044",
+      "contexto": "En un bimestre, una empresa vendió bienes gravados al 19% por $60 millones, exportó bienes (exentos) por $20 millones y vendió bienes excluidos por $20 millones. Pagó $5 millones de IVA en gastos comunes que no pueden imputarse a una sola de esas operaciones.",
+      "enunciado": "Al profesional le corresponde verificar que el IVA descontable por los gastos comunes sea de",
+      "opciones": {
+        "A": "$3 millones, en proporción a las ventas gravadas.",
+        "B": "$4 millones, en proporción a gravadas y exentas.",
+        "C": "$5 millones, porque todos los gastos son comunes."
+      },
+      "correcta": "B",
+      "explicacion": "Cuando el IVA de los gastos comunes no puede imputarse, se reparte en proporción a las operaciones que dan derecho a descuento.\n[A] Incorrecta. Las operaciones exentas también dan derecho a impuestos descontables (art. 481 ET).\n[B] Correcta. Según el art. 490 ET, el IVA de los gastos comunes se descuenta en proporción a las operaciones gravadas y exentas frente al total: ($60 + $20) ÷ $100 = 80%, es decir, $4 millones. El $1 millón restante es mayor valor del costo o gasto.\n[C] Incorrecta. La parte proporcional a los bienes excluidos no es descontable.",
+      "norma": "Estatuto Tributario, arts. 481, 488 y 490",
+      "dificultad": 3,
+      "etiquetas": [
+        "IVA",
+        "proporcionalidad",
+        "exentos",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-045",
+      "contexto": "Un responsable del IVA con periodo bimestral recibió en febrero de 2026 la factura de compra de unos insumos gravados, pero olvidó incluir el IVA descontable en la declaración del bimestre enero-febrero. Quiere saber hasta qué periodo puede tomarlo.",
+      "enunciado": "Al profesional le corresponde informarle que puede tomar ese IVA descontable a más tardar en el bimestre",
+      "opciones": {
+        "A": "marzo-abril de 2026.",
+        "B": "julio-agosto de 2026.",
+        "C": "noviembre-diciembre de 2026."
+      },
+      "correcta": "B",
+      "explicacion": "El IVA descontable tiene una oportunidad limitada para contabilizarse.\n[A] Incorrecta. El bimestre marzo-abril es solo el primero de los tres periodos adicionales permitidos.\n[B] Correcta. El art. 496 ET dispone que, para responsables con periodo bimestral, los impuestos descontables se contabilizan en el periodo de su causación o en uno de los tres periodos bimestrales siguientes: marzo-abril, mayo-junio y julio-agosto de 2026.\n[C] Incorrecta. La norma no extiende la oportunidad hasta el final del año.",
+      "norma": "Estatuto Tributario, art. 496",
+      "dificultad": 2,
+      "etiquetas": [
+        "IVA",
+        "impuestos descontables",
+        "oportunidad"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-046",
+      "contexto": "Una entidad que es agente de retención de IVA y de renta contrata un servicio general gravado con una sociedad responsable del IVA y declarante. La factura es de $10.000.000 más $1.900.000 de IVA. La retención en la fuente por servicios generales es del 4% y la retención de IVA es del 15% del impuesto.",
+      "enunciado": "Al profesional le corresponde verificar que el valor neto girado al proveedor sea de",
+      "opciones": {
+        "A": "$11.215.000.",
+        "B": "$11.500.000.",
+        "C": "$11.615.000."
+      },
+      "correcta": "A",
+      "explicacion": "Sobre un mismo pago pueden concurrir la retención en la fuente de renta y la de IVA.\n[A] Correcta. La retención de renta es 4% × $10.000.000 = $400.000, y la de IVA es 15% × $1.900.000 = $285.000 (art. 437-1 ET). El pago neto es $11.900.000 − $400.000 − $285.000 = $11.215.000.\n[B] Incorrecta. Solo descuenta la retención de renta y omite la de IVA.\n[C] Incorrecta. Solo descuenta la retención de IVA y omite la de renta.",
+      "norma": "Estatuto Tributario, arts. 392 y 437-1",
+      "dificultad": 3,
+      "etiquetas": [
+        "retención en la fuente",
+        "retención de IVA",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-047",
+      "contexto": "Una sociedad tuvo una pérdida fiscal de $200 millones en el año gravable 2018. En 2025 obtuvo una renta líquida ordinaria de $150 millones, y no ha compensado ninguna parte de esa pérdida.",
+      "enunciado": "Al profesional le corresponde verificar que la sociedad pueda",
+      "opciones": {
+        "A": "compensar en 2025 $150 millones y llevar el saldo de $50 millones a años siguientes, hasta 2030.",
+        "B": "compensar en 2025 solo el 25% de la pérdida, porque la ley limita cada compensación anual.",
+        "C": "compensar en 2025 los $200 millones completos, aunque resulte una nueva pérdida en el año."
+      },
+      "correcta": "A",
+      "explicacion": "Las pérdidas fiscales se compensan con rentas líquidas futuras, dentro de un plazo y sin límite porcentual.\n[A] Correcta. El art. 147 ET permite compensar las pérdidas fiscales con las rentas líquidas ordinarias de los 12 periodos gravables siguientes, sin límite porcentual anual. En 2025 se compensan $150 millones (hasta agotar la renta líquida), y el saldo puede compensarse hasta el año gravable 2030.\n[B] Incorrecta. Ese límite porcentual no existe en la norma vigente.\n[C] Incorrecta. La compensación no puede exceder la renta líquida del año ni generar una nueva pérdida.",
+      "norma": "Estatuto Tributario, art. 147",
+      "dificultad": 3,
+      "etiquetas": [
+        "pérdidas fiscales",
+        "compensación",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-048",
+      "contexto": "Una sociedad donó $100 millones a una entidad del régimen tributario especial que cumple los requisitos. Su impuesto sobre la renta del año, antes de descuentos, es de $80 millones. No tiene otros descuentos sujetos al mismo límite.",
+      "enunciado": "Al profesional le corresponde verificar que el descuento tributario por la donación en este año sea de",
+      "opciones": {
+        "A": "$25 millones, el 25% del valor donado, sin límite.",
+        "B": "$20 millones, por el límite del 25% del impuesto.",
+        "C": "$6,25 millones, el 25% del descuento calculado."
+      },
+      "correcta": "B",
+      "explicacion": "El descuento por donaciones se calcula sobre el valor donado, pero tiene un tope frente al impuesto.\n[A] Incorrecta. El 25% de lo donado ($25 millones) es el descuento calculado, pero debe compararse con el límite legal.\n[B] Correcta. El art. 257 ET otorga un descuento del 25% del valor donado ($25 millones), pero el art. 258 ET limita los descuentos de los arts. 255, 256 y 257 al 25% del impuesto sobre la renta a cargo: 25% × $80 = $20 millones. El exceso de $5 millones puede tomarse en los periodos siguientes, en los términos de esa norma.\n[C] Incorrecta. El porcentaje se aplica dos veces y no corresponde a ninguna regla.",
+      "norma": "Estatuto Tributario, arts. 257 y 258",
+      "dificultad": 3,
+      "etiquetas": [
+        "descuentos tributarios",
+        "donaciones",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-049",
+      "contexto": "Una sociedad pagó $150 millones de intereses en el año por préstamos de su casa matriz del exterior, que es un vinculado económico. La deuda promedio con la matriz fue de $1.500 millones, y el patrimonio líquido de la sociedad al cierre del año anterior era de $500 millones.",
+      "enunciado": "Al profesional le corresponde verificar que los intereses deducibles sean de",
+      "opciones": {
+        "A": "$150 millones, porque la deuda está bien documentada.",
+        "B": "$50 millones, porque solo es deducible el exceso.",
+        "C": "$100 millones, por el límite de subcapitalización."
+      },
+      "correcta": "C",
+      "explicacion": "La regla de subcapitalización limita los intereses pagados a vinculados económicos.\n[A] Incorrecta. Estar documentada no exime a la deuda del límite legal.\n[B] Incorrecta. Invierte la regla: el exceso es justamente lo que no se deduce.\n[C] Correcta. El art. 118-1 ET solo permite deducir los intereses de deudas con vinculados cuando la deuda promedio no excede 2 veces el patrimonio líquido del año anterior: 2 × $500 = $1.000 millones. El exceso ($500 de $1.500 millones, un tercio) hace no deducible un tercio de los intereses ($50 millones). Se deducen $100 millones.",
+      "norma": "Estatuto Tributario, art. 118-1",
+      "dificultad": 3,
+      "etiquetas": [
+        "subcapitalización",
+        "deducciones",
+        "vinculados económicos",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-050",
+      "contexto": "Una sociedad tiene una renta líquida de $400 millones, calculada antes de restar unos pagos al exterior por $80 millones. Esos pagos corresponden a servicios prestados y usados en el exterior que no son renta de fuente nacional, por lo que no estaban sujetos a retención en la fuente.",
+      "enunciado": "Al profesional le corresponde verificar que la deducción por esos pagos al exterior sea de",
+      "opciones": {
+        "A": "$60 millones, por el límite del 15% de la renta líquida.",
+        "B": "$80 millones, por ser expensas necesarias del negocio.",
+        "C": "$0, porque no se practicó la retención en la fuente."
+      },
+      "correcta": "A",
+      "explicacion": "Los pagos al exterior sin retención obligatoria tienen un límite de deducción.\n[B] Incorrecta. Ser expensas necesarias no basta: hay que aplicar el límite del art. 122 ET.\n[A] Correcta. El art. 122 ET limita los costos y deducciones por expensas en el exterior al 15% de la renta líquida computada antes de restarlos, salvo en los pagos sujetos a retención y en otras excepciones legales: 15% × $400 = $60 millones.\n[C] Incorrecta. La retención no era obligatoria; por eso aplica el límite del 15% y no el rechazo total.",
+      "norma": "Estatuto Tributario, arts. 121 y 122",
+      "dificultad": 3,
+      "etiquetas": [
+        "deducciones",
+        "pagos al exterior",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-051",
+      "contexto": "Una sociedad nacional vendió un inmueble que hacía parte de sus activos fijos y que poseyó durante 18 meses. Obtuvo una utilidad de $100 millones y la declaró como ganancia ocasional, con la tarifa del 15%.",
+      "enunciado": "Al profesional le corresponde concluir que la utilidad debe",
+      "opciones": {
+        "A": "mantenerse como ganancia ocasional, con un impuesto de $15 millones.",
+        "B": "declararse como renta exenta, porque proviene de un activo fijo.",
+        "C": "reclasificarse como renta ordinaria, con un impuesto de $35 millones."
+      },
+      "correcta": "C",
+      "explicacion": "La utilidad en la venta de activos fijos solo es ganancia ocasional si se poseyeron por 2 años o más.\n[A] Incorrecta. La sociedad poseyó el inmueble solo 18 meses, así que no se cumple el requisito de tiempo.\n[B] Incorrecta. La venta de un activo fijo no es, por sí misma, una renta exenta.\n[C] Correcta. El art. 300 ET califica como ganancia ocasional la utilidad en la venta de activos fijos poseídos por 2 años o más. Con 18 meses, la utilidad es renta ordinaria y tributa a la tarifa general del 35% (art. 240 ET): $35 millones.",
+      "norma": "Estatuto Tributario, arts. 240, 300 y 313",
+      "dificultad": 2,
+      "etiquetas": [
+        "ganancia ocasional",
+        "activos fijos",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-052",
+      "contexto": "Al fiscalizar la renta del año gravable 2025, el profesional observa que una sociedad liquidó su impuesto sobre una renta presuntiva del 0,5% de su patrimonio líquido, porque era mayor que su renta líquida ordinaria. Con esa base, el impuesto resultó mayor.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que",
+      "opciones": {
+        "A": "la renta presuntiva es del 0% desde el año gravable 2021, y el impuesto se liquida sobre la renta líquida.",
+        "B": "la renta presuntiva sigue siendo del 0,5%, y por eso el impuesto liquidado sobre ella es correcto.",
+        "C": "la renta presuntiva es del 1,5% del patrimonio líquido, y por eso el impuesto debe ser mayor."
+      },
+      "correcta": "A",
+      "explicacion": "El porcentaje de la renta presuntiva se redujo de forma gradual hasta el 0%.\n[A] Correcta. El art. 188 ET (Ley 2010 de 2019) redujo la renta presuntiva al 0,5% en 2020 y al 0% desde el año gravable 2021. En 2025 la renta presuntiva es cero y el impuesto se liquida sobre la renta líquida gravable ordinaria. Si el contribuyente pagó de más, puede corregir su declaración.\n[B] Incorrecta. El 0,5% rigió solo para el año gravable 2020.\n[C] Incorrecta. El 1,5% correspondió al año gravable 2019.",
+      "norma": "Estatuto Tributario, art. 188 (Ley 2010 de 2019)",
+      "dificultad": 2,
+      "etiquetas": [
+        "renta presuntiva",
+        "norma modificada"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-053",
+      "contexto": "Un comerciante persona natural, no responsable del IVA, tuvo el año anterior ingresos de 3.000 UVT por actividades gravadas. Hoy le ofrecen un contrato de venta de bienes gravados por una cuantía individual de 4.000 UVT.",
+      "enunciado": "Al profesional le corresponde informarle que, para celebrar ese contrato, debe",
+      "opciones": {
+        "A": "inscribirse antes como responsable del IVA, porque el contrato supera la cuantía de 3.500 UVT.",
+        "B": "seguir como no responsable hasta el final del año, porque sus ingresos anteriores no superan el tope.",
+        "C": "facturar sin IVA este contrato y luego inscribirse como responsable a partir del año siguiente."
+      },
+      "correcta": "A",
+      "explicacion": "Las condiciones para ser no responsable del IVA incluyen también la cuantía de los contratos.\n[B] Incorrecta. Cumplir el tope de ingresos no basta: cada una de las condiciones debe cumplirse.\n[A] Correcta. El parágrafo 3 del art. 437 ET exige, entre otras condiciones, no celebrar contratos de venta de bienes o servicios gravados por cuantía individual igual o superior a 3.500 UVT. Para celebrar uno, el comerciante debe inscribirse previamente como responsable del IVA.\n[C] Incorrecta. Facturar sin IVA una operación gravada siendo responsable sería un incumplimiento.",
+      "norma": "Estatuto Tributario, art. 437, parágrafo 3",
+      "dificultad": 3,
+      "etiquetas": [
+        "IVA",
+        "no responsables",
+        "requisitos"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-054",
+      "contexto": "Una sociedad compró una maquinaria industrial, que es un activo fijo real productivo, y pagó $19 millones de IVA en la compra. La maquinaria se usará directamente en su actividad productora de renta. El contador quiere tomar el IVA como descuento en renta y, además, incluirlo en el costo depreciable de la máquina.",
+      "enunciado": "Al profesional le corresponde indicar que el IVA pagado puede",
+      "opciones": {
+        "A": "descontarse del impuesto de renta, pero no puede tratarse a la vez como costo depreciable de la máquina.",
+        "B": "descontarse del impuesto de renta y además depreciarse, porque son beneficios fiscales independientes.",
+        "C": "tomarse solo como IVA descontable en la declaración de IVA del periodo en que se compró la máquina."
+      },
+      "correcta": "A",
+      "explicacion": "El descuento del art. 258-1 ET impide usar el mismo IVA de otra forma.\n[A] Correcta. El art. 258-1 ET permite descontar del impuesto de renta el IVA pagado en la adquisición de activos fijos reales productivos, en el año de la compra o en los siguientes. El IVA tomado como descuento no puede tomarse además como costo o gasto, por ejemplo vía depreciación.\n[B] Incorrecta. Usar el mismo IVA como descuento y como costo sería un doble beneficio que la norma prohíbe.\n[C] Incorrecta. La ley previó para estos activos un descuento en renta; la opción no se limita al IVA descontable.",
+      "norma": "Estatuto Tributario, art. 258-1",
+      "dificultad": 2,
+      "etiquetas": [
+        "descuentos tributarios",
+        "activos fijos",
+        "IVA"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "liquidacion-impuestos-055",
+      "contexto": "Un responsable vende mercancía gravada al 19% por $10.000.000. En la factura concede un descuento comercial de $1.000.000 sin ninguna condición, y además ofrece un descuento adicional del 2% si el cliente paga dentro de los 10 días siguientes.",
+      "enunciado": "Al profesional le corresponde verificar que el IVA generado en la factura sea de",
+      "opciones": {
+        "A": "$1.900.000, sobre el precio sin restar ningún tipo de descuento.",
+        "B": "$1.675.800, sobre el precio con los dos descuentos ofrecidos.",
+        "C": "$1.710.000, sobre el precio con el descuento sin condición."
+      },
+      "correcta": "C",
+      "explicacion": "Solo los descuentos efectivos no condicionados reducen la base gravable del IVA.\n[A] Incorrecta. El descuento incondicionado que consta en la factura sí reduce la base.\n[B] Incorrecta. El descuento por pronto pago depende de una condición futura, así que no se resta de la base al facturar.\n[C] Correcta. El art. 454 ET permite restar de la base los descuentos efectivos que no estén sujetos a condiciones y consten en la factura: ($10.000.000 − $1.000.000) × 19% = $1.710.000. El descuento condicionado no afecta la base al facturar.",
+      "norma": "Estatuto Tributario, arts. 447 y 454",
+      "dificultad": 3,
+      "etiquetas": [
+        "IVA",
+        "base gravable",
+        "descuentos condicionados",
+        "cálculo"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
     }
   ]
 }

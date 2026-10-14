@@ -92,6 +92,6 @@
 </div>
 
 <script>
-graficaLinea("#evolucion", {{ evolucion|tojson }}.map(r => ({ v: r.pct, e: "#" + r.id, t: "Ronda #" + r.id + " (" + r.alcance + ")" })), { lineas: [{{ cfg.puntaje_minimo|float }}, {{ cfg.meta_puntaje|float }}] });
+graficaLinea("#evolucion", {{ evolucion|tojson }}.map(r => ({ v: r.pct, e: "#" + r.id, t: "Ronda #" + r.id + " (" + r.alcance + ")" })), { refs: [{ v: {{ cfg.puntaje_minimo|float }}, l: "Mín. {{ cfg.puntaje_minimo }}" }, { v: {{ cfg.meta_puntaje|float }}, l: "Meta {{ cfg.meta_puntaje }}" }] });
 </script>
 {% endblock %}

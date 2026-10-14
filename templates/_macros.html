@@ -1,3 +1,4 @@
-{% macro barra(v) -%}
-  <div class="barra {{ 'ok' if v is not none and v >= 80 else 'medio' if v is not none and v >= 60 else 'mal' }}"><i style="width: {{ v or 0 }}%"></i></div>
+{% macro barra(v, alto=86, bajo=70) -%}
+  {#- Mismos cortes que la clasificación por defecto: fortaleza ≥ 86 (meta), debilidad < 70 (mínimo aprobatorio) -#}
+  <div class="barra {{ 'ok' if v is not none and v >= alto else 'medio' if v is not none and v >= bajo else 'mal' }}"><i style="width: {{ v or 0 }}%"></i></div>
 {%- endmacro %}

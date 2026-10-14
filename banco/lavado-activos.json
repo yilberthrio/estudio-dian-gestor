@@ -470,6 +470,164 @@
         "buena fe"
       ],
       "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "lavado-activos-026",
+      "contexto": "En una investigación, el profesional reconstruye este esquema: (1) una persona deposita efectivo en montos pequeños en varias cuentas; (2) el dinero se transfiere varias veces entre sociedades de distintos países; (3) finalmente, una sociedad colombiana compra un hotel con esos recursos y lo presenta como inversión extranjera.",
+      "enunciado": "Al profesional le corresponde identificar que la compra del hotel corresponde a la etapa de",
+      "opciones": {
+        "A": "colocación, porque el dinero entra por primera vez al sistema formal.",
+        "B": "estratificación, porque se busca ocultar el origen con más transacciones financieras.",
+        "C": "integración, porque los recursos regresan a la economía con apariencia legal."
+      },
+      "correcta": "C",
+      "explicacion": "El lavado suele describirse en tres etapas: colocación, estratificación (u ocultamiento) e integración.\n[A] Incorrecta. La colocación es el paso (1): los depósitos fraccionados de efectivo.\n[B] Incorrecta. La estratificación es el paso (2): las transferencias sucesivas entre sociedades y países para borrar el rastro.\n[C] Correcta. La integración es el paso (3): los recursos, ya con apariencia legítima, se invierten en activos de la economía formal, como un hotel presentado como inversión extranjera.",
+      "norma": "Tipologías de lavado de activos (UIAF, GAFI)",
+      "dificultad": 2,
+      "etiquetas": [
+        "etapas del lavado",
+        "integración"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "lavado-activos-027",
+      "contexto": "El oficial de cumplimiento de una agencia de aduanas detecta que un cliente nuevo hace importaciones por montos muy superiores a su capacidad económica declarada y paga siempre a través de terceros. No tiene pruebas de un delito. El cliente, enterado de la revisión, pregunta si lo van a reportar.",
+      "enunciado": "Al oficial de cumplimiento le corresponde",
+      "opciones": {
+        "A": "esperar a reunir pruebas del delito y luego presentar la denuncia ante la Fiscalía, informándole al cliente.",
+        "B": "enviar el ROS a la UIAF sin identificar el delito y sin informarle al cliente que se hizo el reporte.",
+        "C": "pedirle al cliente una explicación por escrito antes de reportarlo, para no afectar su buen nombre."
+      },
+      "correcta": "B",
+      "explicacion": "El ROS no exige certeza del delito y es reservado frente al reportado.\n[A] Incorrecta. El ROS no es una denuncia y no requiere pruebas: basta la sospecha razonable. Informar al cliente viola la reserva.\n[B] Correcta. El ROS se envía a la UIAF cuando una operación es inusual y no tiene justificación razonable. No requiere certeza de que se trate de un delito ni identificar el tipo penal, y es reservado: no puede informarse al cliente que fue reportado (Ley 526 de 1999 y normas de los supervisores).\n[C] Incorrecta. Avisar al cliente antes del reporte le permitiría ocultar recursos o evidencias.",
+      "norma": "Ley 526 de 1999; régimen SAGRILAFT/SARLAFT de los usuarios aduaneros",
+      "dificultad": 3,
+      "etiquetas": [
+        "ROS",
+        "reserva",
+        "naturaleza del reporte"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "lavado-activos-028",
+      "contexto": "Al fiscalizar la renta de una persona natural, el profesional encuentra un incremento patrimonial de $2.000 millones sin justificación, giros desde varios países por personas sin relación aparente y la compra en efectivo de varios vehículos. Hay indicios serios de que los recursos provienen de actividades ilícitas.",
+      "enunciado": "Además de continuar la actuación tributaria, al profesional le corresponde",
+      "opciones": {
+        "A": "limitarse a la liquidación oficial, porque la DIAN no tiene competencia en materia penal.",
+        "B": "enviar a título personal un ROS a la UIAF, porque es la vía prevista para los servidores públicos.",
+        "C": "poner los hechos en conocimiento de la Fiscalía, por los canales internos, en cumplimiento de su deber."
+      },
+      "correcta": "C",
+      "explicacion": "El servidor público tiene el deber de denunciar los delitos que conozca en ejercicio de sus funciones.\n[A] Incorrecta. Que la DIAN no investigue delitos no exime al servidor de su deber de denunciar.\n[B] Incorrecta. El ROS es una obligación de los sujetos obligados del sistema de prevención (entidades financieras, usuarios aduaneros, etc.), no la vía de denuncia del servidor público.\n[C] Correcta. El art. 67 de la Ley 906 de 2004 y la Ley 1952 de 2019 obligan al servidor público a denunciar los delitos de los que tenga conocimiento. Los hechos se ponen en conocimiento de la Fiscalía por los canales internos, sin perjuicio de que la actuación tributaria continúe y de que la DIAN intercambie información con la UIAF.",
+      "norma": "Ley 906 de 2004, art. 67; Ley 1952 de 2019; Ley 526 de 1999",
+      "dificultad": 3,
+      "etiquetas": [
+        "deber de denuncia",
+        "incremento patrimonial",
+        "lavado de activos"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "lavado-activos-029",
+      "contexto": "Una agencia de aduanas aplica exactamente los mismos controles a todos sus clientes: a un importador pequeño de bajo riesgo y a otro que opera con jurisdicciones de alto riesgo, usa intermediarios y tiene operaciones complejas. Su manual dice seguir los estándares internacionales.",
+      "enunciado": "Al profesional le corresponde observar que, según los estándares internacionales, la agencia debe",
+      "opciones": {
+        "A": "aplicar un enfoque basado en riesgo, con medidas más intensas para los clientes de mayor riesgo.",
+        "B": "aplicar los mismos controles a todos, porque cualquier diferencia de trato sería discriminatoria.",
+        "C": "suspender su relación con todos los clientes de alto riesgo, porque el GAFI prohíbe atenderlos."
+      },
+      "correcta": "A",
+      "explicacion": "Las Recomendaciones del GAFI se basan en el enfoque basado en riesgo.\n[A] Correcta. La Recomendación 1 del GAFI exige identificar, evaluar y entender los riesgos, y aplicar un enfoque basado en riesgo: medidas intensificadas de debida diligencia donde el riesgo es mayor y medidas simplificadas donde es menor. Colombia hace parte de GAFILAT, que aplica esos estándares en la región.\n[B] Incorrecta. Aplicar controles diferenciados por nivel de riesgo no es discriminación: es lo que exigen los estándares.\n[C] Incorrecta. El GAFI no prohíbe atender a clientes de alto riesgo; exige gestionar ese riesgo con controles reforzados.",
+      "norma": "Recomendaciones del GAFI (Recomendación 1); GAFILAT",
+      "dificultad": 2,
+      "etiquetas": [
+        "GAFI",
+        "enfoque basado en riesgo",
+        "debida diligencia"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "lavado-activos-030",
+      "contexto": "Un nuevo cliente de una agencia de aduanas es el alcalde de un municipio, que quiere importar maquinaria a través de una sociedad familiar. El oficial de cumplimiento revisa qué procedimiento de conocimiento del cliente debe aplicar.",
+      "enunciado": "Al profesional le corresponde verificar que la agencia",
+      "opciones": {
+        "A": "aplique la debida diligencia simplificada, porque un servidor público ya está sujeto a control fiscal.",
+        "B": "rechace al cliente, porque la regulación prohíbe la vinculación comercial de personas expuestas políticamente.",
+        "C": "aplique la debida diligencia intensificada, con aprobación superior y verificación del origen de los fondos."
+      },
+      "correcta": "C",
+      "explicacion": "Las personas expuestas políticamente (PEP) exigen una debida diligencia intensificada.\n[A] Incorrecta. Ser servidor público no reduce el riesgo; por el contrario, la condición de PEP lo eleva.\n[B] Incorrecta. La regulación no prohíbe vincular PEP: exige controles reforzados.\n[C] Correcta. El Decreto 830 de 2021 y la Recomendación 12 del GAFI exigen para las PEP, sus familiares y asociados cercanos una debida diligencia intensificada: aprobación de la vinculación por una instancia superior, verificación del origen de los fondos y monitoreo continuo y reforzado.",
+      "norma": "Decreto 830 de 2021; Recomendación 12 del GAFI",
+      "dificultad": 2,
+      "etiquetas": [
+        "PEP",
+        "debida diligencia intensificada"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "lavado-activos-031",
+      "contexto": "En control posterior, el profesional encuentra que un importador declara de forma sistemática precios muy inferiores a los del mercado. Los extractos muestran que paga al proveedor solo el valor declarado, mientras en el exterior aparecen pagos adicionales hechos por terceros no identificados, con recursos de origen desconocido.",
+      "enunciado": "Al profesional le corresponde identificar este esquema como",
+      "opciones": {
+        "A": "una simple diferencia de valoración aduanera, que se resuelve con un ajuste de tributos.",
+        "B": "una señal de lavado de activos basado en el comercio, que debe evaluarse y reportarse.",
+        "C": "una práctica comercial válida, porque el importador canalizó el valor que declaró."
+      },
+      "correcta": "B",
+      "explicacion": "La subfacturación con pagos paralelos por terceros es una tipología de lavado basado en el comercio.\n[A] Incorrecta. Hay un problema de valoración, pero los pagos de terceros con recursos de origen desconocido van más allá de un ajuste de tributos.\n[B] Correcta. Las tipologías del GAFI y de la UIAF describen el lavado basado en el comercio: se manipula el valor de las mercancías (sobre o subfacturación) y se completan los pagos por canales paralelos, para mover recursos ilícitos. Además de la liquidación aduanera, debe evaluarse la denuncia penal o la remisión de información según los procedimientos.\n[C] Incorrecta. Canalizar solo una parte del pago, con el resto pagado por terceros, es justamente la señal de alerta.",
+      "norma": "Tipologías GAFI/UIAF de lavado basado en el comercio; Decreto Ley 2245 de 2011",
+      "dificultad": 3,
+      "etiquetas": [
+        "lavado basado en el comercio",
+        "subfacturación",
+        "señales de alerta"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "lavado-activos-032",
+      "contexto": "Una fundación recauda donaciones de origen lícito, totalmente documentadas, entre comerciantes del país. El profesional encuentra que gran parte de esos recursos se gira a una persona incluida en las listas del Consejo de Seguridad de la ONU por vínculos con un grupo terrorista.",
+      "enunciado": "Al profesional le corresponde considerar que",
+      "opciones": {
+        "A": "hay señales de financiación del terrorismo, porque lo relevante es el destino de los recursos.",
+        "B": "es un caso típico de lavado de activos, porque el dinero se transfiere a una persona en el exterior.",
+        "C": "no hay riesgo de financiación del terrorismo, porque el dinero de las donaciones tiene origen lícito."
+      },
+      "correcta": "A",
+      "explicacion": "La financiación del terrorismo puede usar recursos lícitos: lo determinante es su destino.\n[C] Incorrecta. El origen lícito no excluye la financiación del terrorismo.\n[B] Incorrecta. En el lavado, lo central es ocultar el origen ilícito de los recursos; aquí el origen es lícito.\n[A] Correcta. La financiación del terrorismo consiste en proveer o recolectar fondos, de origen lícito o ilícito, para personas o grupos terroristas (art. 345 del Código Penal). Las listas vinculantes de la ONU obligan a congelar y reportar (Recomendación 6 del GAFI). Las fundaciones sin ánimo de lucro tienen riesgos especiales (Recomendación 8).",
+      "norma": "Código Penal, art. 345; Recomendaciones 6 y 8 del GAFI",
+      "dificultad": 3,
+      "etiquetas": [
+        "financiación del terrorismo",
+        "listas vinculantes",
+        "ESAL"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "lavado-activos-033",
+      "contexto": "Un contribuyente fiscalizado se entera de que fue objeto de un ROS y pregunta, alarmado, si la UIAF lo va a sancionar o a llevar ante un juez por ese reporte.",
+      "enunciado": "Al profesional le corresponde tener claro que la UIAF",
+      "opciones": {
+        "A": "analiza la información y entrega inteligencia financiera a las autoridades competentes.",
+        "B": "impone sanciones administrativas a los reportados, cuando no justifican sus operaciones.",
+        "C": "investiga los delitos y acusa ante los jueces a las personas reportadas en un ROS."
+      },
+      "correcta": "A",
+      "explicacion": "La UIAF es una unidad de inteligencia financiera: no investiga penalmente ni sanciona a los reportados.\n[C] Incorrecta. La investigación y la acusación penal corresponden a la Fiscalía General de la Nación.\n[B] Incorrecta. La UIAF no sanciona a los reportados. Las sanciones a los sujetos obligados que incumplen sus deberes las imponen sus supervisores.\n[A] Correcta. La UIAF, creada por la Ley 526 de 1999, centraliza, sistematiza y analiza la información (ROS, reportes objetivos y otras fuentes) y entrega inteligencia financiera a autoridades como la Fiscalía y la DIAN, para que actúen dentro de su competencia. Su información es reservada.",
+      "norma": "Ley 526 de 1999",
+      "dificultad": 2,
+      "etiquetas": [
+        "UIAF",
+        "inteligencia financiera",
+        "ROS"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
     }
   ]
 }

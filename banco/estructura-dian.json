@@ -338,6 +338,147 @@
         "planta global"
       ],
       "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "estructura-dian-019",
+      "contexto": "En una seccional llegan tres asuntos del mismo contribuyente: (1) una solicitud de devolución de un saldo a favor de IVA; (2) una investigación que debe terminar en liquidación oficial de revisión; (3) un recurso de reconsideración contra una sanción ya impuesta.",
+      "enunciado": "Al profesional le corresponde identificar que el asunto (3) lo resuelve el área de",
+      "opciones": {
+        "A": "gestión de ingresos, porque la sanción se traduce en una deuda que debe recaudarse.",
+        "B": "gestión jurídica, porque le corresponde resolver los recursos contra los actos de la DIAN.",
+        "C": "fiscalización y liquidación, porque fue la misma área que profirió el acto sancionatorio."
+      },
+      "correcta": "B",
+      "explicacion": "Cada área misional tiene funciones propias: los recursos se resuelven en un área distinta de la que expidió el acto.\n[A] Incorrecta. Gestión de ingresos tramita el asunto (1), la devolución, además del recaudo y el cobro.\n[B] Correcta. El área de gestión jurídica resuelve los recursos contra los actos de determinación y sanción (Decreto 1742 de 2020). Que el recurso lo decida un área distinta de la que expidió el acto garantiza la revisión imparcial.\n[C] Incorrecta. Fiscalización y liquidación adelanta el asunto (2), pero no resuelve los recursos contra sus propios actos.",
+      "norma": "Decreto 1742 de 2020; Estatuto Tributario, arts. 720 y 721",
+      "dificultad": 2,
+      "etiquetas": [
+        "áreas misionales",
+        "gestión jurídica",
+        "competencia"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "estructura-dian-020",
+      "contexto": "Una liquidación oficial de revisión quedó ejecutoriada y el contribuyente no ha pagado el mayor impuesto ni la sanción. El profesional de fiscalización que la proyectó pregunta si debe iniciar él mismo el embargo de las cuentas del deudor.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que",
+      "opciones": {
+        "A": "el cobro coactivo lo adelanta el área de gestión de ingresos, a la que se remite el acto ejecutoriado.",
+        "B": "el embargo lo decreta el área de fiscalización, porque fue la que determinó el mayor impuesto a pagar.",
+        "C": "el cobro lo adelanta un juez civil, porque la DIAN no tiene facultades para embargar cuentas bancarias."
+      },
+      "correcta": "A",
+      "explicacion": "La determinación y el cobro son funciones de áreas distintas.\n[A] Correcta. El acto ejecutoriado presta mérito ejecutivo (arts. 828 y 829 ET). El cobro, incluido el coactivo, con mandamiento de pago y medidas cautelares como el embargo, corresponde al área de gestión de ingresos (cobranzas) (Decreto 1742 de 2020; arts. 823 y ss. ET).\n[B] Incorrecta. Fiscalización determina la obligación, pero no adelanta el cobro coactivo.\n[C] Incorrecta. La DIAN tiene jurisdicción coactiva propia: no necesita acudir a un juez civil para cobrar.",
+      "norma": "Estatuto Tributario, arts. 823, 828, 829 y 837; Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "cobro coactivo",
+        "gestión de ingresos",
+        "áreas misionales"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "estructura-dian-021",
+      "contexto": "Un aspirante al concurso confunde tres normas: la que fija la estructura de la DIAN, la que regula su sistema específico de carrera y la que adopta el manual de funciones con la ficha AT-FL-3008 del Gestor I.",
+      "enunciado": "Al profesional le corresponde aclararle que esas normas son, en ese orden,",
+      "opciones": {
+        "A": "el Decreto Ley 927 de 2023, el Decreto 1742 de 2020 y la Resolución 067 de 2024.",
+        "B": "el Decreto 1742 de 2020, la Resolución 067 de 2024 y el Decreto Ley 927 de 2023.",
+        "C": "el Decreto 1742 de 2020, el Decreto Ley 927 de 2023 y la Resolución 067 de 2024."
+      },
+      "correcta": "C",
+      "explicacion": "Estructura, carrera y funciones se regulan en normas distintas.\n[A] Incorrecta. Intercambia la norma de estructura con la de carrera.\n[B] Incorrecta. Intercambia la norma de carrera con el manual de funciones.\n[C] Correcta. El Decreto 1742 de 2020 fija la estructura de la DIAN. El Decreto Ley 927 de 2023 regula el sistema específico de carrera administrativa (base del Proceso DIAN 2676). La Resolución 067 de 2024 adopta el Manual Específico de Requisitos y Funciones (MERF), donde está la ficha AT-FL-3008.",
+      "norma": "Decreto 1742 de 2020; Decreto Ley 927 de 2023; Resolución DIAN 067 de 2024",
+      "dificultad": 3,
+      "etiquetas": [
+        "estructura",
+        "carrera administrativa",
+        "MERF"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "estructura-dian-022",
+      "contexto": "En un retén en carretera, uniformados de la Policía Fiscal y Aduanera (POLFA) encuentran un camión con mercancía extranjera sin documentos que acrediten su legal introducción. La aprehenden y elaboran el acta correspondiente.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que, después de la aprehensión,",
+      "opciones": {
+        "A": "la POLFA define directamente el decomiso, porque es una entidad independiente de la DIAN.",
+        "B": "la mercancía debe devolverse, porque la POLFA no hace parte de la estructura de la DIAN.",
+        "C": "el proceso de decomiso lo adelanta y decide la dependencia competente de la DIAN."
+      },
+      "correcta": "C",
+      "explicacion": "La POLFA apoya el control dentro de la DIAN, pero la decisión de fondo la toma la dependencia aduanera competente.\n[A] Incorrecta. La POLFA no es una entidad independiente ni decide el decomiso.\n[B] Incorrecta. La POLFA sí hace parte de la estructura de la DIAN, como dirección de gestión de Policía Fiscal y Aduanera.\n[C] Correcta. La POLFA, integrada por miembros de la Policía Nacional dentro de la estructura de la DIAN (Decreto 1742 de 2020), puede aprehender la mercancía. La pone a disposición de la dependencia competente, que adelanta el proceso de decomiso con las garantías del debido proceso (Decreto 920 de 2023).",
+      "norma": "Decreto 1742 de 2020; Decreto 920 de 2023",
+      "dificultad": 3,
+      "etiquetas": [
+        "POLFA",
+        "aprehensión",
+        "decomiso"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "estructura-dian-023",
+      "contexto": "Un Gestor I de una dirección seccional quiere saber de dónde vienen los programas de fiscalización que ejecuta su división (por ejemplo, el programa de omisos de renta) y quién define sus criterios a nivel nacional.",
+      "enunciado": "Al profesional le corresponde explicar que",
+      "opciones": {
+        "A": "cada seccional diseña con autonomía sus propios programas de fiscalización, sin lineamientos nacionales.",
+        "B": "el nivel central define los programas y lineamientos de fiscalización, que las seccionales ejecutan.",
+        "C": "los programas de fiscalización los define el Ministerio de Hacienda, que los envía a cada seccional."
+      },
+      "correcta": "B",
+      "explicacion": "El nivel central dirige y orienta; el nivel seccional ejecuta en su territorio.\n[A] Incorrecta. Las seccionales tienen margen para seleccionar casos en su jurisdicción, pero dentro de los programas y lineamientos nacionales.\n[B] Correcta. Según el Decreto 1742 de 2020, las direcciones de gestión del nivel central, como la de Fiscalización, fijan las políticas, los programas y los lineamientos. Las direcciones seccionales los ejecutan dentro de su competencia y jurisdicción, como hace el Gestor I.\n[C] Incorrecta. La DIAN está adscrita al Ministerio de Hacienda, pero la programación de la fiscalización es una función de la propia DIAN.",
+      "norma": "Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "niveles",
+        "nivel central",
+        "programas de fiscalización"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "estructura-dian-024",
+      "contexto": "En un puerto, durante el desaduanamiento de un contenedor y antes del levante, un funcionario hace la inspección física de la mercancía y encuentra diferencias con la declaración. Un mes después del levante, otro funcionario investiga al mismo importador por posibles subvaloraciones.",
+      "enunciado": "Al profesional le corresponde identificar que esas actuaciones corresponden, en su orden, a",
+      "opciones": {
+        "A": "la fiscalización aduanera en ambos momentos, porque las dos actuaciones verifican la misma mercancía.",
+        "B": "el control posterior primero y el control simultáneo después, porque el levante cierra la primera etapa.",
+        "C": "la operación aduanera (control simultáneo) y luego la fiscalización aduanera (control posterior)."
+      },
+      "correcta": "C",
+      "explicacion": "El control aduanero se distribuye según su momento: previo, simultáneo y posterior.\n[A] Incorrecta. La inspección durante el desaduanamiento no es fiscalización: es control simultáneo.\n[B] Incorrecta. Invierte los conceptos: antes del levante el control es simultáneo; después, posterior.\n[C] Correcta. La inspección durante el desaduanamiento, antes del levante, es control simultáneo, propio del área de operación aduanera. La investigación después del levante es control posterior, a cargo de la fiscalización aduanera, donde puede ubicarse el Gestor I (Decreto 1165 de 2019; Decreto 1742 de 2020).",
+      "norma": "Decreto 1165 de 2019; Decreto 1742 de 2020",
+      "dificultad": 2,
+      "etiquetas": [
+        "fiscalización aduanera",
+        "operación aduanera",
+        "control simultáneo y posterior"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
+    },
+    {
+      "id": "estructura-dian-025",
+      "contexto": "Una sociedad solicitó la devolución de un saldo a favor de renta. El área de gestión de ingresos, al estudiar la solicitud, encuentra indicios de que unos costos podrían ser inexistentes y decide que se verifique la procedencia del saldo antes de devolverlo.",
+      "enunciado": "Al profesional le corresponde tener en cuenta que",
+      "opciones": {
+        "A": "la investigación previa la adelanta fiscalización, y el término para devolver puede suspenderse hasta 90 días.",
+        "B": "gestión de ingresos debe devolver el saldo en el término normal y solo después pedir que se investigue.",
+        "C": "la investigación la adelanta gestión jurídica, porque debe estudiar si los costos se ajustan a la ley."
+      },
+      "correcta": "A",
+      "explicacion": "Las devoluciones las tramita ingresos, pero la verificación de fondo de un saldo dudoso la hace fiscalización.\n[A] Correcta. Según el art. 857-1 ET, el término para devolver puede suspenderse hasta por 90 días para que, mediante investigación, se verifique la procedencia del saldo a favor, entre otros casos cuando hay un indicio de inexactitud en la declaración, como unos costos inexistentes. La investigación la adelanta el área de fiscalización; gestión de ingresos decide después la devolución con base en sus resultados.\n[B] Incorrecta. La ley permite suspender el término precisamente para no devolver saldos improcedentes.\n[C] Incorrecta. Gestión jurídica resuelve recursos y consultas: no investiga la procedencia de los saldos a favor.",
+      "norma": "Estatuto Tributario, arts. 855 y 857-1; Decreto 1742 de 2020",
+      "dificultad": 3,
+      "etiquetas": [
+        "devoluciones",
+        "gestión de ingresos",
+        "fiscalización",
+        "áreas misionales"
+      ],
+      "origen": "Claude 2026-10-13 – refuerzo avanzado de debilidades"
     }
   ]
 }

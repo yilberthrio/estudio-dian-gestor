@@ -282,6 +282,196 @@
         "control"
       ],
       "origen": "Claude 2026-10-11 – banco v2 (formato PJS)"
+    },
+    {
+      "id": "misionalidad-dian-016",
+      "contexto": "Antes de proponer una sanción, un profesional revisa nuevamente las pruebas del expediente, descarta las suposiciones que no tienen soporte y basa su conclusión solo en la evidencia verificada, sin dejarse influir por la mala reputación del contribuyente.",
+      "enunciado": "Esta actuación refleja el valor aspiracional de la filosofía institucional de la DIAN denominado",
+      "opciones": {
+        "A": "objetividad, simbolizado por la lechuza.",
+        "B": "valentía, simbolizado por el oso de anteojos.",
+        "C": "providencia, simbolizado por el colibrí."
+      },
+      "correcta": "A",
+      "explicacion": "La filosofía institucional de la DIAN tiene cuatro valores aspiracionales, cada uno con un animal como símbolo.\n[A] Correcta. La objetividad (lechuza) se expresa así: «Cumplimos nuestras funciones basándonos en evidencia rigurosa, sin sesgos para fortalecer la confianza de la ciudadanía en la DIAN y en el Estado».\n[B] Incorrecta. La valentía (oso de anteojos) se refiere a luchar contra las economías criminales para garantizar el imperio de la ley en todo el país.\n[C] Incorrecta. La providencia (colibrí) se refiere a anticiparse a las eventualidades y seguir adelante ante los reveses.",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Filosofía Institucional",
+      "dificultad": 2,
+      "etiquetas": [
+        "valores aspiracionales",
+        "filosofía institucional"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-017",
+      "contexto": "En una zona de frontera con fuerte presencia de redes de contrabando, un grupo de la DIAN mantiene los operativos de control pese a las presiones del entorno, para que la ley se cumpla también en ese territorio.",
+      "enunciado": "Esta conducta refleja principalmente el valor aspiracional de la DIAN denominado",
+      "opciones": {
+        "A": "templanza, simbolizada por el jaguar.",
+        "B": "valentía, simbolizada por el oso de anteojos.",
+        "C": "objetividad, simbolizada por la lechuza."
+      },
+      "correcta": "B",
+      "explicacion": "Cada valor aspiracional describe un comportamiento que la DIAN quiere promover en su cultura organizacional.\n[A] Incorrecta. La templanza (jaguar) se refiere a ser sobrios y enfrentar con determinación y buen juicio la lucha contra la evasión y el contrabando. Se relaciona con el caso, pero su énfasis es la sobriedad y el buen juicio, no el enfrentamiento a las economías criminales en todo el territorio.\n[B] Correcta. La valentía (oso de anteojos) se expresa así: «Luchamos contra las economías criminales para garantizar el imperio de la ley en todos los rincones del país».\n[C] Incorrecta. La objetividad (lechuza) se refiere a actuar con base en evidencia rigurosa y sin sesgos.",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Filosofía Institucional",
+      "dificultad": 2,
+      "etiquetas": [
+        "valores aspiracionales",
+        "valentía"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-018",
+      "contexto": "Ante un posible fallo del sistema durante el vencimiento de una obligación masiva, un equipo de la DIAN prepara con anticipación un plan de contingencia. Cuando la falla ocurre, ajusta su trabajo y sigue atendiendo a los contribuyentes.",
+      "enunciado": "Esta conducta refleja el valor aspiracional de la DIAN denominado",
+      "opciones": {
+        "A": "valentía, simbolizada por el oso de anteojos.",
+        "B": "templanza, simbolizada por el jaguar.",
+        "C": "providencia, simbolizada por el colibrí."
+      },
+      "correcta": "C",
+      "explicacion": "La providencia combina la anticipación con la perseverancia.\n[A] Incorrecta. La valentía (oso de anteojos) se refiere a luchar contra las economías criminales para garantizar el imperio de la ley.\n[B] Incorrecta. La templanza (jaguar) se refiere a la sobriedad, la determinación y el buen juicio en la lucha contra la evasión y el contrabando.\n[C] Correcta. La providencia (colibrí) se expresa así: «Nos anticipamos a las eventualidades que puedan sobrevenir y, ante los reveses, continuamos de forma decidida en el cumplimiento de nuestra misión».",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Filosofía Institucional",
+      "dificultad": 2,
+      "etiquetas": [
+        "valores aspiracionales",
+        "providencia"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-019",
+      "contexto": "En una reunión de planeación, el jefe recuerda que el reto definido por la administración es la meta que la entidad debe alcanzar como resultado de todo lo que hace.",
+      "enunciado": "Según la filosofía institucional, la misión que la DIAN se propone cumplir de forma decidida es",
+      "opciones": {
+        "A": "cerrar la brecha tributaria y acabar con el contrabando.",
+        "B": "duplicar el número de funcionarios en todas las seccionales.",
+        "C": "eliminar los impuestos territoriales en el corto plazo."
+      },
+      "correcta": "A",
+      "explicacion": "El objetivo retador es la meta que la administración plantea para un periodo y que da foco a toda la gestión.\n[A] Correcta. La filosofía institucional, en la descripción del valor de providencia, señala que la DIAN continúa «de forma decidida en el cumplimiento de nuestra misión; cerrar la brecha tributaria y acabar con el contrabando». Esa meta orienta el objetivo retador de la administración, que es medible y tiene una línea de llegada definida.\n[B] Incorrecta. Aumentar la planta no es el objetivo retador: es, en todo caso, un medio y no el resultado que se busca.\n[C] Incorrecta. Los impuestos territoriales no los administra la DIAN, y su eliminación no corresponde a su misión.",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Filosofía Institucional y definiciones",
+      "dificultad": 1,
+      "etiquetas": [
+        "objetivo retador",
+        "filosofía institucional"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-020",
+      "contexto": "Un contratista de prestación de servicios que apoya a un grupo de fiscalización cree que el Código de Integridad de la DIAN solo aplica a los funcionarios de carrera y que no está obligado a la capacitación sobre el código.",
+      "enunciado": "Al profesional le corresponde aclararle que el código",
+      "opciones": {
+        "A": "solo aplica a los servidores de carrera administrativa de la entidad.",
+        "B": "aplica a todos los niveles, sin importar el tipo de vinculación.",
+        "C": "aplica solo a los directivos, porque deben dar ejemplo al equipo."
+      },
+      "correcta": "B",
+      "explicacion": "El Código de Integridad de la DIAN tiene un alcance amplio.\n[A] Incorrecta. El código no se limita a los servidores de carrera: cobija también a otros servidores y a los colaboradores.\n[B] Correcta. El código va dirigido a todos los niveles y jerarquías, independientemente del tipo de vinculación con la entidad, y todos los servidores y colaboradores deben cooperar en las actividades de divulgación y adopción de sus valores. Su implementación incluye una capacitación obligatoria para cualquier cargo y modalidad de vinculación.\n[C] Incorrecta. La alta dirección tiene la responsabilidad de impulsar y ejemplificar la gestión íntegra, pero el código aplica a todos, no solo a los directivos.",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Introducción",
+      "dificultad": 2,
+      "etiquetas": [
+        "Código de Integridad",
+        "alcance"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-021",
+      "contexto": "El líder de la política de integridad de la DIAN debe programar la evaluación de cómo los servidores han apropiado las pautas del Código de Integridad.",
+      "enunciado": "Según el código, a este líder le corresponde realizar diagnósticos de apropiación",
+      "opciones": {
+        "A": "como mínimo cada dos años, divulgando sus resultados para orientar la mejora.",
+        "B": "solo cuando se presente una investigación disciplinaria en alguna dependencia.",
+        "C": "una única vez, al momento de adoptar la versión vigente del Código de Integridad."
+      },
+      "correcta": "A",
+      "explicacion": "La implementación del código incluye capacitación y evaluación periódica.\n[A] Correcta. El código establece que el líder de la política de integridad realizará diagnósticos mínimo bianuales (al menos cada dos años), cuyos resultados se divulgan y orientan la planeación y la mejora continua. Además, cada dependencia debe tener al menos un indicador que mida la puesta en marcha de las acciones.\n[B] Incorrecta. Los diagnósticos son periódicos y preventivos; no dependen de que existan investigaciones disciplinarias.\n[C] Incorrecta. La evaluación no se hace una sola vez: el código prevé un seguimiento continuo.",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Introducción (implementación)",
+      "dificultad": 3,
+      "etiquetas": [
+        "Código de Integridad",
+        "implementación"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-022",
+      "contexto": "Un profesional enfrenta un dilema ético: le asignan un caso en el que tiene un posible interés personal y no sabe cómo proceder.",
+      "enunciado": "Además del Código de Integridad, al profesional le corresponde consultar el instrumento que lo complementa en estos casos, que es",
+      "opciones": {
+        "A": "la Tabla de Retención Documental de su dependencia asignada.",
+        "B": "el Manual Específico de Requisitos y Funciones de la DIAN.",
+        "C": "la Guía para la Gestión y Trámite del Conflicto de Interés."
+      },
+      "correcta": "C",
+      "explicacion": "El código se complementa con instrumentos para afrontar los retos éticos.\n[C] Correcta. El Código de Integridad de la DIAN señala que se complementa con la Filosofía Institucional y con la Guía para la Gestión y Trámite del Conflicto de Interés, que orientan a los servidores ante los retos éticos de sus labores. Una de sus pautas de honestidad es apartarse de los asuntos en los que haya conflicto entre el interés general y el particular.\n[B] Incorrecta. El MERF define las funciones y requisitos de cada empleo, pero no regula el trámite de los conflictos de interés.\n[A] Incorrecta. La TRD es un instrumento archivístico, sin relación con los dilemas éticos.",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3); Ley 1437 de 2011, arts. 11 y 12",
+      "dificultad": 2,
+      "etiquetas": [
+        "conflicto de intereses",
+        "Código de Integridad"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-023",
+      "contexto": "Un compañero le pide a un profesional que registre con su carné el ingreso de él a la sede, porque llegará tarde por un asunto personal.",
+      "enunciado": "Conforme a las pautas del Código de Integridad de la DIAN, al profesional le corresponde",
+      "opciones": {
+        "A": "hacerle el favor, siempre que el compañero reponga el tiempo al final del día.",
+        "B": "negarse, porque no se presta el carné ni se simula el registro de otro funcionario.",
+        "C": "hacerle el favor solo una vez, advirtiéndole que no puede repetirse en el futuro."
+      },
+      "correcta": "B",
+      "explicacion": "El código incluye pautas concretas sobre el uso de la identificación institucional.\n[A] Incorrecta. Reponer el tiempo no corrige la conducta: simular un registro de ingreso falsea la información de la entidad.\n[B] Correcta. Entre las pautas de honestidad, el código establece: «No presto ni facilito mi carné de identificación; no uso la identificación de otro funcionario o de otra persona para simular el registro de ingreso y/o salida a laborar».\n[C] Incorrecta. La pauta no admite excepciones ocasionales: hacerlo una sola vez sigue siendo una conducta contraria a la honestidad.",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Honestidad, lo que no hago",
+      "dificultad": 1,
+      "etiquetas": [
+        "honestidad",
+        "pautas de integridad"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-024",
+      "contexto": "En una capacitación sobre la filosofía institucional se explica que hay un elemento que guía todas las acciones de la DIAN, es la razón de por qué se hacen las cosas y sirve como referente para decidir si una iniciativa aporta o no a la entidad.",
+      "enunciado": "Al profesional le corresponde identificar que esta descripción corresponde",
+      "opciones": {
+        "A": "al objetivo retador de la administración.",
+        "B": "al propósito central de la ideología.",
+        "C": "a los valores aspiracionales de la cultura."
+      },
+      "correcta": "B",
+      "explicacion": "La filosofía institucional de la DIAN tiene una ideología central (propósito central y valores aspiracionales) y una visión (objetivo retador y descripción vívida).\n[A] Incorrecta. El objetivo retador es la meta que la administración plantea para un periodo definido: medible y con una línea de llegada.\n[B] Correcta. El propósito central «guía todas las acciones de la DIAN, es la razón de por qué se hacen las cosas» y se usa como referente para decidir si lo que emprende la entidad aporta o no a ese propósito.\n[C] Incorrecta. Los valores aspiracionales definen los comportamientos que se desean promover en el día a día de los colaboradores.",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Filosofía Institucional y definiciones",
+      "dificultad": 2,
+      "etiquetas": [
+        "propósito central",
+        "filosofía institucional"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
+    },
+    {
+      "id": "misionalidad-dian-025",
+      "contexto": "En la revisión de un caso de contrabando, un profesional mantiene la calma frente a las provocaciones del investigado, evita excesos en la diligencia y actúa con firmeza y buen juicio hasta terminarla.",
+      "enunciado": "Esta conducta refleja el valor aspiracional de la DIAN denominado",
+      "opciones": {
+        "A": "providencia, simbolizada por el colibrí.",
+        "B": "objetividad, simbolizada por la lechuza.",
+        "C": "templanza, simbolizada por el jaguar."
+      },
+      "correcta": "C",
+      "explicacion": "La templanza combina sobriedad con determinación.\n[A] Incorrecta. La providencia (colibrí) se refiere a anticiparse a las eventualidades y continuar ante los reveses.\n[B] Incorrecta. La objetividad (lechuza) se refiere a basar las actuaciones en evidencia rigurosa y sin sesgos.\n[C] Correcta. La templanza (jaguar) se expresa así: «Somos sobrios y enfrentamos con determinación y buen juicio la lucha contra la evasión y el contrabando, generando los recursos necesarios para el sostenimiento del Estado social de derecho».",
+      "norma": "Código de Integridad DIAN (CG-TAH-0002 v3) – Filosofía Institucional",
+      "dificultad": 2,
+      "etiquetas": [
+        "valores aspiracionales",
+        "templanza"
+      ],
+      "origen": "Claude 2026-10-13 – Código de Integridad DIAN (CG-TAH-0002 v3) y filosofía institucional"
     }
   ]
 }

@@ -212,12 +212,243 @@ def guardar_snapshot(con, ronda_id):
                         "VALUES (?,?,?,?,?,?)", (fecha, ronda_id, s["id"], s["respuestas"], s["pct"], s["dominio"]))
 
 
+# ---------------------------------------------------------------- Análisis profundo
+
+VENTANA_PROYECCION = 30   # últimas respuestas por indicador que entran en la proyección
+VENTANA_CURVA = 20        # respuestas de la media móvil de la curva de aprendizaje
+TRAMOS_TIEMPO = [(0, 15, "< 15 s"), (15, 30, "15–30 s"), (30, 60, "30–60 s"), (60, 120, "1–2 min"), (120, None, "> 2 min")]
+NOMBRES_DIFICULTAD = {1: "Básica", 2: "Aplicación", 3: "Caso complejo"}
+
+
+def wilson(k, n, z=1.96):
+    """Intervalo de confianza del 95% para un porcentaje de acierto (método de Wilson)."""
+    if not n:
+        return None, None
+    p = k / n
+    d = 1 + z * z / n
+    c = (p + z * z / (2 * n)) / d
+    h = z * ((p * (1 - p) / n + z * z / (4 * n * n)) ** 0.5) / d
+    return round(100 * max(0.0, c - h), 1), round(100 * min(1.0, c + h), 1)
+
+
+def _respuestas_vigentes(con):
+    """Respuestas de preguntas de indicadores vigentes, de la más antigua a la más reciente."""
+    return [dict(r) for r in con.execute("""
+        SELECT r.id, r.pregunta_id, r.correcta, r.confianza, r.tiempo_seg, r.fecha,
+               p.dificultad, p.etiquetas, p.sesion_id, s.nombre AS sesion
+        FROM respuestas r JOIN preguntas p ON p.id=r.pregunta_id JOIN sesiones s ON s.id=p.sesion_id
+        WHERE s.vigente=1 ORDER BY r.fecha, r.id""")]
+
+
+def proyeccion(con, sesiones=None):
+    """Puntaje estimado en la prueba funcional: acierto reciente de cada indicador ponderado por su peso
+    (la misma estructura del simulacro oficial), con margen de error y los puntos que se pierden frente a la meta."""
+    cfg = config(con)
+    meta, minimo = float(cfg["meta_puntaje"]), float(cfg["puntaje_minimo"])
+    minimo_n = int(cfg["minimo_respuestas_analisis"])
+    sesiones = sesiones or por_sesion(con)
+    pesos = {r["id"]: r["peso"] or 1 for r in con.execute("SELECT id, peso FROM sesiones WHERE vigente=1")}
+    recientes = defaultdict(list)
+    for r in reversed(_respuestas_vigentes(con)):
+        if len(recientes[r["sesion_id"]]) < VENTANA_PROYECCION:
+            recientes[r["sesion_id"]].append(r["correcta"])
+    peso_total = sum(pesos.get(s["id"], 1) for s in sesiones) or 1
+    filas, suma, peso_datos, var = [], 0.0, 0, 0.0
+    for s in sesiones:
+        w = pesos.get(s["id"], 1)
+        lista = recientes.get(s["id"], [])
+        n = len(lista)
+        p = pct(sum(lista), n) if n >= minimo_n else None
+        lo, hi = wilson(sum(lista), n) if n >= minimo_n else (None, None)
+        brecha = round(w / peso_total * max(0.0, meta - p), 2) if p is not None else None
+        filas.append({"id": s["id"], "nombre": s["nombre"], "codigo": s["codigo"], "peso": w,
+                      "peso_pct": round(100 * w / peso_total, 1), "n": n, "pct": p, "lo": lo, "hi": hi,
+                      "brecha": brecha, "estado": s["estado"], "estado_txt": s["estado_txt"]})
+        if p is not None:
+            suma += w * p
+            peso_datos += w
+            var += (w ** 2) * (p / 100) * (1 - p / 100) / n
+    puntaje = round(suma / peso_datos, 1) if peso_datos else None
+    margen = round(196 * (var ** 0.5) / peso_datos, 1) if peso_datos else None
+    prioridad = sorted([f for f in filas if f["brecha"]], key=lambda f: -f["brecha"])
+    sin_datos = [f for f in filas if f["pct"] is None]
+    # Lo que ganarías llevando a la meta las tres prioridades principales
+    ganancia_top3 = round(sum(f["brecha"] for f in prioridad[:3]) * peso_total / peso_datos, 1) if peso_datos else None
+    return {"puntaje": puntaje, "margen": margen, "meta": meta, "minimo": minimo,
+            "cobertura_peso": round(100 * peso_datos / peso_total, 1), "filas": filas,
+            "prioridad": prioridad, "sin_datos": sin_datos, "ganancia_top3": ganancia_top3,
+            "ventana": VENTANA_PROYECCION}
+
+
+def curva_aprendizaje(con, resp=None):
+    """Media móvil del acierto sobre las últimas VENTANA_CURVA respuestas, en el orden en que respondiste."""
+    resp = resp if resp is not None else _respuestas_vigentes(con)
+    out, ventana = [], []
+    paso = max(1, len(resp) // 150)  # no más de ~150 puntos en la gráfica
+    for i, r in enumerate(resp, 1):
+        ventana.append(r["correcta"])
+        if len(ventana) > VENTANA_CURVA:
+            ventana.pop(0)
+        if (i % paso == 0 or i == len(resp)) and len(ventana) >= min(10, len(resp)):
+            out.append({"i": i, "v": pct(sum(ventana), len(ventana)), "fecha": r["fecha"][:10]})
+    return out
+
+
+def por_dia(con, resp=None):
+    resp = resp if resp is not None else _respuestas_vigentes(con)
+    dias = {}
+    for r in resp:
+        d = dias.setdefault(r["fecha"][:10], {"fecha": r["fecha"][:10], "n": 0, "ok": 0, "seg": 0.0})
+        d["n"] += 1
+        d["ok"] += r["correcta"]
+        d["seg"] += r["tiempo_seg"] or 0
+    out = []
+    for d in dias.values():
+        out.append({**d, "pct": pct(d["ok"], d["n"]), "minutos": round(d["seg"] / 60, 1)})
+    return out
+
+
+def _grupo(resp, clave, orden, nombres):
+    out = []
+    for k in orden:
+        sub = [r for r in resp if clave(r) == k]
+        ok = sum(r["correcta"] for r in sub)
+        lo, hi = wilson(ok, len(sub))
+        out.append({"clave": k, "nombre": nombres[k], "n": len(sub), "ok": ok, "pct": pct(ok, len(sub)),
+                    "lo": lo, "hi": hi})
+    return out
+
+
+def por_dificultad(resp):
+    return _grupo(resp, lambda r: r["dificultad"] or 2, [1, 2, 3], NOMBRES_DIFICULTAD)
+
+
+def por_tiempo(resp):
+    def tramo(r):
+        t = r["tiempo_seg"] or 0
+        return next(i for i, (a, b, _) in enumerate(TRAMOS_TIEMPO) if t >= a and (b is None or t < b))
+    return _grupo(resp, tramo, range(len(TRAMOS_TIEMPO)), {i: t[2] for i, t in enumerate(TRAMOS_TIEMPO)})
+
+
+def ritmo(con, resp):
+    """Tiempo por pregunta frente al presupuesto de la prueba real (minutos del simulacro ÷ preguntas)."""
+    cfg = config(con)
+    n_prueba, min_prueba = int(cfg["simulacro_oficial_preguntas"]), float(cfg["simulacro_oficial_minutos"])
+    tiempos = sorted(r["tiempo_seg"] for r in resp if r["tiempo_seg"])
+    if not tiempos:
+        return None
+    mediana = tiempos[len(tiempos) // 2]
+    media = sum(tiempos) / len(tiempos)
+    return {"media": round(media), "mediana": round(mediana), "presupuesto": round(60 * min_prueba / n_prueba),
+            "minutos_prueba": round(media * n_prueba / 60), "minutos_disponibles": round(min_prueba),
+            "n_prueba": n_prueba}
+
+
+def retencion(resp):
+    """Qué pasa cuando vuelves a ver una pregunta: transiciones entre intentos consecutivos."""
+    por_pregunta = defaultdict(list)
+    for r in resp:
+        por_pregunta[r["pregunta_id"]].append(r["correcta"])
+    t = {"recuperadas": 0, "persistentes": 0, "olvidadas": 0, "consolidadas": 0}
+    primero = [v[0] for v in por_pregunta.values()]
+    repetidos = [c for v in por_pregunta.values() for c in v[1:]]
+    for v in por_pregunta.values():
+        for a, b in zip(v, v[1:]):
+            t[{(0, 1): "recuperadas", (0, 0): "persistentes", (1, 0): "olvidadas", (1, 1): "consolidadas"}[(a, b)]] += 1
+    return {**t, "transiciones": sum(t.values()),
+            "pct_primero": pct(sum(primero), len(primero)), "n_primero": len(primero),
+            "pct_repetido": pct(sum(repetidos), len(repetidos)), "n_repetido": len(repetidos),
+            "repetidas": sum(1 for v in por_pregunta.values() if len(v) > 1)}
+
+
+def leitner_cajas(con):
+    cajas = {r["caja"]: r["n"] for r in con.execute(
+        "SELECT l.caja, COUNT(*) n FROM leitner l JOIN preguntas p ON p.id=l.pregunta_id "
+        "JOIN sesiones s ON s.id=p.sesion_id WHERE p.activa=1 AND s.vigente=1 GROUP BY l.caja")}
+    nunca = con.execute(
+        "SELECT COUNT(*) FROM preguntas p JOIN sesiones s ON s.id=p.sesion_id WHERE p.activa=1 AND s.vigente=1 "
+        "AND p.id NOT IN (SELECT pregunta_id FROM leitner)").fetchone()[0]
+    return {"nunca": nunca, "cajas": [{"caja": c, "n": cajas.get(c, 0), "dias": INTERVALOS_LEITNER[c]} for c in range(1, 6)]}
+
+
+def por_etiqueta(resp, minimo=3):
+    """Acierto por subtema (etiqueta de la pregunta): señala la confusión concreta dentro de cada indicador."""
+    grupos = defaultdict(lambda: {"n": 0, "ok": 0, "sesiones": defaultdict(int), "texto": None})
+    for r in resp:
+        for x in {x.strip() for x in (r["etiquetas"] or "").split(",") if x.strip()}:
+            g = grupos[x.lower()]
+            g["texto"] = g["texto"] or x
+            g["n"] += 1
+            g["ok"] += r["correcta"]
+            g["sesiones"][r["sesion"]] += 1
+    out = []
+    for e, g in grupos.items():
+        if g["n"] >= minimo:
+            lo, hi = wilson(g["ok"], g["n"])
+            out.append({"etiqueta": g["texto"], "n": g["n"], "ok": g["ok"], "pct": pct(g["ok"], g["n"]), "lo": lo, "hi": hi,
+                        "sesion": max(g["sesiones"], key=g["sesiones"].get)})
+    debiles = sorted(out, key=lambda x: (x["pct"], -x["n"]))
+    fuertes = sorted([x for x in out if x["pct"] >= 90], key=lambda x: (-x["pct"], -x["n"]))
+    return {"debiles": debiles[:15], "fuertes": fuertes[:10], "total": len(out)}
+
+
+def confianza_indicadores(calib, g):
+    seg = next(c for c in calib if c["confianza"] == "seguro")
+    errores = g["errores"] or 0
+    errores_seguro = seg["n"] - seg["ok"]
+    aciertos = g["aciertos"] or 0
+    aciertos_dudosos = sum(c["ok"] for c in calib if c["confianza"] != "seguro")
+    return {"exceso": pct(errores_seguro, errores), "errores_seguro": errores_seguro,
+            "fragil": pct(aciertos_dudosos, aciertos), "aciertos_dudosos": aciertos_dudosos,
+            "pct_seguro": seg["pct"]}
+
+
+def analisis_completo(con):
+    sesiones = por_sesion(con)
+    g = resumen_global(con)
+    calib = calibracion(con)
+    resp = _respuestas_vigentes(con)
+    cfg = config(con)
+    dias = (date.fromisoformat(cfg["fecha_prueba"]) - date.today()).days
+    dias_estudio = len({r["fecha"][:10] for r in resp})
+    return {"sesiones": sesiones, "g": g, "calib": calib, "proy": proyeccion(con, sesiones),
+            "curva": curva_aprendizaje(con, resp), "dias": por_dia(con, resp),
+            "dificultad": por_dificultad(resp), "tiempo": por_tiempo(resp), "ritmo": ritmo(con, resp),
+            "retencion": retencion(resp), "leitner": leitner_cajas(con), "etiquetas": por_etiqueta(resp),
+            "conf": confianza_indicadores(calib, g), "dias_prueba": max(dias, 0),
+            "nuevas_por_dia": -(-g["nunca_vistas"] // dias) if dias > 0 else None,
+            "promedio_dia": round(len(resp) / dias_estudio) if dias_estudio else 0}
+
+
 # ---------------------------------------------------------------- Informe
 
-def recomendaciones(sesiones, g, calib):
+def recomendaciones(sesiones, g, calib, extra=None):
     recs = []
+    if extra:
+        p = extra["proy"]
+        if p["puntaje"] is not None:
+            frente = ("supera la meta" if p["puntaje"] >= p["meta"] else
+                      "aprueba pero está bajo la meta" if p["puntaje"] >= p["minimo"] else "está bajo el mínimo aprobatorio")
+            recs.append(f"Tu puntaje estimado en la prueba funcional es **{p['puntaje']}** (±{p['margen']}): {frente} "
+                        f"({p['minimo']:g} mínimo, {p['meta']:g} meta).")
+        if p["prioridad"]:
+            top = ", ".join(f"{f['nombre']} ({f['pct']:g}%)" for f in p["prioridad"][:3])
+            recs.append(f"Donde más puntos ganas: {top}. Llevarlos a la meta sumaría unos **{p['ganancia_top3']:g} puntos** al estimado.")
+        if p["sin_datos"]:
+            recs.append("El estimado no incluye " + ", ".join(f["nombre"] for f in p["sin_datos"])
+                        + f": te faltan respuestas allí ({p['cobertura_peso']:g}% del peso de la prueba tiene datos).")
+        deb = [e for e in extra["etiquetas"]["debiles"] if e["pct"] < 60][:4]
+        if deb:
+            recs.append("Subtemas concretos que más fallas: " + ", ".join(f"{e['etiqueta']} ({e['pct']:g}% en {e['n']})" for e in deb) + ".")
+        ret = extra["retencion"]
+        if ret["persistentes"] >= 3:
+            recs.append(f"{ret['persistentes']} veces volviste a fallar una pregunta que ya habías fallado: "
+                        "antes de repetirla, relee la explicación y la norma citada.")
+        if extra["nuevas_por_dia"]:
+            recs.append(f"Para ver todo el banco antes de la prueba necesitas unas **{extra['nuevas_por_dia']} preguntas nuevas por día** "
+                        f"(hoy promedias {extra['promedio_dia']} respuestas por día de estudio).")
     debiles = sorted([s for s in sesiones if s["estado"] == "debilidad"], key=lambda s: s["dominio"])
-    for s in debiles[:3]:
+    for s in ([] if extra else debiles[:3]):  # con el análisis completo, la prioridad por puntos ya las cubre
         recs.append(f"Prioriza **{s['nombre']}** (dominio {s['dominio']}%). Haz rondas de solo esa sesión y pide preguntas nuevas sobre ella.")
     sin_datos = [s for s in sesiones if s["estado"] == "sin-datos" and s["banco"] > 0]
     if sin_datos:
@@ -246,6 +477,8 @@ def generar_informe_md(con):
     fall = mas_falladas(con, 10)
     seg = errores_con_seguridad(con, 10)
     hist = historial_snapshots(con)
+    a = analisis_completo(con)
+    p, ret, rit = a["proy"], a["retencion"], a["ritmo"]
     L = [f"# Informe de estudio – Concurso DIAN 2676, Gestor I (empleo 236767)",
          f"_Generado: {datetime.now():%Y-%m-%d %H:%M}_", "",
          "## Resumen general", "",
@@ -253,7 +486,30 @@ def generar_informe_md(con):
          f"- Respuestas totales: **{g['respuestas']}** en {g['rondas']} rondas, {g['dias']} días de estudio (racha actual: {g['racha']})",
          f"- Acierto: **{g['pct'] if g['pct'] is not None else '–'}%** · Error: {g['pct_error'] if g['pct_error'] is not None else '–'}%",
          f"- Tiempo promedio por pregunta: {g['tiempo'] or '–'} s", ""]
-    L += ["## Recomendaciones", ""] + [f"- {r}" for r in recomendaciones(sesiones, g, calib)] + [""]
+    if p["puntaje"] is not None:
+        L += ["## Puntaje estimado en la prueba funcional", "",
+              f"- Estimado: **{p['puntaje']}** ± {p['margen']} (mínimo {p['minimo']:g}, meta {p['meta']:g}); "
+              f"últimas {p['ventana']} respuestas de cada indicador, ponderadas por su peso. "
+              f"Peso con datos: {p['cobertura_peso']}%.", ""]
+        if p["prioridad"]:
+            L += ["| Prioridad | Indicador | Peso | Acierto reciente | Puntos que pierdes frente a la meta |", "|---|---|---|---|---|"]
+            L += [f"| {i} | {f['nombre']} | {f['peso_pct']}% | {f['pct']}% (n={f['n']}) | {f['brecha']} |"
+                  for i, f in enumerate(p["prioridad"], 1)] + [""]
+    L += ["## Recomendaciones", ""] + [f"- {r}" for r in recomendaciones(sesiones, g, calib, a)] + [""]
+    if a["etiquetas"]["debiles"]:
+        L += ["## Subtemas más débiles (etiquetas con al menos 3 respuestas)", "",
+              "| Subtema | Indicador | Respuestas | % acierto |", "|---|---|---|---|"]
+        L += [f"| {e['etiqueta']} | {e['sesion']} | {e['n']} | {e['pct']}% |" for e in a["etiquetas"]["debiles"]] + [""]
+    L += ["## Retención y ritmo", "",
+          f"- Acierto en el primer intento: {ret['pct_primero'] if ret['pct_primero'] is not None else '–'}% "
+          f"(n={ret['n_primero']}) · en repeticiones: {ret['pct_repetido'] if ret['pct_repetido'] is not None else '–'}% (n={ret['n_repetido']})",
+          f"- Al repetir: {ret['recuperadas']} recuperadas, {ret['persistentes']} persistentes, "
+          f"{ret['olvidadas']} olvidadas, {ret['consolidadas']} consolidadas"]
+    if rit:
+        L.append(f"- Ritmo: {rit['media']} s por pregunta (mediana {rit['mediana']} s); presupuesto de la prueba "
+                 f"{rit['presupuesto']} s. A ese ritmo, las {rit['n_prueba']} preguntas toman ~{rit['minutos_prueba']} de {rit['minutos_disponibles']} min.")
+    L += ["- Acierto por dificultad: " + " · ".join(f"{d['nombre']} {d['pct'] if d['pct'] is not None else '–'}% (n={d['n']})"
+                                                     for d in a["dificultad"]), ""]
     for estado, titulo in (("debilidad", "Debilidades"), ("en-desarrollo", "En desarrollo"), ("fortaleza", "Fortalezas")):
         grupo = sorted([s for s in sesiones if s["estado"] == estado], key=lambda s: s["dominio"])
         L += [f"## {titulo}", ""]

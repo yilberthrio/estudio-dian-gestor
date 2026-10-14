@@ -7,9 +7,8 @@ respaldos/
 # Área de trabajo para importar preguntas (lo importado queda en banco/)
 preguntas/
 
-# Archivos de referencia locales
-Manual.pdf
-Proposito.txt
+# Documentos de referencia locales (guía, indicadores con número de inscripción, código de integridad, manual)
+documentos/
 *.pdf
 
 __pycache__/

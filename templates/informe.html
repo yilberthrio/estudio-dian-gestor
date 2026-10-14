@@ -1,24 +1,163 @@
 {% extends "base.html" %}
 {% from "_macros.html" import barra %}
-{% block titulo %}Fortalezas y debilidades · Estudio DIAN{% endblock %}
+{% block titulo %}Análisis · Estudio DIAN{% endblock %}
 {% block contenido %}
+{% set p = a.proy %}
+{% set minimo = cfg.puntaje_minimo|float %}{% set meta = cfg.meta_puntaje|float %}
+
 <div class="ronda-top">
-  <h1 style="margin:0">Fortalezas y debilidades</h1>
+  <h1 style="margin:0">Análisis de tu preparación</h1>
   <div class="acciones">
     <a class="btn" href="{{ url_for('informe_md') }}">⬇ Descargar informe (.md)</a>
     <a class="btn prim" href="{{ url_for('nueva_ronda', modo='debilidades') }}">▶ Ronda enfocada en debilidades</a>
   </div>
 </div>
-<p class="suave peq">Clasificación por <b>dominio</b> (acierto ponderado: lo reciente pesa más y los aciertos dudosos o adivinados valen menos).
-  Fortaleza ≥ {{ cfg.umbral_fortaleza }}% · Debilidad &lt; {{ cfg.umbral_debilidad }}% · mínimo {{ cfg.minimo_respuestas_analisis }} respuestas por sesión.
-  Copia guardada en <code>informes/ultimo_informe.md</code>.</p>
+<p class="indice">Ir a:
+  <a href="#proyeccion">Puntaje estimado</a><a href="#prioridad">Dónde ganar puntos</a><a href="#evolucion">Evolución</a>
+  <a href="#calidad">Calidad de las respuestas</a><a href="#memoria">Memoria y repaso</a><a href="#subtemas">Subtemas</a>
+  <a href="#estados">Fortalezas y debilidades</a><a href="#errores">Errores</a></p>
 
-<div class="panel" style="margin-bottom:14px">
-  <h3>Recomendaciones</h3>
-  <ul style="margin:0; padding-left:20px">{% for r in recs %}<li>{{ r|replace('**', '') }}</li>{% endfor %}</ul>
+{% if not g.respuestas %}
+<div class="panel vacio">Aún no tienes respuestas. Haz tu primera ronda y aquí verás tu análisis.</div>
+{% else %}
+
+<!-- 1. Puntaje estimado -->
+<div class="panel" id="proyeccion">
+  <div class="hero">
+    <div>
+      <div class="suave peq">Puntaje estimado en la prueba funcional</div>
+      <div class="cifra">{{ p.puntaje|num }}<small> ± {{ p.margen|num }}</small></div>
+      <div style="margin-top:6px">
+        {% if p.puntaje is none %}<span class="chip gris">Sin datos suficientes</span>
+        {% elif p.puntaje >= meta %}<span class="chip ok">✔ Supera la meta</span>
+        {% elif p.puntaje >= minimo %}<span class="chip medio">▲ Aprueba, bajo la meta</span>
+        {% else %}<span class="chip mal">✖ Bajo el mínimo</span>{% endif %}
+      </div>
+    </div>
+    <div>
+      {% if p.puntaje is not none %}
+      {% macro x(v) %}{{ ((([v, 40]|max) - 40) / 60 * 100)|round(2) }}%{% endmacro %}
+      <div class="escala" role="img" aria-label="Puntaje estimado {{ p.puntaje }} con margen de {{ p.margen }}, mínimo {{ minimo }} y meta {{ meta }}">
+        <div class="rango" style="left:{{ x(p.puntaje - p.margen) }}; width:calc({{ x([p.puntaje + p.margen, 100]|min) }} - {{ x(p.puntaje - p.margen) }})"></div>
+        <div class="marca-e" style="left:{{ x(minimo) }}"><span>Mínimo {{ minimo|num }}</span></div>
+        <div class="marca-e" style="left:{{ x(meta) }}"><span>Meta {{ meta|num }}</span></div>
+        <div class="punto-e" style="left:{{ x(p.puntaje) }}" data-tt="Estimado {{ p.puntaje }} · rango probable {{ (p.puntaje - p.margen)|round(1) }}–{{ ([p.puntaje + p.margen, 100]|min)|round(1) }}" tabindex="0"></div>
+        {% for v in [40, 50, 60, 70, 80, 90, 100] %}<span class="eje-e" style="left:{{ x(v) }}">{{ v }}</span>{% endfor %}
+      </div>
+      {% endif %}
+      <p class="nota" style="margin-top:28px">Se calcula con tus últimas {{ p.ventana }} respuestas de cada indicador, ponderadas por el peso que tiene en la prueba
+        (la misma estructura del simulacro oficial). La franja muestra el rango probable (95%): se angosta a medida que respondes más.
+        {% if p.cobertura_peso < 100 %}Solo el {{ p.cobertura_peso }}% del peso de la prueba tiene datos suficientes.{% endif %}
+        Es una estimación en % de acierto, no el puntaje oficial calificado por la CNSC.</p>
+    </div>
+  </div>
 </div>
 
+<div class="grid kpis" style="margin-top:14px">
+  <div class="panel kpi"><div class="l">Acierto global</div><div class="v">{{ g.pct|num('%') }}</div><div class="s">{{ g.aciertos }} de {{ g.respuestas }} respuestas</div></div>
+  <div class="panel kpi"><div class="l">Banco recorrido</div><div class="v">{{ g.cobertura|num('%') }}</div><div class="s">{{ g.nunca_vistas }} preguntas nunca vistas</div></div>
+  <div class="panel kpi"><div class="l">Días para la prueba</div><div class="v">{{ a.dias_prueba }}</div><div class="s">{{ cfg.fecha_prueba }}</div></div>
+  <div class="panel kpi"><div class="l">Nuevas por día para ver todo</div><div class="v">{{ a.nuevas_por_dia if a.nuevas_por_dia is not none else '–' }}</div><div class="s">hoy promedias {{ a.promedio_dia }} resp./día</div></div>
+  <div class="panel kpi"><div class="l">Primer intento → repetición</div><div class="v">{{ a.retencion.pct_primero|num('%') }} → {{ a.retencion.pct_repetido|num('%') }}</div><div class="s">acierto la 1.ª vez vs. al repetir</div></div>
+  <div class="panel kpi"><div class="l">Exceso de confianza</div><div class="v">{{ a.conf.exceso|num('%') }}</div><div class="s">de tus errores los marcaste «Seguro»</div></div>
+</div>
+
+<div class="panel" style="margin-top:14px">
+  <h3>Qué hacer ahora</h3>
+  <ul style="margin:0; padding-left:20px">{% for r in recs %}<li>{{ r|replace('**', '')|replace('*', '') }}</li>{% endfor %}</ul>
+</div>
+
+<!-- 2. Prioridad -->
+<div class="seccion-t" id="prioridad"><h2>Dónde ganar puntos</h2></div>
 <div class="grid dos">
+  <div class="panel">
+    <h3>Puntos que pierdes frente a la meta</h3>
+    <p class="peq suave">Combina el peso del indicador en la prueba con lo que te falta para llegar a {{ meta|num }}. Arriba está lo que más puntos te devuelve.</p>
+    <div id="g-prioridad"></div>
+    {% if p.ganancia_top3 %}<p class="nota">Llevar las tres primeras a la meta sumaría unos <b>{{ p.ganancia_top3|num }} puntos</b> a tu estimado.</p>{% endif %}
+  </div>
+  <div class="panel">
+    <h3>Acierto reciente por indicador</h3>
+    <p class="peq suave">La barra es tu acierto en las últimas {{ p.ventana }} respuestas; la línea fina, el rango probable (95%). Líneas punteadas: mínimo y meta.</p>
+    <div id="g-indicadores"></div>
+  </div>
+</div>
+
+<!-- 3. Evolución -->
+<div class="seccion-t" id="evolucion"><h2>Evolución</h2></div>
+<div class="panel">
+  <h3>Curva de aprendizaje</h3>
+  <p class="peq suave">Acierto de tus últimas 20 respuestas, en el orden en que respondiste. Si la curva sube, estás aprendiendo; si se estanca, cambia de estrategia (repaso o preguntas nuevas).</p>
+  <div id="g-curva"></div>
+</div>
+<div class="grid dos" style="margin-top:14px">
+  <div class="panel"><h3>Respuestas por día</h3><div id="g-dias-n"></div></div>
+  <div class="panel"><h3>Acierto por día</h3><div id="g-dias-pct"></div></div>
+</div>
+
+<!-- 4. Calidad -->
+<div class="seccion-t" id="calidad"><h2>Calidad de las respuestas</h2></div>
+<div class="grid tres">
+  <div class="panel">
+    <h3>Confianza frente a acierto</h3>
+    <div id="g-calib"></div>
+    <p class="nota">Lo ideal: «Seguro» cerca del 100%. Hoy, el <b>{{ a.conf.exceso|num('%') }}</b> de tus errores los marcaste «Seguro» ({{ a.conf.errores_seguro }}):
+      son conceptos que crees saber y tienes errados. El <b>{{ a.conf.fragil|num('%') }}</b> de tus aciertos fueron con duda: aún no están consolidados.</p>
+  </div>
+  <div class="panel">
+    <h3>Acierto por dificultad</h3>
+    <div id="g-dif"></div>
+    <p class="nota">La prueba real es de casos aplicados (juicio situacional): el nivel «Aplicación» es el que más se parece.</p>
+  </div>
+  <div class="panel">
+    <h3>Acierto según el tiempo</h3>
+    <div id="g-tiempo"></div>
+    {% if a.ritmo %}<p class="nota">Tardas en promedio <b>{{ a.ritmo.media }} s</b> (mediana {{ a.ritmo.mediana }} s). La prueba te da unos {{ a.ritmo.presupuesto }} s por pregunta:
+      a tu ritmo, las {{ a.ritmo.n_prueba }} preguntas te tomarían ~{{ a.ritmo.minutos_prueba }} de {{ a.ritmo.minutos_disponibles }} min. Tienes tiempo de sobra para leer cada caso con calma.</p>{% endif %}
+  </div>
+</div>
+
+<!-- 5. Memoria -->
+<div class="seccion-t" id="memoria"><h2>Memoria y repaso</h2></div>
+<div class="grid dos">
+  <div class="panel">
+    <h3>Qué pasa cuando repites una pregunta</h3>
+    <p class="peq suave">{{ a.retencion.repetidas }} preguntas las has visto más de una vez ({{ a.retencion.transiciones }} repeticiones).</p>
+    <div id="g-retencion"></div>
+    <p class="nota"><b>Recuperadas</b>: la fallaste y luego la acertaste (aprendizaje). <b>Persistentes</b>: la volviste a fallar (relee la norma). <b>Olvidadas</b>: la sabías y la fallaste después.</p>
+  </div>
+  <div class="panel">
+    <h3>Cajas de repaso espaciado</h3>
+    <p class="peq suave">Cada acierto seguro sube la pregunta de caja y espacia su repaso; un error la regresa a la caja 1. {{ g.repaso_hoy }} pendientes hoy.</p>
+    <div id="g-leitner"></div>
+    {% if g.repaso_hoy %}<div class="acciones" style="margin-top:10px"><a class="btn" href="{{ url_for('nueva_ronda', modo='repaso') }}">🔁 Repasar pendientes</a></div>{% endif %}
+  </div>
+</div>
+
+<!-- 6. Subtemas -->
+<div class="seccion-t" id="subtemas"><h2>Subtemas</h2><span class="peq suave">según las etiquetas de cada pregunta, con al menos 3 respuestas ({{ a.etiquetas.total }} subtemas)</span></div>
+<div class="grid dos">
+  <div class="panel">
+    <h3>Los que más fallas</h3>
+    <div id="g-sub-debiles"></div>
+    <p class="nota">Con pocas respuestas el rango probable es amplio: tómalos como pistas. Pídeme preguntas «según mis debilidades» para atacarlos.</p>
+  </div>
+  <div class="panel">
+    <h3>Los que dominas (≥ 90%)</h3>
+    {% if not a.etiquetas.fuertes %}<p class="suave peq">Aún ninguno con suficientes respuestas.</p>{% else %}
+    <table>{% for e in a.etiquetas.fuertes %}
+      <tr><td>{{ e.etiqueta }}<div class="peq suave">{{ e.sesion }}</div></td><td class="n">{{ e.ok }}/{{ e.n }}</td><td class="n">{{ e.pct|num('%') }}</td></tr>
+    {% endfor %}</table>{% endif %}
+  </div>
+</div>
+{% endif %}
+
+<!-- 7. Estados -->
+<div class="seccion-t" id="estados"><h2>Fortalezas y debilidades</h2></div>
+<p class="suave peq">Clasificación por <b>dominio</b> (acierto ponderado: lo reciente pesa más y los aciertos dudosos o adivinados valen menos).
+  Fortaleza ≥ {{ cfg.umbral_fortaleza }}% · Debilidad &lt; {{ cfg.umbral_debilidad }}% · mínimo {{ cfg.minimo_respuestas_analisis }} respuestas por indicador.
+  Copia guardada en <code>informes/ultimo_informe.md</code>.</p>
+<div class="grid estados">
   {% for estado, titulo in [('debilidad', '🔴 Debilidades'), ('en-desarrollo', '🟡 En desarrollo'), ('fortaleza', '🟢 Fortalezas'), ('sin-datos', '⚪ Sin datos suficientes')] %}
     {% set grupo = sesiones|selectattr('estado', 'equalto', estado)|list %}
     <div class="panel">
@@ -27,9 +166,9 @@
       <table>
         {% for s in grupo|sort(attribute='dominio' if estado != 'sin-datos' else 'respuestas') %}
         <tr>
-          <td>{{ s.nombre }}<div class="peq suave">{{ s.respuestas }} resp. · acierto {{ s.pct|num('%') }}
+          <td>{{ s.nombre }}<div class="peq suave">{{ s.respuestas }} resp. · acierto {{ s.pct|num('%') }} · banco visto {{ s.cobertura|num('%') }}
             {% if s.tendencia is not none %} · tendencia
-              <b style="color: {{ 'var(--ok)' if s.tendencia >= 0 else 'var(--mal)' }}">{{ '%+.1f'|format(s.tendencia) }}</b>{% endif %}
+              <b style="color: {{ 'var(--ok)' if s.tendencia >= 0 else 'var(--mal)' }}">{{ '▲' if s.tendencia >= 0 else '▼' }} {{ '%+.1f'|format(s.tendencia) }}</b>{% endif %}
             {% set h = hist.get(s.id, []) %}
             {% if h|length > 1 %} · evolución: {% for f, d in h[-6:] %}{{ d|round(0)|int if d is not none else '–' }}{{ ' → ' if not loop.last }}{% endfor %}{% endif %}
           </div></td>
@@ -44,10 +183,11 @@
   {% endfor %}
 </div>
 
-<div class="grid dos" style="margin-top:14px">
+<!-- 8. Errores -->
+<div class="seccion-t" id="errores"><h2>Errores</h2></div>
+<div class="grid dos">
   <div class="panel">
     <h3>Calibración de confianza</h3>
-    <p class="peq suave">Si cuando marcas «Seguro» no aciertas casi siempre, hay conceptos que crees dominar y no dominas.</p>
     <table>
       <tr><th>Confianza</th><th class="n">Respuestas</th><th class="n">% acierto</th><th></th></tr>
       {% for c in calib %}<tr><td>{{ c.nombre }}</td><td class="n">{{ c.n }}</td><td class="n">{{ c.pct|num('%') }}</td><td style="width:90px">{{ barra(c.pct) }}</td></tr>{% endfor %}
@@ -62,11 +202,11 @@
   </div>
 </div>
 
-<h2>Preguntas más falladas</h2>
+<h3 style="margin-top:18px">Preguntas más falladas</h3>
 <div class="panel">
   {% if not falladas %}<p class="suave peq">Aún no hay errores registrados.</p>{% else %}
   <table>
-    <tr><th>#</th><th>Pregunta</th><th>Sesión</th><th class="n">Fallos</th></tr>
+    <tr><th>#</th><th>Pregunta</th><th>Indicador</th><th class="n">Fallos</th></tr>
     {% for f in falladas %}
     <tr><td><a href="{{ url_for('editar_pregunta', pid=f.id) }}">{{ f.id }}</a></td><td class="peq">{{ f.enunciado[:160] }}{% if f.norma %}<div class="suave">📖 {{ f.norma }}</div>{% endif %}</td>
       <td class="peq">{{ f.sesion }}</td><td class="n">{{ f.fallos }}/{{ f.intentos }}</td></tr>
@@ -75,4 +215,61 @@
   <div class="acciones" style="margin-top:10px"><a class="btn" href="{{ url_for('nueva_ronda', modo='falladas') }}">Practicar falladas</a></div>
   {% endif %}
 </div>
+
+{% if g.respuestas %}
+<script>
+const A = {{ {'proy': a.proy, 'curva': a.curva, 'dias': a.dias, 'dificultad': a.dificultad, 'tiempo': a.tiempo,
+              'retencion': a.retencion, 'leitner': a.leitner, 'etiquetas': a.etiquetas, 'calib': calib}|tojson }};
+const MIN = {{ minimo }}, META = {{ meta }}, REFS = [{ v: MIN, l: "Mín. " + MIN }, { v: META, l: "Meta " + META }];
+const clase = v => v === null ? "gris" : v < MIN ? "mal" : v < META ? "medio" : "ok";
+const practicar = id => "{{ url_for('nueva_ronda') }}?alcance=s:" + id;
+const corto = s => s.length > 48 ? s.slice(0, 46) + "…" : s;
+
+const maxBrecha = Math.max(...A.proy.prioridad.map(f => f.brecha), 1);
+barrasH("#g-prioridad", A.proy.prioridad.map(f => ({
+  l: corto(f.nombre), href: practicar(f.id), v: f.brecha, clase: clase(f.pct), txt: "−" + f.brecha.toFixed(1),
+  sub: `peso ${f.peso_pct}% · acierto ${f.pct}%`,
+  tt: `<b>${f.nombre}</b><br>Pierdes ${f.brecha.toFixed(2)} puntos frente a la meta<br>Peso ${f.peso_pct}% · acierto ${f.pct}% (n=${f.n})`
+})), { max: maxBrecha, sufijo: " pts", vacio: "Todos tus indicadores con datos están en la meta o por encima. 🎉" });
+
+barrasH("#g-indicadores", [...A.proy.filas].sort((x, y) => (x.pct ?? 999) - (y.pct ?? 999)).map(f => ({
+  l: corto(f.nombre), href: practicar(f.id), v: f.pct, lo: f.lo, hi: f.hi, clase: clase(f.pct),
+  sub: f.pct === null ? `sin datos suficientes (${f.n} resp.)` : `peso ${f.peso_pct}% · n=${f.n}`,
+  tt: f.pct === null ? `<b>${f.nombre}</b><br>Aún no hay respuestas suficientes` :
+    `<b>${f.nombre}</b><br>Acierto ${f.pct}% · rango probable ${f.lo}–${f.hi}%<br>${f.n} respuestas recientes · peso ${f.peso_pct}%`
+})), { refs: REFS });
+
+graficaLinea("#g-curva", A.curva.map(c => ({ v: c.v, e: "#" + c.i, t: `Respuesta #${c.i} (${c.fecha})` })),
+  { refs: REFS, vacio: "Necesitas al menos 10 respuestas.", aria: "Curva de aprendizaje" });
+
+const fechaCorta = f => f.slice(8, 10) + "/" + f.slice(5, 7);
+columnas("#g-dias-n", A.dias.map(d => ({ l: fechaCorta(d.fecha), v: d.n, tt: `${d.fecha}: ${d.n} respuestas · ${d.minutos} min` })),
+  { sufijo: "", aria: "Respuestas por día" });
+columnas("#g-dias-pct", A.dias.map(d => ({ l: fechaCorta(d.fecha), v: d.pct, n: d.n, clase: clase(d.pct) })),
+  { max: 100, refs: REFS, aria: "Acierto por día" });
+
+columnas("#g-calib", A.calib.map(c => ({ l: c.nombre, v: c.pct, n: c.n, clase: "s1" })), { max: 100, aria: "Acierto según confianza" });
+columnas("#g-dif", A.dificultad.map(d => ({ l: d.nombre, v: d.pct, n: d.n, clase: clase(d.pct),
+  tt: d.n ? `${d.nombre}: ${d.pct}% (${d.ok}/${d.n}) · rango ${d.lo}–${d.hi}%` : `${d.nombre}: sin respuestas` })), { max: 100, refs: REFS, aria: "Acierto por dificultad" });
+columnas("#g-tiempo", A.tiempo.map(d => ({ l: d.nombre, v: d.pct, n: d.n, clase: "s1",
+  tt: d.n ? `${d.nombre}: ${d.pct}% (${d.ok}/${d.n})` : `${d.nombre}: sin respuestas` })), { max: 100, aria: "Acierto según tiempo de respuesta" });
+
+const R = A.retencion;
+apilada("#g-retencion", [
+  { l: "Consolidadas", v: R.consolidadas, clase: "ok", d: "acertada y vuelta a acertar" },
+  { l: "Recuperadas", v: R.recuperadas, clase: "s1", d: "fallada y luego acertada" },
+  { l: "Olvidadas", v: R.olvidadas, clase: "medio", d: "acertada y luego fallada" },
+  { l: "Persistentes", v: R.persistentes, clase: "mal", d: "fallada otra vez" },
+], { vacio: "Aún no has repetido preguntas." });
+
+apilada("#g-leitner", [{ l: "Nunca vistas", v: A.leitner.nunca, clase: "gris", d: "aún no las has respondido" }].concat(
+  A.leitner.cajas.map(c => ({ l: `Caja ${c.caja}`, v: c.n, clase: "o" + c.caja,
+    d: c.dias ? `repaso cada ${c.dias} día${c.dias > 1 ? "s" : ""}` : "repaso inmediato" }))));
+
+barrasH("#g-sub-debiles", A.etiquetas.debiles.map(e => ({
+  l: e.etiqueta, sub: `${corto(e.sesion)} · ${e.ok}/${e.n}`, v: e.pct, lo: e.lo, hi: e.hi, clase: clase(e.pct),
+  tt: `<b>${e.etiqueta}</b><br>${e.sesion}<br>${e.ok} de ${e.n} · rango probable ${e.lo}–${e.hi}%`
+})), { refs: REFS, vacio: "Aún no hay subtemas con 3 o más respuestas." });
+</script>
+{% endif %}
 {% endblock %}
