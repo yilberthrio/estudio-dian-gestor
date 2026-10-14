@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import barra %}
+{% from "_macros.html" import barra, donde_confirmar with context %}
 {% block titulo %}Resultado ronda #{{ ronda.id }} · Estudio DIAN{% endblock %}
 {% block contenido %}
 {% set minimo, meta = a.minimo, a.meta %}
@@ -226,7 +226,7 @@
       {% endfor %}
     </ul>
     <div class="explicacion">{{ p.explicacion }}</div>
-    {% if p.norma %}<div class="peq suave" style="margin-top:6px">📖 {{ p.norma }}</div>{% endif %}
+    {{ donde_confirmar(p.norma) }}
     {% if p.etiquetas_lista %}<div class="peq suave" style="margin-top:4px">🏷️ {{ p.etiquetas_lista|join(' · ') }}</div>{% endif %}
   </div>
 {% endfor %}

@@ -13,6 +13,7 @@ from flask import (Flask, Response, abort, flash, jsonify, redirect, render_temp
 
 import analisis as an
 import banco as banco_compartido
+import referencias
 from db import (ESCALA_LIKERT, LETRAS, ahora, config, conectar, hash_pregunta,
                 importar_datos, importar_pendientes, inicializar, opciones_de, reiniciar_estadisticas,
                 sesgo_longitud)
@@ -46,7 +47,7 @@ def filtro_num(v, sufijo=""):
 
 @app.context_processor
 def globales():
-    return {"MODOS": MODOS}
+    return {"MODOS": MODOS, "desglosar": referencias.desglosar}
 
 
 def modulos_y_sesiones(con):
@@ -294,7 +295,8 @@ def api_ronda(rid):
             if p["respondida"]:
                 item.update(elegida=p["elegida"], acierto=bool(p["acierto"]), confianza=p["confianza"])
                 if r["feedback"] == "inmediato":
-                    item.update(correcta=p["correcta"], explicacion=p["explicacion"], norma=p["norma"])
+                    item.update(correcta=p["correcta"], explicacion=p["explicacion"], norma=p["norma"],
+                                fuentes=referencias.desglosar(p["norma"]))
             ps.append(item)
         transcurrido = (datetime.now() - datetime.fromisoformat(r["inicio"])).total_seconds()
         return jsonify({"ronda": dict(r), "preguntas": ps, "transcurrido": transcurrido})
@@ -321,7 +323,8 @@ def api_responder(rid):
         an.leitner_actualizar(con, pid, acierto, confianza)
         out = {"acierto": bool(acierto)}
         if r["feedback"] == "inmediato":
-            out.update(correcta=p["correcta"], explicacion=explicacion_mostrada(p["explicacion"], ops), norma=p["norma"])
+            out.update(correcta=p["correcta"], explicacion=explicacion_mostrada(p["explicacion"], ops), norma=p["norma"],
+                       fuentes=referencias.desglosar(p["norma"]))
         return jsonify(out)
 
 

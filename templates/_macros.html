@@ -2,3 +2,16 @@
   {#- Mismos cortes que la clasificación por defecto: fortaleza ≥ 86 (meta), debilidad < 70 (mínimo aprobatorio) -#}
   <div class="barra {{ 'ok' if v is not none and v >= alto else 'medio' if v is not none and v >= bajo else 'mal' }}"><i style="width: {{ v or 0 }}%"></i></div>
 {%- endmacro %}
+
+{% macro donde_confirmar(norma) -%}
+  {#- Misma presentación que dondeConfirmar() en ronda.html -#}
+  {%- set d = desglosar(norma) -%}
+  {%- if d.sin_norma %}
+  <div class="fuentes"><div class="t">🧮 Cómo confirmarlo</div>
+    <div class="peq">No depende de una norma{% if d.tema %} ({{ d.tema }}){% endif %}: rehaz el cálculo o el razonamiento paso a paso con la explicación.</div></div>
+  {%- elif d.fuentes %}
+  <div class="fuentes"><div class="t">📚 Dónde confirmarlo</div>
+    <ul>{% for f in d.fuentes %}<li><b>{{ f.fuente }}</b>{% if f.nombre %} <span class="suave">({{ f.nombre }})</span>{% endif %}
+      {%- if f.donde %} → <span class="donde">{{ f.donde }}</span>{% endif %}{% if f.tema %} <span class="suave">· {{ f.tema }}</span>{% endif %}</li>{% endfor %}</ul></div>
+  {%- endif %}
+{%- endmacro %}

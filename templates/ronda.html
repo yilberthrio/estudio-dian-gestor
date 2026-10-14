@@ -138,10 +138,23 @@ function pintarRespondida(p) {
       <div class="t">${p.acierto ? "✅ ¡Correcto!" : "❌ Incorrecto — la respuesta es la " + letraCorrecta}
         ${p.acierto && p.confianza === "adivine" ? ' <span class="chip medio">acertaste adivinando: volverá en repaso</span>' : ""}</div>
       <div class="explicacion">${esc(p.explicacion)}</div>
-      ${p.norma ? `<div class="norma">📖 ${esc(p.norma)}</div>` : ""}
+      ${dondeConfirmar(p.fuentes)}
     </div>
     <div class="acciones" style="margin-top:12px">${botonSig}
       <button class="btn peq" onclick="marcarRevisar()">🚩 Marcar para revisar</button></div>`;
+}
+
+// Misma presentación que el macro donde_confirmar de _macros.html
+function dondeConfirmar(d) {
+  if (!d) return "";
+  if (d.sin_norma) {
+    return `<div class="fuentes"><div class="t">🧮 Cómo confirmarlo</div><div class="peq">No depende de una norma${d.tema ? " (" + esc(d.tema) + ")" : ""}: rehaz el cálculo o el razonamiento paso a paso con la explicación.</div></div>`;
+  }
+  if (!d.fuentes.length) return "";
+  return `<div class="fuentes"><div class="t">📚 Dónde confirmarlo</div><ul>` + d.fuentes.map(f =>
+    `<li><b>${esc(f.fuente)}</b>${f.nombre ? ` <span class="suave">(${esc(f.nombre)})</span>` : ""}` +
+    `${f.donde ? ` → <span class="donde">${esc(f.donde)}</span>` : ""}${f.tema ? ` <span class="suave">· ${esc(f.tema)}</span>` : ""}</li>`
+  ).join("") + `</ul></div>`;
 }
 
 function pintarPuntos() {

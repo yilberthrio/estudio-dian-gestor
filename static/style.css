@@ -120,6 +120,12 @@ textarea { min-height: 70px; resize: vertical; }
 .feedback.mal { background: var(--mal-suave); border-color: var(--mal); }
 .feedback .t { font-weight: 700; margin-bottom: 6px; }
 .feedback .norma { margin-top: 8px; font-size: .88rem; color: var(--suave); }
+/* «Dónde confirmarlo»: norma y artículo para verificar la respuesta */
+.fuentes { margin-top: 10px; padding: 10px 12px; border-radius: 8px; background: var(--primario-suave); border-left: 3px solid var(--primario); font-size: .9rem; }
+.fuentes .t { font-weight: 700; margin-bottom: 4px; font-size: .88rem; }
+.fuentes ul { margin: 0; padding-left: 18px; }
+.fuentes li { margin: 2px 0; }
+.fuentes .donde { font-weight: 700; color: var(--primario); }
 .explicacion { white-space: pre-line; }
 .atajos { margin-top: 18px; text-align: center; color: var(--suave); font-size: .8rem; }
 kbd { border: 1px solid var(--borde); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; font-size: .78rem; background: var(--panel); }
