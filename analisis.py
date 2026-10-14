@@ -1,4 +1,5 @@
 """Estadísticas, análisis de fortalezas/debilidades, repaso espaciado (Leitner) e informes."""
+import math
 from collections import defaultdict
 from datetime import date, datetime, timedelta
 
@@ -420,6 +421,146 @@ def analisis_completo(con):
             "promedio_dia": round(len(resp) / dias_estudio) if dias_estudio else 0}
 
 
+# ---------------------------------------------------------------- Resultado de una ronda
+
+def _conteo(sub):
+    ok = sum(p["acierto"] for p in sub)
+    lo, hi = wilson(ok, len(sub))
+    return {"n": len(sub), "ok": ok, "pct": pct(ok, len(sub)), "lo": lo, "hi": hi}
+
+
+def analizar_ronda(con, ronda, preguntas):
+    """Explicación detallada de una ronda: dónde se perdieron los puntos, frente a tu histórico, cómo se
+    relaciona la confianza con el acierto, el ritmo frente a la prueba real, la fatiga y los subtemas fallados.
+    `preguntas` es la lista de preguntas_de_ronda() (en el orden en que se mostraron)."""
+    cfg = config(con)
+    minimo, meta = float(cfg["puntaje_minimo"]), float(cfg["meta_puntaje"])
+    rid = ronda["id"]
+    resp = [p for p in preguntas if p["respondida"]]
+    n = len(resp)
+    total = _conteo(resp)
+    # Aciertos que faltaron (o sobraron) para el mínimo y la meta, contando las omisiones como no acertadas
+    n_ronda = len(preguntas)
+    falta_minimo = math.ceil(minimo / 100 * n_ronda - 1e-9) - total["ok"]
+    falta_meta = math.ceil(meta / 100 * n_ronda - 1e-9) - total["ok"]
+    valor_pregunta = round(100 / n_ronda, 2) if n_ronda else None
+
+    # Histórico de cada indicador antes de esta ronda
+    previo = {r["sesion_id"]: r for r in con.execute("""SELECT p.sesion_id, COUNT(*) n, SUM(r.correcta) ok
+        FROM respuestas r JOIN preguntas p ON p.id=r.pregunta_id WHERE r.ronda_id < ? GROUP BY p.sesion_id""", (rid,))}
+    pesos = {r["id"]: r["peso"] or 1 for r in con.execute("SELECT id, peso FROM sesiones")}
+    indicadores = []
+    for sid in dict.fromkeys(p["sesion_id"] for p in resp):
+        sub = [p for p in resp if p["sesion_id"] == sid]
+        c = _conteo(sub)
+        h = previo.get(sid)
+        hist = pct(h["ok"], h["n"]) if h and h["n"] >= 5 else None
+        indicadores.append({**c, "id": sid, "nombre": sub[0]["sesion"], "peso": pesos.get(sid, 1),
+                            "errores": c["n"] - c["ok"], "puntos_perdidos": round((c["n"] - c["ok"]) * 100 / n_ronda, 1),
+                            "historico": hist, "cambio": round(c["pct"] - hist, 1) if hist is not None else None})
+    indicadores.sort(key=lambda f: (-f["puntos_perdidos"], f["pct"]))
+
+    # Confianza × acierto
+    confianza = []
+    for conf in ("seguro", "dudoso", "adivine"):
+        sub = [p for p in resp if p["confianza"] == conf]
+        confianza.append({"confianza": conf, "nombre": NOMBRES_CONFIANZA[conf], **_conteo(sub)})
+    sin_conf = [p for p in resp if not p["confianza"]]
+    errores_seguro = sum(1 for p in resp if p["confianza"] == "seguro" and not p["acierto"])
+    aciertos_fragiles = sum(1 for p in resp if p["confianza"] in ("dudoso", "adivine") and p["acierto"])
+
+    # Ritmo frente a la prueba real y fatiga (acierto por tramos en el orden de la ronda)
+    presupuesto = 60 * float(cfg["simulacro_oficial_minutos"]) / int(cfg["simulacro_oficial_preguntas"])
+    tiempos = [p["tiempo_seg"] for p in resp if p["tiempo_seg"]]
+    tiempo_medio = round(sum(tiempos) / len(tiempos)) if tiempos else None
+    rapidas = [p for p in resp if p["tiempo_seg"] and p["tiempo_seg"] < 30]
+    lentas = [p for p in resp if p["tiempo_seg"] and p["tiempo_seg"] >= 90]
+    # En el orden real en que respondiste (en un simulacro puedes saltar preguntas)
+    cronologico = sorted(resp, key=lambda p: p["respuesta_id"])
+    tramos = []
+    if n >= 9:
+        k = 3 if n < 30 else 4
+        for i in range(k):
+            sub = cronologico[i * n // k:(i + 1) * n // k]
+            tramos.append({"l": f"{i * n // k + 1}–{(i + 1) * n // k}", **_conteo(sub),
+                           "seg": round(sum(p["tiempo_seg"] or 0 for p in sub) / len(sub))})
+
+    # Primera vez vs. ya vistas antes de esta ronda
+    vistas_antes = {r[0] for r in con.execute("SELECT DISTINCT pregunta_id FROM respuestas WHERE ronda_id < ?", (rid,))}
+    for p in preguntas:
+        p["vista_antes"] = p["id"] in vistas_antes
+        p["etiquetas_lista"] = [x.strip() for x in (p["etiquetas"] or "").split(",") if x.strip()]
+    nuevas = _conteo([p for p in resp if not p["vista_antes"]])
+    repetidas = _conteo([p for p in resp if p["vista_antes"]])
+
+    dificultad = [{"clave": d, "nombre": NOMBRES_DIFICULTAD[d], **_conteo([p for p in resp if (p["dificultad"] or 2) == d])}
+                  for d in (1, 2, 3)]
+
+    # Subtemas: etiquetas de las preguntas falladas (las que más se repiten primero)
+    subtemas = defaultdict(lambda: {"fallos": 0, "n": 0, "sesion": None})
+    for p in resp:
+        for e in p["etiquetas_lista"]:
+            s = subtemas[e.lower()]
+            s["texto"], s["sesion"] = s.get("texto") or e, s["sesion"] or p["sesion"]
+            s["n"] += 1
+            s["fallos"] += 0 if p["acierto"] else 1
+    subtemas_fallados = sorted([s for s in subtemas.values() if s["fallos"]], key=lambda s: (-s["fallos"], -s["n"]))[:12]
+
+    # Evolución: rondas terminadas del mismo modo hasta esta
+    evolucion = [{**dict(f), "pct": pct(f["ok"], f["n"]), "actual": f["id"] == rid} for f in con.execute("""
+        SELECT ro.id, substr(ro.inicio, 1, 10) fecha, COUNT(r.id) n, COALESCE(SUM(r.correcta), 0) ok
+        FROM rondas ro JOIN respuestas r ON r.ronda_id=ro.id
+        WHERE ro.modo=? AND ro.id <= ? AND (ro.fin IS NOT NULL OR ro.id=?)
+        GROUP BY ro.id ORDER BY ro.id DESC LIMIT 15""", (ronda["modo"], rid, rid))][::-1]
+
+    # Lectura rápida
+    lectura = []
+    if n and indicadores and indicadores[0]["puntos_perdidos"]:
+        top = [f for f in indicadores if f["puntos_perdidos"]][:2]
+        lectura.append("Donde más puntos perdiste: " + " y ".join(
+            f"{f['nombre']} ({f['errores']} {'error' if f['errores'] == 1 else 'errores'}, −{f['puntos_perdidos']} pts)" for f in top) + ".")
+    mejoras = [f for f in indicadores if f["cambio"] is not None and f["n"] >= 3]
+    if mejoras:
+        mejor = max(mejoras, key=lambda f: f["cambio"])
+        peor = min(mejoras, key=lambda f: f["cambio"])
+        if mejor["cambio"] >= 10:
+            lectura.append(f"Te fue mejor que de costumbre en {mejor['nombre']} ({mejor['pct']:g}% vs. {mejor['historico']:g}% histórico).")
+        if peor["cambio"] <= -10:
+            lectura.append(f"Te fue peor que de costumbre en {peor['nombre']} ({peor['pct']:g}% vs. {peor['historico']:g}% histórico).")
+    if errores_seguro:
+        lectura.append(f"{errores_seguro} {'error' if errores_seguro == 1 else 'errores'} con «Seguro»: son conceptos que crees dominar "
+                       "pero tienes errados. Son los más valiosos de repasar (filtro «Errores con seguridad»).")
+    if aciertos_fragiles:
+        lectura.append(f"{aciertos_fragiles} {'acierto fue' if aciertos_fragiles == 1 else 'aciertos fueron'} con duda o adivinando: "
+                       "en la prueba podrían convertirse en errores.")
+    if nuevas["n"] >= 5 and repetidas["n"] >= 5 and repetidas["pct"] - nuevas["pct"] >= 15:
+        lectura.append(f"Aciertas {repetidas['pct']:g}% en preguntas que ya habías visto y {nuevas['pct']:g}% en las nuevas: "
+                       "puede que estés recordando respuestas más que dominando el tema.")
+    if len(tramos) >= 3 and tramos[0]["pct"] is not None and tramos[-1]["pct"] is not None and tramos[0]["pct"] - tramos[-1]["pct"] >= 15:
+        lectura.append(f"Tu acierto bajó de {tramos[0]['pct']:g}% al inicio a {tramos[-1]['pct']:g}% al final: posible fatiga. "
+                       "En la prueba real son 5 horas; entrena simulacros completos.")
+    if tiempo_medio and tiempo_medio < presupuesto / 3:
+        lectura.append(f"Respondiste en {tiempo_medio} s por pregunta de media y la prueba te da ~{round(presupuesto)} s: "
+                       "tienes tiempo de sobra para leer el caso con calma.")
+    elif tiempo_medio and tiempo_medio > presupuesto:
+        lectura.append(f"Respondiste en {tiempo_medio} s por pregunta de media, más que los ~{round(presupuesto)} s de la prueba real: "
+                       "practica el ritmo.")
+    if rapidas and len(rapidas) >= 3:
+        c = _conteo(rapidas)
+        if c["pct"] is not None and total["pct"] is not None and c["pct"] < total["pct"] - 10:
+            lectura.append(f"En las {c['n']} preguntas que respondiste en menos de 30 s acertaste solo {c['pct']:g}%: "
+                           "leer más despacio te daría puntos.")
+
+    return {"total": total, "minimo": minimo, "meta": meta, "falta_minimo": falta_minimo, "falta_meta": falta_meta,
+            "valor_pregunta": valor_pregunta, "indicadores": indicadores, "confianza": confianza,
+            "sin_confianza": len(sin_conf), "errores_seguro": errores_seguro, "aciertos_fragiles": aciertos_fragiles,
+            "presupuesto": round(presupuesto), "tiempo_medio": tiempo_medio, "tramos": tramos,
+            "rapidas": _conteo(rapidas), "lentas": _conteo(lentas), "nuevas": nuevas, "repetidas": repetidas,
+            "dificultad": dificultad, "subtemas": subtemas_fallados, "evolucion": evolucion, "lectura": lectura,
+            "tiempos": [{"i": i + 1, "seg": round(p["tiempo_seg"] or 0), "ok": p["acierto"], "sesion": p["sesion"],
+                         "conf": p["confianza"]} for i, p in enumerate(cronologico)]}
+
+
 # ---------------------------------------------------------------- Informe
 
 def recomendaciones(sesiones, g, calib, extra=None):
@@ -545,14 +686,25 @@ def generar_informe_md(con):
 
 # ---------------------------------------------------------------- Práctica Likert
 
-def analizar_practica(con, practica_id):
-    """Perfil de una práctica comportamental/integridad. No hay respuestas correctas: se muestra la disposición
-    por competencia y señales que las escalas de control de la prueba real podrían detectar."""
-    filas = [dict(r) for r in con.execute("""SELECT a.*, r.valor FROM respuestas_likert r
-        JOIN afirmaciones a ON a.id=r.afirmacion_id WHERE r.practica_id=? ORDER BY r.orden""", (practica_id,))]
-    resp = [f for f in filas if f["valor"]]
-    for f in resp:
-        f["disposicion"] = f["valor"] if f["clave"] == "directa" else 5 - f["valor"]
+def _escala_100(media):
+    """Media en la escala 1–4 → 0–100."""
+    return round((media - 1) / 3 * 100)
+
+
+def _media(valores):
+    return sum(valores) / len(valores) if valores else None
+
+
+def _respuestas_likert(con, condicion, params):
+    filas = [dict(r) for r in con.execute(f"""SELECT a.*, r.valor, r.practica_id FROM respuestas_likert r
+        JOIN afirmaciones a ON a.id=r.afirmacion_id WHERE {condicion} ORDER BY r.practica_id, r.orden""", params)]
+    for f in filas:
+        # Disposición: qué tanto la respuesta refleja la conducta deseable (las inversas se cuentan al revés)
+        f["disposicion"] = (f["valor"] if f["clave"] == "directa" else 5 - f["valor"]) if f["valor"] else None
+    return filas
+
+
+def _perfil_likert(resp):
     perfil = []
     for prueba, comps in COMPETENCIAS_LIKERT.items():
         for comp in comps:
@@ -561,25 +713,139 @@ def analizar_practica(con, practica_id):
                 continue
             directas = [f["valor"] for f in items if f["clave"] == "directa"]
             inversas = [f["valor"] for f in items if f["clave"] == "inversa"]
-            media = sum(f["disposicion"] for f in items) / len(items)
+            disp_d = _media(directas)
+            disp_i = 5 - _media(inversas) if inversas else None
             perfil.append({
                 "prueba": prueba, "competencia": comp, "n": len(items),
-                "disposicion": round((media - 1) / 3 * 100),
+                "n_directas": len(directas), "n_inversas": len(inversas),
+                "disposicion": _escala_100(_media([f["disposicion"] for f in items])),
+                "disp_directas": _escala_100(disp_d) if directas else None,
+                "disp_inversas": _escala_100(disp_i) if inversas else None,
+                # Coherencia: las directas y las inversas de una misma competencia deberían dar la misma disposición
+                "coherencia": round(100 - abs(disp_d - disp_i) / 3 * 100) if directas and inversas else None,
                 # De acuerdo a la vez con conductas deseables y con su contrario: respuesta poco consistente
-                "inconsistente": bool(directas and inversas and sum(directas) / len(directas) >= 3
-                                      and sum(inversas) / len(inversas) >= 3),
+                "inconsistente": bool(directas and inversas and _media(directas) >= 3 and _media(inversas) >= 3),
             })
+    return perfil
+
+
+def _forma_likert(resp, perfil):
+    """Indicadores de la forma de responder (lo que miran las escalas de control)."""
     n = len(resp)
-    totalmente_acuerdo = sum(f["valor"] == 4 for f in resp)
-    extremos = sum(f["valor"] in (1, 4) for f in resp)
+    if not n:
+        return {"n": 0, "pct_totalmente": None, "pct_extremos": None, "pct_matiz": None, "disposicion": None,
+                "coherencia": None, "por_prueba": {}}
+    coherencias = [p["coherencia"] for p in perfil if p["coherencia"] is not None]
+    por_prueba = {}
+    for prueba in COMPETENCIAS_LIKERT:
+        d = [f["disposicion"] for f in resp if f["prueba"] == prueba]
+        if d:
+            por_prueba[prueba] = _escala_100(_media(d))
+    return {
+        "n": n,
+        "pct_totalmente": round(100 * sum(f["valor"] == 4 for f in resp) / n),
+        "pct_extremos": round(100 * sum(f["valor"] in (1, 4) for f in resp) / n),
+        "pct_matiz": round(100 * sum(f["valor"] in (2, 3) for f in resp) / n),
+        "disposicion": _escala_100(_media([f["disposicion"] for f in resp])),
+        "coherencia": round(_media(coherencias)) if coherencias else None,
+        "por_prueba": por_prueba,
+    }
+
+
+def _segundos(inicio, fin):
+    try:
+        return (datetime.fromisoformat(fin) - datetime.fromisoformat(inicio)).total_seconds()
+    except (TypeError, ValueError):
+        return None
+
+
+def _plural(n, singular, plural):
+    return singular if n == 1 else plural
+
+
+def analizar_practica(con, practica_id):
+    """Perfil de una práctica comportamental/integridad. No hay respuestas correctas: se muestra la disposición
+    por competencia, la comparación con las prácticas anteriores y señales que las escalas de control de la
+    prueba real podrían detectar."""
+    filas = _respuestas_likert(con, "r.practica_id=?", (practica_id,))
+    resp = [f for f in filas if f["valor"]]
+    perfil = _perfil_likert(resp)
+    forma = _forma_likert(resp, perfil)
+    n = len(resp)
+
+    # Promedio de las prácticas terminadas anteriores, para comparar
+    previas = _respuestas_likert(con, """r.practica_id < ? AND r.valor IS NOT NULL
+        AND r.practica_id IN (SELECT id FROM practicas_likert WHERE fin IS NOT NULL)""", (practica_id,))
+    previo = {p["competencia"]: p["disposicion"] for p in _perfil_likert(previas)}
+    for p in perfil:
+        p["previo"] = previo.get(p["competencia"])
+        p["cambio"] = p["disposicion"] - p["previo"] if p["previo"] is not None else None
+
+    # Evolución: una fila por práctica terminada (incluida esta)
+    evolucion = []
+    for pr in con.execute("SELECT * FROM practicas_likert WHERE fin IS NOT NULL OR id=? ORDER BY id",
+                          (practica_id,)).fetchall():
+        r = _respuestas_likert(con, "r.practica_id=? AND r.valor IS NOT NULL", (pr["id"],))
+        if not r:
+            continue
+        fo = _forma_likert(r, _perfil_likert(r))
+        seg = _segundos(pr["inicio"], pr["fin"])
+        evolucion.append({"id": pr["id"], "fecha": (pr["inicio"] or "")[:10], "prueba": pr["prueba"],
+                          "actual": pr["id"] == practica_id, "seg_item": round(seg / len(r)) if seg else None,
+                          **{k: fo[k] for k in ("n", "disposicion", "coherencia", "pct_matiz", "pct_totalmente",
+                                                "pct_extremos")}})
+    actual = next((e for e in evolucion if e["actual"]), {})
+
+    distribucion = {clave: [sum(f["valor"] == v for f in resp if f["clave"] == clave) for v in (1, 2, 3, 4)]
+                    for clave in ("directa", "inversa")}
+    for f in filas:
+        # Respuestas que se alejan de la conducta deseable: vale la pena releerlas y entender qué evalúan
+        f["reflexionar"] = f["disposicion"] is not None and f["disposicion"] <= 2
+    n_reflexionar = sum(f["reflexionar"] for f in filas)
+    inv_acuerdo = sum(f["clave"] == "inversa" and f["valor"] >= 3 for f in resp)
+
     alertas = []
-    if n and totalmente_acuerdo / n > 0.7:
-        alertas.append(f"Marcaste «Totalmente de acuerdo» en el {round(100 * totalmente_acuerdo / n)}% de las afirmaciones. "
+    if n and forma["pct_totalmente"] > 70:
+        alertas.append(f"Marcaste «Totalmente de acuerdo» en el {forma['pct_totalmente']}% de las afirmaciones. "
                        "La prueba real incluye escalas de control que detectan respuestas exageradamente favorables: "
                        "responde según lo que realmente haces, no según lo que suena ideal.")
     if any(p["inconsistente"] for p in perfil):
         alertas.append("En algunas competencias estuviste de acuerdo con una conducta y también con su contraria. "
                        "Revisa esas afirmaciones: leer con calma cada matiz (por ejemplo, «asumiendo tiempo adicional») evita contradicciones.")
+
+    lectura = []
+    if len(perfil) >= 2:
+        alto, bajo = max(p["disposicion"] for p in perfil), min(p["disposicion"] for p in perfil)
+        if alto > bajo:
+            altas = [p["competencia"] for p in perfil if p["disposicion"] == alto]
+            bajas = [p["competencia"] for p in perfil if p["disposicion"] == bajo]
+            txt_altas = (", ".join(altas) if len(altas) <= 3 else f"{len(altas)} competencias")
+            lectura.append(f"Lo más alto: {txt_altas} ({alto}%). Lo más bajo: {', '.join(bajas)} ({bajo}%).")
+    if perfil and _media([p["n"] for p in perfil]) < 4:
+        lectura.append("Cada competencia tuvo pocas afirmaciones en esta práctica, así que una sola respuesta mueve "
+                       "mucho su porcentaje. Compara varias prácticas antes de sacar conclusiones.")
+    cambios = [p for p in perfil if p["cambio"] is not None and abs(p["cambio"]) >= 10]
+    partes = []
+    if cambios and max(p["cambio"] for p in cambios) > 0:
+        sube = max(cambios, key=lambda p: p["cambio"])
+        partes.append(f"subiste en {sube['competencia']} (+{sube['cambio']} puntos)")
+    if cambios and min(p["cambio"] for p in cambios) < 0:
+        baja = min(cambios, key=lambda p: p["cambio"])
+        partes.append(f"bajaste en {baja['competencia']} ({baja['cambio']} puntos)")
+    if partes:
+        lectura.append("Frente a tus prácticas anteriores " + " y ".join(partes) + ".")
+    if n:
+        lectura.append(f"El {forma['pct_matiz']}% de tus respuestas fueron matizadas («De acuerdo» o «En desacuerdo») "
+                       f"y el {forma['pct_extremos']}%, extremas.")
+    if n_reflexionar:
+        lectura.append(f"{n_reflexionar} {_plural(n_reflexionar, 'respuesta se aleja', 'respuestas se alejan')} de la "
+                       "conducta que describe la competencia: revísalas abajo con el filtro «Para reflexionar».")
+    if inv_acuerdo:
+        lectura.append(f"Estuviste de acuerdo con {inv_acuerdo} {_plural(inv_acuerdo, 'afirmación inversa', 'afirmaciones inversas')} "
+                       "(describen la conducta contraria a la deseable). Suelen ser las más fáciles de leer mal.")
+
     return {"items": filas, "perfil": perfil, "n": n, "sin_responder": len(filas) - n,
-            "pct_totalmente": round(100 * totalmente_acuerdo / n) if n else None,
-            "pct_extremos": round(100 * extremos / n) if n else None, "alertas": alertas}
+            "pct_totalmente": forma["pct_totalmente"], "pct_extremos": forma["pct_extremos"], "alertas": alertas,
+            "forma": forma, "evolucion": evolucion, "seg_item": actual.get("seg_item"),
+            "distribucion": distribucion, "n_reflexionar": n_reflexionar,
+            "n_inversas": sum(f["clave"] == "inversa" for f in filas), "lectura": lectura, "hay_previas": bool(previo)}

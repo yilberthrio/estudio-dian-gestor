@@ -13,5 +13,5 @@ echo.
 echo  Estudio DIAN en http://127.0.0.1:5000
 echo  Cierra esta ventana para detener la aplicacion.
 echo.
-python app.py
+python app.py %*
 pause

@@ -34,6 +34,13 @@ Si no tienes Git, puedes usar **Code → Download ZIP** en esta página y descom
 
 Se abre el navegador en http://127.0.0.1:5000. La primera vez instala Flask y crea tu base de datos con todas las preguntas.
 
+### Desde el celular o la tableta (misma wifi)
+
+Inicia con `iniciar_red.bat` (o `sh iniciar.sh --red`, o `python app.py --red`). La consola muestra la dirección para abrir en el otro dispositivo, por ejemplo `http://192.168.1.17:5000`. El progreso es el mismo en todos los dispositivos porque se guarda en este computador.
+
+- La primera vez Windows pregunta si permite el acceso de Python: acepta en **Redes privadas**. Si tu wifi figura como red pública, cámbiala a privada en *Configuración → Red e Internet → Wi-Fi → (tu red) → Tipo de perfil de red*.
+- Úsalo solo en una red de confianza: mientras esté abierta, cualquiera conectado a esa wifi puede usar la app. Con `iniciar.bat` normal sigue siendo accesible solo desde este computador.
+
 ## Actualizaciones
 
 Cada vez que inicias con `iniciar.bat` o `iniciar.sh`, la app descarga las preguntas nuevas o corregidas del repositorio (si tienes Git e internet) y las agrega a tu banco. **Tu progreso no se pierde.**

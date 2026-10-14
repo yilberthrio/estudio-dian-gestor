@@ -2,6 +2,7 @@
 import json
 import random
 import re
+import socket
 import sys
 import threading
 import webbrowser
@@ -365,7 +366,7 @@ def resultado(rid):
         return render_template("resultado.html", ronda=r, preguntas=ps, n=len(resp), ok=ok,
                                pct=an.pct(ok, len(resp)), tiempo_total=tiempo_total, por_sesion=por_ses,
                                global_pct=g["pct"], fallos=[p["id"] for p in resp if not p["acierto"]],
-                               conf_nombres=an.NOMBRES_CONFIANZA, cfg=config(con))
+                               conf_nombres=an.NOMBRES_CONFIANZA, cfg=config(con), a=an.analizar_ronda(con, r, ps))
 
 
 @app.post("/ronda/<int:rid>/repetir")
@@ -673,6 +674,16 @@ def practica_resultado(pid):
         return render_template("practica_resultado.html", pr=pr, r=an.analizar_practica(con, pid), escala=ESCALA_LIKERT)
 
 
+def ip_local():
+    """IP de este equipo en la red local (no envía datos: solo elige la interfaz de salida)."""
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+        try:
+            s.connect(("192.168.0.1", 80))
+            return s.getsockname()[0]
+        except OSError:
+            return "127.0.0.1"
+
+
 if __name__ == "__main__":
     sys.stdout.reconfigure(errors="replace")
     respaldo = inicializar()
@@ -689,5 +700,10 @@ if __name__ == "__main__":
               f"{len(r['errores'])} errores, {len(r['sesgo'])} con sesgo de longitud")
         for e in r["errores"]:
             print("   ", e)
+    # --red: acepta conexiones de otros dispositivos de la misma wifi (por defecto, solo este equipo).
+    en_red = "--red" in sys.argv
+    if en_red:
+        print(f"Modo red: abre http://{ip_local()}:5000 en el celular o tableta (misma wifi).")
+        print("Cualquiera conectado a esta red puede usar la app mientras esté abierta.")
     threading.Timer(1.0, lambda: webbrowser.open("http://127.0.0.1:5000")).start()
-    app.run(port=5000, debug=False)
+    app.run(host="0.0.0.0" if en_red else "127.0.0.1", port=5000, debug=False)

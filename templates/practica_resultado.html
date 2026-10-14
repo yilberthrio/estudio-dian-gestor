@@ -2,45 +2,206 @@
 {% from "_macros.html" import barra %}
 {% block titulo %}Perfil práctica #{{ pr.id }} · Estudio DIAN{% endblock %}
 {% block contenido %}
-<h1>Perfil · Práctica #{{ pr.id }}</h1>
+{% set fo = r.forma %}
+{% set corta = {1: 'TD', 2: 'D', 3: 'A', 4: 'TA'} %}
+<div class="ronda-top">
+  <h1 style="margin:0">Perfil · Práctica #{{ pr.id }}</h1>
+  <div class="acciones"><a class="btn prim" href="{{ url_for('practica_nueva') }}">Nueva práctica</a></div>
+</div>
 <p class="suave">{{ pr.inicio|fecha }} · {{ r.n }} afirmaciones respondidas{% if r.sin_responder %} · {{ r.sin_responder }} sin responder{% endif %}</p>
+<p class="indice">Ir a:
+  <a href="#telarana">Telaraña</a><a href="#competencias">Por competencia</a><a href="#forma">Forma de responder</a>
+  {% if r.evolucion|length > 1 %}<a href="#evolucion">Evolución</a>{% endif %}<a href="#afirmaciones">Afirmaciones</a></p>
 
 {% for a in r.alertas %}<div class="flash aviso">{{ a }}</div>{% endfor %}
 {% if not r.alertas and r.n %}<div class="flash ok">Tus respuestas no muestran patrones extremos ni contradicciones evidentes.</div>{% endif %}
 
-<div class="grid dos">
+{% if r.n %}
+<div class="grid kpis">
+  {% for prueba, nombre in [('comportamental', 'Disposición comportamental'), ('integridad', 'Disposición integridad')] %}
+    {% if prueba in fo.por_prueba %}
+    <div class="panel kpi"><div class="l">{{ nombre }}</div><div class="v">{{ fo.por_prueba[prueba] }}%</div>
+      <div class="s">qué tanto te identificas con las conductas deseables</div></div>
+    {% endif %}
+  {% endfor %}
+  <div class="panel kpi"><div class="l">Coherencia</div>
+    <div class="v {{ '' if fo.coherencia is none else 'ok' if fo.coherencia >= 85 else 'medio' if fo.coherencia >= 70 else 'mal' }}">{{ fo.coherencia|num('%') }}</div>
+    <div class="s">directas e inversas de una competencia coinciden</div></div>
+  <div class="panel kpi"><div class="l">Respuestas matizadas</div>
+    <div class="v {{ 'medio' if fo.pct_matiz < 20 else 'ok' }}">{{ fo.pct_matiz }}%</div>
+    <div class="s">«De acuerdo» o «En desacuerdo»</div></div>
+  <div class="panel kpi"><div class="l">«Totalmente de acuerdo»</div>
+    <div class="v {{ 'mal' if fo.pct_totalmente > 70 else 'medio' if fo.pct_totalmente > 55 else 'ok' }}">{{ fo.pct_totalmente }}%</div>
+    <div class="s">alerta de deseabilidad por encima de 70%</div></div>
+  <div class="panel kpi"><div class="l">Tiempo por afirmación</div><div class="v">{{ r.seg_item|num(' s') }}</div>
+    <div class="s">leer cada matiz evita contradicciones</div></div>
+</div>
+
+<div class="grid dos" style="margin-top:14px">
   <div class="panel">
-    <h3>Disposición por competencia</h3>
-    <p class="peq suave">Qué tanto te identificaste con las conductas que describe cada competencia (las afirmaciones
-      inversas se cuentan al revés). Es una referencia para conocerte, no un puntaje de la prueba.</p>
-    <table>
-      {% for p in r.perfil %}
-      <tr><td>{{ p.competencia }}{% if p.inconsistente %} <span class="chip medio">revisar coherencia</span>{% endif %}
-        <div class="peq suave">{{ p.prueba }} · {{ p.n }} afirmaciones</div></td>
-        <td class="n">{{ p.disposicion }}%</td><td style="width:90px">{{ barra(p.disposicion) }}</td></tr>
-      {% endfor %}
-    </table>
+    <h3>Lectura rápida</h3>
+    <ul class="lectura" style="margin:0; padding-left:20px">{% for l in r.lectura %}<li>{{ l }}</li>{% endfor %}</ul>
   </div>
   <div class="panel">
-    <h3>Forma de responder</h3>
-    <table>
-      <tr><td>Respuestas «Totalmente de acuerdo»</td><td class="n">{{ r.pct_totalmente|num('%') }}</td></tr>
-      <tr><td>Respuestas en los extremos (totalmente de acuerdo o en desacuerdo)</td><td class="n">{{ r.pct_extremos|num('%') }}</td></tr>
-    </table>
-    <p class="peq suave">Las escalas de control de la prueba real buscan respuestas exageradamente favorables. Un perfil creíble
-      suele combinar «De acuerdo» y «Totalmente de acuerdo», y reconocer matices.</p>
-    <div class="acciones"><a class="btn prim" href="{{ url_for('practica_nueva') }}">Nueva práctica</a></div>
+    <h3>Cómo leer este perfil</h3>
+    <ul class="peq" style="margin:0; padding-left:20px">
+      <li><b>No hay respuestas correctas.</b> La prueba real (20% comportamental, 10% integridad) es un autoinforme: mide cómo te describes.</li>
+      <li><b>Disposición</b>: 0% = te alejas de la conducta que describe la competencia; 100% = te identificas plenamente. Las afirmaciones <b>inversas</b> describen la conducta contraria, por eso se cuentan al revés.</li>
+      <li><b>Un perfil creíble no es un círculo perfecto.</b> Las escalas de control detectan respuestas exageradamente favorables: mejor coherente y con matices que todo en 100%.</li>
+      <li><b>Coherencia</b>: si estás de acuerdo con una conducta y también con su contraria, la prueba lo nota.</li>
+    </ul>
   </div>
 </div>
 
-<h2>Qué evalúa cada afirmación</h2>
+<!-- Telaraña -->
+<div class="seccion-t" id="telarana"><h2>Telaraña de competencias</h2>
+  {% if r.hay_previas %}<span class="peq suave">Área azul: esta práctica · línea punteada: promedio de tus prácticas anteriores</span>{% endif %}</div>
+<div class="grid dos">
+  {% for prueba, titulo in [('comportamental', 'Competencias comportamentales'), ('integridad', 'Integridad (Código de Integridad DIAN)')] %}
+    {% if prueba in fo.por_prueba %}
+    <div class="panel"><h3>{{ titulo }}</h3><div id="radar-{{ prueba }}"></div></div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<!-- Detalle por competencia -->
+<div class="seccion-t" id="competencias"><h2>Detalle por competencia</h2></div>
+<div class="panel tabla-scroll">
+  <table>
+    <tr><th>Competencia</th><th class="n">Afirm.</th><th class="n">Disposición</th><th></th>
+      <th class="n" title="Disposición calculada solo con las afirmaciones directas">Directas</th>
+      <th class="n" title="Disposición calculada solo con las afirmaciones inversas (ya invertidas)">Inversas</th>
+      <th class="n">Coherencia</th>{% if r.hay_previas %}<th class="n">vs. anteriores</th>{% endif %}</tr>
+    {% set ns = namespace(p='') %}
+    {% for p in r.perfil %}
+      {% if p.prueba != ns.p %}{% set ns.p = p.prueba %}<tr class="modulo"><td colspan="8">{{ 'Comportamental' if p.prueba == 'comportamental' else 'Integridad' }}</td></tr>{% endif %}
+      <tr>
+        <td>{{ p.competencia }}{% if p.inconsistente %} <span class="chip medio">revisar coherencia</span>{% endif %}</td>
+        <td class="n">{{ p.n }}<div class="peq suave">{{ p.n_directas }} dir. · {{ p.n_inversas }} inv.</div></td>
+        <td class="n"><b>{{ p.disposicion }}%</b></td><td style="width:90px">{{ barra(p.disposicion) }}</td>
+        <td class="n">{{ p.disp_directas|num('%') }}</td><td class="n">{{ p.disp_inversas|num('%') }}</td>
+        <td class="n">{% if p.coherencia is none %}<span class="suave" title="Hace falta al menos una afirmación directa y una inversa">–</span>
+          {% else %}<span class="chip {{ 'ok' if p.coherencia >= 85 else 'medio' if p.coherencia >= 70 else 'mal' }}">{{ p.coherencia }}%</span>{% endif %}</td>
+        {% if r.hay_previas %}<td class="n">{% if p.cambio is none %}<span class="suave">nueva</span>
+          {% elif p.cambio == 0 %}<span class="delta suave">=</span>
+          {% else %}<span class="delta {{ 'sube' if p.cambio > 0 else 'baja' }}">{{ '▲ +' if p.cambio > 0 else '▼ ' }}{{ p.cambio }}</span>
+            <div class="peq suave">antes {{ p.previo }}%</div>{% endif %}</td>{% endif %}
+      </tr>
+    {% endfor %}
+  </table>
+  <p class="nota">Con pocas afirmaciones por competencia una sola respuesta cambia mucho el porcentaje. La coherencia solo se calcula
+    cuando la competencia tuvo afirmaciones directas e inversas.</p>
+</div>
+
+<!-- Forma de responder -->
+<div class="seccion-t" id="forma"><h2>Forma de responder</h2></div>
+<div class="grid dos">
+  <div class="panel">
+    <h3>Afirmaciones directas</h3>
+    <p class="peq suave">Describen la conducta deseable: lo esperable es estar <b>de acuerdo</b>, mejor con algunos matices.</p>
+    <div id="dist-directa"></div>
+  </div>
+  <div class="panel">
+    <h3>Afirmaciones inversas</h3>
+    <p class="peq suave">Describen la conducta contraria: lo esperable es estar <b>en desacuerdo</b>. Es fácil leerlas rápido y contestar al revés.</p>
+    <div id="dist-inversa"></div>
+  </div>
+</div>
+<p class="nota">Un perfil creíble suele combinar «De acuerdo» y «Totalmente de acuerdo» (o sus opuestos en las inversas), en lugar de marcar
+  siempre el extremo. En esta práctica el {{ fo.pct_extremos }}% de tus respuestas fueron extremas.</p>
+
+<!-- Evolución -->
+{% if r.evolucion|length > 1 %}
+<div class="seccion-t" id="evolucion"><h2>Evolución entre prácticas</h2></div>
+<div class="grid dos">
+  <div class="panel">
+    <h3>«Totalmente de acuerdo» por práctica</h3>
+    <p class="peq suave">Por encima de la línea de 70% la app te advierte de respuestas exageradamente favorables.</p>
+    <div id="g-totalmente"></div>
+  </div>
+  <div class="panel tabla-scroll">
+    <h3>Comparativo</h3>
+    <table>
+      <tr><th>Práctica</th><th class="n">Dispos.</th><th class="n">Coher.</th><th class="n">Matiz</th><th class="n">T. acuerdo</th><th class="n">s/afirm.</th></tr>
+      {% for e in r.evolucion %}
+      <tr class="{{ 'actual' if e.actual }}">
+        <td>{% if e.actual %}<b>#{{ e.id }}</b> (esta){% else %}<a href="{{ url_for('practica_resultado', pid=e.id) }}">#{{ e.id }}</a>{% endif %}
+          <div class="peq suave">{{ e.fecha }} · {{ e.n }} afirm.</div></td>
+        <td class="n">{{ e.disposicion|num('%') }}</td><td class="n">{{ e.coherencia|num('%') }}</td>
+        <td class="n">{{ e.pct_matiz|num('%') }}</td><td class="n">{{ e.pct_totalmente|num('%') }}</td><td class="n">{{ e.seg_item|num }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endif %}
+{% endif %}
+
+<!-- Afirmaciones -->
+<div class="seccion-t" id="afirmaciones"><h2>Qué evalúa cada afirmación</h2></div>
+<div class="filtros" role="group" aria-label="Filtrar afirmaciones">
+  <button class="btn peq activo" data-filtro="todas">Todas ({{ r["items"]|length }})</button>
+  <button class="btn peq" data-filtro="reflexionar">Para reflexionar ({{ r.n_reflexionar }})</button>
+  <button class="btn peq" data-filtro="inversa">Inversas ({{ r.n_inversas }})</button>
+  {% for prueba in fo.por_prueba %}<button class="btn peq" data-filtro="{{ prueba }}">{{ prueba|capitalize }}</button>{% endfor %}
+</div>
+<p class="peq suave">En cada afirmación: <b>TD</b> totalmente en desacuerdo · <b>D</b> en desacuerdo · <b>A</b> de acuerdo · <b>TA</b> totalmente de acuerdo.
+  El borde verde marca el lado de la conducta deseable; tu respuesta va resaltada.</p>
 {% for a in r["items"] %}
-  <div class="resp-item">
+  {% set deseables = [3, 4] if a.clave == 'directa' else [1, 2] %}
+  <div class="resp-item {{ 'reflexionar' if a.reflexionar }}" data-prueba="{{ a.prueba }}" data-clave="{{ a.clave }}" data-reflexionar="{{ 1 if a.reflexionar else 0 }}">
     <div class="peq suave">{{ a.competencia }}{% if a.nivel %} · nivel {{ a.nivel }}{% endif %} · {{ a.prueba }}
-      {% if a.clave == 'inversa' %} · <span class="chip gris">afirmación inversa</span>{% endif %}</div>
+      {% if a.clave == 'inversa' %} · <span class="chip gris">afirmación inversa</span>{% endif %}
+      {% if a.reflexionar %} · <span class="chip medio">para reflexionar</span>{% endif %}</div>
     <div style="font-weight:600; margin:4px 0">{{ a.texto }}</div>
-    <div class="peq">Tu respuesta: <b>{{ escala[a.valor] if a.valor else 'sin responder' }}</b></div>
+    <div class="peq">
+      <span class="lk-mini" aria-hidden="true">{% for v in [1, 2, 3, 4] %}<span class="{{ 'deseable' if v in deseables }} {{ 'elegida' if a.valor == v }} {{ 'lejos' if a.valor == v and a.reflexionar }}">{{ corta[v] }}</span>{% endfor %}</span>
+      &nbsp;Tu respuesta: <b>{{ escala[a.valor] if a.valor else 'sin responder' }}</b>
+    </div>
     {% if a.conducta %}<div class="peq suave" style="margin-top:4px">💡 {{ a.conducta }}</div>{% endif %}
   </div>
 {% endfor %}
+<div class="vacio" id="sin-items" hidden>No hay afirmaciones con este filtro. 🎉</div>
+
+<script>
+const PERFIL = {{ r.perfil|tojson }}, DIST = {{ r.distribucion|tojson }}, EVO = {{ r.evolucion|tojson }}, PREVIAS = {{ r.hay_previas|tojson }};
+for (const prueba of ["comportamental", "integridad"]) {
+  const filas = PERFIL.filter(p => p.prueba === prueba);
+  if (!filas.length) continue;
+  const series = [{ nombre: "Esta práctica", v: filas.map(p => p.disposicion), clase: "s1" }];
+  if (PREVIAS) series.push({ nombre: "Promedio anterior", v: filas.map(p => p.previo), clase: "previo" });
+  radar("#radar-" + prueba, filas.map(p => ({
+    l: p.competencia,
+    tt: `${p.n} afirmaciones (${p.n_directas} directas, ${p.n_inversas} inversas)` +
+      (p.coherencia !== null ? `<br>Coherencia ${p.coherencia}%` : "")
+  })), series, { aria: "Telaraña de competencias " + prueba,
+    vacio: "Esta práctica tuvo menos de 3 competencias de esta prueba. Haz una práctica más larga para ver la telaraña." });
+}
+const NOMBRES = ["Totalmente en desacuerdo", "En desacuerdo", "De acuerdo", "Totalmente de acuerdo"];
+for (const clave of ["directa", "inversa"]) {
+  const deseable = clave === "directa" ? [2, 3] : [0, 1];
+  apilada("#dist-" + clave, DIST[clave].map((v, i) => ({
+    l: NOMBRES[i], v, clase: "o" + (i + 1), d: deseable.includes(i) ? "Lado de la conducta deseable" : "Lado contrario a la conducta deseable"
+  })), { vacio: "No hubo afirmaciones de este tipo." });
+}
+if (EVO.length > 1) {
+  columnas("#g-totalmente", EVO.map(e => ({
+    l: "#" + e.id, v: e.pct_totalmente, clase: e.pct_totalmente > 70 ? "mal" : e.pct_totalmente > 55 ? "medio" : "ok",
+    tt: `Práctica #${e.id} (${e.fecha})<br>«Totalmente de acuerdo»: ${e.pct_totalmente}%<br>Extremas: ${e.pct_extremos}% · Coherencia: ${e.coherencia ?? "–"}%`
+  })), { max: 100, refs: [{ v: 70, l: "Alerta 70%" }], aria: "Porcentaje de respuestas Totalmente de acuerdo por práctica" });
+}
+
+// Filtros de la lista de afirmaciones
+document.querySelectorAll(".filtros [data-filtro]").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".filtros .btn").forEach(x => x.classList.toggle("activo", x === b));
+  const f = b.dataset.filtro;
+  let visibles = 0;
+  document.querySelectorAll(".resp-item[data-prueba]").forEach(it => {
+    const ver = f === "todas" || (f === "reflexionar" && it.dataset.reflexionar === "1") || it.dataset.clave === f || it.dataset.prueba === f;
+    it.hidden = !ver;
+    visibles += ver;
+  });
+  document.getElementById("sin-items").hidden = visibles > 0;
+}));
+</script>
 {% endblock %}

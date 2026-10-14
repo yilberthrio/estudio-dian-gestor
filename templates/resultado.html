@@ -2,63 +2,217 @@
 {% from "_macros.html" import barra %}
 {% block titulo %}Resultado ronda #{{ ronda.id }} · Estudio DIAN{% endblock %}
 {% block contenido %}
-<h1>Resultado · Ronda #{{ ronda.id }}</h1>
+{% set minimo, meta = a.minimo, a.meta %}
+{% set es_simulacro = ronda.modo.startswith('simulacro') %}
+<div class="ronda-top">
+  <h1 style="margin:0">Resultado · Ronda #{{ ronda.id }}</h1>
+  <div class="acciones">
+    {% if fallos %}<form method="post" action="{{ url_for('repetir', rid=ronda.id) }}"><button class="btn prim">🔁 Repetir las {{ fallos|length }} falladas</button></form>{% endif %}
+    <a class="btn" href="{{ url_for('nueva_ronda') }}">Nueva ronda</a>
+  </div>
+</div>
 <p class="suave">{{ MODOS[ronda.modo] }} · {{ ronda.alcance }} · {{ ronda.inicio|fecha }}</p>
+{% if n %}
+<p class="indice">Ir a:
+  <a href="#indicadores">Por indicador</a><a href="#confianza">Confianza</a><a href="#ritmo">Ritmo y concentración</a>
+  <a href="#dificultad">Dificultad</a>{% if a.subtemas %}<a href="#subtemas">Subtemas</a>{% endif %}
+  {% if a.evolucion|length > 1 %}<a href="#evolucion">Evolución</a>{% endif %}<a href="#revision">Revisión</a></p>
 
-<div class="grid kpis">
-  <div class="panel kpi"><div class="l">Acierto</div>
-    <div class="grande" style="color: {{ 'var(--ok)' if (pct or 0) >= 80 else 'var(--medio)' if (pct or 0) >= 60 else 'var(--mal)' }}">{{ pct|num('%') }}</div>
-    <div class="s">{{ ok }} de {{ n }} respondidas</div></div>
-  <div class="panel kpi"><div class="l">Errores</div><div class="v" style="color:var(--mal)">{{ n - ok }}</div>
-    <div class="s">{{ preguntas|length - n }} sin responder</div></div>
-  <div class="panel kpi"><div class="l">Duración</div><div class="v">{{ (tiempo_total // 60)|int }} min {{ (tiempo_total % 60)|int }} s</div>
-    <div class="s">{{ ((tiempo_total / n) if n else 0)|round(1) }} s por pregunta</div></div>
-  <div class="panel kpi"><div class="l">Tu promedio histórico</div><div class="v">{{ global_pct|num('%') }}</div>
-    <div class="s">{% if pct is not none and global_pct is not none %}{{ 'por encima' if pct >= global_pct else 'por debajo' }} del promedio{% endif %}</div></div>
+<!-- Puntaje -->
+<div class="panel">
+  <div class="hero">
+    <div>
+      <div class="suave peq">{{ 'Puntaje estimado del simulacro' if es_simulacro else 'Acierto en esta ronda' }}</div>
+      <div class="cifra">{{ pct|num }}<small>%</small></div>
+      <div style="margin-top:6px">
+        {% if pct >= meta %}<span class="chip ok">✔ Supera la meta</span>
+        {% elif pct >= minimo %}<span class="chip medio">▲ Aprueba, bajo la meta</span>
+        {% else %}<span class="chip mal">✖ Bajo el mínimo</span>{% endif %}
+      </div>
+    </div>
+    <div>
+      {% macro x(v) %}{{ ((([v, 40]|max) - 40) / 60 * 100)|round(2) }}%{% endmacro %}
+      <div class="escala" role="img" aria-label="Acierto {{ pct }}%, rango probable {{ a.total.lo }}–{{ a.total.hi }}, mínimo {{ minimo }} y meta {{ meta }}">
+        <div class="rango" style="left:{{ x(a.total.lo) }}; width:calc({{ x(a.total.hi) }} - {{ x(a.total.lo) }})"></div>
+        <div class="marca-e" style="left:{{ x(minimo) }}"><span>Mínimo {{ minimo|num }}</span></div>
+        <div class="marca-e" style="left:{{ x(meta) }}"><span>Meta {{ meta|num }}</span></div>
+        <div class="punto-e" style="left:{{ x(pct) }}" data-tt="Acierto {{ pct }}% · rango probable {{ a.total.lo }}–{{ a.total.hi }}%" tabindex="0"></div>
+        {% for v in [40, 50, 60, 70, 80, 90, 100] %}<span class="eje-e" style="left:{{ x(v) }}">{{ v }}</span>{% endfor %}
+      </div>
+      <p class="nota" style="margin-top:28px">
+        {% if a.falta_minimo > 0 %}Te faltaron <b>{{ a.falta_minimo }} {{ 'acierto' if a.falta_minimo == 1 else 'aciertos' }}</b> para el mínimo aprobatorio.
+        {% elif a.falta_meta > 0 %}Superaste el mínimo por {{ -a.falta_minimo }} {{ 'acierto' if a.falta_minimo == -1 else 'aciertos' }}; te {{ 'faltó' if a.falta_meta == 1 else 'faltaron' }} <b>{{ a.falta_meta }} {{ 'acierto' if a.falta_meta == 1 else 'aciertos' }}</b> para la meta.
+        {% else %}Superaste la meta por {{ -a.falta_meta }} {{ 'acierto' if a.falta_meta == -1 else 'aciertos' }}.{% endif %}
+        Cada pregunta vale {{ a.valor_pregunta|num }} puntos.
+        La franja azul es el rango probable (95%): con {{ n }} preguntas tu nivel real podría estar entre {{ a.total.lo|num }} y {{ a.total.hi|num }}%.
+        {% if es_simulacro %}La CNSC califica de 0 a 100 tras un análisis psicométrico: esto es una estimación con % de aciertos.{% endif %}</p>
+    </div>
+  </div>
 </div>
 
-{% if ronda.modo.startswith('simulacro') and pct is not none %}
-{% set minimo, meta = cfg.puntaje_minimo|float, cfg.meta_puntaje|float %}
+<div class="grid kpis" style="margin-top:14px">
+  <div class="panel kpi"><div class="l">Aciertos</div><div class="v">{{ ok }} / {{ n }}</div>
+    <div class="s">{{ n - ok }} errores{% if preguntas|length - n %} · {{ preguntas|length - n }} sin responder{% endif %}</div></div>
+  <div class="panel kpi"><div class="l">Errores con «Seguro»</div><div class="v {{ 'mal' if a.errores_seguro else 'ok' }}">{{ a.errores_seguro }}</div>
+    <div class="s">conceptos que crees saber y tienes errados</div></div>
+  <div class="panel kpi"><div class="l">Aciertos frágiles</div><div class="v {{ 'medio' if a.aciertos_fragiles else 'ok' }}">{{ a.aciertos_fragiles }}</div>
+    <div class="s">acertaste con duda o adivinando</div></div>
+  <div class="panel kpi"><div class="l">Duración</div><div class="v">{{ (tiempo_total // 60)|int }} min</div>
+    <div class="s">{{ (tiempo_total // 60)|int }} min {{ (tiempo_total % 60)|int }} s · {{ a.tiempo_medio|num(' s') }} por pregunta (la prueba da ~{{ a.presupuesto }} s)</div></div>
+  <div class="panel kpi"><div class="l">Tu promedio histórico</div><div class="v">{{ global_pct|num('%') }}</div>
+    <div class="s">{% if pct is not none and global_pct is not none %}esta ronda está {{ 'por encima' if pct >= global_pct else 'por debajo' }} ({{ '%+.1f'|format(pct - global_pct) }}){% endif %}</div></div>
+</div>
+
+<div class="grid dos" style="margin-top:14px">
+  <div class="panel">
+    <h3>Lectura rápida</h3>
+    {% if a.lectura %}<ul class="lectura" style="margin:0; padding-left:20px">{% for l in a.lectura %}<li>{{ l }}</li>{% endfor %}</ul>
+    {% else %}<p class="suave">Ronda pareja: no hay patrones que destacar. ¡Sigue así!</p>{% endif %}
+  </div>
+  <div class="panel">
+    <h3>¿Y ahora?</h3>
+    <ol style="margin:0 0 10px; padding-left:20px">
+      {% set peor = a.indicadores|selectattr('puntos_perdidos')|first %}
+      {% if a.errores_seguro %}<li>Relee las explicaciones de tus <b>errores con «Seguro»</b> (filtro abajo) y la norma citada.</li>{% endif %}
+      {% if fallos %}<li>Repite las {{ fallos|length }} falladas en unos días para fijarlas.</li>{% endif %}
+      {% if peor %}<li>Haz una ronda de <a href="{{ url_for('nueva_ronda', alcance='s:' ~ peor.id) }}">{{ peor.nombre }}</a>, donde más puntos perdiste.</li>{% endif %}
+      <li>Revisa tus <a href="{{ url_for('informe') }}">fortalezas y debilidades</a> acumuladas.</li>
+    </ol>
+    <p class="peq suave">El informe se actualizó y quedó guardado en <code>informes/ultimo_informe.md</code>.</p>
+  </div>
+</div>
+
+{% if es_simulacro %}
 <div class="flash {{ 'ok' if pct >= meta else 'info' if pct >= minimo else 'aviso' }}" style="margin-top:14px">
   {% if pct >= meta %}🎯 <b>Meta alcanzada:</b> {{ pct }} puntos (meta {{ meta|int }}). A este nivel competirías por las primeras posiciones.
   {% elif pct >= minimo %}✅ <b>Superas el mínimo aprobatorio</b> ({{ minimo|int }}) con {{ pct }}, pero te faltan {{ (meta - pct)|round(1) }} puntos para la meta de {{ meta|int }}.
   {% else %}⚠️ <b>Por debajo del mínimo aprobatorio:</b> {{ pct }} frente a {{ minimo|int }}. En la prueba real no continuarías en el proceso.{% endif %}
-  <div class="peq suave" style="margin-top:4px">Estimación con % de aciertos; la CNSC califica de 0 a 100 tras un análisis psicométrico de los ítems.</div>
 </div>
 {% endif %}
-<div class="grid dos" style="margin-top:14px">
+
+<!-- Por indicador -->
+<div class="seccion-t" id="indicadores"><h2>Por indicador</h2></div>
+<div class="grid dos">
   <div class="panel">
-    <h3>Por sesión en esta ronda</h3>
-    <table>
-      {% for nombre, s in por_sesion.items() %}
-        {% set p = (100 * s.ok / s.n)|round(1) %}
-        <tr><td>{{ nombre }}</td><td class="n">{{ s.ok }}/{{ s.n }}</td><td class="n">{{ p }}%</td><td style="width:90px">{{ barra(p) }}</td></tr>
-      {% endfor %}
-    </table>
+    <h3>Acierto en esta ronda</h3>
+    <p class="peq suave">La línea fina es el rango probable: con pocas preguntas por indicador es ancho. Líneas punteadas: mínimo y meta.</p>
+    <div id="g-ind"></div>
   </div>
   <div class="panel">
-    <h3>¿Y ahora?</h3>
-    <div class="acciones">
-      {% if fallos %}
-      <form method="post" action="{{ url_for('repetir', rid=ronda.id) }}"><button class="btn prim">🔁 Repetir las {{ fallos|length }} falladas</button></form>
-      {% endif %}
-      <a class="btn" href="{{ url_for('nueva_ronda') }}">Nueva ronda</a>
-      <a class="btn" href="{{ url_for('informe') }}">Ver fortalezas y debilidades</a>
+    <h3>Dónde perdiste puntos</h3>
+    <p class="peq suave">Cada error resta {{ a.valor_pregunta|num }} puntos al total. Arriba, lo que más te costó en esta ronda.</p>
+    <div id="g-perdidos"></div>
+  </div>
+</div>
+<div class="panel tabla-scroll" style="margin-top:14px">
+  <table>
+    <tr><th>Indicador</th><th class="n">Peso</th><th class="n">Aciertos</th><th class="n">Acierto</th><th></th><th class="n">Histórico</th><th class="n">Cambio</th><th></th></tr>
+    {% for f in a.indicadores %}
+    <tr>
+      <td>{{ f.nombre }}</td><td class="n">{{ f.peso }}</td><td class="n">{{ f.ok }}/{{ f.n }}</td>
+      <td class="n"><b>{{ f.pct|num('%') }}</b></td><td style="width:90px">{{ barra(f.pct) }}</td>
+      <td class="n">{{ f.historico|num('%') }}</td>
+      <td class="n">{% if f.cambio is none %}<span class="suave" title="Menos de 5 respuestas previas">–</span>
+        {% elif f.cambio == 0 %}<span class="delta suave">=</span>
+        {% else %}<span class="delta {{ 'sube' if f.cambio > 0 else 'baja' }}">{{ '▲ +' if f.cambio > 0 else '▼ ' }}{{ f.cambio }}</span>{% endif %}</td>
+      <td><a class="btn peq" href="{{ url_for('nueva_ronda', alcance='s:' ~ f.id) }}">Practicar</a></td>
+    </tr>
+    {% endfor %}
+  </table>
+  <p class="nota">Histórico: tu acierto en ese indicador antes de esta ronda. «Peso»: importancia del indicador en el simulacro oficial.</p>
+</div>
+
+<!-- Confianza -->
+{% set c = {} %}{% for x in a.confianza %}{% set _ = c.update({x.confianza: x}) %}{% endfor %}
+<div class="seccion-t" id="confianza"><h2>Confianza y acierto</h2></div>
+<div class="grid dos">
+  <div class="panel">
+    <h3>Los cuatro cuadrantes</h3>
+    <div class="cuadrantes">
+      <div class="cuadrante ok"><div class="v">{{ c.seguro.ok }}</div><b>Dominio</b><div class="peq suave">Seguro y acertaste. Lo sabes de verdad.</div></div>
+      <div class="cuadrante mal"><div class="v">{{ c.seguro.n - c.seguro.ok }}</div><b>Concepto errado</b><div class="peq suave">Seguro y fallaste. El error más peligroso: no lo verías venir en la prueba.</div></div>
+      <div class="cuadrante medio"><div class="v">{{ a.aciertos_fragiles }}</div><b>Acierto frágil</b><div class="peq suave">Con duda y acertaste. Refuérzalo para que no dependa de la suerte.</div></div>
+      <div class="cuadrante gris"><div class="v">{{ c.dudoso.n - c.dudoso.ok + c.adivine.n - c.adivine.ok }}</div><b>Laguna reconocida</b><div class="peq suave">Con duda y fallaste. Sabías que no lo sabías: estudia el tema.</div></div>
     </div>
-    <p class="peq suave" style="margin-top:12px">El informe se actualizó y quedó guardado en <code>informes/ultimo_informe.md</code>.</p>
+  </div>
+  <div class="panel">
+    <h3>¿Tu confianza es confiable?</h3>
+    <p class="peq suave">Lo ideal: acertar casi siempre cuando marcas «Seguro» y bastante menos cuando dudas. Si «Seguro» no es mucho mejor que «Dudoso», tu sensación de saber no es buena guía.</p>
+    <div id="g-conf"></div>
   </div>
 </div>
 
-<div class="ronda-top" style="margin-top:24px">
-  <h2 style="margin:0">Revisión pregunta por pregunta</h2>
-  <label class="check"><input type="checkbox" id="solo-errores"> Mostrar solo errores</label>
+<!-- Ritmo -->
+<div class="seccion-t" id="ritmo"><h2>Ritmo y concentración</h2></div>
+<div class="grid dos">
+  <div class="panel">
+    <h3>Acierto por tramos de la ronda</h3>
+    <p class="peq suave">En el orden en que respondiste. Si el último tramo cae, puede ser fatiga o apuro: la prueba real dura 5 horas.</p>
+    <div id="g-tramos"></div>
+  </div>
+  <div class="panel">
+    <h3>Tiempo en cada pregunta</h3>
+    <p class="peq suave">Verde: acertada · rojo: fallada. Presupuesto de la prueba real: ~{{ a.presupuesto }} s por pregunta funcional.</p>
+    <div id="g-tiempos"></div>
+    <table style="margin-top:8px">
+      <tr><td>Respondidas en menos de 30 s</td><td class="n">{{ a.rapidas.n }}</td><td class="n">{{ a.rapidas.pct|num('%') }} de acierto</td></tr>
+      <tr><td>Respondidas en 90 s o más</td><td class="n">{{ a.lentas.n }}</td><td class="n">{{ a.lentas.pct|num('%') }} de acierto</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- Dificultad -->
+<div class="seccion-t" id="dificultad"><h2>Dificultad y preguntas nuevas</h2></div>
+<div class="grid dos">
+  <div class="panel">
+    <h3>Acierto por dificultad</h3>
+    <p class="peq suave">Básica: memoria de la norma · Aplicación: llevarla a un caso · Caso complejo: excepciones y cálculos.</p>
+    <div id="g-dif"></div>
+  </div>
+  <div class="panel">
+    <h3>Nuevas vs. ya vistas</h3>
+    <p class="peq suave">Si aciertas mucho más en las que ya habías visto, puede que recuerdes la respuesta más que dominar el tema. La prueba real solo tendrá preguntas nuevas.</p>
+    <div id="g-nuevas"></div>
+  </div>
+</div>
+
+{% if a.subtemas %}
+<div class="seccion-t" id="subtemas"><h2>Subtemas que fallaste</h2></div>
+<div class="panel">
+  <p class="peq suave" style="margin-top:0">Etiquetas de las preguntas falladas: señalan la confusión concreta dentro de cada indicador.</p>
+  <div class="acciones">{% for s in a.subtemas %}<span class="chip {{ 'mal' if s.fallos == s.n else 'medio' }}" title="{{ s.sesion }}">{{ s.texto }} · {{ s.fallos }}/{{ s.n }} fallos</span>{% endfor %}</div>
+</div>
+{% endif %}
+
+{% if a.evolucion|length > 1 %}
+<div class="seccion-t" id="evolucion"><h2>Evolución · {{ MODOS[ronda.modo] }}</h2></div>
+<div class="panel">
+  <p class="peq suave" style="margin-top:0">Tus últimas rondas de este mismo tipo. El punto final es esta ronda.</p>
+  <div id="g-evo"></div>
+</div>
+{% endif %}
+{% endif %}
+
+<!-- Revisión -->
+<div class="seccion-t" id="revision"><h2>Revisión pregunta por pregunta</h2></div>
+<div class="filtros" role="group" aria-label="Filtrar preguntas">
+  <button class="btn peq activo" data-filtro="todas">Todas ({{ preguntas|length }})</button>
+  <button class="btn peq" data-filtro="error">Errores ({{ n - ok }})</button>
+  <button class="btn peq" data-filtro="seguro">Errores con seguridad ({{ a.errores_seguro }})</button>
+  <button class="btn peq" data-filtro="fragil">Aciertos frágiles ({{ a.aciertos_fragiles }})</button>
+  {% if preguntas|length - n %}<button class="btn peq" data-filtro="omitida">Sin responder ({{ preguntas|length - n }})</button>{% endif %}
+  <select class="btn peq" id="f-ind" aria-label="Filtrar por indicador"><option value="">Todos los indicadores</option>
+    {% for s in preguntas|map(attribute='sesion')|unique|sort %}<option>{{ s }}</option>{% endfor %}</select>
 </div>
 {% for p in preguntas %}
-  <div class="resp-item {{ 'ok' if p.acierto else 'mal' }}" data-ok="{{ 1 if p.acierto else 0 }}">
+  {% set tipo = 'omitida' if not p.respondida else ('seguro' if not p.acierto and p.confianza == 'seguro' else 'error' if not p.acierto else 'fragil' if p.confianza in ('dudoso', 'adivine') else 'ok') %}
+  <div class="resp-item {{ 'ok' if p.acierto else 'mal' }}" data-tipo="{{ tipo }}" data-sesion="{{ p.sesion }}">
     <div class="peq suave">#{{ loop.index }} · {{ p.sesion }} ·
       {% if not p.respondida %}<span class="chip gris">sin responder</span>
       {% elif p.acierto %}<span class="chip ok">Correcta</span>{% else %}<span class="chip mal">Incorrecta</span>{% endif %}
-      {% if p.confianza %}<span class="chip gris">{{ conf_nombres[p.confianza] }}</span>{% endif %}
+      {% if p.confianza %}<span class="chip {{ 'mal' if tipo == 'seguro' else 'medio' if tipo == 'fragil' else 'gris' }}">{{ conf_nombres[p.confianza] }}{{ ' → concepto errado' if tipo == 'seguro' }}{{ ' → acierto frágil' if tipo == 'fragil' }}</span>{% endif %}
+      <span class="chip gris">{{ 'ya vista' if p.vista_antes else 'nueva' }}</span>
+      {% if p.dificultad %}<span class="chip gris">dificultad {{ p.dificultad }}</span>{% endif %}
       {% if p.tiempo_seg %}· {{ p.tiempo_seg|round(0)|int }} s{% endif %}
       · <a href="{{ url_for('editar_pregunta', pid=p.id) }}">editar</a></div>
     {% if p.contexto %}<div class="contexto" style="margin-top:8px">{{ p.contexto }}</div>{% endif %}
@@ -73,10 +227,88 @@
     </ul>
     <div class="explicacion">{{ p.explicacion }}</div>
     {% if p.norma %}<div class="peq suave" style="margin-top:6px">📖 {{ p.norma }}</div>{% endif %}
+    {% if p.etiquetas_lista %}<div class="peq suave" style="margin-top:4px">🏷️ {{ p.etiquetas_lista|join(' · ') }}</div>{% endif %}
   </div>
 {% endfor %}
+<div class="vacio" id="sin-items" hidden>No hay preguntas con este filtro. 🎉</div>
+
 <script>
-document.getElementById("solo-errores").onchange = e =>
-  document.querySelectorAll(".resp-item").forEach(el => el.style.display = e.target.checked && el.dataset.ok === "1" ? "none" : "");
+{% if n %}
+const A = {{ {'indicadores': a.indicadores, 'confianza': a.confianza, 'tramos': a.tramos, 'tiempos': a.tiempos,
+              'dificultad': a.dificultad, 'nuevas': a.nuevas, 'repetidas': a.repetidas, 'rapidas': a.rapidas,
+              'lentas': a.lentas, 'evolucion': a.evolucion}|tojson }};
+const MIN = {{ minimo }}, META = {{ meta }}, PRES = {{ a.presupuesto }}, REFS = [{ v: MIN, l: "Mín. " + MIN }, { v: META, l: "Meta " + META }];
+const clase = v => v === null ? "gris" : v < MIN ? "mal" : v < META ? "medio" : "ok";
+const corto = s => s.length > 44 ? s.slice(0, 42) + "…" : s;
+const practicar = id => "{{ url_for('nueva_ronda') }}?alcance=s:" + id;
+
+barrasH("#g-ind", [...A.indicadores].sort((x, y) => x.pct - y.pct).map(f => ({
+  l: corto(f.nombre), href: practicar(f.id), v: f.pct, lo: f.lo, hi: f.hi, clase: clase(f.pct),
+  sub: `${f.ok}/${f.n}` + (f.historico !== null ? ` · histórico ${f.historico}%` : ""),
+  tt: `<b>${f.nombre}</b><br>${f.ok} de ${f.n} (${f.pct}%) · rango probable ${f.lo}–${f.hi}%` + (f.historico !== null ? `<br>Antes: ${f.historico}%` : "")
+})), { refs: REFS });
+
+const perdidos = A.indicadores.filter(f => f.puntos_perdidos > 0);
+barrasH("#g-perdidos", perdidos.map(f => ({
+  l: corto(f.nombre), href: practicar(f.id), v: f.puntos_perdidos, clase: clase(f.pct), txt: "−" + f.puntos_perdidos,
+  sub: `${f.errores} ${f.errores === 1 ? "error" : "errores"} de ${f.n}`,
+  tt: `<b>${f.nombre}</b><br>${f.errores} errores = −${f.puntos_perdidos} puntos del total`
+})), { max: Math.max(...perdidos.map(f => f.puntos_perdidos), 1), sufijo: " pts", vacio: "No perdiste puntos en ningún indicador. 🎉" });
+
+columnas("#g-conf", A.confianza.map(x => ({
+  l: x.nombre, v: x.pct, n: x.n, clase: x.n ? clase(x.pct) : "gris",
+  tt: `<b>${x.nombre}</b><br>${x.ok} de ${x.n} acertadas (${x.pct ?? "–"}%)` + (x.n ? `<br>Rango probable ${x.lo}–${x.hi}%` : "")
+})), { max: 100, refs: REFS, vacio: "No marcaste tu confianza en esta ronda." });
+
+columnas("#g-tramos", A.tramos.map(t => ({
+  l: "Preg. " + t.l, v: t.pct, n: t.n, clase: clase(t.pct),
+  tt: `<b>Preguntas ${t.l}</b> (orden de respuesta)<br>${t.ok} de ${t.n} (${t.pct}%)<br>${t.seg} s por pregunta`
+})), { max: 100, refs: REFS, vacio: "Se necesitan al menos 9 respuestas para ver los tramos." });
+
+const maxT = Math.max(...A.tiempos.map(t => t.seg), 30);
+columnas("#g-tiempos", A.tiempos.map(t => ({
+  l: t.i === 1 || t.i % 10 === 0 ? String(t.i) : "", v: t.seg, clase: t.ok ? "ok" : "mal",
+  tt: `<b>Pregunta respondida n.º ${t.i}</b><br>${t.sesion}<br>${t.seg} s · ${t.ok ? "acertada" : "fallada"}`
+})), { max: maxT * 1.1, sufijo: " s", compacta: true, alto: 170,
+  refs: PRES <= maxT * 1.1 ? [{ v: PRES, l: "Prueba ~" + PRES + " s" }] : [] });
+
+columnas("#g-dif", A.dificultad.map(d => ({
+  l: d.nombre, v: d.pct, n: d.n, clase: d.n ? clase(d.pct) : "gris",
+  tt: `<b>${d.nombre}</b><br>${d.ok} de ${d.n} (${d.pct ?? "–"}%)`
+})), { max: 100, refs: REFS });
+
+barrasH("#g-nuevas", [
+  { l: "Primera vez", x: A.nuevas }, { l: "Ya vistas antes", x: A.repetidas },
+  { l: "Respondidas en < 30 s", x: A.rapidas }, { l: "Respondidas en ≥ 90 s", x: A.lentas }
+].filter(f => f.x.n).map(f => ({
+  l: f.l, v: f.x.pct, lo: f.x.lo, hi: f.x.hi, clase: clase(f.x.pct), sub: `${f.x.ok}/${f.x.n}`,
+  tt: `<b>${f.l}</b><br>${f.x.ok} de ${f.x.n} (${f.x.pct}%) · rango probable ${f.x.lo}–${f.x.hi}%`
+})), { refs: REFS });
+
+if (A.evolucion.length > 1) {
+  graficaLinea("#g-evo", A.evolucion.map(e => ({ v: e.pct, e: "#" + e.id, t: `Ronda #${e.id} (${e.fecha}) · ${e.ok}/${e.n}` })), { refs: REFS });
+}
+{% endif %}
+
+// Filtros de la revisión
+let filtro = "todas";
+function aplicarFiltros() {
+  const ind = document.getElementById("f-ind").value;
+  let visibles = 0;
+  document.querySelectorAll(".resp-item[data-tipo]").forEach(it => {
+    const t = it.dataset.tipo;
+    const okTipo = filtro === "todas" || t === filtro || (filtro === "error" && t === "seguro");
+    const ver = okTipo && (!ind || it.dataset.sesion === ind);
+    it.hidden = !ver;
+    visibles += ver;
+  });
+  document.getElementById("sin-items").hidden = visibles > 0;
+}
+document.querySelectorAll(".filtros [data-filtro]").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".filtros [data-filtro]").forEach(x => x.classList.toggle("activo", x === b));
+  filtro = b.dataset.filtro;
+  aplicarFiltros();
+}));
+document.getElementById("f-ind").addEventListener("change", aplicarFiltros);
 </script>
 {% endblock %}

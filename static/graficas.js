@@ -124,7 +124,8 @@ function barrasH(contenedor, filas, opciones = {}) {
 }
 
 // ------------------------------------------------------------ Columnas
-// datos: [{l, v, n, tt, clase}] · opciones: {max, refs, sufijo, alto, vacio}
+// datos: [{l, v, n, tt, clase}] · opciones: {max, refs, sufijo, alto, vacio, compacta}
+// compacta: sin el valor encima de cada columna (para muchas columnas); el detalle queda en el tooltip.
 function columnas(contenedor, datos, opciones = {}) {
   const el = _el(contenedor);
   if (!el) return;
@@ -149,9 +150,9 @@ function columnas(contenedor, datos, opciones = {}) {
       if (d.v !== null && d.v !== undefined && d.v > 0) {
         const top = y(d.v), alto = m.t + h - top, r = Math.min(4, alto, ancho / 2);
         s += `<path class="barra ${d.clase || "s1"}" d="M${cx - ancho / 2},${m.t + h}V${top + r}q0,-${r} ${r},-${r}H${cx + ancho / 2 - r}q${r},0 ${r},${r}V${m.t + h}Z"/>`;
-        s += `<text class="valor" x="${cx}" y="${top - 6}" text-anchor="middle">${_fmt(d.v, suf)}</text>`;
-      } else {
-        s += `<text class="valor suave" x="${cx}" y="${m.t + h - 6}" text-anchor="middle">–</text>`;
+        if (!opciones.compacta) s += `<text class="valor" x="${cx}" y="${top - 6}" text-anchor="middle">${_fmt(d.v, suf)}</text>`;
+      } else if (!opciones.compacta) {
+        s += `<text class="valor suave" x="${cx}" y="${m.t + h - 6}" text-anchor="middle">${d.v === 0 ? _fmt(0, suf) : "–"}</text>`;
       }
       s += `<text x="${cx}" y="${m.t + h + 15}" text-anchor="middle">${_esc(d.l)}</text>`;
       if (d.n !== undefined) s += `<text class="n" x="${cx}" y="${m.t + h + 29}" text-anchor="middle">n=${d.n}</text>`;
@@ -180,5 +181,73 @@ function apilada(contenedor, segmentos, opciones = {}) {
       ley += `<div class="ap-item"><i class="ap-sw ${s.clase}"></i><span>${_esc(s.l)}</span><b>${s.v}</b><span class="suave">${pctTxt(s.v)}</span></div>`;
     }
     el.innerHTML = barra + `</div>` + ley + `</div>`;
+  });
+}
+
+// ------------------------------------------------------------ Telaraña (radar)
+// ejes: [{l, tt}] · series: [{nombre, v: [valor 0–max o null por eje], clase: "s1"|"previo"}] · opciones: {max, alto, vacio}
+// La primera serie es la principal: su valor se escribe junto al nombre de cada eje.
+function radar(contenedor, ejes, series, opciones = {}) {
+  const el = _el(contenedor);
+  if (!el) return;
+  _registrar(() => {
+    if (ejes.length < 3) { el.innerHTML = `<div class="vacio">${opciones.vacio || "Se necesitan al menos 3 ejes."}</div>`; return; }
+    const max = opciones.max ?? 100, n = ejes.length, suf = opciones.sufijo ?? "%";
+    const W = el.clientWidth || 400, estrecho = W < 440, mx = estrecho ? 66 : 100, my = 44;
+    const H = opciones.alto || Math.round(Math.min(400, Math.max(280, W * 0.82)));
+    const R = Math.max(50, Math.min(W / 2 - mx, H / 2 - my)), cx = W / 2, cy = H / 2;
+    const ang = i => -Math.PI / 2 + (2 * Math.PI * i) / n;
+    const pt = (i, v) => {
+      const r = (R * Math.max(0, Math.min(max, v))) / max;
+      return [cx + Math.cos(ang(i)) * r, cy + Math.sin(ang(i)) * r];
+    };
+    const f = p => p.map(c => c.toFixed(1)).join(",");
+    let s = `<svg class="radar" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${_esc(opciones.aria || "Gráfica de telaraña")}">`;
+    for (const p of [25, 50, 75, 100]) {
+      s += `<polygon class="anillo${p === 100 ? " ext" : ""}" points="${ejes.map((_, i) => f(pt(i, (p * max) / 100))).join(" ")}"/>`;
+      s += `<text class="rd-esc" x="${cx + 4}" y="${pt(0, (p * max) / 100)[1] + 11}">${p}</text>`;
+    }
+    ejes.forEach((_, i) => { const [ex, ey] = pt(i, max); s += `<line class="eje" x1="${cx}" y1="${cy}" x2="${ex.toFixed(1)}" y2="${ey.toFixed(1)}"/>`; });
+    // Series de atrás hacia adelante: la principal queda encima
+    [...series].reverse().forEach(se => {
+      const completa = se.v.every(v => v !== null && v !== undefined);
+      if (completa) {
+        s += `<polygon class="rd-area ${se.clase || "s1"}" points="${se.v.map((v, i) => f(pt(i, v))).join(" ")}"/>`;
+      } else {
+        // Con ejes sin dato se unen solo los vecinos que sí tienen valor
+        let d = "";
+        for (let k = 0; k <= n; k++) {
+          const i = k % n, v = se.v[i], ant = se.v[(k + n - 1) % n];
+          if (v === null || v === undefined) continue;
+          d += `${k && ant !== null && ant !== undefined ? "L" : "M"}${f(pt(i, v))}`;
+        }
+        s += `<path class="rd-area linea ${se.clase || "s1"}" d="${d}"/>`;
+      }
+      se.v.forEach((v, i) => { if (v !== null && v !== undefined) s += `<circle class="rd-p ${se.clase || "s1"}" cx="${pt(i, v)[0].toFixed(1)}" cy="${pt(i, v)[1].toFixed(1)}" r="${se === series[0] ? 4 : 3}"/>`; });
+    });
+    // Etiquetas (nombre partido en líneas + valor principal) con el detalle al pasar el mouse
+    const ancho = estrecho ? 11 : 15, lh = 13;
+    ejes.forEach((e, i) => {
+      const lineas = [];
+      for (const palabra of String(e.l).split(" ")) {
+        const u = lineas.length - 1;
+        if (u >= 0 && (lineas[u] + " " + palabra).length <= ancho) lineas[u] += " " + palabra; else lineas.push(palabra);
+      }
+      const c = Math.cos(ang(i)), sn = Math.sin(ang(i));
+      const lx = cx + c * (R + 12), ly = cy + sn * (R + 12);
+      const anc = c > 0.3 ? "start" : c < -0.3 ? "end" : "middle";
+      const total = lineas.length + 1;
+      const y0 = sn < -0.3 ? ly - (total - 1) * lh : sn > 0.3 ? ly + lh * 0.75 : ly - ((total - 1) * lh) / 2 + 4;
+      const tt = `<b>${_esc(e.l)}</b><br>` + series.map(se => `${_esc(se.nombre)}: ${_fmt(se.v[i], suf)}`).join("<br>") + (e.tt ? `<br>${e.tt}` : "");
+      s += `<g class="rd-eje" tabindex="0" data-tt="${_esc(tt)}"><rect class="captura" x="${anc === "start" ? lx - 4 : anc === "end" ? lx - ancho * 7.2 : lx - ancho * 3.6}" y="${y0 - lh}" width="${ancho * 7.6}" height="${total * lh + 4}"/>`;
+      s += `<text x="${lx.toFixed(1)}" y="${y0.toFixed(1)}" text-anchor="${anc}">`;
+      lineas.forEach((t, k) => { s += `<tspan class="rd-l" x="${lx.toFixed(1)}" dy="${k ? lh : 0}">${_esc(t)}</tspan>`; });
+      s += `<tspan class="rd-v" x="${lx.toFixed(1)}" dy="${lh}">${_fmt(series[0].v[i], suf)}</tspan></text></g>`;
+    });
+    let ley = "";
+    if (series.length > 1) {
+      ley = `<div class="rd-ley">` + series.map(se => `<span><i class="rd-sw ${se.clase || "s1"}"></i>${_esc(se.nombre)}</span>`).join("") + `</div>`;
+    }
+    el.innerHTML = s + "</svg>" + ley;
   });
 }
